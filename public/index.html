@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#3b6ef5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f1117" id="meta-theme-color">
   <title>정보처리기사 필기 CBT</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script>
+    // 테마 깜빡임 방지: JS 로드 전에 테마 적용
+    (function() {
+      const t = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+      const m = document.getElementById('meta-theme-color');
+      if (m) m.content = t === 'dark' ? '#0f1117' : '#3b6ef5';
+    })();
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -20,6 +29,7 @@
       <a href="#" data-route="wrong">오답노트</a>
       <a href="#" data-route="bookmarks">북마크</a>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">☀️</button>
   </header>
   <main id="app">
     <div class="loading">로딩 중…</div>

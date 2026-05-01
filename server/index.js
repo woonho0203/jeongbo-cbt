@@ -88,7 +88,7 @@ async function handleAPI(req, res, method, urlPath) {
 
   // POST /api/exam/start
   if (method === 'POST' && urlPath === '/api/exam/start') {
-    const { mode, sourceId, count = 100 } = await readBody(req);
+    const { mode, sourceId, count = 100, checkMode = false } = await readBody(req);
     let questions = [], title = '', qkeyMode = mode;
 
     if (mode === 'past') {
@@ -126,6 +126,9 @@ async function handleAPI(req, res, method, urlPath) {
       qkey: q.qkey, qnum: q.qnum, displayNum: q.displayNum,
       subject: q.subject, subjectName: q.subjectName || SUBJECT_NAMES[q.subject],
       stem: q.stem, options: q.options, hasAnswer: q.answer != null,
+      // 학습 모드에서만 정답 포함 (즉시 채점용)
+      answer: checkMode ? (q.answer ?? null) : undefined,
+      explanation: checkMode ? (q.explanation ?? null) : undefined,
     }));
     return sendJSON(res, { title, mode: qkeyMode, questions: safeQs });
   }

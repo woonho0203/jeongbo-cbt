@@ -23,7 +23,19 @@
       "Bash(git remote *)",
       "Bash(brew --version)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Bash(npm config *)",
+      "Bash(git push *)",
+      "Bash(vercel login *)",
+      "Bash(vercel --yes --prod)",
+      "Bash(vercel --yes --prod --name jeongbo-cbt)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jeongbo-cbt.vercel.app/)",
+      "Bash(curl -s https://jeongbo-cbt.vercel.app/api/exams)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('exams:', len\\(d['exams']\\), '/ categories:', len\\(d['categories']\\)\\)\")",
+      "Bash(curl -s https://jeongbo-cbt.vercel.app/)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); q=d['questions'][0]; print\\('answer:', q.get\\('answer'\\), '/ explanation:', bool\\(q.get\\('explanation'\\)\\)\\)\")"
     ]
   }
 }

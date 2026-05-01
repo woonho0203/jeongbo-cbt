@@ -14,6 +14,7 @@ defineRoute('home', async (app) => {
       if (wrong.count === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
       navigate('exam', { mode: 'wrong' });
     }),
+    modeCard('📖', '학습 모드', '번호 선택 → 즉시 채점 → 번호 눌러 다음으로', () => navigate('study-list'), 'study-mode'),
   ]);
 
   const summary = el('div', { class: 'dash-grid' }, [
@@ -32,8 +33,8 @@ defineRoute('home', async (app) => {
   );
 });
 
-function modeCard(icon, title, desc, onClick) {
-  return el('div', { class: 'mode-card', onClick }, [
+function modeCard(icon, title, desc, onClick, extraClass = '') {
+  return el('div', { class: `mode-card ${extraClass}`.trim(), onClick }, [
     el('div', { class: 'icon', text: icon }),
     el('h3', { text: title }),
     el('p', { text: desc }),
@@ -307,7 +308,8 @@ function scoreTrendChart(trend) {
 
     const lbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     lbl.setAttribute('x', p.x); lbl.setAttribute('y', p.y - 8);
-    lbl.setAttribute('text-anchor', 'middle'); lbl.setAttribute('font-size', 11); lbl.setAttribute('fill', '#232a3b');
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    lbl.setAttribute('text-anchor', 'middle'); lbl.setAttribute('font-size', 11); lbl.setAttribute('fill', isDark ? '#dde2f0' : '#232a3b');
     lbl.textContent = p.s;
     svg.appendChild(lbl);
   });
@@ -315,6 +317,42 @@ function scoreTrendChart(trend) {
   wrapper.appendChild(svg);
   return wrapper;
 }
+
+// =================== 학습 모드 목록 ===================
+defineRoute('study-list', async (app) => {
+  const { exams, categories } = await api('/api/exams');
+  app.innerHTML = '';
+  app.append(
+    el('h1', { class: 'section-title', text: '📖 학습 모드' }),
+    el('div', { class: 'card' }, [
+      el('p', { text: '번호키(1~4)로 답 선택 → 즉시 정오답 확인 → 번호키 한 번 더 누르면 다음 문제로 이동합니다.' }),
+    ]),
+    el('h2', { class: 'section-title', style: { fontSize: '1.1rem', marginTop: '8px' }, text: '회차별 기출' }),
+    el('div', { class: 'list' }, exams.map(e =>
+      el('div', { class: 'list-item' }, [
+        el('div', { class: 'info' }, [
+          el('div', { class: 'title', text: e.title }),
+          el('div', { class: 'meta', text: `${e.count}문제` }),
+        ]),
+        el('div', { class: 'actions' }, [
+          el('button', { class: 'btn success', onClick: () => navigate('exam', { mode: 'past', sourceId: e.examId, check: '1' }), text: '학습 시작' }),
+        ]),
+      ])
+    )),
+    el('h2', { class: 'section-title', style: { fontSize: '1.1rem', marginTop: '16px' }, text: '유형별 연습' }),
+    el('div', { class: 'list' }, categories.map(c =>
+      el('div', { class: 'list-item' }, [
+        el('div', { class: 'info' }, [
+          el('div', { class: 'title', text: c.title }),
+          el('div', { class: 'meta', text: `${c.count}문제` }),
+        ]),
+        el('div', { class: 'actions' }, [
+          el('button', { class: 'btn success', onClick: () => navigate('exam', { mode: 'category', sourceId: c.categoryId, check: '1' }), text: '학습 시작' }),
+        ]),
+      ])
+    )),
+  );
+});
 
 // =================== 오답 노트 ===================
 defineRoute('wrong', async (app) => {

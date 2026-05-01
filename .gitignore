@@ -7,3 +7,4 @@ data/raw/
 
 data/cbt_store.json
 data/cbt_store.json.tmp
+.vercel

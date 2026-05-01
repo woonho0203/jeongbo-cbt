@@ -1,3 +1,23 @@
+// ─── 테마 토글 ───────────────────────────────────────────────────────────────
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = next === 'dark' ? '☀️' : '🌙';
+  const meta = document.getElementById('meta-theme-color');
+  if (meta) meta.content = next === 'dark' ? '#0f1117' : '#3b6ef5';
+}
+
+// 페이지 로드 시 저장된 테마 적용 + 버튼 아이콘 동기화
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', saved);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+});
+
 // API 헬퍼 + 유틸
 async function api(path, opts = {}) {
   const headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
