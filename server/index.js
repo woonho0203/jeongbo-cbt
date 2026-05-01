@@ -321,14 +321,13 @@ async function handleAPI(req, res, method, urlPath) {
   sendError(res, 404, 'not found');
 }
 
-// ── 메인 서버 ─────────────────────────────────────────────────────────────────
+// ── 공통 핸들러 ───────────────────────────────────────────────────────────────
 
-const server = http.createServer(async (req, res) => {
+async function requestHandler(req, res) {
   const url = new URL(req.url, `http://localhost`);
   const urlPath = url.pathname;
   const method = req.method.toUpperCase();
 
-  // CORS (로컬 개발용)
   res.setHeader('Access-Control-Allow-Origin', '*');
   if (method === 'OPTIONS') { res.writeHead(204); return res.end(); }
 
@@ -342,9 +341,16 @@ const server = http.createServer(async (req, res) => {
     console.error('[server error]', e.message);
     if (!res.headersSent) sendError(res, 500, e.message);
   }
-});
+}
 
-server.listen(PORT, () => {
-  console.log('\n=== 정보처리기사 CBT 서버 시작 ===');
-  console.log(`http://localhost:${PORT}\n`);
-});
+// Vercel 서버리스: module.exports로 핸들러 export
+module.exports = requestHandler;
+
+// 로컬 직접 실행 시에만 http 서버 시작
+if (require.main === module) {
+  const server = http.createServer(requestHandler);
+  server.listen(PORT, () => {
+    console.log('\n=== 정보처리기사 CBT 서버 시작 ===');
+    console.log(`http://localhost:${PORT}\n`);
+  });
+}
