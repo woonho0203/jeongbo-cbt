@@ -6,7 +6,7 @@ defineRoute('home', async (app) => {
   const stats = await api('/api/stats');
   const wrong = await api('/api/wrong/count');
 
-  const modes = el('div', { class: 'mode-grid' }, [
+  const examModes = el('div', { class: 'mode-grid' }, [
     modeCard('📝', '회차별 기출문제', '2024-2025년 6회분, 100문제 시험형식', () => navigate('past-list')),
     modeCard('🎲', '랜덤 모의고사', '전체 문제에서 랜덤 100문제 추출', () => navigate('exam', { mode: 'random', count: 100 })),
     modeCard('📚', '유형별 연습', '계산/코드/문장/키워드/순서 5개 카테고리', () => navigate('category-list')),
@@ -14,21 +14,34 @@ defineRoute('home', async (app) => {
       if (wrong.count === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
       navigate('exam', { mode: 'wrong' });
     }),
-    modeCard('📖', '학습 모드', '번호 선택 → 즉시 채점 → 번호 눌러 다음으로', () => navigate('study-list'), 'study-mode'),
   ]);
 
+  const studyModes = el('div', { class: 'mode-grid' }, [
+    modeCard('📖', '회차별 학습', '회차별 기출문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
+    modeCard('🔀', '랜덤 학습', '랜덤 문제 즉시 채점 모드', () => navigate('exam', { mode: 'random', count: 100, check: '1' }), 'study-mode'),
+    modeCard('📂', '유형별 학습', '유형별 문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
+    modeCard('❌', `오답 학습 (${wrong.count})`, '틀린 문제만 즉시 채점 모드', () => {
+      if (wrong.count === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
+      navigate('exam', { mode: 'wrong', check: '1' });
+    }, 'study-mode'),
+  ]);
+
+  const lastScore = stats.lastScore != null ? stats.lastScore : null;
+  const scoreColor = lastScore != null ? (lastScore >= 60 ? 'var(--success)' : 'var(--danger)') : 'var(--muted)';
   const summary = el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
     dashCard('평균 점수', stats.totalSessions ? `${stats.avgScore}점` : '-'),
     dashCard('최고 점수', stats.bestScore != null ? `${stats.bestScore}점` : '-'),
-    dashCard('최근 점수', stats.lastScore != null ? `${stats.lastScore}점` : '-'),
+    dashCard('최근 점수', lastScore != null ? `${lastScore}점` : '-', scoreColor),
   ]);
 
   app.innerHTML = '';
   app.append(
-    el('h1', { class: 'section-title', text: '시험 모드 선택' }),
-    modes,
-    el('h2', { class: 'section-title', text: '학습 현황 요약' }),
+    el('h1', { class: 'section-title', text: '🗒 시험 모드' }),
+    examModes,
+    el('h2', { class: 'section-title', text: '📖 학습 모드' }),
+    studyModes,
+    el('h2', { class: 'section-title', text: '📊 학습 현황 요약' }),
     summary,
   );
 });
@@ -40,10 +53,10 @@ function modeCard(icon, title, desc, onClick, extraClass = '') {
     el('p', { text: desc }),
   ]);
 }
-function dashCard(label, value) {
+function dashCard(label, value, color = '') {
   return el('div', { class: 'dash-card' }, [
     el('div', { class: 'label', text: label }),
-    el('div', { class: 'value', text: value }),
+    el('div', { class: 'value', text: value, style: color ? { color } : {} }),
   ]);
 }
 

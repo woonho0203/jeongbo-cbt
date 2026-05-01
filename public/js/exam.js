@@ -34,7 +34,7 @@ defineRoute('exam', async (app, params) => {
     checkMode,
     revealedAnswer: false,
     revealReadyAt: 0,
-    timeLimit: (!checkMode && (mode === 'past' || mode === 'random')) ? 150 * 60 : 0,
+    timeLimit: 0,
   };
 
   // 북마크 미리 조회
@@ -306,6 +306,14 @@ function renderOMR(state) {
       }
     }
 
+    let cellText = `${i + 1}`;
+    if (ans) {
+      if (state.checkMode && q.answer && ans !== q.answer) {
+        cellText = `${i + 1}.${CIRCLES[ans - 1]}→${CIRCLES[q.answer - 1]}`;
+      } else {
+        cellText = `${i + 1}.${CIRCLES[ans - 1]}`;
+      }
+    }
     grid.appendChild(el('button', {
       class: cls,
       onClick: () => {
@@ -313,7 +321,7 @@ function renderOMR(state) {
         state.currentIdx = i;
         renderQuestion(state); updateOMR(state);
       },
-      text: ans ? `${i + 1}.${CIRCLES[ans - 1]}` : `${i + 1}`,
+      text: cellText,
     }));
   });
   wrapper.appendChild(grid);
@@ -330,7 +338,10 @@ function omrSummaryContents(state) {
   if (state.checkMode && state.questions[0]?.answer != null) {
     const correct = state.questions.filter(q => state.answers.get(q.qkey) === q.answer).length;
     const wrong   = answered - correct;
+    const gradable = state.questions.filter(q => q.answer != null).length;
+    const score = gradable > 0 ? Math.round(correct / gradable * 1000) / 10 : 0;
     return [
+      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score}점` })]),
       el('div', {}, [el('span', { text: '정답' }), el('span', { style: { color: 'var(--success)', fontWeight: '600' }, text: `${correct}` })]),
       el('div', {}, [el('span', { text: '오답' }), el('span', { style: { color: 'var(--danger)',  fontWeight: '600' }, text: `${wrong}` })]),
       el('div', {}, [el('span', { text: '미풀이' }), el('span', { text: `${total - answered}` })]),

@@ -3,10 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+// Vercel 환경에서는 /tmp만 쓰기 가능
+const IS_VERCEL = !!(process.env.VERCEL || process.env.VERCEL_URL);
+const DATA_DIR = IS_VERCEL ? '/tmp' : path.join(__dirname, '..', 'data');
 const STORE_PATH = path.join(DATA_DIR, 'cbt_store.json');
 
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+if (!IS_VERCEL && !fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
 const DEFAULT_STORE = {
   nextSessionId: 1,
