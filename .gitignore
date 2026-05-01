@@ -1,0 +1,9 @@
+node_modules/
+data/cbt.db
+data/cbt.db-*
+data/raw/
+*.log
+.DS_Store
+
+data/cbt_store.json
+data/cbt_store.json.tmp

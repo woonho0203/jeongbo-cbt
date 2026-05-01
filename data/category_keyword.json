@@ -1,0 +1,3114 @@
+{
+  "categoryId": "keyword",
+  "title": "키워드 찾기 259문제",
+  "questions": [
+    {
+      "qnum": 1,
+      "stem": "객체지향 설계 원칙 중 서브타입(상속받은 하위 클래스)은 어디에서나 자신의 기반타입(상위 클래스)으 로 교체할 수 있어야 함을 의미하는 원칙은?",
+      "options": [
+        "ISP(Interface Segregation Principle)",
+        "DIP(Dependency Inversion Principle)",
+        "LSP(Liskov Substitution Principle)",
+        "SRP(Single Responsibility Principle)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 2,
+      "stem": "소프트웨어를 개발하기 위한 비즈니스(업무)를 객체와 속성, 클래스와 멤버, 전체와 부분 등으로 나누어 서 분석해 내는 기법은?",
+      "options": [
+        "객체지향 분석",
+        "구조적 분석",
+        "기능적 분석",
+        "실시간 분석"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 3,
+      "stem": "객체지향 기법에서 같은 클래스에 속한 각각의 객체를 의미하는 것은?",
+      "options": [
+        "Instance",
+        "Message",
+        "Method",
+        "Module"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 4,
+      "stem": "입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄 여주는 프로그램이나 하드웨어를 말하는 것은?",
+      "options": [
+        "EAI",
+        "FEP",
+        "GPL",
+        "Duplexing"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 5,
+      "stem": "UI와 관련된 기본 개념 중 하나로, 시스템의 상태와 사용자의 지시에 대한 효과를 보여주어 사용자가 명령에 대한 진행 상황과 표시된 내용을 해석할 수 있도록 도와주는 것은?",
+      "options": [
+        "Feedback",
+        "Posture",
+        "Module",
+        "Hash"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 6,
+      "stem": "객체지향 분석 기법의 하나로 객체 모형, 동적 모형, 기능 모형의 3개 모형을 생성하는 방법은?",
+      "options": [
+        "Wirfs-Block Method",
+        "Rumbaugh Method",
+        "Booch Method",
+        "Jacobson Method"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 7,
+      "stem": "객체지향 기법에서 클래스들 사이의 ‘부분-전체(Part-Whole)’ 관계 또는 ‘부분(is-a-part-of)’의 관계로 설명되는 연관성을 나타내는 용어는?",
+      "options": [
+        "일반화",
+        "추상화",
+        "캡슐화",
+        "집단화"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 8,
+      "stem": "객체지향 소프트웨어 공학에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한 것 은?",
+      "options": [
+        "트랜잭션",
+        "클래스",
+        "시퀀스",
+        "서브루틴"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 9,
+      "stem": "다음 내용이 설명하는 UI 설계 도구는? • 디자인, 사용 방법 설명, 평가 등을 위해 실제 화면과 유사하게 만든 정적인 형태의 모형 • 시각적으로만 구성 요소를 배치하는 것으로 일반적으로 실제로 구현되지는 않음",
+      "options": [
+        "스토리보드(Storyboard)",
+        "목업(Mockup)",
+        "프로토타입(Prototype)",
+        "유스케이스(Usecase)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 10,
+      "stem": "UML 다이어그램 중 시스템 내 클래스의 정적 구조를 표현하고 클래스와 클래스, 클래스의 속성 사이 의 관계를 나타내는 것은?",
+      "options": [
+        "Activity Diagram",
+        "Model Diagram",
+        "State Diagram",
+        "Class Diagram"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 11,
+      "stem": "럼바우(Rumbaugh)의 객체지향 분석 기법 중 자료 흐름도(DFD)를 주로 이용하는 것은?",
+      "options": [
+        "기능 모델링",
+        "동적 모델링",
+        "객체 모델링",
+        "정적 모델링"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 12,
+      "stem": "객체지향 기법에서 상위 클래스의 메소드와 속성을 하위 클래스가 물려받는 것을 의미하는 것은?",
+      "options": [
+        "Abstraction",
+        "Polymorphism",
+        "Encapsulation",
+        "Inheritance"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 13,
+      "stem": "객체지향 프로그램에서 데이터를 추상화하는 단위는?",
+      "options": [
+        "메소드",
+        "클래스",
+        "상속성",
+        "메시지"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 14,
+      "stem": "UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙은?",
+      "options": [
+        "희소성",
+        "유연성",
+        "직관성",
+        "멀티운용성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 15,
+      "stem": "클래스 다이어그램의 요소로, 다음 설명에 해당하는 용어는? • 클래스의 동작을 의미한다. • 클래스에 속하는 객체에 대하여 적용될 메서드를 정의한 것이다. • UML에서는 동작에 대한 인터페이스를 지칭한다고 볼 수 있다.",
+      "options": [
+        "Instance",
+        "Operation",
+        "Item",
+        "Hiding"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 16,
+      "stem": "럼바우(Rumbaugh) 분석 기법에서 정보 모델링이라고도 하며, 시스템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 다이어그램을 표시하는 모델링은?",
+      "options": [
+        "Object",
+        "Dynamic",
+        "Function",
+        "Static"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 17,
+      "stem": "객체지향에서 정보 은닉과 가장 밀접한 관계가 있는 것은?",
+      "options": [
+        "Encapsulation",
+        "Class",
+        "Method",
+        "Instance"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 18,
+      "stem": "객체에게 어떤 행위를 하도록 지시하는 명령은?",
+      "options": [
+        "Class",
+        "Package",
+        "Object",
+        "Message"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 19,
+      "stem": "대표적으로 DOS 및 UNIX 등의 운영체제에서 조작을 위해 사용하던 것으로, 정해진 명령 문자열을 입 력하여 시스템을 조작하는 사용자 인터페이스(User Interface)는?",
+      "options": [
+        "GUI(Graphical User Interface)",
+        "CLI(Command Line Interface)",
+        "CUI(Cell User Interface)",
+        "MUI(Mobile User Interface)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 20,
+      "stem": "기본 유스케이스 수행 시 특별한 조건을 만족할 때 수행하는 유스케이스는?",
+      "options": [
+        "연관",
+        "확장",
+        "선택",
+        "특화"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 21,
+      "stem": "속성과 관련된 연산(Operation)을 클래스 안에 묶어서 하나로 취급하는 것을 의미하는 객체지향 개념은?",
+      "options": [
+        "Inheritance",
+        "Class",
+        "Encapsulation",
+        "Association"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 22,
+      "stem": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다른 시스템에 보내는 작업이 반복되는 아키텍처 스타일은?",
+      "options": [
+        "클라이언트 서버 구조",
+        "계층 구조",
+        "MVC 구조",
+        "파이프 필터 구조"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 23,
+      "stem": "UI의 종류로 멀티 터치(Multi-touch), 동작 인식(Gesture Recognition) 등 사용자의 자연스러운 움직 임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 의미하는 것은?",
+      "options": [
+        "GUKGraphical User Interface)",
+        "OUI(Organic User Interface)",
+        "NUI(Natural User Interface)",
+        "CLKCommand Line Interface)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 24,
+      "stem": "객체지향 분석 방법론 중 Coad-Yourdon 방법에 해당하는 것은?",
+      "options": [
+        "E-R 다이어그램을 사용하여 객체의 행위를 데이터 모델링하는데 초점을 둔 방법이다.",
+        "객체, 동적, 기능 모델로 나누어 수행하는 방법이다.",
+        "미시적 개발 프로세스와 거시적 개발 프로세스를 모두 사용하는 방법이다.",
+        "Use-Case를 강조하여 사용하는 방법이다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 25,
+      "stem": "객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정은?",
+      "options": [
+        "메시지(Message)",
+        "캡슐화(Encapsulation)",
+        "다형성(Polymorphism)",
+        "상속(Inheritance)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 26,
+      "stem": "소프트웨어 설계 시 제일 상위에 있는 main user function에서 시작하여 기능을 하위 기능들로 분할 해 가면서 설계하는 방식은?",
+      "options": [
+        "객체지향 설계",
+        "데이터 흐름 설계",
+        "상향식 설계",
+        "하향식 설계"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 27,
+      "stem": "소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 무엇이라고 하는가?",
+      "options": [
+        "모듈 분해",
+        "디자인 패턴",
+        "연관 관계",
+        "클래스 도출"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 28,
+      "stem": "소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 관계있는 것은? • 소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨어를 실행하는 하드웨어 • 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어 • 순서적 연산에 의해 소프트웨어를 실행하는 절차",
+      "options": [
+        "기능(Function)",
+        "성능(Performance)",
+        "제약조건(Constraint)",
+        "인터페이스(Interface)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 29,
+      "stem": "객체지향 개념 중 하나 이상의 유사한 객체들을 묶어 공통된 특성을 표현한 데이터 추상화를 의미하 는 것은?",
+      "options": [
+        "Method",
+        "Class",
+        "Field",
+        "Message"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 30,
+      "stem": "정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델링 언어는?",
+      "options": [
+        "Package Diagram",
+        "State Transition Diagram",
+        "Deployment Diagram",
+        "Entity-Relationship Diagram"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 31,
+      "stem": "보헴이 제안한 것으로, 위험 분석 기능이 있으며, 여러 번의 개발 과정을 거쳐 점진적으로 개발하는 모형은?",
+      "options": [
+        "나선형 모형",
+        "애자일 모형",
+        "프로토타입 모형",
+        "폭포수 모형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 32,
+      "stem": "객체지향 분석 방법론 중 E-R 다이어그램을 사용하여 객체의 행위를 모델링하며, 객체 식별, 구조식 별, 주체 정의, 속성 및 관계 정의, 서비스 정의 등의 과정으로 구성되는 것은?",
+      "options": [
+        "Coad와 Yourdon 방법",
+        "Booch 방법",
+        "Jacobson 방법",
+        "Wirfs-Brocks 방법"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 33,
+      "stem": "클래스 설계 원칙에 대한 바른 설명은?",
+      "options": [
+        "단일 책임 원칙 : 하나의 클래스만 변경 가능해야 한다.",
+        "개방-폐쇄의 원칙 : 클래스는 확장에 대해 열려 있어야 하며 변경에 대해 닫혀 있어야 한다.",
+        "리스코프 교체의 원칙 : 여러 개의 책임을 가진 클래스는 하나의 책임을 가진 클래스로 대체되어야 한다.",
+        "의존관계 역전의 원칙 : 클라이언트는 자신이 사용하는 메소드와 의존관계를 갖지 않도록 해야 한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 34,
+      "stem": "소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것은?",
+      "options": [
+        "Refactoring",
+        "Architecting",
+        "Specification",
+        "Renewal"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 35,
+      "stem": "UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래 스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+      "options": [
+        "Association",
+        "Dependency",
+        "Realization",
+        "Generalization"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 36,
+      "stem": "다음 중 자료 사전(Data Dictionary)에서 선택의 의미를 나타내는 것은?",
+      "options": [
+        "[ ]",
+        "{ }",
+        "＋",
+        "＝"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 37,
+      "stem": "통신을 위한 프로그램을 생성하여 포트를 할당하고, 클라이언트의 통신 요청 시 클라이언트와 연결하 는 내·외부 송·수신 연계기술은?",
+      "options": [
+        "DB링크 기술",
+        "소켓 기술",
+        "스크럼 기술",
+        "프로토타입 기술"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 38,
+      "stem": "코드 설계에서 일정한 일련번호를 부여하는 방식의 코드는?",
+      "options": [
+        "연상 코드",
+        "블록 코드",
+        "순차 코드",
+        "표의 숫자 코드"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 39,
+      "stem": "다음 내용이 설명하는 객체지향 설계 원칙은? • 클라이언트는 자신이 사용하지 않는 메서드와 의존관계를 맺으면 안 된다. • 클라이언트가 사용하지 않는 인터페이스 때문에 영향을 받아서는 안 된다.",
+      "options": [
+        "인터페이스 분리 원칙",
+        "단일 책임 원칙",
+        "개방 폐쇄의 원칙",
+        "리스코프 교체의 원칙"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 40,
+      "stem": "좋은 소프트웨어 설계를 위한 소프트웨어의 모듈간의 결합도(Coupling)와 모듈 내 요소 간 응집도 (Cohesion)에 대한 설명으로 옳은 것은?",
+      "options": [
+        "응집도는 낮게 결합도는 높게 설계한다.",
+        "응집도는 높게 결합도는 낮게 설계한다.",
+        "양쪽 모두 낮게 설계한다.",
+        "양쪽 모두 높게 설계한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 41,
+      "stem": "UML 모델에서 한 객체가 다른 객체에게 오퍼레이션을 수행하도록 지정하는 의미적 관계로 옳은 것은?",
+      "options": [
+        "Dependency",
+        "Realization",
+        "Generalization",
+        "Association"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 42,
+      "stem": "분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로 그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는?",
+      "options": [
+        "미들웨어",
+        "하드웨어",
+        "오픈허브웨어",
+        "그레이웨어"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 43,
+      "stem": "코드화 대상 항목의 중량, 면적, 용량 등의 물리적 수치를 이용하여 만든 코드는?",
+      "options": [
+        "순차 코드",
+        "10진 코드",
+        "표의 숫자 코드",
+        "블록 코드"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 44,
+      "stem": "다음 설명에 부합하는 용어로 옳은 것은? • 소프트웨어 구조를 이루며, 다른 것들과 구별될 수 있는 독립적인 기능을 갖는 단위이다. • 하나 또는 몇 개의 논리적인 기능을 수행하기 위한 명령어들의 집합이라고도 할 수 있다. • 서로 모여 하나의 완전한 프로그램으로 만들어질 수 있다.",
+      "options": [
+        "통합 프로그램",
+        "저장소",
+        "모듈",
+        "데이터"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 45,
+      "stem": "파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+      "options": [
+        "노드와 간선으로 구성된다.",
+        "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.",
+        "계층 모델이라고도 한다.",
+        "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 46,
+      "stem": "클라이언트와 서버 간의 통신을 담당하는 시스템 소프트웨어를 무엇이라고 하는가?",
+      "options": [
+        "웨어러블",
+        "하이웨어",
+        "미들웨어",
+        "응용 소프트웨어"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 47,
+      "stem": "다음 내용이 설명하는 디자인 패턴은? • 객체를 생성하기 위한 인터페이스를 정의하여 어떤 클래스가 인스턴스화 될 것인지는 서브클래스가 결정하도록 하는 것 • Virtual-Constructor 패턴이라고도 함",
+      "options": [
+        "Visitor 패턴",
+        "Observer 패턴",
+        "Factory Method 패턴",
+        "Bridge 패턴"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 48,
+      "stem": "다음 ( ) 안에 들어갈 내용으로 옳은 것은? 컴포넌트 설계 시 “( )에 의한 설계”를 따를 경우, 해당 명세에서는 (1) 컴포넌트의 오퍼레이션 사용 전에 참이 되어야 할 선행조건 (2) 사용 후 만족되어야 할 결과조건 (3) 오퍼레이션이 실행되는 동안 항상 만족되어야 할 불변조건 등이 포함되어야 한다.",
+      "options": [
+        "협약(Contract)",
+        "프로토콜(Protocol)",
+        "패턴(Pattern)",
+        "관계(Relation)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 49,
+      "stem": "여러 개의 선택 항목 중 하나의 선택만 가능한 경우 사용하는 사용자 인터페이스(UI) 요소는?",
+      "options": [
+        "토글 버튼",
+        "텍스트 박스",
+        "라디오 버튼",
+        "체크 박스"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 50,
+      "stem": "아래의 UML 모델에서 ‘차’ 클래스와 각 클래스의 관계로 옳은 것은?",
+      "options": [
+        "추상화 관계",
+        "의존 관계",
+        "일반화 관계",
+        "그룹 관계"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 51,
+      "stem": "다음의 설명에 해당하는 언어는? 객체지향 시스템을 개발할 때 산출물을 명세화, 시각화, 문서화하는데 사용된다. 즉, 개발하는 시스템을 이해하기 쉬운 형태로 표현하여 분석가, 의뢰인, 설계자가 효율적인 의소소통을 할 수 있게 해 준다. 따라서, 개발 방법론이나 개발 프로세스가 아니라 표준화된 모델링 언어이다.",
+      "options": [
+        "JAVA",
+        "C",
+        "UML",
+        "Python"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 52,
+      "stem": "트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는?",
+      "options": [
+        "RPC",
+        "ORB",
+        "TP monitor",
+        "HUB"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 53,
+      "stem": "다음 설명에 해당하는 시스템으로 옳은 것은? 시스템 인터페이스를 구성하는 시스템으로, 연계할 데이터를 데이터베이스와 애플리케이션으로부터 연 계 테이블 또는 파일 형태로 생성하며 송신하는 시스템이다.",
+      "options": [
+        "연계 서버",
+        "중계 서버",
+        "송신 시스템",
+        "수신 시스템"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 54,
+      "stem": "다음 내용이 설명하는 디자인 패턴은? • 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수는 없다. • 클래스 내에서 인스턴스가 하나뿐임을 보장하며, 불필요한 메모리 낭비를 최소화 할 수 있다.",
+      "options": [
+        "Singleton",
+        "Adapter",
+        "Prototype",
+        "Decorator"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 55,
+      "stem": "명백한 역할을 가지고 독립적으로 존재할 수 있는 시스템의 부분으로 넓은 의미에서는 재사용되는 모 든 단위라고 볼 수 있으며, 인터페이스를 통해서만 접근할 수 있는 것은?",
+      "options": [
+        "Model",
+        "Sheet",
+        "Component",
+        "Cell"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 56,
+      "stem": "정렬된 N개의 데이터를 처리하는 데 O(Nlog N)의 시간이 소요되는 정렬 알고리즘은? 2",
+      "options": [
+        "합병 정렬",
+        "버블 정렬",
+        "선택 정렬",
+        "삽입 정렬"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 57,
+      "stem": "순서가 있는 리스트에서 데이터의 삽입(Push), 삭제(Pop)가 한 쪽 끝에서 일어나며 LIFO(Last-In- First- Out)의 특징을 가지는 자료 구조는?",
+      "options": [
+        "Tree",
+        "Graph",
+        "Stack",
+        "Queue"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 58,
+      "stem": "소프트웨어 품질 목표 중 주어진 시간 동안 주어진 기능을 오류 없이 수행하는 정도를 나타내는 것 은?",
+      "options": [
+        "직관성",
+        "사용 용이성",
+        "신뢰성",
+        "이식성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 59,
+      "stem": "럼바우(Rumbaugh) 객체지향 분석 기법에서 동적 모델링에 활용되는 다이어그램은?",
+      "options": [
+        "객체 다이어그램(Object Diagram)",
+        "패키지 다이어그램(Package Diagram)",
+        "상태 다이어그램(State Diagram)",
+        "자료 흐름도(Data Flow Diagram)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 60,
+      "stem": "응용 프로그램의 프로시저를 사용하여 원격 프로시저를 로컬 프로시저처럼 호출하는 방식의 미들웨어는?",
+      "options": [
+        "WAS(Web Application Server)",
+        "MOM(Message Oriented Middleware)",
+        "RPC(Remote Procedure Call)",
+        "ORB(Object Request Broker)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 61,
+      "stem": "검토 회의 전에 요구사항 명세서를 미리 배포하여 사전 검토한 후 짧은 검토 회의를 통해 오류를 조 기에 검출하는데 목적을 두는 요구사항 검토 방법은?",
+      "options": [
+        "빌드 검증",
+        "동료 검토",
+        "워크스루",
+        "개발자 검토"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 62,
+      "stem": "공통 모듈에 대한 명세 기법 중 해당 기능에 대해 일관되게 이해되고 한 가지로 해석될 수 있도록 작 성하는 원칙은?",
+      "options": [
+        "상호작용성",
+        "명확성",
+        "독립성",
+        "내용성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 63,
+      "stem": "인터페이스 요구사항 검토 방법에 대한 설명이 옳은 것은?",
+      "options": [
+        "리팩토링 : 작성자 이외의 전문 검토 그룹이 요구사항 명세서를 상세히 조사하여 결함, 표준 위배, 문 제점 등을 파악",
+        "동료검토 : 요구사항 명세서 작성자가 요구사항 명세서를 설명하고 이해관계자들이 설명을 들으면서 결 함을 발견",
+        "인스펙션 : 자동화된 요구사항 관리 도구를 이용하여 요구사항 추적성과 일관성을 검토",
+        "CASE 도구 : 검토 자료를 회의 전에 배포해서 사전 검토한 후 짧은 시간 동안 검토 회의를 진행하면 서 결함을 발견"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 64,
+      "stem": "자료 사전에서 자료의 생략을 의미하는 기호는?",
+      "options": [
+        "{ }",
+        "**",
+        "=",
+        "( )"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 65,
+      "stem": "자료 사전에서 자료의 반복을 의미하는 것은?",
+      "options": [
+        "=",
+        "( )",
+        "{ }",
+        "[ ]"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 66,
+      "stem": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+      "options": [
+        "<< >>",
+        "(( ))",
+        "{{ }}",
+        "[[ ]]"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 67,
+      "stem": "패키지 소프트웨어의 일반적인 제품 품질 요구사항 및 테스트를 위한 국제 표준은?",
+      "options": [
+        "ISO/IEC 2196",
+        "IEEE 19554",
+        "ISO/IEC 12119",
+        "ISO/IEC 14959"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 68,
+      "stem": "소프트웨어 품질 목표 중 하나 이상의 하드웨어 환경에서 운용되기 위해 쉽게 수정될 수 있는 시스템 능력을 의미하는 것은?",
+      "options": [
+        "Portability",
+        "Efficiency",
+        "Usability",
+        "Correctness"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 69,
+      "stem": "소프트웨어의 일부분을 다른 시스템에서 사용할 수 있는 정도를 의미하는 것은?",
+      "options": [
+        "신뢰성(Reliability)",
+        "유지보수성(Maintainability)",
+        "가시성(Visibility)",
+        "재사용성(Reusability)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 70,
+      "stem": "퀵 정렬에 관한 설명으로 옳은 것은?",
+      "options": [
+        "레코드의 키 값을 분석하여 같은 값끼리 그 순서에 맞는 버킷에 분배하였다가 버킷의 순서대로 레코드 를 꺼내어 정렬한다.",
+        "주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환한다.",
+        "레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬한다.",
+        "임의의 레코드 키와 매개변수(h)값만큼 떨어진 곳의 레코드 키를 비교하여 서로 교환해 가면서 정렬한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 71,
+      "stem": "소프트웨어 프로젝트 관리에 대한 설명으로 가장 옳은 것은?",
+      "options": [
+        "개발에 따른 산출물 관리",
+        "소요 인력은 최대화하되 정책 결정은 신속하게 처리",
+        "주어진 기간은 연장하되 최소의 비용으로 시스템을 개발",
+        "주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스템을 개발"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 72,
+      "stem": "다음 중 최악의 경우 검색 효율이 가장 나쁜 트리 구조는?",
+      "options": [
+        "이진 탐색 트리",
+        "AVL 트리",
+        "2-3 트리",
+        "레드-블랙 트리"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 73,
+      "stem": "테스트를 목적에 따라 분류했을 때, 강도(Stress) 테스트에 대한 설명으로 옳은 것은?",
+      "options": [
+        "시스템에 고의로 실패를 유도하고 시스템이 정상적으로 복귀하는지 테스트한다.",
+        "시스템에 과다 정보량을 부과하여 과부하 시에도 시스템이 정상적으로 작동되는지를 테스트한다.",
+        "사용자의 이벤트에 시스템이 응답하는 시간, 특정 시간 내에 처리하는 업무량, 사용자 요구에 시스템이 반응하는 속도 등을 테스트한다.",
+        "부당하고 불법적인 침입을 시도하여 보안시스템이 불법적인 침투를 잘 막아내는지 테스트한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 74,
+      "stem": "소프트웨어의 개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동을 뜻하는 것은?",
+      "options": [
+        "복호화",
+        "형상 관리",
+        "저작권",
+        "크랙"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 75,
+      "stem": "인터페이스 구현 검증 도구 중 아래에서 설명하는 것은? • 서비스 호출, 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크 • 각 테스트 대상 분산 환경에 데몬을 사용하여 테스트 대상 프로그램을 통해 테스트를 수행하고, 통 합하여 자동화하는 검증 도구",
+      "options": [
+        "xUnit",
+        "STAF",
+        "FitNesse",
+        "RubyNode"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 76,
+      "stem": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하며 최악의 경우 n(n-1) / 2회의 비교를 수행해야 하는 정렬(Sort)은?",
+      "options": [
+        "Selection Sort",
+        "Bubble Sort",
+        "Insert Sort",
+        "Quick Sort"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 77,
+      "stem": "소프트웨어 품질목표 중 쉽게 배우고 사용할 수 있는 정도를 나타내는 것은?",
+      "options": [
+        "Correctness",
+        "Reliability",
+        "Usability",
+        "Integrity"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 78,
+      "stem": "인터페이스 구현 시 사용하는 기술 중 다음 내용이 설명 하는 것은? JavaScript를 사용한 비동기 통신기술로, 클라이언트와 서버 간에 XML 데이터를 주고받는 기술",
+      "options": [
+        "Procedure",
+        "Trigger",
+        "Greedy",
+        "AJAX"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 79,
+      "stem": "알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+      "options": [
+        "컴퓨터 처리가 불가",
+        "알고리즘 입력 데이터 수가 한 개",
+        "알고리즘 수행시간이 입력 데이터 수와 관계없이 일정",
+        "알고리즘 길이가 입력 데이터보다 작음"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 80,
+      "stem": "하향식 통합 시험을 위해 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용 모듈은?",
+      "options": [
+        "Stub",
+        "Driver",
+        "Procedure",
+        "Function"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 81,
+      "stem": "다음 설명의 소프트웨어 테스트의 기본 원칙은? • 파레토 법칙이 좌우한다. • 애플리케이션 결함의 대부분은 소수의 특정한 모듈에 집중되어 존재한다. • 결함은 발생한 모듈에서 계속 추가로 발생할 가능성이 높다.",
+      "options": [
+        "살충제 패러독스",
+        "결함 집중",
+        "오류 부재의 궤변",
+        "완벽한 테스팅은 불가능"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 82,
+      "stem": "그래프의 특수한 형태로 노드(Node)와 선분(Branch)으로 되어 있고, 정점 사이에 사이클(Cycle)이 형 성되어 있지 않으며, 자료 사이의 관계성이 계층 형식으로 나타나는 비선형 구조는?",
+      "options": [
+        "tree",
+        "network",
+        "stack",
+        "distributed"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 83,
+      "stem": "소프트웨어 형상 관리의 의미로 적절한 것은?",
+      "options": [
+        "비용에 관한 사항을 효율적으로 관리하는 것",
+        "개발 과정의 변경 사항을 관리하는 것",
+        "테스트 과정에서 소프트웨어를 통합하는 것",
+        "개발 인력을 관리하는 것"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 84,
+      "stem": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+      "options": [
+        "Brooks의 법칙",
+        "Boehm의 법칙",
+        "Pareto의 법칙",
+        "Jackson의 법칙"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 85,
+      "stem": "해싱 함수 중 레코드 키를 여러 부분으로 나누고, 나눈 부분의 각 숫자를 더하거나 XOR한 값을 홈 주 소로 사용하는 방식은?",
+      "options": [
+        "제산법",
+        "폴딩법",
+        "기수 변환법",
+        "숫자 분석법"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 86,
+      "stem": "인터페이스 간의 통신을 위해 이용되는 데이터 포맷이 아닌 것은?",
+      "options": [
+        "AJTML",
+        "JSON",
+        "XML",
+        "YAML"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 87,
+      "stem": "소프트웨어 개발 활동을 수행함에 있어서 시스템이 고장(Failure)을 일으키게 하며, 오류(Error)가 있 는 경우 발생하는 것은?",
+      "options": [
+        "Fault",
+        "Testcase",
+        "Mistake",
+        "Inspection"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 88,
+      "stem": "필드 테스팅(Field Testing)이라고도 불리며 개발자 없이 고객의 사용 환경에 소프트웨어를 설치하여 검사를 수행하는 인수검사 기법은?",
+      "options": [
+        "베타 검사",
+        "알파 검사",
+        "형상 검사",
+        "복구 검사"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 89,
+      "stem": "동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추 적할 수 있는 소프트웨어 버전 관리 도구는?",
+      "options": [
+        "RCS(Revision Control System)",
+        "RTS(Reliable Transfer Service)",
+        "RPC(Remote Procedure Call)",
+        "RVS(Relative Version System)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 90,
+      "stem": "저작권 관리 구성 요소 중 패키저(Packager)의 주요 역할로 옳은 것은?",
+      "options": [
+        "콘텐츠를 제공하는 저작권자를 의미한다.",
+        "콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는다.",
+        "라이선스를 발급하고 관리한다.",
+        "배포된 콘텐츠의 이용 권한을 통제한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 91,
+      "stem": "아주 오래되거나 참고문서 또는 개발자가 없어 유지보수 작업이 아주 어려운 프로그램을 의미하는 것은?",
+      "options": [
+        "Title Code",
+        "Source Code",
+        "Object Code",
+        "Alien Code"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 92,
+      "stem": "다음이 설명하는 애플리케이션 통합 테스트 유형은? • 깊이 우선 방식 또는 너비 우선 방식이 있다. • 상위 컴포넌트를 테스트 하고 점증적으로 하위 컴포넌트를 테스트 한다. • 하위 컴포넌트 개발이 완료되지 않은 경우 스텁(Stub)을 사용하기도 한다.",
+      "options": [
+        "하향식 통합 테스트",
+        "상향식 통합 테스트",
+        "회귀 테스트",
+        "빅뱅 테스트"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 93,
+      "stem": "다음 설명의 소프트웨어 버전 관리 도구 방식은? • 버전 관리 자료가 원격 저장소와 로컬 저장소에 함께 저장되어 관리된다. • 로컬 저장소에서 버전 관리가 가능하므로 원격 저장소에 문제가 생겨도 로컬 저장소의 자료를 이용 하여 작업할 수 있다. • 대표적인 버전 관리 도구로 Git이 있다.",
+      "options": [
+        "단일 저장소 방식",
+        "분산 저장소 방식",
+        "공유 폴더 방식",
+        "클라이언트·서버 방식"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 94,
+      "stem": "디지털 저작권 관리(DRM) 구성 요소가 아닌 것은?",
+      "options": [
+        "Data Warehouse",
+        "DRM Controller",
+        "Packager",
+        "Contents Distributor"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 95,
+      "stem": "다음 설명에 해당하는 것은? 물리적 저장 장치의 입장에서 본 데이터베이스 구조로서 실제로 데이터베이스에 저장될 레코드의 형식 을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순서 등을 나타낸다.",
+      "options": [
+        "외부 스키마",
+        "내부 스키마",
+        "개념 스키마",
+        "슈퍼 스키마"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 96,
+      "stem": "다음에서 설명하는 클린 코드 작성 원칙은? • 한 번에 한 가지 처리만 수행한다. • 클래스/메소드/함수를 최소 단위로 분리한다.",
+      "options": [
+        "다형성",
+        "단순성",
+        "추상화",
+        "의존성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 97,
+      "stem": "테스트와 디버그의 목적으로 옳은 것은?",
+      "options": [
+        "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.",
+        "테스트는 오류를 수정하는 작업이고 디버깅은 오류를 찾는 작업이다.",
+        "둘 다 소프트웨어의 오류를 찾는 작업으로 오류 수정은 하지 않는다.",
+        "둘 다 소프트웨어 오류의 발견, 수정과 무관하다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 98,
+      "stem": "애플리케이션의 처리량, 응답 시간, 경과 시간, 자원 사용률에 대해 가상의 사용자를 생성하고 테스트 를 수행함으로써 성능 목표를 달성하였는지를 확인하는 테스트 자동화 도구는?",
+      "options": [
+        "명세 기반 테스트 설계 도구",
+        "코드 기반 테스트 설계 도구",
+        "기능 테스트 수행 도구",
+        "성능 테스트 도구"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 99,
+      "stem": "버전 관리 항목 중 저장소에 새로운 버전의 파일로 갱신하는 것을 의미하는 용어는?",
+      "options": [
+        "형상 감사(Configuration Audit)",
+        "롤백 (Rollback)",
+        "단위 테스트(Unit Test)",
+        "체크인(Check-In)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 100,
+      "stem": "알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계는?",
+      "options": [
+        "단위 테스트",
+        "인수 테스트",
+        "통합 테스트",
+        "시스템 테스트"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 101,
+      "stem": "데이터베이스에서 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미하는 것은?",
+      "options": [
+        "트랜잭션",
+        "뷰",
+        "튜플",
+        "카디널리티"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 102,
+      "stem": "단위 테스트에서 테스트의 대상이 되는 하위 모듈을 호출하고, 파라미터를 전달하는 가상의 모듈로 상향식 테스트에 필요한 것은?",
+      "options": [
+        "테스트 스텁(Test Stub)",
+        "테스트 드라이버(Test Driver)",
+        "테스트 슈트(Test Suites)",
+        "테스트 케이스(Test Case)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 103,
+      "stem": "검증 검사 기법 중 개발자의 장소에서 사용자가 개발자 앞에서 행하는 기법이며, 일반적으로 통제된 환경에서 사용자와 개발자가 함께 확인하면서 수행되는 검사는?",
+      "options": [
+        "동치 분할 검사",
+        "형상 검사",
+        "알파 검사",
+        "베타 검사"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 104,
+      "stem": "다음이 설명하는 테스트 용어는? • 테스트의 결과가 참인지 거짓인지를 판단하기 위해서 사전에 정의된 참값을 입력하여 비교하는 기법 및 활동을 말한다. • 종류에는 참, 샘플링, 휴리스틱, 일관성 검사가 존재한다.",
+      "options": [
+        "테스트 케이스",
+        "테스트 시나리오",
+        "테스트 오라클",
+        "테스트 데이터"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 105,
+      "stem": "프로젝트에 내재된 위험 요소를 인식하고 그 영향을 분석하여 이를 관리하는 활동으로서, 프로젝트를 성공시키기 위하여 위험 요소를 사전에 예측, 대비하는 모든 기술과 활동을 포함하는 것은?",
+      "options": [
+        "Critical Path Method",
+        "Risk Analysis",
+        "Work Breakdown Structure",
+        "Waterfall Model"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 106,
+      "stem": "관계 데이터 모델에서 릴레이션(Relation)에 포함되어 있는 튜플(Tuple)의 수를 무엇이라고 하는가?",
+      "options": [
+        "Degree",
+        "Cardinality",
+        "Attribute",
+        "Cartesian product"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 107,
+      "stem": "개별 모듈을 시험하는 것으로, 모듈이 정확하게 구현되었는지, 예정한 기능이 제대로 수행되는지를 점검하는 것이 주목적인 테스트는?",
+      "options": [
+        "통합 테스트(Integration Test)",
+        "단위 테스트(Unit Test)",
+        "시스템 테스트(System Test)",
+        "인수 테스트(Acceptance Test)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 108,
+      "stem": "위험 모니터링의 의미로 옳은 것은?",
+      "options": [
+        "위험을 이해하는 것",
+        "첫 번째 조치로 위험을 피할 수 있도록 하는 것",
+        "위험 발생 후 즉시 조치하는 것",
+        "위험 요소 징후들에 대하여 계속적으로 인지하는 것"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 109,
+      "stem": "트랜잭션의 상태 중 트랜잭션의 수행이 실패하여 Rollback 연산을 실행한 상태는?",
+      "options": [
+        "철회(Aborted)",
+        "부분 완료(Partially Committed)",
+        "완료(Commit)",
+        "실패(Fail)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 110,
+      "stem": "다음과 같이 위쪽 릴레이션을 아래쪽 릴레이션으로 정규화를 하였을 때 어떤 정규화 작업을 한 것인가? 국가 도시 대한민국 서울, 부산 미국 워싱턴, 뉴욕 중국 베이징 ↓ 국가 도시 대한민국 서울 대한민국 부산 미국 워싱턴 미국 뉴욕 중국 베이징",
+      "options": [
+        "제1정규형",
+        "제2정규형",
+        "제3정규형",
+        "제4정규형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 111,
+      "stem": "릴레이션 조작 시 데이터들이 불필요하게 중복되어 예기치 않게 발생하는 곤란한 현상을 의미하는 것은?",
+      "options": [
+        "Normalization",
+        "Rollback",
+        "Cardinality",
+        "Anomaly"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 112,
+      "stem": "다른 릴레이션의 기본키를 참조하는 키를 의미하는 것은?",
+      "options": [
+        "필드키",
+        "슈퍼키",
+        "외래키",
+        "후보키"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 113,
+      "stem": "데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준은?",
+      "options": [
+        "개체(Object)",
+        "관계(Relationship)",
+        "속성(Attribute)",
+        "제약 조건(Constraint)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 114,
+      "stem": "데이터베이스의 트랜잭션 성질들 중에서 다음 설명에 해당하는 것은? 트랜잭션의 모든 연산들이 정상적으로 수행 완료되거나 아니면 전혀 어떠한 연산도 수행되지 않은 원 래 상태가 되도록 해야 한다.",
+      "options": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 115,
+      "stem": "어떤 릴레이션 R에서 X와 Y를 각각 R의 애트리뷰트 집합의 부분 집합이라고 할 경우 애트리뷰트 X 의 값 각각에 대해 시간에 관계없이 항상 애트리뷰트 Y의 값이 오직 하나만 연관되어 있을 때 Y는 X에 함 수 종속이라고 한다. 이 함수 종속의 표기로 옳은 것은?",
+      "options": [
+        "Y → X",
+        "Y ⊂ X",
+        "X → Y",
+        "X ⊂ Y"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 116,
+      "stem": "관계해석에서 ‘모든 것에 대하여’의 의미를 나타내는 논리 기호는?",
+      "options": [
+        "∃",
+        "∈",
+        "∀",
+        "⊂"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 117,
+      "stem": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는? 한 릴레이션 내의 속성들의 집합으로 구성된 키로서, 릴레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키지만 최소성은 만족시키지 못한다.",
+      "options": [
+        "후보키",
+        "대체키",
+        "슈퍼키",
+        "외래키"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 118,
+      "stem": "데이터 모델의 구성 요소 중 데이터 구조에 따라 개념 세계나 컴퓨터 세계에서 실제로 표현된 값들 을 처리하는 작업을 의미하는 것은?",
+      "options": [
+        "Relation",
+        "Data Structure",
+        "Constraint",
+        "Operation"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 119,
+      "stem": "트랜잭션의 상태 중 트랜잭션의 마지막 연산이 실행된 직후의 상태로, 모든 연산의 처리는 끝났지만, 트랜잭션이 수행한 최종 결과를 데이터베이스에 반영하지 않은 상태는?",
+      "options": [
+        "Active",
+        "Partially Committed",
+        "Committed",
+        "Aborted"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 120,
+      "stem": "이전 단계의 정규형을 만족하면서 후보키를 통하지 않는 조인 종속(JD; Join Dependency)을 제거해 야 만족하는 정규형은?",
+      "options": [
+        "제3정규형",
+        "제4정규형",
+        "제5정규형",
+        "제6정규형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 121,
+      "stem": "관계대수 연산에서 두 릴레이션이 공통으로 가지고 있는 속성을 이용하여 두 개의 릴레이션을 하나 로 합쳐서 새로운 릴레이션을 만드는 연산은?",
+      "options": [
+        "▷◁",
+        "⊃",
+        "π",
+        "σ"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 122,
+      "stem": "다음 설명의 ( ) 안에 들어갈 내용으로 적합한 것은? 후보키는 릴레이션에 있는 모든 튜플에 대해 유일성과 ( )을 모두 만족시켜야 한다.",
+      "options": [
+        "중복성",
+        "최소성",
+        "참조성",
+        "동일성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 123,
+      "stem": "다음에서 설명하는 스키마(Schema)는? 데이터베이스 전체를 정의한 것으로 데이터 개체, 관계, 제약조건, 접근권한, 무결성 규칙 등을 명세한 것",
+      "options": [
+        "개념 스키마",
+        "내부 스키마",
+        "외부 스키마",
+        "내용 스키마"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 124,
+      "stem": "물리적 데이터베이스를 설계하는 전 단계로서, 데이터 모델링이라 불리는 데이터베이스 설계 단계는?",
+      "options": [
+        "개념적 데이터베이스 설계",
+        "논리적 데이터베이스 설계",
+        "정보 모델링",
+        "데이터베이스 구현"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 125,
+      "stem": "정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+      "options": [
+        "정규화",
+        "반정규화",
+        "집단화",
+        "머징"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 126,
+      "stem": "정규화 과정 중 1NF에서 2NF가 되기 위한 조건은?",
+      "options": [
+        "1NF를 만족하고 모든 도메인이 원자값이어야 한다.",
+        "1NF를 만족하고, 키가 아닌 모든 애트리뷰트들이 기본키에 이행적으로 함수 종속되지 않아야 한다.",
+        "1NF를 만족하고 다치 종속이 제거되어야 한다.",
+        "1NF를 만족하고 키가 아닌 모든 속성이 기본키에 대하여 완전 함수적 종속 관계를 만족해야 한다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 127,
+      "stem": "데이터베이스 설계 단계 중 저장 레코드 양식 설계, 레코드 집중의 분석 및 설계, 접근 경로 설계와 관계되는 것은?",
+      "options": [
+        "논리적 설계",
+        "요구 조건 분석",
+        "개념적 설계",
+        "물리적 설계"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 128,
+      "stem": "조건을 만족하는 릴레이션의 수평적 부분집합으로 구성하며, 연산자의 기호는 그리스 문자 시그마(σ) 를 사용하는 관계대수 연산은?",
+      "options": [
+        "Select",
+        "Project",
+        "Join",
+        "Division"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 129,
+      "stem": "키의 종류 중 유일성과 최소성을 만족하는 속성 또는 속성들의 집합은?",
+      "options": [
+        "Atomic Key",
+        "Super Key",
+        "Candidate Key",
+        "Test Key"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 130,
+      "stem": "관계 데이터 모델의 무결성 제약 중 기본키 값의 속성 값이 널(Null) 값이 아닌 원자 값을 갖는 성질은?",
+      "options": [
+        "개체 무결성",
+        "참조 무결성",
+        "도메인 무결성",
+        "튜플의 유일성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 131,
+      "stem": "하나의 애트리뷰트가 가질 수 있는 원자값들의 집합을 의미하는 것은?",
+      "options": [
+        "도메인",
+        "튜플",
+        "엔티티",
+        "다형성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 132,
+      "stem": "다음 조건을 모두 만족하는 정규형은? • 테이블 R에 속한 모든 도메인이 원자값만으로 구성되어 있다. • 테이블 R에서 키가 아닌 모든 필드가 키에 대해 함수적으로 종속되며, 키의 부분집합이 결정자가 되 는 부분 종속이 존재하지 않는다. • 테이블 R에 존재하는 모든 함수적 종속에서 결정자가 후보키이다.",
+      "options": [
+        "BCNF",
+        "제1정규형",
+        "제2정규형",
+        "제3정규형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 133,
+      "stem": "관계 데이터베이스 모델에서 차수(Degree)의 의미는?",
+      "options": [
+        "튜플의 수",
+        "테이블의 수",
+        "데이터베이스의 수",
+        "애트리뷰트의 수"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 134,
+      "stem": "이행적 함수 종속 관계를 의미하는 것은?",
+      "options": [
+        "A → B이고 B → C일 때, A → C를 만족하는 관계",
+        "A → B이고 B → C일 때, C → A를 만족하는 관계",
+        "A → B이고 B → C일 때, B → A를 만족하는 관계",
+        "A → B이고 B → C일 때, C → B를 만족하는 관계"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 135,
+      "stem": "릴레이션 R1에 속한 애튜리뷰트의 조합인 외래키를 변경하려면 이를 참조하고 있는 릴레이션 R2의 기본키도 변경해야 하는데 이를 무엇이라 하는가?",
+      "options": [
+        "정보 무결성",
+        "고유 무결성",
+        "널 제약성",
+        "참조 무결성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 136,
+      "stem": "동시성 제어를 위한 직렬화 기법으로, 트랜잭션 간의 처리 순서를 미리 정하는 방법은?",
+      "options": [
+        "로킹 기법",
+        "타임 스탬프 기법",
+        "검증 기법",
+        "배타 로크 기법"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 137,
+      "stem": "SQL에서 VIEW를 삭제할 때 사용하는 명령은?",
+      "options": [
+        "ERASE",
+        "KILL",
+        "DROP",
+        "DELETE"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 138,
+      "stem": "트랜잭션의 실행이 실패하였음을 알리는 연산자로, 트랜잭션이 수행한 결과를 원래의 상태로 원상 복 귀시키는 연산은?",
+      "options": [
+        "COMMIT 연산",
+        "BACKUP 연산",
+        "LOG 연산",
+        "ROLLBACK 연산"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 139,
+      "stem": "분산 데이터베이스 목표 중 “데이터베이스의 분산된 물리적 환경에서 특정 지역의 컴퓨터 시스템이 나 네트워크에 장애가 발생해도 데이터 무결성이 보장된다.”는 것과 관계있는 것은?",
+      "options": [
+        "장애 투명성",
+        "병행 투명성",
+        "위치 투명성",
+        "중복 투명성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 140,
+      "stem": "다음과 같은 트랙잭션의 특성은? 시스템이 가지고 있는 고정요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후의 상태가 같아야 한다.",
+      "options": [
+        "원자성(Atomicity)",
+        "일관성(Consistency)",
+        "격리성(Isolation)",
+        "영속성(Durability)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 141,
+      "stem": "데이터베이스 시스템에서 삽입, 갱신, 삭제 등의 이벤트가 발생할 때마다 관련 작업이 자동으로 수행 되는 절차형 SQL은?",
+      "options": [
+        "트리거(Trigger)",
+        "무결성(Integrity)",
+        "잠금(Lock)",
+        "복귀(Rollback)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 142,
+      "stem": "SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는 데 사용하는 언 어는?",
+      "options": [
+        "DDL(Data Definition Language)",
+        "DML(Data Manipulation Language)",
+        "DCL(Data Control Language)",
+        "DUL(Data User Language)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 143,
+      "stem": "SQL에서 스키마(Schema), 도메인(Domain), 테이블(Table), 뷰(View), 인덱스(Index)를 정의하거나 변 경 또는 삭제할 때 사용하는 언어는?",
+      "options": [
+        "DML(Data Manipulation Language)",
+        "DDL(Data Definition Language)",
+        "DCL(Data Control Language)",
+        "IDL(Interactive Data Language)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 144,
+      "stem": "트랜잭션의 주요 특성 중 하나로, 둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트 랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없음을 의미하는 것은?",
+      "options": [
+        "Log",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 145,
+      "stem": "데이터베이스 로그(log)를 필요로 하는 회복 기법은?",
+      "options": [
+        "즉각 갱신 기법",
+        "대수적 코딩 방법",
+        "타임 스탬프 기법",
+        "폴딩 기법"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 146,
+      "stem": "정보시스템과 관련한 다음 설명에 해당하는 것은? • 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다. • 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. • 여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도 록 구현하는 방식이 널리 사용된다.",
+      "options": [
+        "고가용성 솔루션(HACMP)",
+        "점대점 연결 방식(Point-to-Point Mode)",
+        "스턱스넷(Stuxnet)",
+        "루팅(Rooting)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 147,
+      "stem": "참조 무결성을 유지하기 위하여 DROP문에서 부모 테이블의 항목 값을 삭제할 경우 자동적으로 자식 테이블의 해당 레코드를 삭제하기 위한 옵션은?",
+      "options": [
+        "CLUSTER",
+        "CASCADE",
+        "SET-NULL",
+        "RESTRICTED"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 148,
+      "stem": "파티셔닝 방식 중 ‘월별, 분기별’과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은?",
+      "options": [
+        "Range Partitioning",
+        "Hash Partitioning",
+        "Composite Partitioning",
+        "List Partitioning"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 149,
+      "stem": "트랙잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전에 정상적인 상태로 복 구시키는 작업은?",
+      "options": [
+        "Recovery",
+        "Commit",
+        "Abort",
+        "Restart"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 150,
+      "stem": "SQL문에서 HAVING을 사용할 수 있는 절은?",
+      "options": [
+        "LIKE 절",
+        "WHERE 절",
+        "GROUP BY 절",
+        "ORDER BY 절"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 151,
+      "stem": "‘회원’ 테이블 생성 후 ‘주소’ 필드(컬럼)가 누락되어 이를 추가하려고 한다. 이에 적합한 SQL 명령어는?",
+      "options": [
+        "DELETE",
+        "RESTORE",
+        "ALTER",
+        "ACCESS"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 152,
+      "stem": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세스와 테이블 간에 매트릭스를 만 들어서 트랜잭션을 분석하는 것은?",
+      "options": [
+        "CASE 분석",
+        "일치 분석",
+        "CRUD 분석",
+        "연관성 분석"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 153,
+      "stem": "DDL(Data Define Language)의 명령어 중 스키마, 도메인, 인덱스 등을 정의할 때 사용하는 SQL문은?",
+      "options": [
+        "ALTER",
+        "SELECT",
+        "CREATE",
+        "INSERT"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 154,
+      "stem": "데이터베이스 성능에 많은 영향을 주는 DBMS의 구성 요소로 테이블과 클러스터에 연관되어 독립적 인 저장 공간을 보유하며, 데이터베이스에 저장된 자료를 더욱 빠르게 조회하기 위하여 사용되는 것은?",
+      "options": [
+        "인덱스(Index)",
+        "트랙잭션(Transaction)",
+        "역정규화(Denormalization)",
+        "트리거(Trigger)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 155,
+      "stem": "다음 설명에 해당하는 내용은 무엇인가? 프로세스 처리 도중, 참조할 페이지가 주기억장치에 없어 프로세스 처리시간보다, 페이지 교체에 소요 되는 시간이 더 많아지는 현상",
+      "options": [
+        "스레드(Thread)",
+        "스래싱(Thrasing)",
+        "페이지부재(Page Fault)",
+        "워킹셋(Working Set)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 156,
+      "stem": "C언어에서 문자열을 정수형으로 변환하는 라이브러리 함수는?",
+      "options": [
+        "atoi( )",
+        "atof( )",
+        "itoa( )",
+        "ceil( )"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 157,
+      "stem": "다음이 설명하는 응집도의 유형은? 모듈이 다수의 관련 기능을 가질 때 모듈안의 구성 요소들이 그 기능을 순차적으로 수행할 경우의 응 집도",
+      "options": [
+        "기능적 응집도",
+        "우연적 응집도",
+        "논리적 응집도",
+        "절차적 응집도"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 158,
+      "stem": "교착상태의 해결 방법 중 은행원 알고리즘(Banker's Algorithm)이 해당되는 기법은?",
+      "options": [
+        "Detection",
+        "Avoidance",
+        "Recovery",
+        "Prevention"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 159,
+      "stem": "TCP/IP에서 사용되는 논리(IP) 주소를 물리(MAC) 주소로 변환시켜 주는 프로토콜은?",
+      "options": [
+        "TCP",
+        "ARP",
+        "FTP",
+        "IP"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 160,
+      "stem": "UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+      "options": [
+        "ls",
+        "cat",
+        "fork",
+        "chmod"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 161,
+      "stem": "귀도 반 로섬(Guido van Rossum)이 발표한 언어로 인터프리터 방식이자 객체지향적이며, 배우기 쉽 고 이식성이 좋은 것이 특징인 스크립트 언어는?",
+      "options": [
+        "C++",
+        "JAVA",
+        "C#",
+        "Python"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 162,
+      "stem": "응집도의 종류 중 서로 간에 어떠한 의미 있는 연관 관계도 지니지 않은 기능 요소로 구성되는 경우 이며, 서로 다른 상위 모듈에 의해 호출되어 처리상의 연관성이 없는 서로 다른 기능을 수행하는 경우의 응집도는?",
+      "options": [
+        "Functional Cohesion",
+        "Sequential Cohesion",
+        "Logical Cohesion",
+        "Coincidental Cohesion"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 163,
+      "stem": "TCP 흐름 제어 기법 중 프레임이 손실되었을 때, 손실된 프레임 1개를 전송하고 수신자의 응답을 기 다리는 방식으로 한 번에 프레임 1개만 전송할 수 있는 기법은?",
+      "options": [
+        "Slow Start",
+        "Sliding Window",
+        "Stop and Wait",
+        "Congestion Avoidance"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 164,
+      "stem": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은?",
+      "options": [
+        "데이터 링크 계층",
+        "네트워크 계층",
+        "트랜스포트 계층",
+        "세션 계층"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 165,
+      "stem": "운영체제의 가상기억장치 관리에서 프로세스가 일정 시간동안 자주 참조하는 페이지들의 집합을 의 미하는 것은?",
+      "options": [
+        "Locality",
+        "Deadlock",
+        "Thrashing",
+        "Working Set"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 166,
+      "stem": "C언어에서 두 개의 논리값 중 하나라도 참이면 1을, 모두 거짓이면 0을 반환하는 연산자는?",
+      "options": [
+        "||",
+        "&&",
+        "**",
+        "!="
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 167,
+      "stem": "모듈 내 구성 요소들이 서로 다른 기능을 같은 시간대에 함께 실행하는 경우의 응집도(Cohesion)는?",
+      "options": [
+        "Temporal Cohesion",
+        "Logical Cohesion",
+        "Coincidental Cohesion",
+        "Sequential Cohesion"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 168,
+      "stem": "IEEE 802.11 워킹 그룹의 무선 LAN 표준화 현황 중 QoS 강화를 위해 MAC 지원 기능을 채택한 것은?",
+      "options": [
+        "802.11a",
+        "802.11b",
+        "802.11g",
+        "802.11e"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 169,
+      "stem": "OSI 7계층 중 다음 설명에 해당하는 계층은? • 두 응용 프로세스 간의 통신에 대한 제어 구조를 제공한다. • 연결의 생성, 관리, 종료를 위해 토큰을 사용한다.",
+      "options": [
+        "데이터링크 계층",
+        "네트워크 계층",
+        "세션 계층",
+        "표현 계층"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 170,
+      "stem": "JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은?",
+      "options": [
+        "Heap Collector",
+        "Garbage Collector",
+        "Memory Collector",
+        "Variable Collector"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 171,
+      "stem": "Java 프로그래밍 언어의 정수 데이터 타입 중 ‘long’의 크기는?",
+      "options": [
+        "1byte",
+        "2byte",
+        "4byte",
+        "8byte"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 172,
+      "stem": "어떤 모듈이 다른 모듈의 내부 논리 조직을 제어하기 위한 목적으로 제어신호를 이용하여 통신하는 경우이며, 하위 모듈에서 상위 모듈로 제어신호가 이동하여 상위 모듈에게 처리 명령을 부여하는 권리 전 도현상이 발생하게 되는 결합도는?",
+      "options": [
+        "Data Coupling",
+        "Stamp Coupling",
+        "Control Coupling",
+        "Common Coupling"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 173,
+      "stem": "다음 설명에 해당하는 방식은? • 무선 랜에서 데이터 전송 시, 매체가 비어있음을 확인한 뒤 충돌을 회피하기 위해 임의 시간을 기다 린 후 데이터를 전송하는 방법이다. • 네트워크에 데이터의 전송이 없는 경우라도 동시 전송에 의한 충돌에 대비하여 확인 신호를 전송한다.",
+      "options": [
+        "STA",
+        "Collision Domain",
+        "CSMA/CA",
+        "CSMA/CD"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 174,
+      "stem": "OSI 7계층에서 단말기 사이에 오류 수정과 흐름 제어를 수행하여 신뢰성 있고 명확한 데이터를 전달 하는 계층은?",
+      "options": [
+        "전송 계층",
+        "응용 계층",
+        "세션 계층",
+        "표현 계층"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 175,
+      "stem": "Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+      "options": [
+        "복소수(complex) 타입",
+        "리스트(list) 타입",
+        "사전(dict) 타입",
+        "튜플(tuple) 타입"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 176,
+      "stem": "한 모듈이 다른 모듈의 내부 기능 및 그 내부 자료를 참조하는 경우의 결합도는?",
+      "options": [
+        "내용 결합도(Content Coupling)",
+        "제어 결합도(Control Coupling)",
+        "공통 결합도(Common Coupling)",
+        "스탬프 결합도(Stamp Coupling)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 177,
+      "stem": "IEEE 802.3 LAN에서 사용되는 전송 매체 접속 제어(MAC) 방식은?",
+      "options": [
+        "CSMA/CD",
+        "Token Bus",
+        "Token Ring",
+        "Slotted Ring"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 178,
+      "stem": "OSI 7계층에서 물리적 연결을 이용해 신뢰성 있는 정보를 전송하려고 동기화, 오류 제어, 흐름 제어 등의 전송 에러를 제어하는 계층은?",
+      "options": [
+        "데이터 링크 계층",
+        "물리 계층",
+        "응용 계층",
+        "표현 계층"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 179,
+      "stem": "다음 설명의 ㉠과 ㉡에 들어갈 내용으로 옳은 것은? 가상기억장치의 일반적인 구현 방법에는 프로그램을 고정된 크기의 일정한 블록으로 나누는 ( ㉠ ) 기법과 가변적인 크기의 블록으로 나누는 ( ㉡ ) 기법이 있다.",
+      "options": [
+        "㉠ : Paging, ㉡ : Segmentation",
+        "㉠ : Segmentation, ㉡ : Allocatin",
+        "㉠ : Segmentation, ㉡ : Compaction",
+        "㉠ : Paging, ㉡ : Linking"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 180,
+      "stem": "C언어에서 구조체를 사용하여 데이터를 처리할 때 사용하는 것은?",
+      "options": [
+        "for",
+        "scanf",
+        "struct",
+        "abstract"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 181,
+      "stem": "다음 내용이 설명하는 소프트웨어 취약점은? 메모리를 다루는 데 오류가 발생하여 잘못된 동작을 하는 프로그램 취약점",
+      "options": [
+        "FTP 바운스 공격",
+        "SQL 삽입",
+        "버퍼 오버플로",
+        "디렉토리 접근 공격"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 182,
+      "stem": "C언어 라이브러리 중 stdlib.h에 대한 설명으로 옳은 것은?",
+      "options": [
+        "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자열로 바꿔주는 변환함수 등이 있다.",
+        "문자열 처리 함수로 strlen()이 포함되어 있다.",
+        "표준 입출력 라이브러리이다.",
+        "삼각 함수, 제곱근, 지수 등 수학적인 함수를 내장하고 있다."
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 183,
+      "stem": "TCP/IP 계층 구조에서 IP의 동작 과정에서의 전송 오류가 발생하는 경우에 대비해 오류 정보를 전송 하는 목적으로 사용하는 프로토콜은?",
+      "options": [
+        "ECP(Error Checking Protocol)",
+        "ARP(Address Resolution Protocol)",
+        "ICMP(Internet Control Message Protocol)",
+        "PPP(Point-to-Point Protocol)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 184,
+      "stem": "다음에서 설명하는 프로세스 스케줄링은? 최소 작업 우선(SJF) 기법의 약점을 보완한 비선점 스케줄링 기법으로 다음과 같은 식을 이용해 우선 순위를 판별한다. 대기한 시간 + 서비스를 받을 시간 우선순위 = 서비스를 받을 시간",
+      "options": [
+        "FIFO 스케줄링",
+        "RR 스케줄링",
+        "HRN 스케줄링",
+        "MQ 스케줄링"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 185,
+      "stem": "C언어에서 정수 자료형으로 옳은 것은?",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "double"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 186,
+      "stem": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차 세대 이동통신, 홈 네트워킹, 공공 안전 등의 특수 목적에 사용되는 새로운 방식의 네트워크 기술을 의미 하는 것은?",
+      "options": [
+        "Software Defined Perimeter",
+        "Virtual Private Network",
+        "Local Area Network",
+        "Mesh Network"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 187,
+      "stem": "Putnam 모형을 기초로 해서 만든 자동화 추정 도구는?",
+      "options": [
+        "SQLR/30",
+        "SLIM",
+        "MESH",
+        "NFV"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 188,
+      "stem": "정형화된 분석 절차에 따라 사용자 요구사항을 파악, 문서화하는 체계적 분석방법으로 자료 흐름도, 자료 사전, 소단위 명세서의 특징을 갖는 것은?",
+      "options": [
+        "구조적 개발 방법론",
+        "객체지향 개발 방법론",
+        "정보공학 방법론",
+        "CBD 방법론"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 189,
+      "stem": "접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+      "options": [
+        "RBAC",
+        "DAC",
+        "MAC",
+        "QAC"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 190,
+      "stem": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경했을 때 분석하는 도구는?",
+      "options": [
+        "trace",
+        "tripwire",
+        "udpdump",
+        "cron"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 191,
+      "stem": "여러 개의 독립된 통신장치가 UWB(Ultra Wide Band) 기술 또는 블루투스 기술을 사용하여 통신망 을 형성하는 무선 네트워크 기술은?",
+      "options": [
+        "PICONET",
+        "SCRUM",
+        "NFC",
+        "WI-SUN"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 192,
+      "stem": "Cocomo Model 중 기관 내부에서 개발된 중소규모의 소프트웨어로, 일괄 자료 처리나 과학 기술 계 산용, 비즈니스 자료 처리용으로 5만 라인 이하의 소프트웨어를 개발하는 유형은?",
+      "options": [
+        "Embeded",
+        "Organic",
+        "Semi-detached",
+        "Semi-embeded"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 193,
+      "stem": "다음 내용이 설명하는 것은? • 사물 통신, 사물 인터넷과 같이 대역폭이 제한된 통신환경에 최적화하여 개발된 푸시기술 기반의 경 량 메시지 전송 프로토콜 • 메시지 매개자(Broker)를 통해 송신자가 특정 메시지를 발행하고 수신자가 메시지를 구독하는 방식 • IBM이 주도하여 개발",
+      "options": [
+        "GRID",
+        "TELNET",
+        "GPN",
+        "MQTT"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 194,
+      "stem": "다음과 같은 형태로 임계 구역의 접근을 제어하는 상호 배제 기법은? P(S) : while S <= 0 do skip; S := S - 1; V(S) : S := S + 1;",
+      "options": [
+        "Dekker Algorithm",
+        "Lamport Algorithm",
+        "Peterson Algorithm",
+        "Semaphore"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 195,
+      "stem": "다음에서 설명하는 IT 기술은? • 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 • 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨 • 네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발 생하는 문제를 처리할 수 있음",
+      "options": [
+        "SDN(Software Defined Networking)",
+        "NFS(Network File System)",
+        "Network Mapper",
+        "AOE Network"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 196,
+      "stem": "Rayleigh-Norden 곡선의 노력 분포도를 이용한 프로젝트 비용 산정기법은?",
+      "options": [
+        "Putnam 모형",
+        "델파이 모형",
+        "COCOMO 모형",
+        "기능점수 모형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 197,
+      "stem": "서로 다른 네트워크 대역에 있는 호스트들 상호간에 통신할 수 있도록 해주는 네트워크 장비는?",
+      "options": [
+        "L2 스위치",
+        "HIPO",
+        "라우터",
+        "RAD"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 198,
+      "stem": "다음은 정보의 접근통제 정책에 대한 설명이다. (ㄱ)에 들어갈 내용으로 옳은 것은? 정책 ( ㄱ ) DAC RBAC 권한 부여 시스템 데이터 소유자 중앙 관리자 접근 결정 보안등급(LABEL) 신분(Identity) 역할(Role) 정책 변경 고정적(변경 어려움) 변경 용이 변경 용이 안정적, 장점 구현 용이, 유연함 관리 용이 중앙 집중적",
+      "options": [
+        "NAC",
+        "MAC",
+        "SDAC",
+        "AAC"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 199,
+      "stem": "웹과 컴퓨터 프로그램에서 용량이 적은 데이터를 교환하기 위해 데이터 객체를 속성·값의 쌍 형태로 표현하는 형식으로, 자바 스크립트(Java Script)를 토대로 개발된 형식은?",
+      "options": [
+        "Python",
+        "XML",
+        "JSON",
+        "WEB SEVER"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 200,
+      "stem": "다음 설명에 해당하는 소프트웨어는? • 개발해야 할 애플리케이션의 일부분이 이미 내장된 클래스 라이브러리로 구현이 되어 있다. • 따라서, 그 기반이 되는 이미 존재하는 부분을 확장 및 이용하는 것으로 볼 수 있다. • JAVA 기반의 대표적인 소프트웨어로는 스프링(Spring)이 있다.",
+      "options": [
+        "전역 함수 라이브러리",
+        "소프트웨어 개발 프레임워크",
+        "컨테이너 아키텍처",
+        "어휘 분석기"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 201,
+      "stem": "S/W 각 기능의 원시 코드 라인수의 비관치, 낙관치, 기대치를 측정하여 예측치를 구하고 이를 이용 하여 비용을 산정하는 기법은?",
+      "options": [
+        "Effort Per Task 기법",
+        "전문가 감정 기법",
+        "델파이 기법",
+        "LOC 기법"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 202,
+      "stem": "다음 내용이 설명하는 것은? • 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용 • 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으 로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+      "options": [
+        "SAN",
+        "MBR",
+        "NAC",
+        "NIC"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 203,
+      "stem": "다음 내용이 설명하는 접근 제어 모델은? • 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용한다. • 자신의 권한보다 낮은 보안 레벨 권한을 가진 경우에는 높은 보안 레벨의 문서를 읽을 수 없고 자신 의 권한보다 낮은 수준의 문서만 읽을 수 있다. • 자신의 권한보다 높은 보안 레벨의 문서에는 쓰기가 가능하지만, 보안 레벨이 낮은 문서의 쓰기 권 한은 제한한다.",
+      "options": [
+        "Clark-Wilson Integrity Model",
+        "PDCA Model",
+        "Bell-Lapadula Model",
+        "Chinese Wall Model"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 204,
+      "stem": "SoftTech사에서 개발된 것으로 구조적 요구 분석을 하기 위해 블록 다이어그램을 채택한 자동화 도구는?",
+      "options": [
+        "SREM",
+        "PSL/PSA",
+        "HIPO",
+        "SADT"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 205,
+      "stem": "소프트웨어 개발 표준 중 소프트웨어 품질 및 생산성 향상을 위해 소프트웨어 프로세스를 평가 및 개선하는 국제 표준은?",
+      "options": [
+        "SCRUM",
+        "ISO/IEC 12509",
+        "SPICE",
+        "CASE"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 206,
+      "stem": "소프트웨어 재공학의 주요 활동 중 기존 소프트웨어를 다른 운영체제나 하드웨어 환경에서 사용할 수 있도록 변환하는 것은?",
+      "options": [
+        "역공학",
+        "분석",
+        "재구성",
+        "이식"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 207,
+      "stem": "다음 내용이 설명하는 스토리지 시스템은? • 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 • 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+      "options": [
+        "DAS",
+        "NAS",
+        "BSA",
+        "NFC"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 208,
+      "stem": "정보 시스템 내에서 어떤 주체가 특정 개체에 접근하려 할 때 양쪽의 보안 레이블(Security Label)에 기초하여 높은 보안 수준을 요구하는 정보(객체)가 낮은 보안 수준의 주체에게 노출되지 않도록 하는 접근 제어 방법은?",
+      "options": [
+        "Mandatory Access Control",
+        "User Access Control",
+        "Discretionary Access Control",
+        "Data-Label Access Control"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 209,
+      "stem": "프로토타입을 지속적으로 발전시켜 최종 소프트웨어 개발까지 이르는 개발방법으로, 위험관리가 중심 인 소프트웨어 생명주기 모형은?",
+      "options": [
+        "나선형 모형",
+        "델파이 모형",
+        "폭포수 모형",
+        "기능점수 모형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 210,
+      "stem": "전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완 성시키는 재사용 방법은?",
+      "options": [
+        "합성 중심",
+        "생성 중심",
+        "분리 중심",
+        "구조 중심"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 211,
+      "stem": "서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는데 사용하는 도구는?",
+      "options": [
+        "type",
+        "mkdir",
+        "ftp",
+        "nmap"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 212,
+      "stem": "생명 주기 모형 중 가장 오래된 모형으로, 많은 적용 사례가 있지만 요구사항의 변경이 어렵고 각 단계 의 결과가 확인되어야 다음 단계로 넘어갈 수 있는 선형 순차적, 고전적 생명 주기 모형이라고도 하는 것은?",
+      "options": [
+        "Waterfall Model",
+        "Prototype Model",
+        "Cocomo Model",
+        "Spiral Model"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 213,
+      "stem": "실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Development Life Cycle)에 통합한 소프트웨어 개발 보안 생명주기 방법론은?",
+      "options": [
+        "CLASP",
+        "CWE",
+        "PIMS",
+        "Seven Touchpoints"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 214,
+      "stem": "PC, TV, 휴대폰에서 원하는 콘텐츠를 끊김없이 자유롭게 이용할 수 있는 서비스는?",
+      "options": [
+        "Memristor",
+        "MEMS",
+        "SNMP",
+        "N-Screen"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 215,
+      "stem": "다음 내용이 설명하는 것은? • 블록체인(Blockchain) 개발 환경을 클라우드로 서비스하는 개념 • 블록체인 네트워크에 노드의 추가 및 제거가 용이 • 블록체인의 기본 인프라를 추상화하여 블록체인 응용 프로그램을 만들 수 있는 클라우드 컴퓨팅 플랫폼",
+      "options": [
+        "OTT",
+        "Baas",
+        "SDDC",
+        "Wi-SUN"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 216,
+      "stem": "최대 홉수를 15로 제한한 라우팅 프로토콜은?",
+      "options": [
+        "RIP",
+        "OSPF",
+        "Static",
+        "EIGRP"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 217,
+      "stem": "다음 내용에 적합한 용어는? • 대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. • Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다. • 임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다.",
+      "options": [
+        "MapReduce",
+        "SQL",
+        "Hijacking",
+        "Logs"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 218,
+      "stem": "오픈소스 웹 애플리케이션 보안 프로젝트로서 주로 웹을 통한 정보 유출, 악성 파일 및 스크립트, 보 안 취약점 등을 연구하는 곳은?",
+      "options": [
+        "WWW",
+        "OWASP",
+        "WBSEC",
+        "ITU"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 219,
+      "stem": "물리적인 사물과 컴퓨터에 동일하게 표현되는 가상의 모델로, 실제 물리적인 자산 대신 소프트웨어로 가상화함으로써 실제 자산의 특성에 대한 정확한 정보를 얻을 수 있고, 자산 최적화, 돌발 사고 최소화, 생 산성 향상 등 설계부터 제조, 서비스에 이르는 모든 과정의 효율성을 향상시킬 수 있는 모델은?",
+      "options": [
+        "최적화",
+        "실행 시간",
+        "디지털 트윈",
+        "N-Screen"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 220,
+      "stem": "브리지와 구내 정보 통신망(LAN)으로 구성된 통신망에서 루프(폐회로)를 형성하지 않으면서 연결을 설정하는 알고리즘은?",
+      "options": [
+        "Spanning Tree Algorithm",
+        "Diffie-Hellman Algorithm",
+        "Hash Algorithm",
+        "Digital Signature Algorithm"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 221,
+      "stem": "다음이 설명하는 다중화 기술은? • 광섬유를 이용한 통신기술의 하나를 의미함 • 파장이 서로 다른 복수의 광신호를 동시에 이용하는 것으로 광섬유를 다중화 하는 방식임 • 빛의 파장 축과 파장이 다른 광선은 서로 간섭을 일으키지 않는 성질을 이용함",
+      "options": [
+        "Wavelength Division Multiplexing",
+        "Frequency Division Multiplexing",
+        "Code Division Multiplexing",
+        "Time Division Multiplexing"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 222,
+      "stem": "Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준은?",
+      "options": [
+        "WCDMA",
+        "WPA",
+        "SSL",
+        "SHA"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 223,
+      "stem": "시스템이 몇 대가 되어도 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 의미하는 것은?",
+      "options": [
+        "SOS",
+        "SBO",
+        "SSO",
+        "SOA"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 224,
+      "stem": "하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는?",
+      "options": [
+        "Apnic",
+        "Topology",
+        "Sqoop",
+        "SDB"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 225,
+      "stem": "어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대 의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+      "options": [
+        "tcp wrapper",
+        "trace checker",
+        "token finder",
+        "change detector"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 226,
+      "stem": "다음이 설명하는 IT 기술은? • 컨테이너 응용 프로그램의 배포를 자동화하는 오픈소스 엔진이다. • 소프트웨어 컨테이너 안에 응용 프로그램들을 배치시키는 일을 자동화해 주는 오픈 소스 프로젝트이 자 소프트웨어로 볼 수 있다.",
+      "options": [
+        "Stack Guard",
+        "Docker",
+        "Cipher Container",
+        "Scytale"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 227,
+      "stem": "물리적 배치와 상관없이 논리적으로 LAN을 구성하여 Broadcast Domain을 구분할 수 있게 해주는 기술로, 접속된 장비들의 성능 향상 및 보안성 증대 효과가 있는 것은?",
+      "options": [
+        "VLAN",
+        "STP",
+        "L2AN",
+        "ARP"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 228,
+      "stem": "기기를 키오스크에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10㎝ 이내 근접 거리에 서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC; Near Field Communication) 기술은?",
+      "options": [
+        "BcN(Broadband Convergence Network)",
+        "Zing",
+        "Marine Navi",
+        "C-V2X(Cellular Vehicle To Everything)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 229,
+      "stem": "다음이 설명하는 용어로 옳은 것은? • 오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. • 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성한다. • 다양한 소스를 통해 생성된 빅데이터를 효율적으로 저장하고 처리한다.",
+      "options": [
+        "하둡(Hadoop)",
+        "비컨(Beacon)",
+        "포스퀘어(Foursquare)",
+        "맴리스터(Memristor)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 230,
+      "stem": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술은?",
+      "options": [
+        "PLCP(Packet Level Control Processor)",
+        "Traffic Distributor",
+        "Packet Tree",
+        "DPI(Deep Packet Inspection)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 231,
+      "stem": "다음 빈칸에 들어갈 알맞은 기술은? ( )은/는 웹에서 제공하는 정보 및 서비스를 이용하여 새로운 소프트웨어나 서비스, 데이터베이스 등을 만드는 기술이다.",
+      "options": [
+        "Quantum Key Distribution",
+        "Digital Rights Management",
+        "Grayware",
+        "Mashup"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 232,
+      "stem": "다음 LAN의 네트워크 토폴로지는?",
+      "options": [
+        "버스형",
+        "성형",
+        "링형",
+        "그물형"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 233,
+      "stem": "국내 IT 서비스 경쟁력 강화를 목표로 개발되었으며 인프라 제어 및 관리 환경, 실행 환경, 개발 환 경, 서비스 환경, 운영 환경으로 구성되어 있는 개방형 클라우드 컴퓨팅 플랫폼은?",
+      "options": [
+        "N2OS",
+        "PaaS-TA",
+        "KAWS",
+        "Metaverse"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 234,
+      "stem": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관계 를 규명하여 일정한 패턴을 찾아내는 기법은?",
+      "options": [
+        "Data Mining",
+        "Wm-Bus",
+        "Digital Twin",
+        "Zigbee"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 235,
+      "stem": "다음 설명에 해당하는 시스템은? • 1990년대 David Clock이 처음 제안하였다. • 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. • 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. • 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+      "options": [
+        "Apache",
+        "Hadoop",
+        "Honeypot",
+        "MapReduce"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 236,
+      "stem": "Python 기반의 웹 크롤링(Web Crawling) 프레임워크로 옳은 것은?",
+      "options": [
+        "Li-fi",
+        "Scrapy",
+        "CrawlCat",
+        "SBAS"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 237,
+      "stem": "전기 및 정보통신기술을 활용하여 전력망을 지능화, 고도화함으로써 고품질의 전력서비스를 제공하고 에너지 이용 효율을 극대화하는 전력망은?",
+      "options": [
+        "사물 인터넷",
+        "스마트 그리드",
+        "디지털 아카이빙",
+        "미디어 빅뱅"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 238,
+      "stem": "다음에서 설명하는 IT 스토리지 기술은? • 가상화를 적용하여 필요한 공간만큼 나눠 사용할 수 있도록 하며 서버 가상화와 유사함 • 컴퓨팅 소프트웨어로 규정하는 데이터 스토리지 체계이며, 일정 조직 내 여러 스토리지를 하나처럼 관리하고 운용하는 컴퓨터 이용 환경 • 스토리지 자원을 효율적으로 나누어 쓰는 방법으로 이해할 수 있음",
+      "options": [
+        "Software Defined Storage",
+        "Distribution Oriented Storage",
+        "Network Architected Storage",
+        "Systematic Network Storage"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 239,
+      "stem": "컴퓨터 운영체제의 커널에 보안 기능을 추가한 것으로 운영체제의 보안상 결함으로 인하여 발생 가 능한 각종 해킹으로부터 시스템을 보호하기 위하여 사용되는 것은?",
+      "options": [
+        "GPIB",
+        "CentOS",
+        "XSS",
+        "Secure OS"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 240,
+      "stem": "구글의 구글 브레인 팀이 제작하여 공개한 기계 학습(Machine Leaming)을 위한 오픈소스 소프트웨 어 라이브러리는?",
+      "options": [
+        "타조(Tajo)",
+        "원 세그(One Seg)",
+        "포스퀘어(Foursquare)",
+        "텐서플로(TensorFlow)"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 241,
+      "stem": "침입 차단 시스템(방화벽) 중 다음과 같은 형태의 구축 유형은?",
+      "options": [
+        "Block Host",
+        "Tree Host",
+        "Screened Subnet",
+        "Ring Homed"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 242,
+      "stem": "코드의 기입 과정에서 원래 ‘12536’으로 기입되어야 하는데 ‘12936’으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+      "options": [
+        "Addition Error",
+        "Omission Error",
+        "Sequence Error",
+        "Transcription Error"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 243,
+      "stem": "다음 내용이 설명하는 것은? 개인과 기업, 국가적으로 큰 위협이 되고 있는 주요 사이버 범죄 중 하나로, Snake, Darkside 등 시스 템을 잠그거나 데이터를 암호화해 사용할 수 없도록 하고 이를 인질로 금전을 요구하는 데 사용되는 악성 프로그램",
+      "options": [
+        "Format String",
+        "Ransomware",
+        "Buffer overflow",
+        "Adware"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 244,
+      "stem": "소셜 네트워크에서 악의적인 사용자가 지인 또는 특정 유명인으로 가장하여 활동하는 공격 기법은?",
+      "options": [
+        "TearDrop",
+        "Phishing",
+        "Logic Bomb",
+        "Cyberbullying"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 245,
+      "stem": "비대칭 암호화 방식으로 소수를 활용한 암호화 알고리즘은?",
+      "options": [
+        "DES",
+        "AES",
+        "SMT",
+        "RSA"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 246,
+      "stem": "웹페이지에 악의적인 스크립트를 포함시켜 사용자 측에서 실행되게 유도함으로써, 정보유출 등의 공 격을 유발할 수 있는 취약점은?",
+      "options": [
+        "Ransomware",
+        "Pharming",
+        "Phishing",
+        "XSS"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 247,
+      "stem": "이용자가 인터넷과 같은 공중망에 사설망을 구축하여 마치 전용망을 사용하는 효과를 가지는 보안 솔루션은?",
+      "options": [
+        "ZIGBEE",
+        "NDD",
+        "IDS",
+        "VPN"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 248,
+      "stem": "시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은? • 자신의 신원(Identity)을 시스템에 증명하는 과정이다. • 아이디와 패스워드를 입력하는 과정이 가장 일반적인 예시라고 볼 수 있다.",
+      "options": [
+        "Aging",
+        "Accounting",
+        "Authorization",
+        "Authentication"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 249,
+      "stem": "다음 설명에 해당하는 암호화 알고리즘은? • DES의 보안 문제를 해결하기 위해 개발되었다. • NIST에서 개발한 개인키 암호화 알고리즘이다.",
+      "options": [
+        "ARIA",
+        "AES",
+        "DSA",
+        "SEED"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 250,
+      "stem": "시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는?",
+      "options": [
+        "기밀성",
+        "부인방지",
+        "가용성",
+        "무결성"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 251,
+      "stem": "다음 내용이 설명하는 로그 파일은? • 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보기록 • 시스템의 종료/시작 시간 기록",
+      "options": [
+        "tapping",
+        "xtslog",
+        "linuxer",
+        "wtmp"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 252,
+      "stem": "메모리상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+      "options": [
+        "모드체크",
+        "리커버리 통제",
+        "시스로그",
+        "스택가드"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 253,
+      "stem": "위조된 매체 접근 제어(MAC) 주소를 지속적으로 네트워크로 흘려보내, 스위치 MAC 주소 테이블의 저장 기능을 혼란시켜 더미 허브(Dummy Hub)처럼 작동하게 하는 공격은?",
+      "options": [
+        "Parsing",
+        "LAN Tapping",
+        "Switch Jamming",
+        "FTP Flooding"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 254,
+      "stem": "다음 설명에 해당하는 공격 기법은? 시스템 공격 기법 중 하나로 허용 범위 이상의 ICMP 패킷을 전송하여 대상 시스템의 네트워크를 마비 시킨다.",
+      "options": [
+        "Ping of Death",
+        "Session Hijacking",
+        "Piggyback Attack",
+        "XSS"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 255,
+      "stem": "시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공 격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+      "options": [
+        "Pass flag",
+        "Bucket",
+        "Opcode",
+        "Salt"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 256,
+      "stem": "컴퓨터 사용자의 키보드 움직임을 탐지해 ID, 패스워드 등 개인의 중요한 정보를 몰래 빼가는 해킹 공격은?",
+      "options": [
+        "Key Logger Attack",
+        "Worm",
+        "Rollback",
+        "Zombie Worm"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 257,
+      "stem": "IP 또는 ICMP의 특성을 악용하여 특정 사이트에 집중적으로 데이터를 보내 네트워크 또는 시스템의 상태를 불능으로 만드는 공격 방법은?",
+      "options": [
+        "TearDrop",
+        "Smishing",
+        "Qshing",
+        "Smurfing"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 258,
+      "stem": "악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하거나 메일로 전파되며 스스로를 증식하는 것은?",
+      "options": [
+        "Worm",
+        "Rogue Ware",
+        "Adware",
+        "Reflection Attack"
+      ],
+      "explanation": "",
+      "answer": null
+    },
+    {
+      "qnum": 259,
+      "stem": "특정 사이트에 매우 많은 ICMP Echo를 보내면, 이에 대한 응답(Respond)을 하기 위해 시스템 자원 을 모두 사용해버려 시스템이 정상적으로 동작하지 못하도록 하는 공격 방법은?",
+      "options": [
+        "Role-Based Access Control",
+        "Ping Flood",
+        "Brute-Force",
+        "Trojan Horses"
+      ],
+      "explanation": "",
+      "answer": null
+    }
+  ]
+}

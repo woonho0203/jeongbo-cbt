@@ -1,0 +1,1374 @@
+{
+  "categoryId": "sequence",
+  "title": "종류·순서 114문제",
+  "questions": [
+    {
+      "qnum": 1,
+      "stem": "소프트웨어 공학의 기본 원칙이라고 볼 수 없는 것은?",
+      "options": [
+        "품질 높은 소프트웨어 상품 개발",
+        "지속적인 검증 시행",
+        "결과에 대한 명확한 기록 유지",
+        "최대한 많은 인력 투입"
+      ],
+      "explanation": "소프트웨어 공학의 기본 원칙 • 품질 높은 소프트웨어 상품 개발 • 지속적인 검증 시행 • 결과에 대한 명확한 기록 유지 • 효율적인 인력 투입",
+      "answer": null
+    },
+    {
+      "qnum": 2,
+      "stem": "시스템의 구성 요소로 볼 수 없는 것은?",
+      "options": [
+        "Process",
+        "Feedback",
+        "Maintenance",
+        "Control"
+      ],
+      "explanation": "시스템의 구성 요소 • 입력(Input) • 처리(Process) • 출력(Output) • 제어(Control) • 피드백(Feedback)",
+      "answer": null
+    },
+    {
+      "qnum": 3,
+      "stem": "요구사항 정의 및 분석·설계의 결과물을 표현하기 위한 모델링 과정에서 사용되는 다이어그램(Diagram) 이 아닌 것은?",
+      "options": [
+        "Data Flow Diagram",
+        "UML Diagram",
+        "E-R Diagram",
+        "AVL Diagram"
+      ],
+      "explanation": "요구사항 정의, 분석, 설계에 사용되는 다이어그램 • 자료 흐름도(DFD; Data Flow Diagram) • UML 다이어그램 • E-R(개체-관계) 다이어그램",
+      "answer": null
+    },
+    {
+      "qnum": 4,
+      "stem": "현행 시스템 분석에서 고려하지 않아도 되는 항목은?",
+      "options": [
+        "DBMS 분석",
+        "네트워크 분석",
+        "운영체제 분석",
+        "인적 자원 분석"
+      ],
+      "explanation": "현행 시스템 파악 절차 • 시스템 구성 파악 • 시스템 기능 파악 • 시스템 인터페이스 파악 • 아키텍처 구성 파악 • 소프트웨어(DBMS, 운영체제 등) 구성 파악 • 하드웨어 구성 파악 • 네트워크 구성 파악",
+      "answer": null
+    },
+    {
+      "qnum": 5,
+      "stem": "GoF(Gang of Four) 디자인 패턴을 생성, 구조, 행동 패턴의 세 그룹으로 분류할 때, 구조 패턴이 아닌 것은?",
+      "options": [
+        "Adapter 패턴",
+        "Bridge 패턴",
+        "Builder 패턴",
+        "Proxy 패턴"
+      ],
+      "explanation": "구조 패턴의 종류 • 어댑터(Adapter) • 브리지(Bridge) • 컴포지트(Composite) • 데코레이터(Decorator) • 퍼싸드(Facade) • 플라이웨이트(Flyweight) • 프록시(Proxy)",
+      "answer": null
+    },
+    {
+      "qnum": 6,
+      "stem": "객체 지향 소프트웨어 설계 시 디자인 패턴을 구성하는 요소로서 가장 거리가 먼 것은?",
+      "options": [
+        "개발자 이름",
+        "문제 및 배경",
+        "사례",
+        "샘플 코드"
+      ],
+      "explanation": "디자인 패턴의 구성 요소 • 문제 및 배경 • 실제 적용된 사례 • 재사용이 가능한 샘플 코드",
+      "answer": null
+    },
+    {
+      "qnum": 7,
+      "stem": "소프트웨어 설계에서 사용되는 대표적인 추상화(Abstraction) 기법이 아닌 것은?",
+      "options": [
+        "자료 추상화",
+        "제어 추상화",
+        "과정 추상화",
+        "강도 추상화"
+      ],
+      "explanation": "추상화 유형 • 과정 추상화 • 데이터(자료) 추상화 • 제어 추상화",
+      "answer": null
+    },
+    {
+      "qnum": 8,
+      "stem": "UML에서 시퀀스 다이어그램의 구성 항목에 해당하지 않는 것은?",
+      "options": [
+        "생명선",
+        "실행",
+        "확장",
+        "메시지"
+      ],
+      "explanation": "순차 다이어그램의 구성 요소 • 액터(Actor) • 객체(Object) • 생명선(Lifeline) • 실행 상자(Active Box) • 메시지(Message)",
+      "answer": null
+    },
+    {
+      "qnum": 9,
+      "stem": "디자인 패턴 중에서 행위적 패턴에 속하지 않는 것은?",
+      "options": [
+        "커맨드(Command) 패턴",
+        "옵저버(Observer) 패턴",
+        "프로토타입(Prototype) 패턴",
+        "상태(State) 패턴"
+      ],
+      "explanation": "행위 패턴의 종류 • 책임 연쇄(Chain of Responsibility) • 커맨드(Command) • 인터프리터(Interpreter) • 반복자(Iterator) • 중재자(Mediator) • 메멘토(Memento) • 옵서버(Observer) • 상태(State) • 전략(Strategy) • 템플릿 메소드(Template Method) • 방문자(Visitor)",
+      "answer": null
+    },
+    {
+      "qnum": 10,
+      "stem": "UML 다이어그램이 아닌 것은?",
+      "options": [
+        "액티비티 다이어그램(Activity Diagram)",
+        "절차 다이어그램(Procedural Diagram)",
+        "클래스 다이어그램(Class Diagram)",
+        "시퀀스 다이어그램(Sequence Diagram)"
+      ],
+      "explanation": "UML 다이어그램의 종류 • 구조적(Structural) 다이어그램 – 정적 모델링 - 클래스 다이어그램(Class Diagram) - 객체 다이어그램(Object Diagram) - 컴포넌트 다이어그램(Component Diagram) - 배치 다이어그램(Deployment Diagram) - 복합체 구조 다이어그램(Composite Structure Diagram) - 패키지 다이어그램(Package Diagram) • 행위(Behavioral) 다이어그램 – 동적 모델링 - 유스케이스 다이어그램(Use Case Diagram) - 순차 다이어그램(Sequence Diagram) - 커뮤니케이션 다이어그램(Communication Diagram) - 상태 다이어그램(State Diagram) - 활동 다이어그램(Activity Diagram) - 상호작용 개요 다이어그램(Interaction Overview Diagram) - 타이밍 다이어그램(Timing Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 11,
+      "stem": "소프트웨어 품질 측정을 위해 개발자 관점에서 고려해야 할 항목으로 거리가 먼 것은?",
+      "options": [
+        "정확성",
+        "무결성",
+        "사용성",
+        "간결성"
+      ],
+      "explanation": "소프트웨어의 품질 특성 • 기능성 : 적합성, 정확성, 상호 운용성, 보안성, 호환성 • 신뢰성 : 성숙성, 고장 허용성, 회복성 • 사용성 : 이해성, 학습성, 운용성, 친밀성 • 효율성 : 시간 효율성, 자원 효율성 • 유지 보수성 : 분석성, 변경성, 안정성, 시험성 • 이식성 : 적용성, 설치성, 대체성, 공존성 • 호환성 : 공존성, 상호 운영성 • 보안성 : 기밀성, 무결성, 부인방지, 책임추적성, 인증성",
+      "answer": null
+    },
+    {
+      "qnum": 12,
+      "stem": "UML 다이어그램 중 정적 다이어그램이 아닌 것은?",
+      "options": [
+        "컴포넌트 다이어그램",
+        "배치 다이어그램",
+        "순차 다이어그램",
+        "패키지 다이어그램"
+      ],
+      "explanation": "구조적(Structural) 다이어그램 – 정적 모델링 • 클래스 다이어그램(Class Diagram) • 객체 다이어그램(Object Diagram) • 컴포넌트 다이어그램(Component Diagram) • 배치 다이어그램(Deployment Diagram) • 복합체 구조 다이어그램(Composite Structure Diagram) • 패키지 다이어그램(Package Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 13,
+      "stem": "UML 모델에서 사용하는 Structural Diagram에 속하지 않은 것은?",
+      "options": [
+        "Class Diagram",
+        "Object Diagram",
+        "Component Diagram",
+        "Activity Diagram"
+      ],
+      "explanation": "UML 다이어그램의 종류 구조적(Structural) 다이어그램 – 정적 모델링 • 클래스 다이어그램(Class Diagram) • 객체 다이어그램(Object Diagram) • 컴포넌트 다이어그램(Component Diagram) • 배치 다이어그램(Deployment Diagram) • 복합체 구조 다이어그램(Composite Structure Diagram) • 패키지 다이어그램(Package Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 14,
+      "stem": "UML에서 활용되는 다이어그램 중, 시스템의 동작을 표현하는 행위(Behavioral) 다이어그램에 해당하 지 않는 것은?",
+      "options": [
+        "유스케이스 다이어그램(Use Case Diagram)",
+        "시퀀스 다이어그램(Sequence Diagram)",
+        "활동 다이어그램(Activity Diagram)",
+        "배치 다이어그램(Deployment Diagram)"
+      ],
+      "explanation": "행위(Behavioral) 다이어그램 – 동적 모델링 • 유스케이스 다이어그램(Use Case Diagram) • 순차 다이어그램(Sequence Diagram) • 커뮤니케이션 다이어그램(Communication Diagram) • 상태 다이어그램(State Diagram) • 활동 다이어그램(Activity Diagram) • 상호작용 개요 다이어그램(Interaction Overview Diagram) • 타이밍 다이어그램(Timing Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 15,
+      "stem": "ISO/IEC 9126의 소프트웨어 품질 특성 중 기능성(Functionality)의 하위 특성으로 옳지 않은 것은?",
+      "options": [
+        "학습성",
+        "적합성",
+        "정확성",
+        "보안성"
+      ],
+      "explanation": "ISO/IEC 9126의 소프트웨어 품질 - 기능성 적합성, 정확성, 상호 운용성, 보안성, 호환성",
+      "answer": null
+    },
+    {
+      "qnum": 16,
+      "stem": "애자일 방법론에 해당하지 않는 것은?",
+      "options": [
+        "기능 중심 개발",
+        "스크럼",
+        "익스트림 프로그래밍",
+        "모듈 중심 개발"
+      ],
+      "explanation": "애자일 모형을 기반으로 하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등",
+      "answer": null
+    },
+    {
+      "qnum": 17,
+      "stem": "다음 중 상위 CASE 도구가 지원하는 주요 기능으로 볼 수 없는 것은?",
+      "options": [
+        "모델들 사이의 모순 검사 기능",
+        "전체 소스 코드 생성 기능",
+        "모델의 오류 검증 기능",
+        "자료 흐름도 작성 기능"
+      ],
+      "explanation": "상위 CASE 도구가 지원하는 주요 기능 • 모델들 사이의 모순 검사 기능 • 모델의 오류 검증 기능 • 자료 흐름도 작성 기능",
+      "answer": null
+    },
+    {
+      "qnum": 18,
+      "stem": "소프트웨어 아키텍처 설계에서 시스템 품질 속성이 아닌 것은?",
+      "options": [
+        "가용성(Availability)",
+        "독립성(Isolation)",
+        "변경 용이성(Modifiability)",
+        "사용성(Usability)"
+      ],
+      "explanation": "소프트웨어 아키텍처의 시스템 품질 속성 • 시스템 측면 : 성능, 보안, 가용성, 기능성, 사용성, 변경 용이성, 확장성 등 • 비즈니스 측면 : 시장 적시성, 비용과 혜택, 예상 시스템 수명 등 • 아키텍처 측면 : 개념적 무결성, 정확성, 완결성, 구축 가능성 등",
+      "answer": null
+    },
+    {
+      "qnum": 19,
+      "stem": "GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+      "options": [
+        "생성 패턴",
+        "구조 패턴",
+        "행위 패턴",
+        "추상 패턴"
+      ],
+      "explanation": "디자인 패턴 분류 • 생성 패턴(Creational Pattern) • 구조 패턴(Structural Pattern) • 행위 패턴(Behavioral Pattern)",
+      "answer": null
+    },
+    {
+      "qnum": 20,
+      "stem": "CASE가 갖고 있는 주요 기능이 아닌 것은?",
+      "options": [
+        "그래픽 지원",
+        "소프트웨어 생명 주기 전 단계의 연결",
+        "언어 번역",
+        "다양한 소프트웨어 개발 모형 지원"
+      ],
+      "explanation": "CASE의 주요 기능 • S/W 라이프 사이클 전 단계의 연결 • 모델들의 모순 검사 • 모델들의 오류 검증 • 자료 흐름도(DFD) 등의 다이어그램(Diagram) 작성 • 다양한 소프트웨어 개발 모형 지원 • 시스템 문서화 및 명세화를 위한 그래픽 지원",
+      "answer": null
+    },
+    {
+      "qnum": 21,
+      "stem": "XP(eXtreme Programming)의 기본 원리로 볼 수 없는 것은?",
+      "options": [
+        "Linear Sequential Method",
+        "Pair Programming",
+        "Collective Ownership",
+        "Continuous Integration"
+      ],
+      "explanation": "XP의 주요 실천 방법(Practice) • Pair Programming(짝 프로그래밍) • Collective Ownership(공동 코드 소유) • Test-Driven Development(테스트 주도 개발) • Whole Team(전체 팀) • Continuous Integration(계속적인 통합) • Design Improvement(디자인 개선) • Refactoring(리팩토링) • Small Releases(소규모 릴리즈)",
+      "answer": null
+    },
+    {
+      "qnum": 22,
+      "stem": "다음 중 요구사항 모델링에 활용되지 않는 것은?",
+      "options": [
+        "애자일(Agile) 방법",
+        "유스케이스 다이어그램(Use Case Diagram)",
+        "시퀀스 다이어그램(Sequence Diagram)",
+        "단계 다이어그램(Phase Diagram)"
+      ],
+      "explanation": "요구사항 모델링 활용 • 애자일(Agile) 방법 • 유스케이스 다이어그램(Use Case Diagram) • 순차 다이어그램(Sequence Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 23,
+      "stem": "유스케이스(Use Case)의 구성 요소 간의 관계에 포함되지 않는 것은?",
+      "options": [
+        "연관",
+        "확장",
+        "구체화",
+        "일반화"
+      ],
+      "explanation": "유스케이스 다이어그램 구성 요소 간의 관계 연관 관계, 포함 관계, 확장 관계, 일반화 관계",
+      "answer": null
+    },
+    {
+      "qnum": 24,
+      "stem": "코드의 기본 기능으로 거리가 먼 것은?",
+      "options": [
+        "복잡성",
+        "표준화",
+        "분류",
+        "식별"
+      ],
+      "explanation": "코드의 기능 식별 기능, 분류 기능, 배열 기능, 표준화 기능, 간소화 기능",
+      "answer": null
+    },
+    {
+      "qnum": 25,
+      "stem": "GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은 것은?",
+      "options": [
+        "Singleton Pattern",
+        "Adapter Pattern",
+        "Decorator Pattern",
+        "State Pattern"
+      ],
+      "explanation": "생성 패턴의 종류 • 추상 팩토리(Abstract Factory) • 빌더(Builder) • 팩토리 메소드(Factory Method) • 프로토타입(Prototype) • 싱글톤(Singleton)",
+      "answer": null
+    },
+    {
+      "qnum": 26,
+      "stem": "다음 중 SOLID 원칙이라고 불리는 객체지향 설계 원칙에 속하지 않는 것은?",
+      "options": [
+        "ISP(Interface Segregation Principle)",
+        "DIP(Dependency Inversion Principle)",
+        "LSP(Liskov Substitution Principle)",
+        "SSO(Single Sign On)"
+      ],
+      "explanation": "객체지향 설계 원칙 • 단일 책임 원칙(SRP; Single Responsibility Principle) • 개방-폐쇄 원칙(OCP; Open-Closed Principle) • 리스코프 치환 원칙(LSP; Liskov Substitution Principle) • 인터페이스 분리 원칙(ISP; Interface Segregation Principle) • 의존 역전 원칙(DIP; Dependency Inversion Principle)",
+      "answer": null
+    },
+    {
+      "qnum": 27,
+      "stem": "미들웨어 솔루션의 유형에 포함되지 않는 것은?",
+      "options": [
+        "WAS",
+        "Web Server",
+        "RPC",
+        "ORB"
+      ],
+      "explanation": "미들웨어의 종류 DB, RPC, MOM, TP-Monitor, ORB, WAS 등",
+      "answer": null
+    },
+    {
+      "qnum": 28,
+      "stem": "럼바우(Rumbaugh)의 객체 지향 분석에서 사용하는 분석 활동으로 옳은 것은?",
+      "options": [
+        "객체 모델링, 동적 모델링, 정적 모델링",
+        "객체 모델링, 동적 모델링, 기능 모델링",
+        "동적 모델링, 기능 모델링, 정적 모델링",
+        "정적 모델링, 객체 모델링, 기능 모델링"
+      ],
+      "explanation": "럼바우의 분석 기법 • 객체 모델링(Object Modeling) • 동적 모델링(Dynamic Modeling) • 기능 모델링(Functional Modeling)",
+      "answer": null
+    },
+    {
+      "qnum": 29,
+      "stem": "모바일 기기에서 사용하는 NUI 인터페이스에 속하지 않는 것은 무엇인가?",
+      "options": [
+        "Pinch",
+        "Press",
+        "Flow",
+        "Flick"
+      ],
+      "explanation": "주요 모바일 제스처 Tap, Double Tap, Drag, Pan, Press, Flick, Pinch 등",
+      "answer": null
+    },
+    {
+      "qnum": 30,
+      "stem": "DBMS 분석 시 고려사항으로 거리가 먼 것은?",
+      "options": [
+        "가용성",
+        "성능",
+        "네트워크 구성도",
+        "상호 호환성"
+      ],
+      "explanation": "DBMS 분석 시 고려사항 가용성, 성능, 기술 지원, 상호 호환성, 구축 비용",
+      "answer": null
+    },
+    {
+      "qnum": 31,
+      "stem": "UML의 기본 구성 요소가 아닌 것은?",
+      "options": [
+        "Things",
+        "Terminal",
+        "Relationship",
+        "Diagram"
+      ],
+      "explanation": "UML의 구성 요소 • 사물(Things) • 관계(Relationships) • 다이어그램(Diagram)",
+      "answer": null
+    },
+    {
+      "qnum": 32,
+      "stem": "요구사항 분석 시에 필요한 기술로 가장 거리가 먼 것은?",
+      "options": [
+        "청취와 인터뷰 질문 기술",
+        "분석과 중재 기술",
+        "설계 및 코딩 기술",
+        "관찰 및 모델 작성 기술"
+      ],
+      "explanation": "요구사항 분석 단계에서 사용되는 기술 • 청취와 인터뷰 질문 기술 • 분석과 중재 기술 • 관찰 및 모델 작성 기술",
+      "answer": null
+    },
+    {
+      "qnum": 33,
+      "stem": "소프트웨어의 상위 설계에 속하지 않는 것은?",
+      "options": [
+        "아키텍처 설계",
+        "모듈 설계",
+        "인터페이스 정의",
+        "사용자 인터페이스 설계"
+      ],
+      "explanation": "소프트웨어의 설계 • 상위 설계(아키텍처 설계) : 구조 설계, DB 설계, 인터페이스 설계 • 하위 설계(모듈 설계) : 컴포넌트 설계, 자료 구조 설계, 알고리즘 설계",
+      "answer": null
+    },
+    {
+      "qnum": 34,
+      "stem": "CASE(Computer-Aided Software Engineering)의 원천 기술이 아닌 것은?",
+      "options": [
+        "구조적 기법",
+        "프로토타이핑 기술",
+        "정보 저장소 기술",
+        "일괄 처리 기술"
+      ],
+      "explanation": "CASE의 원천 기술 • 구조적 기법 • 프로토타이핑 기술 • 자동 프로그래밍 기술 • 정보 저장소 기술 • 분산 처리 기술",
+      "answer": null
+    },
+    {
+      "qnum": 35,
+      "stem": "소프트웨어의 사용자 인터페이스 개발 시스템(User Interface Development System)이 가져야 할 기 능이 아닌 것은?",
+      "options": [
+        "사용자 입력의 검증",
+        "에러 처리와 에러 메시지 처리",
+        "도움과 프롬프트(Prompt) 제공",
+        "소스 코드 분석 및 오류 복구"
+      ],
+      "explanation": "사용자 인터페이스 개발 시스템의 기능 입력 검증, 에러 처리, 도움 제공",
+      "answer": null
+    },
+    {
+      "qnum": 36,
+      "stem": "익스트림 프로그래밍(eXtreme Programming)의 5가지 가치에 속하지 않는 것은?",
+      "options": [
+        "의사소통",
+        "단순성",
+        "피드백",
+        "고객 배제"
+      ],
+      "explanation": "XP(eXtreme Programming)의 5가지 핵심 가치 • 의사소통(Communication) • 단순성(Simplicity) • 용기(Courage) • 존중(Respect) • 피드백(Feedback)",
+      "answer": null
+    },
+    {
+      "qnum": 37,
+      "stem": "자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+      "options": [
+        "Process : 원",
+        "Data Flow : 화살표",
+        "Data Store : 삼각형",
+        "Terminator : 사각형"
+      ],
+      "explanation": "자료 흐름도(DFD) 표기법 • 프로세스(Process) : 원 • 자료 흐름(Data Flow) : 화살표 • 자료 저장소(Data Store) : 평행선 • 단말(Terminator) : 사각형",
+      "answer": null
+    },
+    {
+      "qnum": 38,
+      "stem": "소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은?",
+      "options": [
+        "응답시간(Response Time)",
+        "가용성(Availability)",
+        "사용률(Utilization)",
+        "서버 튜닝(Server Tuning)"
+      ],
+      "explanation": "플랫폼의 성능 특성 분석에 사용되는 측정 항목 • 응답시간(Response Time) • 가용성(Availability) • 사용률(Utilization)",
+      "answer": null
+    },
+    {
+      "qnum": 39,
+      "stem": "소프트웨어를 재사용함으로써 얻을 수 있는 이점으로 가장 거리가 먼 것은?",
+      "options": [
+        "생산성 증가",
+        "프로젝트 문서 공유",
+        "소프트웨어 품질 향상",
+        "새로운 개발 방법론 도입 용이"
+      ],
+      "explanation": "소프트웨어 재사용의 장점 • 개발 시간과 비용 단축 • 소프트웨어 품질 향상 • 소프트웨어 개발의 생산성 향상 • 프로젝트 실패의 위험 감소 • 시스템 구축 방법에 대한 지식 공유 • 시스템 명세, 설계, 코드 등 문서 공유",
+      "answer": null
+    },
+    {
+      "qnum": 40,
+      "stem": "소프트웨어 설치 매뉴얼에 포함될 항목이 아닌 것은?",
+      "options": [
+        "제품 소프트웨어 개요",
+        "설치 관련 파일",
+        "프로그램 삭제",
+        "소프트웨어 개발 기간"
+      ],
+      "explanation": "소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보",
+      "answer": null
+    },
+    {
+      "qnum": 41,
+      "stem": "다음 중 블랙박스 검사 기법은?",
+      "options": [
+        "경계값 분석",
+        "조건 검사",
+        "기초 경로 검사",
+        "루프 검사"
+      ],
+      "explanation": "• 화이트박스 테스트 : 기초 경로 검사, 제어 구조 검사(조건 검사, 루프 검사, 데이터 흐름 검사) 등 • 블랙박스 테스트 : 동치 분할 검사, 경계값 분석, 원인-효과 그래프 검사, 오류 예측 검사, 비교 검사 등",
+      "answer": null
+    },
+    {
+      "qnum": 42,
+      "stem": "화이트박스 검사 기법에 해당하는 것으로만 짝지어진 것은? ㉠ 데이터 흐름 검사 ㉡ 루프 검사 ㉢ 동등 분할 검사 ㉣ 경계값 분석 ㉤ 원인 결과 그래프 기법 ㉥ 오류 예측 기법",
+      "options": [
+        "㉠, ㉡",
+        "㉠, ㉣",
+        "㉡, ㉤",
+        "㉢, ㉥"
+      ],
+      "explanation": "• 화이트박스 테스트 : 기초 경로 검사, 제어 구조 검사(조건 검사, 루프 검사, 데이터 흐름 검사) 등 • 블랙박스 테스트 : 동치 분할 검사, 경계값 분석, 원인-효과 그래프 검사, 오류 예측 검사, 비교 검사 등",
+      "answer": null
+    },
+    {
+      "qnum": 43,
+      "stem": "형상 관리 도구의 주요 기능으로 거리가 먼 것은?",
+      "options": [
+        "정규화(Normalization)",
+        "체크인(Check-in)",
+        "체크아웃(Check-out)",
+        "커밋(Commit)"
+      ],
+      "explanation": "소프트웨어의 버전 등록 관련 주요 기능 • 저장소(Repository) • 가져오기(Import) • 체크아웃(Check-Out) • 체크인(Check-In) • 커밋(Commit) • 동기화(Update)",
+      "answer": null
+    },
+    {
+      "qnum": 44,
+      "stem": "반정규화(Denormalization) 유형 중 중복 테이블을 추가하는 방법에 해당하지 않는 것은?",
+      "options": [
+        "빌드 테이블의 추가",
+        "집계 테이블의 추가",
+        "진행 테이블의 추가",
+        "특정 부분만을 포함하는 테이블 추가"
+      ],
+      "explanation": "중복 테이블 추가 방법 • 집계 테이블의 추가 • 진행 테이블의 추가 • 특정 부분만을 포함하는 테이블의 추가",
+      "answer": null
+    },
+    {
+      "qnum": 45,
+      "stem": "테스트 케이스 자동 생성 도구를 이용하여 테스트 데이터를 찾아내는 방법이 아닌 것은?",
+      "options": [
+        "스텁(Stub)과 드라이버(Driver)",
+        "입력 도메인 분석",
+        "랜덤(Random) 테스트",
+        "자료 흐름도"
+      ],
+      "explanation": "테스트 케이스 생성 도구 • 자료 흐름도 • 기능 테스트 • 입력 도메인 분석 • 랜덤 테스트",
+      "answer": null
+    },
+    {
+      "qnum": 46,
+      "stem": "E-R 다이어그램의 표기법으로 옳지 않은 것은?",
+      "options": [
+        "개체 타입 - 사각형",
+        "속성 - 타원",
+        "관계 집합 - 삼각형",
+        "개체 타입과 속성을 연결 - 선"
+      ],
+      "explanation": "E-R 다이어그램 기호 기호 이름 의미 사각형 개체(Entity) 타입 마름모 관계(Relationship) 타입 타원 속성(Attribute) 이중 타원 다중값 속성(복합 속성) 밑줄 타원 기본키 속성 복수 타원 복합 속성 선, 링크 개체 타입과 속성을 연결",
+      "answer": null
+    },
+    {
+      "qnum": 47,
+      "stem": "스택(STACK)의 응용 분야로 거리가 먼 것은?",
+      "options": [
+        "인터럽트의 처리",
+        "수식의 계산",
+        "서브루틴의 복귀 번지 저장",
+        "운영체제의 작업 스케줄링"
+      ],
+      "explanation": "스택의 응용 분야 • 함수 호출의 순서 제어 • 인터럽트의 처리 • 수식 계산 및 수식 표기법 • 컴파일러를 이용한 언어 번역 • 부 프로그램 호출 시 복귀주소 저장 • 서브루틴 호출 및 복귀 주소 저장",
+      "answer": null
+    },
+    {
+      "qnum": 48,
+      "stem": "다음 중 스택을 이용한 연산과 거리가 먼 것은?",
+      "options": [
+        "선택 정렬",
+        "재귀 호출",
+        "후위 표현(Post-Fix Expression)의 연산",
+        "깊이 우선 탐색"
+      ],
+      "explanation": "스택(Stack)을 이용한 연산은 ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다.",
+      "answer": null
+    },
+    {
+      "qnum": 49,
+      "stem": "다음 중 선형 구조로만 묶인 것은?",
+      "options": [
+        "스택, 트리",
+        "큐, 데크",
+        "큐, 그래프",
+        "리스트, 그래프"
+      ],
+      "explanation": "자료 구조 분류 • 선형 구조 : 배열, 선형 리스트, 스택, 큐, 데크 • 비선형 구조 : 트리, 그래프",
+      "answer": null
+    },
+    {
+      "qnum": 50,
+      "stem": "소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+      "options": [
+        "pmd",
+        "checkstyle",
+        "valMeter",
+        "cppcheck"
+      ],
+      "explanation": "소스 코드 품질 분석 도구 • 정적 분석 도구 : pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등 • 동적 분석 도구 : Avalanche, Valgrind 등",
+      "answer": null
+    },
+    {
+      "qnum": 51,
+      "stem": "인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 것으로 거리가 먼 것은?",
+      "options": [
+        "IPSec",
+        "SSL",
+        "SMTP",
+        "S-HTTP"
+      ],
+      "explanation": "인터페이스 보안 - 네트워크 영역 IPSec, SSL, S-HTTP 등",
+      "answer": null
+    },
+    {
+      "qnum": 52,
+      "stem": "다음 중 단위 테스트 도구로 사용될 수 없는 것은?",
+      "options": [
+        "CppUnit",
+        "JUnit",
+        "HttpUnit",
+        "IgpUnit"
+      ],
+      "explanation": "xUnit의 종류 JUnit, CppUnit, NUnit, HttpUnit 등",
+      "answer": null
+    },
+    {
+      "qnum": 53,
+      "stem": "정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장 거리가 먼 것은?",
+      "options": [
+        "개발 정보 시스템의 특성",
+        "사용자의 요구사항",
+        "컴파일러의 가용성",
+        "컴파일러의 독창성"
+      ],
+      "explanation": "프로그래밍 언어의 선정 기준 • 친밀감 • 언어의 능력 • 처리의 효율성 • 프로그램 구조 • 프로그램의 길이 • 이식성 • 과거의 개발 실적 • 알고리즘과 계산상의 난이도 • 자료 구조의 난이도 • 성능 고려 사항들 • 대상 업무의 성격 • 소프트웨어의 수행 환경 • 개발 담당자의 경험과 지식 • 사용자의 요구사항 • 컴파일러의 이용 가능성",
+      "answer": null
+    },
+    {
+      "qnum": 54,
+      "stem": "분산 데이터베이스의 투명성(Transparency)에 해당하지 않는 것은?",
+      "options": [
+        "Location Transparency",
+        "Replication Transparency",
+        "Failure Transparency",
+        "Media Access Transparency"
+      ],
+      "explanation": "분산 데이터베이스의 목표 • 위치 투명성(Location Transparency) • 중복 투명성(Replication Transparency) • 병행 투명성(Concurrency Transparency) • 장애 투명성(Failure Transparency)",
+      "answer": null
+    },
+    {
+      "qnum": 55,
+      "stem": "소프트웨어 형상 관리에서 관리 항목에 포함되지 않는 것은?",
+      "options": [
+        "프로젝트 요구 분석서",
+        "소스 코드",
+        "운영 및 설치 지침서",
+        "프로젝트 개발 비용"
+      ],
+      "explanation": "소프트웨어 형상 관리의 관리 항목 소스 코드, 분석서, 지침서, 설계서, 프로젝트 계획, 프로그램, 테스트 케이스 등",
+      "answer": null
+    },
+    {
+      "qnum": 56,
+      "stem": "병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은?",
+      "options": [
+        "라운드-로빈",
+        "범위 분할",
+        "예측 분할",
+        "해시 분할"
+      ],
+      "explanation": "파티션의 종류 • 범위 분할(Range Partitioning) • 해시 분할(Hash Partitioning) • 조합 분할(Composite Partitioning) • 목록 분할(List Partitioning) • 라운드 로빈 분할(Round Robin Partitioning)",
+      "answer": null
+    },
+    {
+      "qnum": 57,
+      "stem": "알고리즘 설계 기법으로 거리가 먼 것은?",
+      "options": [
+        "Divide and Conquer",
+        "Greedy",
+        "Static Block",
+        "Backtracking"
+      ],
+      "explanation": "알고리즘 설계 기법 • 분할 정복/분할 통치(Divide and Conquer) • 동적 계획법(Dynamic Programming) • 탐욕 알고리즘(Greedy Algorithm) • 백트래킹(Backtracking)",
+      "answer": null
+    },
+    {
+      "qnum": 58,
+      "stem": "EAI(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+      "options": [
+        "Point-to-Point",
+        "Hub & Spoke",
+        "Message Bus",
+        "Tree"
+      ],
+      "explanation": "EAI 구축 유형 Point-to-Point, Hub & Spoke, Message Bus(ESB), Hybrid",
+      "answer": null
+    },
+    {
+      "qnum": 59,
+      "stem": "인터페이스 구현 검증 도구가 아닌 것은?",
+      "options": [
+        "ESB",
+        "xUnit",
+        "STAF",
+        "NTAF"
+      ],
+      "explanation": "인터페이스 구현 검증 도구 xUnit, STAF, FitNesse, NTAF, Selenium, watir",
+      "answer": null
+    },
+    {
+      "qnum": 60,
+      "stem": "데이터 속성 간의 종속성에 대한 엄밀한 고려 없이 잘못 설계된 데이터베이스에서는 데이터 처리 연 산 수행 시 각종 이상 현상이 발생할 수 있는데, 이러한 이상 현상이 아닌 것은?",
+      "options": [
+        "검색 이상",
+        "삽입 이상",
+        "삭제 이상",
+        "갱신 이상"
+      ],
+      "explanation": "이상(Anomaly)의 종류 • 삽입 이상(Insertion Anomaly) • 삭제 이상(Deletion Anomaly) • 갱신 이상(Update Anomaly)",
+      "answer": null
+    },
+    {
+      "qnum": 61,
+      "stem": "다음 중 단위 테스트를 통해 발견할 수 있는 오류가 아닌 것은?",
+      "options": [
+        "알고리즘 오류에 따른 원치 않는 결과",
+        "탈출구가 없는 반복문의 사용",
+        "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과",
+        "틀린 계산 수식에 의한 잘못된 결과"
+      ],
+      "explanation": "단위 테스트로 발견 가능한 오류 • 알고리즘 오류에 따른 원치 않는 결과 • 탈출구가 없는 반복문의 사용 • 틀린 계산 수식에 의한 잘못된 결과",
+      "answer": null
+    },
+    {
+      "qnum": 62,
+      "stem": "물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은?",
+      "options": [
+        "범위 분할(Range Partitioning)",
+        "해시 분할(Hash Partitioning)",
+        "조합 분할(Composite Partitioning)",
+        "유닛 분할(Unit Partitioning)"
+      ],
+      "explanation": "파티션 종류 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할",
+      "answer": null
+    },
+    {
+      "qnum": 63,
+      "stem": "해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+      "options": [
+        "제곱법(Mid-Square)",
+        "숫자 분석법(Digit Analysis)",
+        "개방 주소법(Open Addressing)",
+        "제산법(Division)"
+      ],
+      "explanation": "해싱 함수의 종류 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법",
+      "answer": null
+    },
+    {
+      "qnum": 64,
+      "stem": "다음 중 클린 코드 작성 원칙으로 거리가 먼 것은?",
+      "options": [
+        "누구든지 쉽게 이해하는 코드 작성",
+        "중복이 최대화된 코드 작성",
+        "다른 모듈에 미치는 영향 최소화",
+        "단순, 명료한 코드 작성"
+      ],
+      "explanation": "클린 코드 작성 원칙 가독성, 단순성, 의존성 배제, 중복성 최소화, 추상화",
+      "answer": null
+    },
+    {
+      "qnum": 65,
+      "stem": "관계대수의 순수 관계 연산자가 아닌 것은?",
+      "options": [
+        "Select",
+        "Cartesian Product",
+        "Division",
+        "Project"
+      ],
+      "explanation": "순수 관계 연산자의 종류 • Select(σ) • Project(π) • Join(▷◁) • Division(÷)",
+      "answer": null
+    },
+    {
+      "qnum": 66,
+      "stem": "디지털 저작권 관리(DRM)의 기술 요소가 아닌 것은?",
+      "options": [
+        "크랙 방지 기술",
+        "정책 관리 기술",
+        "암호화 기술",
+        "방화벽 기술"
+      ],
+      "explanation": "디지털 저작권 관리의 기술 요소 암호화, 키 관리, 암호화 파일 생성, 식별 기술, 저작권 표현, 정책 관리, 크랙 방지, 인증",
+      "answer": null
+    },
+    {
+      "qnum": 67,
+      "stem": "데이터 모델에 표시해야 할 요소로 거리가 먼 것은?",
+      "options": [
+        "논리적 데이터 구조",
+        "출력 구조",
+        "연산",
+        "제약 조건"
+      ],
+      "explanation": "데이터 모델에 표시할 요소 • 구조(Structure) • 연산(Operation) • 제약 조건(Constraint)",
+      "answer": null
+    },
+    {
+      "qnum": 68,
+      "stem": "소프트웨어 재공학이 소프트웨어의 재개발에 비해 갖는 장점으로 거리가 먼 것은?",
+      "options": [
+        "위험 부담 감소",
+        "비용 절감",
+        "시스템 명세의 오류 억제",
+        "개발 시간의 증가"
+      ],
+      "explanation": "소프트웨어 재공학의 장점 소프트웨어 수명 연장, 기술 향상, 개발 기간 단축, 오류 감소, 비용 절감, 위험 부담 감소",
+      "answer": null
+    },
+    {
+      "qnum": 69,
+      "stem": "테스트 케이스에 일반적으로 포함되는 항목이 아닌 것은?",
+      "options": [
+        "테스트 조건",
+        "테스트 데이터",
+        "테스트 비용",
+        "예상 결과"
+      ],
+      "explanation": "테스트 케이스의 기본 항목 입력 데이터, 테스트 조건, 예상 결과 등",
+      "answer": null
+    },
+    {
+      "qnum": 70,
+      "stem": "교착상태가 발생할 수 있는 조건이 아닌 것은?",
+      "options": [
+        "Mutual exclusion",
+        "Hold and wait",
+        "Non-preemption",
+        "Linear wait"
+      ],
+      "explanation": "교착상태 발생의 필요 충분 조건 • 상호 배제(Mutual Exclusion) • 점유와 대기(Hold and Wait) • 비선점(Non-preemption) • 환형 대기(Circular Wait)",
+      "answer": null
+    },
+    {
+      "qnum": 71,
+      "stem": "공통 모듈의 재사용 범위에 따른 분류가 아닌 것은?",
+      "options": [
+        "컴포넌트 재사용",
+        "더미코드 재사용",
+        "함수와 객체 재사용",
+        "애플리케이션 재사용"
+      ],
+      "explanation": "재사용 규모에 따른 분류 • 함수와 객체 • 컴포넌트 • 애플리케이션",
+      "answer": null
+    },
+    {
+      "qnum": 72,
+      "stem": "C언어에서 비트 논리 연산자에 해당하지 않는 것은?",
+      "options": [
+        "^",
+        "?",
+        "&",
+        "~"
+      ],
+      "explanation": "C언어의 비트 연산자 &, ^, |, ~, ≪, ≫",
+      "answer": null
+    },
+    {
+      "qnum": 73,
+      "stem": "C언어에서 산술 연산자가 아닌 것은?",
+      "options": [
+        "%",
+        "*",
+        "/",
+        "="
+      ],
+      "explanation": "C언어의 산술 연산자 +, -, *, /, %",
+      "answer": null
+    },
+    {
+      "qnum": 74,
+      "stem": "다음 중 bash 쉘 스크립트에서 사용할 수 있는 제어문이 아닌 것은?",
+      "options": [
+        "if",
+        "for",
+        "repeat_do",
+        "while"
+      ],
+      "explanation": "쉘 스크립트에서 사용되는 제어문 • 반복문 : for, while, until 등 • 조건문 : if, case 등",
+      "answer": null
+    },
+    {
+      "qnum": 75,
+      "stem": "Java에서 사용되는 출력 함수가 아닌 것은?",
+      "options": [
+        "System.out.print( )",
+        "System.out.println( )",
+        "System.out.printing( )",
+        "System.out.printf( )"
+      ],
+      "explanation": "Java의 대표적인 출력 메소드 print( ), println( ), printf( )",
+      "answer": null
+    },
+    {
+      "qnum": 76,
+      "stem": "자바에서 사용하는 접근 제어자의 종류가 아닌 것은?",
+      "options": [
+        "internal",
+        "private",
+        "default",
+        "public"
+      ],
+      "explanation": "JAVA의 접근 제한자 Public, Default, Private, Protected",
+      "answer": null
+    },
+    {
+      "qnum": 77,
+      "stem": "PHP에서 사용 가능한 연산자가 아닌 것은?",
+      "options": [
+        "@",
+        "#",
+        "＜＞",
+        "==="
+      ],
+      "explanation": "PHP에서 사용 가능한 연산자 +, -, *, /, %, @, < >, =, ==, ===",
+      "answer": null
+    },
+    {
+      "qnum": 78,
+      "stem": "운영체제에서 커널의 기능이 아닌 것은?",
+      "options": [
+        "프로세스 생성, 종료",
+        "사용자 인터페이스",
+        "기억장치 할당, 회수",
+        "파일 시스템 관리"
+      ],
+      "explanation": "커널(Kernel)의 기능 • 프로세스(CPU 스케줄링) 관리 • 기억장치 관리 • 파일 관리 • 입·출력 관리 • 프로세스 간 통신 • 데이터 전송 및 변환",
+      "answer": null
+    },
+    {
+      "qnum": 79,
+      "stem": "운영체제를 기능에 따라 분류할 경우 제어 프로그램이 아닌 것은?",
+      "options": [
+        "데이터 관리 프로그램",
+        "서비스 프로그램",
+        "작업 제어 프로그램",
+        "감시 프로그램"
+      ],
+      "explanation": "운영체제의 구성 • 제어 프로그램 : 감시 프로그램, 작업 관리 프로그램, 데이터 관리 프로그램 • 처리 프로그램 : 언어 번역 프로그램, 서비스 프로그램",
+      "answer": null
+    },
+    {
+      "qnum": 80,
+      "stem": "UNIX SHELL 환경 변수를 출력하는 명령어가 아닌 것은?",
+      "options": [
+        "configenv",
+        "printenv",
+        "env",
+        "setenv"
+      ],
+      "explanation": "UNIX/LINUX에서 모든 환경 변수와 값을 표시하는 명령어 set, env, printenv, setenv",
+      "answer": null
+    },
+    {
+      "qnum": 81,
+      "stem": "스크립트 언어가 아닌 것은?",
+      "options": [
+        "PHP",
+        "Cobol",
+        "Basic",
+        "Python"
+      ],
+      "explanation": "스크립트 언어 • 서버용 : ASP, JSP, PHP, 파이썬(Python), 펄(Perl), 루비(Ruby) 등 • 클라이언트용 : 자바 스크립트(Java Script), VB 스크립트(Visual Basic Script) 등",
+      "answer": null
+    },
+    {
+      "qnum": 82,
+      "stem": "SQL의 논리 연산자가 아닌 것은?",
+      "options": [
+        "AND",
+        "OTHER",
+        "OR",
+        "NOT"
+      ],
+      "explanation": "SQL의 논리 연산자 AND, OR, NOT",
+      "answer": null
+    },
+    {
+      "qnum": 83,
+      "stem": "SQL의 명령어를 DCL, DML, DDL로 구분할 경우, 다음 중 성격이 다른 하나는?",
+      "options": [
+        "CREATE",
+        "SELECT",
+        "ALTER",
+        "DROP"
+      ],
+      "explanation": "데이터베이스 언어 • DDL(데이터 정의어) : CREATE, ALTER, DROP • DML(데이터 조작어) : SELECT, UPDATE, INSERT, DELETE • DCL(데이터 제어어) : COMMIT, ROLLBACK, GRANT, REVOKE, SAVEPOINT",
+      "answer": null
+    },
+    {
+      "qnum": 84,
+      "stem": "프로세스 상태의 종류가 아닌 것은?",
+      "options": [
+        "Ready",
+        "Running",
+        "Request",
+        "Exit"
+      ],
+      "explanation": "프로세스 상태 • 제출(Submit) • 접수(Hold) • 준비(Ready) • 실행(Run) • 대기(Wait), 보류, 블록(Block) • 종료(Terminated, Exit)",
+      "answer": null
+    },
+    {
+      "qnum": 85,
+      "stem": "오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+      "options": [
+        "Stop-and-wait ARQ",
+        "Go-back-N ARO",
+        "Selective-Repeat ARQ",
+        "Non-Acknowledge ARQ"
+      ],
+      "explanation": "자동 반복 요청(ARQ)의 종류 • Stop-and-wait ARQ • Go-back-N ARO • Selective-Repeat ARQ • Adaptive ARQ",
+      "answer": null
+    },
+    {
+      "qnum": 86,
+      "stem": "WAS(Web Application Server)가 아닌 것은?",
+      "options": [
+        "JEUS",
+        "JVM",
+        "Tomcat",
+        "WebSphere"
+      ],
+      "explanation": "웹 애플리케이션 서버(WAS)의 종류 Tomcat, GlassFish, JBoss, Jetty, JEUS, Resin, WebLogic, WebSphere 등",
+      "answer": null
+    },
+    {
+      "qnum": 87,
+      "stem": "다음 중 페이지 교체(Page Replacement) 알고리즘이 아닌 것은?",
+      "options": [
+        "FIFO(First-In-First-Out)",
+        "LUF(Least Used First)",
+        "Optimal",
+        "LRU(Least Recently Used)"
+      ],
+      "explanation": "페이지 교체 알고리즘 OPT, FIFO, LRU, LFU, NUR, SCR 등",
+      "answer": null
+    },
+    {
+      "qnum": 88,
+      "stem": "데이터웨어하우스의 기본적인 OLAP(On-Line Analytical Processing) 연산이 아닌 것은?",
+      "options": [
+        "Translate",
+        "Roll-Up",
+        "Dicing",
+        "Drill-Down"
+      ],
+      "explanation": "OLAP 연산의 종류 • Roll-up • Drill-down • Drill-through • Drill-across • Pivoting • Slicing • Dicing",
+      "answer": null
+    },
+    {
+      "qnum": 89,
+      "stem": "IPv6의 주소 체계로 거리가 먼 것은?",
+      "options": [
+        "Unicast",
+        "Anycast",
+        "Broadcast",
+        "Multicast"
+      ],
+      "explanation": "IPv6의 주소 체계 • 유니캐스트(Unicast) • 멀티캐스트(Multicast) • 애니캐스트(Anycast)",
+      "answer": null
+    },
+    {
+      "qnum": 90,
+      "stem": "병행제어 기법의 종류가 아닌 것은?",
+      "options": [
+        "로킹 기법",
+        "시분할 기법",
+        "타임 스탬프 기법",
+        "다중 버전 기법"
+      ],
+      "explanation": "병행제어 기법의 종류 • 로킹(Locking) • 타임 스탬프 순서(Time Stamp Ordering) • 최적 병행수행(검증 기법, 확인 기법, 낙관적 기법) • 다중 버전 기법",
+      "answer": null
+    },
+    {
+      "qnum": 91,
+      "stem": "개발 환경 구성을 위한 빌드(Build) 도구에 해당하지 않는 것은?",
+      "options": [
+        "Ant",
+        "Kerberos",
+        "Maven",
+        "Gradle"
+      ],
+      "explanation": "빌드 자동화 도구 Ant, Maven, Gradle, Make, Jenkins 등",
+      "answer": null
+    },
+    {
+      "qnum": 92,
+      "stem": "OSI 7계층 중 데이터 링크 계층에 해당되는 프로토콜이 아닌 것은?",
+      "options": [
+        "HTTP",
+        "HDLC",
+        "PPP",
+        "LLC"
+      ],
+      "explanation": "데이터 링크 계층의 프로토콜 HDLC, LAPB, LLC, MAC, LAPD, PPP",
+      "answer": null
+    },
+    {
+      "qnum": 93,
+      "stem": "다음 중 SQL의 집계 함수(Aggregation Function)가 아닌 것은?",
+      "options": [
+        "AVG",
+        "COUNT",
+        "SUM",
+        "CREATE"
+      ],
+      "explanation": "그룹 함수의 종류 COUNT, SUM, AVG, MAX, MIN, STDDEV, VARIANCE",
+      "answer": null
+    },
+    {
+      "qnum": 94,
+      "stem": "TCP/IP 프로토콜 중 전송 계층 프로토콜은?",
+      "options": [
+        "HTTP",
+        "SMTP",
+        "FTP",
+        "TCP"
+      ],
+      "explanation": "TCP/IP의 전송 계층 프로토콜 TCP, UDP, RTCP",
+      "answer": null
+    },
+    {
+      "qnum": 95,
+      "stem": "소프트웨어 개발 프레임워크를 적용할 경우 기대 효과로 거리가 먼 것은?",
+      "options": [
+        "품질 보증",
+        "시스템 복잡도 증가",
+        "개발 용이성",
+        "변경 용이성"
+      ],
+      "explanation": "소프트웨어 개발 프레임워크의 기대 효과 • 품질 보증 • 개발 용이성 • 변경 용이성 • 시스템 복잡도 감소",
+      "answer": null
+    },
+    {
+      "qnum": 96,
+      "stem": "블록 암호화 방식이 아닌 것은?",
+      "options": [
+        "DES",
+        "RC4",
+        "AES",
+        "SEED"
+      ],
+      "explanation": "개인키 암호화 기법의 종류 • 블록 암호화 방식 : DES, SEED, AES, ARIA • 스트림 암호화 방식 : LFSR, RC4",
+      "answer": null
+    },
+    {
+      "qnum": 97,
+      "stem": "CMM(Capability Maturity Model) 모델의 레벨로 옳지 않은 것은?",
+      "options": [
+        "최적 단계",
+        "관리 단계",
+        "계획 단계",
+        "정의 단계"
+      ],
+      "explanation": "CMMI의 소프트웨어 프로세스 성숙도 5단계 • 초기(Initial) • 관리(Managed) • 정의(Defined) • 정량적 관리(Quantitatively Managed) • 최적화(Optimizing)",
+      "answer": null
+    },
+    {
+      "qnum": 98,
+      "stem": "나선형(Spiral) 모형의 주요 태스크에 해당되지 않는 것은?",
+      "options": [
+        "버전 관리",
+        "위험 분석",
+        "개발",
+        "평가"
+      ],
+      "explanation": "나선형 모형의 주요 태스크 계획 수립, 위험 분석, 개발 및 검증, 고객 평가",
+      "answer": null
+    },
+    {
+      "qnum": 99,
+      "stem": "취약점 관리를 위해 일반적으로 수행하는 작업이 아닌 것은?",
+      "options": [
+        "무결성 검사",
+        "응용 프로그램의 보안 설정 및 패치(Patch) 적용",
+        "중단 프로세스 및 닫힌 포트 위주로 확인",
+        "불필요한 서비스 및 악성 프로그램의 확인과 제거"
+      ],
+      "explanation": "취약점 관리 방법 • 무결성 검사 • 보안 설정 및 패치 적용 • 동작중인 프로세스 및 열린 포트 확인 • 로그 분석 • SetUID 파일 검사 등",
+      "answer": null
+    },
+    {
+      "qnum": 100,
+      "stem": "정보 보안의 3요소에 해당하지 않는 것은?",
+      "options": [
+        "기밀성",
+        "무결성",
+        "가용성",
+        "휘발성"
+      ],
+      "explanation": "정보 보안의 3대 요소 • 기밀성(Confidentiality) • 무결성(Integrity) • 가용성(Availability)",
+      "answer": null
+    },
+    {
+      "qnum": 101,
+      "stem": "CBD(Component Based Development) SW 개발 표준 산출물 중 분석 단계에 해당하는 것은?",
+      "options": [
+        "클래스 설계서",
+        "통합시험 결과서",
+        "프로그램 코드",
+        "사용자 요구사항 정의서"
+      ],
+      "explanation": "CBD SW개발 표준의 단계별 산출물 • 분석 : 사용자 요구사항 정의서, 유스케이스 명세서, 요구사항 추적표 • 설계 : 클래스 설계서, 사용자 인터페이스 설계서, 컴포넌트 설계서, 인터페이스 설계서, 아키텍처 설 계서, 총괄시험 계획서, 시스템시험 시나리오, 엔티티 관계 모형 기술서, 데이터베이스 설계서, 통합 시험 시나리오, 단위시험 케이스, 데이터 전환 및 초기 데이터 설계서 • 구현 : 프로그램 코드, 단위시험 결과서, 데이터베이스 생성 스크립트 • 시험 : 통합시험 결과서, 시스템시험 결과서, 사용자 지침서, 운영자 지침서, 시스템 설치 결과서, 인 수시험 시나리오, 인수시험 결과서",
+      "answer": null
+    },
+    {
+      "qnum": 102,
+      "stem": "정보 보안을 위한 접근통제 정책 종류에 해당하지 않는 것은?",
+      "options": [
+        "임의적 접근 통제",
+        "데이터 전환 접근 통제",
+        "강제적 접근 통제",
+        "역할 기반 접근 통제"
+      ],
+      "explanation": "접근통제 기술의 종류 • 임의 접근통제(DAC; Discretionary Access Control) • 강제 접근통제(MAC; Mandatory Access Control) • 역할기반 접근통제(RBAC; Role Based Access Control)",
+      "answer": null
+    },
+    {
+      "qnum": 103,
+      "stem": "Secure OS의 보안 기능으로 거리가 먼 것은?",
+      "options": [
+        "식별 및 인증",
+        "임의적 접근 통제",
+        "고가용성 지원",
+        "강제적 접근 통제"
+      ],
+      "explanation": "Secure OS의 보안 기능 • 식별 및 인증 • 임의적 접근 통제 • 강제적 접근 통제 • 객체 재사용 보호 • 완전한 조정 • 신뢰 경로 • 감사 및 감사기록 축소",
+      "answer": null
+    },
+    {
+      "qnum": 104,
+      "stem": "기능 점수(Functional Point) 모형에서 비용 산정에 이용되는 요소가 아닌 것은?",
+      "options": [
+        "클래스 인터페이스",
+        "명령어(사용자 질의수)",
+        "데이터 파일",
+        "출력 보고서"
+      ],
+      "explanation": "기능 점수(FP) 모형의 비용 산정 요인 • 자료 입력(입력 양식) • 정보 출력(출력 보고서) • 명령어(사용자 질의수) • 데이터 파일 • 필요한 외부 루틴과의 인터페이스",
+      "answer": null
+    },
+    {
+      "qnum": 105,
+      "stem": "다음 암호 알고리즘 중 성격이 다른 하나는?",
+      "options": [
+        "MD4",
+        "MD5",
+        "SHA-1",
+        "AES"
+      ],
+      "explanation": "해시(Hash) 알고리즘의 종류 SHA 시리즈, MD4, MD5, N-NASH, SNEFRU 등",
+      "answer": null
+    },
+    {
+      "qnum": 106,
+      "stem": "상향식 비용 산정 기법 중 LOC(원시 코드 라인 수) 기법에서 예측치를 구하기 위해 사용하는 항목이 아닌 것은?",
+      "options": [
+        "낙관치",
+        "기대치",
+        "비관치",
+        "모형치"
+      ],
+      "explanation": "LOC 기법의 예측치를 구하는데 필요한 항목 비관치, 낙관치, 기대치",
+      "answer": null
+    },
+    {
+      "qnum": 107,
+      "stem": "세션 하이재킹을 탐지하는 방법으로 거리가 먼 것은?",
+      "options": [
+        "FTP SYN SEGMENT 탐지",
+        "비동기화 상태 탐지",
+        "ACK STORM 탐지",
+        "패킷의 유실 및 재전송 증가 탐지"
+      ],
+      "explanation": "세션 하이재킹 탐지 방법 • 비동기화 상태 탐지 • ACK Storm 탐지 • 패킷의 유실과 재전송 증가 탐지 • 예상치 못한 접속의 리셋 탐지",
+      "answer": null
+    },
+    {
+      "qnum": 108,
+      "stem": "COCOMO 모델의 프로젝트 유형으로 거리가 먼 것은?",
+      "options": [
+        "Organic",
+        "Semi-detached",
+        "Embedded",
+        "Sequential"
+      ],
+      "explanation": "COCOMO의 소프트웨어 개발 유형 • 조직형(Organic Mode) • 반분리형(Semi-Detached Mode) • 내장형(Embedded Mode)",
+      "answer": null
+    },
+    {
+      "qnum": 109,
+      "stem": "익스트림 프로그래밍(eXtreme Programming)의 5가지 가치에 속하지 않는 것은?",
+      "options": [
+        "의사소통",
+        "단순성",
+        "피드백",
+        "고객 배제"
+      ],
+      "explanation": "XP의 5가지 핵심 가치 • 의사소통(Communication) • 단순성(Simplicity) • 용기(Courage) • 존중(Respect) • 피드백(Feedback)",
+      "answer": null
+    },
+    {
+      "qnum": 110,
+      "stem": "테일러링(Tailoring) 개발 방법론의 내부 기준에 해당하지 않는 것은?",
+      "options": [
+        "납기/비용",
+        "기술 환경",
+        "구성원 능력",
+        "국제 표준 품질 기준"
+      ],
+      "explanation": "테일러링 개발 방법론의 내부적 기준 • 목표 환경 : 시스템의 개발 환경과 유형 • 요구사항 : 개발, 운영, 유지보수 등 • 프로젝트 규모 : 비용, 인력, 기간 등 • 보유 기술 : 프로세스, 개발 방법론, 산출물, 구성원의 능력 등",
+      "answer": null
+    },
+    {
+      "qnum": 111,
+      "stem": "소프트웨어 비용 추정 모형(Estimation Models)이 아닌 것은?",
+      "options": [
+        "COCOMO",
+        "Putnam",
+        "Function-Point",
+        "PERT"
+      ],
+      "explanation": "소프트웨어 비용 산정 기법 • 하향식 산정 기법 : 전문가 감정 기법, 델파이 기법 등 • 상향식 산정 기법 : LOC(원시 코드 라인 수) 기법, 개발 단계별 인월수 기법, 수학적 산정 기법 등 • 수학적 산정 기법 : COCOMO 모형, Putnam 모형, 기능 점수(Function Point) 모형 등",
+      "answer": null
+    },
+    {
+      "qnum": 112,
+      "stem": "서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층이 아닌 것은?",
+      "options": [
+        "표현층",
+        "프로세스층",
+        "제어 클래스층",
+        "비즈니스층"
+      ],
+      "explanation": "서비스 지향 아키텍처(SOA) 기반 애플리케이션 구성 계층 • 표현(Presentation) 계층 • 업무-프로세스(Biz-Process) 계층 • 서비스 중간(Service Intermediary) 계층 • 애플리케이션(Application) 계층 • 데이터 저장(Persistency) 계층",
+      "answer": null
+    },
+    {
+      "qnum": 113,
+      "stem": "DDoS 공격과 연관이 있는 공격 방법은?",
+      "options": [
+        "Secure shell",
+        "Tribe Flood Network",
+        "Nimda",
+        "Deadlock"
+      ],
+      "explanation": "DDoS 공격의 종류 • Trin00 • TFN(Tribe Flooding Network) • Stacheldraht",
+      "answer": null
+    },
+    {
+      "qnum": 114,
+      "stem": "ISO 12207 표준의 기본 생명 주기의 주요 프로세스에 해당하지 않는 것은?",
+      "options": [
+        "획득 프로세스",
+        "개발 프로세스",
+        "성능평가 프로세스",
+        "유지보수 프로세스"
+      ],
+      "explanation": "ISO/IEC 12207 • 기본 생명 주기 프로세스 : 획득, 공급, 개발, 운영, 유지보수 프로세스 • 지원 생명 주기 프로세스 : 품질 보증, 검증, 확인, 활동 검토, 감사, 문서화, 형상 관리, 문제 해결 프로세스 • 조직 생명 주기 프로세스 : 관리, 기반 구조, 훈련, 개선 프로세스",
+      "answer": null
+    }
+  ]
+}

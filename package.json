@@ -1,0 +1,16 @@
+{
+  "name": "jeongbo-cbt",
+  "version": "1.0.0",
+  "description": "정보처리기사 필기 CBT 연습 시스템",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

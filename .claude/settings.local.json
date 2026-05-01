@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; data=json.load\\(open\\('/Users/woonho/Downloads/정보처리기사_CBT/data/exam_2024-1.json'\\)\\); print\\(json.dumps\\(data[:2], ensure_ascii=False, indent=2\\)\\)\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"require\\('express'\\)\")",
+      "Bash(node server/index.js)",
+      "Bash(curl -s http://localhost:3000/api/exams)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('exams:', len\\(d['exams']\\), 'categories:', len\\(d['categories']\\)\\)\")",
+      "Bash(curl -s http://localhost:3000/api/stats)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('stats OK:', d\\)\")",
+      "Bash(curl -s http://localhost:3000/api/wrong/count)",
+      "Bash(curl -s -X POST http://localhost:3000/api/exam/start -H \"Content-Type: application/json\" -d '{\"mode\":\"past\",\"sourceId\":\"2024-1\"}')",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Q count:', len\\(d['questions']\\), 'title:', d['title']\\)\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(pkill -f \"node server/index.js\")",
+      "Bash(ipconfig getifaddr *)",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Bash(git --version)",
+      "Bash(ls ~/.ssh/*.pub)",
+      "Bash(git remote *)",
+      "Bash(brew --version)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

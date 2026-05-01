@@ -1,0 +1,27 @@
+[
+  {
+    "categoryId": "calc",
+    "title": "필수 계산 41문제",
+    "count": 41
+  },
+  {
+    "categoryId": "code",
+    "title": "필수 코드 57문제",
+    "count": 56
+  },
+  {
+    "categoryId": "wrong-sentence",
+    "title": "잘못된 문장 찾기 197문제",
+    "count": 197
+  },
+  {
+    "categoryId": "keyword",
+    "title": "키워드 찾기 259문제",
+    "count": 259
+  },
+  {
+    "categoryId": "sequence",
+    "title": "종류·순서 114문제",
+    "count": 114
+  }
+]
