@@ -70,7 +70,7 @@ function startTimer(state) {
     if (remaining != null) {
       if (remaining <= 0) {
         clearInterval(state.timerInterval);
-        t.textContent = '00:00';
+        t.textContent = '⏱ 00:00';
         autoSubmit(state);
         return;
       }
@@ -80,6 +80,7 @@ function startTimer(state) {
       t.textContent = '⏱ ' + fmtTimer(elapsed);
     }
   };
+  state.tick = tick;
   tick();
   state.timerInterval = setInterval(tick, 1000);
 }
@@ -100,8 +101,9 @@ function renderQuestion(state) {
   if (state.checkMode) {
     headerChildren.push(el('span', { class: 'mode-badge', text: '📖 학습 모드' }));
   }
-  headerChildren.push(el('div', { class: 'timer', id: 'timer', text: '⏱ 00:00' }));
+  headerChildren.push(el('div', { class: 'timer', id: 'timer' }));
   main.append(el('div', { class: 'exam-header' }, headerChildren));
+  if (state.tick) state.tick();
 
   // ── 문제 ──
   main.append(el('div', { class: 'qbox' }, [
