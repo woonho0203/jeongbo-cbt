@@ -14,7 +14,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "image": "images/2025-1_q1.png",
       "explanation": "워크스루(Walkthrough)와 인스펙션(Inspection)은 서로 다른 검토 기법입니다. 워크스루는 작성자 중심으로 동료들이 검토하는 비공식적 방법이며, 인스펙션은 전문 검토자가 체크리스트를 이용한 공식적 검토 방법입니다."
     },
     {
@@ -225,7 +224,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "image": "images/2025-1_q16.png",
       "explanation": "UML 시퀀스 다이어그램의 구성 요소는 생명선(Lifeline), 실행(Activation), 메시지(Message), 소멸(Destruction) 등입니다. '확장(Extend)'은 유스케이스 다이어그램의 관계이며 시퀀스 다이어그램의 구성 항목이 아닙니다."
     },
     {
@@ -465,7 +463,6 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "image": "images/2025-1_q33.png",
       "explanation": "테스트(Testing)는 소프트웨어의 오류를 찾는 작업이고, 디버깅(Debugging)은 발견된 오류의 원인을 파악하고 수정하는 작업입니다. 서로 보완적인 관계입니다."
     },
     {
@@ -704,7 +701,6 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "image": "images/2025-1_q50.png",
       "explanation": "BCNF(Boyce-Codd Normal Form)는 3NF를 더 강화한 것으로, 모든 결정자가 후보키가 되어야 합니다. 즉 '결정자이면서 후보키가 아닌 것'을 제거해야 BCNF가 됩니다."
     },
     {
@@ -888,7 +884,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "image": "images/2025-1_q63.png",
       "explanation": "ob1.c[i]=i이므로 ob1.c[0..9]={0,1,2..9}, ob2.c[i]=ob1.c[i]+i=2i. 짝수 인덱스(0,2,4,6,8) 합: ob1.a=0+2+4+6+8=20, ob2.a=0+4+8+12+16=40. 합계: 20+40=60."
     },
     {
@@ -1100,7 +1095,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "image": "images/2025-1_q78.png",
       "explanation": "내용 결합도(Content Coupling)는 한 모듈이 다른 모듈의 내부 기능과 내부 자료를 직접 참조하거나 수정하는 가장 강한 결합도입니다. 결합도가 강할수록 독립성이 낮아집니다."
     },
     {
@@ -1353,7 +1347,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "image": "images/2025-1_q96.png",
       "explanation": "만리장성 모델(Chinese Wall Model)은 서로 이해 충돌 관계(Conflict of Interest)에 있는 객체 간의 정보 접근을 통제합니다. 벨-라파듈라는 기밀성, 비바는 무결성 중심 모델입니다."
     },
     {

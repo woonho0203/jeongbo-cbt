@@ -14,7 +14,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "image": "images/2024-2_q1.png",
       "explanation": "요구공학(Requirements Engineering)은 요구사항을 정의·분석·명세·검증·관리하는 프로세스 전체를 다루며, 요구사항 개발뿐 아니라 관리까지 포함합니다. '요구사항 개발의 한 요소'라는 설명은 요구공학의 범위를 축소한 것으로 옳지 않습니다."
     },
     {
@@ -211,7 +210,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "image": "images/2024-2_q15.png",
       "explanation": "WAS(Web Application Server)는 동적 콘텐츠 처리를 위한 미들웨어입니다. '정적인 콘텐츠를 처리하기 위해 사용된다'는 설명은 WAS가 아닌 웹 서버(Web Server)에 대한 설명입니다."
     },
     {
@@ -436,7 +434,6 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "image": "images/2024-2_q31.png",
       "explanation": "Ant는 Java 기반의 XML 설정 파일을 사용하는 빌드 도구입니다. Groovy를 기반으로 한 것은 Gradle입니다. Jenkins는 CI/CD 자동화 도구입니다."
     },
     {
@@ -676,7 +673,6 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "image": "images/2024-2_q48.png",
       "explanation": "2NF는 1NF를 만족하고 기본키에 완전 함수적 종속(부분 함수 종속 제거)이 되어야 합니다. 이행 함수 종속 제거는 3NF, 다치 종속 제거는 4NF입니다."
     },
     {
@@ -887,7 +883,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "image": "images/2024-2_q63.png",
       "explanation": "\\t는 수평 탭(Tab) 문자로 커서를 일정 간격 오른쪽으로 이동시킵니다. \\r은 캐리지 리턴, \\b는 백스페이스, \\n은 줄바꿈입니다."
     },
     {
@@ -1099,7 +1094,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "image": "images/2024-2_q78.png",
       "explanation": "페이지 교체 알고리즘: FIFO, LRU, LFU, OPT, NUR, 클럭 알고리즘 등. SCF(Second Chance FIFO)는 Clock 알고리즘의 변형으로 존재하지만 일반적으로 페이지 교체 알고리즘으로 분류되지 않습니다."
     },
     {
@@ -1296,7 +1290,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "image": "images/2024-2_q92.png",
       "explanation": "SDN(Software Defined Networking)은 네트워크를 제어부와 데이터 전달부로 분리하여 소프트웨어로 네트워크를 중앙에서 제어하고 관리하는 기술입니다."
     },
     {

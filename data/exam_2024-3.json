@@ -14,7 +14,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "image": "images/2024-3_q1.png",
       "explanation": "CLI(Command Line Interface)는 명령과 출력이 텍스트 형태로만 이루어지는 사용자 인터페이스입니다. GUI는 그래픽 기반, NUI는 자연어/제스처 기반, OUI는 현실 사물 기반 인터페이스입니다."
     },
     {
@@ -225,7 +224,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "image": "images/2024-3_q16.png",
       "explanation": "클래스는 객체들이 갖는 속성(Attribute, 상태나 정보 표현)과 오퍼레이션(Operation, 수행 가능한 동작·메소드)을 표현합니다. 속성은 상태 표현, 오퍼레이션은 행동 표현이 핵심입니다."
     },
     {
@@ -480,7 +478,6 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "image": "images/2024-3_q34.png",
       "explanation": "스택은 재귀 호출, 후위 표현식 연산, 깊이 우선 탐색(DFS) 등에 활용됩니다. 선택 정렬(Selection Sort)은 배열/리스트를 순차적으로 비교하는 정렬로 스택 자료구조와는 거리가 멉니다."
     },
     {
@@ -679,7 +676,6 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "image": "images/2024-3_q48.png",
       "explanation": "CRUD 분석은 Create(생성), Read(읽기), Update(갱신), Delete(삭제) 연산으로 프로세스와 테이블 간 매트릭스를 작성하여 트랜잭션을 분석하는 방법입니다."
     },
     {
@@ -932,7 +928,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "image": "images/2024-3_q66.png",
       "explanation": "i의 변화: 1→2→4→8→16(20 초과로 종료). sum = 1+2+4+8+16 = 31. i는 2배씩 증가하며 20 미만인 경우만 누적하므로 최종 결과는 31입니다."
     },
     {
@@ -1158,7 +1153,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "image": "images/2024-3_q82.png",
       "explanation": "COCOMO 모델의 Organic 유형은 기관 내부에서 개발된 중소 규모 소프트웨어로, 5만 라인 이하의 일괄 자료 처리나 과학기술 계산, 비즈니스 처리용 소프트웨어에 해당합니다. Embedded는 대형 복잡 시스템, Semi-Detached는 중간 규모입니다."
     },
     {
@@ -1369,7 +1363,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "image": "images/2024-3_q97.png",
       "explanation": "SAN(Storage Area Network)은 광채널 스위치를 이용하여 고속 전송과 장거리 연결이 가능하며, 서로 다른 운영체제를 가진 여러 기종이 네트워크를 통해 동일 저장장치 데이터를 공유하는 시스템입니다."
     },
     {

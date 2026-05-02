@@ -14,7 +14,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "image": "images/2025-2_q1.png",
       "explanation": "럼바우(Rumbaugh)의 OMT 방법은 객체 모형(Object Model) → 동적 모형(Dynamic Model) → 기능 모형(Functional Model) 순서로 분석합니다. 객체 모형에서 구조를 먼저 정의하고, 동적 모형에서 행위, 기능 모형에서 DFD를 작성합니다."
     },
     {
@@ -253,7 +252,6 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "image": "images/2025-2_q18.png",
       "explanation": "미들웨어는 운영체제와 응용 소프트웨어 사이에서 분산 시스템 전반의 컴포넌트 간 통신과 데이터 교환을 지원합니다. 단순히 애플리케이션과 사용자 사이에서만 분산 서비스를 제공하는 것이 아닙니다."
     },
     {
@@ -493,7 +491,6 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "image": "images/2025-2_q35.png",
       "explanation": "클린 코드 작성 원칙은 중복 최소화, 가독성 향상, 단순화입니다. 코드가 다른 모듈에 미치는 영향을 최대화하는 것은 결합도를 높이는 것으로 클린 코드 원칙에 반합니다."
     },
     {
@@ -760,7 +757,6 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "image": "images/2025-2_q54.png",
       "explanation": "CREATE는 DDL 명령어로 스키마, 도메인, 테이블, 뷰, 인덱스 등을 정의할 때 사용합니다. ALTER는 변경, SELECT는 DML, INSERT는 데이터 삽입 명령어입니다."
     },
     {
@@ -944,7 +940,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "image": "images/2025-2_q67.png",
       "explanation": "Java의 Random 클래스는 java.util 패키지에 속합니다. java.lang은 기본 패키지(자동 임포트), java.io는 입출력, java.net은 네트워크 관련 패키지입니다."
     },
     {
@@ -1141,7 +1136,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "image": "images/2025-2_q81.png",
       "explanation": "MQTT(Message Queuing Telemetry Transport)는 TCP/IP 기반의 발행-구독 메시징 프로토콜로, 경량화된 IoT 환경에서 센서·디바이스 간 통신에 널리 사용됩니다."
     },
     {
@@ -1366,7 +1360,6 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "image": "images/2025-2_q97.png",
       "explanation": "널 포인터 역참조(Null Pointer Dereference)를 방지하려면 포인터를 이용하기 전에 해당 포인터가 NULL 값을 갖고 있는지 반드시 검사해야 합니다."
     },
     {
