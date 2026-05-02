@@ -80,7 +80,7 @@
         "Process : 원",
         "Data Flow : 화살표",
         "Data Store : 삼각형",
-        "Terminator : 사각형 2회 정보처리기사 필기 없습니다."
+        "Terminator : 사각형"
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
@@ -192,7 +192,7 @@
         "Singleton Pattern",
         "Adapter Pattern",
         "Decorator Pattern",
-        "State Pattern -"
+        "State Pattern"
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
@@ -417,7 +417,7 @@
         "경계값 분석",
         "조건 검사",
         "기초 경로 검사",
-        "루프 검사 -"
+        "루프 검사"
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
@@ -697,7 +697,7 @@
         "데이터 구조의 안정성 최대화",
         "중복 데이터의 활성화",
         "수정, 삭제 시 이상 현상의 최소화",
-        "테이블 불일치 위험의 최소화 -"
+        "테이블 불일치 위험의 최소화"
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
@@ -908,7 +908,7 @@
         "gnTir",
         "riTng",
         "ot hl",
-        "lh to -"
+        "lh to"
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
@@ -1090,7 +1090,7 @@
         "LRU",
         "OPT",
         "NUR",
-        "SCF -"
+        "SCF"
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
@@ -1314,7 +1314,7 @@
         "OTT",
         "BaaS",
         "SDDC",
-        "Wi-SUN -"
+        "Wi-SUN"
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
@@ -1398,7 +1398,7 @@
         "Apnic",
         "Topology",
         "Sqoop",
-        "SDB -"
+        "SDB"
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
