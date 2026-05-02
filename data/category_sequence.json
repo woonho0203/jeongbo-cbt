@@ -12,7 +12,7 @@
         "최대한 많은 인력 투입"
       ],
       "explanation": "소프트웨어 공학의 기본 원칙 • 품질 높은 소프트웨어 상품 개발 • 지속적인 검증 시행 • 결과에 대한 명확한 기록 유지 • 효율적인 인력 투입",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 2,
@@ -24,7 +24,7 @@
         "Control"
       ],
       "explanation": "시스템의 구성 요소 • 입력(Input) • 처리(Process) • 출력(Output) • 제어(Control) • 피드백(Feedback)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 3,
@@ -36,7 +36,7 @@
         "AVL Diagram"
       ],
       "explanation": "요구사항 정의, 분석, 설계에 사용되는 다이어그램 • 자료 흐름도(DFD; Data Flow Diagram) • UML 다이어그램 • E-R(개체-관계) 다이어그램",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 4,
@@ -48,7 +48,7 @@
         "인적 자원 분석"
       ],
       "explanation": "현행 시스템 파악 절차 • 시스템 구성 파악 • 시스템 기능 파악 • 시스템 인터페이스 파악 • 아키텍처 구성 파악 • 소프트웨어(DBMS, 운영체제 등) 구성 파악 • 하드웨어 구성 파악 • 네트워크 구성 파악",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 5,
@@ -60,7 +60,7 @@
         "Proxy 패턴"
       ],
       "explanation": "구조 패턴의 종류 • 어댑터(Adapter) • 브리지(Bridge) • 컴포지트(Composite) • 데코레이터(Decorator) • 퍼싸드(Facade) • 플라이웨이트(Flyweight) • 프록시(Proxy)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 6,
@@ -72,7 +72,7 @@
         "샘플 코드"
       ],
       "explanation": "디자인 패턴의 구성 요소 • 문제 및 배경 • 실제 적용된 사례 • 재사용이 가능한 샘플 코드",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 7,
@@ -84,7 +84,7 @@
         "강도 추상화"
       ],
       "explanation": "추상화 유형 • 과정 추상화 • 데이터(자료) 추상화 • 제어 추상화",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 8,
@@ -96,7 +96,8 @@
         "메시지"
       ],
       "explanation": "순차 다이어그램의 구성 요소 • 액터(Actor) • 객체(Object) • 생명선(Lifeline) • 실행 상자(Active Box) • 메시지(Message)",
-      "answer": null
+      "answer": 3,
+      "image": "images/2025-1_q16.png"
     },
     {
       "qnum": 9,
@@ -108,7 +109,7 @@
         "상태(State) 패턴"
       ],
       "explanation": "행위 패턴의 종류 • 책임 연쇄(Chain of Responsibility) • 커맨드(Command) • 인터프리터(Interpreter) • 반복자(Iterator) • 중재자(Mediator) • 메멘토(Memento) • 옵서버(Observer) • 상태(State) • 전략(Strategy) • 템플릿 메소드(Template Method) • 방문자(Visitor)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 10,
@@ -120,7 +121,7 @@
         "시퀀스 다이어그램(Sequence Diagram)"
       ],
       "explanation": "UML 다이어그램의 종류 • 구조적(Structural) 다이어그램 – 정적 모델링 - 클래스 다이어그램(Class Diagram) - 객체 다이어그램(Object Diagram) - 컴포넌트 다이어그램(Component Diagram) - 배치 다이어그램(Deployment Diagram) - 복합체 구조 다이어그램(Composite Structure Diagram) - 패키지 다이어그램(Package Diagram) • 행위(Behavioral) 다이어그램 – 동적 모델링 - 유스케이스 다이어그램(Use Case Diagram) - 순차 다이어그램(Sequence Diagram) - 커뮤니케이션 다이어그램(Communication Diagram) - 상태 다이어그램(State Diagram) - 활동 다이어그램(Activity Diagram) - 상호작용 개요 다이어그램(Interaction Overview Diagram) - 타이밍 다이어그램(Timing Diagram)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 11,
@@ -132,7 +133,7 @@
         "간결성"
       ],
       "explanation": "소프트웨어의 품질 특성 • 기능성 : 적합성, 정확성, 상호 운용성, 보안성, 호환성 • 신뢰성 : 성숙성, 고장 허용성, 회복성 • 사용성 : 이해성, 학습성, 운용성, 친밀성 • 효율성 : 시간 효율성, 자원 효율성 • 유지 보수성 : 분석성, 변경성, 안정성, 시험성 • 이식성 : 적용성, 설치성, 대체성, 공존성 • 호환성 : 공존성, 상호 운영성 • 보안성 : 기밀성, 무결성, 부인방지, 책임추적성, 인증성",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 12,
@@ -144,7 +145,7 @@
         "패키지 다이어그램"
       ],
       "explanation": "구조적(Structural) 다이어그램 – 정적 모델링 • 클래스 다이어그램(Class Diagram) • 객체 다이어그램(Object Diagram) • 컴포넌트 다이어그램(Component Diagram) • 배치 다이어그램(Deployment Diagram) • 복합체 구조 다이어그램(Composite Structure Diagram) • 패키지 다이어그램(Package Diagram)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 13,
@@ -156,7 +157,7 @@
         "Activity Diagram"
       ],
       "explanation": "UML 다이어그램의 종류 구조적(Structural) 다이어그램 – 정적 모델링 • 클래스 다이어그램(Class Diagram) • 객체 다이어그램(Object Diagram) • 컴포넌트 다이어그램(Component Diagram) • 배치 다이어그램(Deployment Diagram) • 복합체 구조 다이어그램(Composite Structure Diagram) • 패키지 다이어그램(Package Diagram)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 14,
@@ -168,7 +169,7 @@
         "배치 다이어그램(Deployment Diagram)"
       ],
       "explanation": "행위(Behavioral) 다이어그램 – 동적 모델링 • 유스케이스 다이어그램(Use Case Diagram) • 순차 다이어그램(Sequence Diagram) • 커뮤니케이션 다이어그램(Communication Diagram) • 상태 다이어그램(State Diagram) • 활동 다이어그램(Activity Diagram) • 상호작용 개요 다이어그램(Interaction Overview Diagram) • 타이밍 다이어그램(Timing Diagram)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 15,
@@ -180,7 +181,7 @@
         "보안성"
       ],
       "explanation": "ISO/IEC 9126의 소프트웨어 품질 - 기능성 적합성, 정확성, 상호 운용성, 보안성, 호환성",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 16,
@@ -192,7 +193,7 @@
         "모듈 중심 개발"
       ],
       "explanation": "애자일 모형을 기반으로 하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 17,
@@ -204,7 +205,7 @@
         "자료 흐름도 작성 기능"
       ],
       "explanation": "상위 CASE 도구가 지원하는 주요 기능 • 모델들 사이의 모순 검사 기능 • 모델의 오류 검증 기능 • 자료 흐름도 작성 기능",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 18,
@@ -216,7 +217,7 @@
         "사용성(Usability)"
       ],
       "explanation": "소프트웨어 아키텍처의 시스템 품질 속성 • 시스템 측면 : 성능, 보안, 가용성, 기능성, 사용성, 변경 용이성, 확장성 등 • 비즈니스 측면 : 시장 적시성, 비용과 혜택, 예상 시스템 수명 등 • 아키텍처 측면 : 개념적 무결성, 정확성, 완결성, 구축 가능성 등",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 19,
@@ -228,7 +229,7 @@
         "추상 패턴"
       ],
       "explanation": "디자인 패턴 분류 • 생성 패턴(Creational Pattern) • 구조 패턴(Structural Pattern) • 행위 패턴(Behavioral Pattern)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 20,
@@ -240,7 +241,7 @@
         "다양한 소프트웨어 개발 모형 지원"
       ],
       "explanation": "CASE의 주요 기능 • S/W 라이프 사이클 전 단계의 연결 • 모델들의 모순 검사 • 모델들의 오류 검증 • 자료 흐름도(DFD) 등의 다이어그램(Diagram) 작성 • 다양한 소프트웨어 개발 모형 지원 • 시스템 문서화 및 명세화를 위한 그래픽 지원",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 21,
@@ -252,7 +253,7 @@
         "Continuous Integration"
       ],
       "explanation": "XP의 주요 실천 방법(Practice) • Pair Programming(짝 프로그래밍) • Collective Ownership(공동 코드 소유) • Test-Driven Development(테스트 주도 개발) • Whole Team(전체 팀) • Continuous Integration(계속적인 통합) • Design Improvement(디자인 개선) • Refactoring(리팩토링) • Small Releases(소규모 릴리즈)",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 22,
@@ -264,7 +265,7 @@
         "단계 다이어그램(Phase Diagram)"
       ],
       "explanation": "요구사항 모델링 활용 • 애자일(Agile) 방법 • 유스케이스 다이어그램(Use Case Diagram) • 순차 다이어그램(Sequence Diagram)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 23,
@@ -276,7 +277,7 @@
         "일반화"
       ],
       "explanation": "유스케이스 다이어그램 구성 요소 간의 관계 연관 관계, 포함 관계, 확장 관계, 일반화 관계",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 24,
@@ -288,7 +289,7 @@
         "식별"
       ],
       "explanation": "코드의 기능 식별 기능, 분류 기능, 배열 기능, 표준화 기능, 간소화 기능",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 25,
@@ -300,7 +301,7 @@
         "State Pattern"
       ],
       "explanation": "생성 패턴의 종류 • 추상 팩토리(Abstract Factory) • 빌더(Builder) • 팩토리 메소드(Factory Method) • 프로토타입(Prototype) • 싱글톤(Singleton)",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 26,
@@ -312,7 +313,7 @@
         "SSO(Single Sign On)"
       ],
       "explanation": "객체지향 설계 원칙 • 단일 책임 원칙(SRP; Single Responsibility Principle) • 개방-폐쇄 원칙(OCP; Open-Closed Principle) • 리스코프 치환 원칙(LSP; Liskov Substitution Principle) • 인터페이스 분리 원칙(ISP; Interface Segregation Principle) • 의존 역전 원칙(DIP; Dependency Inversion Principle)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 27,
@@ -324,7 +325,7 @@
         "ORB"
       ],
       "explanation": "미들웨어의 종류 DB, RPC, MOM, TP-Monitor, ORB, WAS 등",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 28,
@@ -336,7 +337,7 @@
         "정적 모델링, 객체 모델링, 기능 모델링"
       ],
       "explanation": "럼바우의 분석 기법 • 객체 모델링(Object Modeling) • 동적 모델링(Dynamic Modeling) • 기능 모델링(Functional Modeling)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 29,
@@ -348,7 +349,7 @@
         "Flick"
       ],
       "explanation": "주요 모바일 제스처 Tap, Double Tap, Drag, Pan, Press, Flick, Pinch 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 30,
@@ -360,7 +361,7 @@
         "상호 호환성"
       ],
       "explanation": "DBMS 분석 시 고려사항 가용성, 성능, 기술 지원, 상호 호환성, 구축 비용",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 31,
@@ -372,7 +373,7 @@
         "Diagram"
       ],
       "explanation": "UML의 구성 요소 • 사물(Things) • 관계(Relationships) • 다이어그램(Diagram)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 32,
@@ -384,7 +385,7 @@
         "관찰 및 모델 작성 기술"
       ],
       "explanation": "요구사항 분석 단계에서 사용되는 기술 • 청취와 인터뷰 질문 기술 • 분석과 중재 기술 • 관찰 및 모델 작성 기술",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 33,
@@ -396,7 +397,7 @@
         "사용자 인터페이스 설계"
       ],
       "explanation": "소프트웨어의 설계 • 상위 설계(아키텍처 설계) : 구조 설계, DB 설계, 인터페이스 설계 • 하위 설계(모듈 설계) : 컴포넌트 설계, 자료 구조 설계, 알고리즘 설계",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 34,
@@ -408,7 +409,7 @@
         "일괄 처리 기술"
       ],
       "explanation": "CASE의 원천 기술 • 구조적 기법 • 프로토타이핑 기술 • 자동 프로그래밍 기술 • 정보 저장소 기술 • 분산 처리 기술",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 35,
@@ -420,7 +421,7 @@
         "소스 코드 분석 및 오류 복구"
       ],
       "explanation": "사용자 인터페이스 개발 시스템의 기능 입력 검증, 에러 처리, 도움 제공",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 36,
@@ -432,7 +433,7 @@
         "고객 배제"
       ],
       "explanation": "XP(eXtreme Programming)의 5가지 핵심 가치 • 의사소통(Communication) • 단순성(Simplicity) • 용기(Courage) • 존중(Respect) • 피드백(Feedback)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 37,
@@ -444,7 +445,7 @@
         "Terminator : 사각형"
       ],
       "explanation": "자료 흐름도(DFD) 표기법 • 프로세스(Process) : 원 • 자료 흐름(Data Flow) : 화살표 • 자료 저장소(Data Store) : 평행선 • 단말(Terminator) : 사각형",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 38,
@@ -456,7 +457,7 @@
         "서버 튜닝(Server Tuning)"
       ],
       "explanation": "플랫폼의 성능 특성 분석에 사용되는 측정 항목 • 응답시간(Response Time) • 가용성(Availability) • 사용률(Utilization)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 39,
@@ -468,7 +469,7 @@
         "새로운 개발 방법론 도입 용이"
       ],
       "explanation": "소프트웨어 재사용의 장점 • 개발 시간과 비용 단축 • 소프트웨어 품질 향상 • 소프트웨어 개발의 생산성 향상 • 프로젝트 실패의 위험 감소 • 시스템 구축 방법에 대한 지식 공유 • 시스템 명세, 설계, 코드 등 문서 공유",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 40,
@@ -480,7 +481,8 @@
         "소프트웨어 개발 기간"
       ],
       "explanation": "소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보",
-      "answer": null
+      "answer": 4,
+      "image": "images/2025-3_q33.png"
     },
     {
       "qnum": 41,
@@ -492,7 +494,7 @@
         "루프 검사"
       ],
       "explanation": "• 화이트박스 테스트 : 기초 경로 검사, 제어 구조 검사(조건 검사, 루프 검사, 데이터 흐름 검사) 등 • 블랙박스 테스트 : 동치 분할 검사, 경계값 분석, 원인-효과 그래프 검사, 오류 예측 검사, 비교 검사 등",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 42,
@@ -504,7 +506,7 @@
         "㉢, ㉥"
       ],
       "explanation": "• 화이트박스 테스트 : 기초 경로 검사, 제어 구조 검사(조건 검사, 루프 검사, 데이터 흐름 검사) 등 • 블랙박스 테스트 : 동치 분할 검사, 경계값 분석, 원인-효과 그래프 검사, 오류 예측 검사, 비교 검사 등",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 43,
@@ -516,7 +518,7 @@
         "커밋(Commit)"
       ],
       "explanation": "소프트웨어의 버전 등록 관련 주요 기능 • 저장소(Repository) • 가져오기(Import) • 체크아웃(Check-Out) • 체크인(Check-In) • 커밋(Commit) • 동기화(Update)",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 44,
@@ -528,7 +530,7 @@
         "특정 부분만을 포함하는 테이블 추가"
       ],
       "explanation": "중복 테이블 추가 방법 • 집계 테이블의 추가 • 진행 테이블의 추가 • 특정 부분만을 포함하는 테이블의 추가",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 45,
@@ -540,7 +542,7 @@
         "자료 흐름도"
       ],
       "explanation": "테스트 케이스 생성 도구 • 자료 흐름도 • 기능 테스트 • 입력 도메인 분석 • 랜덤 테스트",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 46,
@@ -552,7 +554,7 @@
         "개체 타입과 속성을 연결 - 선"
       ],
       "explanation": "E-R 다이어그램 기호 기호 이름 의미 사각형 개체(Entity) 타입 마름모 관계(Relationship) 타입 타원 속성(Attribute) 이중 타원 다중값 속성(복합 속성) 밑줄 타원 기본키 속성 복수 타원 복합 속성 선, 링크 개체 타입과 속성을 연결",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 47,
@@ -564,7 +566,7 @@
         "운영체제의 작업 스케줄링"
       ],
       "explanation": "스택의 응용 분야 • 함수 호출의 순서 제어 • 인터럽트의 처리 • 수식 계산 및 수식 표기법 • 컴파일러를 이용한 언어 번역 • 부 프로그램 호출 시 복귀주소 저장 • 서브루틴 호출 및 복귀 주소 저장",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 48,
@@ -576,7 +578,8 @@
         "깊이 우선 탐색"
       ],
       "explanation": "스택(Stack)을 이용한 연산은 ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다.",
-      "answer": null
+      "answer": 1,
+      "image": "images/2024-3_q34.png"
     },
     {
       "qnum": 49,
@@ -588,7 +591,7 @@
         "리스트, 그래프"
       ],
       "explanation": "자료 구조 분류 • 선형 구조 : 배열, 선형 리스트, 스택, 큐, 데크 • 비선형 구조 : 트리, 그래프",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 50,
@@ -600,7 +603,7 @@
         "cppcheck"
       ],
       "explanation": "소스 코드 품질 분석 도구 • 정적 분석 도구 : pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등 • 동적 분석 도구 : Avalanche, Valgrind 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 51,
@@ -612,7 +615,7 @@
         "S-HTTP"
       ],
       "explanation": "인터페이스 보안 - 네트워크 영역 IPSec, SSL, S-HTTP 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 52,
@@ -624,7 +627,7 @@
         "IgpUnit"
       ],
       "explanation": "xUnit의 종류 JUnit, CppUnit, NUnit, HttpUnit 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 53,
@@ -636,7 +639,7 @@
         "컴파일러의 독창성"
       ],
       "explanation": "프로그래밍 언어의 선정 기준 • 친밀감 • 언어의 능력 • 처리의 효율성 • 프로그램 구조 • 프로그램의 길이 • 이식성 • 과거의 개발 실적 • 알고리즘과 계산상의 난이도 • 자료 구조의 난이도 • 성능 고려 사항들 • 대상 업무의 성격 • 소프트웨어의 수행 환경 • 개발 담당자의 경험과 지식 • 사용자의 요구사항 • 컴파일러의 이용 가능성",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 54,
@@ -648,7 +651,7 @@
         "Media Access Transparency"
       ],
       "explanation": "분산 데이터베이스의 목표 • 위치 투명성(Location Transparency) • 중복 투명성(Replication Transparency) • 병행 투명성(Concurrency Transparency) • 장애 투명성(Failure Transparency)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 55,
@@ -660,7 +663,7 @@
         "프로젝트 개발 비용"
       ],
       "explanation": "소프트웨어 형상 관리의 관리 항목 소스 코드, 분석서, 지침서, 설계서, 프로젝트 계획, 프로그램, 테스트 케이스 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 56,
@@ -672,7 +675,7 @@
         "해시 분할"
       ],
       "explanation": "파티션의 종류 • 범위 분할(Range Partitioning) • 해시 분할(Hash Partitioning) • 조합 분할(Composite Partitioning) • 목록 분할(List Partitioning) • 라운드 로빈 분할(Round Robin Partitioning)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 57,
@@ -684,7 +687,7 @@
         "Backtracking"
       ],
       "explanation": "알고리즘 설계 기법 • 분할 정복/분할 통치(Divide and Conquer) • 동적 계획법(Dynamic Programming) • 탐욕 알고리즘(Greedy Algorithm) • 백트래킹(Backtracking)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 58,
@@ -696,7 +699,7 @@
         "Tree"
       ],
       "explanation": "EAI 구축 유형 Point-to-Point, Hub & Spoke, Message Bus(ESB), Hybrid",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 59,
@@ -708,7 +711,7 @@
         "NTAF"
       ],
       "explanation": "인터페이스 구현 검증 도구 xUnit, STAF, FitNesse, NTAF, Selenium, watir",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 60,
@@ -720,7 +723,7 @@
         "갱신 이상"
       ],
       "explanation": "이상(Anomaly)의 종류 • 삽입 이상(Insertion Anomaly) • 삭제 이상(Deletion Anomaly) • 갱신 이상(Update Anomaly)",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 61,
@@ -732,7 +735,7 @@
         "틀린 계산 수식에 의한 잘못된 결과"
       ],
       "explanation": "단위 테스트로 발견 가능한 오류 • 알고리즘 오류에 따른 원치 않는 결과 • 탈출구가 없는 반복문의 사용 • 틀린 계산 수식에 의한 잘못된 결과",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 62,
@@ -744,7 +747,7 @@
         "유닛 분할(Unit Partitioning)"
       ],
       "explanation": "파티션 종류 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 63,
@@ -756,7 +759,7 @@
         "제산법(Division)"
       ],
       "explanation": "해싱 함수의 종류 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 64,
@@ -768,7 +771,7 @@
         "단순, 명료한 코드 작성"
       ],
       "explanation": "클린 코드 작성 원칙 가독성, 단순성, 의존성 배제, 중복성 최소화, 추상화",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 65,
@@ -780,7 +783,7 @@
         "Project"
       ],
       "explanation": "순수 관계 연산자의 종류 • Select(σ) • Project(π) • Join(▷◁) • Division(÷)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 66,
@@ -792,7 +795,7 @@
         "방화벽 기술"
       ],
       "explanation": "디지털 저작권 관리의 기술 요소 암호화, 키 관리, 암호화 파일 생성, 식별 기술, 저작권 표현, 정책 관리, 크랙 방지, 인증",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 67,
@@ -804,7 +807,7 @@
         "제약 조건"
       ],
       "explanation": "데이터 모델에 표시할 요소 • 구조(Structure) • 연산(Operation) • 제약 조건(Constraint)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 68,
@@ -816,7 +819,7 @@
         "개발 시간의 증가"
       ],
       "explanation": "소프트웨어 재공학의 장점 소프트웨어 수명 연장, 기술 향상, 개발 기간 단축, 오류 감소, 비용 절감, 위험 부담 감소",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 69,
@@ -828,7 +831,7 @@
         "예상 결과"
       ],
       "explanation": "테스트 케이스의 기본 항목 입력 데이터, 테스트 조건, 예상 결과 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 70,
@@ -840,7 +843,7 @@
         "Linear wait"
       ],
       "explanation": "교착상태 발생의 필요 충분 조건 • 상호 배제(Mutual Exclusion) • 점유와 대기(Hold and Wait) • 비선점(Non-preemption) • 환형 대기(Circular Wait)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 71,
@@ -852,7 +855,7 @@
         "애플리케이션 재사용"
       ],
       "explanation": "재사용 규모에 따른 분류 • 함수와 객체 • 컴포넌트 • 애플리케이션",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 72,
@@ -864,7 +867,7 @@
         "~"
       ],
       "explanation": "C언어의 비트 연산자 &, ^, |, ~, ≪, ≫",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 73,
@@ -876,7 +879,7 @@
         "="
       ],
       "explanation": "C언어의 산술 연산자 +, -, *, /, %",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 74,
@@ -888,7 +891,7 @@
         "while"
       ],
       "explanation": "쉘 스크립트에서 사용되는 제어문 • 반복문 : for, while, until 등 • 조건문 : if, case 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 75,
@@ -900,7 +903,7 @@
         "System.out.printf( )"
       ],
       "explanation": "Java의 대표적인 출력 메소드 print( ), println( ), printf( )",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 76,
@@ -912,7 +915,7 @@
         "public"
       ],
       "explanation": "JAVA의 접근 제한자 Public, Default, Private, Protected",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 77,
@@ -924,7 +927,7 @@
         "==="
       ],
       "explanation": "PHP에서 사용 가능한 연산자 +, -, *, /, %, @, < >, =, ==, ===",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 78,
@@ -936,7 +939,7 @@
         "파일 시스템 관리"
       ],
       "explanation": "커널(Kernel)의 기능 • 프로세스(CPU 스케줄링) 관리 • 기억장치 관리 • 파일 관리 • 입·출력 관리 • 프로세스 간 통신 • 데이터 전송 및 변환",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 79,
@@ -948,7 +951,7 @@
         "감시 프로그램"
       ],
       "explanation": "운영체제의 구성 • 제어 프로그램 : 감시 프로그램, 작업 관리 프로그램, 데이터 관리 프로그램 • 처리 프로그램 : 언어 번역 프로그램, 서비스 프로그램",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 80,
@@ -960,7 +963,7 @@
         "setenv"
       ],
       "explanation": "UNIX/LINUX에서 모든 환경 변수와 값을 표시하는 명령어 set, env, printenv, setenv",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 81,
@@ -972,7 +975,7 @@
         "Python"
       ],
       "explanation": "스크립트 언어 • 서버용 : ASP, JSP, PHP, 파이썬(Python), 펄(Perl), 루비(Ruby) 등 • 클라이언트용 : 자바 스크립트(Java Script), VB 스크립트(Visual Basic Script) 등",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 82,
@@ -984,7 +987,7 @@
         "NOT"
       ],
       "explanation": "SQL의 논리 연산자 AND, OR, NOT",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 83,
@@ -996,7 +999,7 @@
         "DROP"
       ],
       "explanation": "데이터베이스 언어 • DDL(데이터 정의어) : CREATE, ALTER, DROP • DML(데이터 조작어) : SELECT, UPDATE, INSERT, DELETE • DCL(데이터 제어어) : COMMIT, ROLLBACK, GRANT, REVOKE, SAVEPOINT",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 84,
@@ -1008,7 +1011,7 @@
         "Exit"
       ],
       "explanation": "프로세스 상태 • 제출(Submit) • 접수(Hold) • 준비(Ready) • 실행(Run) • 대기(Wait), 보류, 블록(Block) • 종료(Terminated, Exit)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 85,
@@ -1020,7 +1023,7 @@
         "Non-Acknowledge ARQ"
       ],
       "explanation": "자동 반복 요청(ARQ)의 종류 • Stop-and-wait ARQ • Go-back-N ARO • Selective-Repeat ARQ • Adaptive ARQ",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 86,
@@ -1032,7 +1035,7 @@
         "WebSphere"
       ],
       "explanation": "웹 애플리케이션 서버(WAS)의 종류 Tomcat, GlassFish, JBoss, Jetty, JEUS, Resin, WebLogic, WebSphere 등",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 87,
@@ -1044,7 +1047,8 @@
         "LRU(Least Recently Used)"
       ],
       "explanation": "페이지 교체 알고리즘 OPT, FIFO, LRU, LFU, NUR, SCR 등",
-      "answer": null
+      "answer": 2,
+      "image": "images/2024-2_q78.png"
     },
     {
       "qnum": 88,
@@ -1056,7 +1060,7 @@
         "Drill-Down"
       ],
       "explanation": "OLAP 연산의 종류 • Roll-up • Drill-down • Drill-through • Drill-across • Pivoting • Slicing • Dicing",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 89,
@@ -1068,7 +1072,7 @@
         "Multicast"
       ],
       "explanation": "IPv6의 주소 체계 • 유니캐스트(Unicast) • 멀티캐스트(Multicast) • 애니캐스트(Anycast)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 90,
@@ -1080,7 +1084,7 @@
         "다중 버전 기법"
       ],
       "explanation": "병행제어 기법의 종류 • 로킹(Locking) • 타임 스탬프 순서(Time Stamp Ordering) • 최적 병행수행(검증 기법, 확인 기법, 낙관적 기법) • 다중 버전 기법",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 91,
@@ -1092,7 +1096,7 @@
         "Gradle"
       ],
       "explanation": "빌드 자동화 도구 Ant, Maven, Gradle, Make, Jenkins 등",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 92,
@@ -1104,7 +1108,7 @@
         "LLC"
       ],
       "explanation": "데이터 링크 계층의 프로토콜 HDLC, LAPB, LLC, MAC, LAPD, PPP",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 93,
@@ -1116,7 +1120,7 @@
         "CREATE"
       ],
       "explanation": "그룹 함수의 종류 COUNT, SUM, AVG, MAX, MIN, STDDEV, VARIANCE",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 94,
@@ -1128,7 +1132,7 @@
         "TCP"
       ],
       "explanation": "TCP/IP의 전송 계층 프로토콜 TCP, UDP, RTCP",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 95,
@@ -1140,7 +1144,7 @@
         "변경 용이성"
       ],
       "explanation": "소프트웨어 개발 프레임워크의 기대 효과 • 품질 보증 • 개발 용이성 • 변경 용이성 • 시스템 복잡도 감소",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 96,
@@ -1152,7 +1156,7 @@
         "SEED"
       ],
       "explanation": "개인키 암호화 기법의 종류 • 블록 암호화 방식 : DES, SEED, AES, ARIA • 스트림 암호화 방식 : LFSR, RC4",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 97,
@@ -1164,7 +1168,7 @@
         "정의 단계"
       ],
       "explanation": "CMMI의 소프트웨어 프로세스 성숙도 5단계 • 초기(Initial) • 관리(Managed) • 정의(Defined) • 정량적 관리(Quantitatively Managed) • 최적화(Optimizing)",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 98,
@@ -1176,7 +1180,7 @@
         "평가"
       ],
       "explanation": "나선형 모형의 주요 태스크 계획 수립, 위험 분석, 개발 및 검증, 고객 평가",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 99,
@@ -1188,7 +1192,7 @@
         "불필요한 서비스 및 악성 프로그램의 확인과 제거"
       ],
       "explanation": "취약점 관리 방법 • 무결성 검사 • 보안 설정 및 패치 적용 • 동작중인 프로세스 및 열린 포트 확인 • 로그 분석 • SetUID 파일 검사 등",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 100,
@@ -1200,7 +1204,7 @@
         "휘발성"
       ],
       "explanation": "정보 보안의 3대 요소 • 기밀성(Confidentiality) • 무결성(Integrity) • 가용성(Availability)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 101,
@@ -1212,7 +1216,7 @@
         "사용자 요구사항 정의서"
       ],
       "explanation": "CBD SW개발 표준의 단계별 산출물 • 분석 : 사용자 요구사항 정의서, 유스케이스 명세서, 요구사항 추적표 • 설계 : 클래스 설계서, 사용자 인터페이스 설계서, 컴포넌트 설계서, 인터페이스 설계서, 아키텍처 설 계서, 총괄시험 계획서, 시스템시험 시나리오, 엔티티 관계 모형 기술서, 데이터베이스 설계서, 통합 시험 시나리오, 단위시험 케이스, 데이터 전환 및 초기 데이터 설계서 • 구현 : 프로그램 코드, 단위시험 결과서, 데이터베이스 생성 스크립트 • 시험 : 통합시험 결과서, 시스템시험 결과서, 사용자 지침서, 운영자 지침서, 시스템 설치 결과서, 인 수시험 시나리오, 인수시험 결과서",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 102,
@@ -1224,7 +1228,7 @@
         "역할 기반 접근 통제"
       ],
       "explanation": "접근통제 기술의 종류 • 임의 접근통제(DAC; Discretionary Access Control) • 강제 접근통제(MAC; Mandatory Access Control) • 역할기반 접근통제(RBAC; Role Based Access Control)",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 103,
@@ -1236,7 +1240,7 @@
         "강제적 접근 통제"
       ],
       "explanation": "Secure OS의 보안 기능 • 식별 및 인증 • 임의적 접근 통제 • 강제적 접근 통제 • 객체 재사용 보호 • 완전한 조정 • 신뢰 경로 • 감사 및 감사기록 축소",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 104,
@@ -1248,7 +1252,7 @@
         "출력 보고서"
       ],
       "explanation": "기능 점수(FP) 모형의 비용 산정 요인 • 자료 입력(입력 양식) • 정보 출력(출력 보고서) • 명령어(사용자 질의수) • 데이터 파일 • 필요한 외부 루틴과의 인터페이스",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 105,
@@ -1260,7 +1264,7 @@
         "AES"
       ],
       "explanation": "해시(Hash) 알고리즘의 종류 SHA 시리즈, MD4, MD5, N-NASH, SNEFRU 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 106,
@@ -1272,7 +1276,7 @@
         "모형치"
       ],
       "explanation": "LOC 기법의 예측치를 구하는데 필요한 항목 비관치, 낙관치, 기대치",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 107,
@@ -1284,7 +1288,7 @@
         "패킷의 유실 및 재전송 증가 탐지"
       ],
       "explanation": "세션 하이재킹 탐지 방법 • 비동기화 상태 탐지 • ACK Storm 탐지 • 패킷의 유실과 재전송 증가 탐지 • 예상치 못한 접속의 리셋 탐지",
-      "answer": null
+      "answer": 1
     },
     {
       "qnum": 108,
@@ -1296,7 +1300,7 @@
         "Sequential"
       ],
       "explanation": "COCOMO의 소프트웨어 개발 유형 • 조직형(Organic Mode) • 반분리형(Semi-Detached Mode) • 내장형(Embedded Mode)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 109,
@@ -1308,7 +1312,7 @@
         "고객 배제"
       ],
       "explanation": "XP의 5가지 핵심 가치 • 의사소통(Communication) • 단순성(Simplicity) • 용기(Courage) • 존중(Respect) • 피드백(Feedback)",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 110,
@@ -1320,7 +1324,7 @@
         "국제 표준 품질 기준"
       ],
       "explanation": "테일러링 개발 방법론의 내부적 기준 • 목표 환경 : 시스템의 개발 환경과 유형 • 요구사항 : 개발, 운영, 유지보수 등 • 프로젝트 규모 : 비용, 인력, 기간 등 • 보유 기술 : 프로세스, 개발 방법론, 산출물, 구성원의 능력 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 111,
@@ -1332,7 +1336,7 @@
         "PERT"
       ],
       "explanation": "소프트웨어 비용 산정 기법 • 하향식 산정 기법 : 전문가 감정 기법, 델파이 기법 등 • 상향식 산정 기법 : LOC(원시 코드 라인 수) 기법, 개발 단계별 인월수 기법, 수학적 산정 기법 등 • 수학적 산정 기법 : COCOMO 모형, Putnam 모형, 기능 점수(Function Point) 모형 등",
-      "answer": null
+      "answer": 4
     },
     {
       "qnum": 112,
@@ -1344,7 +1348,7 @@
         "비즈니스층"
       ],
       "explanation": "서비스 지향 아키텍처(SOA) 기반 애플리케이션 구성 계층 • 표현(Presentation) 계층 • 업무-프로세스(Biz-Process) 계층 • 서비스 중간(Service Intermediary) 계층 • 애플리케이션(Application) 계층 • 데이터 저장(Persistency) 계층",
-      "answer": null
+      "answer": 3
     },
     {
       "qnum": 113,
@@ -1356,7 +1360,7 @@
         "Deadlock"
       ],
       "explanation": "DDoS 공격의 종류 • Trin00 • TFN(Tribe Flooding Network) • Stacheldraht",
-      "answer": null
+      "answer": 2
     },
     {
       "qnum": 114,
@@ -1368,7 +1372,7 @@
         "유지보수 프로세스"
       ],
       "explanation": "ISO/IEC 12207 • 기본 생명 주기 프로세스 : 획득, 공급, 개발, 운영, 유지보수 프로세스 • 지원 생명 주기 프로세스 : 품질 보증, 검증, 확인, 활동 검토, 감사, 문서화, 형상 관리, 문제 해결 프로세스 • 조직 생명 주기 프로세스 : 관리, 기반 구조, 훈련, 개선 프로세스",
-      "answer": null
+      "answer": 3
     }
   ]
 }

@@ -341,9 +341,9 @@ function omrSummaryContents(state) {
     const correct = state.questions.filter(q => state.answers.get(q.qkey) === q.answer).length;
     const wrong   = answered - correct;
     const gradable = state.questions.filter(q => q.answer != null).length;
-    const score = gradable > 0 ? Math.round(correct / gradable * 1000) / 10 : 0;
+    const score = gradable > 0 ? Math.round(correct / gradable * 100) : 0;
     return [
-      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score}점` })]),
+      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score} / 100` })]),
       el('div', {}, [el('span', { text: '정답' }), el('span', { style: { color: 'var(--success)', fontWeight: '600' }, text: `${correct}` })]),
       el('div', {}, [el('span', { text: '오답' }), el('span', { style: { color: 'var(--danger)',  fontWeight: '600' }, text: `${wrong}` })]),
       el('div', {}, [el('span', { text: '미풀이' }), el('span', { text: `${total - answered}` })]),

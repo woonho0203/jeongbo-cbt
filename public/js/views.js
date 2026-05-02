@@ -30,9 +30,9 @@ defineRoute('home', async (app) => {
   const scoreColor = lastScore != null ? (lastScore >= 60 ? 'var(--success)' : 'var(--danger)') : 'var(--muted)';
   const summary = el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
-    dashCard('평균 점수', stats.totalSessions ? `${stats.avgScore}점` : '-'),
-    dashCard('최고 점수', stats.bestScore != null ? `${stats.bestScore}점` : '-'),
-    dashCard('최근 점수', lastScore != null ? `${lastScore}점` : '-', scoreColor),
+    dashCard('평균 점수', stats.totalSessions ? `${Math.round(stats.avgScore)}점` : '-'),
+    dashCard('최고 점수', stats.bestScore != null ? `${Math.round(stats.bestScore)}점` : '-'),
+    dashCard('최근 점수', lastScore != null ? `${Math.round(lastScore)}점` : '-', scoreColor),
   ]);
 
   app.innerHTML = '';
@@ -122,7 +122,7 @@ function sessionRow(s) {
     ]),
     el('div', { class: 'actions' }, [
       el('div', { class: `summary-card ${passClass}`, style: { padding: '6px 14px', minWidth: '70px' } }, [
-        el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${s.score}` }),
+        el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${Math.round(s.score)}점` }),
       ]),
       el('button', { class: 'btn small', onClick: () => navigate('result', { id: s.id }), text: '상세' }),
       el('button', { class: 'btn small danger', onClick: async () => {
@@ -147,7 +147,7 @@ defineRoute('result', async (app, params) => {
   app.append(
     el('h1', { class: 'section-title', text: `결과: ${session.title || session.mode}` }),
     el('div', { class: 'result-summary' }, [
-      summaryCard('점수', `${session.score}`, session.score >= 60 ? 'success' : 'danger'),
+      summaryCard('점수', `${Math.round(session.score)} / 100`, session.score >= 60 ? 'success' : 'danger'),
       summaryCard('정답', `${session.correct_count}/${session.question_count}`),
       summaryCard('소요 시간', fmtDuration(session.duration_sec)),
       summaryCard('합격 여부', session.score >= 60 ? '합격권' : '미달', session.score >= 60 ? 'success' : 'danger'),
@@ -230,9 +230,9 @@ defineRoute('dashboard', async (app) => {
   // 핵심 지표
   app.append(el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
-    dashCard('평균 점수', `${stats.avgScore}점`),
-    dashCard('최고 점수', `${stats.bestScore}점`),
-    dashCard('최근 점수', `${stats.lastScore}점`),
+    dashCard('평균 점수', `${Math.round(stats.avgScore)}점`),
+    dashCard('최고 점수', `${Math.round(stats.bestScore)}점`),
+    dashCard('최근 점수', `${Math.round(stats.lastScore)}점`),
   ]));
 
   // 점수 추세 차트 (간단 SVG)
@@ -263,7 +263,7 @@ defineRoute('dashboard', async (app) => {
         ]),
         el('div', { class: 'actions' }, [
           el('div', { class: `summary-card ${r.score >= 60 ? 'success' : 'danger'}`, style: { padding: '6px 14px', minWidth: '70px' } }, [
-            el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${r.score}` }),
+            el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${Math.round(r.score)}점` }),
           ]),
           el('button', { class: 'btn small', onClick: () => navigate('result', { id: r.id }), text: '상세' }),
         ]),
@@ -408,6 +408,8 @@ defineRoute('bookmarks', async (app) => {
       }, text: '북마크 해제' }),
     ]));
     item.appendChild(el('div', { class: 'qstem', text: b.stem || '' }));
+    if (b.image) item.appendChild(el('img', { class: 'qimg', src: b.image, alt: '문제 이미지' }));
+    if (b.table) item.appendChild(el('div', { class: 'qtable', html: b.table }));
     if (b.options) {
       const opts = el('div', { class: 'options' });
       b.options.forEach((txt, oi) => {

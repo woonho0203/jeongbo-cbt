@@ -291,6 +291,7 @@ async function handleAPI(req, res, method, urlPath) {
         qkey, note: v.note, createdAt: v.createdAt,
         stem: q?.stem, options: q?.options, answer: q?.answer,
         explanation: q?.explanation || null,
+        image: q?.image || null, table: q?.table || null,
         subjectName: q?.subjectName || SUBJECT_NAMES[q?.subject],
       };
     }).sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''));
