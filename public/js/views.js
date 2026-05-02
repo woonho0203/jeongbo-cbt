@@ -182,6 +182,8 @@ defineRoute('result', async (app, params) => {
       el('span', { class: 'subject', text: a.subjectName || '' }),
     ]));
     item.appendChild(el('div', { class: 'qstem', text: a.stem || '(문제 본문 없음)' }));
+    if (a.image) item.appendChild(el('img', { class: 'qimg', src: a.image, alt: '문제 이미지' }));
+    if (a.table) item.appendChild(el('div', { class: 'qtable', html: a.table }));
     if (a.options) {
       const opts = el('div', { class: 'options' });
       a.options.forEach((txt, oi) => {

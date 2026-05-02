@@ -115,6 +115,8 @@ function renderQuestion(state) {
       }),
     ]),
     el('div', { class: 'qstem', text: q.stem }),
+    ...(q.image ? [el('img', { class: 'qimg', src: q.image, alt: '문제 이미지' })] : []),
+    ...(q.table ? [el('div', { class: 'qtable', html: q.table })] : []),
     el('div', { class: 'options' }, q.options.map((opt, i) => {
       const num = i + 1;
       let cls = 'opt';

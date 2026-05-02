@@ -207,6 +207,23 @@ main {
   font-size: 1rem; line-height: 1.75; margin-bottom: 16px; white-space: pre-wrap;
 }
 
+/* ─── 문제 이미지 / 표 ─── */
+.qimg {
+  display: block; max-width: 100%; height: auto;
+  margin: 8px 0 14px; border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.qtable { margin: 8px 0 14px; overflow-x: auto; }
+.qtable table {
+  border-collapse: collapse; width: 100%; font-size: 0.9rem;
+  background: var(--panel); color: var(--text);
+}
+.qtable th, .qtable td {
+  border: 1px solid var(--border); padding: 7px 12px;
+  text-align: left; vertical-align: top;
+}
+.qtable th { background: var(--opt-hover); font-weight: 600; }
+
 /* ─── 선택지 ─── */
 .options { display: flex; flex-direction: column; gap: 9px; }
 .opt {

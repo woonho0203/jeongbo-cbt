@@ -126,7 +126,8 @@ async function handleAPI(req, res, method, urlPath) {
       qkey: q.qkey, qnum: q.qnum, displayNum: q.displayNum,
       subject: q.subject, subjectName: q.subjectName || SUBJECT_NAMES[q.subject],
       stem: q.stem, options: q.options, hasAnswer: q.answer != null,
-      // 학습 모드에서만 정답 포함 (즉시 채점용)
+      image: q.image || null,
+      table: q.table || null,
       answer: checkMode ? (q.answer ?? null) : undefined,
       explanation: checkMode ? (q.explanation ?? null) : undefined,
     }));
@@ -231,6 +232,8 @@ async function handleAPI(req, res, method, urlPath) {
           ...a, is_correct: a.isCorrect,
           stem: q?.stem, options: q?.options,
           explanation: q?.explanation || null,
+          image: q?.image || null,
+          table: q?.table || null,
           subjectName: q?.subjectName || SUBJECT_NAMES[a.subject] || null,
         };
       });

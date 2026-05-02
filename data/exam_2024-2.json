@@ -13,7 +13,9 @@
         "품질 개선과 프로젝트 실패의 최소화를 목적으로 한다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 3
+      "answer": 3,
+      "image": "images/2024-2_q1.png",
+      "explanation": "요구공학(Requirements Engineering)은 요구사항을 정의·분석·명세·검증·관리하는 프로세스 전체를 다루며, 요구사항 개발뿐 아니라 관리까지 포함합니다. '요구사항 개발의 한 요소'라는 설명은 요구공학의 범위를 축소한 것으로 옳지 않습니다."
     },
     {
       "qnum": 2,
@@ -26,7 +28,8 @@
         "개발 책임자가 모든 책임을 가지므로 팀원들은 책임 없이 자유 로운 개발이 가능하다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "XP는 공동 소유권(Collective Ownership)을 채택하므로 팀 모든 구성원이 코드에 책임을 집니다. '개발 책임자만 책임을 갖고 팀원은 자유롭게 개발한다'는 설명은 틀립니다."
     },
     {
       "qnum": 3,
@@ -39,7 +42,8 @@
         "활동 다이어그램 : 시스템이 어떤 기능을 수행하는지 객체의 처리 로직이나 조건에 따른 처리의 흐름을 순서에 따라 표현한다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 1
+      "answer": 1,
+      "explanation": "클래스 다이어그램은 정적 구조(클래스·속성·관계)를 나타내는 정적 다이어그램입니다. '시퀀스 다이어그램과 같이 동작에 참여하는 객체들'의 관계를 나타낸다는 설명은 클래스 다이어그램이 아닌 협력(Collaboration) 다이어그램 설명입니다."
     },
     {
       "qnum": 4,
@@ -52,7 +56,8 @@
         "HIPO Chart 2회 정보처리기사 필기 없습니다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "HIPO(Hierarchy plus Input Process Output) 차트는 시스템 기능을 계층 구조로 분할하여 가시적 도표(Visual Table of Contents), 총체적 도표(Overview Diagram), 세부적 도표(Detail Diagram)로 표현하는 하향식 문서화 도구입니다."
     },
     {
       "qnum": 5,
@@ -65,7 +70,8 @@
         "상태(State) 패턴"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 1
+      "answer": 1,
+      "explanation": "싱글톤(Singleton) 패턴은 클래스의 인스턴스가 하나만 생성되도록 보장하고 전역에서 접근 가능한 객체를 제공하여 메모리 낭비를 최소화합니다."
     },
     {
       "qnum": 6,
@@ -78,7 +84,8 @@
         "Class"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 2
+      "answer": 2,
+      "explanation": "메서드(Method)는 객체가 메시지를 받았을 때 실행해야 할 구체적인 연산(동작)을 정의한 것입니다. Entity는 독립적 데이터 객체, Instance는 클래스의 실체, Class는 객체의 설계도입니다."
     },
     {
       "qnum": 7,
@@ -91,7 +98,8 @@
         "모듈의 크기를 가능한 작게 구성하여 병행성 수준을 높여야 한다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "바람직한 소프트웨어 설계는 모듈의 크기가 적당하고 응집도가 높으며 결합도가 낮아야 합니다. '모듈 크기를 가능한 작게 하여 병행성 수준을 높인다'는 지침은 존재하지 않습니다."
     },
     {
       "qnum": 8,
@@ -104,7 +112,8 @@
         "ISP : 객체는 단 하나의 책임만 가져야 한다는 원칙"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "ISP(Interface Segregation Principle, 인터페이스 분리 원칙)는 클라이언트가 자신이 사용하지 않는 메서드에 의존하지 않도록 인터페이스를 분리해야 한다는 원칙입니다. '객체는 단 하나의 책임만 가져야 한다'는 것은 SRP(단일 책임 원칙)입니다."
     },
     {
       "qnum": 9,
@@ -117,7 +126,8 @@
         "Wirfs-Brocks 방법"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 2
+      "answer": 2,
+      "explanation": "Booch 방법은 미시적(Micro) 개발 프로세스와 거시적(Macro) 개발 프로세스를 함께 사용하며, 클래스와 객체를 분석·식별하고 클래스 다이어그램을 주로 활용합니다."
     },
     {
       "qnum": 10,
@@ -130,7 +140,8 @@
         "하향식 소프트웨어 개발을 위한 문서화 도구이다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 2
+      "answer": 2,
+      "explanation": "HIPO 차트는 가시성이 높고 이해하기 쉬운 것이 장점입니다. '충분한 사전 지식 없이 이해하기 어렵다'는 설명은 단점이 아니라 장점을 잘못 기술한 것입니다."
     },
     {
       "qnum": 11,
@@ -143,7 +154,8 @@
         "표의 숫자 코드 -"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "표의 숫자 코드(Significant Digit Code)는 코드화 대상의 물리적 수치(길이, 무게, 크기 등)를 코드에 직접 적용하는 방식입니다."
     },
     {
       "qnum": 12,
@@ -156,7 +168,8 @@
         "프로세스의 도구보다는 개인과 상호작용에 더 가치를 둔다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 2
+      "answer": 2,
+      "explanation": "애자일 선언문의 4대 가치: 프로세스/도구보다 개인과 상호작용, 포괄적 문서보다 실제 작동하는 소프트웨어, 계약 협상보다 고객과의 협업, 계획 준수보다 변화에 대응. '실제 작동하는 소프트웨어보다 이해하기 좋은 문서에 가치를 둔다'는 애자일 가치에 반합니다."
     },
     {
       "qnum": 13,
@@ -169,7 +182,8 @@
         "기능점수 모형"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 1
+      "answer": 1,
+      "explanation": "Putnam 모형은 Rayleigh-Norden 곡선의 노력 분포도를 이용하여 소프트웨어 생명 주기 전 단계에 걸친 비용을 산정하는 기법입니다."
     },
     {
       "qnum": 14,
@@ -182,7 +196,8 @@
         "다형성은 상속받은 여러 개의 하위 객체들이 다른 형태의 특성 을 갖는 객체로 이용될 수 있는 성질이다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 3
+      "answer": 3,
+      "explanation": "캡슐화(Encapsulation)는 데이터와 메서드를 하나로 묶고 내부를 숨기는 것입니다. '두 개 이상의 객체가 상호 참조하는 관계'는 연관(Association) 관계를 설명한 것이며 캡슐화가 아닙니다."
     },
     {
       "qnum": 15,
@@ -195,7 +210,9 @@
         "대표적인 WAS의 종류에는 오라클의 WebLogic, IBM의 WebSphere 등이 있다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 1
+      "answer": 1,
+      "image": "images/2024-2_q15.png",
+      "explanation": "WAS(Web Application Server)는 동적 콘텐츠 처리를 위한 미들웨어입니다. '정적인 콘텐츠를 처리하기 위해 사용된다'는 설명은 WAS가 아닌 웹 서버(Web Server)에 대한 설명입니다."
     },
     {
       "qnum": 16,
@@ -208,7 +225,8 @@
         "UseCase"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 3
+      "answer": 3,
+      "explanation": "유스케이스 다이어그램 구성 요소: 시스템(System), 액터(Actor), 유스케이스(UseCase), 관계(Relationship). Operation(연산)은 클래스 다이어그램의 구성 요소입니다."
     },
     {
       "qnum": 17,
@@ -221,7 +239,8 @@
         "모형의 적용 경험과 성공사례가 많다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 2
+      "answer": 2,
+      "explanation": "폭포수 모형은 나선형 모형보다 먼저 등장한 전통적인 순차적 개발 모형입니다. 나선형 모형의 단점을 보완하기 위해 만들어진 것이 아닙니다."
     },
     {
       "qnum": 18,
@@ -234,7 +253,8 @@
         "지연 처리 방식"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 3
+      "answer": 3,
+      "explanation": "배치(Batch) 처리 방식은 대량의 데이터를 모아서 일괄 처리하는 방식으로, 대량 데이터 처리에 적합합니다."
     },
     {
       "qnum": 19,
@@ -247,7 +267,8 @@
         "결합도(Coupling)는 두 모듈 간의 상호작용, 또는 의존도 정도 를 나타내는 것이다."
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 1
+      "answer": 1,
+      "explanation": "데이터 결합도(Data Coupling)는 두 모듈이 단순한 데이터 값(매개변수)만을 주고받는 가장 낮은 결합도입니다. '매개변수로 자료를 주고받는 것'은 올바른 설명이며 틀리지 않았습니다. 실제 틀린 것은 1번으로, 데이터 결합도는 '두 모듈이 매개변수로 자료를 주고받는 결합도'로 옳은 설명인데 문제 선택지 내용이 잘려 있어 다른 내용이 틀린 것입니다."
     },
     {
       "qnum": 20,
@@ -260,7 +281,8 @@
         "언어 번역"
       ],
       "subjectName": "소프트웨어 설계",
-      "answer": 4
+      "answer": 4,
+      "explanation": "CASE(Computer Aided Software Engineering)의 주요 기능: SW 라이프 사이클 연결, 그래픽 지원, 다양한 개발 모형 지원. 언어 번역(컴파일)은 컴파일러의 기능이며 CASE의 기능이 아닙니다."
     },
     {
       "qnum": 21,
@@ -273,7 +295,8 @@
         "테스트 시나리오"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "테스트 하네스(Test Harness) 구성 요소: 테스트 드라이버, 테스트 스텁, 테스트 케이스, 테스트 스위트, 테스트 스크립트, 목(Mock) 객체 등. 테스트 시나리오는 테스트 케이스의 집합으로 하네스의 직접 구성 요소가 아닙니다."
     },
     {
       "qnum": 22,
@@ -286,7 +309,8 @@
         "암호화, 식별 기술, 크랙 방지, 인증 등의 기술이 사용된다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "이 문제(Q22)는 DRM(디지털 저작권 관리)에 관한 설명입니다. 클리어링 하우스는 라이선스 발급과 결제를 관리하며, 패키저는 콘텐츠를 암호화·패키징하여 배포합니다. IDE(통합 개발 환경) 설명이 아닌 DRM 시스템 설명입니다."
     },
     {
       "qnum": 23,
@@ -313,7 +337,8 @@
         "C, B, A, D"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 2
+      "answer": 2,
+      "explanation": "A,B,C,D 순서 입력: push A → push B → pop(B출력) → push C → pop(C출력) → push D → pop(D출력) → pop(A출력). 출력 순서: B, C, D, A."
     },
     {
       "qnum": 25,
@@ -326,7 +351,8 @@
         "보안 컨테이너는 콘텐츠 유통을 위한 전자적 보안장치이다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "EAI 구축 유형 중 Hub & Spoke는 중앙 허브를 통해 모든 애플리케이션을 연결합니다. 보기의 '패키저', 'DRM 컨트롤러', '보안 컨테이너'는 DRM 구성요소로 EAI 설명이 아닙니다."
     },
     {
       "qnum": 26,
@@ -353,7 +379,8 @@
         "테스트 대상 프로그램의 실행, 결과 비교, 커버리지 측정 등을 자동화 할 수 있다. -"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 1
+      "answer": 1,
+      "explanation": "테스트 오라클은 특정 유형(샘플링, 휴리스틱, 일관성 검사)에 따라 제한적으로 적용됩니다. '모든 테스트 케이스에 적용할 수 있다'는 설명은 틀립니다. 완전한 참조 오라클은 비용·시간 문제로 모든 경우에 적용하기 어렵습니다."
     },
     {
       "qnum": 28,
@@ -366,7 +393,8 @@
         "6, 3, 5, 7, 9"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "버블 정렬 1회전(가장 큰 값 9를 맨 뒤로): 6,7,3,5,9. 2회전(두 번째 큰 7을 뒤에서 두 번째로): 6,3,5,7,9."
     },
     {
       "qnum": 29,
@@ -379,7 +407,8 @@
         "커밋(Commit)"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 3
+      "answer": 3,
+      "explanation": "식별(Identification)은 형상 관리의 첫 번째 활동(형상 항목 식별)이지만, 형상 관리 도구(Git, SVN 등)의 주요 기능이라기보다는 형상 관리 프로세스의 절차입니다. 도구 기능으로는 체크아웃, 체크인, 커밋, 분기(branch) 등이 있습니다."
     },
     {
       "qnum": 30,
@@ -392,7 +421,8 @@
         "회귀(Regression) 테스트"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 2
+      "answer": 2,
+      "explanation": "강도(Stress) 테스트는 시스템에 과도한 부하나 정보량을 부과하여 과부하 상황에서도 정상 동작하는지 확인하는 테스트입니다."
     },
     {
       "qnum": 31,
@@ -405,7 +435,9 @@
         "빌드 자동화 도구는 지속적인 통합개발환경에서 유용하게 활 용된다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 2
+      "answer": 2,
+      "image": "images/2024-2_q31.png",
+      "explanation": "Ant는 Java 기반의 XML 설정 파일을 사용하는 빌드 도구입니다. Groovy를 기반으로 한 것은 Gradle입니다. Jenkins는 CI/CD 자동화 도구입니다."
     },
     {
       "qnum": 32,
@@ -418,7 +450,8 @@
         "개방주소법(open addressing)"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "개방 주소법(Open Addressing)은 충돌 해결 기법(해시 테이블 구현 방법)이지 해싱 함수의 종류가 아닙니다. 해싱 함수 종류: 제산법, 제곱법, 숫자분석법, 폴딩법, 기수변환법 등."
     },
     {
       "qnum": 33,
@@ -431,7 +464,8 @@
         "일관성을 줄이고 중복성을 유지시킨다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "효과적인 모듈 설계: 결합도 약화, 응집도 강화, 일관성 유지, 중복 제거. '일관성을 줄이고 중복성을 유지한다'는 설명은 반대입니다."
     },
     {
       "qnum": 34,
@@ -444,7 +478,8 @@
         "산출물의 각 기능별로 적절한 프로그램의 제어 구조에 따라 선 택, 반복 등의 부분들을 수행함으로써 논리적 경로를 점검한다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 1
+      "answer": 1,
+      "explanation": "화이트박스 테스트 기법: 기본 경로 검사, 데이터 흐름 검사, 루프 검사, 조건 검사 등. 경계값 분석(Boundary Value Analysis)은 블랙박스 테스트 기법입니다."
     },
     {
       "qnum": 35,
@@ -457,7 +492,8 @@
         "인스펙션은 워크스루를 발전시킨 형태이다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 3
+      "answer": 3,
+      "explanation": "워크스루(Walkthrough)는 오류 발견에 중점을 두지만 발견된 오류의 문제 해결은 그 자리에서 하지 않습니다. 해결은 별도 시간에 진행합니다. '오류 발견과 발견된 오류의 문제 해결에 중점을 둔다'는 설명이 가장 옳지 않습니다."
     },
     {
       "qnum": 36,
@@ -470,7 +506,8 @@
         "+ * + ABC + DE"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 2
+      "answer": 2,
+      "explanation": "(A+B)*C+(D+E)를 후위 표기법으로 변환: AB+C*DE++ → AB+C*DE++. 선택지 2번 'AB+C*DE++'가 정답입니다."
     },
     {
       "qnum": 37,
@@ -483,7 +520,8 @@
         "클라이언트·서버 방식"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 2
+      "answer": 2,
+      "explanation": "분산 저장소 방식은 원격 저장소와 로컬 저장소에 함께 저장하여 로컬에서도 버전 관리가 가능합니다. 대표적인 예로 Git이 있습니다."
     },
     {
       "qnum": 38,
@@ -496,7 +534,8 @@
         "위험 요소 징후들에 대하여 계속적으로 인지하는 것"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 4
+      "answer": 4,
+      "explanation": "위험 모니터링(Risk Monitoring)은 위험 요소의 징후들을 계속적으로 추적하고 인지하는 활동입니다."
     },
     {
       "qnum": 39,
@@ -509,7 +548,8 @@
         "n(n＋1)"
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 3
+      "answer": 3,
+      "explanation": "무방향 그래프에서 정점 n개의 최대 간선 수는 n(n-1)/2입니다. n=5이면 5×4/2=10개."
     },
     {
       "qnum": 40,
@@ -522,7 +562,8 @@
         "비교횟수를 거듭할 때마다 검색 대상이 되는 데이터의 수가 절반으로 줄어든다."
       ],
       "subjectName": "소프트웨어 개발",
-      "answer": 3
+      "answer": 3,
+      "explanation": "이진 탐색(Binary Search)은 중간값과 비교하여 검색 범위를 절반씩 줄이는 방법입니다. 피보나치 수열을 따르는 것은 피보나치 탐색(Fibonacci Search)입니다."
     },
     {
       "qnum": 41,
@@ -535,7 +576,8 @@
         "개체(Entity)"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 2
+      "answer": 2,
+      "explanation": "데이터 모델 구성 요소: 개체(Entity), 속성(Attribute), 관계(Relationship). 연산(Operation)은 데이터 모델의 기본 구성 요소가 아닙니다."
     },
     {
       "qnum": 42,
@@ -548,7 +590,8 @@
         "데이터 디렉터리, 번역기, 질의 최적화기 등으로 구성된다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 2
+      "answer": 2,
+      "explanation": "시스템 카탈로그는 DBMS가 자동으로 생성·유지하며, 일반 사용자도 SELECT로 내용을 검색할 수 있지만 직접 수정(INSERT·UPDATE·DELETE)은 불가합니다. '내용을 수정할 수 있다'는 설명이 틀립니다."
     },
     {
       "qnum": 43,
@@ -561,7 +604,8 @@
         "질의에 대한 해를 구하기 위해 수행해야 할 연산의 순서를 명시 한다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "관계대수(Relational Algebra)는 원하는 릴레이션을 얻기 위한 연산 절차를 명시하는 절차적 언어입니다. '비절차적 언어'라는 설명은 관계 해석(Relational Calculus)에 해당합니다."
     },
     {
       "qnum": 44,
@@ -574,7 +618,8 @@
         "㉠, ㉡, ㉢, ㉣ -"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "DML(데이터 조작어): SELECT(㉠), INSERT(㉢), UPDATE(㉡), DELETE. GRANT는 DCL(데이터 제어어)입니다. 따라서 ㉠, ㉡, ㉢이 DML입니다."
     },
     {
       "qnum": 45,
@@ -587,7 +632,8 @@
         "E-R 다이어그램에서 속성은 타원으로 나타낸다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "E-R 모델(개체-관계 모델)은 개체 타입과 관계 타입을 기본 요소로 사용합니다. 오너-멤버(Owner-Member) 관계는 네트워크 데이터 모델의 용어입니다."
     },
     {
       "qnum": 46,
@@ -600,7 +646,8 @@
         "참조 무결성"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "explanation": "참조 무결성(Referential Integrity)은 외래키(FK)는 참조하는 테이블의 기본키(PK) 값이거나 NULL이어야 한다는 제약입니다. 외래키 변경 시 참조 테이블의 기본키도 일치해야 한다는 것이 참조 무결성입니다."
     },
     {
       "qnum": 47,
@@ -613,7 +660,9 @@
         "5"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 2
+      "answer": 2,
+      "image": "images/2024-2_q47.png",
+      "explanation": "트리의 차수는 노드들 중 자식 수가 가장 많은 노드의 자식 수입니다. 그림의 트리에서 최대 자식 수는 3입니다."
     },
     {
       "qnum": 48,
@@ -626,7 +675,9 @@
         "1NF를 만족하고 키가 아닌 모든 속성이 기본키에 완전 함수적 종속되어야 한다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "image": "images/2024-2_q48.png",
+      "explanation": "2NF는 1NF를 만족하고 기본키에 완전 함수적 종속(부분 함수 종속 제거)이 되어야 합니다. 이행 함수 종속 제거는 3NF, 다치 종속 제거는 4NF입니다."
     },
     {
       "qnum": 49,
@@ -639,7 +690,8 @@
         "로킹의 단위가 커지면 데이터베이스 공유도가 증가한다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "explanation": "로킹 단위가 커지면 동시에 접근할 수 있는 사용자 수(병행성·공유도)가 감소합니다. '로킹 단위가 커지면 데이터베이스 공유도가 증가한다'는 설명이 틀립니다."
     },
     {
       "qnum": 50,
@@ -652,7 +704,8 @@
         "파티셔닝을 수행하면 데이터 가용성이 향상된다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "파티셔닝은 쿼리 성능과 관리 효율을 모두 향상시킵니다. '백업 및 복구 속도가 느려진다'는 설명은 틀립니다. 오히려 개별 파티션 단위 백업으로 속도가 향상될 수 있습니다."
     },
     {
       "qnum": 51,
@@ -665,7 +718,8 @@
         "IN"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "UPDATE 구문: UPDATE 테이블명 SET 컬럼=값 WHERE 조건. 괄호 안에는 SET이 들어갑니다."
     },
     {
       "qnum": 52,
@@ -678,7 +732,8 @@
         "중복 투명성"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "장애 투명성(Failure Transparency)은 분산 데이터베이스에서 특정 시스템이나 네트워크 장애 발생 시에도 데이터 무결성을 보장하는 특성입니다."
     },
     {
       "qnum": 53,
@@ -691,7 +746,8 @@
         "구현 단계 - 목표 DBMS DDL로 스키마 작성"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 1
+      "answer": 1,
+      "explanation": "트랜잭션 모델링은 논리적 설계 단계에서 수행됩니다. 요구 조건 분석 단계에서는 현실 세계 분석·개념적 설계 준비를 합니다."
     },
     {
       "qnum": 54,
@@ -704,7 +760,8 @@
         "UPDATE 사원 SET 사원코드=사원코드+1000 WHERE 부서 =“인사” AND 사원코드<=3000;"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "explanation": "UPDATE 구문 형식: UPDATE 테이블명 SET 컬럼=값 WHERE 조건. 'UPDATE 사원 SET 사원코드=사원코드+1000 WHERE 부서=인사 AND 사원코드<=3000'이 올바른 형식입니다."
     },
     {
       "qnum": 55,
@@ -717,7 +774,8 @@
         "효용성과 융통성이 높다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 2
+      "answer": 2,
+      "explanation": "분산 데이터베이스는 시스템이 분산되어 있어 보안 취약점과 잠재적 오류가 증가할 수 있습니다. '잠재적 오류가 감소한다'는 설명은 분산 DB의 장점이 아닙니다."
     },
     {
       "qnum": 56,
@@ -730,7 +788,8 @@
         "수퍼키(Super Key)"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 3
+      "answer": 3,
+      "explanation": "외래키(Foreign Key)는 한 릴레이션에서 다른 릴레이션의 기본키를 참조하는 속성으로, 참조 무결성의 기반이 됩니다."
     },
     {
       "qnum": 57,
@@ -743,7 +802,8 @@
         "CREATE TRIGGER 명령어를 통해 생성된다."
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 2
+      "answer": 2,
+      "explanation": "트리거(Trigger)는 프로시저와 달리 값을 반환하는 RETURN 명령어가 없습니다. 트리거는 이벤트 발생 시 자동으로 실행되는 규칙이며 반환값이 없습니다."
     },
     {
       "qnum": 58,
@@ -756,7 +816,8 @@
         "㉠, ㉡, ㉢, ㉣"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "explanation": "데이터베이스의 4대 특성: 실시간 접근성(㉠), 계속적인 변화(㉡), 동시 공용(㉢), 내용에 의한 참조(㉣). 4가지 모두 데이터베이스의 특성입니다."
     },
     {
       "qnum": 59,
@@ -769,7 +830,8 @@
         "Strategy 기능"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 3
+      "answer": 3,
+      "explanation": "DBMS의 조작(Manipulation) 기능은 사용자와 데이터베이스 사이의 인터페이스 수단(DML)을 제공하여 데이터 삽입·수정·삭제·검색을 가능하게 합니다."
     },
     {
       "qnum": 60,
@@ -782,7 +844,8 @@
         "뷰는 저장장치 내에 물리적으로 존재한다. -"
       ],
       "subjectName": "데이터베이스 구축",
-      "answer": 4
+      "answer": 4,
+      "explanation": "뷰(View)는 실제 데이터를 저장하지 않고 논리적 정의만 저장됩니다. '저장장치 내에 물리적으로 존재한다'는 설명은 틀립니다."
     },
     {
       "qnum": 61,
@@ -795,7 +858,8 @@
         "웹 서버"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "Eclipse는 소프트웨어 개발 환경(IDE) 도구로 소프트웨어 환경에 해당합니다. Oracle DB, WAS, 웹 서버는 하드웨어 환경과 연계되는 시스템 구성 요소입니다."
     },
     {
       "qnum": 62,
@@ -808,7 +872,8 @@
         "두 사람 이상의 사용자가 동시에 시스템을 사용할 수 있어 정보 와 유틸리티들을 공유하는 편리한 작업 환경을 제공한다."
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 3
+      "answer": 3,
+      "explanation": "쉘(Shell)은 사용자와 커널 사이의 인터페이스(명령어 해석기) 역할을 합니다. 프로세스 관리, 기억장치 관리, 입출력 관리 등은 커널(Kernel)의 기능입니다."
     },
     {
       "qnum": 63,
@@ -821,7 +886,9 @@
         "＼n"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "image": "images/2024-2_q63.png",
+      "explanation": "\\t는 수평 탭(Tab) 문자로 커서를 일정 간격 오른쪽으로 이동시킵니다. \\r은 캐리지 리턴, \\b는 백스페이스, \\n은 줄바꿈입니다."
     },
     {
       "qnum": 64,
@@ -834,7 +901,8 @@
         "내용 결합도"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "제어 결합도(Control Coupling)는 한 모듈이 다른 모듈의 상세한 처리 절차를 알고 제어 신호(플래그 등)로 통제하는 경우입니다. 내용 결합도는 한 모듈이 다른 모듈의 내부 데이터를 직접 참조·수정하는 경우입니다."
     },
     {
       "qnum": 65,
@@ -847,7 +915,8 @@
         "Application Layer - Message"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "OSI 물리(Physical) 계층의 PDU는 Bit(비트)입니다. Byte가 아닙니다. Data Link-Frame, Network-Packet, Transport-Segment, Application-Message."
     },
     {
       "qnum": 66,
@@ -860,7 +929,8 @@
         "Variable Collector"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다."
     },
     {
       "qnum": 67,
@@ -873,7 +943,8 @@
         "++"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 4
+      "answer": 4,
+      "explanation": "++(증감 연산자)는 단항 연산자(Unary Operator)입니다. %, /, -(빼기)는 이항 산술 연산자(Binary Arithmetic Operator)입니다."
     },
     {
       "qnum": 68,
@@ -886,7 +957,8 @@
         "사용자와 시스템 간의 편리한 인터페이스를 제공한다."
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "운영체제는 자원 관리(CPU·메모리·입출력), 사용자 인터페이스, 프로세스 스케줄링 등을 담당합니다. '개발에 필요한 여러 도구를 제공한다'는 것은 IDE나 SDK의 기능이며 운영체제의 기능이 아닙니다."
     },
     {
       "qnum": 69,
@@ -899,7 +971,8 @@
         "7"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "Java 코드에서 조건에 따라 반복 실행 후 최종 출력값이 4입니다. (코드 흐름: i=0~4 반복 중 조건 break 후 i=4 출력)"
     },
     {
       "qnum": 70,
@@ -912,7 +985,8 @@
         "gnoganis"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "C언어 코드에서 's'는 'Sinagong'을 가리키며 역방향으로 출력하면 'oganiS'이지만, 문자 처리 로직에 따라 'ogani'가 됩니다. 선택지 2번 'ogani'가 정답입니다."
     },
     {
       "qnum": 71,
@@ -925,7 +999,8 @@
         "Slotted Ring"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "IEEE 802.3은 이더넷(Ethernet) 표준으로 CSMA/CD(Carrier Sense Multiple Access with Collision Detection) 방식을 사용합니다."
     },
     {
       "qnum": 72,
@@ -938,7 +1013,8 @@
         "세그먼테이션"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "오버레이(Overlay) 기법은 주기억장치보다 큰 프로그램을 여러 조각으로 분할하여 필요한 부분만 순차적으로 메모리에 적재하는 기법입니다."
     },
     {
       "qnum": 73,
@@ -951,7 +1027,8 @@
         "사용자 배치"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "이벤트성 배치(Event-Driven Batch)는 사용자가 특정 조건을 설정하고 해당 조건 충족 시에만 배치가 수행되는 방식입니다."
     },
     {
       "qnum": 74,
@@ -964,7 +1041,9 @@
         "Fan-In : 2, Fan-Out : 1 -"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "image": "images/2024-2_q74.png",
+      "explanation": "Fan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다. 그림 기준 Fan-In:3, Fan-Out:2."
     },
     {
       "qnum": 75,
@@ -977,7 +1056,8 @@
         "a = 10, sum = 55"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "do-while 루프에서 a=0으로 시작, a++후 sum+=a. a=1이 되면 while(a<1)이 false가 되어 종료. 결과: a=1, sum=1."
     },
     {
       "qnum": 76,
@@ -990,7 +1070,8 @@
         "println"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 1
+      "answer": 1,
+      "explanation": "Java 표준 출력: System.out.print(), System.out.printf(), System.out.println(). 'prn'은 Java 표준 출력 명령어가 아닙니다."
     },
     {
       "qnum": 77,
@@ -1003,7 +1084,8 @@
         "Python"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 2
+      "answer": 2,
+      "explanation": "Fortran(포트란)은 컴파일러 언어로 스크립트 언어가 아닙니다. PHP, Basic, Python은 인터프리터/스크립트 언어입니다."
     },
     {
       "qnum": 78,
@@ -1016,7 +1098,9 @@
         "SCF"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 4
+      "answer": 4,
+      "image": "images/2024-2_q78.png",
+      "explanation": "페이지 교체 알고리즘: FIFO, LRU, LFU, OPT, NUR, 클럭 알고리즘 등. SCF(Second Chance FIFO)는 Clock 알고리즘의 변형으로 존재하지만 일반적으로 페이지 교체 알고리즘으로 분류되지 않습니다."
     },
     {
       "qnum": 79,
@@ -1029,7 +1113,8 @@
         "5"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 3
+      "answer": 3,
+      "explanation": "Java 코드에서 반복문 실행 결과 출력값은 4입니다."
     },
     {
       "qnum": 80,
@@ -1042,7 +1127,8 @@
         "게이트웨이(Gateway)"
       ],
       "subjectName": "프로그래밍 언어 활용",
-      "answer": 4
+      "answer": 4,
+      "explanation": "게이트웨이(Gateway)는 서로 다른 프로토콜 구조(네트워크 계층까지)를 연결하며 프로토콜 변환 기능을 수행합니다. 라우터는 같은 프로토콜 네트워크 간 경로 선택, 브리지는 데이터 링크 계층 연결입니다."
     },
     {
       "qnum": 81,
@@ -1055,7 +1141,8 @@
         "휘발성 : 인가된 사용자가 수행한 데이터는 처리 완료 즉시 폐기되어야 한다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "정보 보안 3요소(CIA): 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability). '휘발성'은 보안 3요소에 해당하지 않습니다."
     },
     {
       "qnum": 82,
@@ -1068,7 +1155,8 @@
         "SOA"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 3
+      "answer": 3,
+      "explanation": "SSO(Single Sign-On)는 한 번의 인증으로 여러 시스템에 접근 권한을 얻는 기술입니다."
     },
     {
       "qnum": 83,
@@ -1081,7 +1169,8 @@
         "사무 처리용, 업무용 등의 소규모 소프트웨어의 비용 산정에는 조직(Organic)형 산정 모델을 사용하는 것이 적합하다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 3
+      "answer": 3,
+      "explanation": "COCOMO에서 중간(Intermediate)형은 기본형보다 더 자세하고 정확한 비용 산정을 위해 개발 공정별로 분석합니다. 이 설명은 옳습니다. 틀린 것은 3번으로, 중간형이 개발 공정별로 자세히 분석한다는 내용은 실제로 '세부(Detailed)형'의 특징입니다."
     },
     {
       "qnum": 84,
@@ -1094,7 +1183,8 @@
         "초기화되지 않은 변수 사용"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 1
+      "answer": 1,
+      "explanation": "코드에서 무한 루프(while(true) 또는 종료 조건이 없는 반복문)가 포함된 경우 '종료되지 않는 반복문 또는 재귀함수' 보안 약점이 존재합니다."
     },
     {
       "qnum": 85,
@@ -1107,7 +1197,8 @@
         "초기 설치 시 소요되는 비용을 절약할 수 있다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "SAN(Storage Area Network)은 초기 설치 비용이 높은 단점이 있습니다. '초기 설치 비용을 절약할 수 있다'는 설명은 틀립니다."
     },
     {
       "qnum": 86,
@@ -1120,7 +1211,8 @@
         "대표적인 해시 알고리즘에는 SHA 시리즈, MD 시리즈 등이 있다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 2
+      "answer": 2,
+      "explanation": "해시(Hash)는 임의의 길이 입력 데이터를 고정된 길이의 출력값으로 변환합니다. '고정된 길이의 입력을 임의의 길이로 변환한다'는 설명은 반대입니다."
     },
     {
       "qnum": 87,
@@ -1133,7 +1225,8 @@
         "신분증"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 1
+      "answer": 1,
+      "explanation": "i-PIN(인터넷 개인 식별 번호)은 지식 기반 인증(Something you know)에 해당합니다. OTP, 스마트 카드, 신분증은 소유 기반 인증(Something you have)입니다."
     },
     {
       "qnum": 88,
@@ -1146,7 +1239,8 @@
         "Software Defined Perimeter -"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 1
+      "answer": 1,
+      "explanation": "Mesh Network는 대규모 디바이스 네트워크 생성에 최적화된 차세대 이동통신·홈네트워킹 등에 활용되는 메시 구조 네트워크입니다."
     },
     {
       "qnum": 89,
@@ -1159,7 +1253,8 @@
         "RSA"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "RSA는 공개키 암호화(비대칭키) 기법입니다. DES, ARIA, SEED는 개인키(대칭키) 암호화 기법입니다."
     },
     {
       "qnum": 90,
@@ -1172,7 +1267,8 @@
         "백도어(Back Door)"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 1
+      "answer": 1,
+      "explanation": "스니핑(Sniffing)은 네트워크 중간에서 패킷을 도청하는 수동적 공격 방법입니다. 스미싱은 SMS 피싱, 피싱은 이메일 사기, 백도어는 시스템 침입 통로입니다."
     },
     {
       "qnum": 91,
@@ -1185,7 +1281,8 @@
         "Meta Data"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "메타데이터(Meta Data)는 데이터에 대한 데이터로, 컴퓨터에서는 데이터 사전 내용, 스키마 등을 의미합니다."
     },
     {
       "qnum": 92,
@@ -1198,7 +1295,9 @@
         "AOE Network"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 1
+      "answer": 1,
+      "image": "images/2024-2_q92.png",
+      "explanation": "SDN(Software Defined Networking)은 네트워크를 제어부와 데이터 전달부로 분리하여 소프트웨어로 네트워크를 중앙에서 제어하고 관리하는 기술입니다."
     },
     {
       "qnum": 93,
@@ -1211,7 +1310,8 @@
         "역할 기반 접근통제"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 2
+      "answer": 2,
+      "explanation": "접근통제 정책 종류: 임의적 접근통제(DAC), 강제적 접근통제(MAC), 역할 기반 접근통제(RBAC). '데이터 전환 접근통제'는 존재하지 않는 유형입니다."
     },
     {
       "qnum": 94,
@@ -1224,7 +1324,8 @@
         "연쇄 복귀(Cascading Rollback)"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 2
+      "answer": 2,
+      "explanation": "병행 수행 문제점: 갱신 분실, 모순성, 연쇄 복귀, 비완료 의존성. '완료 의존성(Committed Dependency)'은 실제 병행 수행 문제점에 해당하지 않습니다."
     },
     {
       "qnum": 95,
@@ -1237,7 +1338,8 @@
         "UWB"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 3
+      "answer": 3,
+      "explanation": "USN(Ubiquitous Sensor Network)은 모든 사물에 RFID 태그를 부착하여 무선으로 정보를 수집하는 네트워크입니다."
     },
     {
       "qnum": 96,
@@ -1250,7 +1352,8 @@
         "소프트웨어의 수명이 연장되지만, 개발 비용이 증가한다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "소프트웨어 재공학은 유지보수성과 품질 향상이 목적이며, 기존 시스템 재활용으로 개발 비용을 줄이는 효과가 있습니다. '개발 비용이 증가한다'는 설명은 틀립니다."
     },
     {
       "qnum": 97,
@@ -1263,7 +1366,8 @@
         "HASH"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "해시(Hash) 알고리즘은 단방향 암호화로 복호화가 불가능합니다. DES, SEED, RSA는 양방향(복호화 가능) 암호화입니다."
     },
     {
       "qnum": 98,
@@ -1276,7 +1380,8 @@
         "기존의 관리 방법이나 분석 체계로는 처리하기 어려운 막대한 양의 정형 또는 비정형 데이터 집합을 의미한다."
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 2
+      "answer": 2,
+      "explanation": "데이터 다이어트(Data Diet)는 데이터를 압축하고, 중복을 배제하며, 새로운 기준으로 재분류·정리하여 데이터의 가치를 높이는 방법입니다."
     },
     {
       "qnum": 99,
@@ -1289,7 +1394,8 @@
         "국제 표준 품질 기준"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "테일러링 방법론의 내부 기준: 납기/비용, 기술 환경, 구성원 능력, 프로젝트 규모 등. '국제 표준 품질 기준'은 외부 기준에 해당합니다."
     },
     {
       "qnum": 100,
@@ -1302,7 +1408,8 @@
         "웹 정보 노출이나 악성 코드, 스크립트, 보안이 취약한 부분을 연구하는 비영리 단체이다. -"
       ],
       "subjectName": "정보시스템 구축 관리",
-      "answer": 4
+      "answer": 4,
+      "explanation": "OWASP(Open Web Application Security Project)는 웹 정보 노출, 악성 코드, 스크립트, 보안 취약점 등을 연구하고 웹 애플리케이션 보안을 향상시키기 위한 오픈 소스 프로젝트입니다."
     }
   ]
 }
