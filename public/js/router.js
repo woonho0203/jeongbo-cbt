@@ -24,6 +24,8 @@ function parseHash() {
 async function renderRoute() {
   const { name, params } = parseHash();
   const handler = routes[name] || routes.home;
+  // 페이지 전환 시 이전 타이머 인터벌 정리
+  if (typeof clearGlobalTimer === 'function') clearGlobalTimer();
   // 네비 active 표시
   document.querySelectorAll('.topbar nav a').forEach(a => {
     a.classList.toggle('active', a.dataset.route === name);

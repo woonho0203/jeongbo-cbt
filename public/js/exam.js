@@ -1,4 +1,11 @@
 // 시험 화면 - 일반 모드 + 학습(즉시채점) 모드
+
+// 전역 타이머: SPA에서 이전 인터벌이 남아 중복 실행되는 것을 방지
+let _timerInterval = null;
+function clearGlobalTimer() {
+  if (_timerInterval) { clearInterval(_timerInterval); _timerInterval = null; }
+}
+
 defineRoute('exam', async (app, params) => {
   const mode      = params.mode || 'past';
   const sourceId  = params.sourceId || '';
@@ -61,15 +68,15 @@ function renderExam(app, state) {
 }
 
 function startTimer(state) {
-  if (state.timerInterval) clearInterval(state.timerInterval);
+  clearGlobalTimer();
   const tick = () => {
     const elapsed   = Math.floor((Date.now() - state.startedAt) / 1000);
     const remaining = state.timeLimit ? state.timeLimit - elapsed : null;
     const t = document.getElementById('timer');
-    if (!t) return;
+    if (!t) { clearGlobalTimer(); return; }
     if (remaining != null) {
       if (remaining <= 0) {
-        clearInterval(state.timerInterval);
+        clearGlobalTimer();
         t.textContent = '⏱ 00:00';
         autoSubmit(state);
         return;
@@ -82,7 +89,8 @@ function startTimer(state) {
   };
   state.tick = tick;
   tick();
-  state.timerInterval = setInterval(tick, 1000);
+  _timerInterval = setInterval(tick, 1000);
+  state.timerInterval = _timerInterval;
 }
 
 function renderQuestion(state) {
@@ -392,7 +400,7 @@ async function submitExam(state, force = false) {
   }
 
   state.submitted = true;
-  if (state.timerInterval) clearInterval(state.timerInterval);
+  clearGlobalTimer();
   document.onkeydown = null;
 
   const durationSec = Math.floor((Date.now() - state.startedAt) / 1000);
