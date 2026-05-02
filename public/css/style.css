@@ -377,8 +377,8 @@ main {
   .topbar nav { justify-content: flex-start; }
   .topbar nav a { font-size: 0.78rem; padding: 4px 7px; }
 
-  .exam-layout { grid-template-columns: 1fr; gap: 12px; }
-  .exam-side { position: static; }
+  .exam-layout { grid-template-columns: 1fr; gap: 0; }
+  .exam-side { display: none; }
   .exam-main { padding: 14px; min-height: unset; }
 
   .qstem { font-size: 0.97rem; }
