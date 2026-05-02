@@ -30,9 +30,9 @@ defineRoute('home', async (app) => {
   const scoreColor = lastScore != null ? (lastScore >= 60 ? 'var(--success)' : 'var(--danger)') : 'var(--muted)';
   const summary = el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
-    dashCard('평균 점수', stats.totalSessions ? `${Math.round(stats.avgScore)}점` : '-'),
-    dashCard('최고 점수', stats.bestScore != null ? `${Math.round(stats.bestScore)}점` : '-'),
-    dashCard('최근 점수', lastScore != null ? `${Math.round(lastScore)}점` : '-', scoreColor),
+    dashCard('평균 점수', stats.totalSessions ? `${Math.round(stats.avgScore)}%` : '-'),
+    dashCard('최고 점수', stats.bestScore != null ? `${Math.round(stats.bestScore)}%` : '-'),
+    dashCard('최근 점수', lastScore != null ? `${Math.round(lastScore)}%` : '-', scoreColor),
   ]);
 
   app.innerHTML = '';
@@ -105,34 +105,123 @@ defineRoute('category-list', async (app) => {
 defineRoute('history', async (app) => {
   const { sessions } = await api('/api/sessions');
   app.innerHTML = '';
-  app.append(
-    el('h1', { class: 'section-title', text: '시험 기록' }),
-    sessions.length === 0
-      ? el('div', { class: 'card', text: '아직 응시한 시험이 없습니다.' })
-      : el('div', { class: 'list' }, sessions.map(s => sessionRow(s))),
-  );
+
+  app.append(el('h1', { class: 'section-title', text: '📋 학습 기록' }));
+
+  if (sessions.length === 0) {
+    app.append(el('div', { class: 'card', text: '아직 응시한 시험이 없습니다.' }));
+    return;
+  }
+
+  // 요약 통계
+  const total = sessions.length;
+  const avg = Math.round(sessions.reduce((a, s) => a + (s.score || 0), 0) / total);
+  const best = Math.max(...sessions.map(s => s.score || 0));
+  const passed = sessions.filter(s => s.score >= 60).length;
+  app.append(el('div', { class: 'history-summary' }, [
+    histStatCard('총 응시', `${total}회`),
+    histStatCard('평균 점수', `${avg}%`),
+    histStatCard('최고 점수', `${Math.round(best)}%`),
+    histStatCard('합격권', `${passed}회`, passed > 0 ? 'var(--success)' : ''),
+  ]));
+
+  // 필터 탭 (전체 / 합격권 / 미달)
+  let filter = 'all';
+  const listWrap = el('div', { class: 'history-list' });
+
+  const renderList = () => {
+    listWrap.innerHTML = '';
+    const filtered = filter === 'pass' ? sessions.filter(s => s.score >= 60)
+                   : filter === 'fail' ? sessions.filter(s => s.score < 60)
+                   : sessions;
+    if (filtered.length === 0) {
+      listWrap.append(el('p', { style: { padding: '16px', color: 'var(--muted)' }, text: '해당하는 기록이 없습니다.' }));
+      return;
+    }
+    filtered.forEach(s => listWrap.append(historyCard(s)));
+  };
+
+  const tabs = ['all', 'pass', 'fail'];
+  const tabLabels = { all: '전체', pass: '합격권(60%↑)', fail: '미달(60%↓)' };
+  const tabBar = el('div', { class: 'filter-tabs' });
+  tabs.forEach(t => {
+    const btn = el('button', { class: `filter-tab${t === filter ? ' active' : ''}`, onClick: () => {
+      filter = t;
+      tabBar.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderList();
+    }, text: tabLabels[t] });
+    tabBar.append(btn);
+  });
+
+  app.append(tabBar, listWrap);
+  renderList();
 });
 
-function sessionRow(s) {
-  const passClass = s.score >= 60 ? 'success' : 'danger';
-  return el('div', { class: 'list-item' }, [
-    el('div', { class: 'info' }, [
-      el('div', { class: 'title', text: s.title || s.mode }),
-      el('div', { class: 'meta', text: `${fmtDate(s.finished_at)} · ${s.correct_count}/${s.question_count}문제 · ${fmtDuration(s.duration_sec)}` }),
-    ]),
-    el('div', { class: 'actions' }, [
-      el('div', { class: `summary-card ${passClass}`, style: { padding: '6px 14px', minWidth: '70px' } }, [
-        el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${Math.round(s.score)}점` }),
-      ]),
-      el('button', { class: 'btn small', onClick: () => navigate('result', { id: s.id }), text: '상세' }),
-      el('button', { class: 'btn small danger', onClick: async () => {
-        if (await modalConfirm('삭제 확인', '이 응시 기록을 삭제할까요?')) {
-          await api(`/api/sessions/${s.id}`, { method: 'DELETE' });
-          renderRoute();
-        }
-      }, text: '삭제' }),
+function histStatCard(label, value, color = '') {
+  return el('div', { class: 'hist-stat' }, [
+    el('div', { class: 'hist-stat-value', style: color ? { color } : {}, text: value }),
+    el('div', { class: 'hist-stat-label', text: label }),
+  ]);
+}
+
+function historyCard(s) {
+  const score = Math.round(s.score);
+  const pass = s.score >= 60;
+  const modeLabel = { past: '기출문제', random: '랜덤 모의고사', category: '유형별 연습', wrong: '오답 풀기' };
+  const card = el('div', { class: `history-card ${pass ? 'pass' : 'fail'}` });
+
+  // 점수 원형 표시
+  const ring = el('div', { class: 'score-ring' }, [
+    el('div', { class: `score-ring-inner ${pass ? 'pass' : 'fail'}` }, [
+      el('div', { class: 'score-ring-pct', text: `${score}%` }),
+      el('div', { class: 'score-ring-label', text: pass ? '합격권' : '미달' }),
     ]),
   ]);
+
+  // 정보 영역
+  const info = el('div', { class: 'history-card-info' }, [
+    el('div', { class: 'history-card-title', text: s.title || modeLabel[s.mode] || s.mode }),
+    el('div', { class: 'history-card-meta' }, [
+      el('span', { text: fmtDate(s.finished_at) }),
+      el('span', { class: 'sep', text: '·' }),
+      el('span', { text: `${s.correct_count}/${s.question_count}문제 정답` }),
+      el('span', { class: 'sep', text: '·' }),
+      el('span', { text: fmtDuration(s.duration_sec) }),
+    ]),
+  ]);
+
+  // 과목별 미니 바
+  if (s.subject_breakdown && Object.keys(s.subject_breakdown).length > 0) {
+    const subjWrap = el('div', { class: 'history-subj-bars' });
+    for (const sid of [1, 2, 3, 4, 5]) {
+      const v = s.subject_breakdown[sid];
+      if (!v || !v.total) continue;
+      const r = Math.round(v.correct / v.total * 100);
+      subjWrap.append(el('div', { class: 'history-subj-bar' }, [
+        el('div', { class: 'history-subj-name', text: `과목${sid}` }),
+        el('div', { class: 'history-mini-track' }, [
+          el('div', { class: `history-mini-fill ${r >= 40 ? 'ok' : 'low'}`, style: { width: `${r}%` } }),
+        ]),
+        el('div', { class: 'history-subj-pct', text: `${r}%` }),
+      ]));
+    }
+    info.append(subjWrap);
+  }
+
+  // 버튼
+  const btns = el('div', { class: 'history-card-btns' }, [
+    el('button', { class: 'btn small primary', onClick: () => navigate('result', { id: s.id }), text: '상세 보기' }),
+    el('button', { class: 'btn small danger', onClick: async () => {
+      if (await modalConfirm('삭제 확인', '이 기록을 삭제할까요?')) {
+        await api(`/api/sessions/${s.id}`, { method: 'DELETE' });
+        renderRoute();
+      }
+    }, text: '삭제' }),
+  ]);
+
+  card.append(ring, info, btns);
+  return card;
 }
 
 // =================== 결과 상세 ===================
@@ -147,7 +236,7 @@ defineRoute('result', async (app, params) => {
   app.append(
     el('h1', { class: 'section-title', text: `결과: ${session.title || session.mode}` }),
     el('div', { class: 'result-summary' }, [
-      summaryCard('점수', `${Math.round(session.score)} / 100`, session.score >= 60 ? 'success' : 'danger'),
+      summaryCard('점수', `${Math.round(session.score)}%`, session.score >= 60 ? 'success' : 'danger'),
       summaryCard('정답', `${session.correct_count}/${session.question_count}`),
       summaryCard('소요 시간', fmtDuration(session.duration_sec)),
       summaryCard('합격 여부', session.score >= 60 ? '합격권' : '미달', session.score >= 60 ? 'success' : 'danger'),
@@ -181,7 +270,7 @@ defineRoute('result', async (app, params) => {
       el('span', { class: 'qnum', text: `Q${i + 1}` }),
       el('span', { class: 'subject', text: a.subjectName || '' }),
     ]));
-    item.appendChild(el('div', { class: 'qstem', text: a.stem || '(문제 본문 없음)' }));
+    for (const node of renderStem(a.stem || '(문제 본문 없음)')) item.appendChild(node);
     if (a.image) item.appendChild(el('img', { class: 'qimg', src: a.image, alt: '문제 이미지' }));
     if (a.table) item.appendChild(el('div', { class: 'qtable', html: a.table }));
     if (a.options) {
@@ -230,9 +319,9 @@ defineRoute('dashboard', async (app) => {
   // 핵심 지표
   app.append(el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
-    dashCard('평균 점수', `${Math.round(stats.avgScore)}점`),
-    dashCard('최고 점수', `${Math.round(stats.bestScore)}점`),
-    dashCard('최근 점수', `${Math.round(stats.lastScore)}점`),
+    dashCard('평균 점수', `${Math.round(stats.avgScore)}%`),
+    dashCard('최고 점수', `${Math.round(stats.bestScore)}%`),
+    dashCard('최근 점수', `${Math.round(stats.lastScore)}%`),
   ]));
 
   // 점수 추세 차트 (간단 SVG)
@@ -263,7 +352,7 @@ defineRoute('dashboard', async (app) => {
         ]),
         el('div', { class: 'actions' }, [
           el('div', { class: `summary-card ${r.score >= 60 ? 'success' : 'danger'}`, style: { padding: '6px 14px', minWidth: '70px' } }, [
-            el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${Math.round(r.score)}점` }),
+            el('div', { class: 'value', style: { fontSize: '1.2rem' }, text: `${Math.round(r.score)}%` }),
           ]),
           el('button', { class: 'btn small', onClick: () => navigate('result', { id: r.id }), text: '상세' }),
         ]),
@@ -407,7 +496,7 @@ defineRoute('bookmarks', async (app) => {
         renderRoute();
       }, text: '북마크 해제' }),
     ]));
-    item.appendChild(el('div', { class: 'qstem', text: b.stem || '' }));
+    for (const node of renderStem(b.stem || '')) item.appendChild(node);
     if (b.image) item.appendChild(el('img', { class: 'qimg', src: b.image, alt: '문제 이미지' }));
     if (b.table) item.appendChild(el('div', { class: 'qtable', html: b.table }));
     if (b.options) {

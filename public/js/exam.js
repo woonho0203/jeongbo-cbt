@@ -17,6 +17,20 @@ defineRoute('exam', async (app, params) => {
     body: JSON.stringify({ mode, sourceId, count, checkMode }),
   });
 
+  // 보기 랜덤 섞기 (매 시작마다 다른 순서)
+  for (const q of data.questions) {
+    if (!q.options || q.options.length < 2) continue;
+    const indexed = q.options.map((opt, i) => ({ opt, i }));
+    for (let k = indexed.length - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      [indexed[k], indexed[j]] = [indexed[j], indexed[k]];
+    }
+    q.options = indexed.map(x => x.opt);
+    if (q.answer != null) {
+      q.answer = indexed.findIndex(x => x.i === q.answer - 1) + 1;
+    }
+  }
+
   if (!data.questions || data.questions.length === 0) {
     app.innerHTML = '';
     app.append(el('div', { class: 'card' }, [
@@ -113,6 +127,42 @@ function renderQuestion(state) {
   main.append(el('div', { class: 'exam-header' }, headerChildren));
   if (state.tick) state.tick();
 
+  // ── 진행률/점수 바 ──
+  {
+    const total = state.questions.length;
+    const answered = state.answers.size;
+    let progressEl;
+    if (state.checkMode && state.questions[0]?.answer != null) {
+      const correct = state.questions.filter(q2 => state.answers.get(q2.qkey) === q2.answer).length;
+      const gradable = state.questions.filter(q2 => q2.answer != null).length;
+      const pct = gradable > 0 ? Math.round(correct / gradable * 100) : 0;
+      const color = pct >= 60 ? 'var(--success)' : 'var(--danger)';
+      progressEl = el('div', { class: 'progress-bar-wrap' }, [
+        el('div', { class: 'progress-label' }, [
+          el('span', { text: `점수 ` }),
+          el('strong', { style: { color }, text: `${pct}%` }),
+          el('span', { style: { color: 'var(--muted)', marginLeft: '8px' }, text: `(${answered}/${total} 풀이)` }),
+        ]),
+        el('div', { class: 'progress-track' }, [
+          el('div', { class: 'progress-fill', style: { width: `${answered / total * 100}%`, background: color } }),
+        ]),
+      ]);
+    } else {
+      const pct = total > 0 ? Math.round(answered / total * 100) : 0;
+      progressEl = el('div', { class: 'progress-bar-wrap' }, [
+        el('div', { class: 'progress-label' }, [
+          el('span', { text: `진행률 ` }),
+          el('strong', { text: `${pct}%` }),
+          el('span', { style: { color: 'var(--muted)', marginLeft: '8px' }, text: `(${answered}/${total})` }),
+        ]),
+        el('div', { class: 'progress-track' }, [
+          el('div', { class: 'progress-fill', style: { width: `${pct}%` } }),
+        ]),
+      ]);
+    }
+    main.append(progressEl);
+  }
+
   // ── 문제 ──
   main.append(el('div', { class: 'qbox' }, [
     el('div', { class: 'qhead' }, [
@@ -124,7 +174,7 @@ function renderQuestion(state) {
         text: state.bookmarks.has(q.qkey) ? '★' : '☆',
       }),
     ]),
-    el('div', { class: 'qstem', text: q.stem }),
+    ...renderStem(q.stem),
     ...(q.image ? [el('img', { class: 'qimg', src: q.image, alt: '문제 이미지' })] : []),
     ...(q.table ? [el('div', { class: 'qtable', html: q.table })] : []),
     el('div', { class: 'options' }, q.options.map((opt, i) => {
@@ -353,7 +403,7 @@ function omrSummaryContents(state) {
     const gradable = state.questions.filter(q => q.answer != null).length;
     const score = gradable > 0 ? Math.round(correct / gradable * 100) : 0;
     return [
-      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score} / 100` })]),
+      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score}%` })]),
       el('div', {}, [el('span', { text: '정답' }), el('span', { style: { color: 'var(--success)', fontWeight: '600' }, text: `${correct}` })]),
       el('div', {}, [el('span', { text: '오답' }), el('span', { style: { color: 'var(--danger)',  fontWeight: '600' }, text: `${wrong}` })]),
       el('div', {}, [el('span', { text: '미풀이' }), el('span', { text: `${total - answered}` })]),

@@ -68,6 +68,26 @@ function fmtTimer(sec) {
 }
 
 const CIRCLES = ['①', '②', '③', '④'];
+
+// 문제 본문에서 코드 블록 감지 후 <pre> 분리 렌더링
+function renderStem(text) {
+  const CODE_STARTS = ['#include', 'public class ', 'class Solution', 'def ', 'SELECT ', 'CREATE TABLE ', 'import java.', 'package ', 'function '];
+  let splitIdx = -1;
+  for (const m of CODE_STARTS) {
+    const idx = text.indexOf(m);
+    if (idx !== -1 && (splitIdx === -1 || idx < splitIdx)) splitIdx = idx;
+  }
+  if (splitIdx === -1) return [el('div', { class: 'qstem', text })];
+  const questionText = text.slice(0, splitIdx).trim();
+  const codeText = text.slice(splitIdx);
+  const nodes = [];
+  if (questionText) nodes.push(el('div', { class: 'qstem', text: questionText }));
+  const pre = document.createElement('pre');
+  pre.className = 'code-block';
+  pre.appendChild(Object.assign(document.createElement('code'), { textContent: codeText }));
+  nodes.push(pre);
+  return nodes;
+}
 const SUBJECT_NAMES = {
   1: '소프트웨어 설계',
   2: '소프트웨어 개발',

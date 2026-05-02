@@ -368,6 +368,102 @@ main {
 .review-item .qhead { margin-bottom: 8px; }
 .review-item .qstem { font-size: 0.95rem; }
 
+/* ─── 코드 블록 ─── */
+.code-block {
+  background: #1a1d2e; color: #e8eaf0;
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 16px; margin: 10px 0;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 0.85rem; line-height: 1.65;
+  overflow-x: auto; white-space: pre; tab-size: 4;
+}
+[data-theme="light"] .code-block {
+  background: #f4f5f9; color: #232a3b;
+  border-color: #d0d7e8;
+}
+.code-block code { font-family: inherit; background: none; padding: 0; }
+
+/* ─── 진행률/점수 바 ─── */
+.progress-bar-wrap {
+  margin: 4px 0 10px;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 14px;
+}
+.progress-label { display: flex; align-items: center; margin-bottom: 6px; font-size: 0.88rem; }
+.progress-label strong { font-size: 1.05rem; }
+.progress-track {
+  height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: var(--primary);
+  border-radius: 3px; transition: width 0.4s ease;
+}
+
+/* ─── 학습 기록 ─── */
+.history-summary {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 18px;
+}
+.hist-stat {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px; text-align: center;
+}
+.hist-stat-value { font-size: 1.6rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+.hist-stat-label { font-size: 0.8rem; color: var(--muted); }
+
+.filter-tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.filter-tab {
+  padding: 6px 16px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--panel); color: var(--muted); cursor: pointer; font-size: 0.85rem;
+  transition: all 0.15s;
+}
+.filter-tab:hover { border-color: var(--primary); color: var(--primary); }
+.filter-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+.history-list { display: flex; flex-direction: column; gap: 10px; }
+.history-card {
+  display: flex; align-items: flex-start; gap: 16px;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px;
+  border-left-width: 4px;
+}
+.history-card.pass { border-left-color: var(--success); }
+.history-card.fail { border-left-color: var(--danger); }
+
+.score-ring { flex-shrink: 0; }
+.score-ring-inner {
+  width: 72px; height: 72px; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-weight: 700;
+}
+.score-ring-inner.pass { background: rgba(30,166,114,0.12); color: var(--success); }
+.score-ring-inner.fail { background: rgba(230,69,69,0.12); color: var(--danger); }
+.score-ring-pct { font-size: 1.25rem; line-height: 1.1; }
+.score-ring-label { font-size: 0.72rem; margin-top: 2px; }
+
+.history-card-info { flex: 1; min-width: 0; }
+.history-card-title { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+.history-card-meta { display: flex; flex-wrap: wrap; gap: 4px; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.history-card-meta .sep { color: var(--border); }
+
+.history-subj-bars { display: flex; flex-direction: column; gap: 4px; }
+.history-subj-bar { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; }
+.history-subj-name { width: 36px; color: var(--muted); flex-shrink: 0; }
+.history-mini-track { flex: 1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.history-mini-fill { height: 100%; border-radius: 3px; }
+.history-mini-fill.ok { background: var(--success); }
+.history-mini-fill.low { background: var(--danger); }
+.history-subj-pct { width: 34px; text-align: right; color: var(--muted); flex-shrink: 0; }
+
+.history-card-btns { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+
+@media (max-width: 600px) {
+  .history-summary { grid-template-columns: repeat(2, 1fr); }
+  .history-card { flex-wrap: wrap; }
+  .history-card-btns { flex-direction: row; width: 100%; }
+  .score-ring-inner { width: 60px; height: 60px; }
+  .score-ring-pct { font-size: 1.05rem; }
+}
+
 /* ─── 모바일 (≤ 768px) ─── */
 @media (max-width: 768px) {
   main { padding: 12px 12px 80px; }
