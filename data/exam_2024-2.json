@@ -658,7 +658,6 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "image": "images/2024-2_q47.png",
       "explanation": "트리의 차수는 노드들 중 자식 수가 가장 많은 노드의 자식 수입니다. 그림의 트리에서 최대 자식 수는 3입니다."
     },
     {
@@ -925,7 +924,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다."
+      "explanation": "Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다.",
+      "image": "images/2024-2_q66.png"
     },
     {
       "qnum": 67,
@@ -1037,7 +1037,6 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "image": "images/2024-2_q74.png",
       "explanation": "Fan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다. 그림 기준 Fan-In:3, Fan-Out:2."
     },
     {

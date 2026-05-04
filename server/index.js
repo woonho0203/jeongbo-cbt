@@ -88,7 +88,7 @@ async function handleAPI(req, res, method, urlPath) {
 
   // POST /api/exam/start
   if (method === 'POST' && urlPath === '/api/exam/start') {
-    const { mode, sourceId, count = 100, checkMode = false } = await readBody(req);
+    const { mode, sourceId, count = 100, checkMode = false, wrongKeys } = await readBody(req);
     let questions = [], title = '', qkeyMode = mode;
 
     if (mode === 'past') {
@@ -110,11 +110,21 @@ async function handleAPI(req, res, method, urlPath) {
       questions = cat.questions.map(q => ({ ...q, qkey: loader.buildQkey('category', sourceId, q.qnum) }));
       title = cat.title;
     } else if (mode === 'wrong') {
-      const wrongs = store.listWrong();
+      // 클라이언트가 localStorage 오답 목록을 전달한 경우 우선 사용
+      const clientWrongKeys = Array.isArray(wrongKeys) ? wrongKeys : [];
       const seen = new Set();
-      for (const r of wrongs) {
-        const q = loader.lookupQuestion(r.qkey);
-        if (q && !seen.has(r.qkey)) { questions.push({ ...q, qkey: r.qkey }); seen.add(r.qkey); }
+      if (clientWrongKeys.length > 0) {
+        for (const qkey of clientWrongKeys) {
+          const q = loader.lookupQuestion(qkey);
+          if (q && !seen.has(qkey)) { questions.push({ ...q, qkey }); seen.add(qkey); }
+        }
+      } else {
+        // 폴백: 서버 스토어 (로컬 실행 환경)
+        const wrongs = store.listWrong();
+        for (const r of wrongs) {
+          const q = loader.lookupQuestion(r.qkey);
+          if (q && !seen.has(r.qkey)) { questions.push({ ...q, qkey: r.qkey }); seen.add(r.qkey); }
+        }
       }
       if (count) questions = questions.slice(0, count);
       title = `오답 노트 (${questions.length}문제)`;

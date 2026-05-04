@@ -71,7 +71,11 @@ const CIRCLES = ['①', '②', '③', '④'];
 
 // 문제 본문에서 코드 블록 감지 후 <pre> 분리 렌더링
 function renderStem(text) {
-  const CODE_STARTS = ['#include', 'public class ', 'class Solution', 'def ', 'SELECT ', 'CREATE TABLE ', 'import java.', 'package ', 'function '];
+  const CODE_STARTS = [
+    '#include', 'public class ', 'class Solution', 'def ', 'function ',
+    'SELECT ', 'CREATE TABLE ', 'INSERT INTO ', 'UPDATE ', 'DELETE FROM ',
+    'import java.', 'package ', 'int main(', 'void main(', '<?php',
+  ];
   let splitIdx = -1;
   for (const m of CODE_STARTS) {
     const idx = text.indexOf(m);
@@ -87,6 +91,15 @@ function renderStem(text) {
   pre.appendChild(Object.assign(document.createElement('code'), { textContent: codeText }));
   nodes.push(pre);
   return nodes;
+}
+
+// 해설 렌더링 (구조화된 레이아웃)
+function renderExplanation(text) {
+  if (!text) return null;
+  const wrap = el('div', { class: 'explanation' });
+  wrap.appendChild(el('div', { class: 'explanation-header', text: '💡 해설' }));
+  wrap.appendChild(el('div', { class: 'explanation-body', text }));
+  return wrap;
 }
 const SUBJECT_NAMES = {
   1: '소프트웨어 설계',

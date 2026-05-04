@@ -12,21 +12,28 @@ defineRoute('exam', async (app, params) => {
   const count     = params.count ? parseInt(params.count, 10) : null;
   const checkMode = params.check === '1';   // 학습 모드 여부
 
+  // 오답 모드: 로컬 스토리지에서 오답 qkey 목록 제공
+  const wrongKeys = mode === 'wrong' ? Storage.listWrong().map(w => w.qkey) : [];
+
   const data = await api('/api/exam/start', {
     method: 'POST',
-    body: JSON.stringify({ mode, sourceId, count, checkMode }),
+    body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys }),
   });
 
-  // 보기 랜덤 섞기 (매 시작마다 다른 순서)
+  // ── 보기 랜덤 섞기 + shuffleMap 저장 ────────────────────────────────────────
+  // shuffleMap[newPos(0-based)] = originalIdx(0-based)
+  // 제출 시 선택된 번호(섞인 위치)를 원본 위치로 변환하는 데 사용
   for (const q of data.questions) {
-    if (!q.options || q.options.length < 2) continue;
+    if (!q.options || q.options.length < 2) { q.shuffleMap = null; continue; }
     const indexed = q.options.map((opt, i) => ({ opt, i }));
     for (let k = indexed.length - 1; k > 0; k--) {
       const j = Math.floor(Math.random() * (k + 1));
       [indexed[k], indexed[j]] = [indexed[j], indexed[k]];
     }
+    q.shuffleMap = indexed.map(x => x.i); // 역매핑 저장
     q.options = indexed.map(x => x.opt);
     if (q.answer != null) {
+      // checkMode에서 정답 표시를 위해 answer도 섞인 위치로 갱신
       q.answer = indexed.findIndex(x => x.i === q.answer - 1) + 1;
     }
   }
@@ -58,13 +65,11 @@ defineRoute('exam', async (app, params) => {
     timeLimit: 0,
   };
 
-  // 북마크 미리 조회
-  await Promise.all(state.questions.map(async q => {
-    try {
-      const r = await api(`/api/bookmarks/check/${encodeURIComponent(q.qkey)}`);
-      if (r.bookmarked) state.bookmarks.add(q.qkey);
-    } catch (e) {}
-  }));
+  // 북마크 - localStorage에서 로드 (API 호출 없음)
+  const savedBookmarks = Storage.getBookmarks();
+  for (const q of state.questions) {
+    if (savedBookmarks[q.qkey]) state.bookmarks.add(q.qkey);
+  }
 
   renderExam(app, state);
 });
@@ -127,36 +132,33 @@ function renderQuestion(state) {
   main.append(el('div', { class: 'exam-header' }, headerChildren));
   if (state.tick) state.tick();
 
-  // ── 진행률/점수 바 ──
+  // ── 진행 현황 바 (맞은 것 / 틀린 것 / 남은 것) ──
   {
-    const total = state.questions.length;
+    const total    = state.questions.length;
     const answered = state.answers.size;
+
     let progressEl;
     if (state.checkMode && state.questions[0]?.answer != null) {
-      const correct = state.questions.filter(q2 => state.answers.get(q2.qkey) === q2.answer).length;
-      const gradable = state.questions.filter(q2 => q2.answer != null).length;
-      const pct = gradable > 0 ? Math.round(correct / gradable * 100) : 0;
-      const color = pct >= 60 ? 'var(--success)' : 'var(--danger)';
+      const correct  = state.questions.filter(q2 => state.answers.get(q2.qkey) === q2.answer).length;
+      const wrong    = answered - correct;
+      const remain   = total - answered;
+      const score    = total > 0 ? Math.round(correct / total * 100) : 0;
+      const scoreColor = score >= 60 ? 'var(--success)' : 'var(--danger)';
       progressEl = el('div', { class: 'progress-bar-wrap' }, [
-        el('div', { class: 'progress-label' }, [
-          el('span', { text: `점수 ` }),
-          el('strong', { style: { color }, text: `${pct}%` }),
-          el('span', { style: { color: 'var(--muted)', marginLeft: '8px' }, text: `(${answered}/${total} 풀이)` }),
-        ]),
-        el('div', { class: 'progress-track' }, [
-          el('div', { class: 'progress-fill', style: { width: `${answered / total * 100}%`, background: color } }),
+        el('div', { class: 'progress-counts' }, [
+          el('span', { class: 'pcnt correct', text: `✅ 맞은 것: ${correct}` }),
+          el('span', { class: 'pcnt wrong',   text: `❌ 틀린 것: ${wrong}` }),
+          el('span', { class: 'pcnt remain',  text: `📝 남은 것: ${remain}` }),
+          el('span', { class: 'pcnt score', style: { color: scoreColor }, text: `점수: ${score}%` }),
         ]),
       ]);
     } else {
-      const pct = total > 0 ? Math.round(answered / total * 100) : 0;
+      const remain = total - answered;
       progressEl = el('div', { class: 'progress-bar-wrap' }, [
-        el('div', { class: 'progress-label' }, [
-          el('span', { text: `진행률 ` }),
-          el('strong', { text: `${pct}%` }),
-          el('span', { style: { color: 'var(--muted)', marginLeft: '8px' }, text: `(${answered}/${total})` }),
-        ]),
-        el('div', { class: 'progress-track' }, [
-          el('div', { class: 'progress-fill', style: { width: `${pct}%` } }),
+        el('div', { class: 'progress-counts' }, [
+          el('span', { class: 'pcnt answered', text: `✏️ 푼 것: ${answered}` }),
+          el('span', { class: 'pcnt remain',   text: `📝 남은 것: ${remain}` }),
+          el('span', { class: 'pcnt total',    text: `전체: ${total}` }),
         ]),
       ]);
     }
@@ -183,7 +185,7 @@ function renderQuestion(state) {
 
       if (revealed) {
         // 정답 강조
-        if (num === q.answer)                   cls += ' correct';
+        if (num === q.answer)                    cls += ' correct';
         else if (num === sel && sel !== q.answer) cls += ' wrong';
         cls += ' revealed-disabled';
       } else {
@@ -192,14 +194,14 @@ function renderQuestion(state) {
 
       return el('div', { class: cls, onClick: () => handleOptionClick(state, num) }, [
         el('div', { class: 'num', text: CIRCLES[i] }),
-        el('div', { text: opt }),
+        el('div', { class: 'opt-text', text: opt }),
       ]);
     })),
   ]));
 
   // ── 학습 모드: 정오답 피드백 ──
   if (revealed) {
-    const isCorrect = sel === q.answer;
+    const isCorrect  = sel === q.answer;
     const correctLabel = q.answer ? CIRCLES[q.answer - 1] : '?';
     main.append(
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
@@ -208,10 +210,7 @@ function renderQuestion(state) {
       el('div', { class: 'check-next-hint', text: '아무 번호나 눌러 다음 문제로 →' }),
     );
     if (q.explanation) {
-      main.append(el('div', { class: 'explanation' }, [
-        el('strong', { text: '해설: ' }),
-        el('span', { text: q.explanation }),
-      ]));
+      main.append(renderExplanation(q.explanation));
     }
   }
 
@@ -267,7 +266,6 @@ function renderQuestion(state) {
 
     if (state.checkMode) {
       if (state.revealedAnswer) {
-        // 어떤 키든 다음으로
         if (Date.now() - state.revealReadyAt > 300) {
           advanceCheckMode(state);
         }
@@ -309,7 +307,6 @@ function handleOptionClick(state, num) {
 
   if (state.checkMode) {
     if (state.revealedAnswer) {
-      // 이미 공개 상태 → 다음으로
       if (Date.now() - state.revealReadyAt > 300) advanceCheckMode(state);
     } else {
       state.answers.set(q.qkey, num);
@@ -319,7 +316,6 @@ function handleOptionClick(state, num) {
       updateOMR(state);
     }
   } else {
-    // 일반 모드: 선택 후 300ms 뒤 자동 다음
     state.answers.set(q.qkey, num);
     updateOMR(state);
     if (state.currentIdx < state.questions.length - 1) {
@@ -350,6 +346,7 @@ function clearAnswer(state) {
   updateOMR(state);
 }
 
+// OMR 카드 (요약 섹션 제거됨)
 function renderOMR(state) {
   const wrapper = el('div', { class: 'omr', id: 'omr' });
   wrapper.appendChild(el('h3', { text: state.checkMode ? 'OMR · 학습 현황' : 'OMR · 답안 현황' }));
@@ -387,33 +384,10 @@ function renderOMR(state) {
     }));
   });
   wrapper.appendChild(grid);
-  wrapper.appendChild(el('div', { class: 'omr-summary', id: 'omr-summary' }, omrSummaryContents(state)));
   if (!state.checkMode) {
     wrapper.appendChild(el('button', { class: 'btn primary submit-btn', onClick: () => submitExam(state), text: '시험 제출하기' }));
   }
   return wrapper;
-}
-
-function omrSummaryContents(state) {
-  const total    = state.questions.length;
-  const answered = state.answers.size;
-  if (state.checkMode && state.questions[0]?.answer != null) {
-    const correct = state.questions.filter(q => state.answers.get(q.qkey) === q.answer).length;
-    const wrong   = answered - correct;
-    const gradable = state.questions.filter(q => q.answer != null).length;
-    const score = gradable > 0 ? Math.round(correct / gradable * 100) : 0;
-    return [
-      el('div', {}, [el('span', { text: '현재 점수' }), el('span', { style: { color: score >= 60 ? 'var(--success)' : 'var(--danger)', fontWeight: '700' }, text: `${score}%` })]),
-      el('div', {}, [el('span', { text: '정답' }), el('span', { style: { color: 'var(--success)', fontWeight: '600' }, text: `${correct}` })]),
-      el('div', {}, [el('span', { text: '오답' }), el('span', { style: { color: 'var(--danger)',  fontWeight: '600' }, text: `${wrong}` })]),
-      el('div', {}, [el('span', { text: '미풀이' }), el('span', { text: `${total - answered}` })]),
-    ];
-  }
-  return [
-    el('div', {}, [el('span', { text: '응답 완료' }), el('span', { text: `${answered} / ${total}` })]),
-    el('div', {}, [el('span', { text: '미응답' }),   el('span', { text: `${total - answered}` })]),
-    el('div', {}, [el('span', { text: '북마크' }),   el('span', { text: `${state.bookmarks.size}` })]),
-  ];
 }
 
 function updateOMR(state) {
@@ -422,12 +396,23 @@ function updateOMR(state) {
   omr.replaceWith(renderOMR(state));
 }
 
-async function toggleBookmark(state, qkey) {
+// 북마크 토글 - localStorage 사용 (API 불필요)
+function toggleBookmark(state, qkey) {
+  const q = state.questions.find(q2 => q2.qkey === qkey);
   if (state.bookmarks.has(qkey)) {
-    await api(`/api/bookmarks/${encodeURIComponent(qkey)}`, { method: 'DELETE' });
+    Storage.delBookmark(qkey);
     state.bookmarks.delete(qkey);
   } else {
-    await api('/api/bookmarks', { method: 'POST', body: JSON.stringify({ qkey }) });
+    // 문제 데이터도 함께 저장 (북마크 페이지에서 재조회 불필요)
+    Storage.setBookmark(qkey, '', {
+      stem: q?.stem,
+      options: q?.options,       // 현재 배열 순서 그대로 저장
+      answer: q?.answer ?? null, // checkMode에서만 존재
+      explanation: q?.explanation || null,
+      image: q?.image || null,
+      table: q?.table || null,
+      subjectName: q?.subjectName,
+    });
     state.bookmarks.add(qkey);
   }
   renderQuestion(state);
@@ -454,10 +439,16 @@ async function submitExam(state, force = false) {
   document.onkeydown = null;
 
   const durationSec = Math.floor((Date.now() - state.startedAt) / 1000);
-  const answers = state.questions.map(q => ({
-    qkey: q.qkey,
-    selected: state.answers.get(q.qkey) || null,
-  }));
+
+  // ── 선택 번호를 원본 위치로 역변환 ────────────────────────────────────────────
+  // 클라이언트에서 보기를 섞었으므로, 서버에 원본 위치(1-4)로 전송해야 채점이 정확함
+  const answers = state.questions.map(q => {
+    let selected = state.answers.get(q.qkey) ?? null;
+    if (selected != null && q.shuffleMap) {
+      selected = q.shuffleMap[selected - 1] + 1; // 섞인 위치 → 원본 위치 (1-based)
+    }
+    return { qkey: q.qkey, selected };
+  });
 
   const result = await api('/api/exam/submit', {
     method: 'POST',
@@ -467,5 +458,46 @@ async function submitExam(state, force = false) {
     }),
   });
 
-  navigate('result', { id: result.sessionId });
+  // ── 오답 로그 업데이트 (localStorage) ─────────────────────────────────────────
+  for (const g of result.graded) {
+    if (g.correct != null) {
+      if (g.isCorrect === false) Storage.recordWrong(g.qkey, g.selected ?? null);
+      else if (g.isCorrect === true) Storage.clearWrong(g.qkey);
+    }
+  }
+
+  // ── 세션 저장 (localStorage) ──────────────────────────────────────────────────
+  const sessionId = Storage.nextId();
+  const session = {
+    id: sessionId,
+    mode: state.mode, sourceId: state.sourceId,
+    title: state.title,
+    score: result.score,
+    correct_count: result.correct, question_count: result.total,
+    duration_sec: durationSec,
+    started_at: new Date(Date.now() - durationSec * 1000).toISOString(),
+    finished_at: new Date().toISOString(),
+    subject_breakdown: result.subjectBreakdown,
+    answers: result.graded.map(g => {
+      // state.questions에서 image/table 보충 (서버 응답에 없을 수 있음)
+      const sq = state.questions.find(q2 => q2.qkey === g.qkey);
+      return {
+        qkey:        g.qkey,
+        qnum:        g.qnum,
+        subject:     g.subject,
+        subjectName: g.subjectName,
+        stem:        g.stem,
+        options:     g.options,   // 서버가 반환한 원본 선택지
+        selected:    g.selected,
+        correct:     g.correct,
+        is_correct:  g.isCorrect === true ? 1 : (g.isCorrect === false ? 0 : null),
+        explanation: g.explanation || null,
+        image:       sq?.image || null,
+        table:       sq?.table || null,
+      };
+    }),
+  };
+  Storage.addSession(session);
+
+  navigate('result', { id: sessionId });
 }

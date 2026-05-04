@@ -3,15 +3,15 @@
 // =================== 홈 ===================
 defineRoute('home', async (app) => {
   const { exams, categories } = await api('/api/exams');
-  const stats = await api('/api/stats');
-  const wrong = await api('/api/wrong/count');
+  const stats = Storage.computeStats();
+  const wrongCount = Storage.countWrong();
 
   const examModes = el('div', { class: 'mode-grid' }, [
     modeCard('📝', '회차별 기출문제', '2024-2025년 6회분, 100문제 시험형식', () => navigate('past-list')),
     modeCard('🎲', '랜덤 모의고사', '전체 문제에서 랜덤 100문제 추출', () => navigate('exam', { mode: 'random', count: 100 })),
     modeCard('📚', '유형별 연습', '계산/코드/문장/키워드/순서 5개 카테고리', () => navigate('category-list')),
-    modeCard(`❌`, `오답 노트 (${wrong.count})`, '이전에 틀린 문제만 다시 풀기', () => {
-      if (wrong.count === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
+    modeCard(`❌`, `오답 노트 (${wrongCount})`, '이전에 틀린 문제만 다시 풀기', () => {
+      if (wrongCount === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
       navigate('exam', { mode: 'wrong' });
     }),
   ]);
@@ -20,8 +20,8 @@ defineRoute('home', async (app) => {
     modeCard('📖', '회차별 학습', '회차별 기출문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
     modeCard('🔀', '랜덤 학습', '랜덤 문제 즉시 채점 모드', () => navigate('exam', { mode: 'random', count: 100, check: '1' }), 'study-mode'),
     modeCard('📂', '유형별 학습', '유형별 문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
-    modeCard('❌', `오답 학습 (${wrong.count})`, '틀린 문제만 즉시 채점 모드', () => {
-      if (wrong.count === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
+    modeCard('❌', `오답 학습 (${wrongCount})`, '틀린 문제만 즉시 채점 모드', () => {
+      if (wrongCount === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
       navigate('exam', { mode: 'wrong', check: '1' });
     }, 'study-mode'),
   ]);
@@ -103,7 +103,8 @@ defineRoute('category-list', async (app) => {
 
 // =================== 시험기록 ===================
 defineRoute('history', async (app) => {
-  const { sessions } = await api('/api/sessions');
+  // localStorage에서 세션 로드
+  const sessions = Storage.getSessions();
   app.innerHTML = '';
 
   app.append(el('h1', { class: 'section-title', text: '📋 학습 기록' }));
@@ -114,9 +115,10 @@ defineRoute('history', async (app) => {
   }
 
   // 요약 통계
-  const total = sessions.length;
-  const avg = Math.round(sessions.reduce((a, s) => a + (s.score || 0), 0) / total);
-  const best = Math.max(...sessions.map(s => s.score || 0));
+  const validSessions = sessions.filter(s => s.question_count > 0);
+  const total  = sessions.length;
+  const avg    = validSessions.length ? Math.round(validSessions.reduce((a, s) => a + (s.score || 0), 0) / validSessions.length) : 0;
+  const best   = validSessions.length ? Math.max(...validSessions.map(s => s.score || 0)) : 0;
   const passed = sessions.filter(s => s.score >= 60).length;
   app.append(el('div', { class: 'history-summary' }, [
     histStatCard('총 응시', `${total}회`),
@@ -171,7 +173,6 @@ function historyCard(s) {
   const modeLabel = { past: '기출문제', random: '랜덤 모의고사', category: '유형별 연습', wrong: '오답 풀기' };
   const card = el('div', { class: `history-card ${pass ? 'pass' : 'fail'}` });
 
-  // 점수 원형 표시
   const ring = el('div', { class: 'score-ring' }, [
     el('div', { class: `score-ring-inner ${pass ? 'pass' : 'fail'}` }, [
       el('div', { class: 'score-ring-pct', text: `${score}%` }),
@@ -179,7 +180,6 @@ function historyCard(s) {
     ]),
   ]);
 
-  // 정보 영역
   const info = el('div', { class: 'history-card-info' }, [
     el('div', { class: 'history-card-title', text: s.title || modeLabel[s.mode] || s.mode }),
     el('div', { class: 'history-card-meta' }, [
@@ -191,7 +191,6 @@ function historyCard(s) {
     ]),
   ]);
 
-  // 과목별 미니 바
   if (s.subject_breakdown && Object.keys(s.subject_breakdown).length > 0) {
     const subjWrap = el('div', { class: 'history-subj-bars' });
     for (const sid of [1, 2, 3, 4, 5]) {
@@ -209,12 +208,11 @@ function historyCard(s) {
     info.append(subjWrap);
   }
 
-  // 버튼
   const btns = el('div', { class: 'history-card-btns' }, [
     el('button', { class: 'btn small primary', onClick: () => navigate('result', { id: s.id }), text: '상세 보기' }),
     el('button', { class: 'btn small danger', onClick: async () => {
       if (await modalConfirm('삭제 확인', '이 기록을 삭제할까요?')) {
-        await api(`/api/sessions/${s.id}`, { method: 'DELETE' });
+        Storage.deleteSession(s.id);
         renderRoute();
       }
     }, text: '삭제' }),
@@ -226,8 +224,22 @@ function historyCard(s) {
 
 // =================== 결과 상세 ===================
 defineRoute('result', async (app, params) => {
-  const id = params.id;
-  const { session, answers } = await api(`/api/sessions/${id}`);
+  const id = parseInt(params.id, 10);
+
+  // localStorage에서 세션 로드 (API 불필요)
+  const stored = Storage.getSession(id);
+  if (!stored) {
+    app.innerHTML = '';
+    app.append(el('div', { class: 'card' }, [
+      el('h2', { text: '기록을 찾을 수 없습니다' }),
+      el('p', { text: '이 결과 데이터가 없습니다. 시험을 다시 응시해 주세요.' }),
+      el('button', { class: 'btn primary', onClick: () => navigate('home'), text: '홈으로' }),
+    ]));
+    return;
+  }
+
+  const session = stored;
+  const answers = stored.answers || [];
   let bd = session.subject_breakdown || {};
 
   app.innerHTML = '';
@@ -260,42 +272,76 @@ defineRoute('result', async (app, params) => {
   // 합격 기준 안내
   app.append(el('div', { class: 'card', text: '※ 합격 기준: 전체 평균 60점 이상 + 모든 과목 40점 이상 (정보처리기사 필기)' }));
 
-  // 문제 리뷰
-  app.append(el('h2', { class: 'section-title', text: '문제별 결과' }));
-  const list = el('div', { class: 'review-list' });
-  answers.forEach((a, i) => {
-    const klass = a.is_correct === 1 ? 'correct' : a.is_correct === 0 ? 'wrong' : 'unknown';
-    const item = el('div', { class: `review-item ${klass}` });
-    item.appendChild(el('div', { class: 'qhead' }, [
-      el('span', { class: 'qnum', text: `Q${i + 1}` }),
-      el('span', { class: 'subject', text: a.subjectName || '' }),
-    ]));
-    for (const node of renderStem(a.stem || '(문제 본문 없음)')) item.appendChild(node);
-    if (a.image) item.appendChild(el('img', { class: 'qimg', src: a.image, alt: '문제 이미지' }));
-    if (a.table) item.appendChild(el('div', { class: 'qtable', html: a.table }));
-    if (a.options) {
-      const opts = el('div', { class: 'options' });
-      a.options.forEach((txt, oi) => {
-        const num = oi + 1;
-        let oclass = 'opt';
-        if (a.correct === num) oclass += ' correct';
-        if (a.selected === num && a.is_correct === 0) oclass += ' wrong';
-        opts.appendChild(el('div', { class: oclass }, [
-          el('div', { class: 'num', text: CIRCLES[oi] }),
-          el('div', { text: txt }),
-        ]));
-      });
-      item.appendChild(opts);
-    }
-    if (a.explanation) {
-      item.appendChild(el('div', { class: 'explanation' }, [
-        el('strong', { text: '해설: ' }),
-        el('span', { text: a.explanation }),
-      ]));
-    }
-    list.appendChild(item);
-  });
+  // ── 문제 리뷰 + 필터 ──
+  const wrongOnly = answers.filter(a => a.is_correct === 0);
+  let showWrongOnly = false;
+
+  app.append(el('div', { class: 'result-filter-bar' }, [
+    el('h2', { class: 'section-title', style: { margin: '0', fontSize: '1.1rem' }, text: '문제별 결과' }),
+    el('button', {
+      class: 'btn small filter-tab', id: 'wrong-only-btn',
+      text: `❌ 오답만 보기 (${wrongOnly.length}문제)`,
+      onClick: () => {
+        showWrongOnly = !showWrongOnly;
+        document.getElementById('wrong-only-btn').classList.toggle('active', showWrongOnly);
+        renderReview();
+      },
+    }),
+  ]));
+
+  const list = el('div', { class: 'review-list', id: 'review-list' });
   app.append(list);
+
+  function renderReview() {
+    list.innerHTML = '';
+    const toShow = showWrongOnly ? wrongOnly : answers;
+    if (toShow.length === 0) {
+      list.append(el('p', { style: { color: 'var(--muted)', padding: '12px' }, text: showWrongOnly ? '오답이 없습니다! 🎉' : '문제 데이터가 없습니다.' }));
+      return;
+    }
+    toShow.forEach((a, i) => {
+      const klass = a.is_correct === 1 ? 'correct' : a.is_correct === 0 ? 'wrong' : 'unknown';
+      const item = el('div', { class: `review-item ${klass}` });
+
+      // 문제 번호 찾기 (전체 answers 기준)
+      const globalIdx = answers.indexOf(a);
+      item.appendChild(el('div', { class: 'qhead' }, [
+        el('span', { class: 'qnum', text: `Q${globalIdx + 1}` }),
+        el('span', { class: 'subject', text: a.subjectName || '' }),
+        a.is_correct === 1
+          ? el('span', { class: 'result-badge correct', text: '✅ 정답' })
+          : a.is_correct === 0
+            ? el('span', { class: 'result-badge wrong', text: '❌ 오답' })
+            : el('span', { class: 'result-badge unknown', text: '— 미채점' }),
+      ]));
+
+      for (const node of renderStem(a.stem || '(문제 본문 없음)')) item.appendChild(node);
+      if (a.image) item.appendChild(el('img', { class: 'qimg', src: a.image, alt: '문제 이미지' }));
+      if (a.table) item.appendChild(el('div', { class: 'qtable', html: a.table }));
+
+      if (a.options) {
+        const opts = el('div', { class: 'options' });
+        a.options.forEach((txt, oi) => {
+          const num = oi + 1;
+          let oclass = 'opt revealed-disabled';
+          if (a.correct === num) oclass += ' correct';
+          if (a.selected === num && a.is_correct === 0) oclass += ' wrong';
+          opts.appendChild(el('div', { class: oclass }, [
+            el('div', { class: 'num', text: CIRCLES[oi] }),
+            el('div', { class: 'opt-text', text: txt }),
+          ]));
+        });
+        item.appendChild(opts);
+      }
+
+      if (a.explanation) {
+        item.appendChild(renderExplanation(a.explanation));
+      }
+      list.appendChild(item);
+    });
+  }
+
+  renderReview();
 });
 
 function summaryCard(label, value, kind = '') {
@@ -307,7 +353,7 @@ function summaryCard(label, value, kind = '') {
 
 // =================== 대시보드 ===================
 defineRoute('dashboard', async (app) => {
-  const stats = await api('/api/stats');
+  const stats = Storage.computeStats();
   app.innerHTML = '';
   app.append(el('h1', { class: 'section-title', text: '학습 통계 대시보드' }));
 
@@ -316,7 +362,6 @@ defineRoute('dashboard', async (app) => {
     return;
   }
 
-  // 핵심 지표
   app.append(el('div', { class: 'dash-grid' }, [
     dashCard('총 응시 횟수', stats.totalSessions),
     dashCard('평균 점수', `${Math.round(stats.avgScore)}%`),
@@ -324,10 +369,8 @@ defineRoute('dashboard', async (app) => {
     dashCard('최근 점수', `${Math.round(stats.lastScore)}%`),
   ]));
 
-  // 점수 추세 차트 (간단 SVG)
   app.append(scoreTrendChart(stats.recentTrend));
 
-  // 과목별 평균
   const subjEl = el('div', { class: 'card' }, [el('h2', { text: '과목별 평균 정답률' })]);
   for (const sid of [1, 2, 3, 4, 5]) {
     const v = stats.subjectAvg[sid];
@@ -341,7 +384,6 @@ defineRoute('dashboard', async (app) => {
   }
   app.append(subjEl);
 
-  // 최근 5개 응시
   app.append(
     el('h2', { class: 'section-title', text: '최근 응시 기록' }),
     el('div', { class: 'list' }, stats.recent.map(r =>
@@ -372,7 +414,6 @@ function scoreTrendChart(trend) {
   svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
   svg.setAttribute('width', '100%');
 
-  // 격자선 (60점)
   const y60 = h - pad - (60 / 100) * (h - pad * 2);
   const baseline = document.createElementNS('http://www.w3.org/2000/svg', 'line');
   baseline.setAttribute('x1', pad); baseline.setAttribute('x2', w - pad);
@@ -394,13 +435,11 @@ function scoreTrendChart(trend) {
     s: p.score, t: p.title,
   }));
 
-  // 선
   const path = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
   path.setAttribute('points', pts.map(p => `${p.x},${p.y}`).join(' '));
   path.setAttribute('fill', 'none'); path.setAttribute('stroke', '#3b6ef5'); path.setAttribute('stroke-width', '2');
   svg.appendChild(path);
 
-  // 점
   pts.forEach(p => {
     const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
     c.setAttribute('cx', p.x); c.setAttribute('cy', p.y); c.setAttribute('r', 4);
@@ -460,14 +499,14 @@ defineRoute('study-list', async (app) => {
 
 // =================== 오답 노트 ===================
 defineRoute('wrong', async (app) => {
-  const wrong = await api('/api/wrong/count');
+  const wrongCount = Storage.countWrong();
   app.innerHTML = '';
   app.append(
     el('h1', { class: 'section-title', text: '오답 노트' }),
     el('div', { class: 'card' }, [
-      el('p', { text: `현재 미해결 오답: ${wrong.count}문제` }),
+      el('p', { text: `현재 미해결 오답: ${wrongCount}문제` }),
       el('br'),
-      wrong.count > 0
+      wrongCount > 0
         ? el('button', { class: 'btn primary large', onClick: () => navigate('exam', { mode: 'wrong' }), text: '오답 다시 풀기' })
         : el('p', { text: '아직 오답이 없습니다. 시험을 응시하면 자동으로 기록됩니다.' }),
     ]),
@@ -476,7 +515,7 @@ defineRoute('wrong', async (app) => {
 
 // =================== 북마크 ===================
 defineRoute('bookmarks', async (app) => {
-  const { bookmarks } = await api('/api/bookmarks');
+  const bookmarks = Storage.listBookmarks();
   app.innerHTML = '';
   app.append(
     el('h1', { class: 'section-title', text: '북마크 한 문제' }),
@@ -491,8 +530,8 @@ defineRoute('bookmarks', async (app) => {
     item.appendChild(el('div', { class: 'qhead' }, [
       el('span', { class: 'qnum', text: `★ ${i + 1}` }),
       el('span', { class: 'subject', text: b.subjectName || '' }),
-      el('button', { class: 'btn small danger', onClick: async () => {
-        await api(`/api/bookmarks/${encodeURIComponent(b.qkey)}`, { method: 'DELETE' });
+      el('button', { class: 'btn small danger', onClick: () => {
+        Storage.delBookmark(b.qkey);
         renderRoute();
       }, text: '북마크 해제' }),
     ]));
@@ -503,17 +542,17 @@ defineRoute('bookmarks', async (app) => {
       const opts = el('div', { class: 'options' });
       b.options.forEach((txt, oi) => {
         const num = oi + 1;
-        let oclass = 'opt';
+        let oclass = 'opt revealed-disabled';
         if (b.answer === num) oclass += ' correct';
         opts.appendChild(el('div', { class: oclass }, [
           el('div', { class: 'num', text: CIRCLES[oi] }),
-          el('div', { text: txt }),
+          el('div', { class: 'opt-text', text: txt }),
         ]));
       });
       item.appendChild(opts);
     }
     if (b.explanation) {
-      item.appendChild(el('div', { class: 'explanation' }, [el('strong', { text: '해설: ' }), el('span', { text: b.explanation })]));
+      item.appendChild(renderExplanation(b.explanation));
     }
     list.appendChild(item);
   });

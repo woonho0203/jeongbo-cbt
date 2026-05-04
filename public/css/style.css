@@ -235,6 +235,7 @@ main {
   touch-action: manipulation; -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
+.opt-text { white-space: pre-wrap; word-break: break-word; line-height: 1.6; }
 .opt:hover { background: var(--opt-hover); border-color: var(--primary); }
 .opt:active { transform: scale(0.99); }
 .opt.selected { background: var(--opt-selected); border-color: var(--primary); }
@@ -328,9 +329,15 @@ main {
 
 /* ─── 해설 ─── */
 .explanation {
-  background: rgba(232,184,75,0.1); border-left: 4px solid var(--warning);
-  padding: 12px; margin-top: 8px; border-radius: 6px;
-  font-size: 0.9rem; line-height: 1.65; color: var(--text);
+  background: rgba(232,184,75,0.08); border-left: 4px solid var(--warning);
+  padding: 14px 16px; margin-top: 12px; border-radius: 8px;
+  font-size: 0.9rem; line-height: 1.7; color: var(--text);
+}
+.explanation-header {
+  font-weight: 700; color: var(--warning); margin-bottom: 8px; font-size: 0.92rem;
+}
+.explanation-body {
+  white-space: pre-line; line-height: 1.75; color: var(--text);
 }
 
 /* ─── 대시보드 ─── */
@@ -359,6 +366,21 @@ main {
 .modal p { color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
 .modal .actions { display: flex; gap: 10px; justify-content: flex-end; }
 
+/* ─── 결과 필터 바 ─── */
+.result-filter-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; margin-bottom: 12px; flex-wrap: wrap;
+}
+
+/* ─── 결과 뱃지 ─── */
+.result-badge {
+  font-size: 0.78rem; font-weight: 700; padding: 2px 10px;
+  border-radius: 12px; border: 1px solid;
+}
+.result-badge.correct { color: var(--success); border-color: var(--success); background: rgba(45,201,138,0.08); }
+.result-badge.wrong   { color: var(--danger);  border-color: var(--danger);  background: rgba(240,96,96,0.08); }
+.result-badge.unknown { color: var(--muted);   border-color: var(--border);  background: transparent; }
+
 /* ─── 결과 리뷰 ─── */
 .review-list { display: flex; flex-direction: column; gap: 10px; }
 .review-item { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
@@ -372,10 +394,11 @@ main {
 .code-block {
   background: #1a1d2e; color: #e8eaf0;
   border: 1px solid var(--border); border-radius: 8px;
-  padding: 14px 16px; margin: 10px 0;
+  padding: 12px 14px; margin: 8px 0;
   font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
-  font-size: 0.85rem; line-height: 1.65;
+  font-size: 0.83rem; line-height: 1.6;
   overflow-x: auto; white-space: pre; tab-size: 4;
+  max-height: 320px; overflow-y: auto;
 }
 [data-theme="light"] .code-block {
   background: #f4f5f9; color: #232a3b;
@@ -383,21 +406,23 @@ main {
 }
 .code-block code { font-family: inherit; background: none; padding: 0; }
 
-/* ─── 진행률/점수 바 ─── */
+/* ─── 진행 현황 바 (맞은 것 / 틀린 것 / 남은 것) ─── */
 .progress-bar-wrap {
   margin: 4px 0 10px;
   background: var(--panel); border: 1px solid var(--border);
   border-radius: 8px; padding: 8px 14px;
 }
-.progress-label { display: flex; align-items: center; margin-bottom: 6px; font-size: 0.88rem; }
-.progress-label strong { font-size: 1.05rem; }
-.progress-track {
-  height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
+.progress-counts {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  font-size: 0.88rem;
 }
-.progress-fill {
-  height: 100%; background: var(--primary);
-  border-radius: 3px; transition: width 0.4s ease;
-}
+.pcnt { font-weight: 600; }
+.pcnt.correct { color: var(--success); }
+.pcnt.wrong   { color: var(--danger); }
+.pcnt.remain  { color: var(--muted); }
+.pcnt.score   { font-size: 1rem; }
+.pcnt.answered { color: var(--primary); }
+.pcnt.total   { color: var(--muted); }
 
 /* ─── 학습 기록 ─── */
 .history-summary {
