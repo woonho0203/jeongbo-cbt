@@ -252,8 +252,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "[문제 분석]\nCASE(Computer-Aided Software Engineering)의 원천 기술에는 구조적 기법, 프로토타이핑 기술, 정보 저장소 기술, 분산 처리 기술 등이 있습니다\n\n---\n[풀이 과정]\n1. 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다\n\n---\n[정답 확인]\n정답: 4번 - 일괄처리 기술\n**핵심**: 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다\n\n---\n[핵심 포인트]\n- **일괄처리 기술**: 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다",
-      "image": "images/2024-3_q18.png"
+      "explanation": "[문제 분석]\nCASE(Computer-Aided Software Engineering)의 원천 기술에는 구조적 기법, 프로토타이핑 기술, 정보 저장소 기술, 분산 처리 기술 등이 있습니다\n\n---\n[풀이 과정]\n1. 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다\n\n---\n[정답 확인]\n정답: 4번 - 일괄처리 기술\n**핵심**: 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다\n\n---\n[핵심 포인트]\n- **일괄처리 기술**: 일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다"
     },
     {
       "qnum": 19,
@@ -267,7 +266,8 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "[문제 분석]\nFan-in은 해당 모듈을 호출하는 모듈의 수, Fan-out은 해당 모듈이 호출하는 모듈의 수입니다\n\n---\n[풀이 과정]\n1. 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다\n\n---\n[정답 확인]\n정답: 2번 - fan-in : 3, fan-out : 2\n**핵심**: 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다\n\n---\n[핵심 포인트]\n- **fan-in : 3, fan-out : 2**: 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다"
+      "explanation": "[문제 분석]\nFan-in은 해당 모듈을 호출하는 모듈의 수, Fan-out은 해당 모듈이 호출하는 모듈의 수입니다\n\n---\n[풀이 과정]\n1. 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다\n\n---\n[정답 확인]\n정답: 2번 - fan-in : 3, fan-out : 2\n**핵심**: 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다\n\n---\n[핵심 포인트]\n- **fan-in : 3, fan-out : 2**: 그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다",
+      "image": "images/2024-3_q19.png"
     },
     {
       "qnum": 20,

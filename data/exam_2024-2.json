@@ -924,8 +924,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "[문제 분석]\nJava의 **Garbage Collector**(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[풀이 과정]\n1. Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[정답 확인]\n정답: 2번 - Garbage Collector\n**핵심**: Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[핵심 포인트]\n- **Garbage Collector**: Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다",
-      "image": "images/2024-2_q66.png"
+      "explanation": "[문제 분석]\nJava의 **Garbage Collector**(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[풀이 과정]\n1. Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[정답 확인]\n정답: 2번 - Garbage Collector\n**핵심**: Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다\n\n---\n[핵심 포인트]\n- **Garbage Collector**: Java의 Garbage Collector(가비지 컬렉터)는 더 이상 참조되지 않는 힙 메모리의 객체를 자동으로 탐지하여 해제합니다"
     },
     {
       "qnum": 67,
@@ -1037,7 +1036,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "[문제 분석]\nFan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다\n\n---\n[풀이 과정]\n1. 그림 기준 Fan-In:3, Fan-Out:2\n\n---\n[정답 확인]\n정답: 2번 - Fan-In : 3, Fan-Out : 2\n**핵심**: 그림 기준 Fan-In:3, Fan-Out:2\n\n---\n[핵심 포인트]\n- **Fan-In : 3, Fan-Out : 2**: Fan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다"
+      "explanation": "[문제 분석]\nFan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다\n\n---\n[풀이 과정]\n1. 그림 기준 Fan-In:3, Fan-Out:2\n\n---\n[정답 확인]\n정답: 2번 - Fan-In : 3, Fan-Out : 2\n**핵심**: 그림 기준 Fan-In:3, Fan-Out:2\n\n---\n[핵심 포인트]\n- **Fan-In : 3, Fan-Out : 2**: Fan-In은 모듈 F로 들어오는 화살표(호출하는 상위 모듈) 수이고, Fan-Out은 모듈 F에서 나가는 화살표(호출하는 하위 모듈) 수입니다",
+      "image": "images/2024-2_q74.png"
     },
     {
       "qnum": 75,

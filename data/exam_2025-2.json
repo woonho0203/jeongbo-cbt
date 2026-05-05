@@ -238,8 +238,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "[문제 분석]\nUML 행위(Behavioral) 다이어그램에는 유스케이스, 시퀀스, 활동, 상태, 상호작용 다이어그램 등이 있습니다\n\n---\n[풀이 과정]\n1. 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다\n\n---\n[정답 확인]\n정답: 4번 - 배치 다이어그램(Deployment Diagram)\n**핵심**: 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다\n\n---\n[핵심 포인트]\n- **배치 다이어그램(Deployment Diagram)**: 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다",
-      "image": "images/2025-2_q17.png"
+      "explanation": "[문제 분석]\nUML 행위(Behavioral) 다이어그램에는 유스케이스, 시퀀스, 활동, 상태, 상호작용 다이어그램 등이 있습니다\n\n---\n[풀이 과정]\n1. 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다\n\n---\n[정답 확인]\n정답: 4번 - 배치 다이어그램(Deployment Diagram)\n**핵심**: 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다\n\n---\n[핵심 포인트]\n- **배치 다이어그램(Deployment Diagram)**: 배치 다이어그램(Deployment Diagram)은 물리적 배포 구조를 나타내는 구조(Structural) 다이어그램입니다"
     },
     {
       "qnum": 18,
@@ -365,7 +364,8 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "[문제 분석]\n전위 순회(Preorder)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 탐색합니다\n\n---\n[풀이 과정]\n1. 따라서 트리의 루트 노드인 A가 가장 먼저 탐색됩니다\n\n---\n[정답 확인]\n정답: 1번 - A\n**핵심**: 따라서 트리의 루트 노드인 A가 가장 먼저 탐색됩니다\n\n---\n[핵심 포인트]\n- **전위 순회(Preorder)**: 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 탐색합니다"
+      "explanation": "[문제 분석]\n전위 순회(Preorder)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 탐색합니다\n\n---\n[풀이 과정]\n1. 따라서 트리의 루트 노드인 A가 가장 먼저 탐색됩니다\n\n---\n[정답 확인]\n정답: 1번 - A\n**핵심**: 따라서 트리의 루트 노드인 A가 가장 먼저 탐색됩니다\n\n---\n[핵심 포인트]\n- **전위 순회(Preorder)**: 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 탐색합니다",
+      "image": "images/2025-2_q26.png"
     },
     {
       "qnum": 27,
