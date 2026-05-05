@@ -20,23 +20,8 @@ defineRoute('exam', async (app, params) => {
     body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys }),
   });
 
-  // ── 보기 랜덤 섞기 + shuffleMap 저장 ────────────────────────────────────────
-  // shuffleMap[newPos(0-based)] = originalIdx(0-based)
-  // 제출 시 선택된 번호(섞인 위치)를 원본 위치로 변환하는 데 사용
-  for (const q of data.questions) {
-    if (!q.options || q.options.length < 2) { q.shuffleMap = null; continue; }
-    const indexed = q.options.map((opt, i) => ({ opt, i }));
-    for (let k = indexed.length - 1; k > 0; k--) {
-      const j = Math.floor(Math.random() * (k + 1));
-      [indexed[k], indexed[j]] = [indexed[j], indexed[k]];
-    }
-    q.shuffleMap = indexed.map(x => x.i); // 역매핑 저장
-    q.options = indexed.map(x => x.opt);
-    if (q.answer != null) {
-      // checkMode에서 정답 표시를 위해 answer도 섞인 위치로 갱신
-      q.answer = indexed.findIndex(x => x.i === q.answer - 1) + 1;
-    }
-  }
+  // 보기 순서 고정 (해설이 원본 번호 기준으로 작성되어 있어 섞으면 설명과 불일치)
+  for (const q of data.questions) { q.shuffleMap = null; }
 
   if (!data.questions || data.questions.length === 0) {
     app.innerHTML = '';
