@@ -115,6 +115,7 @@ function startTimer(state) {
 function renderQuestion(state) {
   const main = document.getElementById('exam-main');
   if (!main) return;
+  window.scrollTo({ top: 0, behavior: 'instant' });
   const q      = state.questions[state.currentIdx];
   const sel    = state.answers.get(q.qkey);
   const revealed = state.checkMode && state.revealedAnswer;
