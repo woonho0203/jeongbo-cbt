@@ -93,6 +93,22 @@ function renderStem(text) {
   return nodes;
 }
 
+// 해설 안의 보기 번호를 현재 섞인 순서로 재매핑
+// shuffleMap[shuffledPos] = originalIdx (0-based)
+function remapExplanationNumbers(text, shuffleMap) {
+  if (!shuffleMap || !shuffleMap.length) return text;
+  // inverse: original 0-based → shuffled 1-based
+  const inv = new Array(shuffleMap.length);
+  shuffleMap.forEach((origIdx, shuffledPos) => { inv[origIdx] = shuffledPos + 1; });
+  const circled = ['①','②','③','④','⑤'];
+  return text.replace(/[①②③④⑤]|([1-4])번/g, (match, n) => {
+    const origNum = (n !== undefined) ? parseInt(n) : (circled.indexOf(match) + 1);
+    const newNum = inv[origNum - 1];
+    if (newNum == null) return match;
+    return (n !== undefined) ? newNum + '번' : (circled[newNum - 1] || match);
+  });
+}
+
 // 마크다운 인라인 파싱 (**bold**, 특수기호 처리)
 function parseMd(line) {
   // **text** → <strong>
@@ -156,8 +172,9 @@ function sectionClass(title) {
 }
 
 // 해설 렌더링 (구조화된 레이아웃)
-function renderExplanation(text) {
+function renderExplanation(text, shuffleMap) {
   if (!text) return null;
+  text = remapExplanationNumbers(text, shuffleMap);
   const wrap = el('div', { class: 'explanation' });
   wrap.appendChild(el('div', { class: 'explanation-header', text: '💡 해설' }));
 

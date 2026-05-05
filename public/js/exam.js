@@ -20,8 +20,21 @@ defineRoute('exam', async (app, params) => {
     body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys }),
   });
 
-  // 보기 순서 고정 (해설이 원본 번호 기준으로 작성되어 있어 섞으면 설명과 불일치)
-  for (const q of data.questions) { q.shuffleMap = null; }
+  // ── 보기 랜덤 섞기 + shuffleMap 저장 ────────────────────────────────────────
+  // shuffleMap[shuffledPos(0-based)] = originalIdx(0-based)
+  for (const q of data.questions) {
+    if (!q.options || q.options.length < 2) { q.shuffleMap = null; continue; }
+    const indexed = q.options.map((opt, i) => ({ opt, i }));
+    for (let k = indexed.length - 1; k > 0; k--) {
+      const j = Math.floor(Math.random() * (k + 1));
+      [indexed[k], indexed[j]] = [indexed[j], indexed[k]];
+    }
+    q.shuffleMap = indexed.map(x => x.i);
+    q.options = indexed.map(x => x.opt);
+    if (q.answer != null) {
+      q.answer = indexed.findIndex(x => x.i === q.answer - 1) + 1;
+    }
+  }
 
   if (!data.questions || data.questions.length === 0) {
     app.innerHTML = '';
@@ -196,7 +209,7 @@ function renderQuestion(state) {
       el('div', { class: 'check-next-hint', text: '아무 번호나 눌러 다음 문제로 →' }),
     );
     if (q.explanation) {
-      main.append(renderExplanation(q.explanation));
+      main.append(renderExplanation(q.explanation, q.shuffleMap));
     }
   }
 
