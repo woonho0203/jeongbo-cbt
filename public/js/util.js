@@ -70,12 +70,64 @@ function fmtTimer(sec) {
 const CIRCLES = ['①', '②', '③', '④'];
 
 // 문제 본문에서 코드 블록 감지 후 <pre> 분리 렌더링
+// [보기] 섹션 / ㆍ 항목 / Ⓐ Ⓑ 항목 렌더링 지원
 function renderStem(text) {
   const CODE_STARTS = [
     '#include', 'public class ', 'class Solution', 'def ', 'function ',
     'SELECT ', 'CREATE TABLE ', 'INSERT INTO ', 'UPDATE ', 'DELETE FROM ',
     'import java.', 'package ', 'int main(', 'void main(', '<?php',
   ];
+
+  // 멀티라인 stem 처리 ([보기] / ㆍ 항목 등)
+  if (text.includes('\n')) {
+    const lines = text.split('\n');
+    const nodes = [];
+    let boxEl = null;
+    let inBox = false;
+    let inDesc = false;
+    let descEl = null;
+
+    for (const raw of lines) {
+      const line = raw.trimEnd();
+      if (!line) continue;
+
+      if (line === '[보기]') {
+        // [보기] 헤더 + 아이템 컨테이너
+        inBox = true; inDesc = false;
+        const wrapper = el('div', { class: 'qbox' });
+        const header = el('div', { class: 'qbox-header', text: '보기' });
+        boxEl = el('div', { class: 'qbox-items' });
+        wrapper.appendChild(header);
+        wrapper.appendChild(boxEl);
+        nodes.push(wrapper);
+        continue;
+      }
+
+      if (inBox && /^[㉠-㉩]/.test(line)) {
+        boxEl.appendChild(el('div', { class: 'qbox-item', text: line }));
+        continue;
+      }
+
+      // ㆍ 항목 또는 Ⓐ-Ⓩ 항목 → 설명 블록
+      if (/^[ㆍⒶ-Ⓩ]/.test(line)) {
+        inBox = false;
+        if (!inDesc) {
+          descEl = el('div', { class: 'qdesc' });
+          nodes.push(descEl);
+          inDesc = true;
+        }
+        descEl.appendChild(el('div', { class: 'qdesc-item', text: line }));
+        continue;
+      }
+
+      // 일반 질문 텍스트
+      inBox = false; inDesc = false;
+      nodes.push(el('div', { class: 'qstem', text: line }));
+    }
+    return nodes;
+  }
+
+  // 단일라인: 코드 블록 감지
   let splitIdx = -1;
   for (const m of CODE_STARTS) {
     const idx = text.indexOf(m);
