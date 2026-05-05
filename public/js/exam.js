@@ -267,7 +267,7 @@ function renderQuestion(state) {
 
     if (state.checkMode) {
       if (state.revealedAnswer) {
-        if ((e.key >= '1' && e.key <= '5') && Date.now() - state.revealReadyAt > 300) {
+        if ((e.key >= '1' && e.key <= '9') && Date.now() - state.revealReadyAt > 300) {
           advanceCheckMode(state);
         }
       } else {
