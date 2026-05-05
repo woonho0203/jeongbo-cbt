@@ -4,26 +4,26 @@
   "questions": [
     {
       "qnum": 1,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n     char str1[20] = “KOREA”;\n     char str2[20] = “LOVE”;\n     char* p1 = NULL;\n     char* p2 = NULL;\n     p1 = str1;\n     p2 = str2;\n     str1[1] = p2[2];\n     str2[3] = p1[4];\n     strcat(str1, str2);\n     printf(“%c”, *(p1 + 2));\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n char str1[20] = “KOREA”;\n char str2[20] = “LOVE”;\n char* p1 = NULL;\n char* p2 = NULL;\n p1 = str1;\n p2 = str2;\n str1[1] = p2[2];\n str2[3] = p1[4];\n strcat(str1, str2);\n printf(“%c”, *(p1 + 2));\n return 0;\n\n}",
       "options": [
         "E",
         "V",
         "R",
         "O"
       ],
-      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ char str1[20] = “KOREA”; ❷ char str2[20] = “LOVE”; ❸ char* p1 = NULL; ❹ char* p2 = NULL; ❺ p1 = str1; ❻ p2 = str2; ❼ str1[1] = p2[2]; ❽ str2[3] = p1[4]; ❾ strcat(str1, str2); ❿ printf(“%c”, *(p1 + 2)); ⓫ return 0; } ❶ 20개의 요소를 갖는 문자형 배열 str1을 선언하고 “KOREA”로 초기화합니다\n3. [0] [1] [2] [3] [4] [5] … [19] str1 ‘K’ ‘O’ ‘R’ ‘E’ ‘A’ ＼0 … ❷ 20개의 요소를 갖는 문자형 배열 str2를 선언하고 “LOVE”로 초기화합니다\n4. [0] [1] [2] [3] [4] … [19] str2 ‘L’ ‘O’ ‘V’ ‘E’ ＼0 … ❸ 문자형 포인터 변수 p1을 선언하고 NULL로 초기화합니다\n5. ❹ 문자형 포인터 변수 p2를 선언하고 NULL로 초기화합니다\n6. ❺ p1에 str1 배열의 시작 주소를 저장합니다\n7. [0] [1] [2] [3] [4] [5] … [19] p1 str1 ‘K’ ‘O’ ‘R’ ‘E’ ‘A’ ＼0 … ❻ p2에 str2 배열의 시작 주소를 저장합니다\n8. [0] [1] [2] [3] [4] … [19] p2 str2 ‘L’ ‘O’ ‘V’ ‘E’ ＼0 … ❼ p2는 str2를 가리키므로 str2[2]의 값인 ‘V’를 str1[1]에 저장합니다\n9. [0] [1] [2] [3] [4] [5] … [19] str1 ‘K’ ‘V’ ‘R’ ‘E’ ‘A’ ＼0 … ❽ p1은 str1을 가리키므로 str1[4]의 값인 ‘A’를 str2[3]에 저장합니다\n10. [0] [1] [2] [3] [4] … [19] str2 ‘L’ ‘O’ ‘V’ ‘A’ ＼0 … ❾ str1의 문자열 뒤에 str2의 문자열을 이어붙입니다\n11. ㆍstrcat(문자배열A, 문자배열B) : A 배열에 저장된 문자열의 마지막에 이어서 B 배열에 저장된 문자열을 이 어붙임 [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] … [19] str1 ‘K’ ‘V’ ‘R’ ‘E’ ‘A’ ‘L’ ‘O’ ‘V’ ‘A’ ＼0 … ❿ p1+2가 가리키는 곳의 값을 문자로 출력합니다\n12. p1은 str1 배열의 시작주소, 즉 str1[0]의 위치를 가리키므로, p1+2는 str1[0]의 다음 두 번째 요소인 ‘R’을 가리킵니다\n13. **결과 R ⓫ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다**\n\n---\n[정답 확인]\n정답: 3번 - R\n**핵심**: 결과 R ⓫ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다\n\n---\n[핵심 포인트]\n- **R**: #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ char str1[20] ",
+      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ char str1[20] = “KOREA”; ❷ char str2[20] = “LOVE”; ❸ char* p1 = NULL; ❹ char* p2 = NULL; ❺ p1 = str1; ❻ p2 = str2; ❼ str1[1] = p2[2]; ❽ str2[3] = p1[4]; ❾ strcat(str1, str2); ❿ printf(“%c”, *(p1 + 2)); ⓫ return 0; } ❶ 20개의 요소를 갖는 문자형 배열 str1을 선언하고 “KOREA”로 초기화합니다\n3. [0] [1] [2] [3] [4] [5] … [19] str1 ‘K’ ‘O’ ‘R’ ‘E’ ‘A’ ＼0 … ❷ 20개의 요소를 갖는 문자형 배열 str2를 선언하고 “LOVE”로 초기화합니다\n4. [0] [1] [2] [3] [4] … [19] str2 ‘L’ ‘O’ ‘V’ ‘E’ ＼0 … ❸ 문자형 포인터 변수 p1을 선언하고 NULL로 초기화합니다\n5. ❹ 문자형 포인터 변수 p2를 선언하고 NULL로 초기화합니다\n6. ❺ p1에 str1 배열의 시작 주소를 저장합니다\n7. [0] [1] [2] [3] [4] [5] … [19] p1 str1 ‘K’ ‘O’ ‘R’ ‘E’ ‘A’ ＼0 … ❻ p2에 str2 배열의 시작 주소를 저장합니다\n8. [0] [1] [2] [3] [4] … [19] p2 str2 ‘L’ ‘O’ ‘V’ ‘E’ ＼0 … ❼ p2는 str2를 가리키므로 str2[2]의 값인 ‘V’를 str1[1]에 저장합니다\n9. [0] [1] [2] [3] [4] [5] … [19] str1 ‘K’ ‘V’ ‘R’ ‘E’ ‘A’ ＼0 … ❽ p1은 str1을 가리키므로 str1[4]의 값인 ‘A’를 str2[3]에 저장합니다\n10. [0] [1] [2] [3] [4] … [19] str2 ‘L’ ‘O’ ‘V’ ‘A’ ＼0 … ❾ str1의 문자열 뒤에 str2의 문자열을 이어붙입니다\n11. ㆍstrcat(문자배열A, 문자배열B) : A 배열에 저장된 문자열의 마지막에이어서 B 배열에 저장된 문자열을 이 어붙임 [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] … [19] str1 ‘K’ ‘V’ ‘R’ ‘E’ ‘A’ ‘L’ ‘O’ ‘V’ ‘A’ ＼0 … ❿ p1+2가 가리키는 곳의 값을 문자로 출력합니다\n12. p1은 str1 배열의 시작주소, 즉 str1[0]의 위치를 가리키므로, p1+2는 str1[0]의 다음 두 번째 요소인 ‘R’을 가리킵니다\n13. **결과 R ⓫ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다**\n\n---\n[정답 확인]\n정답: 3번 - R\n**핵심**: 결과 R ⓫ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다\n\n---\n[핵심 포인트]\n- **R**: #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ char str1[20] ",
       "answer": 3
     },
     {
       "qnum": 2,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n     int arr[2][3] = {\n         1,2,3,4,5,6\n    };\n     int (*p)[3] = NULL;\n     p = arr;\n     printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2));\n     printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1));\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n int arr[2][3] = {\n 1,2,3,4,5,6\n };\n int (*p)[3] = NULL;\n p = arr;\n printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2));\n printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1));\n return 0;\n\n}",
       "options": [
         "7, 5",
         "8, 5",
         "8, 9",
         "7, 9"
       ],
-      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ int arr[2][3] = { 1,2,3,4,5,6 }; ❷ int (*p)[3] = NULL; ❸ p = arr; ❹ printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2)); ❺ printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1)); ❻ return 0; } ❶ 2행 3열의 요소를 갖는 정수형 2차원 배열 arr을 선언하고 초기화합니다\n3. [0][0] [0][1] [0][2] 1 2 3 arr 4 5 6 [1][0] [1][1] [1][2] ❷ 3개의 요소를 갖는 정수형 포인터 배열 p를 선언하고 NULL로 초기화합니다\n4. ❸ p에 arr의 주소를 저장합니다\n5. [0][0] [0][1] [0][2] 1 2 3 arr 4 5 6 p [1][0] [1][1] [1][2] ❹ printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2)); ㉠ ㉡ • ㉠ : p[0]은 arr 배열의 첫 번째 행의 시작 주소를 가리키므로 여기에 1을 더한다는 것은 1행의 두 번째 열의 값 2를 가리키는 것입니다\n6. • ㉡ : p[1]은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 2를 더한다는 것은 2행의 세 번째 열의 값 6을 가리키는 것입니다\n7. • ㉠의 값 2와 ㉡의 값 6을 더한 값 8을 정수로 출력한 후 이어서 쉼표(,)와 공백 한 칸을 출력합니다\n8. p[0] p[0]+1 p[0]+2 1 2 3 arr 4 5 6 p p[1] p[1]+1 p[1]+2 결과 8, ❺ printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1)); ㉠ ㉡ • 2차원 배열에서 배열명은 실제 값에 해당하는 요소가 아닌 첫 번째 행의 주소를 가리킵니다\n9. 즉, p 또는 arr은 배열의 첫 번째 요소인 1을 가리키는 것이 아닌 첫 번째 행 전체를 가리키므로 만약 두 번째 행을 1차원 배열의 포인터처럼 사용하려면 ❹번에서와 같이 p[1]을 사용하거나 *(p+1)을 사용 해야 합니다\n10. 1 2 3 arr p+1 4 5 6 • ㉠ : *(p+1)은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 0을 더한다는 것은 2행의 첫 번째 열의 값 4를 가리키는 것입니다\n11. • ㉡ : *(p+1)은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 1을 더한다는 것은 2행의 두 번째 열의 값 5를 가리키는 것입니다\n12. • ㉠의 값 4와 ㉡의 값 5를 더한 값 9를 정수로 출력합니다\n13. *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다\n\n---\n[정답 확인]\n정답: 3번 - , 9\n**핵심**: *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’은 프로그램의 종료\n\n---\n[핵심 포인트]\n- **, 9**: *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’",
+      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[]) { ❶ int arr[2][3] = { 1,2,3,4,5,6 }; ❷ int (*p)[3] = NULL; ❸ p = arr; ❹ printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2)); ❺ printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1)); ❻ return 0; } ❶ 2행 3열의 요소를 갖는 정수형 2차원 배열 arr을 선언하고 초기화합니다\n3. [0][0] [0][1] [0][2] 1 2 3 arr 4 5 6 [1][0] [1][1] [1][2] ❷ 3개의 요소를 갖는 정수형 포인터 배열 p를 선언하고 NULL로 초기화합니다\n4. ❸ p에 arr의 주소를 저장합니다\n5. [0][0] [0][1] [0][2] 1 2 3 arr 4 5 6 p [1][0] [1][1] [1][2] ❹ printf(“%d, ”, *(p[0] + 1) + *(p[1] + 2)); ㉠ ㉡ • ㉠ : p[0]은 arr 배열의 첫 번째 행의 시작 주소를 가리키므로 여기에 1을 더한다는 것은 1행의 두 번째 열의 값 2를 가리키는 것입니다\n6. • ㉡ : p[1]은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 2를 더한다는 것은 2행의 세 번째 열의 값 6을 가리키는 것입니다\n7. • ㉠의 값 2와 ㉡의 값 6을 더한 값 8을 정수로 출력한 후이어서 쉼표(,)와 공백 한 칸을 출력합니다\n8. p[0] p[0]+1 p[0]+2 1 2 3 arr 4 5 6 p p[1] p[1]+1 p[1]+2 결과 8, ❺ printf(“%d”, *(*(p + 1) + 0) + *(*(p + 1) + 1)); ㉠ ㉡ • 2차원 배열에서 배열명은 실제 값에 해당하는 요소가 아닌 첫 번째 행의 주소를 가리킵니다\n9. 즉, p 또는 arr은 배열의 첫 번째 요소인 1을 가리키는 것이 아닌 첫 번째 행 전체를 가리키므로 만약 두 번째 행을 1차원 배열의 포인터처럼 사용하려면 ❹번에서와 같이 p[1]을 사용하거나 *(p+1)을 사용 해야 합니다\n10. 1 2 3 arr p+1 4 5 6 • ㉠ : *(p+1)은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 0을 더한다는 것은 2행의 첫 번째 열의 값 4를 가리키는 것입니다\n11. • ㉡ : *(p+1)은 arr 배열의 두 번째 행의 시작 주소를 가리키므로 여기에 1을 더한다는 것은 2행의 두 번째 열의 값 5를 가리키는 것입니다\n12. • ㉠의 값 4와 ㉡의 값 5를 더한 값 9를 정수로 출력합니다\n13. *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’은 프로그램의 종료를 의미합니다\n\n---\n[정답 확인]\n정답: 3번 - , 9\n**핵심**: *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’은 프로그램의 종료\n\n---\n[핵심 포인트]\n- **, 9**: *p *p+1 *p+2 1 2 3 arr 4 5 6 p *(p+1) *(p+1)+1 *(p+1)+2 결과 8, 9 ❻ main( ) 함수에서의 ‘return 0’",
       "answer": 3
     },
     {
@@ -40,19 +40,19 @@
     },
     {
       "qnum": 4,
-      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n     int a[2][2] = {\n         {\n            11, 22\n        }\n        , {\n            44, 55\n        }\n\n    };\n     int i, sum = 0;\n     int *p;\n     p = a[0];\n     for(i = 1; i < 4; i++) sum += *(p + i);\n     printf(“%d”, sum);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n int a[2][2] = {\n {\n 11, 22\n }\n , {\n 44, 55\n }\n\n };\n int i, sum = 0;\n int *p;\n p = a[0];\n for(i = 1; i < 4; i++) sum += *(p + i);\n printf(“%d”, sum);\n return 0;\n\n}",
       "options": [
         "55",
         "77",
         "121",
         "132"
       ],
-      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> int main(int argc, char *argv[ ]) { ❶ int a[2][2] = {{11, 22}, {44, 55}}; ❷ int i, sum = 0; ❸ int *p; ❹ p = a[0]; ❺ for(i = 1; i < 4; i++) ❻ sum += *(p + i); ❼ printf(“%d”, sum); ❽ return 0; } ❶ 2행 2열의 요소를 갖는 정수형 2차원 배열 a를 선언하고 초기화합니다\n3. a[0][0] a[0][1] 11 22 a 배열 44 55 a[1][0] a[1][1] ❷ 정수형 변수 i, sum을 선언하고, sum을 0으로 초기화합니다\n4. ❸ 정수형 포인터 변수 p를 선언합니다\n5. ❹ p에 a배열의 a[0]의 주소를 저장합니다\n6. ※ a[0]은 0행의 0번째 요소(a[0][0])의 주소입니다\n7. ❺ 반복 변수 i가 1부터 1씩 증가하면서 4보다 작은 동안 ❻번을 반복 수행합니다\n8. ❻ sum에 p+i가 가리키는 곳의 값을 더합니다\n9. • p는 a[0][0]을 가리키므로 숫자가 더해진 만큼 다음 값을 가리키게 됩니다\n10. 즉, p+1은 a[0][1]을, p+2는 a[1][0]을, p+3은 a[1][1]을 가리킵니다\n11. • 반복문 실행에 따른 변수의 변화는 다음과 같습니다\n12. 반복횟수 i *(p+i) sum 0 1 1 22 22 2 2 44 66 3 3 55 121 반복실행 안됨 4 ❼ sum의 값 121을 정수로 출력합니다\n13. 결과 121 ❽ 프로그램을 종료합니다\n\n---\n[정답 확인]\n정답: 3번\n**핵심**: 결과 121 ❽ 프로그램을 종료합니다\n\n---\n[핵심 포인트]\n",
+      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> int main(int argc, char *argv[ ]) { ❶ int a[2][2] = {{11, 22}, {44, 55}}; ❷ int i, sum = 0; ❸ int *p; ❹ p = a[0]; ❺ for(i = 1; i < 4; i++) ❻ sum += *(p + i); ❼ printf(“%d”, sum); ❽ return 0; } ❶ 2행 2열의 요소를 갖는 정수형 2차원 배열 a를 선언하고 초기화합니다\n3. a[0][0] a[0][1] 11 22 a 배열 44 55 a[1][0] a[1][1] ❷ 정수형 변수 i, sum을 선언하고, sum을 0으로 초기화합니다\n4. ❸ 정수형 포인터 변수 p를 선언합니다\n5. ❹ p에 a배열의 a[0]의 주소를 저장합니다\n6. ※ a[0]은 0행의 0번째 요소(a[0][0])의 주소입니다\n7. ❺ 반복 변수 i가 1부터 1씩 증가하면서 4보다 작은 동안 ❻번을 반복 수행합니다\n8. ❻ sum에 p+i가 가리키는 곳의 값을 더합니다\n9. • p는 a[0][0]을 가리키므로 숫자가 더해진만큼 다음 값을 가리키게 됩니다\n10. 즉, p+1은 a[0][1]을, p+2는 a[1][0]을, p+3은 a[1][1]을 가리킵니다\n11. • 반복문 실행에 따른 변수의 변화는 다음과 같습니다\n12. 반복횟수 i *(p+i) sum 0 1 1 22 22 2 2 44 66 3 3 55 121 반복실행 안됨 4 ❼ sum의 값 121을 정수로 출력합니다\n13. 결과 121 ❽ 프로그램을 종료합니다\n\n---\n[정답 확인]\n정답: 3번\n**핵심**: 결과 121 ❽ 프로그램을 종료합니다\n\n---\n[핵심 포인트]\n",
       "answer": 3
     },
     {
       "qnum": 5,
-      "stem": "다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가?\n#include <stdio.h> main( ) {\n     int a, b;\n     for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(“%d”, !a && !b);\n\n}",
+      "stem": "다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가?\n#include <stdio.h> main( ) {\n int a, b;\n for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(“%d”, !a && !b);\n\n}",
       "options": [
         "!a || !b",
         "!(a || b)",
@@ -64,14 +64,14 @@
     },
     {
       "qnum": 6,
-      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n     char a;\n     a = ‘A’ + 1;\n     printf(“%d”, a);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n char a;\n a = ‘A’ + 1;\n printf(“%d”, a);\n return 0;\n\n}",
       "options": [
         "1",
         "11",
         "66",
         "98"
       ],
-      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> int main(int argc, char *argv[ ]) { ❶ char a; ❷ a = ‘A’ + 1; ❸ printf(“%d”, a); ❹ return 0; } ❶ 문자형 변수 a를 선언합니다\n3. ❷ a에 문자 ‘A’와 숫자 1을 더한 값을 저장합니다\n4. ※ ‘A’라는 문자는 메모리에 저장될 때 문자로 저장되는 것이 아니라 해당 문자의 아스키 코드 값으 로 저장됩니다\n5. 즉, ‘A’는 ‘A’에 해당하는 아스키 코드 값인 65가 저장되는 것이죠\n6. 그러므로 a 에는 ‘A’의 아스키 코드 값인 65에 1을 더한 값인 66이 저장됩니다\n7. ❸ a의 값 66을 정수로 출력합니다\n8. ※ a에 저장된 66은 “%d”로 출력하면 정수 66이, “%c”로 출력하면 ‘A’의 다음 문자인 ‘B’가 출력 됩니다\n9. 결과 66 ❹ 프로그램을 종료합니다\n\n---\n[정답 확인]\n정답: 3번\n**핵심**: 결과 66 ❹ 프로그램을 종료합니다\n\n---\n[핵심 포인트]\n",
+      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> int main(int argc, char *argv[ ]) { ❶ char a; ❷ a = ‘A’ + 1; ❸ printf(“%d”, a); ❹ return 0; } ❶ 문자형 변수 a를 선언합니다\n3. ❷ a에 문자 ‘A’와 숫자 1을 더한 값을 저장합니다\n4. ※ ‘A’라는 문자는 메모리에 저장될 때 문자로 저장되는 것이 아니라 해당 문자의 아스키 코드 값으로 저장됩니다\n5. 즉, ‘A’는 ‘A’에 해당하는 아스키 코드 값인 65가 저장되는 것이죠\n6. 그러므로 a에는 ‘A’의 아스키 코드 값인 65에 1을 더한 값인 66이 저장됩니다\n7. ❸ a의 값 66을 정수로 출력합니다\n8. ※ a에 저장된 66은 “%d”로 출력하면 정수 66이, “%c”로 출력하면 ‘A’의 다음 문자인 ‘B’가 출력 됩니다\n9. 결과 66 ❹ 프로그램을 종료합니다\n\n---\n[정답 확인]\n정답: 3번\n**핵심**: 결과 66 ❹ 프로그램을 종료합니다\n\n---\n[핵심 포인트]\n",
       "answer": 3
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "qnum": 8,
-      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n     int a = 4;\n     int b = 7;\n     int c = a | b;\n     printf(“%d”, c);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(int argc, char *argv[ ]) {\n int a = 4;\n int b = 7;\n int c = a | b;\n printf(“%d”, c);\n return 0;\n\n}",
       "options": [
         "3",
         "4",
@@ -100,7 +100,7 @@
     },
     {
       "qnum": 9,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> struct st {\n     int a;\n     int c[10];\n\n};\nint main(int argc, char* argv[ ]) {\n     int i = 0;\n     struct st ob1;\n     struct st ob2;\n     ob1.a = 0;\n     ob2.a = 0;\n     for (i = 0; i < 10; i++) {\n         ob1.c[i] = i;\n         ob2.c[i] = ob1.c[i] + i;\n\n    }\n     for (i = 0; i < 10; i = i + 2) {\n         ob1.a = ob1.a + ob1.c[i];\n         ob2.a = ob2.a + ob2.c[i];\n\n    }\n     printf(“%d”, ob1.a + ob2.a);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> struct st {\n int a;\n int c[10];\n\n};\nint main(int argc, char* argv[ ]) {\n int i = 0;\n struct st ob1;\n struct st ob2;\n ob1.a = 0;\n ob2.a = 0;\n for (i = 0; i < 10; i++) {\n ob1.c[i] = i;\n ob2.c[i] = ob1.c[i] + i;\n\n }\n for (i = 0; i < 10; i = i + 2) {\n ob1.a = ob1.a + ob1.c[i];\n ob2.a = ob2.a + ob2.c[i];\n\n }\n printf(“%d”, ob1.a + ob2.a);\n return 0;\n\n}",
       "options": [
         "30",
         "60",
@@ -112,7 +112,7 @@
     },
     {
       "qnum": 10,
-      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(void) {\n     int n = 4;\n     int* pt = NULL;\n     pt = &n;\n     printf(“%d”, &n + *pt - *&pt + n);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> int main(void) {\n int n = 4;\n int* pt = NULL;\n pt = &n;\n printf(“%d”, &n + *pt - *&pt + n);\n return 0;\n\n}",
       "options": [
         "0",
         "4",
@@ -131,12 +131,12 @@
         "3",
         "5"
       ],
-      "explanation": "[문제 분석]\n• 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순이며, 관계 연산자 중에서 <, <=, >=, >는 ==, !=보다 우선순위가 높습니다\n\n---\n[풀이 과정]\n1. • 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순이며, 관계 연산자 중에서 <, <=, >=, >는 ==, !=보다 우선순위가 높습니다\n2. • 우선순위에 따라 문제의 식을 풀면 다음과 같습니다\n3. a < b + 2 && a << 1 <= b ❶ ❷ ❸ ❹ ❺ ❶ b+2 : b의 값은 2이므로 결과는 4입니다\n4. ❷ a<<1 : 왼쪽 시프트(<<)는 왼쪽으로 1비트 시프트 할 때마다 2배씩 증가하므로, a의 값 1을 왼쪽으 로 1비트 시프트한 결과는 2입니다\n5. ❸ a<❶ → a<4 : a의 값 1은 4보다 작으므로 결과는 1(참)입니다\n6. ❹ ❷<=b → 2<=b : b의 값 2는 2와 같으므로 결과는 1(참)입니다\n7. ❺ ❸&&❹ → 1&&1 : &&은 모두 참일 때만 참이므로 결과는 1(참)입니다\n\n---\n[정답 확인]\n정답: 2번\n**핵심**: ❺ ❸&&❹ → 1&&1 : &&은 모두 참일 때만 참이므로 결과는 1(참)입니다\n\n---\n[핵심 포인트]\n",
+      "explanation": "[문제 분석]\n• 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순이며, 관계 연산자 중에서 <, <=, >=, >는 ==, !=보다 우선순위가 높습니다\n\n---\n[풀이 과정]\n1. • 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순이며, 관계 연산자 중에서 <, <=, >=, >는 ==, !=보다 우선순위가 높습니다\n2. • 우선순위에 따라 문제의 식을 풀면 다음과 같습니다\n3. a < b + 2 && a << 1 <= b ❶ ❷ ❸ ❹ ❺ ❶ b+2 : b의 값은 2이므로 결과는 4입니다\n4. ❷ a<<1 : 왼쪽 시프트(<<)는 왼쪽으로 1비트 시프트 할 때마다 2배씩 증가하므로, a의 값 1을 왼쪽으로 1비트 시프트한 결과는 2입니다\n5. ❸ a<❶ → a<4 : a의 값 1은 4보다 작으므로 결과는 1(참)입니다\n6. ❹ ❷<=b → 2<=b : b의 값 2는 2와 같으므로 결과는 1(참)입니다\n7. ❺ ❸&&❹ → 1&&1 : &&은 모두 참일 때만 참이므로 결과는 1(참)입니다\n\n---\n[정답 확인]\n정답: 2번\n**핵심**: ❺ ❸&&❹ → 1&&1 : &&은 모두 참일 때만 참이므로 결과는 1(참)입니다\n\n---\n[핵심 포인트]\n",
       "answer": 2
     },
     {
       "qnum": 12,
-      "stem": "a[0]의 주소값이 10일 경우 다음 C언어 프로그램이 실행되었을 때의 결과는? (단, int 형의 크기는 4Byte로 가정한다.)\n#include <stdio.h> int main(int argc, char* argv[ ]) {\n     int a[ ] = {\n         14,22,30,38\n    };\n     printf(“%u, ”, &a[2]);\n     printf(“%u”, a);\n     return 0;\n\n}",
+      "stem": "a[0]의 주소값이 10일 경우 다음 C언어 프로그램이 실행되었을 때의 결과는? (단, int 형의 크기는 4Byte로 가정한다.)\n#include <stdio.h> int main(int argc, char* argv[ ]) {\n int a[ ] = {\n 14,22,30,38\n };\n printf(“%u, ”, &a[2]);\n printf(“%u”, a);\n return 0;\n\n}",
       "options": [
         "14, 10",
         "14, M",
@@ -148,7 +148,7 @@
     },
     {
       "qnum": 13,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> int main(int arge, char* argv[ ]) {\n     int n1 = 1, n2 = 2, n3 = 3;\n     int r1, r2, r3;\n     r1 = (n2 <= 2) || (n3 > 3);\n     r2 = !n3;\n     r3 = (n1 > 1) && (n2 < 3);\n     printf(“%d”, r3 - r2 + r1);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> int main(int arge, char* argv[ ]) {\n int n1 = 1, n2 = 2, n3 = 3;\n int r1, r2, r3;\n r1 = (n2 <= 2) || (n3 > 3);\n r2 = !n3;\n r3 = (n1 > 1) && (n2 < 3);\n printf(“%d”, r3 - r2 + r1);\n return 0;\n\n}",
       "options": [
         "０",
         "１",
@@ -160,7 +160,7 @@
     },
     {
       "qnum": 14,
-      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> #include <string.h> int main(void) {\n     char str[50] = “nation”;\n     char *p2 = “alter”;\n     strcat(str, p2);\n     printf(“%s”, str);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h> #include <string.h> int main(void) {\n char str[50] = “nation”;\n char *p2 = “alter”;\n strcat(str, p2);\n printf(“%s”, str);\n return 0;\n\n}",
       "options": [
         "nation",
         "nationalter",
@@ -172,19 +172,19 @@
     },
     {
       "qnum": 15,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n     int i = 0;\n     while (1) {\n         if (i == 4) {\n             break;\n\n        }\n         ++i;\n\n    }\n     printf(“i = %d”, i);\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) {\n int i = 0;\n while (1) {\n if (i == 4) {\n break;\n\n }\n ++i;\n\n }\n printf(“i = %d”, i);\n\n}",
       "options": [
         "i = 0",
         "i = 1",
         "i = 3",
         "i = 4"
       ],
-      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) { ❶ int i = 0; ❷ while (1) { ❸ if (i == 4) { ❹ break; } ❺ ++i; } ❻ printf(“i = %d”, i); } ❶ 정수형 변수 i를 선언하고 0으로 초기화합니다\n3. ❷ 조건이 참(1)이므로 ❸~❺번을 무한 반복합니다\n4. ❸ i의 값이 4이면 ❹번으로 이동하고, 아니면 ❺번으로 이동합니다\n5. ❹ 반복문을 탈출하여 ❻번으로 이동합니다\n6. ❺ ‘i = i + 1;’과 동일합니다\n7. i의 값을 1 증가시킵니다\n8. 반복문 실행에 따른 변수의 변화는 다음과 같습니다\n9. 반복 횟수 i 0 1 1 2 2 3 3 4 4 5 ❻ i = 을 출력한 후 이어서 i의 값을 정수로 출력합니다\n10. 결과 i = 4\n\n---\n[정답 확인]\n정답: 4번 - i = 4\n**핵심**: 사용된 코드의 의미는 다음과 같습니다\n\n---\n[핵심 포인트]\n- **i = 4**: #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) { ❶ int i = 0; ❷ ",
+      "explanation": "[문제 분석]\n사용된 코드의 의미는 다음과 같습니다\n\n---\n[풀이 과정]\n1. 사용된 코드의 의미는 다음과 같습니다\n2. #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) { ❶ int i = 0; ❷ while (1) { ❸ if (i == 4) { ❹ break; } ❺ ++i; } ❻ printf(“i = %d”, i); } ❶ 정수형 변수 i를 선언하고 0으로 초기화합니다\n3. ❷ 조건이 참(1)이므로 ❸~❺번을 무한 반복합니다\n4. ❸ i의 값이 4이면 ❹번으로 이동하고, 아니면 ❺번으로 이동합니다\n5. ❹ 반복문을 탈출하여 ❻번으로 이동합니다\n6. ❺ ‘i = i + 1;’과 동일합니다\n7. i의 값을 1 증가시킵니다\n8. 반복문 실행에 따른 변수의 변화는 다음과 같습니다\n9. 반복 횟수 i 0 1 1 2 2 3 3 4 4 5 ❻ i = 을 출력한 후이어서 i의 값을 정수로 출력합니다\n10. 결과 i = 4\n\n---\n[정답 확인]\n정답: 4번 - i = 4\n**핵심**: 사용된 코드의 의미는 다음과 같습니다\n\n---\n[핵심 포인트]\n- **i = 4**: #include <stdio.h> #include <stdlib.h> int main(int argc, char* argv[ ]) { ❶ int i = 0; ❷ ",
       "answer": 4
     },
     {
       "qnum": 16,
-      "stem": "다음 C언어 프로그램 실행 후, ‘c’를 입력하였을 때 출력 결과는?\n#include <stdio.h> main( ) {\n     char ch;\n     scanf(“%c”, &ch);\n     switch (ch) {\n         case ‘a’: printf(“one ”);\n         case ‘b’: printf(“two ”);\n         case ‘c’: printf(“three ”);\n         break;\n         case ‘d’: printf(“four ”);\n         break;\n\n    }\n\n}",
+      "stem": "다음 C언어 프로그램 실행 후, ‘c’를 입력하였을 때 출력 결과는?\n#include <stdio.h> main( ) {\n char ch;\n scanf(“%c”, &ch);\n switch (ch) {\n case ‘a’: printf(“one ”);\n case ‘b’: printf(“two ”);\n case ‘c’: printf(“three ”);\n break;\n case ‘d’: printf(“four ”);\n break;\n\n }\n\n}",
       "options": [
         "one",
         "one two",
@@ -208,7 +208,7 @@
     },
     {
       "qnum": 18,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과를 쓰시오.\npublic class ovr {\n     public static void main(String[ ] args) {\n         int arr[ ];\n         int i = 0;\n         arr = new int[10];\n         arr[0] = 0;\n         arr[1] = 1;\n         while(i < 8) {\n             arr[i + 2] = arr[i + 1] + arr[i];\n             i++;\n\n        }\n         System.out.println(arr[9]);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과를 쓰시오.\npublic class ovr {\n public static void main(String[ ] args) {\n int arr[ ];\n int i = 0;\n arr = new int[10];\n arr[0] = 0;\n arr[1] = 1;\n while(i < 8) {\n arr[i + 2] = arr[i + 1] + arr[i];\n i++;\n\n }\n System.out.println(arr[9]);\n\n }\n\n}",
       "options": [
         "13",
         "21",
@@ -227,12 +227,12 @@
         "7 = 7 7 + 7",
         "5 + 2 = 34 5 + 2 = 7"
       ],
-      "explanation": "[문제 분석]\nJava의 print( ) 또는 println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을 이어서 결과를 문자로 출력합니다\n\n---\n[풀이 과정]\n1. Java의 print( ) 또는 println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을 이어서 결과를 문자로 출력합니다\n2. ❶ System.out.println(“5 + 2 = ” + 3 + 4); ❷ System.out.println(“5 + 2 = ” + (3 + 4)); ❶ ((“5 + 2 = ” + 3) + 4)의 순서로 수행되며, (“5 + 2 =” + 3)는 문자+숫자이므로 “5 + 2 = 3”이라 는 문자를, (“5 + 2 = 3” + 4) 또한 문자+숫자이므로 5 + 2 = 34라는 결과를 출력합니다\n3. ❷ (“5 + 2 =” + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (“5 + 2 = ” + 7) 은 문자+숫자이므로 5 + 2 = 7이라는 결과를 출력합니다\n\n---\n[정답 확인]\n정답: 4번 - + 2 = 34 5 + 2 = 7\n**핵심**: ❷ (“5 + 2 =” + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (“5 + 2 = ” + 7) 은 문자+숫자이므로 5 + 2 = 7이라는 결\n\n---\n[핵심 포인트]\n- **Java의 print( ) 또**: println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을 이어서 결과를 문자로 출력합니다",
+      "explanation": "[문제 분석]\nJava의 print( ) 또는 println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을이어서 결과를 문자로 출력합니다\n\n---\n[풀이 과정]\n1. Java의 print( ) 또는 println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을이어서 결과를 문자로 출력합니다\n2. ❶ System.out.println(“5 + 2 = ” + 3 + 4); ❷ System.out.println(“5 + 2 = ” + (3 + 4)); ❶ ((“5 + 2 = ” + 3) + 4)의 순서로 수행되며, (“5 + 2 =” + 3)는 문자+숫자이므로 “5 + 2 = 3”이라는 문자를, (“5 + 2 = 3” + 4) 또한 문자+숫자이므로 5 + 2 = 34라는 결과를 출력합니다\n3. ❷ (“5 + 2 =” + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (“5 + 2 = ” + 7)은 문자+숫자이므로 5 + 2 = 7이라는 결과를 출력합니다\n\n---\n[정답 확인]\n정답: 4번 - + 2 = 34 5 + 2 = 7\n**핵심**: ❷ (“5 + 2 =” + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (“5 + 2 = ” + 7)은 문자+숫자이므로 5 + 2 = 7이라는 결\n\n---\n[핵심 포인트]\n- **Java의 print( ) 또**: println( )에서 숫자 + 숫자는 연산 결과를 숫자로 출력하고, 문자 + 숫자는 두 값을이어서 결과를 문자로 출력합니다",
       "answer": 4
     },
     {
       "qnum": 20,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?\npublic class Ape {\n     static void rs(char a[ ]) {\n         for(int i = 0; i < a.length; i++) if(a[i] == ‘B’) a[i] = ‘C’;\n         else if(i == a.length - 1) a[i] = a[i-1];\n         else a[i] = a[i+1];\n\n    }\n     static void pca(char a[ ]) {\n         for(int i = 0; i < a.length; i++) System.out.print(a[i]);\n         System.out.println( );\n\n    }\n     public static void main(String[ ] args) {\n         char c[ ] = {\n            ‘A’,‘B’,‘D’,‘D’,‘A’,‘B’,‘C’\n        };\n         rs(c);\n         pca(c);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?\npublic class Ape {\n static void rs(char a[ ]) {\n for(int i = 0; i < a.length; i++) if(a[i] == ‘B’) a[i] = ‘C’;\n else if(i == a.length - 1) a[i] = a[i-1];\n else a[i] = a[i+1];\n\n }\n static void pca(char a[ ]) {\n for(int i = 0; i < a.length; i++) System.out.print(a[i]);\n System.out.println( );\n\n }\n public static void main(String[ ] args) {\n char c[ ] = {\n ‘A’,‘B’,‘D’,‘D’,‘A’,‘B’,‘C’\n };\n rs(c);\n pca(c);\n\n }\n\n}",
       "options": [
         "BCDABCA",
         "BCDABCC",
@@ -244,7 +244,7 @@
     },
     {
       "qnum": 21,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class ovr {\n     public static void main(String[ ] args) {\n         int a = 1, b = 2, c = 3, d = 4;\n         int mx, mn;\n         mx = a < b ? b : a;\n         if (mx == 1) {\n             mn = a > mx ? b : a;\n\n        }\n         else {\n             mn = b < mx ? d : c;\n\n        }\n         System.out.println(mn);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class ovr {\n public static void main(String[ ] args) {\n int a = 1, b = 2, c = 3, d = 4;\n int mx, mn;\n mx = a < b ? b : a;\n if (mx == 1) {\n mn = a > mx ? b : a;\n\n }\n else {\n mn = b < mx ? d : c;\n\n }\n System.out.println(mn);\n\n }\n\n}",
       "options": [
         "1",
         "2",
@@ -256,7 +256,7 @@
     },
     {
       "qnum": 22,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?\npublic class Rarr {\n     static int[ ] marr( ) {\n         int temp[ ] = new int[4];\n         for (int i = 0; i < temp.length; i++) temp[i] = i;\n         return temp;\n\n    }\n     public static void main(String[ ] args) {\n         int iarr[ ];\n         iarr = marr( );\n         for (int i = 0; i < iarr.length; i++) System.out.print(iarr[i] + “ ”);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?\npublic class Rarr {\n static int[ ] marr( ) {\n int temp[ ] = new int[4];\n for (int i = 0; i < temp.length; i++) temp[i] = i;\n return temp;\n\n }\n public static void main(String[ ] args) {\n int iarr[ ];\n iarr = marr( );\n for (int i = 0; i < iarr.length; i++) System.out.print(iarr[i] + “ ”);\n\n }\n\n}",
       "options": [
         "1 2 3 4",
         "0 1 2 3",
@@ -268,7 +268,7 @@
     },
     {
       "qnum": 23,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class array1 {\n     public static void main(String[ ] args) {\n         int cnt = 0;\n         do {\n             cnt++;\n\n        }\n         while (cnt < 0);\n         if(cnt== 1) cnt++;\n         else cnt = cnt + 3;\n         System.out.printf(“%d”, cnt);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class array1 {\n public static void main(String[ ] args) {\n int cnt = 0;\n do {\n cnt++;\n\n }\n while (cnt < 0);\n if(cnt== 1) cnt++;\n else cnt = cnt + 3;\n System.out.printf(“%d”, cnt);\n\n }\n\n}",
       "options": [
         "2",
         "3",
@@ -280,7 +280,7 @@
     },
     {
       "qnum": 24,
-      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class Operator {\n     public static void main(String[ ] args) {\n         int x = 5, y = 0, z = 0;\n         y = x++;\n         z = - -x;\n         System.out.print(x + “, ” + y + “, ” + z);\n\n    }\n\n}",
+      "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class Operator {\n public static void main(String[ ] args) {\n int x = 5, y = 0, z = 0;\n y = x++;\n z = - -x;\n System.out.print(x + “, ” + y + “, ” + z);\n\n }\n\n}",
       "options": [
         "5, 5, 5",
         "5, 6, 5",
@@ -316,7 +316,7 @@
     },
     {
       "qnum": 27,
-      "stem": "다음 파이썬(Python) 프로그램이 실행되었을 때의 결과는?\ndef cs(n):\n    s = 0 for num in range(n+1):\n        s += num return s print(cs(11))",
+      "stem": "다음 파이썬(Python) 프로그램이 실행되었을 때의 결과는?\ndef cs(n):\n s = 0 for num in range(n+1):\n s += num return s print(cs(11))",
       "options": [
         "45",
         "55",
@@ -333,7 +333,7 @@
         "A, B, C 출력이 반복된다.",
         "A, B, C",
         "A, B, C, D 출력이 반복된다.",
-        "A, B, C, D 까지만 출력된다"
+        "A, B, C, D까지만 출력된다"
       ],
       "explanation": "[문제 분석]\nwhile(True)는 조건이 항상 참이므로 블록 내의 코드들을 무한 반복시키며, continue는 이후 코드를 수행하지 않고 반복문의 처음으로 돌아가는 예약어입니다\n\n---\n[풀이 과정]\n1. while(True)는 조건이 항상 참이므로 블록 내의 코드들을 무한 반복시키며, continue는 이후 코드를 수행하지 않고 반복문의 처음으로 돌아가는 예약어입니다\n2. 따라서 화면에는 A, B, C만 반복하여 출력 됩니다\n\n---\n[정답 확인]\n정답: 1번 - A, B, C 출력이 반복된다.\n**핵심**: 따라서 화면에는 A, B, C만 반복하여 출력 됩니다\n\n---\n[핵심 포인트]\n- **while(True)**: 조건이 항상 참이므로 블록 내의 코드들을 무한 반복시키며, continue는 이후 코드를 수행하지 않고 반복문의 처음으로 돌아가는 예약어입니다",
       "answer": 1
@@ -352,7 +352,7 @@
     },
     {
       "qnum": 31,
-      "stem": "다음 파이썬(Python) 프로그램이 실행되었을 때의 결과는? class FourCal:\ndef setdata(self, fir, sec):\n    self.fir = fir self.sec = sec def add(self):\n        result = self.fir + self.sec return result a = FourCal( ) a.setdata(4, 2) print(a.add( ))",
+      "stem": "다음 파이썬(Python) 프로그램이 실행되었을 때의 결과는? class FourCal:\ndef setdata(self, fir, sec):\n self.fir = fir self.sec = sec def add(self):\n result = self.fir + self.sec return result a = FourCal( ) a.setdata(4, 2) print(a.add( ))",
       "options": [
         "0",
         "2",
@@ -443,7 +443,7 @@
         "20203333 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200",
         "20203333 NULL CS300"
       ],
-      "explanation": "[문제 분석]\n• INTERSECT는 두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자입니다\n\n---\n[풀이 과정]\n1. • INTERSECT는 두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자입니다\n2. 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222 와 20203333 이므 학번 로, 공통된 행인 20202222 가 결과로 출력됩니다\n\n---\n[정답 확인]\n정답: 3번 - 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200\n**핵심**: 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222 와 20203333 이므 학번 로, 공통된\n\n---\n[핵심 포인트]\n- **학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200**: 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222 와 20203333 이므",
+      "explanation": "[문제 분석]\n• INTERSECT는 두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자입니다\n\n---\n[풀이 과정]\n1. • INTERSECT는 두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자입니다\n2. 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222와 20203333 이므 학번로, 공통된 행인 20202222 가 결과로 출력됩니다\n\n---\n[정답 확인]\n정답: 3번 - 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200\n**핵심**: 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222와 20203333 이므 학번로, 공통된\n\n---\n[핵심 포인트]\n- **학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200**: 학번 학번 20201111 20202222 • SELECT 학번 FROM R1과 SELECT 학번 FROM R2의 결과는 20202222와 20203333 이므",
       "answer": 3
     },
     {

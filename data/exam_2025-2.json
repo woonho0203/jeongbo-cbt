@@ -149,7 +149,7 @@
       "options": [
         "E-R 다이어그램을 사용하여 객체의 행위를 데이터 모델링하 는데 초점을 둔 방법이다.",
         "객체, 동적, 기능 모델로 나누어 수행하는 방법이다.",
-        "미시적 개발 프로세스와 거시적 개발 프로세스를 모두 사용하 는 방법이다.",
+        "미시적 개발 프로세스와 거시적 개발 프로세스를 모두 사용하는 방법이다.",
         "Use-Case를 강조하여 사용하는 방법이다."
       ],
       "subjectName": "소프트웨어 설계",
@@ -203,7 +203,7 @@
       "subject": 1,
       "stem": "요구사항 명세 기법에 대한 설명으로 틀린 것은?",
       "options": [
-        "비정형 명세 기법은 사용자의 요구를 표현할 때 자연어를 기반 으로 서술한다.",
+        "비정형 명세 기법은 사용자의 요구를 표현할 때 자연어를 기반으로 서술한다.",
         "비정형 명세 기법은 사용자의 요구를 표현할 때 Z 비정형 명세 기법을 사용한다.",
         "정형 명세 기법은 사용자의 요구를 표현할 때 수학적인 원리와 표기법을 이용한다.",
         "정형 명세 기법은 비정형 명세 기법에 비해 표현이 간결하다."
@@ -260,14 +260,14 @@
       "subject": 1,
       "stem": "결합도(Coupling)에 대한 설명으로 틀린 것은?",
       "options": [
-        "데이터 결합도(Data Coupling)는 두 모듈이 매개 변수로 자료 를 전달할 때 자료 구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.",
+        "데이터 결합도(Data Coupling)는 두 모듈이 매개 변수로 자료를 전달할 때 자료 구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.",
         "내용 결합도(Content Coupling)는 하나의 모듈이 직접적으로 다른 모듈의 내용을 참조할 때 두 모듈은 내용적으로 결합되어 있다고 한다.",
         "공통 결합도(Common Coupling)는 두 모듈이 동일한 전역 데 이터를 접근한다면 공통 결합되어 있다고 한다.",
-        "결합도(Coupling)는 두 모듈 간의 상호작용, 또는 의존도 정도 를 나타내는 것이다."
+        "결합도(Coupling)는 두 모듈 간의 상호작용, 또는 의존도 정도를 나타내는 것이다."
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "[문제 분석]\n데이터 결합도(Data Coupling)는 두 모듈이 매개변수를 통해 단순한 값(스칼라)을 전달하는 경우입니다\n\n---\n[풀이 과정]\n1. 자료 구조 형태로 전달되는 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다\n\n---\n[정답 확인]\n정답: 1번 - 데이터 결합도(Data Coupling)는 두 모듈이 매개 변수로 자료 를 전달할 때 자료 구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.\n**핵심**: 자료 구조 형태로 전달되는 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다\n\n---\n[핵심 포인트]\n- **자료 구조 형태로 전달되**: 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다"
+      "explanation": "[문제 분석]\n데이터 결합도(Data Coupling)는 두 모듈이 매개변수를 통해 단순한 값(스칼라)을 전달하는 경우입니다\n\n---\n[풀이 과정]\n1. 자료 구조 형태로 전달되는 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다\n\n---\n[정답 확인]\n정답: 1번 - 데이터 결합도(Data Coupling)는 두 모듈이 매개 변수로 자료를 전달할 때 자료 구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.\n**핵심**: 자료 구조 형태로 전달되는 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다\n\n---\n[핵심 포인트]\n- **자료 구조 형태로 전달되**: 경우는 스탬프 결합도(Stamp Coupling)에 해당합니다"
     },
     {
       "qnum": 20,
@@ -386,12 +386,12 @@
       "stem": "저작권 관리 구성 요소에 대한 설명이 틀린 것은?",
       "options": [
         "콘텐츠 제공자(Contents Provider) : 콘텐츠를 제공하는 저작 권자",
-        "콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터 와 함께 배포 가능한 단위로 묶는 기능",
+        "콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는 기능",
         "클리어링 하우스(Clearing House) : 키 관리 및 라이선스 발급 관리",
         "DRM 컨트롤러 : 배포된 콘텐츠의 이용 권한을 통제"
       ],
       "answer": 2,
-      "explanation": "[문제 분석]\n콘텐츠 분배자(Contents Distributor)는 암호화된 콘텐츠를 메타데이터와 함께 배포하는 역할입니다\n\n---\n[풀이 과정]\n1. 콘텐츠를 패키징(묶는)하는 것은 패키저(Packager)의 역할입니다\n\n---\n[정답 확인]\n정답: 2번 - 콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터 와 함께 배포 가능한 단위로 묶는 기능\n**핵심**: 콘텐츠를 패키징(묶는)하는 것은 패키저(Packager)의 역할입니다\n\n---\n[핵심 포인트]\n- **콘텐츠를 패키징(묶는)하**: 것은 패키저(Packager)의 역할입니다",
+      "explanation": "[문제 분석]\n콘텐츠 분배자(Contents Distributor)는 암호화된 콘텐츠를 메타데이터와 함께 배포하는 역할입니다\n\n---\n[풀이 과정]\n1. 콘텐츠를 패키징(묶는)하는 것은 패키저(Packager)의 역할입니다\n\n---\n[정답 확인]\n정답: 2번 - 콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는 기능\n**핵심**: 콘텐츠를 패키징(묶는)하는 것은 패키저(Packager)의 역할입니다\n\n---\n[핵심 포인트]\n- **콘텐츠를 패키징(묶는)하**: 것은 패키저(Packager)의 역할입니다",
       "subject": 2,
       "subjectName": "소프트웨어 개발"
     },
@@ -608,7 +608,7 @@
     {
       "qnum": 44,
       "subject": 3,
-      "stem": "STUDENT 테이블에 독일어과 학생 50명, 중국어과 학생 30명, 영어영문학과 학생 50명의 정보가 저장되어 있을 때, 다음 두 SQL문 의 실행 결과 튜플 수는? (단, DEPT 컬럼은 학과명) ⓐ\nSELECT DEPT\nFROM STUDENT; ⓑ\nSELECT DISTINCT DEPT\nFROM STUDENT;",
+      "stem": "STUDENT 테이블에 독일어과 학생 50명, 중국어과 학생 30명, 영어영문학과 학생 50명의 정보가 저장되어 있을 때, 다음 두 SQL문의 실행 결과 튜플 수는? (단, DEPT 컬럼은 학과명) ⓐ\nSELECT DEPT\nFROM STUDENT; ⓑ\nSELECT DISTINCT DEPT\nFROM STUDENT;",
       "options": [
         "ⓐ 3, ⓑ 3",
         "ⓐ 50, ⓑ 3",
@@ -875,7 +875,7 @@
     {
       "qnum": 63,
       "subject": 4,
-      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> int main(int argc, char* argv[]) {\n     int a = 5, b = 3, c = 12;\n     int t1, t2, t3;\n     t1 = a && b;\n     t2 = a || b;\n     t3 = !c;\n     printf(\"%d\", t1 + t2 + t3);\n     return 0;\n\n}",
+      "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h> int main(int argc, char* argv[]) {\n int a = 5, b = 3, c = 12;\n int t1, t2, t3;\n t1 = a && b;\n t2 = a || b;\n t3 = !c;\n printf(\"%d\", t1 + t2 + t3);\n return 0;\n\n}",
       "options": [
         "０",
         "２",
@@ -931,7 +931,7 @@
     {
       "qnum": 67,
       "subject": 4,
-      "stem": "다음은 정수 배열 a에 0부터 9까지의 무작위 수를 저장하는 Java 코드이다. 괄호에 들어갈 알맞은 코드는 무엇인가? import ( ).*;\npublic class Test {\n     public static void main(String[] args) {\n         Random rand = new Random( );\n         int a[] = new int[6];\n         for(int i = 0; i < 6; i++) a[i] = rand.nextInt(10);\n\n    }\n\n}",
+      "stem": "다음은 정수 배열 a에 0부터 9까지의 무작위 수를 저장하는 Java 코드이다. 괄호에 들어갈 알맞은 코드는 무엇인가? import ( ).*;\npublic class Test {\n public static void main(String[] args) {\n Random rand = new Random( );\n int a[] = new int[6];\n for(int i = 0; i < 6; i++) a[i] = rand.nextInt(10);\n\n }\n\n}",
       "options": [
         "java.lang",
         "java.util",
@@ -959,7 +959,7 @@
     {
       "qnum": 69,
       "subject": 4,
-      "stem": "다음 Java 프로그램이 실행되었을 때의 결과는?\npublic class Test {\n     public static void main(String[] args) {\n         int x = 7, y = 0;\n         while(x-- > 0) {\n             if (x%3 == 0) continue;\n             y++;\n\n        }\n         System.out.print(y);\n\n    }\n\n}",
+      "stem": "다음 Java 프로그램이 실행되었을 때의 결과는?\npublic class Test {\n public static void main(String[] args) {\n int x = 7, y = 0;\n while(x-- > 0) {\n if (x%3 == 0) continue;\n y++;\n\n }\n System.out.print(y);\n\n }\n\n}",
       "options": [
         "0",
         "4",
@@ -1001,7 +1001,7 @@
     {
       "qnum": 72,
       "subject": 4,
-      "stem": "다음의 페이지 참조 열(Page reference)에 대해 페이지 교체 기법으 로 선입선출 알고리즘을 사용할 경우 페이지 부재(Page Fault) 횟수 는? (단, 할당된 페이지 프레임 수는 3이고, 처음에는 모든 프레임이 비어 있다.) <페이지 참조열> 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0",
+      "stem": "다음의 페이지 참조 열(Page reference)에 대해 페이지 교체 기법으로 선입선출 알고리즘을 사용할 경우 페이지 부재(Page Fault) 횟수는? (단, 할당된 페이지 프레임 수는 3이고, 처음에는 모든 프레임이 비어 있다.) <페이지 참조열> 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0",
       "options": [
         "13",
         "14",
@@ -1060,13 +1060,13 @@
       "stem": "다음은 파이썬으로 만들어진 반복문 코드이다. 이 코드의 결과는? while(True) : print('A') print('B') break print('C') print('D')",
       "options": [
         "A, B 출력이 반복된다.",
-        "A, B, C 까지만 출력된다.",
+        "A, B, C까지만 출력된다.",
         "A, B, C 출력이 반복된다.",
-        "A, B, D 까지만 출력된다."
+        "A, B, D까지만 출력된다."
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "[문제 분석]\nwhile(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D')는 while 루프 밖이므로 실행됨 → A, B, D 출력\n\n---\n[풀이 과정]\n1. while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D')는 while 루프 밖이므로 실행됨 → A, B, D 출력\n\n---\n[정답 확인]\n정답: 4번 - A, B, D 까지만 출력된다.\n**핵심**: while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D'\n\n---\n[핵심 포인트]\n- **A, B, D 까지만 출력된다.**: while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨."
+      "explanation": "[문제 분석]\nwhile(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D')는 while 루프 밖이므로 실행됨 → A, B, D 출력\n\n---\n[풀이 과정]\n1. while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D')는 while 루프 밖이므로 실행됨 → A, B, D 출력\n\n---\n[정답 확인]\n정답: 4번 - A, B, D까지만 출력된다.\n**핵심**: while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨. print('D'\n\n---\n[핵심 포인트]\n- **A, B, D까지만 출력된다.**: while(True) 루프에서: print('A') → print('B') → break(루프 종료) → print('C')는 break 이후이므로 실행 안 됨."
     },
     {
       "qnum": 77,
@@ -1116,7 +1116,7 @@
       "stem": "단편화(Fragmentation)와 재결합(Reassembly)에 대한 설명으로 옳지 않은 것은?",
       "options": [
         "단편화는 송신 측에서 전송할 데이터를 전송에 알맞은 일정 크기의 작은 블록으로 자르는 작업을 의미한다.",
-        "재결합은 수신 측에서 단편화된 블록을 원래의 데이터로 모으 는 것이다.",
+        "재결합은 수신 측에서 단편화된 블록을 원래의 데이터로 모으는 것이다.",
         "단편화를 통해 세분화된 데이터 블록을 프레임이라고 한다.",
         "단편화를 하면 전송 시간이 단축되고, 효과적인 오류 제어가 가능하다."
       ],
@@ -1141,7 +1141,7 @@
     {
       "qnum": 82,
       "subject": 5,
-      "stem": "다음 설명에 해당하는 소프트웨어 개발 방법론은 무엇인가? ㆍ기존의 시스템이나 소프트웨어를 구성하는 컴포넌트를 조 합하여 하나의 새로운 애플리케이션을 만드는 방법론이다. ㆍ컴포넌트의 재사용(Reusability)이 가능하여 시간과 노력 을 절감할 수 있다.",
+      "stem": "다음 설명에 해당하는 소프트웨어 개발 방법론은 무엇인가? ㆍ기존의 시스템이나 소프트웨어를 구성하는 컴포넌트를 조 합하여 하나의 새로운 애플리케이션을 만드는 방법론이다. ㆍ컴포넌트의 재사용(Reusability)이 가능하여 시간과 노력을 절감할 수 있다.",
       "options": [
         "구조적 방법론",
         "정보공학 방법론",
