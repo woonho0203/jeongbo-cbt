@@ -207,6 +207,14 @@ main {
   font-size: 1rem; line-height: 1.75; margin-bottom: 16px; white-space: pre-wrap;
 }
 
+/* ─── ? 이후 설명/데이터 블록 ─── */
+.qcontent {
+  font-size: 0.97rem; line-height: 1.75;
+  background: var(--opt-hover); border-radius: 6px;
+  padding: 10px 14px; margin: 4px 0 14px;
+  white-space: pre-wrap; color: var(--text);
+}
+
 /* ─── [보기] 박스 ─── */
 .qbox {
   border: 1.5px solid var(--border); border-radius: 8px;

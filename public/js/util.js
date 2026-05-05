@@ -78,7 +78,7 @@ function renderStem(text) {
     'import java.', 'package ', 'int main(', 'void main(', '<?php',
   ];
 
-  // 멀티라인 stem 처리 ([보기] / ㆍ 항목 등)
+  // 멀티라인 stem 처리 ([보기] / ㆍ 항목 / ? 이후 설명 등)
   if (text.includes('\n')) {
     const lines = text.split('\n');
     const nodes = [];
@@ -86,14 +86,14 @@ function renderStem(text) {
     let inBox = false;
     let inDesc = false;
     let descEl = null;
+    let lastWasQuestion = false; // 직전 줄이 ?로 끝난 질문인지
 
     for (const raw of lines) {
       const line = raw.trimEnd();
       if (!line) continue;
 
       if (line === '[보기]') {
-        // [보기] 헤더 + 아이템 컨테이너
-        inBox = true; inDesc = false;
+        inBox = true; inDesc = false; lastWasQuestion = false;
         const wrapper = el('div', { class: 'qbox' });
         const header = el('div', { class: 'qbox-header', text: '보기' });
         boxEl = el('div', { class: 'qbox-items' });
@@ -110,7 +110,7 @@ function renderStem(text) {
 
       // ㆍ 항목 또는 Ⓐ-Ⓩ 항목 → 설명 블록
       if (/^[ㆍⒶ-Ⓩ]/.test(line)) {
-        inBox = false;
+        inBox = false; lastWasQuestion = false;
         if (!inDesc) {
           descEl = el('div', { class: 'qdesc' });
           nodes.push(descEl);
@@ -120,8 +120,25 @@ function renderStem(text) {
         continue;
       }
 
+      // ? 이후 설명/데이터 → qcontent 블록으로 구분 렌더링
+      if (lastWasQuestion) {
+        inBox = false; inDesc = false; lastWasQuestion = false;
+        // 코드 블록 감지
+        const isCode = CODE_STARTS.some(s => line.includes(s));
+        if (isCode) {
+          const pre = document.createElement('pre');
+          pre.className = 'code-block';
+          pre.appendChild(Object.assign(document.createElement('code'), { textContent: line }));
+          nodes.push(pre);
+        } else {
+          nodes.push(el('div', { class: 'qcontent', text: line }));
+        }
+        continue;
+      }
+
       // 일반 질문 텍스트
       inBox = false; inDesc = false;
+      lastWasQuestion = line.trimEnd().endsWith('?');
       nodes.push(el('div', { class: 'qstem', text: line }));
     }
     return nodes;
