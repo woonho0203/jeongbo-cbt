@@ -125,7 +125,7 @@
     },
     {
       "qnum": 11,
-      "stem": "소프트웨어 품질 측정을 위해 개발자 관점에서 고려해야 할 항목으로 거리가 먼 것은?",
+      "stem": "소프트웨어 품질 측정을 위해 개발자 관점에서 고려해야할 항목으로 거리가 먼 것은?",
       "options": [
         "정확성",
         "무결성",
@@ -192,7 +192,7 @@
         "익스트림 프로그래밍",
         "모듈 중심 개발"
       ],
-      "explanation": "[문제 분석]\n애자일 모형을 기반으로 하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등\n\n---\n[풀이 과정]\n1. 애자일 모형을 기반으로 하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등\n\n---\n[정답 확인]\n정답: 4번 - 모듈 중심 개발\n**핵심**: 애자일 모형을 기반으로 하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, \n\n---\n[핵심 포인트]\n- **애자일 모형을 기반으로 하**: 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등",
+      "explanation": "[문제 분석]\n애자일 모형을 기반으로하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등\n\n---\n[풀이 과정]\n1. 애자일 모형을 기반으로하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등\n\n---\n[정답 확인]\n정답: 4번 - 모듈 중심 개발\n**핵심**: 애자일 모형을 기반으로하는 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, \n\n---\n[핵심 포인트]\n- **애자일 모형을 기반으로 하**: 소프트웨어 개발 모형 스크럼, XP(eXtreme Programming), 칸반, Lean, 크리스탈, ASD, 기능 중심 개발(FDD), DSDM, DAD 등",
       "answer": 4
     },
     {
@@ -413,7 +413,7 @@
     },
     {
       "qnum": 35,
-      "stem": "소프트웨어의 사용자 인터페이스 개발 시스템(User Interface Development System)이 가져야 할 기 능이 아닌 것은?",
+      "stem": "소프트웨어의 사용자 인터페이스 개발 시스템(User Interface Development System)이 가져야할 기 능이 아닌 것은?",
       "options": [
         "사용자 입력의 검증",
         "에러 처리와 에러 메시지 처리",
@@ -799,7 +799,7 @@
     },
     {
       "qnum": 67,
-      "stem": "데이터 모델에 표시해야 할 요소로 거리가 먼 것은?",
+      "stem": "데이터 모델에 표시해야할 요소로 거리가 먼 것은?",
       "options": [
         "논리적 데이터 구조",
         "출력 구조",
