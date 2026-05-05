@@ -329,16 +329,40 @@ main {
 
 /* ─── 해설 ─── */
 .explanation {
-  background: rgba(232,184,75,0.08); border-left: 4px solid var(--warning);
+  background: rgba(232,184,75,0.07); border-left: 4px solid var(--warning);
   padding: 14px 16px; margin-top: 12px; border-radius: 8px;
-  font-size: 0.9rem; line-height: 1.7; color: var(--text);
+  font-size: 0.9rem; line-height: 1.75; color: var(--text);
 }
 .explanation-header {
-  font-weight: 700; color: var(--warning); margin-bottom: 8px; font-size: 0.92rem;
+  font-weight: 700; color: var(--warning); margin-bottom: 10px; font-size: 0.92rem;
 }
-.explanation-body {
-  white-space: pre-line; line-height: 1.75; color: var(--text);
+.explanation-body { }
+
+/* 섹션 제목 */
+.exp-sec-title {
+  font-weight: 700; font-size: 0.82rem; letter-spacing: 0.03em;
+  padding: 3px 9px; border-radius: 4px; display: inline-block;
+  margin: 10px 0 5px;
 }
+.exp-sec-title:first-child { margin-top: 0; }
+.sec-analysis  { background: rgba(59,110,245,0.12); color: #3b6ef5; }
+.sec-process   { background: rgba(30,166,114,0.12); color: #1ea672; }
+.sec-answer    { background: rgba(232,184,75,0.18); color: #b07d10; }
+[data-theme="dark"] .sec-answer { color: var(--warning); }
+.sec-point     { background: rgba(139,92,246,0.12); color: #7c3aed; }
+[data-theme="dark"] .sec-point { color: #a78bfa; }
+.sec-warning   { background: rgba(230,69,69,0.12); color: var(--danger); }
+.sec-etc       { background: var(--border); color: var(--muted); }
+
+/* 섹션 본문 */
+.exp-sec-body { margin-bottom: 4px; }
+.exp-p  { margin: 4px 0; line-height: 1.75; }
+.exp-ol { padding-left: 1.4em; margin: 4px 0; }
+.exp-ul { padding-left: 1.4em; margin: 4px 0; list-style: disc; }
+.exp-ol li, .exp-ul li { margin: 3px 0; line-height: 1.7; }
+.exp-answer { font-weight: 700; color: var(--success); margin: 4px 0; }
+.exp-core   { background: rgba(30,166,114,0.08); border-left: 3px solid var(--success);
+              padding: 4px 8px; border-radius: 4px; margin: 5px 0; font-size: 0.88rem; }
 
 /* ─── 대시보드 ─── */
 .dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 22px; }

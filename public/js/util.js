@@ -93,12 +93,97 @@ function renderStem(text) {
   return nodes;
 }
 
+// 마크다운 인라인 파싱 (**bold**, 특수기호 처리)
+function parseMd(line) {
+  // **text** → <strong>
+  return line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+
+// 줄 목록을 HTML로 변환 (-, 1. 2. 등)
+function linesToHtml(lines) {
+  const chunks = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i].trimEnd();
+    if (!line) { i++; continue; }
+    // 순서있는 목록
+    if (/^\d+\.\s/.test(line)) {
+      const olLines = [];
+      while (i < lines.length && /^\d+\.\s/.test(lines[i].trimEnd())) {
+        olLines.push(lines[i].replace(/^\d+\.\s*/, '').trimEnd());
+        i++;
+      }
+      chunks.push('<ol class="exp-ol">' + olLines.map(l => `<li>${parseMd(l)}</li>`).join('') + '</ol>');
+      continue;
+    }
+    // 비순서 목록 (- 또는 •)
+    if (/^[-•]\s/.test(line)) {
+      const ulLines = [];
+      while (i < lines.length && /^[-•]\s/.test(lines[i].trimEnd())) {
+        ulLines.push(lines[i].replace(/^[-•]\s*/, '').trimEnd());
+        i++;
+      }
+      chunks.push('<ul class="exp-ul">' + ulLines.map(l => `<li>${parseMd(l)}</li>`).join('') + '</ul>');
+      continue;
+    }
+    // 정답 확인 줄 (정답: N번 ...)
+    if (/^정답\s*:/.test(line)) {
+      chunks.push(`<div class="exp-answer">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    // 핵심 줄
+    if (/^\*\*핵심\*\*/.test(line) || /^핵심\s*:/.test(line)) {
+      chunks.push(`<div class="exp-core">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    // 일반 문단
+    chunks.push(`<p class="exp-p">${parseMd(line)}</p>`);
+    i++;
+  }
+  return chunks.join('');
+}
+
+// 섹션 제목 → CSS 클래스
+function sectionClass(title) {
+  if (title.includes('분석')) return 'sec-analysis';
+  if (title.includes('풀이')) return 'sec-process';
+  if (title.includes('정답')) return 'sec-answer';
+  if (title.includes('포인트')) return 'sec-point';
+  if (title.includes('주의')) return 'sec-warning';
+  return 'sec-etc';
+}
+
 // 해설 렌더링 (구조화된 레이아웃)
 function renderExplanation(text) {
   if (!text) return null;
   const wrap = el('div', { class: 'explanation' });
   wrap.appendChild(el('div', { class: 'explanation-header', text: '💡 해설' }));
-  wrap.appendChild(el('div', { class: 'explanation-body', text }));
+
+  const body = el('div', { class: 'explanation-body' });
+
+  // --- 구분자로 섹션 분리
+  const rawSections = text.split(/\n---\n/);
+  for (const sec of rawSections) {
+    const lines = sec.trim().split('\n');
+    if (!lines.length) continue;
+    const headerMatch = lines[0].match(/^\[(.+)\]$/);
+    if (headerMatch) {
+      const titleEl = el('div', { class: 'exp-sec-title ' + sectionClass(headerMatch[1]) });
+      titleEl.textContent = lines[0];
+      body.appendChild(titleEl);
+      const contentEl = el('div', { class: 'exp-sec-body' });
+      contentEl.innerHTML = linesToHtml(lines.slice(1));
+      body.appendChild(contentEl);
+    } else {
+      const contentEl = el('div', { class: 'exp-sec-body' });
+      contentEl.innerHTML = linesToHtml(lines);
+      body.appendChild(contentEl);
+    }
+  }
+
+  wrap.appendChild(body);
   return wrap;
 }
 const SUBJECT_NAMES = {
