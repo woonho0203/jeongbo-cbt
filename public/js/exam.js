@@ -206,7 +206,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '아무 번호나 눌러 다음 문제로 →' }),
+      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑↓ 스크롤' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -236,7 +236,7 @@ function renderQuestion(state) {
           }, text: '◀ 이전',
         }),
         el('div', { style: { color: 'var(--muted)', fontSize: '0.88rem', textAlign: 'center', flex: '1' },
-          text: '번호키(1~4)로 선택하면 바로 채점됩니다',
+          text: '숫자(1~4) · ←①  ↓②  →③  ↑④',
         }),
       ]));
     }
@@ -263,38 +263,74 @@ function renderQuestion(state) {
   document.onkeydown = (e) => {
     if (state.submitted) return;
 
-    if (state.checkMode) {
-      if (state.revealedAnswer) {
-        if ((e.key >= '1' && e.key <= '9') && Date.now() - state.revealReadyAt > 300) {
-          advanceCheckMode(state);
+    // 현재 문제에 답이 선택됐는지 여부
+    const hasAnswered = state.checkMode ? state.revealedAnswer : state.answers.has(q.qkey);
+
+    // ── 방향키 ──
+    if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
+      e.preventDefault();
+
+      if (!hasAnswered) {
+        // 답 선택 전: 방향키 → 보기 선택 (자동 이동 없음)
+        const arrowToNum = { ArrowLeft: 1, ArrowDown: 2, ArrowRight: 3, ArrowUp: 4 };
+        const num = arrowToNum[e.key];
+        if (state.checkMode) {
+          // 학습 모드: 선택 즉시 채점
+          handleOptionClick(state, num);
+        } else {
+          // 일반 모드: 보기만 선택, 자동 이동 없음
+          state.answers.set(q.qkey, num);
+          updateOMR(state);
+          renderQuestion(state);
         }
       } else {
-        if (e.key >= '1' && e.key <= '4') {
-          handleOptionClick(state, parseInt(e.key, 10));
-        } else if (e.key === 'ArrowLeft' && state.currentIdx > 0) {
-          state.revealedAnswer = false;
-          state.currentIdx--;
-          renderQuestion(state); updateOMR(state);
+        // 답 선택 후: 방향키 → 이동/스크롤
+        if (e.key === 'ArrowRight') {
+          if (state.checkMode) {
+            advanceCheckMode(state);
+          } else {
+            if (state.currentIdx < state.questions.length - 1) { state.currentIdx++; renderQuestion(state); updateOMR(state); }
+          }
+        } else if (e.key === 'ArrowLeft') {
+          if (state.checkMode) {
+            if (state.currentIdx > 0) { state.revealedAnswer = false; state.currentIdx--; renderQuestion(state); updateOMR(state); }
+          } else {
+            if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
+          }
+        } else if (e.key === 'ArrowDown') {
+          window.scrollBy({ top: 200, behavior: 'smooth' });
+        } else if (e.key === 'ArrowUp') {
+          window.scrollBy({ top: -200, behavior: 'smooth' });
         }
       }
       return;
     }
 
-    // 일반 모드 단축키
-    if (e.key >= '1' && e.key <= '4') {
-      const num = parseInt(e.key, 10);
-      state.answers.set(q.qkey, num);
-      updateOMR(state);
-      if (state.currentIdx < state.questions.length - 1) {
-        renderQuestion(state);
-        setTimeout(() => { state.currentIdx++; renderQuestion(state); updateOMR(state); }, 300);
+    // ── 숫자키 ──
+    if (e.key === '5' || e.key === ' ') { e.preventDefault(); window.scrollBy({ top: 200, behavior: 'smooth' }); return; }
+    if (e.key === '6') { window.scrollBy({ top: -200, behavior: 'smooth' }); return; }
+
+    if (state.checkMode) {
+      if (state.revealedAnswer) {
+        if ((e.key >= '1' && e.key <= '4') && Date.now() - state.revealReadyAt > 300) {
+          advanceCheckMode(state);
+        }
       } else {
-        renderQuestion(state);
+        if (e.key >= '1' && e.key <= '4') handleOptionClick(state, parseInt(e.key, 10));
       }
-    } else if (e.key === 'ArrowRight') {
-      if (state.currentIdx < state.questions.length - 1) { state.currentIdx++; renderQuestion(state); updateOMR(state); }
-    } else if (e.key === 'ArrowLeft') {
-      if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
+    } else {
+      // 일반 모드: 숫자키는 선택 후 자동으로 다음 문제
+      if (e.key >= '1' && e.key <= '4') {
+        const num = parseInt(e.key, 10);
+        state.answers.set(q.qkey, num);
+        updateOMR(state);
+        if (state.currentIdx < state.questions.length - 1) {
+          renderQuestion(state);
+          setTimeout(() => { state.currentIdx++; renderQuestion(state); updateOMR(state); }, 300);
+        } else {
+          renderQuestion(state);
+        }
+      }
     }
   };
 }

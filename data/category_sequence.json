@@ -96,8 +96,7 @@
         "메시지"
       ],
       "explanation": "[문제 분석]\n순차 다이어그램의 구성 요소 • 액터(Actor) • 객체(Object) • 생명선(Lifeline) • 실행 상자(Active Box) • 메시지(Message)\n\n---\n[풀이 과정]\n1. 순차 다이어그램의 구성 요소 • 액터(Actor) • 객체(Object) • 생명선(Lifeline) • 실행 상자(Active Box) • 메시지(Message)\n\n---\n[정답 확인]\n정답: 3번 - 확장\n**핵심**: 순차 다이어그램의 구성 요소 • 액터(Actor) • 객체(Object) • 생명선(Lifeline) • 실행 상자(Active Box) • 메시지(Message)\n\n---\n[핵심 포인트]\n- **확장**: 이 문제의 핵심 개념",
-      "answer": 3,
-      "image": "images/2025-1_q16.png"
+      "answer": 3
     },
     {
       "qnum": 9,
@@ -481,8 +480,7 @@
         "소프트웨어 개발 기간"
       ],
       "explanation": "[문제 분석]\n소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보\n\n---\n[풀이 과정]\n1. 소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보\n\n---\n[정답 확인]\n정답: 4번 - 소프트웨어 개발 기간\n**핵심**: 소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보\n\n---\n[핵심 포인트]\n- **소프트웨어 개발 기간**: 소프트웨어 설치 매뉴얼의 기본 항목 • 소프트웨어 개요 • 설치 관련 파일 • 설치 아이콘(Installation) • 프로그램 삭제 • 관련 추가 정보",
-      "answer": 4,
-      "image": "images/2025-3_q33.png"
+      "answer": 4
     },
     {
       "qnum": 41,
@@ -578,8 +576,7 @@
         "깊이 우선 탐색"
       ],
       "explanation": "[문제 분석]\n스택(Stack)을 이용한 연산은 ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다\n\n---\n[풀이 과정]\n1. 스택(Stack)을 이용한 연산은 ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다\n\n---\n[정답 확인]\n정답: 1번 - 선택 정렬\n**핵심**: 스택(Stack)을 이용한 연산은 ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다\n\n---\n[핵심 포인트]\n- **스택(Stack)을 이용한 연산**: ‘재귀 호출, 후위(Postfix) 표기법, 깊이 우선 탐색’과 같이 왔던 길을 되 돌아가는 경우에 사용합니다",
-      "answer": 1,
-      "image": "images/2024-3_q34.png"
+      "answer": 1
     },
     {
       "qnum": 49,
@@ -1047,8 +1044,7 @@
         "LRU(Least Recently Used)"
       ],
       "explanation": "[문제 분석]\n페이지 교체 알고리즘 OPT, FIFO, LRU, LFU, NUR, SCR 등\n\n---\n[풀이 과정]\n1. 페이지 교체 알고리즘 OPT, FIFO, LRU, LFU, NUR, SCR 등\n\n---\n[정답 확인]\n정답: 2번 - LUF(Least Used First)\n**핵심**: 페이지 교체 알고리즘 OPT, FIFO, LRU, LFU, NUR, SCR 등\n\n---\n[핵심 포인트]\n- **LUF(Least Used First)**: 이 문제의 핵심 개념",
-      "answer": 2,
-      "image": "images/2024-2_q78.png"
+      "answer": 2
     },
     {
       "qnum": 88,
