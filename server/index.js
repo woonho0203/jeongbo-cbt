@@ -134,6 +134,7 @@ async function handleAPI(req, res, method, urlPath) {
       stem: q.stem, options: q.options, hasAnswer: q.answer != null,
       image: q.image || null,
       table: q.table || null,
+      sourceId: q.sourceId || null,
       answer: checkMode ? (q.answer ?? null) : undefined,
       explanation: checkMode ? (q.explanation ?? null) : undefined,
     }));

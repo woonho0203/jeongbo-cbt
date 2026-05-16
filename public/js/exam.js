@@ -169,6 +169,7 @@ function renderQuestion(state) {
     el('div', { class: 'qhead' }, [
       el('span', { class: 'qnum', text: `Q${state.currentIdx + 1} / ${state.questions.length}` }),
       el('span', { class: 'subject', text: q.subjectName || '' }),
+      ...(q.sourceId ? [el('span', { class: 'source-badge', text: formatSource(q.sourceId) })] : []),
       el('button', {
         class: `bookmark-btn ${state.bookmarks.has(q.qkey) ? 'on' : ''}`,
         onClick: () => toggleBookmark(state, q.qkey),

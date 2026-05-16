@@ -69,6 +69,24 @@ function fmtTimer(sec) {
 
 const CIRCLES = ['①', '②', '③', '④'];
 
+function formatSource(sourceId) {
+  if (!sourceId) return '';
+  if (sourceId.startsWith('exam_')) {
+    const parts = sourceId.replace('exam_', '').split('-');
+    const year = parts[0];
+    const session = parts.slice(1).join('·');
+    return `${year}년 ${session}회`;
+  }
+  const CAT_LABELS = {
+    'category_calc':           '유형별 계산',
+    'category_code':           '유형별 코드',
+    'category_keyword':        '유형별 암기',
+    'category_sequence':       '유형별 순서',
+    'category_wrong-sentence': '유형별 오문장',
+  };
+  return CAT_LABELS[sourceId] || sourceId;
+}
+
 // 문제 본문에서 코드 블록 감지 후 <pre> 분리 렌더링
 // [보기] 섹션 / ㆍ 항목 / Ⓐ Ⓑ 항목 렌더링 지원
 function renderStem(text) {
