@@ -237,6 +237,7 @@ module.exports = {
   getAllExamQuestions,
   getAllQuestionsForRandom,
   getBalancedRandomQuestions,
+  getSmartRandomQuestions,
   lookupQuestion,
   buildQkey,
 };
