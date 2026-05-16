@@ -208,8 +208,9 @@ function getSmartRandomQuestions(count = 100, seenKeys = [], wrongKeys = []) {
     selected.push(...rest.slice(0, total - selected.length));
   }
 
-  // 최종 섞기 후 displayNum 부여
-  return shuffle(selected).slice(0, total).map((q, i) => ({ ...q, displayNum: i + 1 }));
+  // 과목 순서(1→5)로 정렬 후 displayNum 부여 (기출 형식: 1-20 소프트웨어설계, 21-40 소프트웨어개발 ...)
+  selected.sort((a, b) => (a.subject || 0) - (b.subject || 0));
+  return selected.slice(0, total).map((q, i) => ({ ...q, displayNum: i + 1 }));
 }
 
 function lookupQuestion(qkey) {
