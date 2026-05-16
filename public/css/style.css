@@ -494,6 +494,39 @@ main {
 .exp-core   { background: rgba(30,166,114,0.08); border-left: 3px solid var(--success);
               padding: 4px 8px; border-radius: 4px; margin: 5px 0; font-size: 0.88rem; }
 
+/* ─── 랜덤 진도 카드 ─── */
+.random-progress-card {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 18px; margin-top: 14px;
+}
+.rp-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 10px;
+}
+.rp-title { font-weight: 700; font-size: 0.95rem; }
+.rp-cycles {
+  font-size: 0.8rem; color: var(--muted);
+  padding: 2px 9px; border: 1px solid var(--border);
+  border-radius: 20px; background: var(--bg);
+}
+.rp-cycles.has-cycles { color: var(--warning); border-color: var(--warning); }
+.rp-bar-wrap {
+  height: 10px; background: var(--bg); border-radius: 99px;
+  overflow: hidden; margin-bottom: 10px;
+}
+.rp-bar-fill {
+  height: 100%; background: var(--primary);
+  border-radius: 99px; transition: width 0.4s;
+  min-width: 2px;
+}
+.rp-bar-fill.complete { background: var(--success); }
+.rp-stats {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.82rem; color: var(--muted); margin-bottom: 10px;
+}
+.rp-unseen.complete { color: var(--success); font-weight: 700; }
+.rp-reset-btn { font-size: 0.78rem; color: var(--muted); }
+
 /* ─── 대시보드 ─── */
 .dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 22px; }
 .dash-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }

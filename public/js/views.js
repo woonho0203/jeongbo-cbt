@@ -35,6 +35,39 @@ defineRoute('home', async (app) => {
     dashCard('최근 점수', lastScore != null ? `${Math.round(lastScore)}%` : '-', scoreColor),
   ]);
 
+  // ── 랜덤 진도 카드 ──
+  const meta      = Storage.getRandomMeta();
+  const seenCount = Storage.countSeenRandom();
+  const poolTotal = meta.total || 0;
+  const cycles    = meta.cycles || 0;
+  const unseen    = poolTotal > 0 ? Math.max(poolTotal - seenCount, 0) : null;
+  const pct       = poolTotal > 0 ? Math.min(Math.round(seenCount / poolTotal * 100), 100) : 0;
+  const complete  = poolTotal > 0 && seenCount >= poolTotal;
+
+  const randomProgressCard = el('div', { class: 'random-progress-card' }, [
+    el('div', { class: 'rp-header' }, [
+      el('span', { class: 'rp-title', text: '🎲 랜덤 출제 진도' }),
+      el('span', { class: `rp-cycles ${cycles > 0 ? 'has-cycles' : ''}`, text: `완주 ${cycles}회` }),
+    ]),
+    el('div', { class: 'rp-bar-wrap' }, [
+      el('div', { class: `rp-bar-fill ${complete ? 'complete' : ''}`, style: { width: `${pct}%` } }),
+    ]),
+    el('div', { class: 'rp-stats' }, [
+      el('span', { class: 'rp-seen', text: poolTotal > 0 ? `출제 완료  ${seenCount.toLocaleString()} / ${poolTotal.toLocaleString()}` : '랜덤 세션 시작 후 갱신됩니다' }),
+      unseen !== null ? el('span', { class: `rp-unseen ${complete ? 'complete' : ''}`,
+        text: complete ? '🎉 전체 완주!' : `미출제  ${unseen.toLocaleString()}개 남음` }) : null,
+    ].filter(Boolean)),
+    poolTotal > 0 ? el('button', {
+      class: 'btn small rp-reset-btn',
+      onClick: async () => {
+        if (!await modalConfirm('진도 초기화', '랜덤 출제 진도를 초기화하면\n모든 문제가 미출제 상태로 돌아갑니다.')) return;
+        Storage.resetSeenRandom();
+        renderRoute();
+      },
+      text: '진도 초기화',
+    }) : null,
+  ].filter(Boolean));
+
   app.innerHTML = '';
   app.append(
     el('h1', { class: 'section-title', text: '🗒 시험 모드' }),
@@ -43,6 +76,7 @@ defineRoute('home', async (app) => {
     studyModes,
     el('h2', { class: 'section-title', text: '📊 학습 현황 요약' }),
     summary,
+    randomProgressCard,
   );
 });
 

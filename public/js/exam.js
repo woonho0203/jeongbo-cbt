@@ -40,6 +40,11 @@ defineRoute('exam', async (app, params) => {
     }
   }
 
+  // 랜덤 모드: 전체 풀 크기를 진도 추적용으로 저장
+  if (mode === 'random' && data.poolTotal) {
+    Storage.setRandomTotal(data.poolTotal);
+  }
+
   if (!data.questions || data.questions.length === 0) {
     app.innerHTML = '';
     app.append(el('div', { class: 'card' }, [

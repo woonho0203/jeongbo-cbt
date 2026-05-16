@@ -228,6 +228,10 @@ function lookupQuestion(qkey) {
   return null;
 }
 
+function getRandomPoolSize() {
+  return getAllQuestionsForRandom().length;
+}
+
 module.exports = {
   loadAll,
   listExams,
@@ -238,6 +242,7 @@ module.exports = {
   getAllQuestionsForRandom,
   getBalancedRandomQuestions,
   getSmartRandomQuestions,
+  getRandomPoolSize,
   lookupQuestion,
   buildQkey,
 };

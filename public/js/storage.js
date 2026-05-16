@@ -107,21 +107,32 @@ const Storage = (() => {
   }
 
   // ── 랜덤 출제 진도 추적 ──────────────────────────────────────────────────────
-  function getSeenRandom()      { return get('cbt_seen_random', []); }
-  function addSeenRandom(qkeys) {
+  function getRandomMeta()       { return get('cbt_random_meta', { total: 0, cycles: 0 }); }
+  function setRandomTotal(n)     { set('cbt_random_meta', { ...getRandomMeta(), total: n }); }
+  function getSeenRandom()       { return get('cbt_seen_random', []); }
+  function countSeenRandom()     { return getSeenRandom().length; }
+  function addSeenRandom(qkeys)  {
     const seen = new Set(getSeenRandom());
     for (const k of qkeys) seen.add(k);
-    set('cbt_seen_random', [...seen]);
+    const meta = getRandomMeta();
+    if (meta.total > 0 && seen.size >= meta.total) {
+      // 전체 완주: 자동 리셋 + 완주 횟수 +1
+      set('cbt_seen_random', []);
+      set('cbt_random_meta', { ...meta, cycles: (meta.cycles || 0) + 1 });
+    } else {
+      set('cbt_seen_random', [...seen]);
+    }
   }
-  function resetSeenRandom()    { set('cbt_seen_random', []); }
-  function countSeenRandom()    { return getSeenRandom().length; }
+  function resetSeenRandom()     {
+    set('cbt_seen_random', []);
+  }
 
   return {
     nextId,
     getSessions, addSession, getSession, deleteSession,
     getBookmarks, setBookmark, delBookmark, hasBookmark, listBookmarks,
     getWrongLog, recordWrong, clearWrong, countWrong, listWrong,
-    getSeenRandom, addSeenRandom, resetSeenRandom, countSeenRandom,
+    getRandomMeta, setRandomTotal, getSeenRandom, countSeenRandom, addSeenRandom, resetSeenRandom,
     computeStats,
   };
 })();

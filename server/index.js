@@ -89,7 +89,7 @@ async function handleAPI(req, res, method, urlPath) {
   // POST /api/exam/start
   if (method === 'POST' && urlPath === '/api/exam/start') {
     const { mode, sourceId, count = 100, checkMode = false, wrongKeys, seenKeys } = await readBody(req);
-    let questions = [], title = '', qkeyMode = mode;
+    let questions = [], title = '', qkeyMode = mode, poolTotal = null;
 
     if (mode === 'past') {
       const exam = loader.getExam(sourceId);
@@ -104,6 +104,7 @@ async function handleAPI(req, res, method, urlPath) {
       );
       title = `랜덤 모의고사 (${questions.length}문제 / 기출+유형별 과목 균형)`;
       qkeyMode = 'random';
+      poolTotal = loader.getRandomPoolSize();
     } else if (mode === 'category') {
       const cat = loader.getCategory(sourceId);
       if (!cat) return sendError(res, 404, 'category not found');
@@ -142,7 +143,7 @@ async function handleAPI(req, res, method, urlPath) {
       answer: checkMode ? (q.answer ?? null) : undefined,
       explanation: checkMode ? (q.explanation ?? null) : undefined,
     }));
-    return sendJSON(res, { title, mode: qkeyMode, questions: safeQs });
+    return sendJSON(res, { title, mode: qkeyMode, questions: safeQs, poolTotal });
   }
 
   // POST /api/exam/submit
