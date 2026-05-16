@@ -1,5 +1,14 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ─── 전역 줄바꿈 ─── */
+body { overflow-x: hidden; }
+.qstem, .qcontent, .qbox-item, .qdesc-item, .opt-text,
+.explanation, .exp-sec-body, .exp-cmp-opttext,
+.selected-reason-text, .selected-reason-why {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 /* ─── 라이트 테마 변수 ─── */
 :root {
   --bg: #f6f7fb;
