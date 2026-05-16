@@ -154,37 +154,62 @@ function getAllQuestionsForRandom() {
 }
 
 function getBalancedRandomQuestions(count = 100) {
+  return getSmartRandomQuestions(count, [], []);
+}
+
+// 미출제 우선 + 오답 가중치 스마트 랜덤
+// seenKeys: 이미 출제된 qkey 배열, wrongKeys: 오답 qkey 배열
+function getSmartRandomQuestions(count = 100, seenKeys = [], wrongKeys = []) {
   const all = getAllQuestionsForRandom();
   const total = Math.min(Number(count) || 100, all.length);
+  const seenSet  = new Set(seenKeys);
+  const wrongSet = new Set(wrongKeys);
   const subjects = [1, 2, 3, 4, 5];
-  const buckets = Object.fromEntries(subjects.map((subject) => [subject, []]));
 
-  for (const question of shuffle(all)) {
-    const subject = subjects.includes(Number(question.subject)) ? Number(question.subject) : inferSubject(question);
-    buckets[subject].push({ ...question, subject, subjectName: question.subjectName || subjectName(subject) });
+  // 우선순위: 미출제+오답=3, 미출제=2, 출제됨+오답=1, 출제됨=0
+  function priority(q) {
+    const seen  = seenSet.has(q.qkey);
+    const wrong = wrongSet.has(q.qkey);
+    if (!seen && wrong) return 3;
+    if (!seen)          return 2;
+    if (wrong)          return 1;
+    return 0;
   }
 
+  // 과목별 버킷 구성 (먼저 shuffle → 같은 우선순위 내 무작위)
+  const buckets = Object.fromEntries(subjects.map(s => [s, []]));
+  for (const q of shuffle(all)) {
+    const subj = subjects.includes(Number(q.subject)) ? Number(q.subject) : inferSubject(q);
+    buckets[subj].push({ ...q, subject: subj, subjectName: q.subjectName || subjectName(subj) });
+  }
+
+  // 각 과목 버킷을 우선순위 내림차순 정렬 (stable: shuffle이 이미 되어 있으므로 같은 순위끼리 무작위)
+  for (const subj of subjects) {
+    buckets[subj].sort((a, b) => priority(b) - priority(a));
+  }
+
+  // 과목별 균등 배분
   const base = Math.floor(total / subjects.length);
   let remainder = total % subjects.length;
   const selected = [];
 
-  for (const subject of subjects) {
+  for (const subj of subjects) {
     const target = base + (remainder > 0 ? 1 : 0);
-    if (remainder > 0) remainder -= 1;
-    selected.push(...buckets[subject].splice(0, target));
+    if (remainder > 0) remainder--;
+    selected.push(...buckets[subj].splice(0, target));
   }
 
+  // 부족분 보충 (전체에서 우선순위 순으로)
   if (selected.length < total) {
-    const selectedKeys = new Set(selected.map((question) => question.qkey));
-    const rest = shuffle(subjects.flatMap((subject) => buckets[subject]))
-      .filter((question) => !selectedKeys.has(question.qkey));
+    const selectedKeys = new Set(selected.map(q => q.qkey));
+    const rest = shuffle(subjects.flatMap(s => buckets[s]))
+      .filter(q => !selectedKeys.has(q.qkey));
+    rest.sort((a, b) => priority(b) - priority(a));
     selected.push(...rest.slice(0, total - selected.length));
   }
 
-  return selected.slice(0, total).map((question, index) => ({
-    ...question,
-    displayNum: index + 1,
-  }));
+  // 최종 섞기 후 displayNum 부여
+  return shuffle(selected).slice(0, total).map((q, i) => ({ ...q, displayNum: i + 1 }));
 }
 
 function lookupQuestion(qkey) {

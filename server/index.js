@@ -88,7 +88,7 @@ async function handleAPI(req, res, method, urlPath) {
 
   // POST /api/exam/start
   if (method === 'POST' && urlPath === '/api/exam/start') {
-    const { mode, sourceId, count = 100, checkMode = false, wrongKeys } = await readBody(req);
+    const { mode, sourceId, count = 100, checkMode = false, wrongKeys, seenKeys } = await readBody(req);
     let questions = [], title = '', qkeyMode = mode;
 
     if (mode === 'past') {
@@ -97,7 +97,11 @@ async function handleAPI(req, res, method, urlPath) {
       questions = exam.questions.map(q => ({ ...q, qkey: loader.buildQkey('past', sourceId, q.qnum) }));
       title = exam.title;
     } else if (mode === 'random') {
-      questions = loader.getBalancedRandomQuestions(count || 100);
+      questions = loader.getSmartRandomQuestions(
+        count || 100,
+        Array.isArray(seenKeys)  ? seenKeys  : [],
+        Array.isArray(wrongKeys) ? wrongKeys : [],
+      );
       title = `랜덤 모의고사 (${questions.length}문제 / 기출+유형별 과목 균형)`;
       qkeyMode = 'random';
     } else if (mode === 'category') {

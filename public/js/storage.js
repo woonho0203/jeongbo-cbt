@@ -106,11 +106,22 @@ const Storage = (() => {
     return { totalSessions, avgScore, lastScore, bestScore, recent, subjectAvg, recentTrend };
   }
 
+  // ── 랜덤 출제 진도 추적 ──────────────────────────────────────────────────────
+  function getSeenRandom()      { return get('cbt_seen_random', []); }
+  function addSeenRandom(qkeys) {
+    const seen = new Set(getSeenRandom());
+    for (const k of qkeys) seen.add(k);
+    set('cbt_seen_random', [...seen]);
+  }
+  function resetSeenRandom()    { set('cbt_seen_random', []); }
+  function countSeenRandom()    { return getSeenRandom().length; }
+
   return {
     nextId,
     getSessions, addSession, getSession, deleteSession,
     getBookmarks, setBookmark, delBookmark, hasBookmark, listBookmarks,
     getWrongLog, recordWrong, clearWrong, countWrong, listWrong,
+    getSeenRandom, addSeenRandom, resetSeenRandom, countSeenRandom,
     computeStats,
   };
 })();

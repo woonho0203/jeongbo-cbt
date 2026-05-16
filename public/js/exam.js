@@ -13,11 +13,15 @@ defineRoute('exam', async (app, params) => {
   const checkMode = params.check === '1';   // 학습 모드 여부
 
   // 오답 모드: 로컬 스토리지에서 오답 qkey 목록 제공
-  const wrongKeys = mode === 'wrong' ? Storage.listWrong().map(w => w.qkey) : [];
+  const wrongKeys = (mode === 'wrong' || mode === 'random')
+    ? Storage.listWrong().map(w => w.qkey) : [];
+
+  // 랜덤 모드: 이미 출제된 문제 목록 제공 (미출제 우선 선택에 사용)
+  const seenKeys = mode === 'random' ? Storage.getSeenRandom() : [];
 
   const data = await api('/api/exam/start', {
     method: 'POST',
-    body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys }),
+    body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys, seenKeys }),
   });
 
   // ── 보기 랜덤 섞기 + shuffleMap 저장 ────────────────────────────────────────
@@ -594,6 +598,11 @@ async function submitExam(state, force = false) {
     }),
   };
   Storage.addSession(session);
+
+  // 랜덤 모드 완료: 출제된 문제를 seen 목록에 추가
+  if (state.mode === 'random') {
+    Storage.addSeenRandom(state.questions.map(q => q.qkey));
+  }
 
   navigate('result', { id: sessionId });
 }
