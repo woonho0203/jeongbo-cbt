@@ -191,6 +191,26 @@ function linesToHtml(lines) {
   while (i < lines.length) {
     const line = lines[i].trimEnd();
     if (!line) { i++; continue; }
+    // 간단 비교표 (예: 개념 | 판단)
+    if (line.includes('|')) {
+      const tableLines = [];
+      while (i < lines.length && lines[i].trimEnd().includes('|')) {
+        const cells = lines[i].trimEnd().split('|').map(cell => cell.trim()).filter(Boolean);
+        if (cells.length < 2) break;
+        tableLines.push(cells);
+        i++;
+      }
+      if (tableLines.length) {
+        const [head, ...body] = tableLines;
+        chunks.push(
+          '<div class="exp-table-wrap"><table class="exp-table">' +
+          '<thead><tr>' + head.map(cell => `<th>${parseMd(cell)}</th>`).join('') + '</tr></thead>' +
+          '<tbody>' + body.map(row => '<tr>' + row.map(cell => `<td>${parseMd(cell)}</td>`).join('') + '</tr>').join('') + '</tbody>' +
+          '</table></div>'
+        );
+        continue;
+      }
+    }
     // 순서있는 목록
     if (/^\d+\.\s/.test(line)) {
       const olLines = [];
@@ -211,6 +231,28 @@ function linesToHtml(lines) {
       chunks.push('<ul class="exp-ul">' + ulLines.map(l => `<li>${parseMd(l)}</li>`).join('') + '</ul>');
       continue;
     }
+    // 정답 이유 한 줄 요약
+    if (/^정답\s*이유\s*한\s*줄\s*요약\s*:/.test(line)) {
+      chunks.push(`<div class="exp-answer-reason">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    // 정답/오답 판단 이유
+    if (/^왜\s*정답\s*:/.test(line)) {
+      chunks.push(`<div class="exp-why exp-why-correct">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    if (/^왜\s*오답\s*:/.test(line)) {
+      chunks.push(`<div class="exp-why exp-why-wrong">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    if (/^판단\s*근거\s*:/.test(line)) {
+      chunks.push(`<div class="exp-basis">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
     // 정답 확인 줄 (정답: N번 ...)
     if (/^정답\s*:/.test(line)) {
       chunks.push(`<div class="exp-answer">${parseMd(line)}</div>`);
@@ -220,6 +262,12 @@ function linesToHtml(lines) {
     // 핵심 줄
     if (/^\*\*핵심\*\*/.test(line) || /^핵심\s*:/.test(line)) {
       chunks.push(`<div class="exp-core">${parseMd(line)}</div>`);
+      i++;
+      continue;
+    }
+    // 개선 지침 섹션 제목
+    if (/^(🔔 한줄 핵심|📖 문제 해석|🧠 사고 과정|🟦 보기 제거|⚠️ 함정 포인트|📝 시험 암기법|🧩 코드 추적|🧩 SQL 추적|❌ 틀린 부분|⭕ 올바른 개념|🔑 문제 키워드|📊 비교표|✅ 정답)$/.test(line)) {
+      chunks.push(`<div class="exp-guide-title">${parseMd(line)}</div>`);
       i++;
       continue;
     }

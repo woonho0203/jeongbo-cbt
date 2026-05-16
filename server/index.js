@@ -97,12 +97,8 @@ async function handleAPI(req, res, method, urlPath) {
       questions = exam.questions.map(q => ({ ...q, qkey: loader.buildQkey('past', sourceId, q.qnum) }));
       title = exam.title;
     } else if (mode === 'random') {
-      const all = loader.getAllExamQuestions();
-      const shuffled = all.slice().sort(() => Math.random() - 0.5).slice(0, count);
-      questions = shuffled.map((q, i) => ({
-        ...q, qkey: loader.buildQkey('past', q.examId, q.qnum), displayNum: i + 1,
-      }));
-      title = `랜덤 모의고사 (${questions.length}문제)`;
+      questions = loader.getBalancedRandomQuestions(count || 100);
+      title = `랜덤 모의고사 (${questions.length}문제 / 기출+유형별 과목 균형)`;
       qkeyMode = 'random';
     } else if (mode === 'category') {
       const cat = loader.getCategory(sourceId);

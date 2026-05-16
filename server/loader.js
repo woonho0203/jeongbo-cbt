@@ -11,6 +11,61 @@ function buildQkey(mode, sourceId, qnum) {
   return `${mode}:${sourceId}:${qnum}`;
 }
 
+function shuffle(list) {
+  const next = list.slice();
+  for (let i = next.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [next[i], next[j]] = [next[j], next[i]];
+  }
+  return next;
+}
+
+function subjectName(subject) {
+  const names = {
+    1: '소프트웨어 설계',
+    2: '소프트웨어 개발',
+    3: '데이터베이스 구축',
+    4: '프로그래밍 언어 활용',
+    5: '정보시스템 구축 관리',
+  };
+  return names[subject] || undefined;
+}
+
+function inferSubject(question) {
+  if (question.subject) return Number(question.subject);
+
+  const text = `${question.stem || ''}\n${(question.options || []).join('\n')}\n${question.explanation || ''}`.toLowerCase();
+  const scores = {
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0,
+  };
+
+  const add = (subject, words, weight = 1) => {
+    for (const word of words) {
+      if (text.includes(word.toLowerCase())) scores[subject] += weight;
+    }
+  };
+
+  add(1, ['요구사항', 'uml', '유스케이스', '클래스 다이어그램', '객체지향 설계', '디자인 패턴', '아키텍처', '애자일', '스크럼', 'xp', 'dfd', '자료 흐름도', 'ui', '인터페이스 설계', '소프트웨어 공학']);
+  add(2, ['테스트', '화이트박스', '블랙박스', '형상관리', '빌드', '배포', '패키징', '자료구조', '스택', '큐', '트리', '그래프', '정렬', '검색', '알고리즘', '복잡도', '모듈', '통합']);
+  add(3, ['데이터베이스', '릴레이션', '튜플', '속성', '도메인', '카디널리티', '차수', '정규화', '반정규화', '트랜잭션', 'sql', 'select', 'from', 'where', 'join', 'ddl', 'dml', 'dcl', '기본키', '외래키', '후보키', '무결성']);
+  add(4, ['c언어', 'c 언어', '#include', 'printf', 'scanf', 'java', 'python', '파이썬', '자바', '배열', '포인터', '변수', '반복문', '운영체제', '프로세스', '스레드', '스케줄링', '교착', '세마포어', '페이지', '가상기억', 'unix', 'linux', '쉘', 'shell']);
+  add(5, ['네트워크', 'osi', 'tcp', 'udp', 'ip', 'ipv4', 'ipv6', '라우팅', '프로토콜', 'http', 'ftp', 'dns', 'arp', 'icmp', '보안', '암호', '인증', '방화벽', '공격', '취약점', '악성', '해킹', '접근제어', '위험', '비용산정', 'cocomo']);
+
+  let bestSubject = 1;
+  let bestScore = -1;
+  for (const subject of [1, 2, 3, 4, 5]) {
+    if (scores[subject] > bestScore) {
+      bestScore = scores[subject];
+      bestSubject = subject;
+    }
+  }
+  return bestScore > 0 ? bestSubject : 1;
+}
+
 function loadAll() {
   const files = fs.readdirSync(DATA_DIR);
   for (const f of files) {
@@ -57,6 +112,81 @@ function getAllExamQuestions() {
   return all;
 }
 
+// 회차별 기출 + 유형별 문제를 모두 합친 랜덤 풀.
+// 유형별 문제에는 과목 정보가 없어서 문제 키워드로 과목을 추정한다.
+function getAllQuestionsForRandom() {
+  const all = [];
+  const seen = new Set();
+
+  const addQuestion = (question, mode, sourceId, extra = {}) => {
+    const dedupeKey = [
+      String(question.stem || '').replace(/\s+/g, ' ').trim(),
+      ...(question.options || []).map((option) => String(option).replace(/\s+/g, ' ').trim()),
+    ].join('||');
+    if (seen.has(dedupeKey)) return;
+    seen.add(dedupeKey);
+
+    const subject = inferSubject(question);
+    all.push({
+      ...question,
+      ...extra,
+      subject,
+      subjectName: question.subjectName || subjectName(subject),
+      qkey: buildQkey(mode, sourceId, question.qnum),
+      sourceMode: mode,
+      sourceId,
+    });
+  };
+
+  for (const examId of Object.keys(EXAMS)) {
+    for (const question of EXAMS[examId].questions) {
+      addQuestion(question, 'past', examId, { examId });
+    }
+  }
+
+  for (const categoryId of Object.keys(CATEGORIES)) {
+    for (const question of CATEGORIES[categoryId].questions) {
+      addQuestion(question, 'category', categoryId, { categoryId });
+    }
+  }
+
+  return all;
+}
+
+function getBalancedRandomQuestions(count = 100) {
+  const all = getAllQuestionsForRandom();
+  const total = Math.min(Number(count) || 100, all.length);
+  const subjects = [1, 2, 3, 4, 5];
+  const buckets = Object.fromEntries(subjects.map((subject) => [subject, []]));
+
+  for (const question of shuffle(all)) {
+    const subject = subjects.includes(Number(question.subject)) ? Number(question.subject) : inferSubject(question);
+    buckets[subject].push({ ...question, subject, subjectName: question.subjectName || subjectName(subject) });
+  }
+
+  const base = Math.floor(total / subjects.length);
+  let remainder = total % subjects.length;
+  const selected = [];
+
+  for (const subject of subjects) {
+    const target = base + (remainder > 0 ? 1 : 0);
+    if (remainder > 0) remainder -= 1;
+    selected.push(...buckets[subject].splice(0, target));
+  }
+
+  if (selected.length < total) {
+    const selectedKeys = new Set(selected.map((question) => question.qkey));
+    const rest = shuffle(subjects.flatMap((subject) => buckets[subject]))
+      .filter((question) => !selectedKeys.has(question.qkey));
+    selected.push(...rest.slice(0, total - selected.length));
+  }
+
+  return selected.slice(0, total).map((question, index) => ({
+    ...question,
+    displayNum: index + 1,
+  }));
+}
+
 function lookupQuestion(qkey) {
   const [mode, sourceId, qnumStr] = qkey.split(':');
   const qnum = parseInt(qnumStr, 10);
@@ -80,6 +210,8 @@ module.exports = {
   getExam,
   getCategory,
   getAllExamQuestions,
+  getAllQuestionsForRandom,
+  getBalancedRandomQuestions,
   lookupQuestion,
   buildQkey,
 };

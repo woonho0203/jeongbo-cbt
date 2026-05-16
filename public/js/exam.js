@@ -206,6 +206,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
+      renderSelectedAnswerExplanation(q, sel),
       el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑↓ 스크롤' }),
     );
     if (q.explanation) {
@@ -333,6 +334,65 @@ function renderQuestion(state) {
       }
     }
   };
+}
+
+function isNegativeStem(stem = '') {
+  return /(틀린 것은|맞지 않은 것은|아닌 것은|옳지 않은 것은|해당하지 않는|볼 수 없는|없는 것은|잘못된 것은|적절하지 않은|거리가 먼 것은|아닌|틀린)/.test(stem);
+}
+
+function extractAnswerReason(explanation = '') {
+  const reason = String(explanation).match(/정답 이유 한 줄 요약:\s*([^\n]+)/);
+  if (reason) return reason[1].trim();
+
+  const basis = String(explanation).match(/판단 근거:\s*([^\n]+)/);
+  if (basis) return basis[1].trim();
+
+  const core = String(explanation).match(/🔔\s*한줄 핵심\s*\n([^\n]+)/);
+  if (core) return core[1].trim();
+
+  return '문제의 핵심 조건과 정답 보기를 비교하면 판단할 수 있습니다.';
+}
+
+function renderSelectedAnswerExplanation(q, selected) {
+  if (!selected || !q.answer || !Array.isArray(q.options)) return null;
+
+  const selectedText = q.options[selected - 1] || '';
+  const correctText = q.options[q.answer - 1] || '';
+  const isCorrect = selected === q.answer;
+  const negative = isNegativeStem(q.stem || '');
+  const reason = extractAnswerReason(q.explanation || '');
+
+  const selectedWhy = isCorrect
+    ? (negative
+      ? '문제에서 틀린 설명을 고르라고 했고, 선택한 보기가 올바른 개념과 다르게 말합니다.'
+      : '선택한 보기가 문제에서 묻는 핵심 조건과 일치합니다.')
+    : (negative
+      ? '문제는 틀린 설명을 묻는데, 선택한 보기는 올바른 설명 쪽에 가깝습니다.'
+      : '선택한 보기는 정답 기준과 다른 개념이거나 문제 조건을 만족하지 않습니다.');
+
+  const correctWhy = negative
+    ? '정답 보기는 문제에서 요구한 틀린 설명 또는 해당하지 않는 설명입니다.'
+    : '정답 보기는 문제의 핵심 조건과 직접 일치합니다.';
+
+  const rows = [
+    el('div', { class: `selected-reason-row ${isCorrect ? 'correct' : 'wrong'}` }, [
+      el('div', { class: 'selected-reason-label', text: isCorrect ? '선택한 답' : '내가 고른 답' }),
+      el('div', { class: 'selected-reason-text', text: selectedText }),
+      el('div', { class: 'selected-reason-why', text: `${isCorrect ? '왜 정답' : '왜 오답'}: ${selectedWhy}` }),
+    ]),
+  ];
+
+  if (!isCorrect) {
+    rows.push(el('div', { class: 'selected-reason-row correct' }, [
+      el('div', { class: 'selected-reason-label', text: '정답' }),
+      el('div', { class: 'selected-reason-text', text: correctText }),
+      el('div', { class: 'selected-reason-why', text: `왜 정답: ${correctWhy}` }),
+    ]));
+  }
+
+  rows.push(el('div', { class: 'selected-reason-basis', text: `판단 근거: ${reason}` }));
+
+  return el('div', { class: 'selected-reason-box' }, rows);
 }
 
 // 선택지 클릭 처리

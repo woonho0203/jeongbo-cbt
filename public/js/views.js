@@ -8,7 +8,7 @@ defineRoute('home', async (app) => {
 
   const examModes = el('div', { class: 'mode-grid' }, [
     modeCard('📝', '회차별 기출문제', '2024-2025년 6회분, 100문제 시험형식', () => navigate('past-list')),
-    modeCard('🎲', '랜덤 모의고사', '전체 문제에서 랜덤 100문제 추출', () => navigate('exam', { mode: 'random', count: 100 })),
+    modeCard('🎲', '랜덤 모의고사', '기출+유형별 전체에서 과목별 균형 100문제', () => navigate('exam', { mode: 'random', count: 100 })),
     modeCard('📚', '유형별 연습', '계산/코드/문장/키워드/순서 5개 카테고리', () => navigate('category-list')),
     modeCard(`❌`, `오답 노트 (${wrongCount})`, '이전에 틀린 문제만 다시 풀기', () => {
       if (wrongCount === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');
@@ -18,7 +18,7 @@ defineRoute('home', async (app) => {
 
   const studyModes = el('div', { class: 'mode-grid' }, [
     modeCard('📖', '회차별 학습', '회차별 기출문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
-    modeCard('🔀', '랜덤 학습', '랜덤 문제 즉시 채점 모드', () => navigate('exam', { mode: 'random', count: 100, check: '1' }), 'study-mode'),
+    modeCard('🔀', '랜덤 학습', '기출+유형별 과목 균형 랜덤 즉시 채점', () => navigate('exam', { mode: 'random', count: 100, check: '1' }), 'study-mode'),
     modeCard('📂', '유형별 학습', '유형별 문제 즉시 채점 모드', () => navigate('study-list'), 'study-mode'),
     modeCard('❌', `오답 학습 (${wrongCount})`, '틀린 문제만 즉시 채점 모드', () => {
       if (wrongCount === 0) return alert('아직 오답이 없습니다. 시험을 한 번 응시해 주세요.');

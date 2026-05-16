@@ -35,7 +35,12 @@
       "Bash(curl -s https://jeongbo-cbt.vercel.app/api/exams)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('exams:', len\\(d['exams']\\), '/ categories:', len\\(d['categories']\\)\\)\")",
       "Bash(curl -s https://jeongbo-cbt.vercel.app/)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); q=d['questions'][0]; print\\('answer:', q.get\\('answer'\\), '/ explanation:', bool\\(q.get\\('explanation'\\)\\)\\)\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); q=d['questions'][0]; print\\('answer:', q.get\\('answer'\\), '/ explanation:', bool\\(q.get\\('explanation'\\)\\)\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(npx vercel *)",
+      "Bash(python3 -c \"import pdfplumber; print\\('pdfplumber OK'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf OK'\\)\")",
+      "Bash(python3 -c \"import anthropic; print\\('anthropic OK'\\)\")"
     ]
   }
 }

@@ -309,6 +309,43 @@ main {
 }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
+.selected-reason-box {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 10px 0 12px;
+}
+.selected-reason-row {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.selected-reason-row:last-of-type { border-bottom: none; }
+.selected-reason-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+.selected-reason-row.correct .selected-reason-label,
+.selected-reason-row.correct .selected-reason-why { color: var(--success); }
+.selected-reason-row.wrong .selected-reason-label,
+.selected-reason-row.wrong .selected-reason-why { color: var(--danger); }
+.selected-reason-text {
+  font-weight: 700;
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+.selected-reason-why {
+  font-weight: 700;
+  line-height: 1.55;
+}
+.selected-reason-basis {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-top: 8px;
+}
+
 /* ─── 내비 버튼 ─── */
 .exam-nav {
   display: flex; justify-content: space-between; align-items: center;
@@ -395,11 +432,51 @@ main {
 
 /* 섹션 본문 */
 .exp-sec-body { margin-bottom: 4px; }
+.exp-guide-title {
+  color: var(--warning);
+  font-weight: 800;
+  margin: 14px 0 5px;
+}
+.exp-guide-title:first-child { margin-top: 0; }
 .exp-p  { margin: 4px 0; line-height: 1.75; }
 .exp-ol { padding-left: 1.4em; margin: 4px 0; }
 .exp-ul { padding-left: 1.4em; margin: 4px 0; list-style: disc; }
 .exp-ol li, .exp-ul li { margin: 3px 0; line-height: 1.7; }
-.exp-answer { font-weight: 700; color: var(--success); margin: 4px 0; }
+.exp-table-wrap { overflow-x: auto; margin: 8px 0; }
+.exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.exp-table th,
+.exp-table td {
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.exp-table th {
+  background: var(--opt-hover);
+  font-weight: 700;
+}
+.exp-why {
+  font-weight: 700;
+  margin: 4px 0 2px;
+}
+.exp-why-correct { color: var(--success); }
+.exp-why-wrong { color: var(--danger); }
+.exp-basis {
+  color: var(--muted);
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+}
+.exp-answer-reason {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.1em;
+  margin: 4px 0 0.9em;
+}
+.exp-answer { font-weight: 600; color: var(--text); margin: 4px 0; }
 .exp-core   { background: rgba(30,166,114,0.08); border-left: 3px solid var(--success);
               padding: 4px 8px; border-radius: 4px; margin: 5px 0; font-size: 0.88rem; }
 
