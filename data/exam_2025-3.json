@@ -98,7 +98,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "럼바우 기법의 순서는 객체 모형 → 동적 모형 → 기능 모형이다."
+      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 가장 바르게 나은(는) 객체 모형 → 동적 모형 → 기능 모형이다."
     },
     {
       "qnum": 8,
@@ -196,7 +196,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "메시지(Message)는 객체에게 행위를 요청하는 명령이다."
+      "explanation": "객체에게 어떤 행위를 하도록 지시하는 명령은 명령어는 Message이다."
     },
     {
       "qnum": 15,
@@ -800,7 +800,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "슈퍼키는 유일성은 만족하지만 최소성을 만족하지 않는 키이다."
+      "explanation": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는? 한은(는) 슈퍼키이다."
     },
     {
       "qnum": 58,
