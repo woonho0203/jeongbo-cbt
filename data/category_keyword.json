@@ -23,7 +23,7 @@
         "기능적 분석",
         "실시간 분석"
       ],
-      "explanation": "객체지향 분석를 떠올리는 문제다\n구조적 분석 · 기능적 분석 · 실시간 분석 → 각각 해당하지 않음",
+      "explanation": "객체지향 분석를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -35,7 +35,7 @@
         "Method",
         "Module"
       ],
-      "explanation": "Instance를 떠올리는 문제다\nMessage · Method · Module → 각각 해당하지 않음",
+      "explanation": "Instance를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -47,7 +47,7 @@
         "GPL",
         "Duplexing"
       ],
-      "explanation": "FEP를 떠올리는 문제다\nEAI · GPL · Duplexing → 각각 해당하지 않음",
+      "explanation": "FEP를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -59,7 +59,7 @@
         "Module",
         "Hash"
       ],
-      "explanation": "Feedback를 떠올리는 문제다\nPosture · Module · Hash → 각각 해당하지 않음",
+      "explanation": "Feedback를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -71,7 +71,7 @@
         "Booch Method",
         "Jacobson Method"
       ],
-      "explanation": "Rumbaugh Method를 떠올리는 문제다\nWirfs-Block Method · Booch Method · Jacobson Method → 각각 해당하지 않음",
+      "explanation": "Rumbaugh Method를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -83,7 +83,7 @@
         "캡슐화",
         "집단화"
       ],
-      "explanation": "집단화를 떠올리는 문제다\n일반화 · 추상화 · 캡슐화 → 각각 해당하지 않음",
+      "explanation": "집단화를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -95,7 +95,7 @@
         "시퀀스",
         "서브루틴"
       ],
-      "explanation": "클래스를 떠올리는 문제다\n트랜잭션 · 시퀀스 · 서브루틴 → 각각 해당하지 않음",
+      "explanation": "클래스를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -107,7 +107,7 @@
         "프로토타입(Prototype)",
         "유스케이스(Usecase)"
       ],
-      "explanation": "목업(Mockup)를 떠올리는 문제다\n스토리보드(Storyboard) · 프로토타입(Prototype) · 유스케이스(Usecase) → 각각 해당하지 않음",
+      "explanation": "목업(Mockup)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -119,7 +119,7 @@
         "State Diagram",
         "Class Diagram"
       ],
-      "explanation": "Class Diagram를 떠올리는 문제다\nActivity Diagram · Model Diagram · State Diagram → 각각 해당하지 않음",
+      "explanation": "Class Diagram를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -131,7 +131,7 @@
         "객체 모델링",
         "정적 모델링"
       ],
-      "explanation": "기능 모델링를 떠올리는 문제다\n동적 모델링 · 객체 모델링 · 정적 모델링 → 각각 해당하지 않음",
+      "explanation": "기능 모델링를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -143,7 +143,7 @@
         "Encapsulation",
         "Inheritance"
       ],
-      "explanation": "Inheritance를 떠올리는 문제다\nAbstraction · Polymorphism · Encapsulation → 각각 해당하지 않음",
+      "explanation": "Inheritance를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -155,7 +155,7 @@
         "상속성",
         "메시지"
       ],
-      "explanation": "클래스를 떠올리는 문제다\n메소드 · 상속성 · 메시지 → 각각 해당하지 않음",
+      "explanation": "클래스를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -167,7 +167,7 @@
         "직관성",
         "멀티운용성"
       ],
-      "explanation": "직관성를 떠올리는 문제다\n희소성 · 유연성 · 멀티운용성 → 각각 해당하지 않음",
+      "explanation": "직관성를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -179,7 +179,7 @@
         "Item",
         "Hiding"
       ],
-      "explanation": "Operation를 떠올리는 문제다\nInstance · Item · Hiding → 각각 해당하지 않음",
+      "explanation": "Operation를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -191,7 +191,7 @@
         "Function",
         "Static"
       ],
-      "explanation": "Object를 떠올리는 문제다\nDynamic · Function · Static → 각각 해당하지 않음",
+      "explanation": "Object를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -203,7 +203,7 @@
         "Method",
         "Instance"
       ],
-      "explanation": "Encapsulation를 떠올리는 문제다\nClass · Method · Instance → 각각 해당하지 않음",
+      "explanation": "Encapsulation를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -215,7 +215,7 @@
         "Object",
         "Message"
       ],
-      "explanation": "Message를 떠올리는 문제다\nClass · Package · Object → 각각 해당하지 않음",
+      "explanation": "Message를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -239,7 +239,7 @@
         "선택",
         "특화"
       ],
-      "explanation": "확장를 떠올리는 문제다\n연관 · 선택 · 특화 → 각각 해당하지 않음",
+      "explanation": "확장를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -251,7 +251,7 @@
         "Encapsulation",
         "Association"
       ],
-      "explanation": "Encapsulation를 떠올리는 문제다\nInheritance · Class · Association → 각각 해당하지 않음",
+      "explanation": "Encapsulation를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -263,7 +263,7 @@
         "MVC 구조",
         "파이프 필터 구조"
       ],
-      "explanation": "파이프 필터 구조를 떠올리는 문제다\n클라이언트 서버 구조 · 계층 구조 · MVC 구조 → 각각 해당하지 않음",
+      "explanation": "파이프 필터 구조를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -299,7 +299,7 @@
         "다형성(Polymorphism)",
         "상속(Inheritance)"
       ],
-      "explanation": "캡슐화(Encapsulation)를 떠올리는 문제다\n메시지(Message) · 다형성(Polymorphism) · 상속(Inheritance) → 각각 해당하지 않음",
+      "explanation": "캡슐화(Encapsulation)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -311,7 +311,7 @@
         "상향식 설계",
         "하향식 설계"
       ],
-      "explanation": "하향식 설계를 떠올리는 문제다\n객체지향 설계 · 데이터 흐름 설계 · 상향식 설계 → 각각 해당하지 않음",
+      "explanation": "하향식 설계를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -323,7 +323,7 @@
         "연관 관계",
         "클래스 도출"
       ],
-      "explanation": "디자인 패턴를 떠올리는 문제다\n모듈 분해 · 연관 관계 · 클래스 도출 → 각각 해당하지 않음",
+      "explanation": "디자인 패턴를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -335,7 +335,7 @@
         "제약조건(Constraint)",
         "인터페이스(Interface)"
       ],
-      "explanation": "인터페이스(Interface)를 떠올리는 문제다\n기능(Function) · 성능(Performance) · 제약조건(Constraint) → 각각 해당하지 않음",
+      "explanation": "인터페이스(Interface)를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -347,7 +347,7 @@
         "Field",
         "Message"
       ],
-      "explanation": "Class를 떠올리는 문제다\nMethod · Field · Message → 각각 해당하지 않음",
+      "explanation": "Class를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -359,7 +359,7 @@
         "Deployment Diagram",
         "Entity-Relationship Diagram"
       ],
-      "explanation": "Entity-Relationship Diagram를 떠올리는 문제다\nPackage Diagram · State Transition Diagram · Deployment Diagram → 각각 해당하지 않음",
+      "explanation": "Entity-Relationship Diagram를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -371,7 +371,7 @@
         "프로토타입 모형",
         "폭포수 모형"
       ],
-      "explanation": "나선형 모형를 떠올리는 문제다\n애자일 모형 · 프로토타입 모형 · 폭포수 모형 → 각각 해당하지 않음",
+      "explanation": "나선형 모형를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -383,7 +383,7 @@
         "Jacobson 방법",
         "Wirfs-Brocks 방법"
       ],
-      "explanation": "Coad와 Yourdon 방법를 떠올리는 문제다\nBooch 방법 · Jacobson 방법 · Wirfs-Brocks 방법 → 각각 해당하지 않음",
+      "explanation": "Coad와 Yourdon 방법를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -407,7 +407,7 @@
         "Specification",
         "Renewal"
       ],
-      "explanation": "Refactoring를 떠올리는 문제다\nArchitecting · Specification · Renewal → 각각 해당하지 않음",
+      "explanation": "Refactoring를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -419,7 +419,7 @@
         "Realization",
         "Generalization"
       ],
-      "explanation": "Dependency를 떠올리는 문제다\nAssociation · Realization · Generalization → 각각 해당하지 않음",
+      "explanation": "Dependency를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -431,7 +431,7 @@
         "＋",
         "＝"
       ],
-      "explanation": "[ ]를 떠올리는 문제다\n{ } · ＋ · ＝ → 각각 해당하지 않음",
+      "explanation": "[ ]를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -443,7 +443,7 @@
         "스크럼 기술",
         "프로토타입 기술"
       ],
-      "explanation": "소켓 기술를 떠올리는 문제다\nDB링크 기술 · 스크럼 기술 · 프로토타입 기술 → 각각 해당하지 않음",
+      "explanation": "소켓 기술를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -455,7 +455,7 @@
         "순차 코드",
         "표의 숫자 코드"
       ],
-      "explanation": "순차 코드를 떠올리는 문제다\n연상 코드 · 블록 코드 · 표의 숫자 코드 → 각각 해당하지 않음",
+      "explanation": "순차 코드를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -467,7 +467,7 @@
         "개방 폐쇄의 원칙",
         "리스코프 교체의 원칙"
       ],
-      "explanation": "인터페이스 분리 원칙를 떠올리는 문제다\n단일 책임 원칙 · 개방 폐쇄의 원칙 · 리스코프 교체의 원칙 → 각각 해당하지 않음",
+      "explanation": "인터페이스 분리 원칙를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -479,7 +479,7 @@
         "양쪽 모두 낮게 설계한다.",
         "양쪽 모두 높게 설계한다."
       ],
-      "explanation": "응집도는 높게 결합도는 낮게 설계한다.를 떠올리는 문제다\n응집도는 낮게 결합도는 높게 설계한다. · 양쪽 모두 낮게 설계한다. · 양쪽 모두 높게 설계한다. → 각각 해당하지 않음",
+      "explanation": "응집도는 높게 결합도는 낮게 설계한다.를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -491,7 +491,7 @@
         "Generalization",
         "Association"
       ],
-      "explanation": "Realization를 떠올리는 문제다\nDependency · Generalization · Association → 각각 해당하지 않음",
+      "explanation": "Realization를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -503,7 +503,7 @@
         "오픈허브웨어",
         "그레이웨어"
       ],
-      "explanation": "미들웨어를 떠올리는 문제다\n하드웨어 · 오픈허브웨어 · 그레이웨어 → 각각 해당하지 않음",
+      "explanation": "미들웨어를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -515,7 +515,7 @@
         "표의 숫자 코드",
         "블록 코드"
       ],
-      "explanation": "표의 숫자 코드를 떠올리는 문제다\n순차 코드 · 10진 코드 · 블록 코드 → 각각 해당하지 않음",
+      "explanation": "표의 숫자 코드를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -527,7 +527,7 @@
         "모듈",
         "데이터"
       ],
-      "explanation": "모듈를 떠올리는 문제다\n통합 프로그램 · 저장소 · 데이터 → 각각 해당하지 않음",
+      "explanation": "모듈를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -551,7 +551,7 @@
         "미들웨어",
         "응용 소프트웨어"
       ],
-      "explanation": "미들웨어를 떠올리는 문제다\n웨어러블 · 하이웨어 · 응용 소프트웨어 → 각각 해당하지 않음",
+      "explanation": "미들웨어를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -563,7 +563,7 @@
         "Factory Method 패턴",
         "Bridge 패턴"
       ],
-      "explanation": "Factory Method 패턴를 떠올리는 문제다\nVisitor 패턴 · Observer 패턴 · Bridge 패턴 → 각각 해당하지 않음",
+      "explanation": "Factory Method 패턴를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -575,7 +575,7 @@
         "패턴(Pattern)",
         "관계(Relation)"
       ],
-      "explanation": "협약(Contract)를 떠올리는 문제다\n프로토콜(Protocol) · 패턴(Pattern) · 관계(Relation) → 각각 해당하지 않음",
+      "explanation": "협약(Contract)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -587,7 +587,7 @@
         "라디오 버튼",
         "체크 박스"
       ],
-      "explanation": "라디오 버튼를 떠올리는 문제다\n토글 버튼 · 텍스트 박스 · 체크 박스 → 각각 해당하지 않음",
+      "explanation": "라디오 버튼를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -599,7 +599,7 @@
         "일반화 관계",
         "그룹 관계"
       ],
-      "explanation": "일반화 관계를 떠올리는 문제다\n추상화 관계 · 의존 관계 · 그룹 관계 → 각각 해당하지 않음",
+      "explanation": "일반화 관계를 떠올리는 문제다",
       "answer": 3,
       "image": "images/keyword_q50.png"
     },
@@ -612,7 +612,7 @@
         "UML",
         "Python"
       ],
-      "explanation": "UML를 떠올리는 문제다\nJAVA · C · Python → 각각 해당하지 않음",
+      "explanation": "UML를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -624,7 +624,7 @@
         "TP monitor",
         "HUB"
       ],
-      "explanation": "TP monitor를 떠올리는 문제다\nRPC · ORB · HUB → 각각 해당하지 않음",
+      "explanation": "TP monitor를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -636,7 +636,7 @@
         "송신 시스템",
         "수신 시스템"
       ],
-      "explanation": "송신 시스템를 떠올리는 문제다\n연계 서버 · 중계 서버 · 수신 시스템 → 각각 해당하지 않음",
+      "explanation": "송신 시스템를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -648,7 +648,7 @@
         "Prototype",
         "Decorator"
       ],
-      "explanation": "Singleton를 떠올리는 문제다\nAdapter · Prototype · Decorator → 각각 해당하지 않음",
+      "explanation": "Singleton를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -660,7 +660,7 @@
         "Component",
         "Cell"
       ],
-      "explanation": "Component를 떠올리는 문제다\nModel · Sheet · Cell → 각각 해당하지 않음",
+      "explanation": "Component를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -672,7 +672,7 @@
         "선택 정렬",
         "삽입 정렬"
       ],
-      "explanation": "합병 정렬를 떠올리는 문제다\n버블 정렬 · 선택 정렬 · 삽입 정렬 → 각각 해당하지 않음",
+      "explanation": "합병 정렬를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -684,7 +684,7 @@
         "Stack",
         "Queue"
       ],
-      "explanation": "Stack를 떠올리는 문제다\nTree · Graph · Queue → 각각 해당하지 않음",
+      "explanation": "Stack를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -696,7 +696,7 @@
         "신뢰성",
         "이식성"
       ],
-      "explanation": "신뢰성를 떠올리는 문제다\n직관성 · 사용 용이성 · 이식성 → 각각 해당하지 않음",
+      "explanation": "신뢰성를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -732,7 +732,7 @@
         "워크스루",
         "개발자 검토"
       ],
-      "explanation": "워크스루를 떠올리는 문제다\n빌드 검증 · 동료 검토 · 개발자 검토 → 각각 해당하지 않음",
+      "explanation": "워크스루를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -744,7 +744,7 @@
         "독립성",
         "내용성"
       ],
-      "explanation": "명확성를 떠올리는 문제다\n상호작용성 · 독립성 · 내용성 → 각각 해당하지 않음",
+      "explanation": "명확성를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -768,7 +768,7 @@
         "=",
         "( )"
       ],
-      "explanation": "( )를 떠올리는 문제다\n{ } · ** · = → 각각 해당하지 않음",
+      "explanation": "( )를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -780,7 +780,7 @@
         "{ }",
         "[ ]"
       ],
-      "explanation": "{ }를 떠올리는 문제다\n= · ( ) · [ ] → 각각 해당하지 않음",
+      "explanation": "{ }를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -792,7 +792,7 @@
         "{{ }}",
         "[[ ]]"
       ],
-      "explanation": "<< >>를 떠올리는 문제다\n(( )) · {{ }} · [[ ]] → 각각 해당하지 않음",
+      "explanation": "<< >>를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -804,7 +804,7 @@
         "ISO/IEC 12119",
         "ISO/IEC 14959"
       ],
-      "explanation": "ISO/IEC 12119를 떠올리는 문제다\nISO/IEC 2196 · IEEE 19554 · ISO/IEC 14959 → 각각 해당하지 않음",
+      "explanation": "ISO/IEC 12119를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -816,7 +816,7 @@
         "Usability",
         "Correctness"
       ],
-      "explanation": "Portability를 떠올리는 문제다\nEfficiency · Usability · Correctness → 각각 해당하지 않음",
+      "explanation": "Portability를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -828,7 +828,7 @@
         "가시성(Visibility)",
         "재사용성(Reusability)"
       ],
-      "explanation": "재사용성(Reusability)를 떠올리는 문제다\n신뢰성(Reliability) · 유지보수성(Maintainability) · 가시성(Visibility) → 각각 해당하지 않음",
+      "explanation": "재사용성(Reusability)를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -852,7 +852,7 @@
         "주어진 기간은 연장하되 최소의 비용으로 시스템을 개발",
         "주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스템을 개발"
       ],
-      "explanation": "주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스템을 개발를 떠올리는 문제다\n개발에 따른 산출물 관리 · 소요 인력은 최대화하되 정책 결정은 신속하게 처리 · 주어진 기간은 연장하되 최소의 비용으로 시스템을 개발 → 각각 해당하지 않음",
+      "explanation": "주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스템을 개발를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -864,7 +864,7 @@
         "2-3 트리",
         "레드-블랙 트리"
       ],
-      "explanation": "이진 탐색 트리를 떠올리는 문제다\nAVL 트리 · 2-3 트리 · 레드-블랙 트리 → 각각 해당하지 않음",
+      "explanation": "이진 탐색 트리를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -888,7 +888,7 @@
         "저작권",
         "크랙"
       ],
-      "explanation": "형상 관리를 떠올리는 문제다\n복호화 · 저작권 · 크랙 → 각각 해당하지 않음",
+      "explanation": "형상 관리를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -900,7 +900,7 @@
         "FitNesse",
         "RubyNode"
       ],
-      "explanation": "STAF를 떠올리는 문제다\nxUnit · FitNesse · RubyNode → 각각 해당하지 않음",
+      "explanation": "STAF를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -912,7 +912,7 @@
         "Insert Sort",
         "Quick Sort"
       ],
-      "explanation": "Quick Sort를 떠올리는 문제다\nSelection Sort · Bubble Sort · Insert Sort → 각각 해당하지 않음",
+      "explanation": "Quick Sort를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -924,7 +924,7 @@
         "Usability",
         "Integrity"
       ],
-      "explanation": "Usability를 떠올리는 문제다\nCorrectness · Reliability · Integrity → 각각 해당하지 않음",
+      "explanation": "Usability를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -936,7 +936,7 @@
         "Greedy",
         "AJAX"
       ],
-      "explanation": "AJAX를 떠올리는 문제다\nProcedure · Trigger · Greedy → 각각 해당하지 않음",
+      "explanation": "AJAX를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -948,7 +948,7 @@
         "알고리즘 수행시간이 입력 데이터 수와 관계없이 일정",
         "알고리즘 길이가 입력 데이터보다 작음"
       ],
-      "explanation": "알고리즘 수행시간이 입력 데이터 수와 관계없이 일정를 떠올리는 문제다\n컴퓨터 처리가 불가 · 알고리즘 입력 데이터 수가 한 개 · 알고리즘 길이가 입력 데이터보다 작음 → 각각 해당하지 않음",
+      "explanation": "알고리즘 수행시간이 입력 데이터 수와 관계없이 일정를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -960,7 +960,7 @@
         "Procedure",
         "Function"
       ],
-      "explanation": "Stub를 떠올리는 문제다\nDriver · Procedure · Function → 각각 해당하지 않음",
+      "explanation": "Stub를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -972,7 +972,7 @@
         "오류 부재의 궤변",
         "완벽한 테스팅은 불가능"
       ],
-      "explanation": "결함 집중를 떠올리는 문제다\n살충제 패러독스 · 오류 부재의 궤변 · 완벽한 테스팅은 불가능 → 각각 해당하지 않음",
+      "explanation": "결함 집중를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -984,7 +984,7 @@
         "stack",
         "distributed"
       ],
-      "explanation": "tree를 떠올리는 문제다\nnetwork · stack · distributed → 각각 해당하지 않음",
+      "explanation": "tree를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -996,7 +996,7 @@
         "테스트 과정에서 소프트웨어를 통합하는 것",
         "개발 인력을 관리하는 것"
       ],
-      "explanation": "개발 과정의 변경 사항을 관리하는 것를 떠올리는 문제다\n비용에 관한 사항을 효율적으로 관리하는 것 · 테스트 과정에서 소프트웨어를 통합하는 것 · 개발 인력을 관리하는 것 → 각각 해당하지 않음",
+      "explanation": "개발 과정의 변경 사항을 관리하는 것를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1008,7 +1008,7 @@
         "Pareto의 법칙",
         "Jackson의 법칙"
       ],
-      "explanation": "Pareto의 법칙를 떠올리는 문제다\nBrooks의 법칙 · Boehm의 법칙 · Jackson의 법칙 → 각각 해당하지 않음",
+      "explanation": "Pareto의 법칙를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1020,7 +1020,7 @@
         "기수 변환법",
         "숫자 분석법"
       ],
-      "explanation": "폴딩법를 떠올리는 문제다\n제산법 · 기수 변환법 · 숫자 분석법 → 각각 해당하지 않음",
+      "explanation": "폴딩법를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1032,7 +1032,7 @@
         "XML",
         "YAML"
       ],
-      "explanation": "AJTML를 떠올리는 문제다\nJSON · XML · YAML → 각각 해당하지 않음",
+      "explanation": "AJTML를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1044,7 +1044,7 @@
         "Mistake",
         "Inspection"
       ],
-      "explanation": "Fault를 떠올리는 문제다\nTestcase · Mistake · Inspection → 각각 해당하지 않음",
+      "explanation": "Fault를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1056,7 +1056,7 @@
         "형상 검사",
         "복구 검사"
       ],
-      "explanation": "베타 검사를 떠올리는 문제다\n알파 검사 · 형상 검사 · 복구 검사 → 각각 해당하지 않음",
+      "explanation": "베타 검사를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1080,7 +1080,7 @@
         "라이선스를 발급하고 관리한다.",
         "배포된 콘텐츠의 이용 권한을 통제한다."
       ],
-      "explanation": "콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는다.를 떠올리는 문제다\n콘텐츠를 제공하는 저작권자를 의미한다. · 라이선스를 발급하고 관리한다. · 배포된 콘텐츠의 이용 권한을 통제한다. → 각각 해당하지 않음",
+      "explanation": "콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는다.를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1092,7 +1092,7 @@
         "Object Code",
         "Alien Code"
       ],
-      "explanation": "Alien Code를 떠올리는 문제다\nTitle Code · Source Code · Object Code → 각각 해당하지 않음",
+      "explanation": "Alien Code를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1104,7 +1104,7 @@
         "회귀 테스트",
         "빅뱅 테스트"
       ],
-      "explanation": "하향식 통합 테스트를 떠올리는 문제다\n상향식 통합 테스트 · 회귀 테스트 · 빅뱅 테스트 → 각각 해당하지 않음",
+      "explanation": "하향식 통합 테스트를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1116,7 +1116,7 @@
         "공유 폴더 방식",
         "클라이언트·서버 방식"
       ],
-      "explanation": "분산 저장소 방식를 떠올리는 문제다\n단일 저장소 방식 · 공유 폴더 방식 · 클라이언트·서버 방식 → 각각 해당하지 않음",
+      "explanation": "분산 저장소 방식를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1128,7 +1128,7 @@
         "Packager",
         "Contents Distributor"
       ],
-      "explanation": "Data Warehouse를 떠올리는 문제다\nDRM Controller · Packager · Contents Distributor → 각각 해당하지 않음",
+      "explanation": "Data Warehouse를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1140,7 +1140,7 @@
         "개념 스키마",
         "슈퍼 스키마"
       ],
-      "explanation": "내부 스키마를 떠올리는 문제다\n외부 스키마 · 개념 스키마 · 슈퍼 스키마 → 각각 해당하지 않음",
+      "explanation": "내부 스키마를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1152,7 +1152,7 @@
         "추상화",
         "의존성"
       ],
-      "explanation": "단순성를 떠올리는 문제다\n다형성 · 추상화 · 의존성 → 각각 해당하지 않음",
+      "explanation": "단순성를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1176,7 +1176,7 @@
         "기능 테스트 수행 도구",
         "성능 테스트 도구"
       ],
-      "explanation": "성능 테스트 도구를 떠올리는 문제다\n명세 기반 테스트 설계 도구 · 코드 기반 테스트 설계 도구 · 기능 테스트 수행 도구 → 각각 해당하지 않음",
+      "explanation": "성능 테스트 도구를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1188,7 +1188,7 @@
         "단위 테스트(Unit Test)",
         "체크인(Check-In)"
       ],
-      "explanation": "체크인(Check-In)를 떠올리는 문제다\n형상 감사(Configuration Audit) · 롤백 (Rollback) · 단위 테스트(Unit Test) → 각각 해당하지 않음",
+      "explanation": "체크인(Check-In)를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1200,7 +1200,7 @@
         "통합 테스트",
         "시스템 테스트"
       ],
-      "explanation": "인수 테스트를 떠올리는 문제다\n단위 테스트 · 통합 테스트 · 시스템 테스트 → 각각 해당하지 않음",
+      "explanation": "인수 테스트를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1212,7 +1212,7 @@
         "튜플",
         "카디널리티"
       ],
-      "explanation": "트랜잭션를 떠올리는 문제다\n뷰 · 튜플 · 카디널리티 → 각각 해당하지 않음",
+      "explanation": "트랜잭션를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1224,7 +1224,7 @@
         "테스트 슈트(Test Suites)",
         "테스트 케이스(Test Case)"
       ],
-      "explanation": "테스트 드라이버(Test Driver)를 떠올리는 문제다\n테스트 스텁(Test Stub) · 테스트 슈트(Test Suites) · 테스트 케이스(Test Case) → 각각 해당하지 않음",
+      "explanation": "테스트 드라이버(Test Driver)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1236,7 +1236,7 @@
         "알파 검사",
         "베타 검사"
       ],
-      "explanation": "알파 검사를 떠올리는 문제다\n동치 분할 검사 · 형상 검사 · 베타 검사 → 각각 해당하지 않음",
+      "explanation": "알파 검사를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1248,7 +1248,7 @@
         "테스트 오라클",
         "테스트 데이터"
       ],
-      "explanation": "테스트 오라클를 떠올리는 문제다\n테스트 케이스 · 테스트 시나리오 · 테스트 데이터 → 각각 해당하지 않음",
+      "explanation": "테스트 오라클를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1260,7 +1260,7 @@
         "Work Breakdown Structure",
         "Waterfall Model"
       ],
-      "explanation": "Risk Analysis를 떠올리는 문제다\nCritical Path Method · Work Breakdown Structure · Waterfall Model → 각각 해당하지 않음",
+      "explanation": "Risk Analysis를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1272,7 +1272,7 @@
         "Attribute",
         "Cartesian product"
       ],
-      "explanation": "Cardinality를 떠올리는 문제다\nDegree · Attribute · Cartesian product → 각각 해당하지 않음",
+      "explanation": "Cardinality를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1284,7 +1284,7 @@
         "시스템 테스트(System Test)",
         "인수 테스트(Acceptance Test)"
       ],
-      "explanation": "단위 테스트(Unit Test)를 떠올리는 문제다\n통합 테스트(Integration Test) · 시스템 테스트(System Test) · 인수 테스트(Acceptance Test) → 각각 해당하지 않음",
+      "explanation": "단위 테스트(Unit Test)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1296,7 +1296,7 @@
         "위험 발생 후 즉시 조치하는 것",
         "위험 요소 징후들에 대하여 계속적으로 인지하는 것"
       ],
-      "explanation": "위험 요소 징후들에 대하여 계속적으로 인지하는 것를 떠올리는 문제다\n위험을 이해하는 것 · 첫 번째 조치로 위험을 피할 수 있도록 하는 것 · 위험 발생 후 즉시 조치하는 것 → 각각 해당하지 않음",
+      "explanation": "위험 요소 징후들에 대하여 계속적으로 인지하는 것를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1308,7 +1308,7 @@
         "완료(Commit)",
         "실패(Fail)"
       ],
-      "explanation": "철회(Aborted)를 떠올리는 문제다\n부분 완료(Partially Committed) · 완료(Commit) · 실패(Fail) → 각각 해당하지 않음",
+      "explanation": "철회(Aborted)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1320,7 +1320,7 @@
         "제3정규형",
         "제4정규형"
       ],
-      "explanation": "제1정규형를 떠올리는 문제다\n제2정규형 · 제3정규형 · 제4정규형 → 각각 해당하지 않음",
+      "explanation": "제1정규형를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1332,7 +1332,7 @@
         "Cardinality",
         "Anomaly"
       ],
-      "explanation": "Anomaly를 떠올리는 문제다\nNormalization · Rollback · Cardinality → 각각 해당하지 않음",
+      "explanation": "Anomaly를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1344,7 +1344,7 @@
         "외래키",
         "후보키"
       ],
-      "explanation": "외래키를 떠올리는 문제다\n필드키 · 슈퍼키 · 후보키 → 각각 해당하지 않음",
+      "explanation": "외래키를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1356,7 +1356,7 @@
         "속성(Attribute)",
         "제약 조건(Constraint)"
       ],
-      "explanation": "관계(Relationship)를 떠올리는 문제다\n개체(Object) · 속성(Attribute) · 제약 조건(Constraint) → 각각 해당하지 않음",
+      "explanation": "관계(Relationship)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1368,7 +1368,7 @@
         "Isolation",
         "Durability"
       ],
-      "explanation": "Atomicity를 떠올리는 문제다\nConsistency · Isolation · Durability → 각각 해당하지 않음",
+      "explanation": "Atomicity를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1380,7 +1380,7 @@
         "X → Y",
         "X ⊂ Y"
       ],
-      "explanation": "X → Y를 떠올리는 문제다\nY → X · Y ⊂ X · X ⊂ Y → 각각 해당하지 않음",
+      "explanation": "X → Y를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1392,7 +1392,7 @@
         "∀",
         "⊂"
       ],
-      "explanation": "∀를 떠올리는 문제다\n∃ · ∈ · ⊂ → 각각 해당하지 않음",
+      "explanation": "∀를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1404,7 +1404,7 @@
         "슈퍼키",
         "외래키"
       ],
-      "explanation": "슈퍼키를 떠올리는 문제다\n후보키 · 대체키 · 외래키 → 각각 해당하지 않음",
+      "explanation": "슈퍼키를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1416,7 +1416,7 @@
         "Constraint",
         "Operation"
       ],
-      "explanation": "Operation를 떠올리는 문제다\nRelation · Data Structure · Constraint → 각각 해당하지 않음",
+      "explanation": "Operation를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1428,7 +1428,7 @@
         "Committed",
         "Aborted"
       ],
-      "explanation": "Partially Committed를 떠올리는 문제다\nActive · Committed · Aborted → 각각 해당하지 않음",
+      "explanation": "Partially Committed를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1440,7 +1440,7 @@
         "제5정규형",
         "제6정규형"
       ],
-      "explanation": "SQL 결과는 제5정규형이다\n제3정규형 · 제4정규형 · 제6정규형 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 제5정규형이다",
       "answer": 3
     },
     {
@@ -1452,7 +1452,7 @@
         "π",
         "σ"
       ],
-      "explanation": "▷◁를 떠올리는 문제다\n⊃ · π · σ → 각각 해당하지 않음",
+      "explanation": "▷◁를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1464,7 +1464,7 @@
         "참조성",
         "동일성"
       ],
-      "explanation": "최소성를 떠올리는 문제다\n중복성 · 참조성 · 동일성 → 각각 해당하지 않음",
+      "explanation": "최소성를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1476,7 +1476,7 @@
         "외부 스키마",
         "내용 스키마"
       ],
-      "explanation": "개념 스키마를 떠올리는 문제다\n내부 스키마 · 외부 스키마 · 내용 스키마 → 각각 해당하지 않음",
+      "explanation": "개념 스키마를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1488,7 +1488,7 @@
         "정보 모델링",
         "데이터베이스 구현"
       ],
-      "explanation": "논리적 데이터베이스 설계를 떠올리는 문제다\n개념적 데이터베이스 설계 · 정보 모델링 · 데이터베이스 구현 → 각각 해당하지 않음",
+      "explanation": "논리적 데이터베이스 설계를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1500,7 +1500,7 @@
         "집단화",
         "머징"
       ],
-      "explanation": "반정규화를 떠올리는 문제다\n정규화 · 집단화 · 머징 → 각각 해당하지 않음",
+      "explanation": "반정규화를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1524,7 +1524,7 @@
         "개념적 설계",
         "물리적 설계"
       ],
-      "explanation": "물리적 설계를 떠올리는 문제다\n논리적 설계 · 요구 조건 분석 · 개념적 설계 → 각각 해당하지 않음",
+      "explanation": "물리적 설계를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1536,7 +1536,7 @@
         "Join",
         "Division"
       ],
-      "explanation": "SQL 결과는 Select이다\nProject · Join · Division → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 Select이다",
       "answer": 1
     },
     {
@@ -1548,7 +1548,7 @@
         "Candidate Key",
         "Test Key"
       ],
-      "explanation": "Candidate Key를 떠올리는 문제다\nAtomic Key · Super Key · Test Key → 각각 해당하지 않음",
+      "explanation": "Candidate Key를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1560,7 +1560,7 @@
         "도메인 무결성",
         "튜플의 유일성"
       ],
-      "explanation": "개체 무결성를 떠올리는 문제다\n참조 무결성 · 도메인 무결성 · 튜플의 유일성 → 각각 해당하지 않음",
+      "explanation": "개체 무결성를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1572,7 +1572,7 @@
         "엔티티",
         "다형성"
       ],
-      "explanation": "도메인를 떠올리는 문제다\n튜플 · 엔티티 · 다형성 → 각각 해당하지 않음",
+      "explanation": "도메인를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1584,7 +1584,7 @@
         "제2정규형",
         "제3정규형"
       ],
-      "explanation": "BCNF를 떠올리는 문제다\n제1정규형 · 제2정규형 · 제3정규형 → 각각 해당하지 않음",
+      "explanation": "BCNF를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1596,7 +1596,7 @@
         "데이터베이스의 수",
         "애트리뷰트의 수"
       ],
-      "explanation": "카디널리티 = 행 개수, 차수 = 열 개수\n튜플의 수 · 테이블의 수 · 데이터베이스의 수 → 각각 해당하지 않음",
+      "explanation": "카디널리티 = 행 개수, 차수 = 열 개수",
       "answer": 4
     },
     {
@@ -1620,7 +1620,7 @@
         "널 제약성",
         "참조 무결성"
       ],
-      "explanation": "참조 무결성를 떠올리는 문제다\n정보 무결성 · 고유 무결성 · 널 제약성 → 각각 해당하지 않음",
+      "explanation": "참조 무결성를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1632,7 +1632,7 @@
         "검증 기법",
         "배타 로크 기법"
       ],
-      "explanation": "타임 스탬프 기법를 떠올리는 문제다\n로킹 기법 · 검증 기법 · 배타 로크 기법 → 각각 해당하지 않음",
+      "explanation": "타임 스탬프 기법를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1644,7 +1644,7 @@
         "DROP",
         "DELETE"
       ],
-      "explanation": "DROP를 떠올리는 문제다\nERASE · KILL · DELETE → 각각 해당하지 않음",
+      "explanation": "DROP를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1656,7 +1656,7 @@
         "LOG 연산",
         "ROLLBACK 연산"
       ],
-      "explanation": "ROLLBACK 연산를 떠올리는 문제다\nCOMMIT 연산 · BACKUP 연산 · LOG 연산 → 각각 해당하지 않음",
+      "explanation": "ROLLBACK 연산를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1668,7 +1668,7 @@
         "위치 투명성",
         "중복 투명성"
       ],
-      "explanation": "장애 투명성를 떠올리는 문제다\n병행 투명성 · 위치 투명성 · 중복 투명성 → 각각 해당하지 않음",
+      "explanation": "장애 투명성를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1680,7 +1680,7 @@
         "격리성(Isolation)",
         "영속성(Durability)"
       ],
-      "explanation": "일관성(Consistency)를 떠올리는 문제다\n원자성(Atomicity) · 격리성(Isolation) · 영속성(Durability) → 각각 해당하지 않음",
+      "explanation": "일관성(Consistency)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1692,7 +1692,7 @@
         "잠금(Lock)",
         "복귀(Rollback)"
       ],
-      "explanation": "트리거(Trigger)를 떠올리는 문제다\n무결성(Integrity) · 잠금(Lock) · 복귀(Rollback) → 각각 해당하지 않음",
+      "explanation": "트리거(Trigger)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1728,7 +1728,7 @@
         "Isolation",
         "Durability"
       ],
-      "explanation": "Isolation를 떠올리는 문제다\nLog · Consistency · Durability → 각각 해당하지 않음",
+      "explanation": "Isolation를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1740,7 +1740,7 @@
         "타임 스탬프 기법",
         "폴딩 기법"
       ],
-      "explanation": "즉각 갱신 기법를 떠올리는 문제다\n대수적 코딩 방법 · 타임 스탬프 기법 · 폴딩 기법 → 각각 해당하지 않음",
+      "explanation": "즉각 갱신 기법를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1752,7 +1752,7 @@
         "스턱스넷(Stuxnet)",
         "루팅(Rooting)"
       ],
-      "explanation": "고가용성 솔루션(HACMP)를 떠올리는 문제다\n점대점 연결 방식(Point-to-Point Mode) · 스턱스넷(Stuxnet) · 루팅(Rooting) → 각각 해당하지 않음",
+      "explanation": "고가용성 솔루션(HACMP)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1764,7 +1764,7 @@
         "SET-NULL",
         "RESTRICTED"
       ],
-      "explanation": "CASCADE를 떠올리는 문제다\nCLUSTER · SET-NULL · RESTRICTED → 각각 해당하지 않음",
+      "explanation": "CASCADE를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1776,7 +1776,7 @@
         "Composite Partitioning",
         "List Partitioning"
       ],
-      "explanation": "Range Partitioning를 떠올리는 문제다\nHash Partitioning · Composite Partitioning · List Partitioning → 각각 해당하지 않음",
+      "explanation": "Range Partitioning를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1788,7 +1788,7 @@
         "Abort",
         "Restart"
       ],
-      "explanation": "Recovery를 떠올리는 문제다\nCommit · Abort · Restart → 각각 해당하지 않음",
+      "explanation": "Recovery를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1800,7 +1800,7 @@
         "GROUP BY 절",
         "ORDER BY 절"
       ],
-      "explanation": "SQL 결과는 GROUP BY 절이다\nLIKE 절 · WHERE 절 · ORDER BY 절 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 GROUP BY 절이다",
       "answer": 3
     },
     {
@@ -1812,7 +1812,7 @@
         "ALTER",
         "ACCESS"
       ],
-      "explanation": "ALTER를 떠올리는 문제다\nDELETE · RESTORE · ACCESS → 각각 해당하지 않음",
+      "explanation": "ALTER를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1824,7 +1824,7 @@
         "CRUD 분석",
         "연관성 분석"
       ],
-      "explanation": "CRUD 분석를 떠올리는 문제다\nCASE 분석 · 일치 분석 · 연관성 분석 → 각각 해당하지 않음",
+      "explanation": "CRUD 분석를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1836,7 +1836,7 @@
         "CREATE",
         "INSERT"
       ],
-      "explanation": "SQL 결과는 CREATE이다\nALTER · SELECT · INSERT → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 CREATE이다",
       "answer": 3
     },
     {
@@ -1848,7 +1848,7 @@
         "역정규화(Denormalization)",
         "트리거(Trigger)"
       ],
-      "explanation": "인덱스(Index)를 떠올리는 문제다\n트랙잭션(Transaction) · 역정규화(Denormalization) · 트리거(Trigger) → 각각 해당하지 않음",
+      "explanation": "인덱스(Index)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1860,7 +1860,7 @@
         "페이지부재(Page Fault)",
         "워킹셋(Working Set)"
       ],
-      "explanation": "스래싱(Thrasing)를 떠올리는 문제다\n스레드(Thread) · 페이지부재(Page Fault) · 워킹셋(Working Set) → 각각 해당하지 않음",
+      "explanation": "스래싱(Thrasing)를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1872,7 +1872,7 @@
         "itoa( )",
         "ceil( )"
       ],
-      "explanation": "atoi( )를 떠올리는 문제다\natof( ) · itoa( ) · ceil( ) → 각각 해당하지 않음",
+      "explanation": "atoi( )를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1884,7 +1884,7 @@
         "논리적 응집도",
         "절차적 응집도"
       ],
-      "explanation": "절차적 응집도를 떠올리는 문제다\n기능적 응집도 · 우연적 응집도 · 논리적 응집도 → 각각 해당하지 않음",
+      "explanation": "절차적 응집도를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1896,7 +1896,7 @@
         "Recovery",
         "Prevention"
       ],
-      "explanation": "Avoidance를 떠올리는 문제다\nDetection · Recovery · Prevention → 각각 해당하지 않음",
+      "explanation": "Avoidance를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1908,7 +1908,7 @@
         "FTP",
         "IP"
       ],
-      "explanation": "ARP를 떠올리는 문제다\nTCP · FTP · IP → 각각 해당하지 않음",
+      "explanation": "ARP를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -1920,7 +1920,7 @@
         "fork",
         "chmod"
       ],
-      "explanation": "fork를 떠올리는 문제다\nls · cat · chmod → 각각 해당하지 않음",
+      "explanation": "fork를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1932,7 +1932,7 @@
         "C#",
         "Python"
       ],
-      "explanation": "Python를 떠올리는 문제다\nC++ · JAVA · C# → 각각 해당하지 않음",
+      "explanation": "Python를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1944,7 +1944,7 @@
         "Logical Cohesion",
         "Coincidental Cohesion"
       ],
-      "explanation": "Coincidental Cohesion를 떠올리는 문제다\nFunctional Cohesion · Sequential Cohesion · Logical Cohesion → 각각 해당하지 않음",
+      "explanation": "Coincidental Cohesion를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1956,7 +1956,7 @@
         "Stop and Wait",
         "Congestion Avoidance"
       ],
-      "explanation": "Stop and Wait를 떠올리는 문제다\nSlow Start · Sliding Window · Congestion Avoidance → 각각 해당하지 않음",
+      "explanation": "Stop and Wait를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1968,7 +1968,7 @@
         "트랜스포트 계층",
         "세션 계층"
       ],
-      "explanation": "트랜스포트 계층를 떠올리는 문제다\n데이터 링크 계층 · 네트워크 계층 · 세션 계층 → 각각 해당하지 않음",
+      "explanation": "트랜스포트 계층를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -1980,7 +1980,7 @@
         "Thrashing",
         "Working Set"
       ],
-      "explanation": "Working Set를 떠올리는 문제다\nLocality · Deadlock · Thrashing → 각각 해당하지 않음",
+      "explanation": "Working Set를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -1992,7 +1992,7 @@
         "**",
         "!="
       ],
-      "explanation": "||를 떠올리는 문제다\n&& · ** · != → 각각 해당하지 않음",
+      "explanation": "||를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2004,7 +2004,7 @@
         "Coincidental Cohesion",
         "Sequential Cohesion"
       ],
-      "explanation": "Temporal Cohesion를 떠올리는 문제다\nLogical Cohesion · Coincidental Cohesion · Sequential Cohesion → 각각 해당하지 않음",
+      "explanation": "Temporal Cohesion를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2016,7 +2016,7 @@
         "802.11g",
         "802.11e"
       ],
-      "explanation": "802.11e를 떠올리는 문제다\n802.11a · 802.11b · 802.11g → 각각 해당하지 않음",
+      "explanation": "802.11e를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2028,7 +2028,7 @@
         "세션 계층",
         "표현 계층"
       ],
-      "explanation": "세션 계층를 떠올리는 문제다\n데이터링크 계층 · 네트워크 계층 · 표현 계층 → 각각 해당하지 않음",
+      "explanation": "세션 계층를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2040,7 +2040,7 @@
         "Memory Collector",
         "Variable Collector"
       ],
-      "explanation": "Garbage Collector를 떠올리는 문제다\nHeap Collector · Memory Collector · Variable Collector → 각각 해당하지 않음",
+      "explanation": "Garbage Collector를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2052,7 +2052,7 @@
         "4byte",
         "8byte"
       ],
-      "explanation": "8byte를 떠올리는 문제다\n1byte · 2byte · 4byte → 각각 해당하지 않음",
+      "explanation": "8byte를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2064,7 +2064,7 @@
         "Control Coupling",
         "Common Coupling"
       ],
-      "explanation": "Control Coupling를 떠올리는 문제다\nData Coupling · Stamp Coupling · Common Coupling → 각각 해당하지 않음",
+      "explanation": "Control Coupling를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2076,7 +2076,7 @@
         "CSMA/CA",
         "CSMA/CD"
       ],
-      "explanation": "CSMA/CA를 떠올리는 문제다\nSTA · Collision Domain · CSMA/CD → 각각 해당하지 않음",
+      "explanation": "CSMA/CA를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2088,7 +2088,7 @@
         "세션 계층",
         "표현 계층"
       ],
-      "explanation": "전송 계층를 떠올리는 문제다\n응용 계층 · 세션 계층 · 표현 계층 → 각각 해당하지 않음",
+      "explanation": "전송 계층를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2100,7 +2100,7 @@
         "사전(dict) 타입",
         "튜플(tuple) 타입"
       ],
-      "explanation": "튜플(tuple) 타입를 떠올리는 문제다\n복소수(complex) 타입 · 리스트(list) 타입 · 사전(dict) 타입 → 각각 해당하지 않음",
+      "explanation": "튜플(tuple) 타입를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2112,7 +2112,7 @@
         "공통 결합도(Common Coupling)",
         "스탬프 결합도(Stamp Coupling)"
       ],
-      "explanation": "내용 결합도(Content Coupling)를 떠올리는 문제다\n제어 결합도(Control Coupling) · 공통 결합도(Common Coupling) · 스탬프 결합도(Stamp Coupling) → 각각 해당하지 않음",
+      "explanation": "내용 결합도(Content Coupling)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2124,7 +2124,7 @@
         "Token Ring",
         "Slotted Ring"
       ],
-      "explanation": "CSMA/CD를 떠올리는 문제다\nToken Bus · Token Ring · Slotted Ring → 각각 해당하지 않음",
+      "explanation": "CSMA/CD를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2136,7 +2136,7 @@
         "응용 계층",
         "표현 계층"
       ],
-      "explanation": "데이터 링크 계층를 떠올리는 문제다\n물리 계층 · 응용 계층 · 표현 계층 → 각각 해당하지 않음",
+      "explanation": "데이터 링크 계층를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2160,7 +2160,7 @@
         "struct",
         "abstract"
       ],
-      "explanation": "struct를 떠올리는 문제다\nfor · scanf · abstract → 각각 해당하지 않음",
+      "explanation": "struct를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2172,7 +2172,7 @@
         "버퍼 오버플로",
         "디렉토리 접근 공격"
       ],
-      "explanation": "버퍼 오버플로를 떠올리는 문제다\nFTP 바운스 공격 · SQL 삽입 · 디렉토리 접근 공격 → 각각 해당하지 않음",
+      "explanation": "버퍼 오버플로를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2208,7 +2208,7 @@
         "HRN 스케줄링",
         "MQ 스케줄링"
       ],
-      "explanation": "HRN 스케줄링를 떠올리는 문제다\nFIFO 스케줄링 · RR 스케줄링 · MQ 스케줄링 → 각각 해당하지 않음",
+      "explanation": "HRN 스케줄링를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2220,7 +2220,7 @@
         "char",
         "double"
       ],
-      "explanation": "int를 떠올리는 문제다\nfloat · char · double → 각각 해당하지 않음",
+      "explanation": "int를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2232,7 +2232,7 @@
         "Local Area Network",
         "Mesh Network"
       ],
-      "explanation": "Mesh Network를 떠올리는 문제다\nSoftware Defined Perimeter · Virtual Private Network · Local Area Network → 각각 해당하지 않음",
+      "explanation": "Mesh Network를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2244,7 +2244,7 @@
         "MESH",
         "NFV"
       ],
-      "explanation": "SLIM를 떠올리는 문제다\nSQLR/30 · MESH · NFV → 각각 해당하지 않음",
+      "explanation": "SLIM를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2256,7 +2256,7 @@
         "정보공학 방법론",
         "CBD 방법론"
       ],
-      "explanation": "구조적 개발 방법론를 떠올리는 문제다\n객체지향 개발 방법론 · 정보공학 방법론 · CBD 방법론 → 각각 해당하지 않음",
+      "explanation": "구조적 개발 방법론를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2268,7 +2268,7 @@
         "MAC",
         "QAC"
       ],
-      "explanation": "RBAC를 떠올리는 문제다\nDAC · MAC · QAC → 각각 해당하지 않음",
+      "explanation": "RBAC를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2280,7 +2280,7 @@
         "udpdump",
         "cron"
       ],
-      "explanation": "tripwire를 떠올리는 문제다\ntrace · udpdump · cron → 각각 해당하지 않음",
+      "explanation": "tripwire를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2292,7 +2292,7 @@
         "NFC",
         "WI-SUN"
       ],
-      "explanation": "PICONET를 떠올리는 문제다\nSCRUM · NFC · WI-SUN → 각각 해당하지 않음",
+      "explanation": "PICONET를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2304,7 +2304,7 @@
         "Semi-detached",
         "Semi-embeded"
       ],
-      "explanation": "Organic를 떠올리는 문제다\nEmbeded · Semi-detached · Semi-embeded → 각각 해당하지 않음",
+      "explanation": "Organic를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2316,7 +2316,7 @@
         "GPN",
         "MQTT"
       ],
-      "explanation": "MQTT를 떠올리는 문제다\nGRID · TELNET · GPN → 각각 해당하지 않음",
+      "explanation": "MQTT를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2328,7 +2328,7 @@
         "Peterson Algorithm",
         "Semaphore"
       ],
-      "explanation": "Semaphore를 떠올리는 문제다\nDekker Algorithm · Lamport Algorithm · Peterson Algorithm → 각각 해당하지 않음",
+      "explanation": "Semaphore를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2340,7 +2340,7 @@
         "Network Mapper",
         "AOE Network"
       ],
-      "explanation": "SDN(Software Defined Networking)를 떠올리는 문제다\nNFS(Network File System) · Network Mapper · AOE Network → 각각 해당하지 않음",
+      "explanation": "SDN(Software Defined Networking)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2352,7 +2352,7 @@
         "COCOMO 모형",
         "기능점수 모형"
       ],
-      "explanation": "Putnam 모형를 떠올리는 문제다\n델파이 모형 · COCOMO 모형 · 기능점수 모형 → 각각 해당하지 않음",
+      "explanation": "Putnam 모형를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2364,7 +2364,7 @@
         "라우터",
         "RAD"
       ],
-      "explanation": "라우터를 떠올리는 문제다\nL2 스위치 · HIPO · RAD → 각각 해당하지 않음",
+      "explanation": "라우터를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2376,7 +2376,7 @@
         "SDAC",
         "AAC"
       ],
-      "explanation": "MAC를 떠올리는 문제다\nNAC · SDAC · AAC → 각각 해당하지 않음",
+      "explanation": "MAC를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2388,7 +2388,7 @@
         "JSON",
         "WEB SEVER"
       ],
-      "explanation": "JSON를 떠올리는 문제다\nPython · XML · WEB SEVER → 각각 해당하지 않음",
+      "explanation": "JSON를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2400,7 +2400,7 @@
         "컨테이너 아키텍처",
         "어휘 분석기"
       ],
-      "explanation": "소프트웨어 개발 프레임워크를 떠올리는 문제다\n전역 함수 라이브러리 · 컨테이너 아키텍처 · 어휘 분석기 → 각각 해당하지 않음",
+      "explanation": "소프트웨어 개발 프레임워크를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2412,7 +2412,7 @@
         "델파이 기법",
         "LOC 기법"
       ],
-      "explanation": "LOC 기법를 떠올리는 문제다\nEffort Per Task 기법 · 전문가 감정 기법 · 델파이 기법 → 각각 해당하지 않음",
+      "explanation": "LOC 기법를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2424,7 +2424,7 @@
         "NAC",
         "NIC"
       ],
-      "explanation": "SAN를 떠올리는 문제다\nMBR · NAC · NIC → 각각 해당하지 않음",
+      "explanation": "SAN를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2436,7 +2436,7 @@
         "Bell-Lapadula Model",
         "Chinese Wall Model"
       ],
-      "explanation": "Bell-Lapadula Model를 떠올리는 문제다\nClark-Wilson Integrity Model · PDCA Model · Chinese Wall Model → 각각 해당하지 않음",
+      "explanation": "Bell-Lapadula Model를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2448,7 +2448,7 @@
         "HIPO",
         "SADT"
       ],
-      "explanation": "SADT를 떠올리는 문제다\nSREM · PSL/PSA · HIPO → 각각 해당하지 않음",
+      "explanation": "SADT를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2460,7 +2460,7 @@
         "SPICE",
         "CASE"
       ],
-      "explanation": "SPICE를 떠올리는 문제다\nSCRUM · ISO/IEC 12509 · CASE → 각각 해당하지 않음",
+      "explanation": "SPICE를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2472,7 +2472,7 @@
         "재구성",
         "이식"
       ],
-      "explanation": "이식를 떠올리는 문제다\n역공학 · 분석 · 재구성 → 각각 해당하지 않음",
+      "explanation": "이식를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2484,7 +2484,7 @@
         "BSA",
         "NFC"
       ],
-      "explanation": "DAS를 떠올리는 문제다\nNAS · BSA · NFC → 각각 해당하지 않음",
+      "explanation": "DAS를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2496,7 +2496,7 @@
         "Discretionary Access Control",
         "Data-Label Access Control"
       ],
-      "explanation": "Mandatory Access Control를 떠올리는 문제다\nUser Access Control · Discretionary Access Control · Data-Label Access Control → 각각 해당하지 않음",
+      "explanation": "Mandatory Access Control를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2508,7 +2508,7 @@
         "폭포수 모형",
         "기능점수 모형"
       ],
-      "explanation": "나선형 모형를 떠올리는 문제다\n델파이 모형 · 폭포수 모형 · 기능점수 모형 → 각각 해당하지 않음",
+      "explanation": "나선형 모형를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2520,7 +2520,7 @@
         "분리 중심",
         "구조 중심"
       ],
-      "explanation": "합성 중심를 떠올리는 문제다\n생성 중심 · 분리 중심 · 구조 중심 → 각각 해당하지 않음",
+      "explanation": "합성 중심를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2532,7 +2532,7 @@
         "ftp",
         "nmap"
       ],
-      "explanation": "nmap를 떠올리는 문제다\ntype · mkdir · ftp → 각각 해당하지 않음",
+      "explanation": "nmap를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2544,7 +2544,7 @@
         "Cocomo Model",
         "Spiral Model"
       ],
-      "explanation": "Waterfall Model를 떠올리는 문제다\nPrototype Model · Cocomo Model · Spiral Model → 각각 해당하지 않음",
+      "explanation": "Waterfall Model를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2556,7 +2556,7 @@
         "PIMS",
         "Seven Touchpoints"
       ],
-      "explanation": "Seven Touchpoints를 떠올리는 문제다\nCLASP · CWE · PIMS → 각각 해당하지 않음",
+      "explanation": "Seven Touchpoints를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2568,7 +2568,7 @@
         "SNMP",
         "N-Screen"
       ],
-      "explanation": "N-Screen를 떠올리는 문제다\nMemristor · MEMS · SNMP → 각각 해당하지 않음",
+      "explanation": "N-Screen를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2580,7 +2580,7 @@
         "SDDC",
         "Wi-SUN"
       ],
-      "explanation": "Baas를 떠올리는 문제다\nOTT · SDDC · Wi-SUN → 각각 해당하지 않음",
+      "explanation": "Baas를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2592,7 +2592,7 @@
         "Static",
         "EIGRP"
       ],
-      "explanation": "RIP를 떠올리는 문제다\nOSPF · Static · EIGRP → 각각 해당하지 않음",
+      "explanation": "RIP를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2604,7 +2604,7 @@
         "Hijacking",
         "Logs"
       ],
-      "explanation": "MapReduce를 떠올리는 문제다\nSQL · Hijacking · Logs → 각각 해당하지 않음",
+      "explanation": "MapReduce를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2616,7 +2616,7 @@
         "WBSEC",
         "ITU"
       ],
-      "explanation": "OWASP를 떠올리는 문제다\nWWW · WBSEC · ITU → 각각 해당하지 않음",
+      "explanation": "OWASP를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2628,7 +2628,7 @@
         "디지털 트윈",
         "N-Screen"
       ],
-      "explanation": "디지털 트윈를 떠올리는 문제다\n최적화 · 실행 시간 · N-Screen → 각각 해당하지 않음",
+      "explanation": "디지털 트윈를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2640,7 +2640,7 @@
         "Hash Algorithm",
         "Digital Signature Algorithm"
       ],
-      "explanation": "Spanning Tree Algorithm를 떠올리는 문제다\nDiffie-Hellman Algorithm · Hash Algorithm · Digital Signature Algorithm → 각각 해당하지 않음",
+      "explanation": "Spanning Tree Algorithm를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2664,7 +2664,7 @@
         "SSL",
         "SHA"
       ],
-      "explanation": "WPA를 떠올리는 문제다\nWCDMA · SSL · SHA → 각각 해당하지 않음",
+      "explanation": "WPA를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2676,7 +2676,7 @@
         "SSO",
         "SOA"
       ],
-      "explanation": "SSO를 떠올리는 문제다\nSOS · SBO · SOA → 각각 해당하지 않음",
+      "explanation": "SSO를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2688,7 +2688,7 @@
         "Sqoop",
         "SDB"
       ],
-      "explanation": "Sqoop를 떠올리는 문제다\nApnic · Topology · SDB → 각각 해당하지 않음",
+      "explanation": "Sqoop를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2700,7 +2700,7 @@
         "token finder",
         "change detector"
       ],
-      "explanation": "tcp wrapper를 떠올리는 문제다\ntrace checker · token finder · change detector → 각각 해당하지 않음",
+      "explanation": "tcp wrapper를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2712,7 +2712,7 @@
         "Cipher Container",
         "Scytale"
       ],
-      "explanation": "Docker를 떠올리는 문제다\nStack Guard · Cipher Container · Scytale → 각각 해당하지 않음",
+      "explanation": "Docker를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2724,7 +2724,7 @@
         "L2AN",
         "ARP"
       ],
-      "explanation": "VLAN를 떠올리는 문제다\nSTP · L2AN · ARP → 각각 해당하지 않음",
+      "explanation": "VLAN를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2748,7 +2748,7 @@
         "포스퀘어(Foursquare)",
         "맴리스터(Memristor)"
       ],
-      "explanation": "하둡(Hadoop)를 떠올리는 문제다\n비컨(Beacon) · 포스퀘어(Foursquare) · 맴리스터(Memristor) → 각각 해당하지 않음",
+      "explanation": "하둡(Hadoop)를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2760,7 +2760,7 @@
         "Packet Tree",
         "DPI(Deep Packet Inspection)"
       ],
-      "explanation": "DPI(Deep Packet Inspection)를 떠올리는 문제다\nPLCP(Packet Level Control Processor) · Traffic Distributor · Packet Tree → 각각 해당하지 않음",
+      "explanation": "DPI(Deep Packet Inspection)를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2772,7 +2772,7 @@
         "Grayware",
         "Mashup"
       ],
-      "explanation": "Mashup를 떠올리는 문제다\nQuantum Key Distribution · Digital Rights Management · Grayware → 각각 해당하지 않음",
+      "explanation": "Mashup를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2784,7 +2784,7 @@
         "링형",
         "그물형"
       ],
-      "explanation": "버스형를 떠올리는 문제다\n성형 · 링형 · 그물형 → 각각 해당하지 않음",
+      "explanation": "버스형를 떠올리는 문제다",
       "answer": 1,
       "image": "images/keyword_q232.png"
     },
@@ -2797,7 +2797,7 @@
         "KAWS",
         "Metaverse"
       ],
-      "explanation": "PaaS-TA를 떠올리는 문제다\nN2OS · KAWS · Metaverse → 각각 해당하지 않음",
+      "explanation": "PaaS-TA를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2809,7 +2809,7 @@
         "Digital Twin",
         "Zigbee"
       ],
-      "explanation": "Data Mining를 떠올리는 문제다\nWm-Bus · Digital Twin · Zigbee → 각각 해당하지 않음",
+      "explanation": "Data Mining를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -2821,7 +2821,7 @@
         "Honeypot",
         "MapReduce"
       ],
-      "explanation": "Honeypot를 떠올리는 문제다\nApache · Hadoop · MapReduce → 각각 해당하지 않음",
+      "explanation": "Honeypot를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -2833,7 +2833,7 @@
         "CrawlCat",
         "SBAS"
       ],
-      "explanation": "Scrapy를 떠올리는 문제다\nLi-fi · CrawlCat · SBAS → 각각 해당하지 않음",
+      "explanation": "Scrapy를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2845,7 +2845,7 @@
         "디지털 아카이빙",
         "미디어 빅뱅"
       ],
-      "explanation": "스마트 그리드를 떠올리는 문제다\n사물 인터넷 · 디지털 아카이빙 · 미디어 빅뱅 → 각각 해당하지 않음",
+      "explanation": "스마트 그리드를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2869,7 +2869,7 @@
         "XSS",
         "Secure OS"
       ],
-      "explanation": "Secure OS를 떠올리는 문제다\nGPIB · CentOS · XSS → 각각 해당하지 않음",
+      "explanation": "Secure OS를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2881,7 +2881,7 @@
         "포스퀘어(Foursquare)",
         "텐서플로(TensorFlow)"
       ],
-      "explanation": "텐서플로(TensorFlow)를 떠올리는 문제다\n타조(Tajo) · 원 세그(One Seg) · 포스퀘어(Foursquare) → 각각 해당하지 않음",
+      "explanation": "텐서플로(TensorFlow)를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2893,7 +2893,7 @@
         "Screened Subnet",
         "Ring Homed"
       ],
-      "explanation": "Screened Subnet를 떠올리는 문제다\nBlock Host · Tree Host · Ring Homed → 각각 해당하지 않음",
+      "explanation": "Screened Subnet를 떠올리는 문제다",
       "answer": 3,
       "image": "images/keyword_q241.png"
     },
@@ -2906,7 +2906,7 @@
         "Sequence Error",
         "Transcription Error"
       ],
-      "explanation": "Transcription Error를 떠올리는 문제다\nAddition Error · Omission Error · Sequence Error → 각각 해당하지 않음",
+      "explanation": "Transcription Error를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2918,7 +2918,7 @@
         "Buffer overflow",
         "Adware"
       ],
-      "explanation": "Ransomware를 떠올리는 문제다\nFormat String · Buffer overflow · Adware → 각각 해당하지 않음",
+      "explanation": "Ransomware를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2930,7 +2930,7 @@
         "Logic Bomb",
         "Cyberbullying"
       ],
-      "explanation": "Phishing를 떠올리는 문제다\nTearDrop · Logic Bomb · Cyberbullying → 각각 해당하지 않음",
+      "explanation": "Phishing를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -2942,7 +2942,7 @@
         "SMT",
         "RSA"
       ],
-      "explanation": "RSA를 떠올리는 문제다\nDES · AES · SMT → 각각 해당하지 않음",
+      "explanation": "RSA를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2954,7 +2954,7 @@
         "Phishing",
         "XSS"
       ],
-      "explanation": "XSS를 떠올리는 문제다\nRansomware · Pharming · Phishing → 각각 해당하지 않음",
+      "explanation": "XSS를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2966,7 +2966,7 @@
         "IDS",
         "VPN"
       ],
-      "explanation": "VPN를 떠올리는 문제다\nZIGBEE · NDD · IDS → 각각 해당하지 않음",
+      "explanation": "VPN를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2978,7 +2978,7 @@
         "Authorization",
         "Authentication"
       ],
-      "explanation": "Authentication를 떠올리는 문제다\nAging · Accounting · Authorization → 각각 해당하지 않음",
+      "explanation": "Authentication를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -2990,7 +2990,7 @@
         "DSA",
         "SEED"
       ],
-      "explanation": "AES를 떠올리는 문제다\nARIA · DSA · SEED → 각각 해당하지 않음",
+      "explanation": "AES를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -3002,7 +3002,7 @@
         "가용성",
         "무결성"
       ],
-      "explanation": "무결성를 떠올리는 문제다\n기밀성 · 부인방지 · 가용성 → 각각 해당하지 않음",
+      "explanation": "무결성를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -3014,7 +3014,7 @@
         "linuxer",
         "wtmp"
       ],
-      "explanation": "wtmp를 떠올리는 문제다\ntapping · xtslog · linuxer → 각각 해당하지 않음",
+      "explanation": "wtmp를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -3026,7 +3026,7 @@
         "시스로그",
         "스택가드"
       ],
-      "explanation": "스택가드를 떠올리는 문제다\n모드체크 · 리커버리 통제 · 시스로그 → 각각 해당하지 않음",
+      "explanation": "스택가드를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -3038,7 +3038,7 @@
         "Switch Jamming",
         "FTP Flooding"
       ],
-      "explanation": "Switch Jamming를 떠올리는 문제다\nParsing · LAN Tapping · FTP Flooding → 각각 해당하지 않음",
+      "explanation": "Switch Jamming를 떠올리는 문제다",
       "answer": 3
     },
     {
@@ -3050,7 +3050,7 @@
         "Piggyback Attack",
         "XSS"
       ],
-      "explanation": "Ping of Death를 떠올리는 문제다\nSession Hijacking · Piggyback Attack · XSS → 각각 해당하지 않음",
+      "explanation": "Ping of Death를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -3062,7 +3062,7 @@
         "Opcode",
         "Salt"
       ],
-      "explanation": "Salt를 떠올리는 문제다\nPass flag · Bucket · Opcode → 각각 해당하지 않음",
+      "explanation": "Salt를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -3074,7 +3074,7 @@
         "Rollback",
         "Zombie Worm"
       ],
-      "explanation": "Key Logger Attack를 떠올리는 문제다\nWorm · Rollback · Zombie Worm → 각각 해당하지 않음",
+      "explanation": "Key Logger Attack를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -3086,7 +3086,7 @@
         "Qshing",
         "Smurfing"
       ],
-      "explanation": "Smurfing를 떠올리는 문제다\nTearDrop · Smishing · Qshing → 각각 해당하지 않음",
+      "explanation": "Smurfing를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -3098,7 +3098,7 @@
         "Adware",
         "Reflection Attack"
       ],
-      "explanation": "Worm를 떠올리는 문제다\nRogue Ware · Adware · Reflection Attack → 각각 해당하지 않음",
+      "explanation": "Worm를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -3110,7 +3110,7 @@
         "Brute-Force",
         "Trojan Horses"
       ],
-      "explanation": "Ping Flood를 떠올리는 문제다\nRole-Based Access Control · Brute-Force · Trojan Horses → 각각 해당하지 않음",
+      "explanation": "Ping Flood를 떠올리는 문제다",
       "answer": 2
     }
   ]

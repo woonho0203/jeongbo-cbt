@@ -14,7 +14,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "인스펙션(Inspection)과 동일한 의미를 가진다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "인스펙션(Inspection)과 동일한 의미를 가진다.가 틀린 설명이다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "내용 결합도 : 한 모듈이 다른 모듈과 제어 신호를 이용하여 통신하고, 공유되는 공통 데이터 영역을 사용할 때의 결합도가 문제에서 요구한 틀린 설명이다."
+      "explanation": "내용 결합도 : 한 모듈이 다른 모듈과 제어 신호를 이용하여 통신하고, 공유되는 공통 데이터 영역을 사용할 때의 결합도가 틀린 설명이다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "고객 배제를 문제 조건과 비교하는 문제.\n정답 기준은 고객 배제이다."
+      "explanation": "고객 배제는 이 범주에 해당하지 않는다. 이 범주에는 의사소통·단순성·피드백 등이 포함된다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "상향식 소프트웨어 개발을 위한 문서화 도구이다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "상향식 소프트웨어 개발을 위한 문서화 도구이다.가 틀린 설명이다."
     },
     {
       "qnum": 5,
@@ -65,12 +65,12 @@
         "Pinch",
         "Press",
         "Flow",
-        "Flick 정보처리기사 필기 기출문제 3회 정보처리기사 필기 없습니다."
+        "Flick"
       ],
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "Flow를 문제 조건과 비교하는 문제.\n정답 기준은 Flow이다."
+      "explanation": "Flow는 이 범주에 해당하지 않는다. 이 범주에는 Pinch·Press·Flick 등이 포함된다."
     },
     {
       "qnum": 6,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "<< >>를 문제 조건과 비교하는 문제.\n정답 기준은 << >>이다."
+      "explanation": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는이며, 이를 << >>이라 한다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "나선형 모형를 문제 조건과 비교하는 문제.\n정답 기준은 나선형 모형이다."
+      "explanation": "보헴이 제안한 것으로, 위험 분석 기능이 있으며, 여러 번의 개발 과정을 거쳐 점진적으로 개발하는 것이며, 이를 나선형 모형이라 한다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "직관성를 문제 조건과 비교하는 문제.\n정답 기준은 직관성이다."
+      "explanation": "UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙이며, 이를 직관성이라 한다."
     },
     {
       "qnum": 9,
@@ -126,7 +126,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "process, data flow, data store, terminator를 문제 조건과 비교하는 문제."
+      "explanation": "process, data flow, data store, terminator이다."
     },
     {
       "qnum": 10,
@@ -140,7 +140,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "SSO(Single Sign On)를 문제 조건과 비교하는 문제."
+      "explanation": "SSO(Single Sign On)는 이 범주에 해당하지 않는다. 이 범주에는 ISP(Interface Segregation Principle)·DIP(Dependency Inversion Principle)·LSP(Liskov Substitution Principle) 등이 포함된다."
     },
     {
       "qnum": 11,
@@ -154,7 +154,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Dependency를 문제 조건과 비교하는 문제.\n정답 기준은 Dependency이다."
+      "explanation": "UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계이며, 이를 Dependency이라 한다."
     },
     {
       "qnum": 12,
@@ -168,7 +168,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "Message를 문제 조건과 비교하는 문제.\n정답 기준은 Message이다."
+      "explanation": "객체에게 어떤 행위를 하도록 지시하는 명령이 Message이다."
     },
     {
       "qnum": 13,
@@ -177,12 +177,12 @@
         "Singleton",
         "Adapter",
         "Prototype",
-        "Decorator -"
+        "Decorator"
       ],
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "Singleton를 문제 조건과 비교하는 문제.\n정답 기준은 Singleton이다."
+      "explanation": "하나의 객체를 생성하면 생성된 객체를 어디서든 참 조할 수 있지만, 여러 프로세스가 동시에 참조할 수는 없다. 클래스 내에서 인스턴스가 하나뿐임을 보장하며, 불필 요한 메모리 낭비를 최소화 할 수 있다. 이를 Singleton이라 한다."
     },
     {
       "qnum": 14,
@@ -196,7 +196,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브 시스템으로 넘겨주는 과정을 반복한다.를 문제 조건과 비교하는 문제."
+      "explanation": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브 시스템으로 넘겨주는 과정을 반복한다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "CLI(Command Line Interface)를 문제 조건과 비교하는 문제."
+      "explanation": "대표적으로 DOS 및 Unix 등의 운영체제에서 조작을 위해 사용하던 것으로, 정해진 명령 문자열을 입력하여 시스템을 조작하는 사용자 인터페이스(User Interface)이며, 이를 CLI(Command Line Interface)이라 한다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "확장가 문제에서 요구한 틀린 설명이다.\n정답 기준은 확장이다."
+      "explanation": "확장가 틀린 설명이다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "fan-in : 3, fan-out : 2를 문제 조건과 비교하는 문제.\nfan-in : 2, fan-out : 3 · fan-in : 1, fan-out : 2 · fan-in : 2, fan-out : 1 → 각각 해당하지 않음"
+      "explanation": "다음은 어떤 프로그램 구조를 나타낸다. 모듈 F에서의 fan-in과 fan-out의 수는 얼마인이며, 이를 fan-in : 3, fan-out : 2이라 한다."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "캡슐화(Encapsulation)를 문제 조건과 비교하는 문제.\n메시지(Message) · 다형성(Polymorphism) · 상속(Inheritance) → 각각 해당하지 않음"
+      "explanation": "객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정이며, 이를 캡슐화(Encapsulation)이라 한다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "블랙박스 분석 모델링를 문제 조건과 비교하는 문제.\n정답 기준은 블랙박스 분석 모델링이다."
+      "explanation": "블랙박스 분석 모델링는 이 범주에 해당하지 않는다. 이 범주에는 객체 모델링·기능 모델링·동적 모델링 등이 포함된다."
     },
     {
       "qnum": 20,
@@ -280,13 +280,13 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "미들웨어를 문제 조건과 비교하는 문제.\n정답 기준은 미들웨어이다."
+      "explanation": "분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어이며, 이를 미들웨어이라 한다."
     },
     {
       "qnum": 21,
       "stem": "소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
       "options": [
-        "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점 검할 수 있다. 정보처리기사 필기 기출문제",
+        "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점 검할 수 있다.",
         "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.",
         "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.",
         "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다."
@@ -294,7 +294,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다.가 틀린 설명이다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "방화벽 기술가 문제에서 요구한 틀린 설명이다.\n정답 기준은 방화벽 기술이다."
+      "explanation": "방화벽 기술가 틀린 설명이다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "형상관리를 위하여 구성된 팀을 “chief programmer team”이 라고 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "형상관리를 위하여 구성된 팀을 “chief programmer team”이 라고 한다.가 틀린 설명이다."
     },
     {
       "qnum": 24,
@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "D B E F C A를 문제 조건과 비교하는 문제.\n정답 기준은 D B E F C A이다."
+      "explanation": "후위 순회(Post-order)는 왼쪽 서브트리 → 오른쪽 서브트리 → 루트 순서로 방문한다."
     },
     {
       "qnum": 25,
@@ -350,7 +350,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Tree가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Tree이다."
+      "explanation": "Tree가 틀린 설명이다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "Pareto의 법칙를 문제 조건과 비교하는 문제.\n정답 기준은 Pareto의 법칙이다."
+      "explanation": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙이며, 이를 Pareto의 법칙이라 한다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.가 틀린 설명이다."
     },
     {
       "qnum": 28,
@@ -387,12 +387,12 @@
         "암호화 수행시 일방향 암호화만 지원한다.",
         "ESP는 발신지 인증, 데이터 무결성, 기밀성 모두를 보장한다.",
         "운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.",
-        "AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한 다. -"
+        "AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한 다."
       ],
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "암호화 수행시 일방향 암호화만 지원한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "암호화 수행시 일방향 암호화만 지원한다.가 틀린 설명이다."
     },
     {
       "qnum": 29,
@@ -406,7 +406,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "운영체제의 작업 스케줄링가 문제에서 요구한 틀린 설명이다.\n정답 기준은 운영체제의 작업 스케줄링이다."
+      "explanation": "운영체제의 작업 스케줄링가 틀린 설명이다."
     },
     {
       "qnum": 30,
@@ -420,7 +420,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "3, 8, 4, 9, 7를 문제 조건과 비교하는 문제.\n정답 기준은 3, 8, 4, 9, 7이다."
+      "explanation": "선택 정렬 1회전: 전체에서 최솟값(3)을 찾아 첫 번째 위치의 값(8)과 교환한다. [8,3,4,9,7] → [3,8,4,9,7]."
     },
     {
       "qnum": 31,
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "개방 주소법(Open Addressing)가 문제에서 요구한 틀린 설명이다.\n제곱법(Mid-Square) · 숫자 분석법(Digit Analysis) · 제산법(Division) → 각각 해당하지 않음"
+      "explanation": "개방 주소법(Open Addressing)가 틀린 설명이다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "ESB가 문제에서 요구한 틀린 설명이다.\n정답 기준은 ESB이다."
+      "explanation": "ESB가 틀린 설명이다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "D, A, B, C가 문제에서 요구한 틀린 설명이다.\n정답 기준은 D, A, B, C이다."
+      "explanation": "D, A, B, C가 틀린 설명이다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "중복이 최대화된 코드 작성가 문제에서 요구한 틀린 설명이다.\n정답 기준은 중복이 최대화된 코드 작성이다."
+      "explanation": "중복이 최대화된 코드 작성가 틀린 설명이다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "valance가 문제에서 요구한 틀린 설명이다.\n정답 기준은 valance이다."
+      "explanation": "valance가 틀린 설명이다."
     },
     {
       "qnum": 36,
@@ -504,7 +504,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "인수 테스트를 문제 조건과 비교하는 문제.\n정답 기준은 인수 테스트이다."
+      "explanation": "알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계이며, 이를 인수 테스트이라 한다."
     },
     {
       "qnum": 37,
@@ -518,7 +518,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "테스트 대상 모듈이 호출하는 하위 모듈의 역할을 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "테스트 대상 모듈이 호출하는 하위 모듈의 역할을 한다.가 틀린 설명이다."
     },
     {
       "qnum": 38,
@@ -532,13 +532,13 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "패키징은 개발자 중심으로 진행한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "패키징은 개발자 중심으로 진행한다.가 틀린 설명이다."
     },
     {
       "qnum": 39,
       "stem": "연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
       "options": [
-        "노드의 삽입이나 삭제가 쉽다. 정보처리기사 필기 기출문제",
+        "노드의 삽입이나 삭제가 쉽다.",
         "노드들이 포인터로 연결되어 검색이 빠르다.",
         "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.",
         "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다."
@@ -546,7 +546,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "노드들이 포인터로 연결되어 검색이 빠르다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "노드들이 포인터로 연결되어 검색이 빠르다.가 틀린 설명이다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정를 문제 조건과 비교하는 문제.\n컴퓨터 처리가 불가 · 알고리즘 입력 데이터 수가 한 개 · 알고리즘 길이가 입력 데이터보다 작음 → 각각 해당하지 않음"
+      "explanation": "알고리즘 시간 복잡도 O(1)이 의미하는이 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정이다."
     },
     {
       "qnum": 41,
@@ -574,7 +574,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "개체 무결성 규정은 한 릴레이션의 기본키를 구성하는 어떠한 속성값도 널(NULL) 값이나 중복값을 가질 수 없음을 규정하 는 것이다.를 문제 조건과 비교하는 문제."
+      "explanation": "개체 무결성(Entity Integrity): 기본키를 구성하는 속성은 NULL 값이나 중복값을 가질 수 없다."
     },
     {
       "qnum": 42,
@@ -588,7 +588,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "부분 완료는 트랜잭션의 일부 연산만이 완료되어 Commit된 상태를 의미한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "부분 완료는 트랜잭션의 일부 연산만이 완료되어 Commit된 상태를 의미한다.가 틀린 설명이다."
     },
     {
       "qnum": 43,
@@ -597,12 +597,12 @@
         "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 한다.",
         "트랜잭션의 수행과 관계 없이 데이터베이스가 가지고 있는 고 정 요소는 일관되어야 한다.",
         "둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없다.",
-        "Commit과 Rollback 명령어에 의해 보장받는 트랜잭션의 특성 은 일관성이다. -"
+        "Commit과 Rollback 명령어에 의해 보장받는 트랜잭션의 특성 은 일관성이다."
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Commit과 Rollback 명령어에 의해 보장받는 트랜잭션의 특성 은 일관성이다. -가 문제에서 요구한 틀린 설명이다."
+      "explanation": "Commit과 Rollback 명령어에 의해 보장받는 트랜잭션의 특성 은 일관성이다. -가 틀린 설명이다."
     },
     {
       "qnum": 44,
@@ -616,7 +616,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스 템의 성능이 향상된다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스 템의 성능이 향상된다.가 틀린 설명이다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "Range Partitioning를 문제 조건과 비교하는 문제.\nHash Partitioning · Composite Partitioning · List Partitioning → 각각 해당하지 않음"
+      "explanation": "파티셔닝 방식 중 ‘월별, 분기별’과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 것이며, 이를 Range Partitioning이라 한다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "관계(Relationship)를 문제 조건과 비교하는 문제.\n개체(Object) · 속성(Attribute) · 제약 조건(Constraint) → 각각 해당하지 않음"
+      "explanation": "데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준이며, 이를 관계(Relationship)이라 한다."
     },
     {
       "qnum": 47,
@@ -658,7 +658,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.를 문제 조건과 비교하는 문제."
+      "explanation": "ALTER TABLE ... DROP ... CASCADE: 해당 속성을 제거하면서 그 속성을 참조하는 다른 테이블의 속성도 연쇄적으로 함께 제거한다."
     },
     {
       "qnum": 48,
@@ -672,7 +672,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "논리적 데이터베이스 설계를 문제 조건과 비교하는 문제.\n정답 기준은 논리적 데이터베이스 설계이다."
+      "explanation": "물리적 데이터베이스를 설계하는 전 단계로서, 데이터 모델링이라 불리는 데이터베이스 설계 단계이며, 이를 논리적 데이터베이스 설계이라 한다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "결정자가 모두 후보키인 정규형은 제3정규형이다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "결정자가 모두 후보키인 정규형은 제3정규형이다.가 틀린 설명이다."
     },
     {
       "qnum": 50,
@@ -695,12 +695,12 @@
         "특정 DBMS를 고려하여 제작하지 않는다.",
         "개체는 마름모, 속성은 사각형을 이용하여 표현한다.",
         "개념적 데이터베이스 단계에서 제작된다.",
-        "E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다. 정보처리기사 필기 기출문제"
+        "E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다."
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "개체는 마름모, 속성은 사각형을 이용하여 표현한다.를 문제 조건과 비교하는 문제."
+      "explanation": "개체-관계(E-R) 모델에 대한 설명으로 잘못된이 개체는 마름모, 속성은 사각형을 이용하여 표현한다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "한 릴레이션에는 동일한 이름의 속성이 있을 수 있다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "한 릴레이션에는 동일한 이름의 속성이 있을 수 있다.가 틀린 설명이다."
     },
     {
       "qnum": 52,
@@ -728,7 +728,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "SELECT를 문제 조건과 비교하는 문제.\n정답 기준은 SELECT이다."
+      "explanation": "SELECT는 이 범주에 해당하지 않는다. 이 범주에는 CREATE·ALTER·DROP 등이 포함된다."
     },
     {
       "qnum": 53,
@@ -742,7 +742,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "대체키는 슈퍼키 중에서 기본키를 제외한 나머지 키를 의미한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "대체키는 슈퍼키 중에서 기본키를 제외한 나머지 키를 의미한다.가 틀린 설명이다."
     },
     {
       "qnum": 54,
@@ -756,7 +756,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.가 틀린 설명이다."
     },
     {
       "qnum": 55,
@@ -770,7 +770,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "로킹 단위가 크면 병행 제어 기법이 복잡해진다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "로킹 단위가 크면 병행 제어 기법이 복잡해진다.가 틀린 설명이다."
     },
     {
       "qnum": 56,
@@ -784,7 +784,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "시스템을 위한 정보를 포함하는 시스템 데이터베이스이므로 일반 사용자는 SQL을 이용하여 내용을 검색해 볼 수 없다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "시스템을 위한 정보를 포함하는 시스템 데이터베이스이므로 일반 사용자는 SQL을 이용하여 내용을 검색해 볼 수 없다.가 틀린 설명이다."
     },
     {
       "qnum": 57,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "이벤트가 발생할 때마다 관련 작업이 자동으로 수행되는 절차 형 SQL이다.를 문제 조건과 비교하는 문제."
+      "explanation": "이벤트가 발생할 때마다 관련 작업이 자동으로 수행되는 절차 형 SQL이다."
     },
     {
       "qnum": 58,
@@ -807,12 +807,12 @@
         "관계 대수는 원래 수학의 프레디킷 해석에 기반을 두고 있다.",
         "관계 대수로 표현한 식은 관계 해석으로 표현할 수 있다.",
         "관계 해석은 관계 데이터의 연산을 표현하는 방법이다.",
-        "관계 해석은 원하는 정보가 무엇이라는 것만 정의하는 비절차 적인 특징을 가지고 있다. -"
+        "관계 해석은 원하는 정보가 무엇이라는 것만 정의하는 비절차 적인 특징을 가지고 있다."
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "관계 대수는 원래 수학의 프레디킷 해석에 기반을 두고 있다.를 문제 조건과 비교하는 문제."
+      "explanation": "관계 대수와 관계 해석에 대한 설명으로 옳지 않는이 관계 대수는 원래 수학의 프레디킷 해석에 기반을 두고 있다."
     },
     {
       "qnum": 59,
@@ -826,7 +826,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "고가용성 솔루션(HACMP)를 문제 조건과 비교하는 문제.\n정답 기준은 고가용성 솔루션(HACMP)이다."
+      "explanation": "각 시스템 간에 공유 디스크를 중심으로 클러스터링으 로 엮어 다수의 시스템을 동시에 연결할 수 있다. 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. 이를 고가용성 솔루션(HACMP)이라 한다."
     },
     {
       "qnum": 60,
@@ -840,7 +840,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "CRUD 분석를 문제 조건과 비교하는 문제.\n정답 기준은 CRUD 분석이다."
+      "explanation": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세 스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것이며, 이를 CRUD 분석이라 한다."
     },
     {
       "qnum": 61,
@@ -854,7 +854,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "세션 계층를 문제 조건과 비교하는 문제.\n정답 기준은 세션 계층이다."
+      "explanation": "두 응용 프로세스 간의 통신에 대한 제어 구조를 제공 한다. 연결의 생성, 관리, 종료를 위해 토큰을 사용한다. 이를 세션 계층이라 한다."
     },
     {
       "qnum": 62,
@@ -868,11 +868,11 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "0를 문제 조건과 비교하는 문제.\n정답 기준은 0이다."
+      "explanation": "r1=(3<4)&&(4<=4)=1, r2=(3>3)||(4<=5)=1, r3=!5=0. r1-r2+r3 = 1-1+0 = 0."
     },
     {
       "qnum": 63,
-      "stem": "다음 C언어 프로그램 실행 후, ‘c’를 입력하였을 때 출력 결과는? #include <stdio.h> main() { char ch; scanf(\"%c\", &ch); switch (ch) { case 'a': printf(\"one \"); case 'b': printf(\"two \"); case 'c': printf(\"three \"); break; case 'd': printf(\"four \"); break; } } 정보처리기사 필기 기출문제",
+      "stem": "다음 C언어 프로그램 실행 후, ‘c’를 입력하였을 때 출력 결과는? #include <stdio.h> main() { char ch; scanf(\"%c\", &ch); switch (ch) { case 'a': printf(\"one \"); case 'b': printf(\"two \"); case 'c': printf(\"three \"); break; case 'd': printf(\"four \"); break; } }",
       "options": [
         "one",
         "one two",
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "three를 문제 조건과 비교하는 문제.\n정답 기준은 three이다."
+      "explanation": "'c' 입력 시 case 'c'에서 매칭되어 \"three\"를 출력 후 break로 탈출한다. break 없는 case는 다음 case까지 연속 실행(fall-through)되므로 break 위치가 중요하다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "!(a || b)를 문제 조건과 비교하는 문제.\n정답 기준은 !(a || b)이다."
+      "explanation": "De Morgan 법칙: !(A || B) = !A && !B. for문에서 !a && !b 조건과 !(a || b)는 동치다."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "53 44를 문제 조건과 비교하는 문제.\n정답 기준은 53 44이다."
+      "explanation": "\"53t44\".split(\"t\") → [\"53\",\"44\"]. map(int,...)으로 정수 변환 후 a=53, b=44. print(a, b)는 공백으로 구분해 53 44를 출력한다."
     },
     {
       "qnum": 66,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "우선순위 계산식 값이 낮을수록 우선순위가 높다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "우선순위 계산식 값이 낮을수록 우선순위가 높다.가 틀린 설명이다."
     },
     {
       "qnum": 67,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "사용자가 입력한 bit만큼 메모리를 할당한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "사용자가 입력한 bit만큼 메모리를 할당한다.가 틀린 설명이다."
     },
     {
       "qnum": 68,
@@ -952,7 +952,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "프로세스는 스레드 내의 작업단위를 의미하며, 경량 스레드라 고도 불린다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "프로세스는 스레드 내의 작업단위를 의미하며, 경량 스레드라 고도 불린다.가 틀린 설명이다."
     },
     {
       "qnum": 69,
@@ -966,7 +966,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "4, 1, 3를 문제 조건과 비교하는 문제.\n정답 기준은 4, 1, 3이다."
+      "explanation": "FIFO 알고리즘은 가장 오래 전에 적재된 페이지를 교체한다. 3프레임에서 참조 순서를 추적하면 마지막 프레임에 4,1,3이 남는다."
     },
     {
       "qnum": 70,
@@ -975,12 +975,12 @@
         "스레드(Thread)",
         "스래싱(Thrasing)",
         "페이지부재(Page Fault)",
-        "워킹셋(Working Set) -"
+        "워킹셋(Working Set)"
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "스래싱(Thrasing)를 문제 조건과 비교하는 문제.\n정답 기준은 스래싱(Thrasing)이다."
+      "explanation": "프로세스 처리 도중, 참조할 페이지가 주기억장치에 없어 프로세스 처리시간보다 페이지 교체에 소요되는 시간이 더 많아지는 현상이며, 이를 스래싱(Thrasing)이라 한다."
     },
     {
       "qnum": 71,
@@ -994,7 +994,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "IPv6는 IPv4에 비해 자료 전송 속도가 느리다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "IPv6는 IPv4에 비해 자료 전송 속도가 느리다.가 틀린 설명이다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "Garbage Collector를 문제 조건과 비교하는 문제.\nHeap Collector · Memory Collector · Variable Collector → 각각 해당하지 않음"
+      "explanation": "JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈이며, 이를 Garbage Collector이라 한다."
     },
     {
       "qnum": 73,
@@ -1022,7 +1022,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "fork를 문제 조건과 비교하는 문제.\n정답 기준은 fork이다."
+      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어이 fork이다."
     },
     {
       "qnum": 74,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Linear wait가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Linear wait이다."
+      "explanation": "Linear wait가 틀린 설명이다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "CSMA/CD를 문제 조건과 비교하는 문제.\n정답 기준은 CSMA/CD이다."
+      "explanation": "IEEE 802.3 LAN에서 사용되는 전송 매체 접속 제어(MAC)이며, 이를 CSMA/CD이라 한다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Request가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Request이다."
+      "explanation": "Request가 틀린 설명이다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "ARP를 문제 조건과 비교하는 문제.\n정답 기준은 ARP이다."
+      "explanation": "TCP/IP에서 사용되는 논리주소를 물리주소로 변환시켜 주는 프로토 콜이며, 이를 ARP이라 한다."
     },
     {
       "qnum": 78,
@@ -1092,7 +1092,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.가 틀린 설명이다."
     },
     {
       "qnum": 79,
@@ -1106,7 +1106,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용 이 가능하게 해준다를 문제 조건과 비교하는 문제."
+      "explanation": "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용 이 가능하게 해준다이다."
     },
     {
       "qnum": 80,
@@ -1115,12 +1115,12 @@
         "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.",
         "문자열 처리 함수로 strlen()이 포함되어 있다.",
         "표준 입출력 라이브러리이다.",
-        "삼각 함수, 제곱근, 지수 등 수학적인 함수를 내장하고 있다. 정보처리기사 필기 기출문제"
+        "삼각 함수, 제곱근, 지수 등 수학적인 함수를 내장하고 있다."
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.를 문제 조건과 비교하는 문제."
+      "explanation": "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다이다."
     },
     {
       "qnum": 81,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드 함으로써 시스템에 손상을 준다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드 함으로써 시스템에 손상을 준다.가 틀린 설명이다."
     },
     {
       "qnum": 82,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "Worm를 문제 조건과 비교하는 문제.\n정답 기준은 Worm이다."
+      "explanation": "악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하 거나 메일로 전파되며 스스로를 증식하는 것이며, 이를 Worm이라 한다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있다는 것을 의미한다.를 문제 조건과 비교하는 문제."
+      "explanation": "시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있다는 것을 의미한다."
     },
     {
       "qnum": 84,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "FTP SYN SEGMENT 탐지가 문제에서 요구한 틀린 설명이다.\n비동기화 상태 탐지 · ACK STORM 탐지 · 패킷의 유실 및 재전송 증가 탐지 → 각각 해당하지 않음"
+      "explanation": "FTP SYN SEGMENT 탐지가 틀린 설명이다."
     },
     {
       "qnum": 85,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "휘발성가 문제에서 요구한 틀린 설명이다.\n정답 기준은 휘발성이다."
+      "explanation": "휘발성가 틀린 설명이다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "20개월를 문제 조건과 비교하는 문제.\n정답 기준은 20개월이다."
+      "explanation": "LOC 기법에 의하여 예측된 총 라인수가 36,000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간이며, 이를 20개월이라 한다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "UFP(Unadjusted Function Point)를 계산한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "UFP(Unadjusted Function Point)를 계산한다.가 틀린 설명이다."
     },
     {
       "qnum": 88,
@@ -1227,12 +1227,12 @@
         "WCDMA",
         "WPA",
         "SSL",
-        "SHA -"
+        "SHA"
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "WPA를 문제 조건과 비교하는 문제.\n정답 기준은 WPA이다."
+      "explanation": "Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준이며, 이를 WPA이라 한다."
     },
     {
       "qnum": 89,
@@ -1246,7 +1246,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "AES를 문제 조건과 비교하는 문제.\n정답 기준은 AES이다."
+      "explanation": "DES의 보안 문제를 해결하기 위해 개발되었다. NIST에서 개발한 개인키 암호화 알고리즘이다. 이를 AES이라 한다."
     },
     {
       "qnum": 90,
@@ -1260,7 +1260,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.가 틀린 설명이다."
     },
     {
       "qnum": 91,
@@ -1274,7 +1274,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "브라우터는 전송되는 신호가 전송 선로의 특성 및 외부 충격 등의 요인으로 인해 원래의 형태와 다르게 왜곡되거나 약해질 경우 원래의 신호 형태로 재생하여 다시 전송하는 역할을 수행 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "브라우터는 전송되는 신호가 전송 선로의 특성 및 외부 충격 등의 요인으로 인해 원래의 형태와 다르게 왜곡되거나 약해질 경우 원래의 신호 형태로 재생하여 다시 전송하는 역할을 수행 한다.가 틀린 설명이다."
     },
     {
       "qnum": 92,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.가 틀린 설명이다."
     },
     {
       "qnum": 93,
@@ -1302,11 +1302,11 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "Spanning Tree Algorithm를 문제 조건과 비교하는 문제.\nDiffie-Hellman Algorithm · Hash Algorithm · Digital Signature Algorithm → 각각 해당하지 않음"
+      "explanation": "브리지와 구내 정보 통신망(LAN)으로 구성된 통신망에서 루프(폐회 로)를 형성하지 않으면서 연결을 설정하는 것이며, 이를 Spanning Tree Algorithm이라 한다."
     },
     {
       "qnum": 94,
-      "stem": "다음 내용이 설명하는 것은? ㆍ블록체인(Blockchain) 개발환경을 클라우드로 서비스하 는 개념 ㆍ블록체인 네트워크에 노드의 추가 및 제거가 용이 ㆍ블록체인의 기본 인프라를 추상화하여 블록체인 응용프 로그램을 만들 수 있는 클라우드 컴퓨팅 플랫폼 정보처리기사 필기 기출문제",
+      "stem": "다음 내용이 설명하는 것은? ㆍ블록체인(Blockchain) 개발환경을 클라우드로 서비스하 는 개념 ㆍ블록체인 네트워크에 노드의 추가 및 제거가 용이 ㆍ블록체인의 기본 인프라를 추상화하여 블록체인 응용프 로그램을 만들 수 있는 클라우드 컴퓨팅 플랫폼",
       "options": [
         "OTT",
         "BaaS",
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "BaaS를 문제 조건과 비교하는 문제.\n정답 기준은 BaaS이다."
+      "explanation": "블록체인(Blockchain) 개발환경을 클라우드로 서비스하 는 개념 블록체인 네트워크에 노드의 추가 및 제거가 용이. 이를 BaaS이라 한다."
     },
     {
       "qnum": 95,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "이식를 문제 조건과 비교하는 문제.\n정답 기준은 이식이다."
+      "explanation": "소프트웨어 재공학의 주요 활동 중 기존 소프트웨어를 다른 운영체제 나 하드웨어 환경에서 사용할 수 있도록 변환하는 것이며, 이를 이식이라 한다."
     },
     {
       "qnum": 96,
@@ -1344,7 +1344,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "AES를 문제 조건과 비교하는 문제.\n정답 기준은 AES이다."
+      "explanation": "AES는 이 범주에 해당하지 않는다. 이 범주에는 MD4·MD5·SHA-1 등이 포함된다."
     },
     {
       "qnum": 97,
@@ -1358,7 +1358,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "SAN를 문제 조건과 비교하는 문제.\n정답 기준은 SAN이다."
+      "explanation": "네트워크상에 광채널 스위치의 이점인 고속 전송과 장 거리 연결 및 멀티 프로토콜 기능을 활용 각기 다른 운영체제를 가진 여러 기종들이 네트워크상 에서 동일 저장장치의 데이터를 공유하게 함으로써, 여 러 개의 저장장치나 백업 장비를 단일화시킨 시스템. 이를 SAN이라 한다."
     },
     {
       "qnum": 98,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Mesh Network를 문제 조건과 비교하는 문제.\n정답 기준은 Mesh Network이다."
+      "explanation": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈네트워킹, 공공 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것이며, 이를 Mesh Network이라 한다."
     },
     {
       "qnum": 99,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "작업 일정을 한눈에 볼 수 있도록 해주며 막대 그래프의 형태로 표현한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "작업 일정을 한눈에 볼 수 있도록 해주며 막대 그래프의 형태로 표현한다.가 틀린 설명이다."
     },
     {
       "qnum": 100,
@@ -1395,12 +1395,12 @@
         "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.",
         "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면 서 클라우드 HSM 용어가 자주 등장하였다.",
         "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.",
-        "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트 웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다. -"
+        "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트 웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트 웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다. -가 문제에서 요구한 틀린 설명이다."
+      "explanation": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트 웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다. -가 틀린 설명이다."
     }
   ]
 }

@@ -14,7 +14,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "ⓒ, ⓓ를 문제 조건과 비교하는 문제.\n정답 기준은 ⓒ, ⓓ이다."
+      "explanation": "뷰(View)에 대한 설명 중 옳은 내용으로만 나열한 것은? ⓐ 뷰는 저장장치 내에 물리적으로 존재한다. ⓑ 뷰가 정의된 기본 테이블이 삭제되더라도 뷰는 자동적으로 삭제되지 않는다. ⓒ DBA는 보안 측면에서 뷰를 활용할 수 있다. ⓓ 뷰로 구성된 내용에 대한 삽입, 삭제, 갱신 연산에는 제약이 따른다.이며, 이를 ⓒ, ⓓ이라 한다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "3를 문제 조건과 비교하는 문제.\n정답 기준은 3이다."
+      "explanation": "아래 그림에서 트리의 차수(degree)를 구하면이 3이다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Conceptual Schema를 문제 조건과 비교하는 문제.\nInternal Schema · External Schema · Foreign Schema → 각각 해당하지 않음"
+      "explanation": "다음은 무엇에 대한 설명인가? It defines the overall logical structure of the database. It is a description of all the data items used by the application programs or users and only one it can exist per database.이며, 이를 Conceptual Schema이라 한다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "6를 문제 조건과 비교하는 문제.\n정답 기준은 6이다."
+      "explanation": "다음 트리의 터미널 노드 수이 6이다."
     },
     {
       "qnum": 5,
@@ -70,7 +70,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "오버플로우 처리를 문제 조건과 비교하는 문제.\n정답 기준은 오버플로우 처리이다."
+      "explanation": "스택 알고리즘에서 T 가 스택 포인터이고, m이 스택의 길이일 때, 서브루틴 “AA”가 처리해야 하는 것은? T ← T＋1 if T 〉 m then goto AA else STACK(T) ← item이며, 이를 오버플로우 처리이라 한다."
     },
     {
       "qnum": 6,
@@ -84,7 +84,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "Synonym를 문제 조건과 비교하는 문제.\n정답 기준은 Synonym이다."
+      "explanation": "해싱에서 동일한 홈 주소로 인하여 충돌이 일어난 레코드들의 집합을 의미하는 것이며, 이를 Synonym이라 한다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "3, 8, 4, 9, 7를 문제 조건과 비교하는 문제.\n정답 기준은 3, 8, 4, 9, 7이다."
+      "explanation": "다음 자료에 대하여 “selection sort”를 사용하여 오름차순으로 정렬할 경우 PASS 1의 결과는? 【초기 상태】 8, 3, 4, 9, 7이며, 이를 3, 8, 4, 9, 7이라 한다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "WHERE 조건절이 없는 DELETE 명령을 수행하면 DROP TABLE 명령을 수행했을 때와 같은 효과를 얻을 수 있다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "WHERE 조건절이 없는 DELETE 명령을 수행하면 DROP TABLE 명령을 수행했을 때와 같은 효과를 얻을 수 있다.가 틀린 설명이다."
     },
     {
       "qnum": 9,
@@ -126,7 +126,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "로킹 단위가 작아지면 병행성 수준이 낮아진다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "로킹 단위가 작아지면 병행성 수준이 낮아진다.가 틀린 설명이다."
     },
     {
       "qnum": 10,
@@ -140,7 +140,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "사용자에 대한 응답시간 최대화가 문제에서 요구한 틀린 설명이다.\n정답 기준은 사용자에 대한 응답시간 최대화이다."
+      "explanation": "사용자에 대한 응답시간 최대화가 틀린 설명이다."
     },
     {
       "qnum": 11,
@@ -154,7 +154,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "트랜잭션를 문제 조건과 비교하는 문제.\n정답 기준은 트랜잭션이다."
+      "explanation": "일련의 연산 집합으로 데이터베이스의 상태를 변환시키기 위하여 논리적 기능을 수행하는 하나의 작업 단위이며, 이를 트랜잭션이라 한다."
     },
     {
       "qnum": 12,
@@ -168,7 +168,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "ⓐ 130 ⓑ 3를 문제 조건과 비교하는 문제.\n정답 기준은 ⓐ 130 ⓑ 3이다."
+      "explanation": "SELECT DEPT, COUNT(*)는 학과별 학생 수를 그룹으로 묶어 반환하므로 ⓐ 전체 행 수=130, ⓑ 그룹 수(학과 수)=3이다."
     },
     {
       "qnum": 13,
@@ -182,7 +182,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "SELECT를 문제 조건과 비교하는 문제.\n정답 기준은 SELECT이다."
+      "explanation": "SQL언어의 데이터 정의어(DDL)에 해당되지 않는이 SELECT이다."
     },
     {
       "qnum": 14,
@@ -196,7 +196,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "애트리뷰트의 수를 문제 조건과 비교하는 문제.\n정답 기준은 애트리뷰트의 수이다."
+      "explanation": "관계 데이터베이스 모델에서 차수(Degree)의 의미이 애트리뷰트의 수이다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 도모한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 도모한다.가 틀린 설명이다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "트리가 문제에서 요구한 틀린 설명이다.\n정답 기준은 트리이다."
+      "explanation": "트리가 틀린 설명이다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "AB＋C*DE＋＋를 문제 조건과 비교하는 문제.\n정답 기준은 AB＋C*DE＋＋이다."
+      "explanation": "중위 표기법(infix)의 수식 (A＋B)*C＋(D＋E)을 후위 표기법(postfix)으로 옳게 표기한이며, 이를 AB＋C*DE＋＋이라 한다."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "카티션 프로덕트를 문제 조건과 비교하는 문제.\n정답 기준은 카티션 프로덕트이다."
+      "explanation": "다음은 관계 대수의 수학적 표현식이다. 해당되는 연산은? R×S={r's|r∈R∧s∈S} r=〈ɑ₁, ɑ₂ ⋯, ɑn〉 s=〈b₁, b₂ ⋯, bm〉이며, 이를 카티션 프로덕트이라 한다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "널(NULL)은 공백(space)도, 영(zero)도 아닌 부재 정보(missing information)를 나타낸다.를 문제 조건과 비교하는 문제."
+      "explanation": "데이터베이스에서 사용되는 널(NULL)에 대한 설명으로 가장 적절한이며, 이를 널(NULL)은 공백(space)도, 영(zero)도 아닌 부재 정보(missing information)를 나타낸다.이라 한다."
     },
     {
       "qnum": 20,
@@ -280,7 +280,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Atomicity를 문제 조건과 비교하는 문제.\n정답 기준은 Atomicity이다."
+      "explanation": "트랜잭션의 연산은 데이터베이스에 모두 반영되든지 아니면 전혀 반영되지 않아야 한다. 이를 Atomicity이라 한다."
     },
     {
       "qnum": 21,
@@ -294,7 +294,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "그레이 코드(gray Code)는 대표적인 가중(weighted) 코드로 인접하나 코드의 비트가 1비트만 변하여 산술 연산에 적합하다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "그레이 코드(gray Code)는 대표적인 가중(weighted) 코드로 인접하나 코드의 비트가 1비트만 변하여 산술 연산에 적합하다.가 틀린 설명이다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "블록 멀티플렉서 채널은 하나의 데이터 경로를 경유한다는 점과 고속의 입출력 장치를 취급한다는 점에서 바이트 멀티플렉서 채널과 selector 채널을 결합한 형태의 채널이다.를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 블록 멀티플렉서 채널은 하나의 데이터 경로를 경유한다는 점과 고속의 입출력 장치를 취급한다는 점에서 바이트 멀티플렉서 채널과 selector 채널을 결합한 형태의 채널이다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "1010를 문제 조건과 비교하는 문제.\n정답 기준은 1010이다."
+      "explanation": "Gray code 1111을 2진 코드로 바꾸면이 1010이다."
     },
     {
       "qnum": 24,
@@ -336,7 +336,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "status register를 문제 조건과 비교하는 문제.\n정답 기준은 status register이다."
+      "explanation": "CPU 내부의 레지스터 중 프로그램 제어와 관계가 있는이 status register이다."
     },
     {
       "qnum": 25,
@@ -350,7 +350,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "프로그램된 I/O를 문제 조건과 비교하는 문제.\n정답 기준은 프로그램된 I/O이다."
+      "explanation": "데이터를 전송할 때 입, 출력 버스를 통하여 프로세서와 주변장치 사이에서 이루어지며, 데이터의 전송을 확인하기 위해서 상태 레지스터를 사용하는 전송 모드이며, 이를 프로그램된 I/O이라 한다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "직접 주소를 문제 조건과 비교하는 문제.\n정답 기준은 직접 주소이다."
+      "explanation": "명령어의 주소(address)부를 유효주소로 이용하는이 직접 주소이다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "S=x⊕y, C=xy를 문제 조건과 비교하는 문제.\n정답 기준은 S=x⊕y, C=xy이다."
+      "explanation": "다음 Half-Adder의 진리표를 참조하여 캐리(C)와 합(S)을 구한 결과가 옳은이며, 이를 S=x⊕y, C=xy이라 한다."
     },
     {
       "qnum": 28,
@@ -392,7 +392,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "SVC 인터럽트를 문제 조건과 비교하는 문제.\n정답 기준은 SVC 인터럽트이다."
+      "explanation": "프로그램 처리 중 명령의 요청에 의해 발생하는 대표적인 인터럽트이며, 이를 SVC 인터럽트이라 한다."
     },
     {
       "qnum": 29,
@@ -406,7 +406,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "DMA를 문제 조건과 비교하는 문제.\n정답 기준은 DMA이다."
+      "explanation": "데이터 입출력 전송이 CPU를 통하지 않고 직접 주기억 장치와 주변장치 사이에서 수행되는 것이며, 이를 DMA이라 한다."
     },
     {
       "qnum": 30,
@@ -420,7 +420,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "I/O device 처리 속도가 문제에서 요구한 틀린 설명이다.\n정답 기준은 I/O device 처리 속도이다."
+      "explanation": "I/O device 처리 속도가 틀린 설명이다."
     },
     {
       "qnum": 31,
@@ -434,7 +434,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "패리티 디스크의 액세스 집중를 문제 조건과 비교하는 문제.\n정답 기준은 패리티 디스크의 액세스 집중이다."
+      "explanation": "RAID-5는 RAID-4의 어떤 문제점을 보완하기 위하여 개발되었는이며, 이를 패리티 디스크의 액세스 집중이라 한다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "F＝A＋B를 문제 조건과 비교하는 문제.\n정답 기준은 F＝A＋B이다."
+      "explanation": "논리회로를 바르게 표시한 논리식이 F＝A＋B이다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "우선순위를 변경하기 어렵다.가 문제에서 요구한 틀린 설명이다.\n정답 기준은 우선순위를 변경하기 어렵다.이다."
+      "explanation": "우선순위를 변경하기 어렵다.가 틀린 설명이다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "제어기능를 문제 조건과 비교하는 문제.\n정답 기준은 제어기능이다."
+      "explanation": "명령어의 기능 중에서 동일한 명령을 반복 실행하거나, 명령의 실행 순서를 변경시키는 기능이며, 이를 제어기능이라 한다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "11111110를 문제 조건과 비교하는 문제.\n정답 기준은 11111110이다."
+      "explanation": "다음 그림과 같이 A, B 2개의 레지스터에 있는 자료에 대하여 ALU가 OR 연산을 행할 때 출력 레지스터 C의 내용이며, 이를 11111110이라 한다."
     },
     {
       "qnum": 36,
@@ -504,7 +504,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "쌍안정 논리 회로의 성질을 응용한다.가 문제에서 요구한 틀린 설명이다.\nSRAM에 비해 기억 용량이 크다. · 주기억 장치 구성에 사용된다. · SRAM에 비해 속도가 느리다. → 각각 해당하지 않음"
+      "explanation": "쌍안정 논리 회로의 성질을 응용한다.가 틀린 설명이다."
     },
     {
       "qnum": 37,
@@ -518,7 +518,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "다중처리기는 다수의 복합 운영체제에 의해 제어된다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "다중처리기는 다수의 복합 운영체제에 의해 제어된다.가 틀린 설명이다."
     },
     {
       "qnum": 38,
@@ -532,7 +532,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "24F8H 번지를 문제 조건과 비교하는 문제.\n정답 기준은 24F8H 번지이다."
+      "explanation": "분기명령어가 저장되어 있는 기억장치 위치의 주소가 256AH이고, 명령어에 지정된 변위 값이 –75H인 경우 분기되는 주소의 위치는? (단, 분기 명령어 길이는 3바이트이고 상대 주소모드를 사용한다고 가정한다.)이며, 이를 24F8H 번지이라 한다."
     },
     {
       "qnum": 39,
@@ -546,7 +546,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "ⓒⓔⓓⓑⓐ를 문제 조건과 비교하는 문제.\n정답 기준은 ⓒⓔⓓⓑⓐ이다."
+      "explanation": "인터럽트 작동 순서가 올바른 것은? ⓐ 리턴에 의한 복귀 ⓑ 벡터 인터럽트 처리 ⓒ CPU에게 인터럽트 요청 ⓓ 인터럽트 인지신호 발생 ⓔ 현재 수행중인 명령을 완료하고 복귀 주소를 저장이며, 이를 ⓒⓔⓓⓑⓐ이라 한다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "128페이지, 8블록를 문제 조건과 비교하는 문제.\n정답 기준은 128페이지, 8블록이다."
+      "explanation": "64Kbyte인 주소 공간(address space)과 4Kbyte인 기억 공간(memory space)을 가진 컴퓨터의 경우 한 페이지(page)가 512byte로 구성되었다면 페이지와 블록 수는 각각 얼마인이며, 이를 128페이지, 8블록이라 한다."
     },
     {
       "qnum": 41,
@@ -574,7 +574,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "{2, 3, 5, 6, 7}를 문제 조건과 비교하는 문제.\n정답 기준은 {2, 3, 5, 6, 7}이다."
+      "explanation": "Working set W(t,w)는 t-w 시간부터 t 까지 참조된 page들의 집합을 말한다. 그 시간에 참조된 페이지가 {2, 3, 5, 5, 6, 3, 7}이라면 working set이며, 이를 {2, 3, 5, 6, 7}이라 한다."
     },
     {
       "qnum": 42,
@@ -588,7 +588,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "2단계 디렉토리 구조를 문제 조건과 비교하는 문제.\n정답 기준은 2단계 디렉토리 구조이다."
+      "explanation": "디렉토리 구조 중 각각의 사용자에 대한 MFD와 각 사용자별로 만들어지는 UFD로 구성되며, MFD는 각 사용자의 이름이나 계정 번호 및 UFD를 가리키는 포인터를 갖고 있으며, UFD는 오직 한 사용자가 갖고 있는 파일들에 대한 파일 정보만 갖고 있는 것이며, 이를 2단계 디렉토리 구조이라 한다."
     },
     {
       "qnum": 43,
@@ -602,7 +602,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Translation가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Translation이다."
+      "explanation": "Translation가 틀린 설명이다."
     },
     {
       "qnum": 44,
@@ -616,7 +616,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Cycle strategy가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Cycle strategy이다."
+      "explanation": "Cycle strategy가 틀린 설명이다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "파일이 가장 처음 변경된 시간 및 파일의 타입가 문제에서 요구한 틀린 설명이다.\n파일 소유자의 사용자 번호 · 파일이 만들어진 시간 · 데이터가 담긴 블록의 주소 → 각각 해당하지 않음"
+      "explanation": "파일이 가장 처음 변경된 시간 및 파일의 타입가 틀린 설명이다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "“(대기시간＋서비스시간)/서비스시간”의 계산으로 우선순위를 처리한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "“(대기시간＋서비스시간)/서비스시간”의 계산으로 우선순위를 처리한다.가 틀린 설명이다."
     },
     {
       "qnum": 47,
@@ -658,7 +658,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "Context Switching를 문제 조건과 비교하는 문제.\nMonitor · Mutual Exclusion · Semaphore → 각각 해당하지 않음"
+      "explanation": "다중 프로그래밍 시스템에서 OS에 의해 CPU가 할당되는 프로세스를 변경하기 위한 목적으로 현재 CPU를 사용하여 실행되고 있는 프로세스의 상태 정보를 저장하고 제어 권한을 ISR에게 넘기는 작업을 무엇이라 하는 것이며, 이를 Context Switching이라 한다."
     },
     {
       "qnum": 48,
@@ -672,7 +672,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "실행 가능한 목적(object) 프로그램 생성가 문제에서 요구한 틀린 설명이다.\n사용자들 간의 하드웨어의 공동 사용 · 자원의 효과적인 운영을 위한 스케줄링 · 입/출력에 대한 보조역할 → 각각 해당하지 않음"
+      "explanation": "실행 가능한 목적(object) 프로그램 생성가 틀린 설명이다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "보안성 향상를 문제 조건과 비교하는 문제.\n정답 기준은 보안성 향상이다."
+      "explanation": "분산 처리 시스템의 설명으로 가장 적합하지 않은이 보안성 향상이다."
     },
     {
       "qnum": 50,
@@ -700,7 +700,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "380를 문제 조건과 비교하는 문제.\n정답 기준은 380이다."
+      "explanation": "현재 헤드의 위치가 50에 있고, 요청 대기열의 순서가 다음과 같을 경우, C-SCAN 스케줄링 알고리즘에 의한 헤드의 총 이동 거리는 얼마인가? (단, 현재 헤드의 이동 방향은 안쪽이며, 안쪽의 위치는 0으로 가정한다.) 【요청 대기열의 순서】 100, 180, 40, 120, 0, 130, 70, 80, 150, 200이며, 이를 380이라 한다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "ⓐ, ⓑ, ⓒ, ⓓ를 문제 조건과 비교하는 문제.\n정답 기준은 ⓐ, ⓑ, ⓒ, ⓓ이다."
+      "explanation": "UNIX의 특징으로 옳은 내용 모두를 나열한 것은? ⓐ 트리 구조의 파일 시스템을 갖는다. ⓑ 이식성이 높으며, 장치, 프로세스 간의 호환성이 높다. ⓒ 대화식 운영체제이다. ⓓ Multi-User 및 Multi-Tasking을 지원한다.이며, 이를 ⓐ, ⓑ, ⓒ, ⓓ이라 한다."
     },
     {
       "qnum": 52,
@@ -728,7 +728,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "데이터의 압축 및 복원가 문제에서 요구한 틀린 설명이다.\n정답 기준은 데이터의 압축 및 복원이다."
+      "explanation": "데이터의 압축 및 복원가 틀린 설명이다."
     },
     {
       "qnum": 53,
@@ -742,7 +742,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "서비스 프로그램가 문제에서 요구한 틀린 설명이다.\n정답 기준은 서비스 프로그램이다."
+      "explanation": "서비스 프로그램가 틀린 설명이다."
     },
     {
       "qnum": 54,
@@ -756,7 +756,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "STAR를 문제 조건과 비교하는 문제.\n정답 기준은 STAR이다."
+      "explanation": "분산 운영체제 중 다음의 특징을 갖는 구조는? - 모든 사이트는 하나의 호스트에 직접 연결 - 중앙 컴퓨터 장애 시 모든 사이트 간 통신 불가 - 통신 시 최대 두 개의 링크만 필요 - 통신비용 저렴이며, 이를 STAR이라 한다."
     },
     {
       "qnum": 55,
@@ -770,7 +770,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "교착상태가 없어질 때까지 교착상태에 포함된 자원을 하나씩 비선점 시킨다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "교착상태가 없어질 때까지 교착상태에 포함된 자원을 하나씩 비선점 시킨다.가 틀린 설명이다."
     },
     {
       "qnum": 56,
@@ -784,7 +784,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "복구(Recovery)를 문제 조건과 비교하는 문제.\n정답 기준은 복구(Recovery)이다."
+      "explanation": "파일 손상을 막기 위한 파일 보호 기법으로 가장 적합하지 않은이며, 이를 복구(Recovery)이라 한다."
     },
     {
       "qnum": 57,
@@ -798,7 +798,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "페이지 2, 변위 200를 문제 조건과 비교하는 문제.\n정답 기준은 페이지 2, 변위 200이다."
+      "explanation": "페이지 기억장치 할당기법에서, 한 페이지의 크기가 512바이트이고 페이지 번호는 0부터 시작한다면, 논리적인 주소 1224번지는 어디로 변환되는 것이며, 이를 페이지 2, 변위 200이라 한다."
     },
     {
       "qnum": 58,
@@ -812,7 +812,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "-rwxr-xr-x를 문제 조건과 비교하는 문제.\n정답 기준은 -rwxr-xr-x이다."
+      "explanation": "chmod 755는 소유자에게 rwx(7), 그룹에 r-x(5), 기타에 r-x(5) 권한을 부여한다. \"ls\" 결과는 -rwxr-xr-x이다."
     },
     {
       "qnum": 59,
@@ -826,7 +826,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Non-repudiation를 문제 조건과 비교하는 문제.\nAuthentication · Encryption · Decryption → 각각 해당하지 않음"
+      "explanation": "보안의 메커니즘 중 데이터를 송수신한 자가 송수신 사실을 부인할 수 없도록 송수신 증거를 제공하는 것이며, 이를 Non-repudiation이라 한다."
     },
     {
       "qnum": 60,
@@ -840,7 +840,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "Prevention를 문제 조건과 비교하는 문제.\n정답 기준은 Prevention이다."
+      "explanation": "교착상태의 해결 방법 중 점유 및 대기조건 방지, 비선점 조건 방지, 환형 대기조건 방지와 가장 밀접한 관계가 있는 것이며, 이를 Prevention이라 한다."
     },
     {
       "qnum": 61,
@@ -854,7 +854,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "＋를 문제 조건과 비교하는 문제.\n정답 기준은 ＋이다."
+      "explanation": "Data Dictionary에서 자료의 연결을 나타내는 기호이며, 이를 ＋이라 한다."
     },
     {
       "qnum": 62,
@@ -868,7 +868,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Reverse Engineering를 문제 조건과 비교하는 문제.\nAnalysis · Restructuring · Migration → 각각 해당하지 않음"
+      "explanation": "소프트웨어 재공학 활동 중 원시 코드를 분석하여 소프트웨어 관계를 파악하고 기존 시스템의 설계 정보를 재발견하고 다시 제작하는 작업이며, 이를 Reverse Engineering이라 한다."
     },
     {
       "qnum": 63,
@@ -882,7 +882,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "구현 단계에서는 클래스를 절차적 프로그래밍 언어로 기술한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "구현 단계에서는 클래스를 절차적 프로그래밍 언어로 기술한다.가 틀린 설명이다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "데이터 결합도(Data Coupling)는 두 모듈이 매개변수로 자료를 전달할 때 자료구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "데이터 결합도(Data Coupling)는 두 모듈이 매개변수로 자료를 전달할 때 자료구조 형태로 전달되어 이용될 때 데이터가 결합되어 있다고 한다.가 틀린 설명이다."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "Pareto의 법칙를 문제 조건과 비교하는 문제.\n정답 기준은 Pareto의 법칙이다."
+      "explanation": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙이며, 이를 Pareto의 법칙이라 한다."
     },
     {
       "qnum": 66,
@@ -924,7 +924,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "주요 작업경로를 문제 조건과 비교하는 문제.\n정답 기준은 주요 작업경로이다."
+      "explanation": "주요 작업경로는 이 범주에 해당하지 않는다. 이 범주에는 이정표·작업일정·작업기간 등이 포함된다."
     },
     {
       "qnum": 67,
@@ -938,7 +938,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "10000∕(5x2)를 문제 조건과 비교하는 문제.\n정답 기준은 10000∕(5x2)이다."
+      "explanation": "두 명의 개발자가 5개월에 걸쳐 10000 라인의 코드를 개발하였을 때, 월별(person-month) 생산성 측정을 위한 계산 방식으로 가장 적합한이며, 이를 10000∕(5x2)이라 한다."
     },
     {
       "qnum": 68,
@@ -952,7 +952,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "People, Problem, Process를 문제 조건과 비교하는 문제."
+      "explanation": "효과적인 프로젝트 관리를 위한 3P를 옳게 나열한이 People, Problem, Process이다."
     },
     {
       "qnum": 69,
@@ -966,7 +966,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "클래스를 문제 조건과 비교하는 문제.\n정답 기준은 클래스이다."
+      "explanation": "객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한이며, 이를 클래스이라 한다."
     },
     {
       "qnum": 70,
@@ -980,7 +980,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "깊이 우선 통합법 또는 넓이 우선 통합법에 따라 스터브(stub)를 실제 모듈로 대치한다.가 문제에서 요구한 틀린 설명이다.\n검사를 위해 드라이버를 생성한다. · 하위 모듈들을 클러스터로 결합한다. · 하위 모듈에서 상위 모듈 방향으로 통합하면서 검사한다. → 각각 해당하지 않음"
+      "explanation": "깊이 우선 통합법 또는 넓이 우선 통합법에 따라 스터브(stub)를 실제 모듈로 대치한다.가 틀린 설명이다."
     },
     {
       "qnum": 71,
@@ -994,7 +994,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업이 어려운 프로그램을 의미한다.를 문제 조건과 비교하는 문제."
+      "explanation": "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업이 어려운 프로그램을 의미한다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "2를 문제 조건과 비교하는 문제.\n정답 기준은 2이다."
+      "explanation": "어떤 프로그램을 재공학 기술을 적용하여 보수하고자 할 때 Flow Graph가 사용될 수 있다. 다음의 샘플 프로그램에 대한 Flow Graph가 다음 그림과 같을 때 McCabe 식의 Cyclomatic Complexity를 구하면이며, 이를 2이라 한다."
     },
     {
       "qnum": 73,
@@ -1022,7 +1022,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "relational가 문제에서 요구한 틀린 설명이다.\n정답 기준은 relational이다."
+      "explanation": "relational가 틀린 설명이다."
     },
     {
       "qnum": 74,
@@ -1036,7 +1036,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "class testing를 문제 조건과 비교하는 문제.\n정답 기준은 class testing이다."
+      "explanation": "객체지향 테스팅 전략 중에서 Unit Testing에 사용되는 것이며, 이를 class testing이라 한다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "소프트웨어 수명주기의 어느 부분을 지원하느냐에 따라 Organic, Semi-detached Case, Embedded 모드로 분류할 수 있다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "소프트웨어 수명주기의 어느 부분을 지원하느냐에 따라 Organic, Semi-detached Case, Embedded 모드로 분류할 수 있다.가 틀린 설명이다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "신뢰성를 문제 조건과 비교하는 문제.\n정답 기준은 신뢰성이다."
+      "explanation": "소프트웨어 품질 목표 중 주어진 시간동안 주어진 기능을 오류 없이 수행하는 정도를 나타내는 것이며, 이를 신뢰성이라 한다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "컴파일러의 독창성가 문제에서 요구한 틀린 설명이다.\n정답 기준은 컴파일러의 독창성이다."
+      "explanation": "컴파일러의 독창성가 틀린 설명이다."
     },
     {
       "qnum": 78,
@@ -1092,7 +1092,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "진행 중인 소프트웨어 개발 프로젝트에 새로운 개발 인력을 추가로 투입할 경우 의사소통 채널의 증가로 개발 기간이 더 길어진다.를 문제 조건과 비교하는 문제."
+      "explanation": "브룩스(Brooks) 법칙의 의미를 가장 적합하게 설명한이며, 이를 진행 중인 소프트웨어 개발 프로젝트에 새로운 개발 인력을 추가로 투입할 경우 의사소통 채널의 증가로 개발 기간이 더 길어진다.이라 한다."
     },
     {
       "qnum": 79,
@@ -1106,7 +1106,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Mini-spec를 문제 조건과 비교하는 문제.\n정답 기준은 Mini-spec이다."
+      "explanation": "세분화된 자료흐름도에서 최하위 단계 프로세스의 처리 절차를 설명한이며, 이를 Mini-spec이라 한다."
     },
     {
       "qnum": 80,
@@ -1120,7 +1120,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "ⓑ→ⓐ→ⓒ→ⓓ를 문제 조건과 비교하는 문제.\n정답 기준은 ⓑ→ⓐ→ⓒ→ⓓ이다."
+      "explanation": "Bottom-Up Integration Test의 과정이 옳게 나열된 것은? ⓐ “Driver”라는 제어프로그램의 작성 ⓑ 낮은 수준의 모듈들을 “Cluster”로 결합 ⓒ “Cluster” 검사 ⓓ “Driver”를 제거하고 “Cluster”를 상위로 결합이며, 이를 ⓑ→ⓐ→ⓒ→ⓓ이라 한다."
     },
     {
       "qnum": 81,
@@ -1134,7 +1134,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Statistical Time Division Multiplexing를 문제 조건과 비교하는 문제."
+      "explanation": "다중화 방식 중 타임 슬롯(time slot)을 사용자의 요구에 따라 동적으로 할당하여 데이터를 전송할 수 있는 것이며, 이를 Statistical Time Division Multiplexing이라 한다."
     },
     {
       "qnum": 82,
@@ -1148,7 +1148,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "회선접속 → 데이터링크 확립 → 정보 전송 → 데이터링크 해제 → 회선절단를 문제 조건과 비교하는 문제."
+      "explanation": "데이터 전송제어 절차를 순서대로 옳게 나열한이 회선접속 → 데이터링크 확립 → 정보 전송 → 데이터링크 해제 → 회선절단이다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "36를 문제 조건과 비교하는 문제.\n정답 기준은 36이다."
+      "explanation": "입력 아날로그 데이터의 최대 주파수가 18kHz인 정보신호를 PCM 시스템에서 전송하고자 할 때, 요구되는 표본화 주파수(kHz)이며, 이를 36이라 한다."
     },
     {
       "qnum": 84,
@@ -1176,7 +1176,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "성형(Star)를 문제 조건과 비교하는 문제.\n정답 기준은 성형(Star)이다."
+      "explanation": "중앙에 호스트 컴퓨터가 있고 이를 중심으로 터미널들이 연결되는 네트워크 구성 형태(topology)이며, 이를 성형(Star)이라 한다."
     },
     {
       "qnum": 85,
@@ -1190,7 +1190,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Hamming code를 문제 조건과 비교하는 문제.\n정답 기준은 Hamming code이다."
+      "explanation": "데이터 전송 중 한 비트에 에러가 발생했을 경우 이를 수신측에서 정정할 목적으로 사용되는 것이며, 이를 Hamming code이라 한다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "네트워크 계층를 문제 조건과 비교하는 문제.\n정답 기준은 네트워크 계층이다."
+      "explanation": "OSI 7계층 중 통신망을 통하여 패킷을 목적지까지 전달하는 계층이며, 이를 네트워크 계층이라 한다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "각 노드에 들어오는 패킷을 도착된 링크를 제외한 다른 모든 링크로 복사하여 전송하는 방식이다.를 문제 조건과 비교하는 문제."
+      "explanation": "각 노드에 들어오는 패킷을 도착된 링크를 제외한 다른 모든 링크로 복사하여 전송하는 방식이다."
     },
     {
       "qnum": 88,
@@ -1232,7 +1232,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "데이터 전달의 신뢰성을 확보한다.가 문제에서 요구한 틀린 설명이다.\n정답 기준은 데이터 전달의 신뢰성을 확보한다.이다."
+      "explanation": "데이터 전달의 신뢰성을 확보한다.가 틀린 설명이다."
     },
     {
       "qnum": 89,
@@ -1246,7 +1246,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "CRC를 문제 조건과 비교하는 문제.\n정답 기준은 CRC이다."
+      "explanation": "동기전송 방식에서 주로 사용되는 오류검출 방식으로 프레임 단위로 오류검출을 위한 코드를 계산하여 프레임 끝에 FCS를 부착하는 것이며, 이를 CRC이라 한다."
     },
     {
       "qnum": 90,
@@ -1260,7 +1260,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "10.1.1.192를 문제 조건과 비교하는 문제.\n정답 기준은 10.1.1.192이다."
+      "explanation": "네트워크 전체에서 255.255.255.128 서브넷 마스크를 사용하는 10.0.0.0 네트워크에서 유효하지 않은 서브네트 ID이며, 이를 10.1.1.192이라 한다."
     },
     {
       "qnum": 91,
@@ -1274,7 +1274,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Stop-and-Wait ARQ를 문제 조건과 비교하는 문제.\nGo-back-N ARQ · Selective-Repeat ARQ · Distribute ARQ → 각각 해당하지 않음"
+      "explanation": "데이터 프레임의 정확한 수신 여부를 매번 확인하면서 다음 프레임을 전송해 나가는 ARQ이며, 이를 Stop-and-Wait ARQ이라 한다."
     },
     {
       "qnum": 92,
@@ -1288,7 +1288,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "WAP를 문제 조건과 비교하는 문제.\n정답 기준은 WAP이다."
+      "explanation": "이동 단말이나 PDA, 소형 무선 단말기 상에서 인터넷을 이용할 수 있도록 해주는 프로토콜의 총칭이며, 이를 WAP이라 한다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "잡음의 여유도를 문제 조건과 비교하는 문제.\n정답 기준은 잡음의 여유도이다."
+      "explanation": "PCM에서 ISI를 측정하기 위해 eye pattern을 이용하는데 눈을 뜬 상하의 높이는 무엇을 의미하는 것이며, 이를 잡음의 여유도이라 한다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "OSPF를 문제 조건과 비교하는 문제.\n정답 기준은 OSPF이다."
+      "explanation": "RIP의 한계를 극복하기 위해 IETF에서 고안한 것으로 네트워크의 변화가 있을 때에만 갱신함으로 대역을 효과적으로 사용할 수 있는 라우팅이며, 이를 OSPF이라 한다."
     },
     {
       "qnum": 95,
@@ -1330,7 +1330,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "채널 간섭을 막기 위함이다.를 문제 조건과 비교하는 문제.\n정답 기준은 채널 간섭을 막기 위함이다.이다."
+      "explanation": "주파수 분할 다중화 방식(FDM)에서 Guard Band가 필요한 이유이며, 이를 채널 간섭을 막기 위함이다.이라 한다."
     },
     {
       "qnum": 96,
@@ -1344,7 +1344,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "64비트의 FCS가 문제에서 요구한 틀린 설명이다.\n정답 기준은 64비트의 FCS이다."
+      "explanation": "64비트의 FCS가 틀린 설명이다."
     },
     {
       "qnum": 97,
@@ -1358,7 +1358,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "프레임를 문제 조건과 비교하는 문제.\n정답 기준은 프레임이다."
+      "explanation": "OSI-7 layer의 2번째 계층인 data link layer에서 사용되는 기본 데이터 단위이며, 이를 프레임이라 한다."
     },
     {
       "qnum": 98,
@@ -1372,7 +1372,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "Keying를 문제 조건과 비교하는 문제.\n정답 기준은 Keying이다."
+      "explanation": "다음이 설명하고 있는 것은? - 디지털 변조에서 디지털 데이터를 아날로그 신호로 변환시키는 것을 말한다. - ASK, FSK, PSK 와 같이 3가지 방식이 있다.이며, 이를 Keying이라 한다."
     },
     {
       "qnum": 99,
@@ -1386,7 +1386,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "전송계층가 문제에서 요구한 틀린 설명이다.\n정답 기준은 전송계층이다."
+      "explanation": "전송계층가 틀린 설명이다."
     },
     {
       "qnum": 100,
@@ -1400,7 +1400,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "90°를 문제 조건과 비교하는 문제.\n정답 기준은 90°이다."
+      "explanation": "QPSK(Quadrature PSK) 변조방식에서 변화되는 위상차이며, 이를 90°이라 한다."
     }
   ]
 }

@@ -11,7 +11,7 @@
         "결과에 대한 명확한 기록 유지",
         "최대한 많은 인력 투입"
       ],
-      "explanation": "최대한 많은 인력 투입이 조건과 맞는지 비교한다\n품질 높은 소프트웨어 상품 개발 · 지속적인 검증 시행 · 결과에 대한 명확한 기록 유지 → 각각 해당하지 않음",
+      "explanation": "최대한 많은 인력 투입이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -23,7 +23,7 @@
         "Maintenance",
         "Control"
       ],
-      "explanation": "Maintenance이 조건과 맞는지 비교한다\nProcess · Feedback · Control → 각각 해당하지 않음",
+      "explanation": "Maintenance이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -35,7 +35,7 @@
         "E-R Diagram",
         "AVL Diagram"
       ],
-      "explanation": "AVL Diagram이 조건과 맞는지 비교한다\nData Flow Diagram · UML Diagram · E-R Diagram → 각각 해당하지 않음",
+      "explanation": "AVL Diagram이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -47,7 +47,7 @@
         "운영체제 분석",
         "인적 자원 분석"
       ],
-      "explanation": "인적 자원 분석이 조건과 맞는지 비교한다\nDBMS 분석 · 네트워크 분석 · 운영체제 분석 → 각각 해당하지 않음",
+      "explanation": "인적 자원 분석이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -59,7 +59,7 @@
         "Builder 패턴",
         "Proxy 패턴"
       ],
-      "explanation": "Builder 패턴이 조건과 맞는지 비교한다\nAdapter 패턴 · Bridge 패턴 · Proxy 패턴 → 각각 해당하지 않음",
+      "explanation": "Builder 패턴이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -71,7 +71,7 @@
         "사례",
         "샘플 코드"
       ],
-      "explanation": "개발자 이름이 조건과 맞는지 비교한다\n문제 및 배경 · 사례 · 샘플 코드 → 각각 해당하지 않음",
+      "explanation": "개발자 이름이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -83,7 +83,7 @@
         "과정 추상화",
         "강도 추상화"
       ],
-      "explanation": "강도 추상화이 조건과 맞는지 비교한다\n자료 추상화 · 제어 추상화 · 과정 추상화 → 각각 해당하지 않음",
+      "explanation": "강도 추상화이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -95,7 +95,7 @@
         "확장",
         "메시지"
       ],
-      "explanation": "확장이 조건과 맞는지 비교한다\n생명선 · 실행 · 메시지 → 각각 해당하지 않음",
+      "explanation": "확장이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -107,7 +107,7 @@
         "프로토타입(Prototype) 패턴",
         "상태(State) 패턴"
       ],
-      "explanation": "프로토타입(Prototype) 패턴이 조건과 맞는지 비교한다\n커맨드(Command) 패턴 · 옵저버(Observer) 패턴 · 상태(State) 패턴 → 각각 해당하지 않음",
+      "explanation": "프로토타입(Prototype) 패턴이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -131,7 +131,7 @@
         "사용성",
         "간결성"
       ],
-      "explanation": "간결성이 조건과 맞는지 비교한다\n정확성 · 무결성 · 사용성 → 각각 해당하지 않음",
+      "explanation": "간결성이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -143,7 +143,7 @@
         "순차 다이어그램",
         "패키지 다이어그램"
       ],
-      "explanation": "순차 다이어그램이 조건과 맞는지 비교한다\n컴포넌트 다이어그램 · 배치 다이어그램 · 패키지 다이어그램 → 각각 해당하지 않음",
+      "explanation": "순차 다이어그램이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -155,7 +155,7 @@
         "Component Diagram",
         "Activity Diagram"
       ],
-      "explanation": "Activity Diagram이 조건과 맞는지 비교한다\nClass Diagram · Object Diagram · Component Diagram → 각각 해당하지 않음",
+      "explanation": "Activity Diagram이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -179,7 +179,7 @@
         "정확성",
         "보안성"
       ],
-      "explanation": "학습성이 조건과 맞는지 비교한다\n적합성 · 정확성 · 보안성 → 각각 해당하지 않음",
+      "explanation": "학습성이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -191,7 +191,7 @@
         "익스트림 프로그래밍",
         "모듈 중심 개발"
       ],
-      "explanation": "모듈 중심 개발이 조건과 맞는지 비교한다\n기능 중심 개발 · 스크럼 · 익스트림 프로그래밍 → 각각 해당하지 않음",
+      "explanation": "모듈 중심 개발이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -203,7 +203,7 @@
         "모델의 오류 검증 기능",
         "자료 흐름도 작성 기능"
       ],
-      "explanation": "전체 소스 코드 생성 기능이 조건과 맞는지 비교한다\n모델들 사이의 모순 검사 기능 · 모델의 오류 검증 기능 · 자료 흐름도 작성 기능 → 각각 해당하지 않음",
+      "explanation": "전체 소스 코드 생성 기능이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -215,7 +215,7 @@
         "변경 용이성(Modifiability)",
         "사용성(Usability)"
       ],
-      "explanation": "독립성(Isolation)이 조건과 맞는지 비교한다\n가용성(Availability) · 변경 용이성(Modifiability) · 사용성(Usability) → 각각 해당하지 않음",
+      "explanation": "독립성(Isolation)이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -227,7 +227,7 @@
         "행위 패턴",
         "추상 패턴"
       ],
-      "explanation": "추상 패턴이 조건과 맞는지 비교한다\n생성 패턴 · 구조 패턴 · 행위 패턴 → 각각 해당하지 않음",
+      "explanation": "추상 패턴이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -239,7 +239,7 @@
         "언어 번역",
         "다양한 소프트웨어 개발 모형 지원"
       ],
-      "explanation": "언어 번역이 조건과 맞는지 비교한다\n그래픽 지원 · 소프트웨어 생명 주기 전 단계의 연결 · 다양한 소프트웨어 개발 모형 지원 → 각각 해당하지 않음",
+      "explanation": "언어 번역이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -251,7 +251,7 @@
         "Collective Ownership",
         "Continuous Integration"
       ],
-      "explanation": "Linear Sequential Method이 조건과 맞는지 비교한다\nPair Programming · Collective Ownership · Continuous Integration → 각각 해당하지 않음",
+      "explanation": "Linear Sequential Method이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -263,7 +263,7 @@
         "시퀀스 다이어그램(Sequence Diagram)",
         "단계 다이어그램(Phase Diagram)"
       ],
-      "explanation": "단계 다이어그램(Phase Diagram)이 조건과 맞는지 비교한다\n애자일(Agile) 방법 · 유스케이스 다이어그램(Use Case Diagram) · 시퀀스 다이어그램(Sequence Diagram) → 각각 해당하지 않음",
+      "explanation": "단계 다이어그램(Phase Diagram)이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -275,7 +275,7 @@
         "구체화",
         "일반화"
       ],
-      "explanation": "구체화이 조건과 맞는지 비교한다\n연관 · 확장 · 일반화 → 각각 해당하지 않음",
+      "explanation": "구체화이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -287,7 +287,7 @@
         "분류",
         "식별"
       ],
-      "explanation": "복잡성이 조건과 맞는지 비교한다\n표준화 · 분류 · 식별 → 각각 해당하지 않음",
+      "explanation": "복잡성이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -299,7 +299,7 @@
         "Decorator Pattern",
         "State Pattern"
       ],
-      "explanation": "Singleton Pattern이 조건과 맞는지 비교한다\nAdapter Pattern · Decorator Pattern · State Pattern → 각각 해당하지 않음",
+      "explanation": "Singleton Pattern이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -323,7 +323,7 @@
         "RPC",
         "ORB"
       ],
-      "explanation": "Web Server이 조건과 맞는지 비교한다\nWAS · RPC · ORB → 각각 해당하지 않음",
+      "explanation": "Web Server이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -347,7 +347,7 @@
         "Flow",
         "Flick"
       ],
-      "explanation": "Flow이 조건과 맞는지 비교한다\nPinch · Press · Flick → 각각 해당하지 않음",
+      "explanation": "Flow이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -359,7 +359,7 @@
         "네트워크 구성도",
         "상호 호환성"
       ],
-      "explanation": "네트워크 구성도이 조건과 맞는지 비교한다\n가용성 · 성능 · 상호 호환성 → 각각 해당하지 않음",
+      "explanation": "네트워크 구성도이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -371,7 +371,7 @@
         "Relationship",
         "Diagram"
       ],
-      "explanation": "Terminal이 조건과 맞는지 비교한다\nThings · Relationship · Diagram → 각각 해당하지 않음",
+      "explanation": "Terminal이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -383,7 +383,7 @@
         "설계 및 코딩 기술",
         "관찰 및 모델 작성 기술"
       ],
-      "explanation": "설계 및 코딩 기술이 조건과 맞는지 비교한다\n청취와 인터뷰 질문 기술 · 분석과 중재 기술 · 관찰 및 모델 작성 기술 → 각각 해당하지 않음",
+      "explanation": "설계 및 코딩 기술이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -395,7 +395,7 @@
         "인터페이스 정의",
         "사용자 인터페이스 설계"
       ],
-      "explanation": "모듈 설계이 조건과 맞는지 비교한다\n아키텍처 설계 · 인터페이스 정의 · 사용자 인터페이스 설계 → 각각 해당하지 않음",
+      "explanation": "모듈 설계이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -407,7 +407,7 @@
         "정보 저장소 기술",
         "일괄 처리 기술"
       ],
-      "explanation": "일괄 처리 기술이 조건과 맞는지 비교한다\n구조적 기법 · 프로토타이핑 기술 · 정보 저장소 기술 → 각각 해당하지 않음",
+      "explanation": "일괄 처리 기술이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -419,7 +419,7 @@
         "도움과 프롬프트(Prompt) 제공",
         "소스 코드 분석 및 오류 복구"
       ],
-      "explanation": "소스 코드 분석 및 오류 복구이 조건과 맞는지 비교한다\n사용자 입력의 검증 · 에러 처리와 에러 메시지 처리 · 도움과 프롬프트(Prompt) 제공 → 각각 해당하지 않음",
+      "explanation": "소스 코드 분석 및 오류 복구이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -431,7 +431,7 @@
         "피드백",
         "고객 배제"
       ],
-      "explanation": "고객 배제이 조건과 맞는지 비교한다\n의사소통 · 단순성 · 피드백 → 각각 해당하지 않음",
+      "explanation": "고객 배제이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -443,7 +443,7 @@
         "Data Store : 삼각형",
         "Terminator : 사각형"
       ],
-      "explanation": "Data Store : 삼각형이 조건과 맞는지 비교한다\nProcess : 원 · Data Flow : 화살표 · Terminator : 사각형 → 각각 해당하지 않음",
+      "explanation": "Data Store : 삼각형이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -455,7 +455,7 @@
         "사용률(Utilization)",
         "서버 튜닝(Server Tuning)"
       ],
-      "explanation": "서버 튜닝(Server Tuning)이 조건과 맞는지 비교한다\n응답시간(Response Time) · 가용성(Availability) · 사용률(Utilization) → 각각 해당하지 않음",
+      "explanation": "서버 튜닝(Server Tuning)이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -467,7 +467,7 @@
         "소프트웨어 품질 향상",
         "새로운 개발 방법론 도입 용이"
       ],
-      "explanation": "새로운 개발 방법론 도입 용이이 조건과 맞는지 비교한다\n생산성 증가 · 프로젝트 문서 공유 · 소프트웨어 품질 향상 → 각각 해당하지 않음",
+      "explanation": "새로운 개발 방법론 도입 용이이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -479,7 +479,7 @@
         "프로그램 삭제",
         "소프트웨어 개발 기간"
       ],
-      "explanation": "소프트웨어 개발 기간이 조건과 맞는지 비교한다\n제품 소프트웨어 개요 · 설치 관련 파일 · 프로그램 삭제 → 각각 해당하지 않음",
+      "explanation": "소프트웨어 개발 기간이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -491,7 +491,7 @@
         "기초 경로 검사",
         "루프 검사"
       ],
-      "explanation": "경계값 분석이 조건과 맞는지 비교한다\n조건 검사 · 기초 경로 검사 · 루프 검사 → 각각 해당하지 않음",
+      "explanation": "경계값 분석이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -503,7 +503,7 @@
         "㉡, ㉤",
         "㉢, ㉥"
       ],
-      "explanation": "㉠, ㉡이 조건과 맞는지 비교한다\n㉠, ㉣ · ㉡, ㉤ · ㉢, ㉥ → 각각 해당하지 않음",
+      "explanation": "㉠, ㉡이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -515,7 +515,7 @@
         "체크아웃(Check-out)",
         "커밋(Commit)"
       ],
-      "explanation": "정규화(Normalization)이 조건과 맞는지 비교한다\n체크인(Check-in) · 체크아웃(Check-out) · 커밋(Commit) → 각각 해당하지 않음",
+      "explanation": "정규화(Normalization)이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -527,7 +527,7 @@
         "진행 테이블의 추가",
         "특정 부분만을 포함하는 테이블 추가"
       ],
-      "explanation": "빌드 테이블의 추가이 조건과 맞는지 비교한다\n집계 테이블의 추가 · 진행 테이블의 추가 · 특정 부분만을 포함하는 테이블 추가 → 각각 해당하지 않음",
+      "explanation": "빌드 테이블의 추가이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -539,7 +539,7 @@
         "랜덤(Random) 테스트",
         "자료 흐름도"
       ],
-      "explanation": "스텁(Stub)과 드라이버(Driver)이 조건과 맞는지 비교한다\n입력 도메인 분석 · 랜덤(Random) 테스트 · 자료 흐름도 → 각각 해당하지 않음",
+      "explanation": "스텁(Stub)과 드라이버(Driver)이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -551,7 +551,7 @@
         "관계 집합 - 삼각형",
         "개체 타입과 속성을 연결 - 선"
       ],
-      "explanation": "관계 집합 - 삼각형이 조건과 맞는지 비교한다\n개체 타입 - 사각형 · 속성 - 타원 · 개체 타입과 속성을 연결 - 선 → 각각 해당하지 않음",
+      "explanation": "관계 집합 - 삼각형이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -563,7 +563,7 @@
         "서브루틴의 복귀 번지 저장",
         "운영체제의 작업 스케줄링"
       ],
-      "explanation": "운영체제의 작업 스케줄링이 조건과 맞는지 비교한다\n인터럽트의 처리 · 수식의 계산 · 서브루틴의 복귀 번지 저장 → 각각 해당하지 않음",
+      "explanation": "운영체제의 작업 스케줄링이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -575,7 +575,7 @@
         "후위 표현(Post-Fix Expression)의 연산",
         "깊이 우선 탐색"
       ],
-      "explanation": "선택 정렬이 조건과 맞는지 비교한다\n재귀 호출 · 후위 표현(Post-Fix Expression)의 연산 · 깊이 우선 탐색 → 각각 해당하지 않음",
+      "explanation": "선택 정렬이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -587,7 +587,7 @@
         "큐, 그래프",
         "리스트, 그래프"
       ],
-      "explanation": "큐, 데크이 조건과 맞는지 비교한다\n스택, 트리 · 큐, 그래프 · 리스트, 그래프 → 각각 해당하지 않음",
+      "explanation": "큐, 데크이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -599,7 +599,7 @@
         "valMeter",
         "cppcheck"
       ],
-      "explanation": "valMeter이 조건과 맞는지 비교한다\npmd · checkstyle · cppcheck → 각각 해당하지 않음",
+      "explanation": "valMeter이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -611,7 +611,7 @@
         "SMTP",
         "S-HTTP"
       ],
-      "explanation": "SMTP이 조건과 맞는지 비교한다\nIPSec · SSL · S-HTTP → 각각 해당하지 않음",
+      "explanation": "SMTP이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -623,7 +623,7 @@
         "HttpUnit",
         "IgpUnit"
       ],
-      "explanation": "IgpUnit이 조건과 맞는지 비교한다\nCppUnit · JUnit · HttpUnit → 각각 해당하지 않음",
+      "explanation": "IgpUnit이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -635,7 +635,7 @@
         "컴파일러의 가용성",
         "컴파일러의 독창성"
       ],
-      "explanation": "컴파일러의 독창성이 조건과 맞는지 비교한다\n개발 정보 시스템의 특성 · 사용자의 요구사항 · 컴파일러의 가용성 → 각각 해당하지 않음",
+      "explanation": "컴파일러의 독창성이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -647,7 +647,7 @@
         "Failure Transparency",
         "Media Access Transparency"
       ],
-      "explanation": "Media Access Transparency이 조건과 맞는지 비교한다\nLocation Transparency · Replication Transparency · Failure Transparency → 각각 해당하지 않음",
+      "explanation": "Media Access Transparency이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -659,7 +659,7 @@
         "운영 및 설치 지침서",
         "프로젝트 개발 비용"
       ],
-      "explanation": "프로젝트 개발 비용이 조건과 맞는지 비교한다\n프로젝트 요구 분석서 · 소스 코드 · 운영 및 설치 지침서 → 각각 해당하지 않음",
+      "explanation": "프로젝트 개발 비용이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -671,7 +671,7 @@
         "예측 분할",
         "해시 분할"
       ],
-      "explanation": "예측 분할이 조건과 맞는지 비교한다\n라운드-로빈 · 범위 분할 · 해시 분할 → 각각 해당하지 않음",
+      "explanation": "예측 분할이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -683,7 +683,7 @@
         "Static Block",
         "Backtracking"
       ],
-      "explanation": "Static Block이 조건과 맞는지 비교한다\nDivide and Conquer · Greedy · Backtracking → 각각 해당하지 않음",
+      "explanation": "Static Block이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -695,7 +695,7 @@
         "Message Bus",
         "Tree"
       ],
-      "explanation": "Tree이 조건과 맞는지 비교한다\nPoint-to-Point · Hub & Spoke · Message Bus → 각각 해당하지 않음",
+      "explanation": "Tree이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -707,7 +707,7 @@
         "STAF",
         "NTAF"
       ],
-      "explanation": "ESB이 조건과 맞는지 비교한다\nxUnit · STAF · NTAF → 각각 해당하지 않음",
+      "explanation": "ESB이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -719,7 +719,7 @@
         "삭제 이상",
         "갱신 이상"
       ],
-      "explanation": "검색 이상이 조건과 맞는지 비교한다\n삽입 이상 · 삭제 이상 · 갱신 이상 → 각각 해당하지 않음",
+      "explanation": "검색 이상이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -731,7 +731,7 @@
         "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과",
         "틀린 계산 수식에 의한 잘못된 결과"
       ],
-      "explanation": "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과이 조건과 맞는지 비교한다\n알고리즘 오류에 따른 원치 않는 결과 · 탈출구가 없는 반복문의 사용 · 틀린 계산 수식에 의한 잘못된 결과 → 각각 해당하지 않음",
+      "explanation": "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -755,7 +755,7 @@
         "개방 주소법(Open Addressing)",
         "제산법(Division)"
       ],
-      "explanation": "개방 주소법(Open Addressing)이 조건과 맞는지 비교한다\n제곱법(Mid-Square) · 숫자 분석법(Digit Analysis) · 제산법(Division) → 각각 해당하지 않음",
+      "explanation": "개방 주소법(Open Addressing)이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -767,7 +767,7 @@
         "다른 모듈에 미치는 영향 최소화",
         "단순, 명료한 코드 작성"
       ],
-      "explanation": "중복이 최대화된 코드 작성이 조건과 맞는지 비교한다\n누구든지 쉽게 이해하는 코드 작성 · 다른 모듈에 미치는 영향 최소화 · 단순, 명료한 코드 작성 → 각각 해당하지 않음",
+      "explanation": "중복이 최대화된 코드 작성이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -779,7 +779,7 @@
         "Division",
         "Project"
       ],
-      "explanation": "SQL 결과는 Cartesian Product이다\nSelect · Division · Project → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 Cartesian Product이다",
       "answer": 2
     },
     {
@@ -791,7 +791,7 @@
         "암호화 기술",
         "방화벽 기술"
       ],
-      "explanation": "방화벽 기술이 조건과 맞는지 비교한다\n크랙 방지 기술 · 정책 관리 기술 · 암호화 기술 → 각각 해당하지 않음",
+      "explanation": "방화벽 기술이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -803,7 +803,7 @@
         "연산",
         "제약 조건"
       ],
-      "explanation": "출력 구조이 조건과 맞는지 비교한다\n논리적 데이터 구조 · 연산 · 제약 조건 → 각각 해당하지 않음",
+      "explanation": "출력 구조이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -815,7 +815,7 @@
         "시스템 명세의 오류 억제",
         "개발 시간의 증가"
       ],
-      "explanation": "개발 시간의 증가이 조건과 맞는지 비교한다\n위험 부담 감소 · 비용 절감 · 시스템 명세의 오류 억제 → 각각 해당하지 않음",
+      "explanation": "개발 시간의 증가이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -827,7 +827,7 @@
         "테스트 비용",
         "예상 결과"
       ],
-      "explanation": "테스트 비용이 조건과 맞는지 비교한다\n테스트 조건 · 테스트 데이터 · 예상 결과 → 각각 해당하지 않음",
+      "explanation": "테스트 비용이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -839,7 +839,7 @@
         "Non-preemption",
         "Linear wait"
       ],
-      "explanation": "Linear wait이 조건과 맞는지 비교한다\nMutual exclusion · Hold and wait · Non-preemption → 각각 해당하지 않음",
+      "explanation": "Linear wait이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -851,7 +851,7 @@
         "함수와 객체 재사용",
         "애플리케이션 재사용"
       ],
-      "explanation": "더미코드 재사용이 조건과 맞는지 비교한다\n컴포넌트 재사용 · 함수와 객체 재사용 · 애플리케이션 재사용 → 각각 해당하지 않음",
+      "explanation": "더미코드 재사용이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -863,7 +863,7 @@
         "&",
         "~"
       ],
-      "explanation": "?를 떠올리는 문제다\n^ · & · ~ → 각각 해당하지 않음",
+      "explanation": "?를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -875,7 +875,7 @@
         "/",
         "="
       ],
-      "explanation": "=를 떠올리는 문제다\n% · * · / → 각각 해당하지 않음",
+      "explanation": "=를 떠올리는 문제다",
       "answer": 4
     },
     {
@@ -887,7 +887,7 @@
         "repeat_do",
         "while"
       ],
-      "explanation": "repeat_do이 조건과 맞는지 비교한다\nif · for · while → 각각 해당하지 않음",
+      "explanation": "repeat_do이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -899,7 +899,7 @@
         "System.out.printing( )",
         "System.out.printf( )"
       ],
-      "explanation": "System.out.printing( )이 조건과 맞는지 비교한다\nSystem.out.print( ) · System.out.println( ) · System.out.printf( ) → 각각 해당하지 않음",
+      "explanation": "System.out.printing( )이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -911,7 +911,7 @@
         "default",
         "public"
       ],
-      "explanation": "internal이 조건과 맞는지 비교한다\nprivate · default · public → 각각 해당하지 않음",
+      "explanation": "internal이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -923,7 +923,7 @@
         "＜＞",
         "==="
       ],
-      "explanation": "#를 떠올리는 문제다\n@ · ＜＞ · === → 각각 해당하지 않음",
+      "explanation": "#를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -935,7 +935,7 @@
         "기억장치 할당, 회수",
         "파일 시스템 관리"
       ],
-      "explanation": "사용자 인터페이스이 조건과 맞는지 비교한다\n프로세스 생성, 종료 · 기억장치 할당, 회수 · 파일 시스템 관리 → 각각 해당하지 않음",
+      "explanation": "사용자 인터페이스이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -947,7 +947,7 @@
         "작업 제어 프로그램",
         "감시 프로그램"
       ],
-      "explanation": "서비스 프로그램이 조건과 맞는지 비교한다\n데이터 관리 프로그램 · 작업 제어 프로그램 · 감시 프로그램 → 각각 해당하지 않음",
+      "explanation": "서비스 프로그램이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -959,7 +959,7 @@
         "env",
         "setenv"
       ],
-      "explanation": "configenv를 떠올리는 문제다\nprintenv · env · setenv → 각각 해당하지 않음",
+      "explanation": "configenv를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -971,7 +971,7 @@
         "Basic",
         "Python"
       ],
-      "explanation": "Cobol이 조건과 맞는지 비교한다\nPHP · Basic · Python → 각각 해당하지 않음",
+      "explanation": "Cobol이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -983,7 +983,7 @@
         "OR",
         "NOT"
       ],
-      "explanation": "OTHER를 떠올리는 문제다\nAND · OR · NOT → 각각 해당하지 않음",
+      "explanation": "OTHER를 떠올리는 문제다",
       "answer": 2
     },
     {
@@ -995,7 +995,7 @@
         "ALTER",
         "DROP"
       ],
-      "explanation": "SQL 결과는 SELECT이다\nCREATE · ALTER · DROP → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 SELECT이다",
       "answer": 2
     },
     {
@@ -1007,7 +1007,7 @@
         "Request",
         "Exit"
       ],
-      "explanation": "Request이 조건과 맞는지 비교한다\nReady · Running · Exit → 각각 해당하지 않음",
+      "explanation": "Request이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1019,7 +1019,7 @@
         "Selective-Repeat ARQ",
         "Non-Acknowledge ARQ"
       ],
-      "explanation": "Non-Acknowledge ARQ이 조건과 맞는지 비교한다\nStop-and-wait ARQ · Go-back-N ARO · Selective-Repeat ARQ → 각각 해당하지 않음",
+      "explanation": "Non-Acknowledge ARQ이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1031,7 +1031,7 @@
         "Tomcat",
         "WebSphere"
       ],
-      "explanation": "JVM이 조건과 맞는지 비교한다\nJEUS · Tomcat · WebSphere → 각각 해당하지 않음",
+      "explanation": "JVM이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1043,7 +1043,7 @@
         "Optimal",
         "LRU(Least Recently Used)"
       ],
-      "explanation": "LUF(Least Used First)이 조건과 맞는지 비교한다\nFIFO(First-In-First-Out) · Optimal · LRU(Least Recently Used) → 각각 해당하지 않음",
+      "explanation": "LUF(Least Used First)이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1055,7 +1055,7 @@
         "Dicing",
         "Drill-Down"
       ],
-      "explanation": "Translate이 조건과 맞는지 비교한다\nRoll-Up · Dicing · Drill-Down → 각각 해당하지 않음",
+      "explanation": "Translate이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -1067,7 +1067,7 @@
         "Broadcast",
         "Multicast"
       ],
-      "explanation": "Broadcast이 조건과 맞는지 비교한다\nUnicast · Anycast · Multicast → 각각 해당하지 않음",
+      "explanation": "Broadcast이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1079,7 +1079,7 @@
         "타임 스탬프 기법",
         "다중 버전 기법"
       ],
-      "explanation": "시분할 기법이 조건과 맞는지 비교한다\n로킹 기법 · 타임 스탬프 기법 · 다중 버전 기법 → 각각 해당하지 않음",
+      "explanation": "시분할 기법이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1091,7 +1091,7 @@
         "Maven",
         "Gradle"
       ],
-      "explanation": "Kerberos이 조건과 맞는지 비교한다\nAnt · Maven · Gradle → 각각 해당하지 않음",
+      "explanation": "Kerberos이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1103,7 +1103,7 @@
         "PPP",
         "LLC"
       ],
-      "explanation": "HTTP이 조건과 맞는지 비교한다\nHDLC · PPP · LLC → 각각 해당하지 않음",
+      "explanation": "HTTP이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -1115,7 +1115,7 @@
         "SUM",
         "CREATE"
       ],
-      "explanation": "CREATE이 조건과 맞는지 비교한다\nAVG · COUNT · SUM → 각각 해당하지 않음",
+      "explanation": "CREATE이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1127,7 +1127,7 @@
         "FTP",
         "TCP"
       ],
-      "explanation": "TCP이 조건과 맞는지 비교한다\nHTTP · SMTP · FTP → 각각 해당하지 않음",
+      "explanation": "TCP이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1139,7 +1139,7 @@
         "개발 용이성",
         "변경 용이성"
       ],
-      "explanation": "시스템 복잡도 증가이 조건과 맞는지 비교한다\n품질 보증 · 개발 용이성 · 변경 용이성 → 각각 해당하지 않음",
+      "explanation": "시스템 복잡도 증가이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1151,7 +1151,7 @@
         "AES",
         "SEED"
       ],
-      "explanation": "RC4이 조건과 맞는지 비교한다\nDES · AES · SEED → 각각 해당하지 않음",
+      "explanation": "RC4이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1163,7 +1163,7 @@
         "계획 단계",
         "정의 단계"
       ],
-      "explanation": "계획 단계이 조건과 맞는지 비교한다\n최적 단계 · 관리 단계 · 정의 단계 → 각각 해당하지 않음",
+      "explanation": "계획 단계이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1175,7 +1175,7 @@
         "개발",
         "평가"
       ],
-      "explanation": "버전 관리이 조건과 맞는지 비교한다\n위험 분석 · 개발 · 평가 → 각각 해당하지 않음",
+      "explanation": "버전 관리이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -1187,7 +1187,7 @@
         "중단 프로세스 및 닫힌 포트 위주로 확인",
         "불필요한 서비스 및 악성 프로그램의 확인과 제거"
       ],
-      "explanation": "중단 프로세스 및 닫힌 포트 위주로 확인이 조건과 맞는지 비교한다\n무결성 검사 · 응용 프로그램의 보안 설정 및 패치(Patch) 적용 · 불필요한 서비스 및 악성 프로그램의 확인과 제거 → 각각 해당하지 않음",
+      "explanation": "중단 프로세스 및 닫힌 포트 위주로 확인이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1199,7 +1199,7 @@
         "가용성",
         "휘발성"
       ],
-      "explanation": "휘발성이 조건과 맞는지 비교한다\n기밀성 · 무결성 · 가용성 → 각각 해당하지 않음",
+      "explanation": "휘발성이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1211,7 +1211,7 @@
         "프로그램 코드",
         "사용자 요구사항 정의서"
       ],
-      "explanation": "사용자 요구사항 정의서이 조건과 맞는지 비교한다\n클래스 설계서 · 통합시험 결과서 · 프로그램 코드 → 각각 해당하지 않음",
+      "explanation": "사용자 요구사항 정의서이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1223,7 +1223,7 @@
         "강제적 접근 통제",
         "역할 기반 접근 통제"
       ],
-      "explanation": "데이터 전환 접근 통제이 조건과 맞는지 비교한다\n임의적 접근 통제 · 강제적 접근 통제 · 역할 기반 접근 통제 → 각각 해당하지 않음",
+      "explanation": "데이터 전환 접근 통제이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1235,7 +1235,7 @@
         "고가용성 지원",
         "강제적 접근 통제"
       ],
-      "explanation": "고가용성 지원이 조건과 맞는지 비교한다\n식별 및 인증 · 임의적 접근 통제 · 강제적 접근 통제 → 각각 해당하지 않음",
+      "explanation": "고가용성 지원이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1247,7 +1247,7 @@
         "데이터 파일",
         "출력 보고서"
       ],
-      "explanation": "클래스 인터페이스를 떠올리는 문제다\n명령어(사용자 질의수) · 데이터 파일 · 출력 보고서 → 각각 해당하지 않음",
+      "explanation": "클래스 인터페이스를 떠올리는 문제다",
       "answer": 1
     },
     {
@@ -1259,7 +1259,7 @@
         "SHA-1",
         "AES"
       ],
-      "explanation": "AES이 조건과 맞는지 비교한다\nMD4 · MD5 · SHA-1 → 각각 해당하지 않음",
+      "explanation": "AES이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1271,7 +1271,7 @@
         "비관치",
         "모형치"
       ],
-      "explanation": "모형치이 조건과 맞는지 비교한다\n낙관치 · 기대치 · 비관치 → 각각 해당하지 않음",
+      "explanation": "모형치이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1283,7 +1283,7 @@
         "ACK STORM 탐지",
         "패킷의 유실 및 재전송 증가 탐지"
       ],
-      "explanation": "FTP SYN SEGMENT 탐지이 조건과 맞는지 비교한다\n비동기화 상태 탐지 · ACK STORM 탐지 · 패킷의 유실 및 재전송 증가 탐지 → 각각 해당하지 않음",
+      "explanation": "FTP SYN SEGMENT 탐지이 조건과 맞는지 비교한다",
       "answer": 1
     },
     {
@@ -1295,7 +1295,7 @@
         "Embedded",
         "Sequential"
       ],
-      "explanation": "Sequential이 조건과 맞는지 비교한다\nOrganic · Semi-detached · Embedded → 각각 해당하지 않음",
+      "explanation": "Sequential이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1307,7 +1307,7 @@
         "피드백",
         "고객 배제"
       ],
-      "explanation": "고객 배제이 조건과 맞는지 비교한다\n의사소통 · 단순성 · 피드백 → 각각 해당하지 않음",
+      "explanation": "고객 배제이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1319,7 +1319,7 @@
         "구성원 능력",
         "국제 표준 품질 기준"
       ],
-      "explanation": "국제 표준 품질 기준이 조건과 맞는지 비교한다\n납기/비용 · 기술 환경 · 구성원 능력 → 각각 해당하지 않음",
+      "explanation": "국제 표준 품질 기준이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1331,7 +1331,7 @@
         "Function-Point",
         "PERT"
       ],
-      "explanation": "PERT이 조건과 맞는지 비교한다\nCOCOMO · Putnam · Function-Point → 각각 해당하지 않음",
+      "explanation": "PERT이 조건과 맞는지 비교한다",
       "answer": 4
     },
     {
@@ -1343,7 +1343,7 @@
         "제어 클래스층",
         "비즈니스층"
       ],
-      "explanation": "제어 클래스층이 조건과 맞는지 비교한다\n표현층 · 프로세스층 · 비즈니스층 → 각각 해당하지 않음",
+      "explanation": "제어 클래스층이 조건과 맞는지 비교한다",
       "answer": 3
     },
     {
@@ -1355,7 +1355,7 @@
         "Nimda",
         "Deadlock"
       ],
-      "explanation": "Tribe Flood Network이 조건과 맞는지 비교한다\nSecure shell · Nimda · Deadlock → 각각 해당하지 않음",
+      "explanation": "Tribe Flood Network이 조건과 맞는지 비교한다",
       "answer": 2
     },
     {
@@ -1367,7 +1367,7 @@
         "성능평가 프로세스",
         "유지보수 프로세스"
       ],
-      "explanation": "성능평가 프로세스이 조건과 맞는지 비교한다\n획득 프로세스 · 개발 프로세스 · 유지보수 프로세스 → 각각 해당하지 않음",
+      "explanation": "성능평가 프로세스이 조건과 맞는지 비교한다",
       "answer": 3
     }
   ]
