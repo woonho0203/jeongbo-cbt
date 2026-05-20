@@ -70,7 +70,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 Common Coupling이다."
+      "explanation": "결합도 강도 순서: 데이터 < 스탬프 < 제어 < 외부 < 공통 < 내용. 공통(Common) 결합은 여러 모듈이 공유 데이터 영역을 사용해 결합도가 높다."
     },
     {
       "qnum": 6,
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 90이다."
+      "explanation": "list_data[0]='a'. dict_data['a']=90. 'a' 키에 해당하는 값 90을 출력한다."
     },
     {
       "qnum": 64,
@@ -910,7 +910,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 !(a || b)이다."
+      "explanation": "De Morgan 법칙: !(A || B) = !A && !B. for문에서 !a && !b 조건과 !(a || b)는 동치다."
     },
     {
       "qnum": 66,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 int i = 7, j = 9; int k; k = (i＞j) ? (i – j) : (i + j);이다."
+      "explanation": "if-else 조건문을 삼항 연산자로 변환: k = (조건) ? 참일 때 : 거짓일 때. i=7<j=9이므로 k=i+j=16이다."
     },
     {
       "qnum": 78,

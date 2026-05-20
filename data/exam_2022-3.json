@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 D B E F C A이다."
+      "explanation": "후위 순회(Post-order)는 왼쪽 서브트리 → 오른쪽 서브트리 → 루트 순서로 방문한다."
     },
     {
       "qnum": 25,
@@ -420,7 +420,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 3, 8, 4, 9, 7이다."
+      "explanation": "선택 정렬 1회전: 전체에서 최솟값(3)을 찾아 첫 번째 위치의 값(8)과 교환한다. [8,3,4,9,7] → [3,8,4,9,7]."
     },
     {
       "qnum": 31,
@@ -574,7 +574,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 개체 무결성 규정은 한 릴레이션의 기본키를 구성하는 어떠한 속성값도 널(NULL) 값이나 중복값을 가질 수 없음을 규정하 는 것이다."
+      "explanation": "개체 무결성(Entity Integrity): 기본키를 구성하는 속성은 NULL 값이나 중복값을 가질 수 없다."
     },
     {
       "qnum": 42,
@@ -658,7 +658,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+      "explanation": "ALTER TABLE ... DROP ... CASCADE: 해당 속성을 제거하면서 그 속성을 참조하는 다른 테이블의 속성도 연쇄적으로 함께 제거한다."
     },
     {
       "qnum": 48,
@@ -868,7 +868,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 0이다."
+      "explanation": "r1=(3<4)&&(4<=4)=1, r2=(3>3)||(4<=5)=1, r3=!5=0. r1-r2+r3 = 1-1+0 = 0."
     },
     {
       "qnum": 63,
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 three이다."
+      "explanation": "'c' 입력 시 case 'c'에서 매칭되어 \"three\"를 출력 후 break로 탈출한다. break 없는 case는 다음 case까지 연속 실행(fall-through)되므로 break 위치가 중요하다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 !(a || b)이다."
+      "explanation": "De Morgan 법칙: !(A || B) = !A && !B. for문에서 !a && !b 조건과 !(a || b)는 동치다."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 53 44이다."
+      "explanation": "\"53t44\".split(\"t\") → [\"53\",\"44\"]. map(int,...)으로 정수 변환 후 a=53, b=44. print(a, b)는 공백으로 구분해 53 44를 출력한다."
     },
     {
       "qnum": 66,
@@ -966,7 +966,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 4, 1, 3이다."
+      "explanation": "FIFO 알고리즘은 가장 오래 전에 적재된 페이지를 교체한다. 3프레임에서 참조 순서를 추적하면 마지막 프레임에 4,1,3이 남는다."
     },
     {
       "qnum": 70,

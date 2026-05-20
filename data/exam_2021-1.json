@@ -504,7 +504,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "정답은 경계값 분석이다."
+      "explanation": "경계값 분석(Boundary Value Analysis)은 입력 값의 경계에서 오류가 발생하기 쉽다는 원리에 기반한 블랙박스 테스트 기법이다."
     },
     {
       "qnum": 37,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 순차적 응집도이다."
+      "explanation": "응집도 강도 순서: 우연적 < 논리적 < 시간적 < 절차적 < 교환적 < 순차적 < 기능적. 순차적(Sequential) 응집은 선행 처리 결과가 다음 처리의 입력이 되는 구조로 응집도가 높은 편이다."
     },
     {
       "qnum": 74,
@@ -1022,7 +1022,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 5 + 2 = 34 7 + 7 5 + 2 = 7이다."
+      "explanation": "\"문자열\" + 숫자는 왼쪽부터 순서대로 문자열 연결이다. \"5+2=\" + 3 + 4 → \"5+2=34\". 괄호(3+4)는 먼저 계산 후 연결 → \"5+2=7\"."
     },
     {
       "qnum": 75,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 A, B, C 출력이 반복된다."
+      "explanation": "while(True)는 무한 루프다. continue를 만나면 print('D') 이전에 루프 처음으로 돌아가므로 A, B, C만 무한 반복 출력된다."
     },
     {
       "qnum": 76,

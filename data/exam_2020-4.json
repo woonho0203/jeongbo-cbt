@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 Unresolved compilation problem 오류 발생이다."
+      "explanation": "Java에서 while 조건식은 boolean 타입이어야 한다. y--는 int를 반환하므로 컴파일 오류(Unresolved compilation problem)가 발생한다."
     },
     {
       "qnum": 68,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 [0, 20, 40, 60]이다."
+      "explanation": "a[:7:2]는 인덱스 0,2,4,6의 요소를 추출한다. a=[0,10,20,30,40,50,60,70,80,90]에서 결과는 [0,20,40,60]이다."
     },
     {
       "qnum": 69,

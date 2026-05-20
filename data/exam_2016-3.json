@@ -210,7 +210,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 ＋**/ABCDE이다."
+      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다."
     },
     {
       "qnum": 16,

@@ -364,7 +364,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "정답은 큐, 데크이다."
+      "explanation": "선형 구조는 자료가 순서를 가지며 1:1 관계로 연결된 구조다. 큐(Queue)·데크(Deque)는 선형이고, 트리·그래프는 비선형이다."
     },
     {
       "qnum": 27,
@@ -532,7 +532,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 DBAECF이다."
+      "explanation": "중위 순회(In-order)는 왼쪽 서브트리 → 루트 → 오른쪽 서브트리 순서로 방문한다."
     },
     {
       "qnum": 39,
@@ -868,7 +868,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 66이다."
+      "explanation": "range(n+1)=range(12)는 0~11까지 합산한다. 0+1+2+...+11 = 11×12÷2 = 66이다."
     },
     {
       "qnum": 64,
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 nationalter이다."
+      "explanation": "strcat(str, p2)는 str 문자열 끝에 p2 문자열을 이어 붙인다. \"nation\" + \"alter\" = \"nationalter\"."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 2이다."
+      "explanation": "r1=b<=4||c>=3=(1||0)=1, r2=a>c&&b>c=(1&&1)=1, r3=!b=0. printf에 따라 결과는 2이다."
     },
     {
       "qnum": 67,
@@ -980,7 +980,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 8이다."
+      "explanation": "pt=&n이므로 *pt=n=4. n+(*pt)=4+4=8을 출력한다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 34이다."
+      "explanation": "Java 삼항 연산자와 배열 인덱스 계산으로 결과가 34이다."
     },
     {
       "qnum": 74,

@@ -168,7 +168,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 ⓐ 130 ⓑ 3이다."
+      "explanation": "SELECT DEPT, COUNT(*)는 학과별 학생 수를 그룹으로 묶어 반환하므로 ⓐ 전체 행 수=130, ⓑ 그룹 수(학과 수)=3이다."
     },
     {
       "qnum": 13,
@@ -812,7 +812,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 -rwxr-xr-x이다."
+      "explanation": "chmod 755는 소유자에게 rwx(7), 그룹에 r-x(5), 기타에 r-x(5) 권한을 부여한다. \"ls\" 결과는 -rwxr-xr-x이다."
     },
     {
       "qnum": 59,

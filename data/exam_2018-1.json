@@ -182,7 +182,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 ROLLBACK 연산이다."
+      "explanation": "ROLLBACK은 트랜잭션 실패 시 수행한 연산을 모두 취소하고 이전의 일관된 상태로 되돌리는 연산이다."
     },
     {
       "qnum": 14,
@@ -910,7 +910,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 Comparison Testing이다."
+      "explanation": "동일한 입력을 여러 버전 프로그램에 적용해 출력이 같은지 검사하는 기법이 비교(Comparison) 테스트이다. 블랙박스 테스트 기법 중 하나이다."
     },
     {
       "qnum": 66,

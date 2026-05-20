@@ -70,7 +70,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 A이다."
+      "explanation": "후위 순회(Post-order)는 왼쪽 서브트리 → 오른쪽 서브트리 → 루트 순서로 방문한다."
     },
     {
       "qnum": 6,

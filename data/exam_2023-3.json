@@ -602,7 +602,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 ⓐ 130, ⓑ 3이다."
+      "explanation": "SELECT DEPT, COUNT(*)는 학과별 학생 수를 그룹으로 묶어 반환하므로 ⓐ 전체 행 수=130, ⓑ 그룹 수(학과 수)=3이다."
     },
     {
       "qnum": 44,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 2이다."
+      "explanation": "r1=b<=4||c>=3=(1||0)=1, r2=a>c&&b>c=(1&&1)=1, r3=!b=0. printf에 따라 결과는 2이다."
     },
     {
       "qnum": 67,
@@ -966,7 +966,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 4, 1, 3이다."
+      "explanation": "FIFO 알고리즘은 가장 오래 전에 적재된 페이지를 교체한다. 3프레임에서 참조 순서를 추적하면 마지막 프레임에 4,1,3이 남는다."
     },
     {
       "qnum": 70,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 3이다."
+      "explanation": "mx = (a<b) ? b : a → (1<2)=true → mx=2. if(mx==1)은 false → else 실행: mn = (b<mx) ? d : c → (2<2)=false → mn=c=3. System.out.println(mn) → 3 출력."
     },
     {
       "qnum": 73,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 A, B, C 출력이 반복된다."
+      "explanation": "while(True)는 무한 루프다. continue를 만나면 print('D') 이전에 루프 처음으로 돌아가므로 A, B, C만 무한 반복 출력된다."
     },
     {
       "qnum": 76,
@@ -1106,7 +1106,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 18, 10이다."
+      "explanation": "a[0]의 주소=10, int 크기=4Byte이므로 a[2]의 주소=10+2×4=18. a(배열 이름)는 a[0]의 주소=10. 출력: 18, 10."
     },
     {
       "qnum": 80,

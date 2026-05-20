@@ -140,7 +140,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 인사 테이블을 참조하는 테이블과 인사 테이블을 제거한다."
+      "explanation": "DROP TABLE ... CASCADE: 해당 테이블 삭제 시 해당 테이블을 참조하는 다른 테이블과 그 테이블도 함께 삭제된다."
     },
     {
       "qnum": 11,
@@ -728,7 +728,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 9번이다."
+      "explanation": "FIFO 알고리즘은 가장 오래 전에 적재된 페이지를 교체한다. 3개 프레임 기준으로 주어진 참조 순서를 추적하면 9번의 페이지 부재가 발생한다."
     },
     {
       "qnum": 53,

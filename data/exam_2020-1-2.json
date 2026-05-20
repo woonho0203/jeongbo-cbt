@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 ＋ * * / A B C D E이다."
+      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다."
     },
     {
       "qnum": 35,
@@ -588,7 +588,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 ⓐ 130, ⓑ 3이다."
+      "explanation": "SELECT DEPT, COUNT(*)는 학과별 학생 수를 그룹으로 묶어 반환하므로 ⓐ 전체 행 수=130, ⓑ 그룹 수(학과 수)=3이다."
     },
     {
       "qnum": 43,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 25,000이다."
+      "explanation": "서브쿼리로 책명='자료구조'의 책번호(222)를 찾고, 도서가격 테이블에서 해당 책번호의 가격(25,000)을 조회한다."
     },
     {
       "qnum": 58,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 우연적 응집도이다."
+      "explanation": "응집도 강도 순서: 우연적 < 논리적 < 시간적 < 절차적 < 교환적 < 순차적 < 기능적. 우연적(Coincidental) 응집은 모듈 내 요소 간 관련성이 전혀 없어 응집도가 가장 낮다."
     },
     {
       "qnum": 78,

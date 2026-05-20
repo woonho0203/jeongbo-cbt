@@ -154,7 +154,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 B D C A이다."
+      "explanation": "A→B push 후 pop(B 출력), C→D push 후 pop(D 출력), pop(C 출력), pop(A 출력) 순으로 수행되어 출력 순서는 B D C A이다."
     },
     {
       "qnum": 12,
@@ -280,7 +280,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 3, 8, 4, 9, 7이다."
+      "explanation": "선택 정렬 1회전: 전체에서 최솟값(3)을 찾아 첫 번째 위치의 값(8)과 교환한다. [8,3,4,9,7] → [3,8,4,9,7]."
     },
     {
       "qnum": 21,
@@ -882,7 +882,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 Common Coupling이다."
+      "explanation": "결합도 강도 순서: 데이터 < 스탬프 < 제어 < 외부 < 공통 < 내용. 공통(Common) 결합은 여러 모듈이 공유 데이터 영역을 사용해 결합도가 높다."
     },
     {
       "qnum": 64,

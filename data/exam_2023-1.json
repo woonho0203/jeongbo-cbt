@@ -616,7 +616,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 5이다."
+      "explanation": "SELECT 급여 FROM 사원은 WHERE 없이 모든 행을 반환한다. 사원 테이블에 행이 5개이므로 결과 튜플 수는 5이다."
     },
     {
       "qnum": 45,
@@ -686,7 +686,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 Partially Committed이다."
+      "explanation": "Partially Committed는 트랜잭션의 마지막 연산이 끝난 직후 상태로, 아직 변경 내용이 DB에 최종 반영(Commit)되지 않은 상태이다."
     },
     {
       "qnum": 51,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 8이다."
+      "explanation": "pt=&n이므로 *pt=n=4. n+(*pt)=4+4=8을 출력한다."
     },
     {
       "qnum": 68,
@@ -980,7 +980,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 0이다."
+      "explanation": "r1=(3<4)&&(4<=4)=1, r2=(3>3)||(4<=5)=1, r3=!5=0. r1-r2+r3 = 1-1+0 = 0."
     },
     {
       "qnum": 72,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 !(a || b)이다."
+      "explanation": "De Morgan 법칙: !(A || B) = !A && !B. for문에서 !a && !b 조건과 !(a || b)는 동치다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 60이다."
+      "explanation": "ob1.c[i]=i(0~9), ob2.c[i]=2i. 짝수 인덱스(0,2,4,6,8)의 합: ob1.a=0+2+4+6+8=20, ob2.a=0+4+8+12+16=40. ob1.a+ob2.a=60."
     },
     {
       "qnum": 79,
@@ -1106,7 +1106,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 90이다."
+      "explanation": "list_data[0]='a'. dict_data['a']=90. 'a' 키에 해당하는 값 90을 출력한다."
     },
     {
       "qnum": 81,
