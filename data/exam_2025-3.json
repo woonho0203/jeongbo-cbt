@@ -98,7 +98,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 가장 바르게 나은(는) 객체 모형 → 동적 모형 → 기능 모형이다."
+      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 가장 바르게 나은 객체 모형 → 동적 모형 → 기능 모형이다."
     },
     {
       "qnum": 8,
@@ -182,7 +182,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "미들웨어는 서로 다른 시스템 컴포넌트 간 통신을 돕는 소프트웨어이다. 애플리케이션과 사용자 사이에만 동작한다는 설명은 틀렸다."
+      "explanation": "미들웨어는 서로 다른 시스템 컴포넌트 간 통신을 돕은 소프트웨어이다. 애플리케이션과 사용자 사이에만 동작한다는 설명은 틀렸다."
     },
     {
       "qnum": 14,
@@ -224,7 +224,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Observer는 행위(Behavioral) 패턴이다. 구조 패턴에는 Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy가 있다."
+      "explanation": "Observer은 행위(Behavioral) 패턴이다. 구조 패턴에는 Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy가 있다."
     },
     {
       "qnum": 17,
@@ -322,7 +322,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Stub은 하향식 통합에서 아직 구현되지 않은 하위 모듈을 임시로 대체하는 더미 모듈이다. Driver는 상향식 통합에서 사용한다."
+      "explanation": "Stub은 하향식 통합에서 아직 구현되지 않는 하위 모듈을 임시로 대체하는 더미 모듈이다. Driver은 상향식 통합에서 사용한다."
     },
     {
       "qnum": 24,
@@ -562,7 +562,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "소프트웨어 재사용의 장점은 생산성 향상, 품질 향상, 문서 공유 등이다. 새 개발 방법론 도입은 직접적인 이점이 아니다."
+      "explanation": "소프트웨어 재사용의 장점은 생산성 향상, 품질 향상, 문서 공유 등이다. 새 개발 방법론 도입는 직접적인 이점이 아니다."
     },
     {
       "qnum": 41,
@@ -646,7 +646,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "SELECT는 데이터를 조회하는 DML이다. DCL에는 GRANT, REVOKE, COMMIT, ROLLBACK이 있다."
+      "explanation": "SELECT은 데이터를 조회하는 DML이다. DCL에는 GRANT, REVOKE, COMMIT, ROLLBACK이 있다."
     },
     {
       "qnum": 47,
@@ -800,7 +800,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는? 한은(는) 슈퍼키이다."
+      "explanation": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는? 한은 슈퍼키이다."
     },
     {
       "qnum": 58,
@@ -940,7 +940,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "Kerberos는 네트워크 인증 프로토콜이다. 빌드 도구에는 Ant, Maven, Gradle 등이 있다."
+      "explanation": "Kerberos은 네트워크 인증 프로토콜이다. 빌드 도구에는 Ant, Maven, Gradle 등이 있다."
     },
     {
       "qnum": 68,
@@ -982,7 +982,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "short는 C언어의 예약어(자료형 키워드)이므로 변수명으로 사용할 수 없다."
+      "explanation": "short은 C언어의 예약어(자료형 키워드)이므로 변수명으로 사용할 수 없다."
     },
     {
       "qnum": 71,
@@ -1052,7 +1052,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "HTTP는 80번 포트를 사용한다. HTTPS는 443, Telnet은 23, DNS는 53번이다."
+      "explanation": "HTTP은 80번 포트를 사용한다. HTTPS은 443, Telnet은 23, DNS은 53번이다."
     },
     {
       "qnum": 76,
@@ -1164,7 +1164,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "RSA는 소수의 곱셈을 이용한 비대칭 암호화 알고리즘이다. DES와 AES는 대칭 암호화이다."
+      "explanation": "RSA는 소수의 곱셈을 이용한 비대칭 암호화 알고리즘이다. DES와 AES은 대칭 암호화이다."
     },
     {
       "qnum": 84,
@@ -1206,7 +1206,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "MQTT는 IoT 환경을 위한 경량 메시지 전송 프로토콜로, Broker를 통한 발행-구독(Pub/Sub) 방식으로 동작한다."
+      "explanation": "MQTT은 IoT 환경을 위한 경량 메시지 전송 프로토콜로, Broker를 통한 발행-구독(Pub/Sub) 방식으로 동작한다."
     },
     {
       "qnum": 87,
@@ -1304,7 +1304,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "UDP 53번 포트는 DNS가 사용한다. SNMP는 UDP 161번 포트를 사용한다."
+      "explanation": "UDP 53번 포트는 DNS가 사용한다. SNMP은 UDP 161번 포트를 사용한다."
     },
     {
       "qnum": 94,
@@ -1346,7 +1346,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "TCP Wrapper는 외부 접속 시 허용 여부를 판단하여 네트워크 서비스 접근을 제어하는 유틸리티이다."
+      "explanation": "TCP Wrapper은 외부 접속 시 허용 여부를 판단하여 네트워크 서비스 접근을 제어하는 유틸리티이다."
     },
     {
       "qnum": 97,
@@ -1402,7 +1402,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "MD4, MD5, SHA-1은 해시 함수이다. AES는 대칭키 블록 암호화 알고리즘으로 성격이 다르다."
+      "explanation": "MD4, MD5, SHA-1는 해시 함수이다. AES은 대칭키 블록 암호화 알고리즘으로 성격이 다르다."
     }
   ]
 }

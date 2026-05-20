@@ -70,7 +70,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "상향식 설계는 인터페이스가 성립된 후에야 모듈을 결합할 수 있다. 인터페이스가 없어도 기능 추가가 쉽다는 설명은 틀렸다."
+      "explanation": "상향식 설계는 인터페이스가 성립된 후에야 모듈을 결합할 수 있다. 인터페이스가 없어도 기능 추가  쉽다는 설명은 틀렸다."
     },
     {
       "qnum": 6,
@@ -393,7 +393,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "Groovy를 기반으로 한 빌드 도구는 Gradle이다. Jenkins는 Java 기반의 CI/CD 도구이다."
+      "explanation": "Groovy를 기반으로 한 빌드 도구는 Gradle이다. Jenkins은 Java 기반의 CI/CD 도구이다."
     },
     {
       "qnum": 29,
@@ -421,7 +421,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "Hybrid EAI는 Hub & Spoke와 Message Bus의 혼합 방식이다. Point-to-Point는 별도 유형이다."
+      "explanation": "Hybrid EAI는 Hub & Spoke와 Message Bus의 혼합 방식이다. Point-to-Point은 별도 유형이다."
     },
     {
       "qnum": 31,
@@ -673,7 +673,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "REVOKE는 부여된 권한을 회수하는 DCL 명령이다. GRANT는 권한을 부여하는 명령이다."
+      "explanation": "REVOKE는 부여된 권한을 회수하는 DCL 명령이다. GRANT은 권한을 부여하는 명령이다."
     },
     {
       "qnum": 49,
@@ -842,7 +842,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "속성 타입 변경(MODIFY)은 ALTER TABLE의 기능이다. CREATE TABLE은 테이블 생성과 초기 구조 정의에 사용한다."
+      "explanation": "속성 타입 변경(MODIFY)은 ALTER TABLE의 기능이다. CREATE TABLE는 테이블 생성과 초기 구조 정의에 사용한다."
     },
     {
       "qnum": 61,
@@ -1207,7 +1207,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "MD4, MD5, SHA-1은 해시 함수이고, AES는 대칭키 블록 암호화 알고리즘으로 성격이 다르다."
+      "explanation": "MD4, MD5, SHA-1는 해시 함수이고, AES은 대칭키 블록 암호화 알고리즘으로 성격이 다르다."
     },
     {
       "qnum": 87,
@@ -1249,7 +1249,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "RSA는 공개키(비대칭키) 암호화 알고리즘이다. DES, ARIA, SEED는 대칭키(개인키) 암호화이다."
+      "explanation": "RSA는 공개키(비대칭키) 암호화 알고리즘이다. DES, ARIA, SEED은 대칭키(개인키) 암호화이다."
     },
     {
       "qnum": 90,

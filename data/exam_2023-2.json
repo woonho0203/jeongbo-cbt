@@ -14,7 +14,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는이며, 이를 << >>이라 한다."
+      "explanation": "<< >>은 UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞은이다. 나머지 보기((( )) 등)는 다른 개념이다."
     },
     {
       "qnum": 2,
@@ -42,7 +42,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 가장 바르게 나열한이며, 이를 객체 모형 → 동적 모형 → 기능 모형이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, 객체 모형 → 동적 모형 → 기능 모형이 정답이다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "객체 패턴는 GoF(Gangs of Four) 디자인 패턴 분류에에 해당하지 않는다. GoF(Gangs of Four) 디자인 패턴 분류에에는 생성 패턴, 행위 패턴, 구조 패턴 등이 있다."
+      "explanation": "객체 패턴은 GoF(Gangs of Four) 디자인 패턴 분류에에 해당하지 않는다. GoF(Gangs of Four) 디자인 패턴 분류에에는 생성 패턴, 행위 패턴, 구조 패턴 등이 있다."
     },
     {
       "qnum": 5,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "아키텍처 설계 과정이 올바른 순서로 나열된 것은? ㉮ 설계 목표 설정 ㉯ 시스템 타입 결정 ㉰ 스타일 적용 및 커스터마이즈 ㉱ 서브시스템의 기능, 인터페이스 동작 작성 ㉲ 아키텍처 설계 검토이며, 이를 ㉮ → ㉯ → ㉰ → ㉱ → ㉲이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, ㉮ → ㉯ → ㉰ → ㉱ → ㉲이 정답이다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "서버 튜닝(Server Tuning)는 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목에 해당하지 않는다. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목에는 응답 시간(Response Time), 가용성(Availability), 사용률(Utilization) 등이 있다."
+      "explanation": "서버 튜닝(Server Tuning)는 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목에 해당하지 않는다이다."
     },
     {
       "qnum": 8,
@@ -126,7 +126,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정형 분석는 XP(eXtreme Programing)의 5가지 가치로에 해당하지 않는다. XP(eXtreme Programing)의 5가지 가치로에는 용기, 의사소통, 피드백 등이 있다."
+      "explanation": "정형 분석은 XP(eXtreme Programing)의 5가지 가치로에 해당하지 않는다. XP(eXtreme Programing)의 5가지 가치로에는 용기, 의사소통, 피드백 등이 있다."
     },
     {
       "qnum": 10,
@@ -140,7 +140,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정이며, 이를 캡슐화(Encapsulation)이라 한다."
+      "explanation": "캡슐화(Encapsulation)은 객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정이다. 나머지 보기(메시지(Message) 등)는 다른 개념이다."
     },
     {
       "qnum": 11,
@@ -196,7 +196,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은이며, 이를 Singleton Pattern이라 한다."
+      "explanation": "Singleton Pattern이 올바른 순서/설명이다. GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "럼바우(Rumbaugh) 분석 기법에서 정보 모델링이라고도 하며, 시스 템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체들 간의 관계를 규정하여 다이어그램을 표시하는 모델링이며, 이를 Object이라 한다."
+      "explanation": "Object은 럼바우(Rumbaugh) 분석 기법에서 정보 모델링이라고도 하며, 시스 템에서 요구되는 객체를 찾아내어 …이다."
     },
     {
       "qnum": 16,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "공통 모듈에 대한 명세 기법 중 해당 기능에 대해 일관되게 이해되고 한 가지로 해석될 수 있도록 작성하는 원칙이며, 이를 명확성이라 한다."
+      "explanation": "명확성은 공통 모듈에 대한 명세 기법 중 해당 기능에 대해 일관되게 이해되고 한 가지로 해석될 수 있도록 작성하는 원칙이다. 나머지 보기(상호작용성 등)는 다른 개념이다."
     },
     {
       "qnum": 20,
@@ -280,7 +280,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "모듈 간의 결합도는 강할수록 바람직하다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다. 바람직한 소프트웨어 설계 지침에는 적당한 모듈의 크기를 유지한다., 모듈 간의 접속 관계를 분석하여 복잡도와 중복을 줄인다, 모듈 간의 효과적인 제어를 위해 설계에서 계층적 자료  등이 있다."
+      "explanation": "모듈 간의 결합도는 강할수록 바람직하다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다이다."
     },
     {
       "qnum": 21,
@@ -294,7 +294,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "구현 단계에서의 작업 절차를 순서에 맞게 나열한 것은? ㉠ 코딩한다. ㉡ 코딩작업을 계획한다. ㉢ 코드를 테스트한다. ㉣ 컴파일한다.이며, 이를 ㉡ → ㉠ → ㉣ → ㉢이라 한다."
+      "explanation": "㉡ → ㉠ → ㉣ → ㉢이 모두 해당하는 보기이다. 해당 항목: ㉠ 코딩한다., ㉡ 코딩작업을 계획한다., ㉢ 코드를 테스트한다., ㉣ 컴파일한다.."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "소프트웨어 품질 목표 중 쉽게 배우고 사용할 수 있는 정도를 나타내 는이며, 이를 Usability이라 한다."
+      "explanation": "Usability는 소프트웨어 품질 목표 중 쉽게 배우고 사용할 수 있는 정도를 나타내 는이다. 나머지 보기(Correctness 등)는 다른 개념이다."
     },
     {
       "qnum": 23,
@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "다음 설명에 부합하는 용어로 옳은 것은? ㆍ소프트웨어 구조를 이루며, 다른 것들과 구별될 수 있는 독립적인 기능을 갖는 단위이다. ㆍ하나 또는 몇 개의 논리적인 기능을 수행하기 위한 명령 어들의 집합이라고도 할 수 있다. ㆍ서로 모여 하나의 완전한 프로그램으로 만들어질 수 있다.이며, 이를 모듈이라 한다."
+      "explanation": "모듈이 올바른 순서/설명이다. 설명에 부합하는 용어로 옳은 것은? ㆍ소프트웨어 구조를 이루며, 다른 것."
     },
     {
       "qnum": 25,
@@ -364,7 +364,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "다음 전위식(prefix)을 후위식(postfix)으로 옳게 표현한 것은? - / * A + B C D E이며, 이를 A B C + * D / E이라 한다."
+      "explanation": "A B C + * D / E -은 전위식(prefix)을 후위식(postfix)으로 옳게 표현한 것은? - / * A + B C D E이다. 나머지 보기(A B C + D / * E - 등)는 다른 개념이다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "버블 정렬을 이용하여 다음 자료를 오름차순으로 정렬할 경우 PASS 1의 결과는? 9, 6, 7, 3, 5이며, 이를 6, 7, 3, 5, 9이라 한다."
+      "explanation": "6, 7, 3, 5, 9은 버블 정렬을 이용하여 다음 자료를 오름차순으로 정렬할 경우 PASS 1의 결과는? 9, 6, 7, 3, 5이다. 나머지 보기(6, 9, 7, 3, 5 등)는 다른 개념이다."
     },
     {
       "qnum": 28,
@@ -392,7 +392,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "개방주소법(Open Addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다. 해싱 함수(Hashing Function)에는 제곱법(Mid-Square), 숫자 분석법(Digit Analysis), 제산법(Division) 등이 있다."
+      "explanation": "개방주소법(Open Addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다이다."
     },
     {
       "qnum": 29,
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "프로젝트 개발비용을 효율적으로 관리는 제품 소프트웨어의 형상 관리 역할로에 해당하지 않는다. 제품 소프트웨어의 형상 관리 역할로의 올바른 항목: 형상 관리를 통해 이전 리버전이나 버전에 대한 정보에 접근 가능, 불필요한 사용자의 소스 수정 제한, 동일한 프로젝트에 대해 여러 개발자 동시 개발 가능."
+      "explanation": "프로젝트 개발비용을 효율적으로 관리는 제품 소프트웨어의 형상 관리 역할로에 해당하지 않는다이다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추적할 수 있는 소프트웨어 버전 관리이며, 이를 RCS(Revision Control System)이라 한다."
+      "explanation": "RCS(Revision Control System)은 동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추적할 수 …이다."
     },
     {
       "qnum": 33,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "하향식 통합 시험을 위해 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용 모듈이며, 이를 Stub이라 한다."
+      "explanation": "Stub은 하향식 통합 시험을 위해 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용 모듈이다. 나머지 보기(Driver 등)는 다른 개념이다."
     },
     {
       "qnum": 35,
@@ -504,7 +504,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "제어 흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이며, 이를 4이라 한다."
+      "explanation": "4은 제어 흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이다."
     },
     {
       "qnum": 37,
@@ -532,7 +532,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "SMTP는 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 것에 해당하지 않는다. 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 것에는 IPSec, SSL, S-HTTP 등이 있다."
+      "explanation": "SMTP은 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 것에 해당하지 않는다. 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 것에는 IPSec, SSL, S-HTTP 등이 있다."
     },
     {
       "qnum": 39,
@@ -546,7 +546,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "다음 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이며, 이를 ABEFGCD이라 한다."
+      "explanation": "ABEFGCD은 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이다. 나머지 보기(ABECDFG 등)는 다른 개념이다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "컴파일러의 독창성는 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다. 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에는 개발 정보 시스템의 특성, 사용자의 요구사항, 컴파일러의 가용성 등이 있다."
+      "explanation": "컴파일러의 독창성은 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다이다."
     },
     {
       "qnum": 41,
@@ -574,7 +574,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "하나의 애트리뷰트가 가질 수 있는 원자값들의 집합을 의미하는 것이며, 이를 도메인이라 한다."
+      "explanation": "도메인은 하나의 애트리뷰트가 가질 수 있는 원자값들의 집합을 의미하는 것이다. 유사 개념: 튜플 · 엔티티 등과 구별한다."
     },
     {
       "qnum": 42,
@@ -602,7 +602,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "DML에 해당하는 것으로만 나열된 것은? ㉠ SELECT ㉡ UPDATE ㉢ INSERT ㉣ GRANT이며, 이를 ㉠, ㉡, ㉢이라 한다."
+      "explanation": "㉠, ㉡, ㉢은 DML에 해당하는 것으로만 나열된 것은? ㉠ SELECT ㉡ UPDATE ㉢ INSERT ㉣ GRANT이다. 유사 개념: ㉠, ㉡, ㉣ · ㉠, ㉢, ㉣ 등과 구별한다."
     },
     {
       "qnum": 44,
@@ -616,7 +616,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "다음은 관계 대수의 수학적 표현식이다. 해당되는 연산은? R x S = { r·s | r ∈ R ∧ s ∈ S } r = < a, a, …, a >, s = < b, b, …, b > 1 2 n 1 2 m이며, 이를 카티션 프로덕트이라 한다."
+      "explanation": "카티션 프로덕트는 은 관계 대수의 수학적 표현식이다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "예측 분할는 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법에 해당하지 않는다. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법에는 라운드-로빈, 범위 분할, 해시 분할 등이 있다."
+      "explanation": "예측 분할은 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법에 해당하지 않는다. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법에는 라운드-로빈, 범위 분할, 해시 분할 등이 있다."
     },
     {
       "qnum": 46,
@@ -658,7 +658,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "스키마의 종류 중 조직이나 기관의 총괄적 입장에서 본 데이터베이스 의 전체적인 논리적 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스 구조를 의미하는 것이며, 이를 개념 스키마이라 한다."
+      "explanation": "개념 스키마는 스키마의 종류 중 조직이나 기관의 총괄적 입장에서 본 데이터베이스 의 전체적인 논리적 구조로서, 모든 응…이다."
     },
     {
       "qnum": 48,
@@ -700,7 +700,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "다음 SQL 문장이 뜻하는 것은 무엇인가? INSERT INTO 컴퓨터과테이블(학번, 이름, 학년) SELECT 학번, 이름, 학년 FROM 학생테이블 WHERE 학과='컴퓨터'이며, 이를 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.이라 한다."
+      "explanation": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.은 SQL 문장이 뜻하는 것은 무엇인가? INSERT INTO 컴퓨터과테이블(학번, 이름, 학년) SELEC…이다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "릴레이션 R의 차수(Degree)가 3, 카디널리티(Cardinality)가 3, 릴레 이션 S의 차수가 4, 카디널리티가 4일 때, 두 릴레이션을 카티션 프로덕트(Cartesian Product)한 결과 릴레이션의 차수와 카디널리 티이며, 이를 7, 12이라 한다."
+      "explanation": "7, 12은 릴레이션 R의 차수(Degree)가 3, 카디널리티(Cardinality)가 3, 릴레 이션 S의 차수가…이다."
     },
     {
       "qnum": 52,
@@ -728,7 +728,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은? [테이블명 : 판매실적] 도시 지점명 판매액 서울 강남 지점 330 서울 강북 지점 168 광주 광주 지점 197 서울 강서 지점 158 서울 강동 지점 197 대전 대전 지점 165이며, 이를 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;이라 한다."
+      "explanation": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;은 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다이다."
     },
     {
       "qnum": 53,
@@ -742,7 +742,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "트랜잭션들을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업이며, 이를 Recovery이라 한다."
+      "explanation": "Recovery는 트랜잭션들을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업이다. 나머지 보기(Restart 등)는 다른 개념이다."
     },
     {
       "qnum": 54,
@@ -756,7 +756,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "조건을 모두 만족하는 정규형은? ㆍ테이블 R에 속한으로(로) BCNF이다."
+      "explanation": "조건을 모두 만족하는 정규형은? ㆍ테이블 R에 속한으로 BCNF이다."
     },
     {
       "qnum": 55,
@@ -784,7 +784,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Media Access Transparency는 이 범주에 해당하지 않는다. 이 범주에는 Location Transparency·Replication Transparency·Failure Transparency 등이 포함된다."
+      "explanation": "Media Access Transparency는 이 범주에 해당하지 않는다이다."
     },
     {
       "qnum": 57,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "다음 질의에 대한 SQL 문은? 프로젝트번호(PNO) 1, 2, 3에서 일하는 사원의 주민등록번 호(JUNO)를 검색하라. (단, 사원 테이블(WORKS)은 프로 젝트번호(PNO), 주민등록번호(JUNO) 필드로 구성된다.)이며, 이를 SELECT JUNO FROM WORKS WHERE PNO IN(1, 2, 3);이라 한다."
+      "explanation": "SELECT JUNO FROM WORKS WHERE PNO IN(1, 2, 3);은 질의에 대한 SQL 문은? 프로젝트번호(PNO) 1, 2, 3에서 일하는 사원의 주민등록번 호(JUNO)…이다."
     },
     {
       "qnum": 58,
@@ -812,7 +812,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "다음 두 릴레이션에서 외래키로 사용된 것은? (단, 밑줄 친속성은 기본키이다.) 과목(과목번호, 과목명) 수강(수강번호, 학번, 과목번호, 학기) -이며, 이를 과목번호이라 한다."
+      "explanation": "과목번호는 두 릴레이션에서 외래키로 사용된 것은? (단, 밑줄 친속성은 기본키이다.) 과목(과목번호, 과목명) 수강(수강번호, 학번, 과목번호, 학기) -이다. 나머지 보기(수강번호 등)는 다른 개념이다."
     },
     {
       "qnum": 59,
@@ -840,7 +840,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한이며, 이를 클래스이라 한다."
+      "explanation": "클래스는 객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한이다."
     },
     {
       "qnum": 61,
@@ -854,7 +854,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "컴파일러의 독창성는 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다. 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에는 개발 정보 시스템의 특성, 사용자의 요구사항, 컴파일러의 가용성 등이 있다."
+      "explanation": "컴파일러의 독창성은 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다이다."
     },
     {
       "qnum": 62,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "LUF(Least Used First)는 페이지 교체(Page Replacement) 알고리즘에 해당하지 않는다. 페이지 교체(Page Replacement) 알고리즘에는 FIFO(First-In-First-Out), Optimal, LRU(Least Recently Used) 등이 있다."
+      "explanation": "LUF(Least Used First)는 페이지 교체(Page Replacement) 알고리즘에 해당하지 않는다이다."
     },
     {
       "qnum": 67,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은? 작업 대기 시간 서비스(실행)시간 A 5 20 B 40 20 C 15 45 D 20 2이며, 이를 D → B → C → A이라 한다."
+      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되."
     },
     {
       "qnum": 68,
@@ -994,7 +994,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "OSI 7계층 모델에서 전송에 필요한 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성을 정의한 계층이며, 이를 물리 계층이라 한다."
+      "explanation": "물리 계층이 올바른 순서/설명이다. OSI 7계층 모델에서 전송에 필요한 장치 간의 실제 접속과 절단 등 기."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 4개의 Subnet으 로 나누고 IP Subnet-zero를 적용했다. 이 때 Subnetting된 네트워크 중 4번째 네트워크의 4번째 사용 가능한 IP는이며, 이를 192.168.1.196이라 한다."
+      "explanation": "192.168.1.196은 192이다."
     },
     {
       "qnum": 73,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 “Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인이며, 이를 3KB이라 한다."
+      "explanation": "3KB은 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 “Best F…이다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "C언어에서 두 개의 논리 값 중 하나라도 참이면 1을, 모두 거짓이면 0을 반환하는 연산자이며, 이를 ∥이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, ∥이 정답이다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "결합도(Coupling) 단계를 약한 순서에서 강한 순서로 가장 옳게 표시한이며, 이를 Data → Stamp → Control → Common → Content이라 한다."
+      "explanation": "Data → Stamp → Control → Common → Content이 올바른 순서/설명이다. 결합도(Coupling) 단계를 약한 순서에서 강한 순서로 가장 옳게 표."
     },
     {
       "qnum": 77,
@@ -1092,7 +1092,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "다음 내용이 설명하는 소프트웨어 취약점은? 메모리를 다루는 데 오류가 발생하여 잘못된 동작을 하는 프로그램 취약점이며, 이를 버퍼 오버플로이라 한다."
+      "explanation": "버퍼 오버플로는 내용이 설명하는 소프트웨어 취약점은? 메모리를 다루는 데 오류가 발생하여 잘못된 동작을 하는 프로그램 취약점이다. 나머지 보기(FTP 바운스 공격 등)는 다른 개념이다."
     },
     {
       "qnum": 79,
@@ -1120,7 +1120,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "C언어에서 정수 자료형으로 옳은 것은?으로(로) int이다."
+      "explanation": "C언어에서 정수 자료형으로 옳은 것은으로 int이다."
     },
     {
       "qnum": 81,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "단기간 제작 목적으로 인하여 비효율적인 언어나 알고리즘을 사용할 수 있다.는 소프트웨어 생명주기 모형에서 프로토타입 모형에 해당하지 않는다. 소프트웨어 생명주기 모형에서 프로토타입 모형에는 개발과정에서 사용자의 요구를 충분히 반영한다., 최종 결과물이 만들어지기 전에 의뢰자가 최종결과물의 일, 의뢰자나 개발자 모두에게 공동의 참조 모델을 제공한다. 등이 있다."
+      "explanation": "단기간 제작 목적으로 인하여 비효율적인 언어나 알고리즘을 사용할 수 있다.는 소프트웨어 생명주기 모형에서 프로토타입 모형에 해당하지 않는다이다."
     },
     {
       "qnum": 82,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "COCOMO Model 중 기관 내부에서 개발된 중·소 규모의 소프트웨어 로 일괄 자료 처리나 과학기술 계산용, 비즈니스 자료 처리용으로 5만 라인 이하의 소프트웨어를 개발하는 유형이며, 이를 Organic이라 한다."
+      "explanation": "Organic는 COCOMO Model 중 기관 내부에서 개발된 중·소 규모의 소프트웨어 로 일괄 자료 처리나 과학기술 …이다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "반복는 CMMI에 해당하지 않는다. CMMI에는 초기, 관리, 정의 등이 있다."
+      "explanation": "반복은 CMMI에 해당하지 않는다. CMMI에는 초기, 관리, 정의 등이 있다."
     },
     {
       "qnum": 84,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "프로젝트에 내재된 위험 요소를 인식하고 그 영향을 분석하여 이를 관리하는 활동으로서, 프로젝트를 성공시키기 위하여 위험 요소를 사전에 예측, 대비하는 모든 기술과 활동을 포함하는 것이며, 이를 Risk Analysis이라 한다."
+      "explanation": "Risk Analysis은 프로젝트에 내재된 위험 요소를 인식하고 그 영향을 분석하여 이를 관리하는 활동으로서, 프로젝트를 성공시키…이다."
     },
     {
       "qnum": 85,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "서버 관리실 출입 통제는 취약점 관리를 위한 응용 프로그램의 보안 설정과 가장에 해당하지 않는다. 취약점 관리를 위한 응용 프로그램의 보안 설정과 가장에는 실행 프로세스 권한 설정, 운영체제의 접근 제한, 운영체제의 정보 수집 제한 등이 있다."
+      "explanation": "서버 관리실 출입 통제는 취약점 관리를 위한 응용 프로그램의 보안 설정과 가장에 해당하지 않는다이다."
     },
     {
       "qnum": 86,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "IP 또는 ICMP의 특성을 악용하여 특정 사이트에 집중적으로 데이터 를 보내 네트워크 또는 시스템의 상태를 불능으로 만드는 공격이며, 이를 Smurfing이라 한다."
+      "explanation": "Smurfing은 IP 또는 ICMP의 특성을 악용하여 특정 사이트에 집중적으로 데이터 를 보내 네트워크 또는 시스템의 상태를 불능으로 만드는 공격이다. 나머지 보기(TearDrop 등)는 다른 개념이다."
     },
     {
       "qnum": 88,
@@ -1232,7 +1232,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "닫힌 포트 확인는 백도어 탐지 방법에 해당하지 않는다. 백도어 탐지 방법의 올바른 항목: 무결성 검사, 로그 분석, SetUID 파일 검사."
+      "explanation": "닫힌 포트 확인은 백도어 탐지 방법에 해당하지 않는다. 백도어 탐지 방법의 올바른 항목: 무결성 검사, 로그 분석, SetUID 파일 검사."
     },
     {
       "qnum": 89,
@@ -1246,7 +1246,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "휘발성는 정보 보안의 3대 요소에에 해당하지 않는다. 정보 보안의 3대 요소에에는 기밀성, 무결성, 가용성 등이 있다."
+      "explanation": "휘발성은 정보 보안의 3대 요소에에 해당하지 않는다. 정보 보안의 3대 요소에에는 기밀성, 무결성, 가용성 등이 있다."
     },
     {
       "qnum": 90,
@@ -1260,7 +1260,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈네트워킹, 공공 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것이며, 이를 Mesh Network이라 한다."
+      "explanation": "Mesh Network은 기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동…이다."
     },
     {
       "qnum": 91,
@@ -1274,7 +1274,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협는 물리적 위협으로 인한 문제에에 해당하지 않는다. 물리적 위협으로 인한 문제에에는 화재, 홍수 등 천재지변으로 인한 위협, 하드웨어 파손, 고장으로 인한 장애, 방화, 테러로 인한 하드웨어와 기록장치를 물리적으로 파 등이 있다."
+      "explanation": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 물리적 위협으로 인한 문제에에 해당하지 않는다이다."
     },
     {
       "qnum": 92,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "프로젝트 개발 유형에 따라 object, dynamic, function의 3가 지 모드로 구분한다.는 COCOMO(Constructive Cost Model) 모형에 해당하지 않는다. COCOMO(Constructive Cost Model) 모형에는 프로젝트를 완성하는데 필요한 Man-Month로 산정 , 보헴(Boehm)이 제안한 것으로 원시 코드 라인 수에, 비교적 작은 규모의 프로젝트 기록을 통계 분석하여 얻은 등이 있다."
+      "explanation": "프로젝트 개발 유형에 따라 object, dynamic, function의 3가 지 모드로 구분한다.는 COCOMO(Constructive Cost Model) 모형에 해당하지 않는다이다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘이며, 이를 RSA이라 한다."
+      "explanation": "RSA는 소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘이다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "암호화 키와 복호화 키가 동일한 암호화 알고리즘은?으로(로) AES이다."
+      "explanation": "암호화 키와 복호화 키가 동일한 암호화 알고리즘은으로 AES이다."
     },
     {
       "qnum": 95,
@@ -1344,7 +1344,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용이며, 이를 합성 중심이라 한다."
+      "explanation": "합성 중심은 전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용이다. 나머지 보기(생성 중심 등)는 다른 개념이다."
     },
     {
       "qnum": 97,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석이며, 이를 DPI(Deep Packet Inspection)이라 한다."
+      "explanation": "DPI(Deep Packet Inspection)은 OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고…이다."
     },
     {
       "qnum": 100,

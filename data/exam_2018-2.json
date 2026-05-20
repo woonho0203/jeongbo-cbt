@@ -14,7 +14,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "릴레이션에 포함되어 있는 튜플의 수은(는) Cardinality이다."
+      "explanation": "릴레이션에 포함되어 있는 튜플의 수은 Cardinality이다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "버블 정렬을 이용한 오름차순 정렬 시 다음 자료에 대한 2회전 후의 결과는? 9, 6, 7, 3, 5이며, 이를 6, 3, 5, 7, 9이라 한다."
+      "explanation": "6, 3, 5, 7, 9은 버블 정렬을 이용한 오름차순 정렬 시 다음 자료에 대한 2회전 후의 결과는? 9, 6, 7, 3, 5이다. 나머지 보기(3, 5, 6, 7, 9 등)는 다른 개념이다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "릴레이션 R의 차수가 4이고 카디널리티가 5이며, 릴레이션 S의 차수가 6이고 카디널리티가 7일 때, 두 개의 릴레이션을 카티션 프로덕트한 결과의 새로운 릴레이션의 차수와 카디널리티는 얼마 인이며, 이를 10, 35이라 한다."
+      "explanation": "10, 35은 릴레이션 R의 차수가 4이고 카디널리티가 5이며, 릴레이션 S의 차수가 6이고 카디널리티가 7일 때, 두…이다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "What are general configuration of indexed sequential file이며, 이를 Index area, Prime area, Overflow area이라 한다."
+      "explanation": "Index area, Prime area, Overflow area는 What are general configuration of indexed sequential file이다."
     },
     {
       "qnum": 5,
@@ -70,7 +70,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "목표 DBMS에 맞는 스키마 설계는 데이터베이스 설계 시 물리적 설계 단계에서 수행하는 사항에 해당하지 않는다. 데이터베이스 설계 시 물리적 설계 단계에서 수행하는 사항에는 저장 레코드 양식 설계, 레코드 집중의 분석 및 설계, 접근 경로 설계 등이 있다."
+      "explanation": "목표 DBMS에 맞은 스키마 설계는 데이터베이스 설계 시 물리적 설계 단계에서 수행하는 사항에 해당하지 않는다이다."
     },
     {
       "qnum": 6,
@@ -112,7 +112,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "다음은 관계형 데이터베이스의 키(Key)를 설명하고 있다. 해당되는 키는? 한 릴레이션 내의 속성들의 집합으로 구성된 키로서, 릴 레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키 지만 최소성은 만족시키지 못한다.이며, 이를 슈퍼키이라 한다."
+      "explanation": "슈퍼키는 은 관계형 데이터베이스의 키(Key)를 설명하고 있다이다."
     },
     {
       "qnum": 9,
@@ -182,7 +182,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SQL 구문에서 “having” 절은 반드시 어떤 구문과 사용되어야 하는 것이며, 이를 GROUP BY이라 한다."
+      "explanation": "GROUP BY는 SQL 구문에서 “having” 절은 반드시 어떤 구문과 사용되어야 하는 것이다. 유사 개념: ORDER BY · UPDATE 등과 구별한다."
     },
     {
       "qnum": 14,
@@ -196,7 +196,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "데이터의 중복으로 인하여 관계연산을 처리할 때 예기치 못한 곤란한 현상이 발생하는 것을 무엇이라 하는 것이며, 이를 이상(Anomaly)이라 한다."
+      "explanation": "이상(Anomaly)은 데이터의 중복으로 인하여 관계연산을 처리할 때 예기치 못한 곤란한 현상이 발생하는 것을 무엇이라 하는 것이다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정점이 5개인 방향 그래프가 가질 수 있는 최대 간선 수는? (단, 자기간선과 중복간선은 배제한다.)이며, 이를 20개이라 한다."
+      "explanation": "20개는 정점이 5개인 방향 그래프가 가질 수 있는 최대 간선 수는? (단, 자기간선과 중복간선은 배제한다.)이다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "DBA가 사용자 Park에게 테이블A의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸에 알맞게 채운 것은? SQL> GRANT ㉠ ㉡ 테이블A To Park이며, 이를 ㉠ UPDATE, ㉡ ON이라 한다."
+      "explanation": "㉠ UPDATE, ㉡ ON은 DBA가 사용자 Park에게 테이블A의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을…이다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "다음 Postfix 연산식에 대한 연산결과로 옳은 것은? 3 4 * 5 6 * +이며, 이를 42이라 한다."
+      "explanation": "42이 올바른 순서/설명이다. Postfix 연산식에 대한 연산결과로 옳은 것은? 3 4 * 5 6 *."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정규화 과정에서 A → B이고 B → C 일 때 A → C인 관계를 제거하는 단계이며, 이를 2NF → 3NF이라 한다."
+      "explanation": "2NF → 3NF이 올바른 순서/설명이다. 정규화 과정에서 A → B이고 B → C 일 때 A → C인 관계를 제거."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "트리에 대한 INORDER 운행 결과은(는) D B A E C F이다."
+      "explanation": "트리에 대한 INORDER 운행 결과은 D B A E C F이다."
     },
     {
       "qnum": 20,
@@ -294,7 +294,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "대중성는 다중처리기를 사용하여 성능 개선을 하고자 하는 것 중 주된 목표에 해당하지 않는다. 다중처리기를 사용하여 성능 개선을 하고자 하는 것 중 주된 목표에는 유연성, 신뢰성, 수행속도 등이 있다."
+      "explanation": "대중성은 다중처리기를 사용하여 성능 개선을 하고자 하는 것 중 주된 목표에 해당하지 않는다. 다중처리기를 사용하여 성능 개선을 하고자 하는 것 중 주된 목표에는 유연성, 신뢰성, 수행속도 등이 있다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "CPU에 의해 참조되는 각 주소는 가상주소를 주기억장치의 실제주 소로 변환하여야 한다. 이것을 무엇이라 하는 것이며, 이를 mapping이라 한다."
+      "explanation": "mapping은 CPU에 의해 참조되는 각 주소는 가상주소를 주기억장치의 실제주 소로 변환하여야 한다. 이것을 무엇이라 하는 것이다. 유사 개념: blocking · buffering 등과 구별한다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "두 데이터의 비교(Compare)를 위한 논리연산은은(는) XOR 연산이다."
+      "explanation": "두 데이터의 비교(Compare)를 위한 논리연산은은 XOR 연산이다."
     },
     {
       "qnum": 24,
@@ -336,7 +336,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "논리곱(minterm)으로 표시된 다음 불대수(boolean function)를 간략화한 것은? (단, d 함수는 don't care 임) F(w, x, y, z) = ∑(1, 3, 7, 11, 15) d(w, x, y, z) = ∑(0, 2, 5)이며, 이를 w'z + yz이라 한다."
+      "explanation": "w'z + yz는 논리곱(minterm)으로 표시된 다음 불대수(boolean function)를 간략화한 것은? (단, …이다."
     },
     {
       "qnum": 25,
@@ -350,7 +350,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "2개 이상의 프로그램을 주기억장치에 기억시키고 CPU를 번갈아 사용하면서 처리하여 컴퓨터 시스템 자원 활용률을 극대화하기 위한 프로그래밍이며, 이를 멀티 프로그래밍이라 한다."
+      "explanation": "멀티 프로그래밍은 2개 이상의 프로그램을 주기억장치에 기억시키고 CPU를 번갈아 사용하면서 처리하여 컴퓨터 시스템 자원 활용률을 극대화하기 위한 프로그래밍이다. 나머지 보기(분산처리 프로그래밍 등)는 다른 개념이다."
     },
     {
       "qnum": 26,
@@ -378,7 +378,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "입력단자가 하나이며, 1 이 입력 될 때마다 출력단자의 상태가 바뀌는 플립플롭의 종류이며, 이를 T이라 한다."
+      "explanation": "T은 입력단자가 하나이며, 1 이 입력 될 때마다 출력단자의 상태가 바뀌는 플립플롭의 종류이다."
     },
     {
       "qnum": 28,
@@ -392,7 +392,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "컴퓨터 시스템에서 1-address machine, 2-address machine, 3-address machine으로 나눌 때 기준이 되는 것이며, 이를 operand의 address 수이라 한다."
+      "explanation": "operand의 address 수는 컴퓨터 시스템에서 1-address machine, 2-address machine, 3-address …이다."
     },
     {
       "qnum": 29,
@@ -420,7 +420,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "MBR ← MAR, PC ← 0는 Interrupt cycle에 대한 마이크로 오퍼레이션(micro-operation) 중 에서 가장에 해당하지 않는다. Interrupt cycle에 대한 마이크로 오퍼레이션(micro-operation) 중 에서 가장에는 MAR ← PC, PC ← PC + 1, M ← MBR, IEN ← 0, GO TO fetch cycle 등이 있다."
+      "explanation": "MBR ← MAR, PC ← 0는 Interrupt cycle에 대한 마이크로 오퍼레이션(micro-operation) 중 에서 가장에 해…이다."
     },
     {
       "qnum": 31,
@@ -434,7 +434,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "4X2 RAM을 이용하여 16X4 메모리를 구성하고자 할 경우에 필요한 4X2 RAM의 수이며, 이를 8개이라 한다."
+      "explanation": "8개는 4X2 RAM을 이용하여 16X4 메모리를 구성하고자 할 경우에 필요한 4X2 RAM의 수이다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "캐시의 라인 교체 정책 가운데, 최근에 가장 적게 사용된 라인부터 교체하는 정책이며, 이를 LRU이라 한다."
+      "explanation": "LRU는 캐시의 라인 교체 정책 가운데, 최근에 가장 적게 사용된 라인부터 교체하는 정책이다. 나머지 보기(FIFO 등)는 다른 개념이다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "10진수 -14를 2의 보수 표현법을 이용하여 8비트 레지스터에 저장하였을 때, 이를 오른쪽으로 1비트 산술 시프트 했을 때의 결과이며, 이를 11111001이라 한다."
+      "explanation": "11111001은 10진수 -14를 2의 보수 표현법을 이용하여 8비트 레지스터에 저장하였을 때, 이를 오른쪽으로 1비트 산술 시프트 했을 때의 결과이다. 나머지 보기(10000111 등)는 다른 개념이다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "다음은 DMA의 데이터 전송 절차를 나열한 것이다. 순서를 가장 옳게 나열한 것은? ⓐ 데이터 전송(data transfer) ⓑ 버스 사용 요구(bus request) ⓒ 인터럽트(interrupt) ⓓ 버스 사용 허가(bus grant)이며, 이를 ⓑ → ⓓ → ⓐ → ⓒ이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, ⓑ → ⓓ → ⓐ → ⓒ이 정답이다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "병렬컴퓨터에서 처리요소의 성능을 측정하는데 사용되는 단위이며, 이를 MIPS이라 한다."
+      "explanation": "MIPS은 병렬컴퓨터에서 처리요소의 성능을 측정하는데 사용되는 단위이다."
     },
     {
       "qnum": 36,
@@ -504,7 +504,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "누산기으로(로) 연산장치에 있는 레지스터의 하나로서 연산 결과를 기억하는 장치이다.이다."
+      "explanation": "누산기으로 연산장치에 있는 레지스터의 하나로서 연산 결과를 기억하는 장치이다."
     },
     {
       "qnum": 37,
@@ -518,7 +518,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "비교적 속도가 빠른 자기 디스크에 연결하는 채널은은(는) 셀렉터 채널이다."
+      "explanation": "비교적 속도가 빠른 자기 디스크에 연결하는 채널은은 셀렉터 채널이다."
     },
     {
       "qnum": 38,
@@ -532,7 +532,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "ASCII 코드의 비트 구성은 존(zone) 비트와 수(digit) 비트로 구분된 다. 존(zone)비트는 몇 비트인이며, 이를 3비트이라 한다."
+      "explanation": "3비트는 ASCII 코드의 비트 구성은 존(zone) 비트와 수(digit) 비트로 구분된 다. 존(zone)비트는 몇 비트인이다."
     },
     {
       "qnum": 39,
@@ -588,7 +588,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음 <표>와 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 40 10이며, 이를 D이라 한다."
+      "explanation": "D은 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음 <표>와 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 40 10이다."
     },
     {
       "qnum": 43,
@@ -602,7 +602,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "PCB를 갖고 있으며, 현재 실행 중이거나 곧 실행 가능하며, CPU를 할당받을 수 있는 프로그램으로 정의할 수 있는 것이며, 이를 프로세스이라 한다."
+      "explanation": "프로세스는 PCB를 갖고 있으며, 현재 실행 중이거나 곧 실행 가능하며, CPU를 할당받을 수 있는 프로그램으로 정의할 수 있는 것이다. 나머지 보기(워킹 셋 등)는 다른 개념이다."
     },
     {
       "qnum": 44,
@@ -616,7 +616,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "매크로 정의 확장는 매크로 프로세서가 수행해야 하는 기본적인 기능에에 해당하지 않는다. 매크로 프로세서가 수행해야 하는 기본적인 기능에에는 매크로 호출 인식, 매크로 정의 인식, 매크로 정의 저장 등이 있다."
+      "explanation": "매크로 정의 확장은 매크로 프로세서가 수행해야 하는 기본적인 기능에에 해당하지 않는다. 매크로 프로세서가 수행해야 하는 기본적인 기능에에는 매크로 호출 인식, 매크로 정의 인식, 매크로 정의 저장 등이 있다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "FIFO 스케줄링에서 3개의 작업 도착 시간과 CPU 사용시간(Burst Time)이 다음 표와 같다. 이 때 모든 작업들의 평균 반환 시간(Turn Around Time)은 약 얼마인가? (단, 소수점 이하는 반올림 처리한 다.) 작업 도착시간 CPU 사용시간(Burst Time) JOB 1 0 13 JOB 2 3 35 JOB 3 8 2이며, 이를 33이라 한다."
+      "explanation": "33은 FIFO 스케줄링에서 3개의 작업 도착 시간과 CPU 사용시간(Burst Time)이 다음 표와 같다이다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "비용는 운영체제의 성능을 판단할 수 있는 요소로 가장에 해당하지 않는다. 운영체제의 성능을 판단할 수 있는 요소로 가장에는 처리 능력, 신뢰도, 사용 가능도 등이 있다."
+      "explanation": "비용은 운영체제의 성능을 판단할 수 있는 요소로 가장에 해당하지 않는다. 운영체제의 성능을 판단할 수 있는 요소로 가장에는 처리 능력, 신뢰도, 사용 가능도 등이 있다."
     },
     {
       "qnum": 47,
@@ -658,7 +658,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "권한 행렬(Capability Matrix)는 일반적으로 사용되는 자원 보호 기법의 종류에에 해당하지 않는다. 일반적으로 사용되는 자원 보호 기법의 종류에에는 접근 제어 행렬(Access Control Matrix, 접근 제어 리스트(Access Control List), 권한 리스트(Capability List) 등이 있다."
+      "explanation": "권한 행렬(Capability Matrix)는 일반적으로 사용되는 자원 보호 기법의 종류에에 해당하지 않는다이다."
     },
     {
       "qnum": 48,
@@ -672,7 +672,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "비행기 제어, 교통 제어, 레이더 추적 등 정해진 시간에 반드시 수행되어야 하는 작업들이 존재할 때, 가장 적합한 처리이며, 이를 Real-Time Processing System이라 한다."
+      "explanation": "Real-Time Processing System은 비행기 제어, 교통 제어, 레이더 추적 등 정해진 시간에 반드시 수행되어야 하는 작업들이 존재할 때, 가…이다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "SRT(Shortest Remaining Time)는 비선점(Non-Preemptive) 스케줄링에에 해당하지 않는다. 비선점(Non-Preemptive) 스케줄링에에는 FIFO(First In First Out), 기한부(Deadline), HRN(Highest Response-ratio Nex 등이 있다."
+      "explanation": "SRT(Shortest Remaining Time)는 비선점(Non-Preemptive) 스케줄링에에 해당하지 않는다이다."
     },
     {
       "qnum": 50,
@@ -700,7 +700,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "프로세서의 상호 연결 구조 중 하이퍼 큐브 구조에서 각 CPU가 3개의 연결점을 가질 경우 CPU의 개수이며, 이를 8이라 한다."
+      "explanation": "8은 프로세서의 상호 연결 구조 중 하이퍼 큐브 구조에서 각 CPU가 3개의 연결점을 가질 경우 CPU의 개수이다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "해싱 등의 사상 함수를 사용하여 레코드 키(Record Key)에 의한 주소 계산을 통해 레코드를 접근할 수 있도록 구성한 파일이며, 이를 직접 파일이라 한다."
+      "explanation": "직접 파일은 해싱 등의 사상 함수를 사용하여 레코드 키(Record Key)에 의한 주소 계산을 통해 레코드를 접근할 수 있도록 구성한 파일이다. 나머지 보기(순차 파일 등)는 다른 개념이다."
     },
     {
       "qnum": 52,
@@ -770,7 +770,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "중앙 컴퓨터와 직접 연결되어 응답이 빠르고 통신 비용이 적게 소요되지만, 중앙 컴퓨터에 장애가 발생되면 전체 시스템이 마비되 는 분산 시스템의 위상 구조이며, 이를 성형(Star) 구조이라 한다."
+      "explanation": "성형(Star) 구조는 중앙 컴퓨터와 직접 연결되어 응답이 빠르고 통신 비용이 적게 소요되지만, 중앙 컴퓨터에 장애가 발생되면 …이다."
     },
     {
       "qnum": 56,
@@ -784,7 +784,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "각 프로세스의 프로세서 요구시간을 미리 예측하기 쉽다.는 SJF(Shortest-Job-First) 스케줄링 방법에 해당하지 않는다. SJF(Shortest-Job-First) 스케줄링 방법에는 작업이 끝날 때까지의 실행시간 추정치가 가장 작은 작업, 작업 시간이 큰 경우 오랫동안 대기하여야 한다., FIFO 기법보다 평균 대기 시간이 감소된다. 등이 있다."
+      "explanation": "각 프로세스의 프로세서 요구시간을 미리 예측하기 쉽다.는 SJF(Shortest-Job-First) 스케줄링 방법에 해당하지 않는다이다."
     },
     {
       "qnum": 57,
@@ -798,7 +798,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "파일이 처음 사용된 시간는 유닉스의 I-node에 포함되는 정보에 해당하지 않는다. 유닉스의 I-node에 포함되는 정보에는 디스크 상의 물리적 주소, 파일 소유자의 사용자 식별, 파일에 대한 링크 수 등이 있다."
+      "explanation": "파일이 처음 사용된 시간은 유닉스의 I-node에 포함되는 정보에 해당하지 않는다. 유닉스의 I-node에 포함되는 정보에는 디스크 상의 물리적 주소, 파일 소유자의 사용자 식별, 파일에 대한 링크 수 등이 있다."
     },
     {
       "qnum": 58,
@@ -826,7 +826,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "교착상태와 은행원 알고리즘의 불안전 상태(Unsafe State)에 대한 설명으로 가장 옳은이며, 이를 교착상태는 불안전 상태에 속한다.이라 한다."
+      "explanation": "교착상태는 불안전 상태에 속한다.이 올바른 순서/설명이다. 교착상태와 은행원 알고리즘의 불안전 상태(Unsafe State)에 대한."
     },
     {
       "qnum": 60,
@@ -882,7 +882,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "소프트웨어 품질 목표 중 쉽게 배우고 사용할 수 있는 정도를 의미하는 개념으로 가장 타당한이며, 이를 Usability이라 한다."
+      "explanation": "Usability는 소프트웨어 품질 목표 중 쉽게 배우고 사용할 수 있는 정도를 의미하는 개념으로 가장 타당한이다. 유사 개념: Reliability · Efficiency 등과 구별한다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 바르게 나열한이며, 이를 객체 모형 → 동적 모형 → 기능 모형이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, 객체 모형 → 동적 모형 → 기능 모형이 정답이다."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한 다.는 N-S(Nassi-Schneiderman) Chart에 해당하지 않는다. N-S(Nassi-Schneiderman) Chart에는 논리의 기술에 중점을 둔 도형식 표현 방법이다., 연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조, 조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식 등이 있다."
+      "explanation": "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한 다.는 N-S(Nassi-Schneiderman) Chart에 해당하지 않는다이다."
     },
     {
       "qnum": 66,
@@ -938,7 +938,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "모듈 간의 결합도는 강할수록 바람직하다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다. 바람직한 소프트웨어 설계 지침에는 적당한 모듈의 크기를 유지한다., 모듈 간의 접속 관계를 분석하여 복잡도와 중복을 줄인다, 모듈 간의 효과적인 제어를 위해 설계에서 계층적 자료  등이 있다."
+      "explanation": "모듈 간의 결합도는 강할수록 바람직하다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다이다."
     },
     {
       "qnum": 68,
@@ -966,7 +966,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "팀 구성원 간의 의사교류를 활성화 시키므로 팀원의 참여도와 만족도를 증대시킨다.는 중앙 집중형 팀(책임 프로그래머 팀)에 해당하지 않는다. 중앙 집중형 팀(책임 프로그래머 팀)에는 팀 리더의 개인적 능력이 가장 중요하다., 조직적으로 잘 구성된 중앙 집중식 구조이다., 프로젝트 팀의 목표 설정 및 의사결정 권한이 팀 리더에 등이 있다."
+      "explanation": "팀 구성원 간의 의사교류를 활성화 시키므로 팀원의 참여도와 만족도를 증대시킨다.는 중앙 집중형 팀(책임 프로그래머 팀)에 해당하지 않는다이다."
     },
     {
       "qnum": 70,
@@ -994,7 +994,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한 것을 무엇이라고 하는 것이며, 이를 클래스이라 한다."
+      "explanation": "클래스는 객체 지향 기법에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한 것을 무엇이라고 하는 것이다. 유사 개념: 함수 · 메소드 등과 구별한다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "객체지향 모형에서 기능 모형(Functional Model)의 설계 순서로 옳은 것은? ⓐ 기능의 내용을 상세히 기술 ⓑ 자료 흐름도 작성(기능 의존 관계를 기술) ⓒ 입·출력 결정 ⓓ 제약 사항을 결정하고 최소화이며, 이를 ⓒ → ⓑ → ⓐ → ⓓ이라 한다."
+      "explanation": "ⓒ → ⓑ → ⓐ → ⓓ이 올바른 순서/설명이다. 객체지향 모형에서 기능 모형(Functional Model)의 설계 순서."
     },
     {
       "qnum": 73,
@@ -1036,7 +1036,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은?으로(로) { }이다."
+      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은으로 { }이다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "CPM(Critical Path Method) 네트워크에 대한 설명으로 가장 타당하 지 않은이며, 이를 프로젝트 각 작업에 필요한 시간을 정확하게 예측할 수 있다.이라 한다."
+      "explanation": "프로젝트 각 작업에 필요한 시간을 정확하게 예측할 수 있다.은 CPM(Critical Path Method) 네트워크에 대한 설명으로 가장 타당하 지 않는이다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "고급 프로그래머 배출이 용이하다.는 소프트웨어 재사용을 통한 장점에 해당하지 않는다. 소프트웨어 재사용을 통한 장점에는 개발 시간과 비용을 감소시킨다., 소프트웨어 품질을 향상시킨다., 생산성을 증가시킨다. 등이 있다."
+      "explanation": "고급 프로그래머 배출이 용이하다.는 소프트웨어 재사용을 통한 장점에 해당하지 않는다이다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "블랙 박스 검사 기법에 해당하는 것으로만 나열한 것은? ㉠ 데이터 흐름 검사 ㉡ 루프 검사 ㉢ 동치 분할 검사 ㉣ 경계값 분석 ㉤ 원인 효과 그래픽 기법 ㉥ 비교 검사이며, 이를 ㉢, ㉣, ㉤, ㉥이라 한다."
+      "explanation": "㉢, ㉣, ㉤, ㉥은 블랙 박스 검사 기법에 해당하는 것으로만 나열한 것은? ㉠ 데이터 흐름 검사 ㉡ 루프 검사 ㉢ 동치 분할…이다."
     },
     {
       "qnum": 78,
@@ -1092,7 +1092,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "CASE 도구의 정보저장소(Repository)에 대한 설명으로 가장 거리 가 먼이며, 이를 초기의 소프트웨어 개발 환경에서는 사람이 정보저장소 역할 을 했지만 오늘날에는 응용 프로그램이 정보저장소 역할을 담당한다.이라 한다."
+      "explanation": "초기의 소프트웨어 개발 환경에서는 사람이 정보저장소 역할 을 했지만 오늘날에는 응용 프로그램이 정보저장소 역할을 담당한다.은 CASE 도구의 정보저장소(Repository)에 대한 설명으로 가장 거리 가 먼이다."
     },
     {
       "qnum": 79,
@@ -1106,7 +1106,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "논쟁이나 반박을 제한하지 않는다.는 정형 기술 검토(FTR)의 지침 사항으로 가장에 해당하지 않는다. 정형 기술 검토(FTR)의 지침 사항으로 가장의 올바른 항목: 제품의 검토에만 집중한다., 문제 영역을 명확히 표현한다., 참가자의 수를 제한하고 사전 준비를 강요한다.."
+      "explanation": "논쟁이나 반박을 제한하지 않는다.는 정형 기술 검토(FTR)의 지침 사항으로 가장에 해당하지 않는다이다."
     },
     {
       "qnum": 80,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "맨체스터(Manchester) 코딩 방식에 대한 설명으로 옳은이며, 이를 이진 신호 0의 경우, 비트 구간의 오른쪽 1/2지점에 존재이라 한다."
+      "explanation": "이진 신호 0의 경우, 비트 구간의 오른쪽 1/2지점에 존재이 올바른 순서/설명이다. 맨체스터(Manchester) 코딩 방식에 대한 설명으로 옳은."
     },
     {
       "qnum": 82,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "PAM는 HDLC(High-level Data Link Control)의 링크 구성 방식에 따른 세 가지 동작모드에에 해당하지 않는다. HDLC(High-level Data Link Control)의 링크 구성 방식에 따른 세 가지 동작모드에에는 NRM, ARM, ABM 등이 있다."
+      "explanation": "PAM은 HDLC(High-level Data Link Control)의 링크 구성 방식에 따른 세 가지 동작모드…이다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "변조 속도가 1500[baud]이고 트리비트를 사용하는 경우 전송 속도(bps)이며, 이를 4500이라 한다."
+      "explanation": "4500은 변조 속도가 1500[baud]이고 트리비트를 사용하는 경우 전송 속도(bps)이다. 나머지 보기(2400 등)는 다른 개념이다."
     },
     {
       "qnum": 84,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "GO-Back-N ARQ에서 7번째 프레임까지 전송하였는데 수신 측에 서 6번째 프레임에 오류가 있다고 재전송을 요청해 왔다. 재전송되 는 프레임의 개수이며, 이를 2이라 한다."
+      "explanation": "2은 GO-Back-N ARQ에서 7번째 프레임까지 전송하였는데 수신 측에 서 6번째 프레임에 오류가 있다고 재전송을 요청해 왔다. 재전송되 는 프레임의 개수이다."
     },
     {
       "qnum": 85,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "패킷 교환망에 접속되는 단말기 중 비패킷형 단말기(Non-Packet Mode Terminal)에서 패킷의 조립․분해 기능을 제공해 주는 일종의 어댑터이며, 이를 PAD이라 한다."
+      "explanation": "PAD은 패킷 교환망에 접속되는 단말기 중 비패킷형 단말기(Non-Packet Mode Terminal)에서 패킷의 조립․분해 기능을 제공해 주는 일종의 어댑터이다."
     },
     {
       "qnum": 87,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "데이터 전달을 위한 회선 제어 절차의 단계를 순서대로 나열한이며, 이를 회선 연결 → 데이터 링크 확립 → 데이터 전송 → 데이터 링크 해제 → 회선 절단이라 한다."
+      "explanation": "제시된 항목들이 모두 해당하며, 회선 연결 → 데이터 링크 확립 → 데이터 전송 → 데이터 링크 해제 → 회선 절단이 정답이다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "실제 전송할 데이터를 갖고 있는 터미널에게만 시간슬롯(Time Slot)을 할당하는 다중화이며, 이를 통계적 시분할 다중화이라 한다."
+      "explanation": "통계적 시분할 다중화는 실제 전송할 데이터를 갖고 있는 터미널에게만 시간슬롯(Time Slot)을 할당하는 다중화이다. 나머지 보기(디벨로프 다중화 등)는 다른 개념이다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "QPSK 변조 방식의 대역폭 효율은 몇 [bps/Hz]인이며, 이를 2이라 한다."
+      "explanation": "2은 QPSK 변조 방식의 대역폭 효율은 몇 [bps/Hz]인이다."
     },
     {
       "qnum": 95,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은은(는) 트랜스포트 계층이다."
+      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은은 트랜스포트 계층이다."
     },
     {
       "qnum": 96,
@@ -1358,7 +1358,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "OSI 참조 모델에서 전이중 방식이나 반이중 방식으로 종단 시스템의 응용 간 대화(dialog)를 관리하는 계층이며, 이를 Session Layer이라 한다."
+      "explanation": "Session Layer은 OSI 참조 모델에서 전이중 방식이나 반이중 방식으로 종단 시스템의 응용 간 대화(dialog)를 관리하는 계층이다. 나머지 보기(Data Link Layer 등)는 다른 개념이다."
     },
     {
       "qnum": 98,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "채널 용량이 100Kbps이고 채널 대역폭이 10KHz일 때 신호대 잡음비(db)이며, 이를 1023이라 한다."
+      "explanation": "1023은 채널 용량이 100Kbps이고 채널 대역폭이 10KHz일 때 신호대 잡음비(db)이다."
     },
     {
       "qnum": 99,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "IEEE 802.3 LAN에서 사용되는 전송매체 접속제어(MAC)이며, 이를 CSMA/CD이라 한다."
+      "explanation": "CSMA/CD은 IEEE 802.3 LAN에서 사용되는 전송매체 접속제어(MAC)이다. 나머지 보기(Token Bus 등)는 다른 개념이다."
     },
     {
       "qnum": 100,

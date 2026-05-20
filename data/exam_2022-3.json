@@ -56,7 +56,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "상향식 소프트웨어 개발을 위한 문서화 도구이다.는 HIPO(Hierarchy Input Process Output)에 해당하지 않는다. HIPO(Hierarchy Input Process Output)에는 HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세, 기능과 자료의 의존 관계를 동시에 표현할 수 있다., 보기 쉽고 이해하기 쉽다. 등이 있다."
+      "explanation": "상향식 소프트웨어 개발을 위한 문서화 도구이다.는 HIPO(Hierarchy Input Process Output)에 해당하지 않는다이다."
     },
     {
       "qnum": 5,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는이며, 이를 << >>이라 한다."
+      "explanation": "<< >>은 UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞은이다. 나머지 보기((( )) 등)는 다른 개념이다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "보헴이 제안한 것으로, 위험 분석 기능이 있으며, 여러 번의 개발 과정을 거쳐 점진적으로 개발하는 것이며, 이를 나선형 모형이라 한다."
+      "explanation": "나선형 모형은 보헴이 제안한 것으로, 위험 분석 기능이 있으며, 여러 번의 개발 과정을 거쳐 점진적으로 개발하는 것이다. 나머지 보기(애자일 모형 등)는 다른 개념이다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙이며, 이를 직관성이라 한다."
+      "explanation": "직관성은 UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙이다."
     },
     {
       "qnum": 9,
@@ -140,7 +140,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "SSO(Single Sign On)는 이 범주에 해당하지 않는다. 이 범주에는 ISP(Interface Segregation Principle)·DIP(Dependency Inversion Principle)·LSP(Liskov Substitution Principle) 등이 포함된다."
+      "explanation": "SSO(Single Sign On)는 이 범주에 해당하지 않는다이다."
     },
     {
       "qnum": 11,
@@ -154,7 +154,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계이며, 이를 Dependency이라 한다."
+      "explanation": "Dependency는 UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래스를…이다."
     },
     {
       "qnum": 12,
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "대표적으로 DOS 및 Unix 등의 운영체제에서 조작을 위해 사용하던 것으로, 정해진 명령 문자열을 입력하여 시스템을 조작하는 사용자 인터페이스(User Interface)이며, 이를 CLI(Command Line Interface)이라 한다."
+      "explanation": "CLI(Command Line Interface)은 대표적으로 DOS 및 Unix 등의 운영체제에서 조작을 위해 사용하던 것으로, 정해진 명령 문자열을 입력…이다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "확장는 UML에서 시퀀스 다이어그램의 구성 항목에에 해당하지 않는다. UML에서 시퀀스 다이어그램의 구성 항목에에는 생명선, 실행, 메시지 등이 있다."
+      "explanation": "확장은 UML에서 시퀀스 다이어그램의 구성 항목에에 해당하지 않는다. UML에서 시퀀스 다이어그램의 구성 항목에에는 생명선, 실행, 메시지 등이 있다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "다음은 어떤 프로그램 구조를 나타낸다. 모듈 F에서의 fan-in과 fan-out의 수는 얼마인이며, 이를 fan-in : 3, fan-out : 2이라 한다."
+      "explanation": "fan-in : 3, fan-out : 2은 은 어떤 프로그램 구조를 나타낸다이다."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정이며, 이를 캡슐화(Encapsulation)이라 한다."
+      "explanation": "캡슐화(Encapsulation)은 객체지향 개념에서 연관된 데이터와 함수를 함께 묶어 외부와 경계를 만들고 필요한 인터페이스만을 밖으로 드러내는 과정이다. 나머지 보기(메시지(Message) 등)는 다른 개념이다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "블랙박스 분석 모델링는 이 범주에 해당하지 않는다. 이 범주에는 객체 모델링·기능 모델링·동적 모델링 등이 포함된다."
+      "explanation": "블랙박스 분석 모델링은 이 범주에 해당하지 않는다. 이 범주에는 객체 모델링·기능 모델링·동적 모델링 등이 포함된다."
     },
     {
       "qnum": 20,
@@ -280,7 +280,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어이며, 이를 미들웨어이라 한다."
+      "explanation": "미들웨어는 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 …이다."
     },
     {
       "qnum": 21,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "방화벽 기술는 디지털 저작권 관리(DRM)의 기술 요소에 해당하지 않는다. 디지털 저작권 관리(DRM)의 기술 요소에는 크랙 방지 기술, 정책 관리 기술, 암호화 기술 등이 있다."
+      "explanation": "방화벽 기술은 디지털 저작권 관리(DRM)의 기술 요소에 해당하지 않는다. 디지털 저작권 관리(DRM)의 기술 요소에는 크랙 방지 기술, 정책 관리 기술, 암호화 기술 등이 있다."
     },
     {
       "qnum": 23,
@@ -350,7 +350,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Tree는 EAI(Enterprise Application Integration)의 구축 유형에 해당하지 않는다. EAI(Enterprise Application Integration)의 구축 유형의 올바른 항목: Hub & Spoke, Message Bus, Point-to-Point."
+      "explanation": "Tree는 EAI(Enterprise Application Integration)의 구축 유형에 해당하지 않는다이다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙이며, 이를 Pareto의 법칙이라 한다."
+      "explanation": "Pareto의 법칙은 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙이다. 나머지 보기(Brooks의 법칙 등)는 다른 개념이다."
     },
     {
       "qnum": 27,
@@ -392,7 +392,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "'암호화 수행시 일방향 암호화만 지원한다.'는 IPSec(IP Security)에 대한 틀린 설명이다. 올바른 설명으로는 'ESP는 발신지 인증, 데이터 무결성, 기밀성 모두를 보장한다.', '운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.' 등이 있다."
+      "explanation": "'암호화 수행시 일방향 암호화만 지원한다.'는 IPSec(IP Security)에 대한 틀린 설명이다. 올바른 설명으로는 'ESP은 발신지 인증, 데이터 무결성, 기밀성 모두를 보장한다.', '운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.' 등이 있다."
     },
     {
       "qnum": 29,
@@ -406,7 +406,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "운영체제의 작업 스케줄링는 스택(STACK)의 응용 분야로에 해당하지 않는다. 스택(STACK)의 응용 분야로에는 인터럽트의 처리, 수식의 계산, 서브루틴의 복귀 번지 저장 등이 있다."
+      "explanation": "운영체제의 작업 스케줄링은 스택(STACK)의 응용 분야로에 해당하지 않는다. 스택(STACK)의 응용 분야로에는 인터럽트의 처리, 수식의 계산, 서브루틴의 복귀 번지 저장 등이 있다."
     },
     {
       "qnum": 30,
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "개방 주소법(Open Addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다. 해싱 함수(Hashing Function)에는 제곱법(Mid-Square), 숫자 분석법(Digit Analysis), 제산법(Division) 등이 있다."
+      "explanation": "개방 주소법(Open Addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다이다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "ESB는 인터페이스 구현 검증 도구에 해당하지 않는다. 인터페이스 구현 검증 도구에는 xUnit, STAF, NTAF 등이 있다."
+      "explanation": "ESB은 인터페이스 구현 검증 도구에 해당하지 않는다. 인터페이스 구현 검증 도구에는 xUnit, STAF, NTAF 등이 있다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "D, A, B, C는 순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과에 해당하지 않는다. 순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과에는 A, B, C, D, A, B, D, C, B, C, D, A 등이 있다."
+      "explanation": "D, A, B, C는 순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과…이다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "중복이 최대화된 코드 작성는 클린 코드 작성원칙에 해당하지 않는다. 클린 코드 작성원칙에는 누구든지 쉽게 이해하는 코드 작성, 다른 모듈에 미치는 영향 최소화, 단순, 명료한 코드 작성 등이 있다."
+      "explanation": "중복이 최대화된 코드 작성은 클린 코드 작성원칙에 해당하지 않는다. 클린 코드 작성원칙에는 누구든지 쉽게 이해하는 코드 작성, 다른 모듈에 미치는 영향 최소화, 단순, 명료한 코드 작성 등이 있다."
     },
     {
       "qnum": 35,
@@ -504,7 +504,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계이며, 이를 인수 테스트이라 한다."
+      "explanation": "인수 테스트이 올바른 순서/설명이다. 알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계."
     },
     {
       "qnum": 37,
@@ -546,7 +546,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "노드들이 포인터로 연결되어 검색이 빠르다.는 연결 리스트(Linked List)에 해당하지 않는다. 연결 리스트(Linked List)에는 노드의 삽입이나 삭제가 쉽다., 연결을 해주는 포인터(Pointer)를 위한 추가 공간, 연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 등이 있다."
+      "explanation": "노드들이 포인터로 연결되어 검색이 빠르다.는 연결 리스트(Linked List)에 해당하지 않는다이다."
     },
     {
       "qnum": 40,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "파티셔닝 방식 중 ‘월별, 분기별’과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 것이며, 이를 Range Partitioning이라 한다."
+      "explanation": "Range Partitioning은 파티셔닝 방식 중 ‘월별, 분기별’과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 것이다. 나머지 보기(Hash Partitioning 등)는 다른 개념이다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준이며, 이를 관계(Relationship)이라 한다."
+      "explanation": "관계(Relationship)은 데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준이다. 나머지 보기(개체(Object) 등)는 다른 개념이다."
     },
     {
       "qnum": 47,
@@ -672,7 +672,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "물리적 데이터베이스를 설계하는 전 단계로서, 데이터 모델링이라 불리는 데이터베이스 설계 단계이며, 이를 논리적 데이터베이스 설계이라 한다."
+      "explanation": "논리적 데이터베이스 설계이 올바른 순서/설명이다. 물리적 데이터베이스를 설계하는 전 단계로서, 데이터 모델링이라 불리는 데."
     },
     {
       "qnum": 49,
@@ -728,7 +728,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "SELECT는 이 범주에 해당하지 않는다. 이 범주에는 CREATE·ALTER·DROP 등이 포함된다."
+      "explanation": "SELECT은 이 범주에 해당하지 않는다. 이 범주에는 CREATE·ALTER·DROP 등이 포함된다."
     },
     {
       "qnum": 53,
@@ -840,7 +840,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세 스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것이며, 이를 CRUD 분석이라 한다."
+      "explanation": "CRUD 분석은 데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세 스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것이다. 나머지 보기(CASE 분석 등)는 다른 개념이다."
     },
     {
       "qnum": 61,
@@ -980,7 +980,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "프로세스 처리 도중, 참조할 페이지가 주기억장치에 없어 프로세스 처리시간보다 페이지 교체에 소요되는 시간이 더 많아지는 현상이며, 이를 스래싱(Thrasing)이라 한다."
+      "explanation": "스래싱(Thrasing)은 프로세스 처리 도중, 참조할 페이지가 주기억장치에 없어 프로세스 처리시간보다 페이지 교체에 소요되는 시간…이다."
     },
     {
       "qnum": 71,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈이며, 이를 Garbage Collector이라 한다."
+      "explanation": "Garbage Collector은 JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 …이다."
     },
     {
       "qnum": 73,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Linear wait는 교착상태가 발생할 수 있는 조건에 해당하지 않는다. 교착상태가 발생할 수 있는 조건에는 Mutual exclusion, Hold and wait, Non-preemption 등이 있다."
+      "explanation": "Linear wait은 교착상태가 발생할 수 있는 조건에 해당하지 않는다. 교착상태가 발생할 수 있는 조건에는 Mutual exclusion, Hold and wait, Non-preemption 등이 있다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "IEEE 802.3 LAN에서 사용되는 전송 매체 접속 제어(MAC)이며, 이를 CSMA/CD이라 한다."
+      "explanation": "CSMA/CD은 IEEE 802.3 LAN에서 사용되는 전송 매체 접속 제어(MAC)이다. 나머지 보기(Token Bus 등)는 다른 개념이다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Request는 프로세스 상태에 해당하지 않는다. 프로세스 상태에는 Ready, Running, Exit 등이 있다."
+      "explanation": "Request은 프로세스 상태에 해당하지 않는다. 프로세스 상태에는 Ready, Running, Exit 등이 있다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "TCP/IP에서 사용되는 논리주소를 물리주소로 변환시켜 주는 프로토 콜이며, 이를 ARP이라 한다."
+      "explanation": "ARP은 TCP/IP에서 사용되는 논리주소를 물리주소로 변환시켜 주는 프로토 콜이다."
     },
     {
       "qnum": 78,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하 거나 메일로 전파되며 스스로를 증식하는 것이며, 이를 Worm이라 한다."
+      "explanation": "Worm은 악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하 거나 메일로 전파되며 스스로를 증식하는 것이다. 나머지 보기(Rogue Ware 등)는 다른 개념이다."
     },
     {
       "qnum": 83,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "휘발성는 정보 보안의 3요소에에 해당하지 않는다. 정보 보안의 3요소에에는 기밀성, 무결성, 가용성 등이 있다."
+      "explanation": "휘발성은 정보 보안의 3요소에에 해당하지 않는다. 정보 보안의 3요소에에는 기밀성, 무결성, 가용성 등이 있다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "LOC 기법에 의하여 예측된 총 라인수가 36,000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간이며, 이를 20개월이라 한다."
+      "explanation": "20개월은 LOC 기법에 의하여 예측된 총 라인수가 36,000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간이다."
     },
     {
       "qnum": 87,
@@ -1232,7 +1232,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준이며, 이를 WPA이라 한다."
+      "explanation": "WPA는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준이다. 나머지 보기(WCDMA 등)는 다른 개념이다."
     },
     {
       "qnum": 89,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "브리지와 구내 정보 통신망(LAN)으로 구성된 통신망에서 루프(폐회 로)를 형성하지 않으면서 연결을 설정하는 것이며, 이를 Spanning Tree Algorithm이라 한다."
+      "explanation": "Spanning Tree Algorithm은 브리지와 구내 정보 통신망(LAN)으로 구성된 통신망에서 루프(폐회 로)를 형성하지 않으면서 연결을 설정…이다."
     },
     {
       "qnum": 94,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "소프트웨어 재공학의 주요 활동 중 기존 소프트웨어를 다른 운영체제 나 하드웨어 환경에서 사용할 수 있도록 변환하는 것이며, 이를 이식이라 한다."
+      "explanation": "이식은 소프트웨어 재공학의 주요 활동 중 기존 소프트웨어를 다른 운영체제 나 하드웨어 환경에서 사용할 수 있도록 변환하는 것이다."
     },
     {
       "qnum": 96,
@@ -1344,7 +1344,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "AES는 이 범주에 해당하지 않는다. 이 범주에는 MD4·MD5·SHA-1 등이 포함된다."
+      "explanation": "AES은 이 범주에 해당하지 않는다. 이 범주에는 MD4·MD5·SHA-1 등이 포함된다."
     },
     {
       "qnum": 97,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈네트워킹, 공공 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것이며, 이를 Mesh Network이라 한다."
+      "explanation": "Mesh Network은 기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동…이다."
     },
     {
       "qnum": 99,
