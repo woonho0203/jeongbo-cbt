@@ -127,12 +127,31 @@ const Storage = (() => {
     set('cbt_seen_random', []);
   }
 
+  // ── 랜덤 세션 중간 저장 (이어서 풀기) ────────────────────────────────────────
+  function saveRandomDraft(state) {
+    try {
+      set('cbt_random_draft', {
+        savedAt:    Date.now(),
+        title:      state.title,
+        mode:       state.mode,
+        checkMode:  state.checkMode,
+        currentIdx: state.currentIdx,
+        startedAt:  state.startedAt,
+        questions:  state.questions,
+        answers:    [...state.answers.entries()],  // Map → 배열
+      });
+    } catch (e) { console.warn('[Storage] draft save failed:', e); }
+  }
+  function loadRandomDraft()   { return get('cbt_random_draft', null); }
+  function clearRandomDraft()  { try { localStorage.removeItem('cbt_random_draft'); } catch {} }
+
   return {
     nextId,
     getSessions, addSession, getSession, deleteSession,
     getBookmarks, setBookmark, delBookmark, hasBookmark, listBookmarks,
     getWrongLog, recordWrong, clearWrong, countWrong, listWrong,
     getRandomMeta, setRandomTotal, getSeenRandom, countSeenRandom, addSeenRandom, resetSeenRandom,
+    saveRandomDraft, loadRandomDraft, clearRandomDraft,
     computeStats,
   };
 })();

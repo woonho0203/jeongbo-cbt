@@ -12,6 +12,47 @@ defineRoute('exam', async (app, params) => {
   const count     = params.count ? parseInt(params.count, 10) : null;
   const checkMode = params.check === '1';   // 학습 모드 여부
 
+  // ── 랜덤 모드: 저장된 세션이 있으면 이어서 풀기 제안 ──
+  if (mode === 'random') {
+    const draft = Storage.loadRandomDraft();
+    if (draft && draft.questions && draft.questions.length > 0) {
+      const answered = draft.answers ? draft.answers.length : 0;
+      const savedDate = new Date(draft.savedAt).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+      const resume = await modalConfirm(
+        '이전 세션 이어서 풀기',
+        `${savedDate} 저장된 세션이 있습니다.\n(${answered}/${draft.questions.length}문제 완료)\n\n이어서 풀기를 선택하면 이전 진행 상황을 불러옵니다.`,
+        '이어서 풀기', '새로 시작'
+      );
+      if (resume) {
+        // 저장된 state 복원
+        const state = {
+          title:      draft.title,
+          mode:       draft.mode || 'random',
+          sourceId:   '',
+          questions:  draft.questions,
+          currentIdx: draft.currentIdx || 0,
+          answers:    new Map(draft.answers || []),
+          bookmarks:  new Set(),
+          startedAt:  draft.startedAt || Date.now(),
+          timerInterval: null,
+          submitted:  false,
+          checkMode:  draft.checkMode || false,
+          revealedAnswer: false,
+          revealReadyAt: 0,
+          timeLimit: 0,
+        };
+        const savedBookmarks = Storage.getBookmarks();
+        for (const q of state.questions) {
+          if (savedBookmarks[q.qkey]) state.bookmarks.add(q.qkey);
+        }
+        renderExam(app, state);
+        return;
+      } else {
+        Storage.clearRandomDraft();
+      }
+    }
+  }
+
   // 오답 모드: 로컬 스토리지에서 오답 qkey 목록 제공
   const wrongKeys = (mode === 'wrong' || mode === 'random')
     ? Storage.listWrong().map(w => w.qkey) : [];
@@ -255,7 +296,7 @@ function renderQuestion(state) {
     main.append(el('div', { class: 'exam-nav' }, [
       el('button', {
         class: 'btn',
-        onClick: () => { if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); } },
+        onClick: () => { if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); scheduleDraftSave(state); } },
         disabled: state.currentIdx === 0, text: '◀ 이전',
       }),
       el('button', { class: 'btn', onClick: () => clearAnswer(state), text: '✕ 지우기' }),
@@ -263,7 +304,7 @@ function renderQuestion(state) {
         ? el('button', { class: 'btn primary', onClick: () => submitExam(state), text: '제출하기' })
         : el('button', {
             class: 'btn primary',
-            onClick: () => { state.currentIdx++; renderQuestion(state); updateOMR(state); },
+            onClick: () => { state.currentIdx++; renderQuestion(state); updateOMR(state); scheduleDraftSave(state); },
             text: '다음 ▶',
           }),
     ]));
@@ -404,6 +445,14 @@ function renderSelectedAnswerExplanation(q, selected) {
   return el('div', { class: 'selected-reason-box' }, rows);
 }
 
+// 랜덤 모드 진행 상황 자동 저장 (debounced)
+let _draftSaveTimer = null;
+function scheduleDraftSave(state) {
+  if (state.mode !== 'random' || state.submitted) return;
+  if (_draftSaveTimer) clearTimeout(_draftSaveTimer);
+  _draftSaveTimer = setTimeout(() => { Storage.saveRandomDraft(state); }, 500);
+}
+
 // 선택지 클릭 처리
 function handleOptionClick(state, num) {
   if (state.submitted) return;
@@ -418,10 +467,12 @@ function handleOptionClick(state, num) {
       state.revealReadyAt = Date.now();
       renderQuestion(state);
       updateOMR(state);
+      scheduleDraftSave(state);
     }
   } else {
     state.answers.set(q.qkey, num);
     updateOMR(state);
+    scheduleDraftSave(state);
     if (state.currentIdx < state.questions.length - 1) {
       renderQuestion(state);
       setTimeout(() => { state.currentIdx++; renderQuestion(state); updateOMR(state); }, 300);
@@ -603,9 +654,10 @@ async function submitExam(state, force = false) {
   };
   Storage.addSession(session);
 
-  // 랜덤 모드 완료: 출제된 문제를 seen 목록에 추가
+  // 랜덤 모드 완료: 출제된 문제를 seen 목록에 추가 + 임시 저장 삭제
   if (state.mode === 'random') {
     Storage.addSeenRandom(state.questions.map(q => q.qkey));
+    Storage.clearRandomDraft();
   }
 
   navigate('result', { id: sessionId });

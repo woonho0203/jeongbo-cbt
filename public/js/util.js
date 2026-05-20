@@ -346,15 +346,15 @@ const SUBJECT_NAMES = {
   5: '정보시스템 구축 관리',
 };
 
-function modalConfirm(title, msg) {
+function modalConfirm(title, msg, okText = '확인', cancelText = '취소') {
   return new Promise(resolve => {
     const bg = el('div', { class: 'modal-bg' });
     const m = el('div', { class: 'modal' }, [
       el('h3', { text: title }),
       el('p', { text: msg }),
       el('div', { class: 'actions' }, [
-        el('button', { class: 'btn', onClick: () => { bg.remove(); resolve(false); }, text: '취소' }),
-        el('button', { class: 'btn primary', onClick: () => { bg.remove(); resolve(true); }, text: '확인' }),
+        el('button', { class: 'btn', onClick: () => { bg.remove(); resolve(false); }, text: cancelText }),
+        el('button', { class: 'btn primary', onClick: () => { bg.remove(); resolve(true); }, text: okText }),
       ]),
     ]);
     bg.appendChild(m);
