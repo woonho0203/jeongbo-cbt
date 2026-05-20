@@ -634,7 +634,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
       "explanation": "33은 FIFO 스케줄링에서 3개의 작업 도착 시간과 CPU 사용시간(Burst Time)이 다음 표와 같다이다.",
-      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1\nJOB 2\nJOB 3</td><td>0\n3\n8</td><td>13\n35\n2</td></tr></table>"
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1</td><td>0</td><td>13</td></tr><tr><td>JOB 2</td><td>3</td><td>35</td></tr><tr><td>JOB 3</td><td>8</td><td>2</td></tr></table>"
     },
     {
       "qnum": 46,

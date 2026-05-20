@@ -667,6 +667,20 @@
       "explanation": "'뷰에 대한 삽입, 갱신, 삭제 연산 시 제약사항이 따르지 않는다.'는 뷰(VIEW)에 대한 틀린 설명이다. 올바른 설명으로는 'DBA는 보안 측면에서 뷰를 활용할 수 있다.', '뷰 위에 또 다른 뷰를 정의할 수 있다.' 등이 있다."
     },
     {
+      "qnum": 48,
+      "subject": 3,
+      "stem": "아래의 SQL문을 실행한 결과는?\n\nSELECT 이름 FROM R1 WHERE 학번 IN (SELECT 학번 FROM R2 WHERE 과목번호 = 'C100');",
+      "options": [
+        "이름: 홍길동, 강남길, 장미화",
+        "이름: 홍길동, 강남길, 오말자",
+        "이름: 홍길동, 김철수, 강남길, 오말자, 장미화",
+        "이름: 홍길동, 김철수"
+      ],
+      "answer": 2,
+      "explanation": "R2에서 과목번호=C100인 학번: 1000, 3000, 4000. R1에서 해당 학번: 홍길동(1000), 강남길(3000), 오말자(4000).",
+      "image": "images/2021-1_q48.png"
+    },
+    {
       "qnum": 49,
       "stem": "조건을 만족하는 릴레이션의 수평적 부분집합으로 구성하며, 연산자 의 기호는 그리스 문자 시그마(σ)를 사용하는 관계대수 연산은?",
       "options": [
@@ -833,8 +847,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 1,
       "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE '%신%';이다.",
-      "image": "images/2021-1_q60.png",
-      "table": "<table><tr><th>공급자번호</th><th>공급자명</th><th>위치</th></tr><tr><td>16\n27\n39\n62\n70</td><td>대신공업사\n삼진사\n삼양사\n진아공업사\n신촌상사</td><td>수원\n서울\n인천\n대전\n서울</td></tr></table>"
+      "image": "images/2021-1_q60.png"
     },
     {
       "qnum": 61,
@@ -1213,7 +1226,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "LAN의 네트워크 토폴로지은 버스형이다.",
+      "explanation": "버스형(Bus Topology)은 단일 케이블(버스)에 여러 단말이 연결된 LAN 형태이다. 장애 지점 이후 통신이 단절되는 특성이 있으며, 주로 CSMA/CD 방식을 사용한다.",
       "image": "images/2021-1_q87.png"
     },
     {

@@ -197,7 +197,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 1,
       "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’은 아래와 같은 결과를 만들어 내는 SQL문은? [공급자 Table] 공급자번호 공급자명 위치 16 대신공업…이다.",
-      "table": "<table><tr><th>공급자번호</th><th>공급자명</th><th>위치</th></tr><tr><td>16\n27\n39\n62\n70</td><td>대신공업사\n삼진사\n삼양사\n진아공업사\n신촌상사</td><td>수원\n서울\n인천\n대전\n서울</td></tr></table>"
+      "table": "<table><tr><th>공급자번호</th><th>공급자명</th><th>위치</th></tr><tr><td>16</td><td>대신공업사</td><td>수원</td></tr><tr><td>27</td><td>삼진사</td><td>서울</td></tr><tr><td>39</td><td>삼양사</td><td>인천</td></tr><tr><td>62</td><td>진아공업사</td><td>대전</td></tr><tr><td>70</td><td>신촌상사</td><td>서울</td></tr></table>"
     },
     {
       "qnum": 15,

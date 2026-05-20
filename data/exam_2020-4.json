@@ -14,7 +14,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "Linear Sequential Method은 XP(eXtreme Programming)의 기본원리에 해당하지 않는다이다."
+      "explanation": "Linear Sequential Method은 XP(eXtreme Programming)의 기본원리에 해당하지 않는다이다.",
+      "image": "images/2020-4_q1.png"
     },
     {
       "qnum": 2,
@@ -266,7 +267,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "추상 패턴은 GoF(Gangs of Four) 디자인 패턴 분류에에 해당하지 않는다. GoF(Gangs of Four) 디자인 패턴 분류에에는 생성 패턴, 구조 패턴, 행위 패턴 등이 있다."
+      "explanation": "추상 패턴은 GoF(Gangs of Four) 디자인 패턴 분류에에 해당하지 않는다. GoF(Gangs of Four) 디자인 패턴 분류에에는 생성 패턴, 구조 패턴, 행위 패턴 등이 있다.",
+      "image": "images/2020-4_q19.png"
     },
     {
       "qnum": 20,
@@ -448,7 +450,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "트리에 대한 INORDER 운행 결과은 D B A E C F이다."
+      "explanation": "트리에 대한 INORDER 운행 결과은 D B A E C F이다.",
+      "image": "images/2020-4_q32.png"
     },
     {
       "qnum": 33,
@@ -504,7 +507,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "'콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터 와 함께 배포 가능한 단위로 묶은 기능'는 저작권 관리 구성 요소에 대한 틀린 설명이다. 올바른 설명으로는 '콘텐츠 제공자(Contents Provider) : 콘텐츠를 제공하는 저작 권자', '클리어링 하우스(Clearing House) : 키 관리 및 라이선스 발급 관리' 등이 있다."
+      "explanation": "'콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터 와 함께 배포 가능한 단위로 묶은 기능'는 저작권 관리 구성 요소에 대한 틀린 설명이다. 올바른 설명으로는 '콘텐츠 제공자(Contents Provider) : 콘텐츠를 제공하는 저작 권자', '클리어링 하우스(Clearing House) : 키 관리 및 라이선스 발급 관리' 등이 있다.",
+      "image": "images/2020-4_q36.png"
     },
     {
       "qnum": 37,
@@ -701,6 +705,20 @@
       "subjectName": "데이터베이스 구축",
       "answer": 4,
       "explanation": "'원하는 정보와 그 정보를 어떻게 유도하는가를 기술하는 비절 차적 방법이다. -'는 관계대수에 대한 틀린 설명이다. 올바른 설명으로는 '주어진 릴레이션 조작을 위한 연산의 집합이다.', '일반 집합 연산과 순수 관계 연산으로 구분된다.' 등이 있다."
+    },
+    {
+      "qnum": 51,
+      "subject": 3,
+      "stem": "다음 SQL문의 실행 결과는?\n\nSELECT 과목이름 FROM 성적 WHERE EXISTS (SELECT 학번 FROM 학생 WHERE 학생.학번=성적.학번 AND 학생.학과 IN ('전산', '전기') AND 학생.주소='경기');",
+      "options": [
+        "과목이름: DB",
+        "과목이름: DB, DB",
+        "과목이름: DB, DB, 운영체제",
+        "과목이름: DB, 운영체제"
+      ],
+      "answer": 3,
+      "explanation": "학과가 전산/전기이고 주소가 경기인 학생: 고영준(2000·전기·경기), 김영진(4000·전산·경기). 해당 학번의 성적: 2000→DB, 4000→DB·운영체제. 결과: DB, DB, 운영체제.",
+      "image": "images/2020-4_q51.png"
     },
     {
       "qnum": 52,
@@ -924,7 +942,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Java에서 while 조건식은 boolean 타입이어야 한다. y--는 int를 반환하므로 컴파일 오류(Unresolved compilation problem)가 발생한다."
+      "explanation": "Java에서 while 조건식은 boolean 타입이어야 한다. y--는 int를 반환하므로 컴파일 오류(Unresolved compilation problem)가 발생한다.",
+      "image": "images/2020-4_q67.png"
     },
     {
       "qnum": 68,
@@ -966,7 +985,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "P4는 과 같은 프로세스가 차례로 큐에 도착하였을 때, SJF(Shortest Job First) 정책을 사용할 경우 가장 먼저 처리되는 작업은? 프로세스 번호 실행시간 P1 6 P2 8 P3 4 P4 3이다."
+      "explanation": "P4는 과 같은 프로세스가 차례로 큐에 도착하였을 때, SJF(Shortest Job First) 정책을 사용할 경우 가장 먼저 처리되는 작업은? 프로세스 번호 실행시간 P1 6 P2 8 P3 4 P4 3이다.",
+      "table": "<table><tr><th>프로세스 번호</th><th>실행시간</th></tr><tr><td>P1</td><td>6</td></tr><tr><td>P2</td><td>8</td></tr><tr><td>P3</td><td>4</td></tr><tr><td>P4</td><td>3</td></tr></table>"
     },
     {
       "qnum": 71,
@@ -1064,7 +1084,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "398은 과 같은 세그먼트 테이블을 가지는 시스템에서 논리 주소(2, 176)에 대한 물리 주소는? 세그먼트번호 시작주소 길이(바이트) 0 670 248 1 1752 422 2 222 198 3 996 604이다."
+      "explanation": "398은 과 같은 세그먼트 테이블을 가지는 시스템에서 논리 주소(2, 176)에 대한 물리 주소는? 세그먼트번호 시작주소 길이(바이트) 0 670 248 1 1752 422 2 222 198 3 996 604이다.",
+      "table": "<table><tr><th>세그먼트번호</th><th>시작주소</th><th>길이(바이트)</th></tr><tr><td>0</td><td>670</td><td>248</td></tr><tr><td>1</td><td>1752</td><td>422</td></tr><tr><td>2</td><td>222</td><td>198</td></tr><tr><td>3</td><td>996</td><td>604</td></tr></table>"
     },
     {
       "qnum": 78,
@@ -1162,7 +1183,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "제어 클래스층은 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에 해당하지 않는다. 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에는 표현층, 프로세스층, 비즈니스층 등이 있다."
+      "explanation": "제어 클래스층은 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에 해당하지 않는다. 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에는 표현층, 프로세스층, 비즈니스층 등이 있다.",
+      "image": "images/2020-4_q84.png"
     },
     {
       "qnum": 85,
@@ -1232,7 +1254,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "MAC이 올바른 순서/설명이다. 은 정보의 접근통제 정책에 대한 설명이다. (ㄱ)에 들어갈 내용으로 옳은."
+      "explanation": "MAC이 올바른 순서/설명이다. 은 정보의 접근통제 정책에 대한 설명이다. (ㄱ)에 들어갈 내용으로 옳은.",
+      "table": "<table><tr><th>정책</th><th>( ㄱ )</th><th>DAC</th><th>RBAC</th></tr><tr><td>권한\n부여</td><td>시스템</td><td>데이터\n소유자</td><td>중앙\n관리자</td></tr><tr><td>접근\n결정</td><td>보안등급\n(Label)</td><td>신분\n(Identity)</td><td>역할\n(Role)</td></tr><tr><td>정책\n변경</td><td>고정적\n(변경 어려움)</td><td>변경\n용이</td><td>변경\n용이</td></tr><tr><td>장점</td><td>안정적 중앙\n집중적</td><td>구현 용이\n유연함</td><td>관리 용이</td></tr></table>"
     },
     {
       "qnum": 90,
@@ -1372,7 +1395,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "MapReduce이 올바른 순서/설명이다. 내용에 적합한 용어는? - 대용량 데이터를 분산 처리하기 위한 목적으로."
+      "explanation": "MapReduce이 올바른 순서/설명이다. 내용에 적합한 용어는? - 대용량 데이터를 분산 처리하기 위한 목적으로.",
+      "image": "images/2020-4_q99.png"
     },
     {
       "qnum": 100,

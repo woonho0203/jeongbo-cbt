@@ -451,7 +451,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "조합 논리 회로의 명칭은 4비트 병렬 가감산기이다.",
+      "explanation": "4비트 병렬 가감산기(Parallel Adder-Subtractor)는 가산과 감산을 동시에 처리하는 조합 논리 회로이다. 제어 입력 신호(Add/Sub)에 따라 XOR 게이트를 이용하여 가산기 또는 감산기로 동작한다.",
       "image": "images/2016-3_q32.png"
     },
     {

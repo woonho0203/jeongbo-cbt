@@ -691,7 +691,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
       "explanation": "9은 스케줄링 하고자 하는 세 작업의 도착시간과 실행시간이 다음 <표>와 같다이다.",
-      "table": "<table><tr><th>작업</th><th>도착시간</th><th>실행시간</th></tr><tr><td>1\n2\n3</td><td>0\n1\n2</td><td>6\n3\n4</td></tr></table>"
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>실행시간</th></tr><tr><td>1</td><td>0</td><td>6</td></tr><tr><td>2</td><td>1</td><td>3</td></tr><tr><td>3</td><td>2</td><td>4</td></tr></table>"
     },
     {
       "qnum": 50,

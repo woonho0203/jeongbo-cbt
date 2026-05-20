@@ -814,7 +814,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
       "explanation": "36은 FIFO 스케줄링에서 3개의 작업 도착시간과 CPU 사용시간(burst time)이 다음 표와 같다이다.",
-      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1\nJOB 2\nJOB 3</td><td>0\n3\n8</td><td>13\n35\n10</td></tr></table>"
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1</td><td>0</td><td>13</td></tr><tr><td>JOB 2</td><td>3</td><td>35</td></tr><tr><td>JOB 3</td><td>8</td><td>10</td></tr></table>"
     },
     {
       "qnum": 59,
@@ -1150,7 +1150,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "LAN의 네트워크 토폴로지은 버스형이다.",
+      "explanation": "버스형(Bus Topology)은 하나의 통신 회선에 여러 장치가 연결된 LAN 토폴로지이다. 배선이 단순하고 설치 비용이 낮지만, 케이블 장애 시 전체 네트워크가 영향을 받는다.",
       "image": "images/2018-1_q82.png"
     },
     {

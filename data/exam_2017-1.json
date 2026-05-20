@@ -14,7 +14,35 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "차집합(Difference)는 관계대수 중 순수 관계연산자에 해당하지 않는다. 관계대수 중 순수 관계연산자에는 프로젝트(Project), 조인(Join), 디비전(Division) 등이 있다."
+      "explanation": "차집합(Difference)는 관계대수 중 순수 관계연산자에 해당하지 않는다. 관계대수 중 순수 관계연산자에는 프로젝트(Project), 조인(Join), 디비전(Division) 등이 있다.",
+      "table": "<table><tr><th>학번</th><th>이름</th><th>학점</th></tr><tr><td>2000</td><td>고영준</td><td>A+</td></tr><tr><td>3000</td><td>유진호</td><td>B</td></tr><tr><td>4000</td><td>김영진</td><td>A</td></tr></table>"
+    },
+    {
+      "qnum": 2,
+      "subject": 3,
+      "stem": "다음 SQL문 실행결과는?",
+      "options": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": 1,
+      "explanation": "출제 오류로 전항정답 처리된 문제이다. SQL 조인 결과: 과목이름=DB인 성적 레코드(학번 2000·3000·4000)를 학생 테이블과 조인하면 고영준(A+)·유진호(B)·김영진(A) 3행이 반환된다.",
+      "image": "images/2017-1_q2.png"
+    },
+    {
+      "qnum": 3,
+      "subject": 3,
+      "stem": "후위 표기식이 다음과 같을 때 연산 결과는?\n\n4 2 4 * + 2 / 3 +",
+      "options": [
+        "6",
+        "10",
+        "12",
+        "16"
+      ],
+      "answer": 1,
+      "explanation": "출제 오류로 전항정답 처리된 문제이다. 실제 계산: 2×4=8 → 4+8=12 → 12÷2=6 → 6+3=9. 9는 보기에 없어 전항정답 처리됨."
     },
     {
       "qnum": 4,
@@ -225,6 +253,20 @@
       "subjectName": "데이터베이스 구축",
       "answer": 4,
       "explanation": "참조 무결성은 릴레이션에 R1에 속한 애튜리뷰트의 조합인 외래키를 변경하려면 이를 참조하고 있는 R2의 릴레이션의 기본…이다."
+    },
+    {
+      "qnum": 19,
+      "subject": 3,
+      "stem": "E-R 모델에서 다중값 속성의 표기법은?",
+      "options": [
+        "마름모(관계 기호)",
+        "직사각형(개체 기호)",
+        "이중 타원",
+        "밑줄(기본키 속성)"
+      ],
+      "answer": 3,
+      "explanation": "E-R 다이어그램에서 다중값 속성은 이중 타원(이중 원)으로 표기한다. 마름모는 관계, 직사각형은 개체, 밑줄은 기본키를 나타낸다.",
+      "image": "images/2017-1_q19.png"
     },
     {
       "qnum": 20,
@@ -700,7 +742,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "18.25이 올바른 순서/설명이다. 표와 같이 작업이 제출되었을 때, 라운드 로빈 정책을 사용하여 스케줄링."
+      "explanation": "18.25이 올바른 순서/설명이다. 표와 같이 작업이 제출되었을 때, 라운드 로빈 정책을 사용하여 스케줄링.",
+      "table": "<table><tr><th>작업</th><th>제출 시간</th><th>실행 시간</th></tr><tr><td>Task 1</td><td>0</td><td>8</td></tr><tr><td>Task 2</td><td>1</td><td>4</td></tr><tr><td>Task 3</td><td>2</td><td>9</td></tr><tr><td>Task 4</td><td>3</td><td>5</td></tr></table>"
     },
     {
       "qnum": 54,

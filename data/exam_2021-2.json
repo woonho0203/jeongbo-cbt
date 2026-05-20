@@ -1046,6 +1046,19 @@
       "explanation": "가장 약한 결합도(Coupling)은 Stamp Coupling이다."
     },
     {
+      "qnum": 75,
+      "subject": 4,
+      "stem": "자바스크립트(JavaScript)와 관련한 설명으로 틀린 것은?",
+      "options": [
+        "프로토타입(Prototype)의 개념이 존재한다.",
+        "클래스 기반으로 객체 상속을 지원한다.",
+        "Prototype Link와 Prototype Object를 활용할 수 있다.",
+        "객체지향 언어이다."
+      ],
+      "answer": 2,
+      "explanation": "JavaScript는 프로토타입(Prototype) 기반 언어로, 클래스 기반 상속이 아닌 프로토타입 체인을 통해 객체 상속을 구현한다. ES6부터 class 문법이 추가됐지만 내부적으로는 프로토타입 방식이다."
+    },
+    {
       "qnum": 76,
       "stem": "C언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은? ㉠ ( ) ㉡ == ㉢ < ㉣ << ㉤ II ㉥ /",
       "options": [

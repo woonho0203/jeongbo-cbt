@@ -613,6 +613,20 @@
       "explanation": "원자성은 Commit과 Rollback 명령어에 의해 보장 받는 트랜잭션의 특성이다."
     },
     {
+      "qnum": 44,
+      "subject": 3,
+      "stem": "관계 데이터베이스인 테이블 R1에 대한 아래 SQL 문의 실행결과로 옳은 것은?\n\nSELECT DISTINCT 학년 FROM R1;",
+      "options": [
+        "학년: 1, 1, 2, 2, 3",
+        "학년: 1, 2, 3",
+        "이름, 학년: 홍길동-1, 김철수-1, 강남길-2, 오말자-2, 장미화-3",
+        "이름, 학년: 홍길동-1, 강남길-2, 장미화-3"
+      ],
+      "answer": 2,
+      "explanation": "DISTINCT는 중복 행을 제거한다. R1의 학년 값은 1, 1, 2, 2, 3이므로 DISTINCT 적용 시 1, 2, 3이 반환된다.",
+      "image": "images/2020-3_q44.png"
+    },
+    {
       "qnum": 45,
       "stem": "DCL(Data Control Language) 명령어가 아닌 것은?",
       "options": [
@@ -1389,8 +1403,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Seven Touchpoints은 실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Devel…이다.",
-      "image": "images/2020-3_q99.png"
+      "explanation": "Seven Touchpoints은 실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Devel…이다."
     },
     {
       "qnum": 100,
@@ -1404,7 +1417,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "LAN의 네트워크 토폴로지은 버스형이다."
+      "explanation": "버스형(Bus Topology)은 하나의 공유 전송 매체에 모든 노드가 연결되는 구조이다. 설치가 쉽고 비용이 낮으나, 충돌(Collision) 발생 가능성이 있고 노드 수 증가 시 성능이 저하된다.",
+      "image": "images/2020-3_q100.png"
     }
   ]
 }
