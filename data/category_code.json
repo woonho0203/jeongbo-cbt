@@ -11,7 +11,7 @@
         "R",
         "O"
       ],
-      "explanation": "최종 결과는 R이다\nE · V · O → 각각 해당하지 않음",
+      "explanation": "최종 결과는 R이다",
       "answer": 3
     },
     {
@@ -23,7 +23,7 @@
         "8, 9",
         "7, 9"
       ],
-      "explanation": "최종 결과는 8, 9이다\n7, 5 · 8, 5 · 7, 9 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 8, 9이다",
       "answer": 3
     },
     {
@@ -35,7 +35,7 @@
         "2",
         "3"
       ],
-      "explanation": "최종 결과는 0이다\n1 · 2 · 3 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 0이다",
       "answer": 1
     },
     {
@@ -47,7 +47,7 @@
         "121",
         "132"
       ],
-      "explanation": "최종 결과는 121이다\n55 · 77 · 132 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 121이다",
       "answer": 3
     },
     {
@@ -59,7 +59,7 @@
         "a && b",
         "a || b"
       ],
-      "explanation": "최종 결과는 !(a || b)이다\n!a || !b · a && b · a || b → 각각 해당하지 않음",
+      "explanation": "최종 결과는 !(a || b)이다",
       "answer": 2
     },
     {
@@ -71,7 +71,7 @@
         "66",
         "98"
       ],
-      "explanation": "최종 결과는 66이다\n1 · 11 · 98 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 66이다",
       "answer": 3
     },
     {
@@ -83,7 +83,7 @@
         "25",
         "27"
       ],
-      "explanation": "최종 결과는 25이다\n15 · 19 · 27 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 25이다",
       "answer": 3
     },
     {
@@ -95,7 +95,7 @@
         "7",
         "10"
       ],
-      "explanation": "최종 결과는 7이다\n3 · 4 · 10 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 7이다",
       "answer": 3
     },
     {
@@ -107,7 +107,7 @@
         "80",
         "120"
       ],
-      "explanation": "최종 결과는 60이다\n30 · 80 · 120 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 60이다",
       "answer": 2
     },
     {
@@ -119,7 +119,7 @@
         "8",
         "12"
       ],
-      "explanation": "최종 결과는 8이다\n0 · 4 · 12 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 8이다",
       "answer": 3
     },
     {
@@ -131,7 +131,7 @@
         "3",
         "5"
       ],
-      "explanation": "최종 결과는 1이다\n0 · 3 · 5 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 1이다",
       "answer": 2
     },
     {
@@ -143,7 +143,7 @@
         "18, 10",
         "18, M"
       ],
-      "explanation": "최종 결과는 18, 10이다\n14, 10 · 14, M · 18, M → 각각 해당하지 않음",
+      "explanation": "최종 결과는 18, 10이다",
       "answer": 3
     },
     {
@@ -155,7 +155,7 @@
         "２",
         "３"
       ],
-      "explanation": "최종 결과는 １이다\n０ · ２ · ３ → 각각 해당하지 않음",
+      "explanation": "최종 결과는 １이다",
       "answer": 2
     },
     {
@@ -167,7 +167,7 @@
         "alter",
         "alternation"
       ],
-      "explanation": "최종 결과는 nationalter이다\nnation · alter · alternation → 각각 해당하지 않음",
+      "explanation": "최종 결과는 nationalter이다",
       "answer": 2
     },
     {
@@ -179,7 +179,7 @@
         "i = 3",
         "i = 4"
       ],
-      "explanation": "최종 결과는 i = 4이다\ni = 0 · i = 1 · i = 3 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 i = 4이다",
       "answer": 4
     },
     {
@@ -191,7 +191,7 @@
         "three",
         "one two three four"
       ],
-      "explanation": "최종 결과는 three이다\none · one two · one two three four → 각각 해당하지 않음",
+      "explanation": "최종 결과는 three이다",
       "answer": 3
     },
     {
@@ -215,7 +215,7 @@
         "34",
         "55"
       ],
-      "explanation": "최종 결과는 34이다\n13 · 21 · 55 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 34이다",
       "answer": 3
     },
     {
@@ -227,7 +227,7 @@
         "7 = 7 7 + 7",
         "5 + 2 = 34 5 + 2 = 7"
       ],
-      "explanation": "최종 결과는 5 + 2 = 34 5 + 2 = 7이다\n5 + 2 = 34 5 + 2 = 34 · 5 + 2 + 3 + 4 5 + 2 = 7 · 7 = 7 7 + 7 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 5 + 2 = 34 5 + 2 = 7이다",
       "answer": 4
     },
     {
@@ -239,7 +239,7 @@
         "CDDACCC",
         "CDDACCA"
       ],
-      "explanation": "최종 결과는 BCDABCC이다\nBCDABCA · CDDACCC · CDDACCA → 각각 해당하지 않음",
+      "explanation": "최종 결과는 BCDABCC이다",
       "answer": 2
     },
     {
@@ -251,7 +251,7 @@
         "3",
         "4"
       ],
-      "explanation": "최종 결과는 3이다\n1 · 2 · 4 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 3이다",
       "answer": 3
     },
     {
@@ -263,7 +263,7 @@
         "1 2 3",
         "0 1 2"
       ],
-      "explanation": "최종 결과는 0 1 2 3이다\n1 2 3 4 · 1 2 3 · 0 1 2 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 0 1 2 3이다",
       "answer": 2
     },
     {
@@ -275,7 +275,7 @@
         "4",
         "5"
       ],
-      "explanation": "최종 결과는 2이다\n3 · 4 · 5 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 2이다",
       "answer": 1
     },
     {
@@ -299,7 +299,7 @@
         "x＝7 y＝-1",
         "Unresolved compilation problem 오류 발생"
       ],
-      "explanation": "최종 결과는 Unresolved compilation problem 오류 발생이다\nx＝7 y＝0 · x＝6 y＝-1 · x＝7 y＝-1 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 Unresolved compilation problem 오류 발생이다",
       "answer": 4
     },
     {
@@ -323,7 +323,7 @@
         "66",
         "78"
       ],
-      "explanation": "최종 결과는 66이다\n45 · 55 · 78 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 66이다",
       "answer": 3
     },
     {
@@ -347,7 +347,7 @@
         "string[0:3]+string[-3:]",
         "string[0:]+string[:-1]"
       ],
-      "explanation": "최종 결과는 string[0:3]+string[-3:]이다\nstring[1:3]+string[-3:] · string[:3]+string[-3:-1] · string[0:]+string[:-1] → 각각 해당하지 않음",
+      "explanation": "최종 결과는 string[0:3]+string[-3:]이다",
       "answer": 3
     },
     {
@@ -359,7 +359,7 @@
         "4",
         "6"
       ],
-      "explanation": "최종 결과는 2이다\n0 · 4 · 6 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 2이다",
       "answer": 2
     },
     {
@@ -371,7 +371,7 @@
         "100 a",
         "a"
       ],
-      "explanation": "최종 결과는 a이다\n90 100 · 90 100 · 100 a → 각각 해당하지 않음",
+      "explanation": "최종 결과는 a이다",
       "answer": 4
     },
     {
@@ -383,7 +383,7 @@
         "else if",
         "else"
       ],
-      "explanation": "최종 결과는 elif이다\neither · else if · else → 각각 해당하지 않음",
+      "explanation": "최종 결과는 elif이다",
       "answer": 2
     },
     {
@@ -395,7 +395,7 @@
         "53 44",
         "53, 44"
       ],
-      "explanation": "최종 결과는 53t44이다\n53 t 44 · 53 44 · 53, 44 → 각각 해당하지 않음",
+      "explanation": "최종 결과는 53t44이다",
       "answer": 2
     },
     {
@@ -407,7 +407,7 @@
         "wow 문자열을 복사한다.",
         "wow 사용자에 대한 정보를 무한 반복하여 출력한다."
       ],
-      "explanation": "최종 결과는 wow 사용자가 로그인할 때까지 반복문을 수행한다.이다\nwow 사용자가 로그인한 경우에만 반복문을 수행한다. · wow 문자열을 복사한다. · wow 사용자에 대한 정보를 무한 반복하여 출력한다. → 각각 해당하지 않음",
+      "explanation": "최종 결과는 wow 사용자가 로그인할 때까지 반복문을 수행한다.이다",
       "answer": 2
     },
     {
@@ -419,7 +419,7 @@
         "20,000",
         "25,000"
       ],
-      "explanation": "SQL 결과는 15,000이다\n10,000 · 20,000 · 25,000 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 15,000이다",
       "answer": 2
     },
     {
@@ -443,7 +443,7 @@
         "20203333 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200",
         "20203333 NULL CS300"
       ],
-      "explanation": "SQL 결과는 20203333 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200이다\n20202222 20 CS200 학번 · 20202222 학번 20201111 20202222 · 20203333 NULL CS300 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 20203333 학번 학점 수 과목번호 20201111 15 NULL 20202222 20 CS200이다",
       "answer": 3
     },
     {
@@ -467,7 +467,7 @@
         "WHERE 직원＝‘정도일’",
         "SELECT 팀코드 FROM 직원 WHERE 이름＝‘정도일’"
       ],
-      "explanation": "SQL 결과는 SELECT 팀코드 FROM 직원 WHERE 이름＝‘정도일’이다\nWHERE 이름＝‘정도일’ · SELECT 팀코드 FROM 이름 WHERE 직원＝‘정도일’ · WHERE 직원＝‘정도일’ → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 SELECT 팀코드 FROM 직원 WHERE 이름＝‘정도일’이다",
       "answer": 4
     },
     {
@@ -479,7 +479,7 @@
         "(3)",
         "(4)"
       ],
-      "explanation": "SQL 결과는 (4)이다\n(1) · (2) · (3) → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 (4)이다",
       "answer": 4
     },
     {
@@ -491,7 +491,7 @@
         "장미화 3 이름 학년 홍길동 1 강남길 2",
         "장미화 3"
       ],
-      "explanation": "SQL 결과는 장미화 3이다\n3 학년 1 2 · 3 이름 학년 홍길동 1 김철수 1 강남길 2 오말자 2 · 장미화 3 이름 학년 홍길동 1 강남길 2 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 장미화 3이다",
       "answer": 4
     },
     {
@@ -515,7 +515,7 @@
         "장미화 이름 홍길동",
         "김철수"
       ],
-      "explanation": "SQL 결과는 장미화 이름 홍길동 강남길이다\n오말자 이름 홍길동 김철수 강남길 오말자 · 장미화 이름 홍길동 · 김철수 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 장미화 이름 홍길동 강남길이다",
       "answer": 1
     },
     {
@@ -527,7 +527,7 @@
         "4",
         "5"
       ],
-      "explanation": "SQL 결과는 3이다\n1 · 4 · 5 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 3이다",
       "answer": 2
     },
     {
@@ -539,7 +539,7 @@
         "운영체제 과목이름 DB",
         "운영체제"
       ],
-      "explanation": "SQL 결과는 운영체제이다\nDB 과목이름 DB · DB 과목이름 DB DB · 운영체제 과목이름 DB → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 운영체제이다",
       "answer": 4
     },
     {
@@ -563,7 +563,7 @@
         "1 3 1",
         "2"
       ],
-      "explanation": "SQL 결과는 2이다\n3 2 · 1 3 · 1 3 1 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 2이다",
       "answer": 4
     },
     {
@@ -575,7 +575,7 @@
         "INTO",
         "TO"
       ],
-      "explanation": "SQL 결과는 TO이다\nFROM · SET · INTO → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 TO이다",
       "answer": 4
     },
     {
@@ -587,7 +587,7 @@
         "점수 > 90 AND 점수 <= 95",
         "점수 >= 90 AND 점수 < 95"
       ],
-      "explanation": "SQL 결과는 점수 > 90 AND 점수 < 95이다\n점수 >= 90 AND 점수 <= 95 · 점수 > 90 AND 점수 <= 95 · 점수 >= 90 AND 점수 < 95 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 점수 > 90 AND 점수 < 95이다",
       "answer": 2
     },
     {
@@ -599,7 +599,7 @@
         "CREATE FROM",
         "CREATE TABLE FROM"
       ],
-      "explanation": "SQL 결과는 CREATE TABLE TO이다\nCREATE TO · CREATE FROM · CREATE TABLE FROM → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 CREATE TABLE TO이다",
       "answer": 1
     },
     {
@@ -611,7 +611,7 @@
         "ⓐ 130, ⓑ 3",
         "ⓐ 130, ⓑ 130"
       ],
-      "explanation": "SQL 결과는 ⓐ 130, ⓑ 3이다\nⓐ 3, ⓑ 3 · ⓐ 50, ⓑ 3 · ⓐ 130, ⓑ 130 → 각각 해당하지 않음",
+      "explanation": "SQL 결과는 ⓐ 130, ⓑ 3이다",
       "answer": 3
     },
     {
@@ -623,7 +623,7 @@
         "㉠ UPDATE, ㉡ ON",
         "㉠ REPLACE, ㉡ IN"
       ],
-      "explanation": "최종 결과는 ㉠ UPDATE, ㉡ ON이다\n㉠ INSERT, ㉡ INTO · ㉠ ALTER, ㉡ TO · ㉠ REPLACE, ㉡ IN → 각각 해당하지 않음",
+      "explanation": "최종 결과는 ㉠ UPDATE, ㉡ ON이다",
       "answer": 3
     },
     {
@@ -635,7 +635,7 @@
         "V_1과 V_2 모두 삭제된다.",
         "V_1과 V_2 모두 삭제되지 않는다."
       ],
-      "explanation": "최종 결과는 V_1과 V_2 모두 삭제된다.이다\nV_1만 삭제된다. · V_2만 삭제된다. · V_1과 V_2 모두 삭제되지 않는다. → 각각 해당하지 않음",
+      "explanation": "최종 결과는 V_1과 V_2 모두 삭제된다.이다",
       "answer": 3
     },
     {
@@ -647,7 +647,7 @@
         "Underflow",
         "Top = Top"
       ],
-      "explanation": "최종 결과는 Underflow이다\nOverflow · Top = Top + 1 · Top = Top → 각각 해당하지 않음",
+      "explanation": "최종 결과는 Underflow이다",
       "answer": 3
     },
     {

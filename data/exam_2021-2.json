@@ -14,7 +14,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "기존 시스템과 신규 시스템의 성능 비교가 문제에서 요구한 틀린 설명이다.\n요구사항 변경으로 인한 비용 편익 분석 · 요구사항 변경의 추적 · 요구사항 변경에 따른 영향 평가 → 각각 해당하지 않음"
+      "explanation": "기존 시스템과 신규 시스템의 성능 비교가 틀린 설명이다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "Bridge Pattern은 기존에 구현되어 있는 클래스에 기능 발생 시 기존 클래스를 재사용할 수 있도록 중간에서 맞춰주는 역할 을 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "Bridge Pattern은 기존에 구현되어 있는 클래스에 기능 발생 시 기존 클래스를 재사용할 수 있도록 중간에서 맞춰주는 역할 을 한다.가 틀린 설명이다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "하둡(Hadoop)가 문제에서 요구한 틀린 설명이다.\n정답 기준은 하둡(Hadoop)이다."
+      "explanation": "하둡(Hadoop)가 틀린 설명이다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "액터는 대상 시스템과 상호 작용하는 사람이나 다른 시스템에 의한 역할이다.를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 액터는 대상 시스템과 상호 작용하는 사람이나 다른 시스템에 의한 역할이다.이다."
     },
     {
       "qnum": 5,
@@ -65,12 +65,12 @@
         "구조적 기법",
         "프로토타이핑 기술",
         "정보 저장소 기술",
-        "일괄처리 기술 2회 정보처리기사 필기 없습니다."
+        "일괄처리 기술"
       ],
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "일괄처리 기술 2회 정보처리기사 필기 없습니다.가 문제에서 요구한 틀린 설명이다.\n구조적 기법 · 프로토타이핑 기술 · 정보 저장소 기술 → 각각 해당하지 않음"
+      "explanation": "CASE의 원천 기술에는 구조적 기법, 프로토타이핑 기술, 정보 저장소 기술, 분산처리 기술 등이 있다. 일괄처리 기술은 CASE의 원천 기술이 아니다."
     },
     {
       "qnum": 6,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "객체 모델링, 동적 모델링, 기능 모델링를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 객체 모델링, 동적 모델링, 기능 모델링이다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Realization를 문제 조건과 비교하는 문제.\n정답 기준은 Realization이다."
+      "explanation": "정답은 Realization이다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "Maintenance가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Maintenance이다."
+      "explanation": "Maintenance가 틀린 설명이다."
     },
     {
       "qnum": 9,
@@ -126,7 +126,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "사용자의 편의성을 높임으로써 작업시간을 증가시킨다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "사용자의 편의성을 높임으로써 작업시간을 증가시킨다.가 틀린 설명이다."
     },
     {
       "qnum": 10,
@@ -140,7 +140,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "㉠ → ㉡ → ㉢ → ㉣를 문제 조건과 비교하는 문제.\n정답 기준은 ㉠ → ㉡ → ㉢ → ㉣이다."
+      "explanation": "정답은 ㉠ → ㉡ → ㉢ → ㉣이다."
     },
     {
       "qnum": 11,
@@ -154,7 +154,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "사용자의 요구는 예외가 거의 없어 열거와 구조화가 어렵지 않다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "사용자의 요구는 예외가 거의 없어 열거와 구조화가 어렵지 않다.가 틀린 설명이다."
     },
     {
       "qnum": 12,
@@ -168,7 +168,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "독립성(Isolation)가 문제에서 요구한 틀린 설명이다.\n정답 기준은 독립성(Isolation)이다."
+      "explanation": "독립성(Isolation)가 틀린 설명이다."
     },
     {
       "qnum": 13,
@@ -182,7 +182,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "파이프 필터 구조 -를 문제 조건과 비교하는 문제.\n정답 기준은 파이프 필터 구조 -이다."
+      "explanation": "정답은 파이프 필터 구조 -이다."
     },
     {
       "qnum": 14,
@@ -196,7 +196,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "Instance를 문제 조건과 비교하는 문제.\n정답 기준은 Instance이다."
+      "explanation": "정답은 Instance이다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "Singleton Pattern를 문제 조건과 비교하는 문제.\nAdapter Pattern · Decorator Pattern · State Pattern → 각각 해당하지 않음"
+      "explanation": "정답은 Singleton Pattern이다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "전체 소스 코드 생성 기능가 문제에서 요구한 틀린 설명이다.\n정답 기준은 전체 소스 코드 생성 기능이다."
+      "explanation": "전체 소스 코드 생성 기능가 틀린 설명이다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "송신 시스템를 문제 조건과 비교하는 문제.\n정답 기준은 송신 시스템이다."
+      "explanation": "정답은 송신 시스템이다."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "절차 다이어그램(Procedural Diagram)가 문제에서 요구한 틀린 설명이다."
+      "explanation": "절차 다이어그램(Procedural Diagram)가 틀린 설명이다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "Message를 문제 조건과 비교하는 문제.\n정답 기준은 Message이다."
+      "explanation": "정답은 Message이다."
     },
     {
       "qnum": 20,
@@ -280,7 +280,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "캡슐화(Encapsulation)를 문제 조건과 비교하는 문제.\n조직화(Organizing) · 정보 은닉(Infomation Hiding) · 구조화(Structuralization) → 각각 해당하지 않음"
+      "explanation": "정답은 캡슐화(Encapsulation)이다."
     },
     {
       "qnum": 21,
@@ -294,7 +294,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.가 문제에서 요구한 틀린 설명이다.\n코드의 중복을 최소화 한다. · 누구든지 코드를 쉽게 읽을 수 있도록 작성한다. · 간단하게 코드를 작성한다. → 각각 해당하지 않음"
+      "explanation": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.가 틀린 설명이다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "대표적인 형상관리 도구로 Ant, Maven, Gradle 등이 있다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "대표적인 형상관리 도구로 Ant, Maven, Gradle 등이 있다.가 틀린 설명이다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Message Bus를 문제 조건과 비교하는 문제.\n정답 기준은 Message Bus이다."
+      "explanation": "정답은 Message Bus이다."
     },
     {
       "qnum": 24,
@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "패키징은 개발자 중심으로 진행한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "패키징은 개발자 중심으로 진행한다.가 틀린 설명이다."
     },
     {
       "qnum": 25,
@@ -350,7 +350,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "성능 테스트 도구를 문제 조건과 비교하는 문제.\n정답 기준은 성능 테스트 도구이다."
+      "explanation": "정답은 성능 테스트 도구이다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Dataware House가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Dataware House이다."
+      "explanation": "Dataware House가 틀린 설명이다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "결함 집중를 문제 조건과 비교하는 문제.\n정답 기준은 결함 집중이다."
+      "explanation": "정답은 결함 집중이다."
     },
     {
       "qnum": 28,
@@ -392,7 +392,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "6, 3, 5, 7, 9를 문제 조건과 비교하는 문제.\n정답 기준은 6, 3, 5, 7, 9이다."
+      "explanation": "정답은 6, 3, 5, 7, 9이다."
     },
     {
       "qnum": 29,
@@ -406,7 +406,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "분산 저장소 방식를 문제 조건과 비교하는 문제.\n정답 기준은 분산 저장소 방식이다."
+      "explanation": "정답은 분산 저장소 방식이다."
     },
     {
       "qnum": 30,
@@ -420,7 +420,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "Foxbase가 문제에서 요구한 틀린 설명이다.\n정답 기준은 Foxbase이다."
+      "explanation": "Foxbase가 틀린 설명이다."
     },
     {
       "qnum": 31,
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "합병 정렬를 문제 조건과 비교하는 문제.\n정답 기준은 합병 정렬이다."
+      "explanation": "정답은 합병 정렬이다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우가 문제에서 요구한 틀린 설명이다."
+      "explanation": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우가 틀린 설명이다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프 의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클 을 허용하지 않는 경로를 말한다.가 틀린 설명이다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "소프트웨어는 사용자 수준에 무관하게 일관된 인터페이스를 제공해야 한다.가 문제에서 요구한 틀린 설명이다.\n소프트웨어는 유지보수가 용이해야 한다. · 소프트웨어는 신뢰성이 높아야 한다. · 소프트웨어는 충분한 테스팅을 거쳐야 한다. → 각각 해당하지 않음"
+      "explanation": "소프트웨어는 사용자 수준에 무관하게 일관된 인터페이스를 제공해야 한다.가 틀린 설명이다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과가 문제에서 요구한 틀린 설명이다.\n알고리즘 오류에 따른 원치 않는 결과 · 탈출구가 없는 반복문의 사용 · 틀린 계산 수식에 의한 잘못된 결과 → 각각 해당하지 않음"
+      "explanation": "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과가 틀린 설명이다."
     },
     {
       "qnum": 36,
@@ -504,7 +504,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "최악의 수행 시간은 O(2n4)이다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "최악의 수행 시간은 O(2n4)이다.가 틀린 설명이다."
     },
     {
       "qnum": 37,
@@ -518,7 +518,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "체크인(Check-In)를 문제 조건과 비교하는 문제.\n정답 기준은 체크인(Check-In)이다."
+      "explanation": "정답은 체크인(Check-In)이다."
     },
     {
       "qnum": 38,
@@ -532,7 +532,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작 업이다.를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작 업이다.이다."
     },
     {
       "qnum": 39,
@@ -546,7 +546,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "42를 문제 조건과 비교하는 문제.\n정답 기준은 42이다."
+      "explanation": "정답은 42이다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "선택 정렬가 문제에서 요구한 틀린 설명이다.\n정답 기준은 선택 정렬이다."
+      "explanation": "선택 정렬가 틀린 설명이다."
     },
     {
       "qnum": 41,
@@ -574,7 +574,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "10, 35를 문제 조건과 비교하는 문제.\n정답 기준은 10, 35이다."
+      "explanation": "정답은 10, 35이다."
     },
     {
       "qnum": 42,
@@ -588,7 +588,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "사용자가 직접 시스템 카탈로그의 내용을 갱신하여 데이터베 이스 무결성을 유지한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "사용자가 직접 시스템 카탈로그의 내용을 갱신하여 데이터베 이스 무결성을 유지한다.가 틀린 설명이다."
     },
     {
       "qnum": 43,
@@ -602,7 +602,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "차집합(Difference)가 문제에서 요구한 틀린 설명이다.\n프로젝트(Project) · 조인(Join) · 디비전(Division) → 각각 해당하지 않음"
+      "explanation": "차집합(Difference)가 틀린 설명이다."
     },
     {
       "qnum": 44,
@@ -616,7 +616,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "목표 DBMS에 맞는 스키마 설계가 문제에서 요구한 틀린 설명이다.\n정답 기준은 목표 DBMS에 맞는 스키마 설계이다."
+      "explanation": "목표 DBMS에 맞는 스키마 설계가 틀린 설명이다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SELECT 과목번호, 과목이름 FROM R1, R2 WHERE R1.학 번 = R2.학번 AND R1.학과 = ‘전자공학’ AND R1.이름 = ‘강남길’;를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 SELECT 과목번호, 과목이름 FROM R1, R2 WHERE R1.학 번 = R2.학번 AND R1.학과 = ‘전자공학’ AND R1.이름 = ‘강남길’;이다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "시분할 기법가 문제에서 요구한 틀린 설명이다.\n정답 기준은 시분할 기법이다."
+      "explanation": "시분할 기법가 틀린 설명이다."
     },
     {
       "qnum": 47,
@@ -658,7 +658,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "검색결과에 중복되는 레코드를 없애기 위해서는 WHERE 절 에 ‘DISTINCT’ 키워드를 사용한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "검색결과에 중복되는 레코드를 없애기 위해서는 WHERE 절 에 ‘DISTINCT’ 키워드를 사용한다.가 틀린 설명이다."
     },
     {
       "qnum": 48,
@@ -672,7 +672,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "결정자가 후보키가 아닌 함수 종속 제거를 문제 조건과 비교하는 문제.\n이행적 함수 종속 제거 · 부분적 함수 종속 제거 · 원자값이 아닌 도메인 분해 → 각각 해당하지 않음"
+      "explanation": "정답은 결정자가 후보키가 아닌 함수 종속 제거이다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "DROP를 문제 조건과 비교하는 문제.\n정답 기준은 DROP이다."
+      "explanation": "정답은 DROP이다."
     },
     {
       "qnum": 50,
@@ -700,7 +700,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "ROLLBACK 연산를 문제 조건과 비교하는 문제.\n정답 기준은 ROLLBACK 연산이다."
+      "explanation": "정답은 ROLLBACK 연산이다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "CREATE를 문제 조건과 비교하는 문제.\n정답 기준은 CREATE이다."
+      "explanation": "정답은 CREATE이다."
     },
     {
       "qnum": 52,
@@ -728,7 +728,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "검색이상가 문제에서 요구한 틀린 설명이다.\n정답 기준은 검색이상이다."
+      "explanation": "검색이상가 틀린 설명이다."
     },
     {
       "qnum": 53,
@@ -742,7 +742,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "2020222 학번를 문제 조건과 비교하는 문제.\n정답 기준은 2020222 학번이다."
+      "explanation": "정답은 2020222 학번이다."
     },
     {
       "qnum": 54,
@@ -756,7 +756,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "애트리뷰트의 수를 문제 조건과 비교하는 문제.\n정답 기준은 애트리뷰트의 수이다."
+      "explanation": "정답은 애트리뷰트의 수이다."
     },
     {
       "qnum": 55,
@@ -770,7 +770,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SET를 문제 조건과 비교하는 문제.\n정답 기준은 SET이다."
+      "explanation": "정답은 SET이다."
     },
     {
       "qnum": 56,
@@ -784,7 +784,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "예측 분할가 문제에서 요구한 틀린 설명이다.\n정답 기준은 예측 분할이다."
+      "explanation": "예측 분할가 틀린 설명이다."
     },
     {
       "qnum": 57,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "한 릴레이션을 구성하는 속성 사이에는 순서가 존재한다.가 문제에서 요구한 틀린 설명이다.\n모든 속성 값은 원자 값을 갖는다. · 한 릴레이션에 포함된 튜플은 모두 상이하다. · 한 릴레이션에 포함된 튜플 사이에는 순서가 없다. → 각각 해당하지 않음"
+      "explanation": "한 릴레이션을 구성하는 속성 사이에는 순서가 존재한다.가 틀린 설명이다."
     },
     {
       "qnum": 58,
@@ -812,7 +812,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "속성의 수를 “cardinality”라고 한다. -가 문제에서 요구한 틀린 설명이다."
+      "explanation": "속성의 수를 “cardinality”라고 한다. -가 틀린 설명이다."
     },
     {
       "qnum": 59,
@@ -826,7 +826,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "개체 무결성를 문제 조건과 비교하는 문제.\n정답 기준은 개체 무결성이다."
+      "explanation": "정답은 개체 무결성이다."
     },
     {
       "qnum": 60,
@@ -840,7 +840,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "연결 – 삼각형가 문제에서 요구한 틀린 설명이다.\n정답 기준은 연결 – 삼각형이다."
+      "explanation": "연결 – 삼각형가 틀린 설명이다."
     },
     {
       "qnum": 61,
@@ -854,7 +854,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "페이지 맵 테이블의 크기가 감소한다.가 문제에서 요구한 틀린 설명이다.\n기억장소 이용 효율이 증가한다. · 입·출력 시간이 늘어난다. · 내부 단편화가 감소한다. → 각각 해당하지 않음"
+      "explanation": "페이지 맵 테이블의 크기가 감소한다.가 틀린 설명이다."
     },
     {
       "qnum": 62,
@@ -868,7 +868,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "7를 문제 조건과 비교하는 문제.\n정답 기준은 7이다."
+      "explanation": "정답은 7이다."
     },
     {
       "qnum": 63,
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "6를 문제 조건과 비교하는 문제.\n정답 기준은 6이다."
+      "explanation": "정답은 6이다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "255.255.255.224를 문제 조건과 비교하는 문제.\n정답 기준은 255.255.255.224이다."
+      "explanation": "정답은 255.255.255.224이다."
     },
     {
       "qnum": 65,
@@ -910,7 +910,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.가 틀린 설명이다."
     },
     {
       "qnum": 66,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "66를 문제 조건과 비교하는 문제.\n정답 기준은 66이다."
+      "explanation": "정답은 66이다."
     },
     {
       "qnum": 67,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "Sequential Cohesion를 문제 조건과 비교하는 문제.\nProcedural Cohesion · Logical Cohesion · Coincidental Cohesion → 각각 해당하지 않음"
+      "explanation": "정답은 Sequential Cohesion이다."
     },
     {
       "qnum": 68,
@@ -952,7 +952,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용 이 가능하게 해준다를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용 이 가능하게 해준다이다."
     },
     {
       "qnum": 69,
@@ -966,7 +966,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "5, 5, 5를 문제 조건과 비교하는 문제.\n정답 기준은 5, 5, 5이다."
+      "explanation": "정답은 5, 5, 5이다."
     },
     {
       "qnum": 70,
@@ -980,7 +980,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "121를 문제 조건과 비교하는 문제.\n정답 기준은 121이다."
+      "explanation": "정답은 121이다."
     },
     {
       "qnum": 71,
@@ -994,7 +994,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.를 문제 조건과 비교하는 문제."
+      "explanation": "정답은 문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.이다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "일반적으로 페이지 교환에 보내는 시간보다 프로세스 수행에 보내는 시간이 더 크면 스레싱(Thrashing)이 발생한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "일반적으로 페이지 교환에 보내는 시간보다 프로세스 수행에 보내는 시간이 더 크면 스레싱(Thrashing)이 발생한다.가 틀린 설명이다."
     },
     {
       "qnum": 73,
@@ -1022,7 +1022,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "Avoidance를 문제 조건과 비교하는 문제.\n정답 기준은 Avoidance이다."
+      "explanation": "정답은 Avoidance이다."
     },
     {
       "qnum": 74,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Stamp Coupling를 문제 조건과 비교하는 문제.\n정답 기준은 Stamp Coupling이다."
+      "explanation": "정답은 Stamp Coupling이다."
     },
     {
       "qnum": 76,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "㉠, ㉥, ㉣, ㉢, ㉡, ㉤를 문제 조건과 비교하는 문제.\n정답 기준은 ㉠, ㉥, ㉣, ㉢, ㉡, ㉤이다."
+      "explanation": "정답은 ㉠, ㉥, ㉣, ㉢, ㉡, ㉤이다."
     },
     {
       "qnum": 77,
@@ -1064,7 +1064,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "2를 문제 조건과 비교하는 문제.\n정답 기준은 2이다."
+      "explanation": "정답은 2이다."
     },
     {
       "qnum": 78,
@@ -1078,7 +1078,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "변수를 출력하고자 할 때는 export를 사용해야 한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "변수를 출력하고자 할 때는 export를 사용해야 한다.가 틀린 설명이다."
     },
     {
       "qnum": 79,
@@ -1092,7 +1092,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다.가 틀린 설명이다."
     },
     {
       "qnum": 80,
@@ -1106,7 +1106,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "CSMA/CA를 문제 조건과 비교하는 문제.\n정답 기준은 CSMA/CA이다."
+      "explanation": "정답은 CSMA/CA이다."
     },
     {
       "qnum": 81,
@@ -1120,7 +1120,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "SSH의 기본 네트워크 포트는 220번을 사용한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "SSH의 기본 네트워크 포트는 220번을 사용한다.가 틀린 설명이다."
     },
     {
       "qnum": 82,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "Screened Subnet를 문제 조건과 비교하는 문제.\n정답 기준은 Screened Subnet이다."
+      "explanation": "정답은 Screened Subnet이다."
     },
     {
       "qnum": 83,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Transcription Error를 문제 조건과 비교하는 문제.\nAddition Error · Omission Error · Sequence Error → 각각 해당하지 않음"
+      "explanation": "정답은 Transcription Error이다."
     },
     {
       "qnum": 84,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "N-Screen를 문제 조건과 비교하는 문제.\n정답 기준은 N-Screen이다."
+      "explanation": "정답은 N-Screen이다."
     },
     {
       "qnum": 85,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "고가용성 지원가 문제에서 요구한 틀린 설명이다.\n정답 기준은 고가용성 지원이다."
+      "explanation": "고가용성 지원가 틀린 설명이다."
     },
     {
       "qnum": 86,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "Stack Guard를 문제 조건과 비교하는 문제.\n정답 기준은 Stack Guard이다."
+      "explanation": "정답은 Stack Guard이다."
     },
     {
       "qnum": 87,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "Bell-Lapadula Model를 문제 조건과 비교하는 문제.\nClark-Wilson Integrity Model · PDCA Model · Chinese Wall Model → 각각 해당하지 않음"
+      "explanation": "정답은 Bell-Lapadula Model이다."
     },
     {
       "qnum": 88,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "성능평가 프로세스가 문제에서 요구한 틀린 설명이다.\n정답 기준은 성능평가 프로세스이다."
+      "explanation": "성능평가 프로세스가 틀린 설명이다."
     },
     {
       "qnum": 89,
@@ -1232,7 +1232,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "거리 벡터 라우팅 프로토콜이라고 한다.가 문제에서 요구한 틀린 설명이다.\n네트워크 변화에 신속하게 대처할 수 있다. · 멀티캐스팅을 지원한다. · 최단 경로 탐색에 Dijkstra 알고리즘을 사용한다. → 각각 해당하지 않음"
+      "explanation": "거리 벡터 라우팅 프로토콜이라고 한다.가 틀린 설명이다."
     },
     {
       "qnum": 90,
@@ -1246,7 +1246,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "SAN를 문제 조건과 비교하는 문제.\n정답 기준은 SAN이다."
+      "explanation": "정답은 SAN이다."
     },
     {
       "qnum": 91,
@@ -1260,7 +1260,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "사용자 요구사항 정의서를 문제 조건과 비교하는 문제.\n정답 기준은 사용자 요구사항 정의서이다."
+      "explanation": "정답은 사용자 요구사항 정의서이다."
     },
     {
       "qnum": 92,
@@ -1274,7 +1274,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "COCOMO를 문제 조건과 비교하는 문제.\n정답 기준은 COCOMO이다."
+      "explanation": "정답은 COCOMO이다."
     },
     {
       "qnum": 93,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "수준 7 - 미완성 단계가 문제에서 요구한 틀린 설명이다.\n정답 기준은 수준 7 - 미완성 단계이다."
+      "explanation": "수준 7 - 미완성 단계가 틀린 설명이다."
     },
     {
       "qnum": 94,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "라우터를 문제 조건과 비교하는 문제.\n정답 기준은 라우터이다."
+      "explanation": "정답은 라우터이다."
     },
     {
       "qnum": 95,
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "AES를 문제 조건과 비교하는 문제.\n정답 기준은 AES이다."
+      "explanation": "정답은 AES이다."
     },
     {
       "qnum": 96,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "암호화 수행시 일방향 암호화만 지원한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "암호화 수행시 일방향 암호화만 지원한다.가 틀린 설명이다."
     },
     {
       "qnum": 97,
@@ -1344,7 +1344,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "nmap를 문제 조건과 비교하는 문제.\n정답 기준은 nmap이다."
+      "explanation": "정답은 nmap이다."
     },
     {
       "qnum": 98,
@@ -1358,7 +1358,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "Sqoop를 문제 조건과 비교하는 문제.\n정답 기준은 Sqoop이다."
+      "explanation": "정답은 Sqoop이다."
     },
     {
       "qnum": 99,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "주로 공개키 암호화 방식에서 키 생성을 위해 사용한다.가 문제에서 요구한 틀린 설명이다."
+      "explanation": "주로 공개키 암호화 방식에서 키 생성을 위해 사용한다.가 틀린 설명이다."
     },
     {
       "qnum": 100,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "PERT -가 문제에서 요구한 틀린 설명이다.\n정답 기준은 PERT -이다."
+      "explanation": "PERT -가 틀린 설명이다."
     }
   ]
 }

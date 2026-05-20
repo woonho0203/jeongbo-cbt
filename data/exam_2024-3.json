@@ -14,7 +14,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "CLI(Command Line Interface)는 명령과 출력이 텍스트 형태로만 이루어지는 사용자 인터페이스입니다\nNUI · GUI · OUI → 각각 해당하지 않음"
+      "explanation": "CLI(Command Line Interface)는 명령과 출력이 텍스트 형태로만 이루어지는 사용자 인터페이스이다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "특정 개발 책임자만 모든 책임을 가지며 팀원이 책임 없이 개발한다는 것은 XP의 원칙에 위배됩니다"
+      "explanation": "특정 개발 책임자만 모든 책임을 가지며 팀원이 책임 없이 개발한다는 것은 XP의 원칙에 위배된다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "comment, data dictionary, mini-spec은 DFD 구성 요소가 아닙니다"
+      "explanation": "comment, data dictionary, mini-spec은 DFD 구성 요소가 아니다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "단순히 애플리케이션과 사용자 사이에서만 동작하는 것이 아니라 여러 컴포넌트 간 통신과 데이터 교환을 담당합니다"
+      "explanation": "단순히 애플리케이션과 사용자 사이에서만 동작하는 것이 아니라 여러 컴포넌트 간 통신과 데이터 교환을 담당한다."
     },
     {
       "qnum": 5,
@@ -70,7 +70,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "구조 파악 용이, 생산성 향상, 재사용 시간 단축 등은 디자인 패턴의 장점입니다\n소프트웨어 구조 파악이 용이하다. · 객체지향 설계 및 구현의 생산성을 높이는데 적합하다. · 재사용을 위한 개발 시간이 단축된다. → 각각 해당하지 않음"
+      "explanation": "구조 파악 용이, 생산성 향상, 재사용 시간 단축 등은 디자인 패턴의 장점이다."
     },
     {
       "qnum": 6,
@@ -84,7 +84,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "UML 스테레오타입(Stereotype)은 기존 UML 요소를 확장하여 새로운 의미를 부여할 때 사용하며, 겹화살괄호 << >> 기호로 표현합니다\n(( )) · {{ }} · [[ ]] → 각각 해당하지 않음"
+      "explanation": "UML 스테레오타입(Stereotype)은 기존 UML 요소를 확장하여 새로운 의미를 부여할 때 사용하며, 겹화살괄호 << >> 기호로 표현한다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "서버 튜닝(Server Tuning)은 성능 개선 활동이지 측정 항목이 아닙니다\n응답 시간(Response Time) · 가용성(Availability) · 사용률(Utilization) → 각각 해당하지 않음"
+      "explanation": "서버 튜닝(Server Tuning)은 성능 개선 활동이지 측정 항목이 아니다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "프로토타입 모형은 실제 개발될 소프트웨어에 대한 견본품(프로토타입)을 만들어 사용자 요구를 정확히 파악하고 최종 결과물을 예측하는 모형입니다\n나선형 모형 · 애자일 모형 · 폭포수 모형 → 각각 해당하지 않음"
+      "explanation": "프로토타입 모형은 실제 개발될 소프트웨어에 대한 견본품(프로토타입)을 만들어 사용자 요구를 정확히 파악하고 최종 결과물을 예측하는 모형이다."
     },
     {
       "qnum": 9,
@@ -126,7 +126,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "객체/동적/기능 모델로 나누는 방법은 Rumbaugh, Use-Case 강조는 Jacobson 방법입니다"
+      "explanation": "객체/동적/기능 모델로 나누는 방법은 Rumbaugh, Use-Case 강조는 Jacobson 방법이다."
     },
     {
       "qnum": 10,
@@ -140,7 +140,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "일반화는 'is a kind of', 집단화는 'is part of' 관계입니다\n일반화 · 연관화 · 집단화 → 각각 해당하지 않음"
+      "explanation": "일반화는 'is a kind of', 집단화는 'is part of' 관계이다."
     },
     {
       "qnum": 11,
@@ -154,7 +154,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "점선 화살표로 표현합니다\nAssociation · Realization · Generalization → 각각 해당하지 않음"
+      "explanation": "점선 화살표로 표현한다."
     },
     {
       "qnum": 12,
@@ -168,7 +168,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "Putnam 모형은 Rayleigh-Norden 곡선의 노력 분포도를 이용하여 소프트웨어 생명 주기 전 과정 동안 사용될 노력의 분포를 예측하는 비용 산정 기법입니다\n델파이 모형 · COCOMO 모형 · 기능점수 모형 → 각각 해당하지 않음"
+      "explanation": "Putnam 모형은 Rayleigh-Norden 곡선의 노력 분포도를 이용하여 소프트웨어 생명 주기 전 과정 동안 사용될 노력의 분포를 예측하는 비용 산정 기법이다."
     },
     {
       "qnum": 13,
@@ -196,7 +196,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "개발자의 성명은 패턴의 필수 구성요소가 아닙니다\n실제 적용된 사례 · 문제 및 배경 · 재사용 가능한 샘플코드 → 각각 해당하지 않음"
+      "explanation": "개발자의 성명은 패턴의 필수 구성요소가 아니다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "아키텍처 설계 과정은 설계 목표 설정(㉮) → 시스템 타입 결정(㉯) → 스타일 적용 및 커스터마이즈(㉰) → 서브시스템의 기능·인터페이스 동작 작성(㉱) → 아키텍처 설계 검토(㉲) 순으로 진행됩니다\n㉲ → ㉮ → ㉯ → ㉱ → ㉰ · ㉮ → ㉲ → ㉯ → ㉱ → ㉰ · ㉮ → ㉯ → ㉰ → ㉲ → ㉱ → 각각 해당하지 않음"
+      "explanation": "아키텍처 설계 과정은 설계 목표 설정(㉮) → 시스템 타입 결정(㉯) → 스타일 적용 및 커스터마이즈(㉰) → 서브시스템의 기능·인터페이스 동작 작성(㉱) → 아키텍처 설계 검토(㉲) 순으로 진행된다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "속성은 상태 표현, 오퍼레이션은 행동 표현이 핵심입니다\n㉠-제약조건, ㉡-속성 · ㉠-오퍼레이션, ㉡-제약조건 · ㉠-속성, ㉡-관계 → 각각 해당하지 않음"
+      "explanation": "속성은 상태 표현, 오퍼레이션은 행동 표현이 핵심이다."
     },
     {
       "qnum": 17,
@@ -238,7 +238,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "오히려 폭포수 모형의 단점(변경 대응 어려움 등)을 보완하기 위해 나선형 모형이 개발되었습니다\n순차적인 접근방법을 이용한다. · 단계적 정의와 산출물이 명확하다. · 모형의 적용 경험과 성공사례가 많다. → 각각 해당하지 않음"
+      "explanation": "오히려 폭포수 모형의 단점(변경 대응 어려움 등)을 보완하기 위해 나선형 모형이 개발되었다."
     },
     {
       "qnum": 18,
@@ -252,7 +252,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아닙니다\n구조적 기법 · 프로토타이핑 기술 · 정보 저장소 기술 → 각각 해당하지 않음"
+      "explanation": "일괄처리(Batch Processing) 기술은 CASE의 원천 기술이 아니다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)입니다\nfan-in : 2, fan-out : 3 · fan-in : 1, fan-out : 2 · fan-in : 2, fan-out : 1 → 각각 해당하지 않음",
+      "explanation": "그래프에서 모듈 F를 호출하는 모듈이 3개(fan-in: 3), F가 호출하는 모듈이 2개(fan-out: 2)이다.",
       "image": "images/2024-3_q19.png"
     },
     {
@@ -281,7 +281,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "HIPO(Hierarchy Input Process Output)는 하향식(Top-Down) 소프트웨어 개발을 위한 문서화 도구입니다"
+      "explanation": "HIPO(Hierarchy Input Process Output)는 하향식(Top-Down) 소프트웨어 개발을 위한 문서화 도구이다."
     },
     {
       "qnum": 21,
@@ -295,7 +295,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "'빌드 테이블 추가'는 해당 방법에 포함되지 않습니다\n집계 테이블의 추가 · 진행 테이블의 추가 · 특정 부분만을 포함하는 테이블 추가 → 각각 해당하지 않음"
+      "explanation": "'빌드 테이블 추가'는 해당 방법에 포함되지 않다."
     },
     {
       "qnum": 22,
@@ -321,7 +321,7 @@
         "방화벽 기술"
       ],
       "answer": 4,
-      "explanation": "DRM 기술 요소에는 암호화, 키 관리, 크랙 방지, 정책 관리, 콘텐츠 식별 등이 포함됩니다\n크랙 방지 기술 · 정책 관리 기술 · 암호화 기술 → 각각 해당하지 않음",
+      "explanation": "DRM 기술 요소에는 암호화, 키 관리, 크랙 방지, 정책 관리, 콘텐츠 식별 등이 포함된다.",
       "subject": 2,
       "subjectName": "소프트웨어 개발"
     },
@@ -337,7 +337,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "그림의 트리에서 최대 차수는 2이며, 단말 노드는 4개입니다\n차수 : 4, 단말 노드 : 4 · 차수 : 4, 단말 노드 : 8 · 차수 : 2, 단말 노드 : 8 → 각각 해당하지 않음",
+      "explanation": "그림의 트리에서 최대 차수는 2이며, 단말 노드는 4개이다.",
       "image": "images/2024-3_q24.png"
     },
     {
@@ -352,7 +352,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "'유닛 분할(Unit Partitioning)'은 존재하지 않는 분할 유형입니다"
+      "explanation": "'유닛 분할(Unit Partitioning)'은 존재하지 않는 분할 유형이다."
     },
     {
       "qnum": 26,
@@ -366,7 +366,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "정규화(Normalization)는 데이터베이스 설계 기법으로 형상 관리 도구의 기능이 아닙니다\n체크인(Check-in) · 체크아웃(Check-out) · 커밋(commit) → 각각 해당하지 않음"
+      "explanation": "정규화(Normalization)는 데이터베이스 설계 기법으로 형상 관리 도구의 기능이 아니다."
     },
     {
       "qnum": 27,
@@ -380,7 +380,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "ISO/IEC 12119는 패키지 소프트웨어의 일반적인 제품 품질 요구사항 및 테스트에 관한 국제 표준입니다\nISO/IEC 2196 · IEEE 19554 · ISO/IEC 14959 → 각각 해당하지 않음"
+      "explanation": "ISO/IEC 12119는 패키지 소프트웨어의 일반적인 제품 품질 요구사항 및 테스트에 관한 국제 표준이다."
     },
     {
       "qnum": 28,
@@ -394,7 +394,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "동치 클래스 분해, 경계값 분석, 원인 결과 그래프는 블랙박스 테스트 기법입니다\n동치 클래스 분해 · 경계값 분석 · 원인 결과 그래프 → 각각 해당하지 않음"
+      "explanation": "동치 클래스 분해, 경계값 분석, 원인 결과 그래프는 블랙박스 테스트 기법이다."
     },
     {
       "qnum": 29,
@@ -408,7 +408,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "ESB(Enterprise Service Bus)는 기업 서비스 버스로, 인터페이스 통합 미들웨어이지 구현 검증 도구가 아닙니다\nxUnit · STAF · NTAF → 각각 해당하지 않음"
+      "explanation": "ESB(Enterprise Service Bus)는 기업 서비스 버스로, 인터페이스 통합 미들웨어이지 구현 검증 도구가 아니다."
     },
     {
       "qnum": 30,
@@ -422,7 +422,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "Postfix 표기 `3 4 * 5 6 * +`를 계산하면: 3×4=12, 5×6=30, 12+30=42입니다\n35 · 77 · 360 → 각각 해당하지 않음"
+      "explanation": "Postfix 표기 `3 4 * 5 6 * +`를 계산하면: 3×4=12, 5×6=30, 12+30=42이다."
     },
     {
       "qnum": 31,
@@ -436,7 +436,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "테스트 비용(Cost)은 테스트 케이스의 포함 항목이 아닌 테스트 계획의 관리 항목입니다\n테스트 조건 · 테스트 데이터 · 예상 결과 → 각각 해당하지 않음"
+      "explanation": "테스트 비용(Cost)은 테스트 케이스의 포함 항목이 아닌 테스트 계획의 관리 항목이다."
     },
     {
       "qnum": 32,
@@ -450,7 +450,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "이진 검색은 항상 중간값을 선택하여 탐색 범위를 절반씩 줄여나가는 방식입니다"
+      "explanation": "이진 검색은 항상 중간값을 선택하여 탐색 범위를 절반씩 줄여나가는 방식이다."
     },
     {
       "qnum": 33,
@@ -464,7 +464,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "체크박스는 복수 선택 가능, 토글 버튼은 온/오프 전환, 텍스트 박스는 텍스트 입력에 사용됩니다\n텍스트 박스 · 체크 박스 · 토글 버튼 → 각각 해당하지 않음"
+      "explanation": "체크박스는 복수 선택 가능, 토글 버튼은 온/오프 전환, 텍스트 박스는 텍스트 입력에 사용된다."
     },
     {
       "qnum": 34,
@@ -478,7 +478,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "선택 정렬(Selection Sort)은 배열/리스트를 순차적으로 비교하는 정렬로 스택 자료구조와는 거리가 멉니다\n재귀 호출 · 후위 표현(Post-Fix Expression)의 연산 · 깊이 우선 탐색 → 각각 해당하지 않음"
+      "explanation": "선택 정렬(Selection Sort)은 배열/리스트를 순차적으로 비교하는 정렬로 스택 자료구조와는 거리가 멉니다"
     },
     {
       "qnum": 35,
@@ -492,7 +492,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "'사이클을 허용하지 않는다'는 설명이 틀렸습니다"
+      "explanation": "'사이클을 허용하지 않는다'는 설명이 틀렸다."
     },
     {
       "qnum": 36,
@@ -506,7 +506,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "대표적인 성능 테스트 도구로 JMeter, LoadRunner 등이 있습니다\n명세 기반 테스트 설계 도구 · 코드 기반 테스트 설계 도구 · 기능 테스트 수행 도구 → 각각 해당하지 않음"
+      "explanation": "대표적인 성능 테스트 도구로 JMeter, LoadRunner 등이 있다."
     },
     {
       "qnum": 37,
@@ -520,7 +520,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "'하드웨어적인 방법으로만 가능하다'는 설명이 틀렸으며, 대표 도구로 PMD, FindBugs, SonarQube 등이 있습니다"
+      "explanation": "'하드웨어적인 방법으로만 가능하다'는 설명이 틀렸으며, 대표 도구로 PMD, FindBugs, SonarQube 등이 있다."
     },
     {
       "qnum": 38,
@@ -534,7 +534,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "형상 통제 과정에서는 변경 요구를 즉시 수용하는 것이 아니라, 변경 통제 위원회(CCB, Configuration Control Board)의 검토와 승인 절차를 거쳐 변경 여부를 결정합니다"
+      "explanation": "형상 통제 과정에서는 변경 요구를 즉시 수용하는 것이 아니라, 변경 통제 위원회(CCB, Configuration Control Board)의 검토와 승인 절차를 거쳐 변경 여부를 결정한다."
     },
     {
       "qnum": 39,
@@ -548,7 +548,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "깊이 우선 탐색(DFS)은 스택(또는 재귀)을 이용하여한 방향으로 끝까지 탐색 후 백트래킹합니다\nABECDFG · ABECFDG · ABCDEFG → 각각 해당하지 않음",
+      "explanation": "깊이 우선 탐색(DFS)은 스택(또는 재귀)을 이용하여한 방향으로 끝까지 탐색 후 백트래킹한다.",
       "image": "images/2024-3_q39.png"
     },
     {
@@ -563,7 +563,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "평균 O(n log n)이지만, 피봇이 최대/최소값으로 선택되는 최악의 경우 O(n²) = n(n-1)/2회 비교를 수행합니다\nSelection Sort · Bubble Sort · Insert Sort → 각각 해당하지 않음"
+      "explanation": "평균 O(n log n)이지만, 피봇이 최대/최소값으로 선택되는 최악의 경우 O(n²) = n(n-1)/2회 비교를 수행한다."
     },
     {
       "qnum": 41,
@@ -577,7 +577,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "SET-NULL은 NULL로 설정, RESTRICTED(RESTRICT)는 자식 레코드 존재 시 삭제 거부합니다\nCLUSTER · SET-NULL · RESTRICTED → 각각 해당하지 않음"
+      "explanation": "SET-NULL은 NULL로 설정, RESTRICTED(RESTRICT)는 자식 레코드 존재 시 삭제 거부한다."
     },
     {
       "qnum": 42,
@@ -591,7 +591,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "실제 데이터는 기본 테이블에 저장되며, 뷰는 SELECT 문의 정의만 저장됩니다\n뷰는 CREATE 문을 사용하여 정의한다. · 뷰는 데이터의 논리적 독립성을 제공한다. · 뷰를 제거할 때에는 DROP 문을 사용한다. → 각각 해당하지 않음"
+      "explanation": "실제 데이터는 기본 테이블에 저장되며, 뷰는 SELECT 문의 정의만 저장된다."
     },
     {
       "qnum": 43,
@@ -605,7 +605,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "CREATE, ALTER, DROP은 DDL(Data Definition Language), GRANT/REVOKE는 DCL(Data Control Language)입니다"
+      "explanation": "CREATE, ALTER, DROP은 DDL(Data Definition Language), GRANT/REVOKE는 DCL(Data Control Language)이다."
     },
     {
       "qnum": 44,
@@ -619,7 +619,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "'서울, 부산'처럼 하나의 셀에 복수 값이 있던 것을 각각의 행으로 분리하여 원자 값을 만드는 작업이 1NF 정규화입니다\n제2정규형 · 제3정규형 · 제4정규형 → 각각 해당하지 않음"
+      "explanation": "'서울, 부산'처럼 하나의 셀에 복수 값이 있던 것을 각각의 행으로 분리하여 원자 값을 만드는 작업이 1NF 정규화이다."
     },
     {
       "qnum": 45,
@@ -633,7 +633,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "참조 무결성은 외래키 값이 참조 테이블의 기본키 값과 일치해야 한다는 제약입니다\n참조 무결성 · 도메인 무결성 · 튜플의 유일성 → 각각 해당하지 않음"
+      "explanation": "참조 무결성은 외래키 값이 참조 테이블의 기본키 값과 일치해야 한다는 제약이다."
     },
     {
       "qnum": 46,
@@ -647,7 +647,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "출력 구조는 데이터 모델의 표시 요소가 아닙니다\n논리적 데이터 구조 · 연산 · 제약 조건 → 각각 해당하지 않음"
+      "explanation": "출력 구조는 데이터 모델의 표시 요소가 아니다."
     },
     {
       "qnum": 47,
@@ -661,7 +661,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "데이터 갱신 권한은 UPDATE이므로, `GRANT UPDATE ON STUDENT TO PARK;`이 됩니다\n㉠ INSERT, ㉡ INTO · ㉠ ALTER, ㉡ TO · ㉠ REPLACE, ㉡ IN → 각각 해당하지 않음"
+      "explanation": "데이터 갱신 권한은 UPDATE이므로, `GRANT UPDATE ON STUDENT TO PARK;`이 된다."
     },
     {
       "qnum": 48,
@@ -675,7 +675,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "CRUD 분석은 Create(생성), Read(읽기), Update(갱신), Delete(삭제) 연산으로 프로세스와 테이블 간 매트릭스를 작성하여 트랜잭션을 분석하는 방법입니다\nCASE 분석 · 일치 분석 · 연관성 분석 → 각각 해당하지 않음"
+      "explanation": "CRUD 분석은 Create(생성), Read(읽기), Update(갱신), Delete(삭제) 연산으로 프로세스와 테이블 간 매트릭스를 작성하여 트랜잭션을 분석하는 방법이다."
     },
     {
       "qnum": 49,
@@ -689,7 +689,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "내부 스키마는 물리적 저장 구조, 외부 스키마는 개별 사용자 관점의 스키마입니다\n내부 스키마 · 외부 스키마 · 내용 스키마 → 각각 해당하지 않음"
+      "explanation": "내부 스키마는 물리적 저장 구조, 외부 스키마는 개별 사용자 관점의 스키마이다."
     },
     {
       "qnum": 50,
@@ -703,7 +703,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "Project(π)는 특정 속성만 선택하는 수직적 부분집합을 반환합니다\nProject · Join · Division → 각각 해당하지 않음"
+      "explanation": "Project(π)는 특정 속성만 선택하는 수직적 부분집합을 반환한다."
     },
     {
       "qnum": 51,
@@ -717,7 +717,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "논리적 설계는 E-R 다이어그램을 릴레이션 스키마로 변환하는 단계입니다\n논리적 설계 · 요구 조건 분석 · 개념적 설계 → 각각 해당하지 않음"
+      "explanation": "논리적 설계는 E-R 다이어그램을 릴레이션 스키마로 변환하는 단계이다."
     },
     {
       "qnum": 52,
@@ -731,7 +731,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "릴레이션을 구성하는 속성들 사이에는 순서가 없습니다(순서 무관). 모든 속성 값은 원자 값, 튜플은 모두 상이, 튜플 간 순서도 없다는 것이 관계 모델의 특성입니다\n모든 속성 값은 원자 값을 갖는다. · 한 릴레이션에 포함된 튜플은 모두 상이하다. · 한 릴레이션에 포함된 튜플 사이에는 순서가 없다. → 각각 해당하지 않음"
+      "explanation": "릴레이션에서 속성(열) 사이에도 순서가 없다. 모든 속성 값은 원자값, 튜플은 모두 상이, 튜플 간 순서도 없는 것이 관계 모델의 특성이다."
     },
     {
       "qnum": 53,
@@ -745,7 +745,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "ROLLBACK은 트랜잭션 실행 실패 시 이미 수행한 작업을 취소하고 이전 상태로 복귀시키는 연산입니다\nCOMMIT 연산 · BACKUP 연산 · LOG 연산 → 각각 해당하지 않음"
+      "explanation": "ROLLBACK은 트랜잭션 실행 실패 시 이미 수행한 작업을 취소하고 이전 상태로 복귀시키는 연산이다."
     },
     {
       "qnum": 54,
@@ -759,7 +759,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "카티션 프로덕트의 결과: 차수(Degree)는 두 릴레이션의 차수의 합(4+6=10), 카디널리티(Cardinality)는 두 릴레이션의 카디널리티의 곱(5×7=35)입니다\n24, 35 · 24, 12 · 10, 12 → 각각 해당하지 않음"
+      "explanation": "카티션 프로덕트의 결과: 차수(Degree)는 두 릴레이션의 차수의 합(4+6=10), 카디널리티(Cardinality)는 두 릴레이션의 카디널리티의 곱(5×7=35)이다."
     },
     {
       "qnum": 55,
@@ -773,7 +773,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "'개념적 설계 단계 이전에 수행한다'는 설명이 적절하지 않습니다"
+      "explanation": "'개념적 설계 단계 이전에 수행한다'는 설명이 적절하지 않다."
     },
     {
       "qnum": 56,
@@ -787,7 +787,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "트랜잭션(Transaction)은 데이터베이스에서 하나의 논리적 기능을 수행하기 위한 작업의 단위로, 원자성(Atomicity), 일관성(Consistency), 격리성(Isolation), 지속성(Durability) 특성(ACID)을 가집니다\n뷰 · 튜플 · 카디널리티 → 각각 해당하지 않음"
+      "explanation": "트랜잭션(Transaction)은 데이터베이스에서 하나의 논리적 기능을 수행하기 위한 작업의 단위로, 원자성(Atomicity), 일관성(Consistency), 격리성(Isolation), 지속성(Durability) 특성(ACID)을 가진다."
     },
     {
       "qnum": 57,
@@ -801,7 +801,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "DROP VIEW V_1 CASCADE는 V_1을 삭제하면서 V_1에 의존하는 V_2도 연쇄적으로 함께 삭제합니다\nV_1만 삭제된다. · V_2만 삭제된다. · V_1과 V_2 모두 삭제되지 않는다. → 각각 해당하지 않음"
+      "explanation": "DROP VIEW V_1 CASCADE는 V_1을 삭제하면서 V_1에 의존하는 V_2도 연쇄적으로 함께 삭제한다."
     },
     {
       "qnum": 58,
@@ -815,7 +815,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "열 이름(별칭)을 부여하는 것은 AS 키워드를 사용하며, REVOKE와는 관계가 없습니다"
+      "explanation": "열 이름(별칭)을 부여하는 것은 AS 키워드를 사용하며, REVOKE와는 관계가 없다."
     },
     {
       "qnum": 59,
@@ -829,7 +829,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "외래키(Foreign Key)는 다른 릴레이션의 기본키를 참조하는 키로, 테이블 간 관계를 정의하고 참조 무결성을 유지하는 역할을 합니다\n필드키 · 슈퍼키 · 후보키 → 각각 해당하지 않음"
+      "explanation": "외래키(Foreign Key)는 다른 릴레이션의 기본키를 참조하는 키로, 테이블 간 관계를 정의하고 참조 무결성을 유지하는 역할을 한다."
     },
     {
       "qnum": 60,
@@ -843,7 +843,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "일반 사용자가 직접 생성, 유지, 수정할 수 없으며 시스템이 자동으로 유지합니다"
+      "explanation": "일반 사용자가 직접 생성, 유지, 수정할 수 없으며 시스템이 자동으로 유지한다."
     },
     {
       "qnum": 61,
@@ -857,7 +857,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "byte는 1Byte, int는 4Byte, double은 8Byte입니다\nbyte - 1Byte · int - 4Byte · double – 8Byte → 각각 해당하지 않음"
+      "explanation": "byte는 1Byte, int는 4Byte, double은 8Byte이다."
     },
     {
       "qnum": 62,
@@ -871,7 +871,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "프로세스 관리, 기억장치 관리, 입출력 관리는 커널(Kernel)의 기능입니다"
+      "explanation": "프로세스 관리, 기억장치 관리, 입출력 관리는 커널(Kernel)의 기능이다."
     },
     {
       "qnum": 63,
@@ -885,7 +885,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "64Kbyte로 고정되어 있다는 설명이 틀렸습니다\n128비트의 주소 공간을 제공한다. · 인증 및 보안 기능을 포함하고 있다. · IPv6 확장 헤더를 통해 네트워크 기능 확장이 용이하다. → 각각 해당하지 않음"
+      "explanation": "64Kbyte로 고정되어 있다는 설명이 틀렸다."
     },
     {
       "qnum": 64,
@@ -899,7 +899,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "PHP, Basic, Python은 인터프리터 방식의 스크립트 언어에 해당합니다\nPHP · Basic · Python → 각각 해당하지 않음"
+      "explanation": "PHP, Basic, Python은 인터프리터 방식의 스크립트 언어에 해당한다."
     },
     {
       "qnum": 65,
@@ -913,7 +913,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "OSI 7계층에서 데이터 링크 계층(Layer 2)이 인접 노드 간 프레임 전송을 담당합니다"
+      "explanation": "OSI 7계층에서 데이터 링크 계층(Layer 2)이 인접 노드 간 프레임 전송을 담당한다."
     },
     {
       "qnum": 66,
@@ -927,7 +927,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "i의 변화: 1→2→4→8→16(20 초과로 종료). sum = 1+2+4+8+16 = 31. i는 2배씩 증가하며 20 미만인 경우만 누적하므로 최종 결과는 31입니다\n32 · 100 · 190 → 각각 해당하지 않음"
+      "explanation": "i의 변화: 1→2→4→8→16(20 초과로 종료). sum = 1+2+4+8+16 = 31. i는 2배씩 증가하며 20 미만인 경우만 누적하므로 최종 결과는 31이다."
     },
     {
       "qnum": 67,
@@ -941,7 +941,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "HRN 우선순위 = (대기시간 + 서비스시간) / 서비스시간. A=(5+20)/20=1.25, B=(40+20)/20=3.0, C=(15+45)/45=1.33, D=(20+2)/2=11. 높은 순: D(11) > B(3.0) > C(1.33) > A(1.25) → D→B→C→A 순으로 처리됩니다\nA → B → C → D · A → C → B → D · D → A → B → C → 각각 해당하지 않음",
+      "explanation": "HRN 우선순위 = (대기시간 + 서비스시간) / 서비스시간. A=(5+20)/20=1.25, B=(40+20)/20=3.0, C=(15+45)/45=1.33, D=(20+2)/2=11. 높은 순: D(11) > B(3.0) > C(1.33) > A(1.25) → D→B→C→A 순으로 처리된다.",
       "image": "images/2024-3_q67.png"
     },
     {
@@ -956,7 +956,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "break는 반복문을 완전히 종료하는 명령어입니다\nbreak · next · release → 각각 해당하지 않음"
+      "explanation": "break는 반복문을 완전히 종료하는 명령어이다."
     },
     {
       "qnum": 69,
@@ -970,7 +970,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "FIFO 알고리즘으로 참조 순서 1,2,1,0,4,1,3을 처리하면: 프레임이 순서대로 채워지고 교체되어 최종 상태는 4,1,3입니다"
+      "explanation": "FIFO 알고리즘으로 참조 순서 1,2,1,0,4,1,3을 처리하면: 프레임이 순서대로 채워지고 교체되어 최종 상태는 4,1,3이다."
     },
     {
       "qnum": 70,
@@ -984,7 +984,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "JSP는 Java 기반으로 플랫폼 독립적입니다\n자바스크립트(JAVA Script) · JSP(Java Server Page) · 파이썬(Python) → 각각 해당하지 않음"
+      "explanation": "JSP는 Java 기반으로 플랫폼 독립적이다."
     },
     {
       "qnum": 71,
@@ -998,7 +998,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "'IPv6가 IPv4보다 전송 속도가 느리다'는 설명이 틀렸습니다"
+      "explanation": "'IPv6가 IPv4보다 전송 속도가 느리다'는 설명이 틀렸다."
     },
     {
       "qnum": 72,
@@ -1012,7 +1012,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "PHP(PHP: Hypertext Preprocessor)는 서버용 스크립트 언어로 Linux, Unix, Windows 운영체제에서 모두 사용 가능하며, C와 Java와 문법이 유사하여 웹 개발에 널리 사용됩니다\nBasic · C# · Python → 각각 해당하지 않음"
+      "explanation": "PHP(PHP: Hypertext Preprocessor)는 서버용 스크립트 언어로 Linux, Unix, Windows 운영체제에서 모두 사용 가능하며, C와 Java와 문법이 유사하여 웹 개발에 널리 사용된다."
     },
     {
       "qnum": 73,
@@ -1026,7 +1026,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Myers의 응집도 순위(낮은→높은): 우연적(Coincidental) → 논리적(Logical) → 시간적(Temporal) → 절차적(Procedural) → 통신적(Communicational) → 순차적(Sequential) → 기능적(Functional). 우연적 응집도가 가장 낮습니다"
+      "explanation": "Myers의 응집도 순위(낮은→높은): 우연적(Coincidental) → 논리적(Logical) → 시간적(Temporal) → 절차적(Procedural) → 통신적(Communicational) → 순차적(Sequential) → 기능적(Functional). 우연적 응집도가 가장 낮다."
     },
     {
       "qnum": 74,
@@ -1040,7 +1040,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "Python에서 `String[-4:6:-2]`는 인덱스 -4(='h')에서 인덱스 6까지 역방향으로 2칸씩 이동합니다\nShmCnep · ulSh · penCmhS → 각각 해당하지 않음"
+      "explanation": "Python에서 `String[-4:6:-2]`는 인덱스 -4(='h')에서 인덱스 6까지 역방향으로 2칸씩 이동한다."
     },
     {
       "qnum": 75,
@@ -1054,7 +1054,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "선점(Preemption)은 자원을 강제로 빼앗을 수 있는 것으로 교착 상태 해결 방법에 해당합니다\n상호 배제(Mutual Exclusion) · 점유와 대기(Hold and Wait) · 환형 대기(Circular Wait) → 각각 해당하지 않음"
+      "explanation": "선점(Preemption)은 자원을 강제로 빼앗을 수 있는 것으로 교착 상태 해결 방법에 해당한다."
     },
     {
       "qnum": 76,
@@ -1068,7 +1068,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "SRT(Shortest Remaining Time)는 실행 중 더 짧은 작업이 도착하면 선점하는 선점 스케줄링입니다\nSJF · HRN · FCFS → 각각 해당하지 않음"
+      "explanation": "SRT(Shortest Remaining Time)는 실행 중 더 짧은 작업이 도착하면 선점하는 선점 스케줄링이다."
     },
     {
       "qnum": 77,
@@ -1082,7 +1082,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "'text-color'는 하이픈(-)을 포함하므로 유효하지 않은 변수명입니다\nstudent2025 · _korea · amount → 각각 해당하지 않음"
+      "explanation": "'text-color'는 하이픈(-)을 포함하므로 유효하지 않은 변수명이다."
     },
     {
       "qnum": 78,
@@ -1096,7 +1096,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "RARP는 반대로 물리 주소를 IP 주소로 변환합니다\nTCP · FTP · IP → 각각 해당하지 않음"
+      "explanation": "RARP는 반대로 물리 주소를 IP 주소로 변환한다."
     },
     {
       "qnum": 79,
@@ -1110,7 +1110,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "이 둘의 설명이 서로 바뀌어 있어 틀렸습니다"
+      "explanation": "이 둘의 설명이 서로 바뀌어 있어 틀렸다."
     },
     {
       "qnum": 80,
@@ -1124,7 +1124,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "strlen()은 string.h, 수학 함수는 math.h, 입출력은 stdio.h에 있습니다"
+      "explanation": "strlen()은 string.h, 수학 함수는 math.h, 입출력은 stdio.h에 있다."
     },
     {
       "qnum": 81,
@@ -1138,7 +1138,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "'휘발성'은 보안 3요소에 포함되지 않는 개념입니다"
+      "explanation": "'휘발성'은 보안 3요소에 포함되지 않는 개념이다."
     },
     {
       "qnum": 82,
@@ -1152,7 +1152,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Embedded는 대형 복잡 시스템, Semi-Detached는 중간 규모입니다\nEmbeded · Semi-Detached · Semi-Embeded → 각각 해당하지 않음"
+      "explanation": "Embedded는 대형 복잡 시스템, Semi-Detached는 중간 규모이다."
     },
     {
       "qnum": 83,
@@ -1166,7 +1166,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "'혼합식'이 독립 기법으로 열거되는 것은 일반적인 분류와 차이가 있습니다"
+      "explanation": "'혼합식'이 독립 기법으로 열거되는 것은 일반적인 분류와 차이가 있다."
     },
     {
       "qnum": 84,
@@ -1180,7 +1180,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "서버 관리실 출입 통제는 물리적 보안으로 응용 프로그램 보안 설정과는 거리가 멉니다\n실행 프로세스 권한 설정 · 운영체제의 접근 제한 · 운영체제의 정보 수집 제한 → 각각 해당하지 않음"
+      "explanation": "서버 관리실 출입 통제는 물리적 보안으로 응용 프로그램 보안 설정과는 거리가 멉니다"
     },
     {
       "qnum": 85,
@@ -1194,7 +1194,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "Django는 Python 기반의 웹 프레임워크로 컴포넌트 재사용과 플러그인화를 강조하여 신속한 개발을 지원합니다\nSpring · Node.js · Codeigniter → 각각 해당하지 않음"
+      "explanation": "Django는 Python 기반의 웹 프레임워크로 컴포넌트 재사용과 플러그인화를 강조하여 신속한 개발을 지원한다."
     },
     {
       "qnum": 86,
@@ -1208,7 +1208,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "LOC 기법에서 개발 기간 = 총 라인수 / (참여 인원 × 월간 생산성) = 36,000 / (6 × 300) = 36,000 / 1,800 = 20개월입니다\n5개월 · 10개월 · 15개월 → 각각 해당하지 않음"
+      "explanation": "LOC 기법에서 개발 기간 = 총 라인수 / (참여 인원 × 월간 생산성) = 36,000 / (6 × 300) = 36,000 / 1,800 = 20개월이다."
     },
     {
       "qnum": 87,
@@ -1222,7 +1222,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "CSMA/CA(Carrier Sense Multiple Access/Collision Avoidance)는 무선 랜에서 전송 전 채널이 비어있는지 확인하고, 충돌을 피하기 위해 임의의 시간을 기다린 후 데이터를 전송하는 방법입니다\nVLAN · STP · L2AN → 각각 해당하지 않음"
+      "explanation": "CSMA/CA(Carrier Sense Multiple Access/Collision Avoidance)는 무선 랜에서 전송 전 채널이 비어있는지 확인하고, 충돌을 피하기 위해 임의의 시간을 기다린 후 데이터를 전송하는 방법이다."
     },
     {
       "qnum": 88,
@@ -1236,7 +1236,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "물리적 위협은 화재, 홍수, 하드웨어 파손, 방화 및 테러 등 물리적 원인으로 발생하는 위협입니다"
+      "explanation": "물리적 위협은 화재, 홍수, 하드웨어 파손, 방화 및 테러 등 물리적 원인으로 발생하는 위협이다."
     },
     {
       "qnum": 89,
@@ -1250,7 +1250,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "나선형(Spiral) 모델의 4가지 주요 활동 순서: 계획 수립(A) → 위험 분석(D) → 개발 및 검증(C) → 고객 평가(B)를 반복합니다\nⒶ-Ⓑ-Ⓓ-Ⓒ 순으로 반복 · Ⓐ-Ⓑ-Ⓒ-Ⓓ 순으로 반복 · Ⓐ-Ⓒ-Ⓑ-Ⓓ 순으로 반복 → 각각 해당하지 않음"
+      "explanation": "나선형(Spiral) 모델의 4가지 주요 활동 순서: 계획 수립(A) → 위험 분석(D) → 개발 및 검증(C) → 고객 평가(B)를 반복한다."
     },
     {
       "qnum": 90,
@@ -1264,7 +1264,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Stack Guard와 Scytale은 보안 기술입니다\nStack Guard · Cipher Container · Scytale → 각각 해당하지 않음"
+      "explanation": "Stack Guard와 Scytale은 보안 기술이다."
     },
     {
       "qnum": 91,
@@ -1278,7 +1278,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "자료 중심은 정보공학 방법론, 객체/클래스/메시지는 객체지향 방법론의 특징입니다"
+      "explanation": "자료 중심은 정보공학 방법론, 객체/클래스/메시지는 객체지향 방법론의 특징이다."
     },
     {
       "qnum": 92,
@@ -1292,7 +1292,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "SDN(Software Defined Networking)은 네트워크를 제어부와 데이터 전달부로 분리하여 소프트웨어로 네트워크를 제어·관리하는 기술로, 하드웨어 의존적인 기존 네트워크의 한계를 극복합니다\nNFS(Network File System) · Network Mapper · AOE Network → 각각 해당하지 않음"
+      "explanation": "SDN(Software Defined Networking)은 네트워크를 제어부와 데이터 전달부로 분리하여 소프트웨어로 네트워크를 제어·관리하는 기술로, 하드웨어 의존적인 기존 네트워크의 한계를 극복한다."
     },
     {
       "qnum": 93,
@@ -1306,7 +1306,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "'내부 입력 값으로 사용 불가능한 자원을 지속적으로 입력해 과부하 발생'은 자원 삽입보다 서비스 거부(DoS) 공격에 가깝습니다"
+      "explanation": "'내부 입력 값으로 사용 불가능한 자원을 지속적으로 입력해 과부하 발생'은 자원 삽입보다 서비스 거부(DoS) 공격에 가깝다."
     },
     {
       "qnum": 94,
@@ -1320,7 +1320,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Nimda는 웜 바이러스, Secure Shell은 보안 프로토콜입니다\nSecure shell · Nimda · Deadlock → 각각 해당하지 않음"
+      "explanation": "Nimda는 웜 바이러스, Secure Shell은 보안 프로토콜이다."
     },
     {
       "qnum": 95,
@@ -1334,7 +1334,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "스택가드(Stack Guard)는 스택의 복귀 주소와 변수 사이에 카나리(Canary) 값을 저장하고, 이 값이 변경되면 버퍼 오버플로우로 간주하여 프로그램 실행을 중단하는 기술입니다\n모드체크 · 리커버리 통제 · 시스로그 → 각각 해당하지 않음"
+      "explanation": "스택가드(Stack Guard)는 스택의 복귀 주소와 변수 사이에 카나리(Canary) 값을 저장하고, 이 값이 변경되면 버퍼 오버플로우로 간주하여 프로그램 실행을 중단하는 기술이다."
     },
     {
       "qnum": 96,
@@ -1348,7 +1348,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "DPI(Deep Packet Inspection)는 OSI 7계층 전 계층의 프로토콜과 패킷 내부 콘텐츠까지 분석하여 침입 시도, 해킹을 탐지하고 트래픽을 조정하는 심층 패킷 분석 기술입니다\nPLCP(Packet Level Control Processor) · Traffic Distributor · Packet Tree → 각각 해당하지 않음"
+      "explanation": "DPI(Deep Packet Inspection)는 OSI 7계층 전 계층의 프로토콜과 패킷 내부 콘텐츠까지 분석하여 침입 시도, 해킹을 탐지하고 트래픽을 조정하는 심층 패킷 분석 기술이다."
     },
     {
       "qnum": 97,
@@ -1362,7 +1362,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "SAN(Storage Area Network)은 광채널 스위치를 이용하여 고속 전송과 장거리 연결이 가능하며, 서로 다른 운영체제를 가진 여러 기종이 네트워크를 통해 동일 저장장치 데이터를 공유하는 시스템입니다\nMBR · NAC · NIC → 각각 해당하지 않음"
+      "explanation": "SAN(Storage Area Network)은 광채널 스위치를 이용하여 고속 전송과 장거리 연결이 가능하며, 서로 다른 운영체제를 가진 여러 기종이 네트워크를 통해 동일 저장장치 데이터를 공유하는 시스템이다."
     },
     {
       "qnum": 98,
@@ -1376,7 +1376,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Public 메소드에서 Private 배열을 직접 반환하면 배열의 참조(주소)가 외부로 공개되어, 외부에서 캡슐화된 Private 배열에 직접 접근하고 수정할 수 있는 보안 취약점이 발생합니다\n메소드로의 접근이 불가능해진다. · 시스템의 내부 정보가 노출된다. · 동기화 오류가 발생한다. → 각각 해당하지 않음"
+      "explanation": "Public 메소드에서 Private 배열을 직접 반환하면 배열의 참조(주소)가 외부로 공개되어, 외부에서 캡슐화된 Private 배열에 직접 접근하고 수정할 수 있는 보안 취약점이 발생한다."
     },
     {
       "qnum": 99,
@@ -1390,7 +1390,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "25번은 SMTP(메일 전송 프로토콜)의 기본 포트이므로 '기본 포트가 25번'이라는 설명이 틀렸습니다"
+      "explanation": "25번은 SMTP(메일 전송 프로토콜)의 기본 포트이므로 '기본 포트가 25번'이라는 설명이 틀렸다."
     },
     {
       "qnum": 100,
@@ -1404,7 +1404,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "PERT/CPM은 작업 간 의존 관계와 임계 경로를 분석하는 네트워크 기반 기법입니다\n임계 경로 기법 · PERT · WBS → 각각 해당하지 않음"
+      "explanation": "PERT/CPM은 작업 간 의존 관계와 임계 경로를 분석하는 네트워크 기반 기법이다."
     }
   ]
 }
