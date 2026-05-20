@@ -14,7 +14,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "'입력 제한 데크는 Shelf이고, 출력 제한 데크는 Scroll이다.'는 데크(Deque)에 대한 틀린 설명이다. 올바른 설명으로는 '삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료 구조이다.', '스택과 큐의 장점으로 구성한 것이다.' 등이 있다."
+      "explanation": "'입력 제한 데크는 Shelf이고, 출력 제한 데크는 Scroll이다.'는 데크(Deque)에 대한 틀린 설명이다. 올바른 설명으로는 '삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료 구조이다.', '스택과 큐의 장점으로 구성한 것이다.' 등이 있다.",
+      "image": "images/2019-2_q1.png"
     },
     {
       "qnum": 2,
@@ -28,7 +29,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "터미널 노드(단말 노드)는 자식이 없는 노드이다. 그림에서 터미널 노드 수는 4이다."
+      "explanation": "터미널 노드(단말 노드)는 자식이 없는 노드이다. 그림에서 터미널 노드 수는 4이다.",
+      "image": "images/2019-2_q2.png"
     },
     {
       "qnum": 3,
@@ -112,7 +114,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다."
+      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다.",
+      "image": "images/2019-2_q8.png"
     },
     {
       "qnum": 9,
@@ -126,7 +129,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "A B E F G C D은 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이다. 나머지 보기(A B E C D F G 등)는 다른 개념이다."
+      "explanation": "A B E F G C D은 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이다. 나머지 보기(A B E C D F G 등)는 다른 개념이다.",
+      "image": "images/2019-2_q9.png"
     },
     {
       "qnum": 10,
@@ -168,7 +172,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "SELECT 성명, AVG(점수) FROM 성적 GROUP BY 성명;이다."
+      "explanation": "SELECT 성명, AVG(점수) FROM 성적 GROUP BY 성명;이다.",
+      "table": "<table><tr><th>성명</th><th>과목</th><th>점수</th></tr><tr><td>홍길동</td><td>국어</td><td>80</td></tr><tr><td>홍길동</td><td>영어</td><td>68</td></tr><tr><td>홍길동</td><td>수학</td><td>97</td></tr><tr><td>강감찬</td><td>국어</td><td>58</td></tr><tr><td>강감찬</td><td>영어</td><td>97</td></tr><tr><td>강감찬</td><td>수학</td><td>65</td></tr></table>"
     },
     {
       "qnum": 13,
@@ -182,7 +187,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정규화 과정 중 BCNF에서 4NF가 되기 위한 조건이 다치 종속 제거이다."
+      "explanation": "정규화 과정 중 BCNF에서 4NF가 되기 위한 조건이 다치 종속 제거이다.",
+      "image": "images/2019-2_q13.png"
     },
     {
       "qnum": 14,
@@ -322,7 +328,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "72은 16-Bit 컴퓨터 시스템에서 다음과 같은 2가지의 명령어 형식을 사용할 때 최대 연산자의 수이다."
+      "explanation": "72은 16-Bit 컴퓨터 시스템에서 다음과 같은 2가지의 명령어 형식을 사용할 때 최대 연산자의 수이다.",
+      "image": "images/2019-2_q23.png"
     },
     {
       "qnum": 24,
@@ -448,7 +455,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "28 비트는 주기억장치의 용량이 256MB 라면 주소 버스는 최소한 몇 비트 이상이어야 하는 것이다. 나머지 보기(20 비트 등)는 다른 개념이다."
+      "explanation": "28 비트는 주기억장치의 용량이 256MB 라면 주소 버스는 최소한 몇 비트 이상이어야 하는 것이다. 나머지 보기(20 비트 등)는 다른 개념이다.",
+      "image": "images/2019-2_q32.png"
     },
     {
       "qnum": 33,
@@ -686,7 +694,9 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "2100은 과 같은 세그먼트 테이블이 있을 때, 실제 주소를 구하면? (단, 가상 주소 S = (2,100)이다."
+      "explanation": "2100은 과 같은 세그먼트 테이블이 있을 때, 실제 주소를 구하면? (단, 가상 주소 S = (2,100)이다.",
+      "image": "images/2019-2_q49.png",
+      "table": "<table><tr><th>세그먼트 번호</th><th>크기</th><th>시작주소</th></tr><tr><td>0</td><td>1200</td><td>4000</td></tr><tr><td>1</td><td>800</td><td>5700</td></tr><tr><td>2</td><td>1000</td><td>2000</td></tr><tr><td>3</td><td>500</td><td>3200</td></tr></table>"
     },
     {
       "qnum": 50,
@@ -952,7 +962,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "예술성은 소프트웨어 공학에서 공학이 가지는 의미와 가장 관계에 해당하지 않는다. 소프트웨어 공학에서 공학이 가지는 의미와 가장 관계에는 적시성, 경제성, 보편타당성 등이 있다."
+      "explanation": "예술성은 소프트웨어 공학에서 공학이 가지는 의미와 가장 관계에 해당하지 않는다. 소프트웨어 공학에서 공학이 가지는 의미와 가장 관계에는 적시성, 경제성, 보편타당성 등이 있다.",
+      "image": "images/2019-2_q68.png"
     },
     {
       "qnum": 69,
@@ -980,7 +991,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "프로토타입 모형의 장점으로 가장 적절한 것은은 요구사항의 충실 반영이다."
+      "explanation": "프로토타입 모형의 장점으로 가장 적절한 것은 요구사항의 충실 반영이다."
     },
     {
       "qnum": 71,
@@ -1232,7 +1243,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "회선 교환과 패킷 교환에 대한 설명으로 옳은이 패킷 교환은 저장-전달 방식을 사용한다."
+      "explanation": "회선 교환과 패킷 교환에 대한 설명으로 옳은이 패킷 교환은 저장-전달 방식을 사용한다.",
+      "image": "images/2019-2_q88.png"
     },
     {
       "qnum": 89,

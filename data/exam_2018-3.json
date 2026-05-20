@@ -196,7 +196,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’은 아래와 같은 결과를 만들어 내는 SQL문은? [공급자 Table] 공급자번호 공급자명 위치 16 대신공업…이다."
+      "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’은 아래와 같은 결과를 만들어 내는 SQL문은? [공급자 Table] 공급자번호 공급자명 위치 16 대신공업…이다.",
+      "table": "<table><tr><th>공급자번호</th><th>공급자명</th><th>위치</th></tr><tr><td>16\n27\n39\n62\n70</td><td>대신공업사\n삼진사\n삼양사\n진아공업사\n신촌상사</td><td>수원\n서울\n인천\n대전\n서울</td></tr></table>"
     },
     {
       "qnum": 15,
@@ -210,7 +211,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 3이다."
+      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 3이다.",
+      "image": "images/2018-3_q15.png"
     },
     {
       "qnum": 16,
@@ -490,7 +492,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "캐시기억장치에서 적중률이 낮아질 수 있는 매핑 방법은은 직접 매핑이다."
+      "explanation": "캐시기억장치에서 적중률이 낮아질 수 있는 매핑 방법은 직접 매핑이다."
     },
     {
       "qnum": 36,
@@ -574,7 +576,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "17초는 준비상태 큐에 프로세스 A, B, C가 차례로 도착하였다이다."
+      "explanation": "17초는 준비상태 큐에 프로세스 A, B, C가 차례로 도착하였다이다.",
+      "table": "<table><tr><th>프로세스</th><th>A</th><th>B</th><th>C</th></tr><tr><td>실행시간(초)</td><td>17</td><td>4</td><td>5</td></tr></table>"
     },
     {
       "qnum": 42,
@@ -630,7 +633,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "170K은 표는 고정 분할에서의 기억장치 단편화(Fragmentation) 현상 을 보이고 있다이다."
+      "explanation": "170K은 표는 고정 분할에서의 기억장치 단편화(Fragmentation) 현상 을 보이고 있다이다.",
+      "table": "<table><tr><th>20K</th></tr><tr><td>50K</td></tr><tr><td>120K</td></tr><tr><td>200K</td></tr><tr><td>300K</td></tr></table>"
     },
     {
       "qnum": 46,
@@ -742,7 +746,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "B은 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 20 20이다."
+      "explanation": "B은 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 20 20이다.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행) 시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>20</td><td>20</td></tr></table>"
     },
     {
       "qnum": 54,

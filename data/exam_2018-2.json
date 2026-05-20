@@ -84,7 +84,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 2이다."
+      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 2이다.",
+      "image": "images/2018-2_q6.png"
     },
     {
       "qnum": 7,
@@ -140,7 +141,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "DROP TABLE ... CASCADE: 해당 테이블 삭제 시 해당 테이블을 참조하는 다른 테이블과 그 테이블도 함께 삭제된다."
+      "explanation": "DROP TABLE... CASCADE: 해당 테이블 삭제 시 해당 테이블을 참조하는 다른 테이블과 그 테이블도 함께 삭제된다."
     },
     {
       "qnum": 11,
@@ -266,7 +267,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "트리에 대한 INORDER 운행 결과은 D B A E C F이다."
+      "explanation": "트리에 대한 INORDER 운행 결과은 D B A E C F이다.",
+      "image": "images/2018-2_q19.png"
     },
     {
       "qnum": 20,
@@ -322,7 +324,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "두 데이터의 비교(Compare)를 위한 논리연산은은 XOR 연산이다."
+      "explanation": "두 데이터의 비교(Compare)를 위한 논리연산은 XOR 연산이다."
     },
     {
       "qnum": 24,
@@ -518,7 +520,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "비교적 속도가 빠른 자기 디스크에 연결하는 채널은은 셀렉터 채널이다."
+      "explanation": "비교적 속도가 빠른 자기 디스크에 연결하는 채널은 셀렉터 채널이다."
     },
     {
       "qnum": 38,
@@ -588,7 +590,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "D은 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음 <표>와 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 40 10이다."
+      "explanation": "D은 HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음 <표>와 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 40 10이다.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행) 시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>40</td><td>10</td></tr></table>"
     },
     {
       "qnum": 43,
@@ -630,7 +633,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "33은 FIFO 스케줄링에서 3개의 작업 도착 시간과 CPU 사용시간(Burst Time)이 다음 표와 같다이다."
+      "explanation": "33은 FIFO 스케줄링에서 3개의 작업 도착 시간과 CPU 사용시간(Burst Time)이 다음 표와 같다이다.",
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1\nJOB 2\nJOB 3</td><td>0\n3\n8</td><td>13\n35\n2</td></tr></table>"
     },
     {
       "qnum": 46,
@@ -1036,7 +1040,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은으로 { }이다."
+      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은 { }이다."
     },
     {
       "qnum": 75,
@@ -1330,7 +1334,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은은 트랜스포트 계층이다."
+      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은 트랜스포트 계층이다."
     },
     {
       "qnum": 96,

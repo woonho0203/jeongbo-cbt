@@ -16,13 +16,38 @@ DATA_DIR = os.path.join(BASE, 'data')
 IMG_DIR = os.path.join(BASE, 'public', 'images')
 os.makedirs(IMG_DIR, exist_ok=True)
 
+PDF_DIR = os.path.expanduser('~/Downloads/정보처리기사 문제')
+
 PDF_MAP = {
-    '2024-1': os.path.join(os.path.expanduser('~/Downloads'), '1. 2024년1회_정보처리기사필기기출문제.pdf'),
-    '2024-2': os.path.join(os.path.expanduser('~/Downloads'), '2. 2024년2회_정보처리기사필기기출문제.pdf'),
-    '2024-3': os.path.join(os.path.expanduser('~/Downloads'), '3. 2024년3회_정보처리기사필기기출문제.pdf'),
-    '2025-1': os.path.join(os.path.expanduser('~/Downloads'), '2025년1회_정보처리기사필기기출문제.pdf'),
-    '2025-2': os.path.join(os.path.expanduser('~/Downloads'), '2025년2회_정보처리기사필기기출문제.pdf'),
-    '2025-3': os.path.join(os.path.expanduser('~/Downloads'), '2025년3회_정보처리기사 필기_기출문제.pdf'),
+    '2016-1': os.path.join(PDF_DIR, '2016년1회_정보처리기사_필기_기출문제.pdf'),
+    '2016-2': os.path.join(PDF_DIR, '2016년2회_정보처리기사_필기_기출문제.pdf'),
+    '2016-3': os.path.join(PDF_DIR, '2016년3회_정보처리기사_필기_기출문제.pdf'),
+    '2017-1': os.path.join(PDF_DIR, '2017년1회_정보처리기사필기기출문제.pdf'),
+    '2017-2': os.path.join(PDF_DIR, '2017년2회_정보처리기사필기기출문제.pdf'),
+    '2017-3': os.path.join(PDF_DIR, '2017년3회_정보처리기사필기기출문제.pdf'),
+    '2018-1': os.path.join(PDF_DIR, '2018년1회_기사필기_기출문제.pdf'),
+    '2018-2': os.path.join(PDF_DIR, '2018년2회_기사필기_기출문제.pdf'),
+    '2018-3': os.path.join(PDF_DIR, '2018년3회_기사필기_기출문제.pdf'),
+    '2019-1': os.path.join(PDF_DIR, '2019년1회_기사필기_기출문제.pdf'),
+    '2019-2': os.path.join(PDF_DIR, '2019년2회_기사필기_기출문제.pdf'),
+    '2020-1-2': os.path.join(PDF_DIR, '2020년 1, 2회_정보처리기사 필기 기출문제.pdf'),
+    '2020-3': os.path.join(PDF_DIR, '2020년 3회_정보처리기사 필기 기출문제.pdf'),
+    '2020-4': os.path.join(PDF_DIR, '2020년 4회_정보처리기사 필기 기출문제.pdf'),
+    '2021-1': os.path.join(PDF_DIR, '2021년 1회_정보처리기사 필기 기출문제.pdf'),
+    '2021-2': os.path.join(PDF_DIR, '2021년 2회_정보처리기사 필기 기출문제.pdf'),
+    '2021-3': os.path.join(PDF_DIR, '2021년 3회_정보처리기사 필기 기출문제.pdf'),
+    '2022-1': os.path.join(PDF_DIR, '2022년1회_기사필기 기출문제.pdf'),
+    '2022-2': os.path.join(PDF_DIR, '2022년2회_기사필기 기출문제.pdf'),
+    '2022-3': os.path.join(PDF_DIR, '2022년3회_기사필기 기출문제.pdf'),
+    '2023-1': os.path.join(PDF_DIR, '2023년1회_정보처리기사필기기출문제.pdf'),
+    '2023-2': os.path.join(PDF_DIR, '2023년2회_정보처리기사필기기출문제.pdf'),
+    '2023-3': os.path.join(PDF_DIR, '2023년3회_정보처리기사필기기출문제.pdf'),
+    '2024-1': os.path.join(PDF_DIR, '1. 2024년1회_정보처리기사필기기출문제.pdf'),
+    '2024-2': os.path.join(PDF_DIR, '2. 2024년2회_정보처리기사필기기출문제.pdf'),
+    '2024-3': os.path.join(PDF_DIR, '3. 2024년3회_정보처리기사필기기출문제.pdf'),
+    '2025-1': os.path.join(PDF_DIR, '2025년1회_정보처리기사필기기출문제.pdf'),
+    '2025-2': os.path.join(PDF_DIR, '2025년2회_정보처리기사필기기출문제.pdf'),
+    '2025-3': os.path.join(PDF_DIR, '2025년3회_정보처리기사 필기_기출문제.pdf'),
 }
 
 
@@ -114,6 +139,7 @@ def process_exam(exam_id):
 
     img_count = 0
     table_count = 0
+    report_lines = []
 
     with pdfplumber.open(pdf_path) as pdf:
         # 정답 페이지(마지막) 제외
@@ -148,7 +174,9 @@ def process_exam(exam_id):
                         img_file = extract_question_image(doc, pno, page, img, exam_id, qnum)
                         exam['questions'][idx]['image'] = img_file
                         img_count += 1
-                        print(f'  [{exam_id}] Q{qnum} 이미지 → {img_file}')
+                        msg = f'{exam_id} Q{qnum}: image 추가 {img_file}'
+                        print(f'  [{msg}]')
+                        report_lines.append(msg)
 
             # ── 표 처리 ──
             for t in page.find_tables():
@@ -171,7 +199,9 @@ def process_exam(exam_id):
                         html = table_to_html(data)
                         exam['questions'][idx]['table'] = html
                         table_count += 1
-                        print(f'  [{exam_id}] Q{qnum} 표 추가')
+                        msg = f'{exam_id} Q{qnum}: table 추가 (HTML)'
+                        print(f'  [{msg}]')
+                        report_lines.append(msg)
 
     doc.close()
 
@@ -179,13 +209,24 @@ def process_exam(exam_id):
         json.dump(exam, f, ensure_ascii=False, indent=2)
 
     print(f'[{exam_id}] 완료: 이미지 {img_count}개, 표 {table_count}개')
+    return report_lines
 
 
 if __name__ == '__main__':
-    for eid in ['2024-1', '2024-2', '2024-3', '2025-1', '2025-2', '2025-3']:
+    import sys
+    targets = sys.argv[1:] if len(sys.argv) > 1 else list(PDF_MAP.keys())
+    report_lines = []
+    for eid in targets:
         print(f'\n=== {eid} 처리 중... ===')
         try:
-            process_exam(eid)
+            result = process_exam(eid)
+            if result:
+                report_lines.extend(result)
         except Exception as e:
             print(f'[{eid}] 오류: {e}')
             import traceback; traceback.print_exc()
+
+    report_path = os.path.join(BASE, 'media_insert_report_2016_2023.txt')
+    with open(report_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(report_lines))
+    print(f'\n리포트 저장: {report_path}')

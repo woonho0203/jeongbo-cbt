@@ -14,7 +14,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "SQL에서 VIEW를 삭제할 때 사용하는 명령은 명령어는 DROP이다."
+      "explanation": "SQL에서 VIEW를 삭제할 때 사용하는 명령은 명령어는 DROP이다.",
+      "image": "images/2019-1_q1.png"
     },
     {
       "qnum": 2,
@@ -28,7 +29,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "Degree : 4, Cardinality : 3은 릴레이션의 Degree와 Cardinality는? 13001 홍길동 3학년 전기 13002 이순신 4학년…이다."
+      "explanation": "Degree : 4, Cardinality : 3은 릴레이션의 Degree와 Cardinality는? 13001 홍길동 3학년 전기 13002 이순신 4학년…이다.",
+      "table": "<table><tr><th>13001</th><th>홍길동</th><th>3학년</th><th>전기</th></tr><tr><td>13002</td><td>이순신</td><td>4학년</td><td>기계</td></tr><tr><td>13003</td><td>강감찬</td><td>2학년</td><td>컴퓨터</td></tr></table>"
     },
     {
       "qnum": 3,
@@ -140,7 +142,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "후위 순회(Post-order)는 왼쪽 서브트리 → 오른쪽 서브트리 → 루트 순서로 방문한다."
+      "explanation": "후위 순회(Post-order)는 왼쪽 서브트리 → 오른쪽 서브트리 → 루트 순서로 방문한다.",
+      "image": "images/2019-1_q10.png"
     },
     {
       "qnum": 11,
@@ -238,7 +241,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "비선형 자료 구조에 해당하는 것은으로 그래프(Graph)이다."
+      "explanation": "비선형 자료 구조에 해당하는 것은 그래프(Graph)이다."
     },
     {
       "qnum": 18,
@@ -266,7 +269,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "트랜잭션은 일련의 연산 집합으로 데이터베이스의 상태를 변환시키기 위하여 논리적 기능을 수행하는 하나의 작업 단위이다."
+      "explanation": "트랜잭션은 일련의 연산 집합으로 데이터베이스의 상태를 변환시키기 위하여 논리적 기능을 수행하는 하나의 작업 단위이다.",
+      "image": "images/2019-1_q19.png"
     },
     {
       "qnum": 20,
@@ -364,7 +368,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "T = AㆍB +AㆍB은 진리표에 해당하는 논리식은? 입력 출력 A B T 0 0 0 0 1 1 1 0 1 1 1 0이다. 유사 개념: T = AㆍB + AㆍB · T = AㆍA +BㆍB 등과 구별한다."
+      "explanation": "T = AㆍB +AㆍB은 진리표에 해당하는 논리식은? 입력 출력 A B T 0 0 0 0 1 1 1 0 1 1 1 0이다. 유사 개념: T = AㆍB + AㆍB · T = AㆍA +BㆍB 등과 구별한다.",
+      "table": "<table><tr><th>입력</th><th></th><th>출력</th></tr><tr><td>A</td><td>B</td><td>T</td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table>"
     },
     {
       "qnum": 27,
@@ -448,7 +453,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "기억장치를 각 모듈이 번갈아 가며 접근하는 방법은은 인터리빙이다."
+      "explanation": "기억장치를 각 모듈이 번갈아 가며 접근하는 방법은 인터리빙이다."
     },
     {
       "qnum": 33,
@@ -532,7 +537,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "'입출력 동작을 수행하는데 있어서 CPU의 지속적인 개입이 필요하다.'는 채널(Channel)에 대한 틀린 설명이다. 올바른 설명으로는 'DMA와 달리 여러 개의 블록을 입출력할 수 있다.', '시스템의 입출력 처리 능력을 향상시키는 기능을 한다.' 등이 있다."
+      "explanation": "'입출력 동작을 수행하는데 있어서 CPU의 지속적인 개입이 필요하다.'는 채널(Channel)에 대한 틀린 설명이다. 올바른 설명으로는 'DMA와 달리 여러 개의 블록을 입출력할 수 있다.', '시스템의 입출력 처리 능력을 향상시키는 기능을 한다.' 등이 있다.",
+      "image": "images/2019-1_q38.png"
     },
     {
       "qnum": 39,
@@ -658,7 +664,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "평균 반환 시간 : 13, 평균 대기 시간 : 7은 SJF(Shortest Job First) 스케줄링에서 다음과 같은 작업들이 준비상 태 큐에 있을 때 평…이다."
+      "explanation": "평균 반환 시간 : 13, 평균 대기 시간 : 7은 SJF(Shortest Job First) 스케줄링에서 다음과 같은 작업들이 준비상 태 큐에 있을 때 평…이다.",
+      "table": "<table><tr><th>프로세스</th><th>실행시간</th></tr><tr><td>P-1</td><td>6</td></tr><tr><td>P-2</td><td>3</td></tr><tr><td>P-3</td><td>8</td></tr><tr><td>P-4</td><td>7</td></tr></table>"
     },
     {
       "qnum": 48,
@@ -672,7 +679,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "UNIX에서 파일 사용 권한 지정에 관한 명령어 명령어는 chmod이다."
+      "explanation": "UNIX에서 파일 사용 권한 지정에 관한 명령어는 chmod이다."
     },
     {
       "qnum": 49,
@@ -728,7 +735,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "D은 HRN 스케쥴링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 20 2이다."
+      "explanation": "D은 HRN 스케쥴링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 20 2이다.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행) 시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>20</td><td>2</td></tr></table>"
     },
     {
       "qnum": 53,
@@ -742,7 +750,9 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "First Fit : 2, Best Fit : 3이 올바른 순서/설명이다. 150K의 작업요구시 First Fit과 Best Fit 전략을 각각 적."
+      "explanation": "First Fit : 2, Best Fit : 3이 올바른 순서/설명이다. 150K의 작업요구시 First Fit과 Best Fit 전략을 각각 적.",
+      "image": "images/2019-1_q53.png",
+      "table": "<table><tr><th>할당영역</th><th>운영체제</th></tr><tr><td>1</td><td>50k</td></tr><tr><td></td><td>사용중</td></tr><tr><td>2</td><td>400k</td></tr><tr><td></td><td>사용중</td></tr><tr><td>3</td><td>200k</td></tr></table>"
     },
     {
       "qnum": 54,
@@ -770,7 +780,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "14K은 기억장치의 고정 분할 할당에서 총 24K의 공간이 그림과 같이 8K, 8K, 4K, 4K로 나누어져 있고…이다."
+      "explanation": "14K은 기억장치의 고정 분할 할당에서 총 24K의 공간이 그림과 같이 8K, 8K, 4K, 4K로 나누어져 있고…이다.",
+      "table": "<table><tr><th>운영체제</th></tr><tr><td>8K</td></tr><tr><td>8K</td></tr><tr><td>4K</td></tr><tr><td>4K</td></tr></table>"
     },
     {
       "qnum": 56,
@@ -952,7 +963,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "배경도(Context Diagram)에도 명칭과 번호를 부여해야 한다.는 자료 흐름도(DFD)의 작성 지침이라고에 해당하지 않는다이다."
+      "explanation": "배경도(Context Diagram)에도 명칭과 번호를 부여해야 한다.는 자료 흐름도(DFD)의 작성 지침이라고에 해당하지 않는다이다.",
+      "image": "images/2019-1_q68.png"
     },
     {
       "qnum": 69,
@@ -1204,7 +1216,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "7200은 QAM(Quadrature Amplitude Modulation) 방식에서 4개의 위상과 2개의 진폭으로 구성되고 2400baud일 때 전송 속도(bps)이다."
+      "explanation": "7200은 QAM(Quadrature Amplitude Modulation) 방식에서 4개의 위상과 2개의 진폭으로 구성되고 2400baud일 때 전송 속도(bps)이다.",
+      "image": "images/2019-1_q86.png"
     },
     {
       "qnum": 87,
@@ -1218,7 +1231,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "IPv6의 주소체계에 해당하지 않는 것은은 Broadcast이다."
+      "explanation": "IPv6의 주소체계에 해당하지 않는 것은 Broadcast이다."
     },
     {
       "qnum": 88,

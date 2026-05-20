@@ -14,7 +14,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "<< >>은 UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞은이다. 나머지 보기((( )) 등)는 다른 개념이다."
+      "explanation": "<< >>은 UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞은이다. 나머지 보기((( )) 등)는 다른 개념이다.",
+      "image": "images/2023-2_q1.png"
     },
     {
       "qnum": 2,
@@ -238,7 +239,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "'소프트웨어 사용자들에게 사용 방법을 신속히 숙지시키기 위 해 사용된다.'는 CASE(Computer Aided Software Engineering)에 대한 틀린 설명이다. 올바른 설명으로는 '소프트웨어 모듈의 재사용성이 향상된다.', '자동화된 기법을 통해 소프트웨어 품질이 향상된다.' 등이 있다."
+      "explanation": "'소프트웨어 사용자들에게 사용 방법을 신속히 숙지시키기 위 해 사용된다.'는 CASE(Computer Aided Software Engineering)에 대한 틀린 설명이다. 올바른 설명으로는 '소프트웨어 모듈의 재사용성이 향상된다.', '자동화된 기법을 통해 소프트웨어 품질이 향상된다.' 등이 있다.",
+      "image": "images/2023-2_q17.png"
     },
     {
       "qnum": 18,
@@ -448,7 +450,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "RCS(Revision Control System)은 동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추적할 수 …이다."
+      "explanation": "RCS(Revision Control System)은 동시에 소스를 수정하는 것을 방지하며 다른 방향으로 진행된 개발 결과를 합치거나 변경 내용을 추적할 수 …이다.",
+      "image": "images/2023-2_q32.png"
     },
     {
       "qnum": 33,
@@ -504,7 +507,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "4은 제어 흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이다."
+      "explanation": "4은 제어 흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이다.",
+      "image": "images/2023-2_q36.png"
     },
     {
       "qnum": 37,
@@ -546,7 +550,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "ABEFGCD은 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이다. 나머지 보기(ABECDFG 등)는 다른 개념이다."
+      "explanation": "ABEFGCD은 그래프에서 정점 A를 선택하여 깊이 우선 탐색(DFS)으로 운행한 결과이다. 나머지 보기(ABECDFG 등)는 다른 개념이다.",
+      "image": "images/2023-2_q39.png"
     },
     {
       "qnum": 40,
@@ -672,7 +677,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "'SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'는 학적 테이블에서 전화번호가 Null 값이 아닌 학생에 대한 틀린 설명이다. 올바른 설명으로는 'SELECT 학생명 FROM 학적 WHERE 전화번호 DON’T NULL;', 'SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;' 등이 있다."
+      "explanation": "'SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'는 학적 테이블에서 전화번호가 Null 값이 아닌 학생에 대한 틀린 설명이다. 올바른 설명으로는 'SELECT 학생명 FROM 학적 WHERE 전화번호 DON’T NULL;', 'SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;' 등이 있다.",
+      "image": "images/2023-2_q48.png"
     },
     {
       "qnum": 49,
@@ -728,7 +734,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;은 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다이다."
+      "explanation": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;은 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다이다.",
+      "table": "<table><tr><th>도시</th><th>지점명</th><th>판매액</th></tr><tr><td>서울</td><td>강남 지점</td><td>330</td></tr><tr><td>서울</td><td>강북 지점</td><td>168</td></tr><tr><td>광주</td><td>광주 지점</td><td>197</td></tr><tr><td>서울</td><td>강서 지점</td><td>158</td></tr><tr><td>서울</td><td>강동 지점</td><td>197</td></tr><tr><td>대전</td><td>대전 지점</td><td>165</td></tr></table>"
     },
     {
       "qnum": 53,
@@ -854,7 +861,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "컴파일러의 독창성은 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다이다."
+      "explanation": "컴파일러의 독창성은 정보 시스템 개발 단계에서 프로그래밍 언어 선택 시 고려할 사항으로 가장에 해당하지 않는다이다.",
+      "image": "images/2023-2_q61.png"
     },
     {
       "qnum": 62,
@@ -938,7 +946,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되."
+      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행)시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>20</td><td>2</td></tr></table>"
     },
     {
       "qnum": 68,
@@ -952,7 +961,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어 명령어는 fork이다."
+      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어는 fork이다."
     },
     {
       "qnum": 69,
@@ -1078,7 +1087,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "if-else 조건문을 삼항 연산자로 변환: k = (조건) ? 참일 때 : 거짓일 때. i=7<j=9이므로 k=i+j=16이다."
+      "explanation": "if-else 조건문을 삼항 연산자로 변환: k = (조건) ? 참일 때 : 거짓일 때. i=7<j=9이므로 k=i+j=16이다.",
+      "image": "images/2023-2_q77.png"
     },
     {
       "qnum": 78,
@@ -1120,7 +1130,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "C언어에서 정수 자료형으로 옳은 것은으로 int이다."
+      "explanation": "C언어에서 정수 자료형으로 옳은 것은 int이다."
     },
     {
       "qnum": 81,
@@ -1288,7 +1298,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "프로젝트 개발 유형에 따라 object, dynamic, function의 3가 지 모드로 구분한다.는 COCOMO(Constructive Cost Model) 모형에 해당하지 않는다이다."
+      "explanation": "프로젝트 개발 유형에 따라 object, dynamic, function의 3가 지 모드로 구분한다.는 COCOMO(Constructive Cost Model) 모형에 해당하지 않는다이다.",
+      "image": "images/2023-2_q92.png"
     },
     {
       "qnum": 93,
@@ -1316,7 +1327,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "암호화 키와 복호화 키가 동일한 암호화 알고리즘은으로 AES이다."
+      "explanation": "암호화 키와 복호화 키가 동일한 암호화 알고리즘은 AES이다."
     },
     {
       "qnum": 95,

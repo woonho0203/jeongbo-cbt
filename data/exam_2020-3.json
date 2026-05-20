@@ -28,7 +28,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "객체를 생성하기 위한 인터페이스를 정의하여 어떤 클 래스가 인스턴스화 될 것인지는 서브클래스가 결정하도 록 하는 것 Virtual-Constructor 패턴이라고도 함. 이를 Factory Method 패턴이라 한다."
+      "explanation": "객체를 생성하기 위한 인터페이스를 정의하여 어떤 클 래스가 인스턴스화 될 것인지는 서브클래스가 결정하도 록 하는 것 Virtual-Constructor 패턴이라고도 함. 이를 Factory Method 패턴이라 한다.",
+      "image": "images/2020-3_q2.png"
     },
     {
       "qnum": 3,
@@ -196,7 +197,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "일반화 관계이 올바른 순서/설명이다. 아래의 UML 모델에서 ‘차’ 클래스와 각 클래스의 관계로 옳은."
+      "explanation": "일반화 관계이 올바른 순서/설명이다. 아래의 UML 모델에서 ‘차’ 클래스와 각 클래스의 관계로 옳은.",
+      "image": "images/2020-3_q14.png"
     },
     {
       "qnum": 15,
@@ -224,7 +226,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은으로 { }이다."
+      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은 { }이다."
     },
     {
       "qnum": 17,
@@ -266,7 +268,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "2000년대 이후 소개되었으며, 객체지향 시스템에 한해 효과 적으로 활용된다.는 CASE(Computer-Aided Software Engineering) 도구에 해당하지 않는다이다."
+      "explanation": "2000년대 이후 소개되었으며, 객체지향 시스템에 한해 효과 적으로 활용된다.는 CASE(Computer-Aided Software Engineering) 도구에 해당하지 않는다이다.",
+      "image": "images/2020-3_q19.png"
     },
     {
       "qnum": 20,
@@ -364,7 +367,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "4은 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이다."
+      "explanation": "4은 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인이다.",
+      "image": "images/2020-3_q26.png"
     },
     {
       "qnum": 27,
@@ -406,7 +410,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "A은 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것이다."
+      "explanation": "A은 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것이다.",
+      "image": "images/2020-3_q29.png"
     },
     {
       "qnum": 30,
@@ -504,7 +509,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "깊이 우선 방식 또는 너비 우선 방식이 잇다. 상위 컴포넌트를 테스트 하고 점증적으로 하위 컴포넌 트를 테스트 한다. 이를 하향식 통합 테스트이라 한다."
+      "explanation": "깊이 우선 방식 또는 너비 우선 방식이 잇다. 상위 컴포넌트를 테스트 하고 점증적으로 하위 컴포넌 트를 테스트 한다. 이를 하향식 통합 테스트이라 한다.",
+      "image": "images/2020-3_q36.png"
     },
     {
       "qnum": 37,
@@ -560,7 +566,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 3이다."
+      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 3이다.",
+      "image": "images/2020-3_q40.png"
     },
     {
       "qnum": 41,
@@ -588,7 +595,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Relation 1개, Attribute 3개, Tuple 5개이 올바른 순서/설명이다. 관계형 데이터 모델에 대한 설명으로 옳은 것은? 고객ID 고객이름 거주도."
+      "explanation": "Relation 1개, Attribute 3개, Tuple 5개이 올바른 순서/설명이다. 관계형 데이터 모델에 대한 설명으로 옳은 것은? 고객ID 고객이름 거주도.",
+      "table": "<table><tr><th>고객ID</th><th>고객이름</th><th>거주도시</th></tr><tr><td>S1</td><td>홍길동</td><td>서울</td></tr><tr><td>S2</td><td>이정재</td><td>인천</td></tr><tr><td>S3</td><td>신보라</td><td>인천</td></tr><tr><td>S4</td><td>김흥국</td><td>서울</td></tr><tr><td>S5</td><td>도요새</td><td>용인</td></tr></table>"
     },
     {
       "qnum": 43,
@@ -672,7 +680,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Media Access Transparency는 이 범주에 해당하지 않는다이다."
+      "explanation": "Media Access Transparency는 이 범주에 해당하지 않는다이다.",
+      "image": "images/2020-3_q49.png"
     },
     {
       "qnum": 50,
@@ -714,7 +723,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "Division R÷S: R에서 S의 모든 (D2,D3) 조합을 만족하는 D1 값만 남긴다. S의 조건 (1,A)를 충족하는 D1는 b뿐이다."
+      "explanation": "Division R÷S: R에서 S의 모든 (D2,D3) 조합을 만족하는 D1 값만 남긴다. S의 조건 (1,A)를 충족하는 D1는 b뿐이다.",
+      "table": "<table><tr><th>D1</th><th>D2</th><th>D3</th></tr><tr><td>a</td><td>1</td><td>A</td></tr><tr><td>b</td><td>1</td><td>A</td></tr><tr><td>c</td><td>2</td><td>A</td></tr><tr><td>d</td><td>2</td><td>B</td></tr></table>"
     },
     {
       "qnum": 53,
@@ -742,7 +752,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복 기법은은 즉각 갱신 기법이다."
+      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복 기법은 즉각 갱신 기법이다."
     },
     {
       "qnum": 55,
@@ -770,7 +780,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "제1정규형은 과 같이 위쪽 릴레이션을 아래쪽 릴레이션으로 정규화를 하였 을 때 어떤 정규화 작업을 한 것인가? 국가 …이다."
+      "explanation": "제1정규형은 과 같이 위쪽 릴레이션을 아래쪽 릴레이션으로 정규화를 하였 을 때 어떤 정규화 작업을 한 것인가? 국가 …이다.",
+      "table": "<table><tr><th>국가</th><th>도시</th></tr><tr><td>대한민국</td><td>서울, 부산</td></tr><tr><td>미국</td><td>워싱턴, 뉴욕</td></tr><tr><td>중국</td><td>베이징</td></tr></table>"
     },
     {
       "qnum": 57,
@@ -868,7 +879,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "repeat_do는 bash 쉘 스크립트에서 사용할 수 있는 제어문에 해당하지 않는다. bash 쉘 스크립트에서 사용할 수 있는 제어문에는 if, for, while 등이 있다."
+      "explanation": "repeat_do는 bash 쉘 스크립트에서 사용할 수 있는 제어문에 해당하지 않는다. bash 쉘 스크립트에서 사용할 수 있는 제어문에는 if, for, while 등이 있다.",
+      "image": "images/2020-3_q63.png"
     },
     {
       "qnum": 64,
@@ -910,7 +922,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되."
+      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행)시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>20</td><td>2</td></tr></table>"
     },
     {
       "qnum": 67,
@@ -1008,7 +1021,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "NO.5은 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 …이다."
+      "explanation": "NO.5은 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 …이다.",
+      "table": "<table><tr><th>영역 번호</th><th>메모리 크기</th><th>사용 여부</th></tr><tr><td>NO.1</td><td>8K</td><td>FREE</td></tr><tr><td>NO.2</td><td>12K</td><td>FREE</td></tr><tr><td>NO.3</td><td>10K</td><td>IN USE</td></tr><tr><td>NO.4</td><td>20K</td><td>IN USE</td></tr><tr><td>NO.5</td><td>16K</td><td>FREE</td></tr></table>"
     },
     {
       "qnum": 74,
@@ -1078,7 +1092,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "i=1,3,5,7,9(step=2)로 반복하며 합산: 1+3+5+7+9=25. 홀수 1부터 10 이하 홀수의 합이다."
+      "explanation": "i=1,3,5,7,9(step=2)로 반복하며 합산: 1+3+5+7+9=25. 홀수 1부터 10 이하 홀수의 합이다.",
+      "image": "images/2020-3_q78.png"
     },
     {
       "qnum": 79,
@@ -1092,7 +1107,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어 명령어는 fork이다."
+      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어는 fork이다."
     },
     {
       "qnum": 80,
@@ -1106,7 +1121,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "C언어에서 정수 자료형으로 옳은 것은으로 int이다."
+      "explanation": "C언어에서 정수 자료형으로 옳은 것은 int이다."
     },
     {
       "qnum": 81,
@@ -1274,7 +1289,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일은은 14일이다."
+      "explanation": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일은 14일이다.",
+      "image": "images/2020-3_q92.png"
     },
     {
       "qnum": 93,
@@ -1330,7 +1346,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "합성 중심은 전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용이다. 나머지 보기(생성 중심 등)는 다른 개념이다."
+      "explanation": "합성 중심은 전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용이다. 나머지 보기(생성 중심 등)는 다른 개념이다.",
+      "image": "images/2020-3_q96.png"
     },
     {
       "qnum": 97,
@@ -1372,7 +1389,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Seven Touchpoints은 실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Devel…이다."
+      "explanation": "Seven Touchpoints은 실무적으로 검증된 개발보안 방법론 중 하나로, SW보안의 모범 사례를 SDLC(Software Devel…이다.",
+      "image": "images/2020-3_q99.png"
     },
     {
       "qnum": 100,

@@ -210,7 +210,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복 기법은은 즉각 갱신 기법이다."
+      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복 기법은 즉각 갱신 기법이다."
     },
     {
       "qnum": 16,
@@ -546,7 +546,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "AND 마이크로 동작과 가장 유사한 것은은 mask 동작이다."
+      "explanation": "AND 마이크로 동작과 가장 유사한 것은 mask 동작이다."
     },
     {
       "qnum": 40,
@@ -616,7 +616,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "9은 과 같은 Task List에서 SJF방식으로 Scheduling할 경우 Task 2의 종료 시간을 구하면? (단, 발생되는 Overhead은 무시한다.)이다."
+      "explanation": "9은 과 같은 Task List에서 SJF방식으로 Scheduling할 경우 Task 2의 종료 시간을 구하면? (단, 발생되는 Overhead은 무시한다.)이다.",
+      "table": "<table><tr><th>Task</th><th>도착시간</th><th>실행시간</th></tr><tr><td>Task 1</td><td>0</td><td>6</td></tr><tr><td>Task 2</td><td>1</td><td>3</td></tr><tr><td>Task 3</td><td>2</td><td>4</td></tr></table>"
     },
     {
       "qnum": 45,
@@ -812,7 +813,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "36은 FIFO 스케줄링에서 3개의 작업 도착시간과 CPU 사용시간(burst time)이 다음 표와 같다이다."
+      "explanation": "36은 FIFO 스케줄링에서 3개의 작업 도착시간과 CPU 사용시간(burst time)이 다음 표와 같다이다.",
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>CPU 사용시간(Burst Time)</th></tr><tr><td>JOB 1\nJOB 2\nJOB 3</td><td>0\n3\n8</td><td>13\n35\n10</td></tr></table>"
     },
     {
       "qnum": 59,
@@ -1148,7 +1150,8 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "LAN의 네트워크 토폴로지은 버스형이다."
+      "explanation": "LAN의 네트워크 토폴로지은 버스형이다.",
+      "image": "images/2018-1_q82.png"
     },
     {
       "qnum": 83,

@@ -28,7 +28,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "객체지향 프로그램에서 데이터를 추상화하는 단위은 클래스이다."
+      "explanation": "객체지향 프로그램에서 데이터를 추상화하는 단위은 클래스이다.",
+      "image": "images/2020-1-2_q2.png"
     },
     {
       "qnum": 3,
@@ -294,7 +295,9 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "90는 평가 점수에 따른 성적부여는 다음 표와 같다이다."
+      "explanation": "90는 평가 점수에 따른 성적부여는 다음 표와 같다이다.",
+      "image": "images/2020-1-2_q21.png",
+      "table": "<table><tr><th>평가점수</th><th>성적</th></tr><tr><td>80~100</td><td>A</td></tr><tr><td>60~79</td><td>B</td></tr><tr><td>0~59</td><td>C</td></tr></table>"
     },
     {
       "qnum": 22,
@@ -308,7 +311,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "차수 : 2, 단말 노드 : 4은 트리의 차수(degree)와 단말 노드(terminal node)의 수이다. 나머지 보기(차수 : 4, 단말 노드 : 4 등)는 다른 개념이다."
+      "explanation": "차수 : 2, 단말 노드 : 4은 트리의 차수(degree)와 단말 노드(terminal node)의 수이다. 나머지 보기(차수 : 4, 단말 노드 : 4 등)는 다른 개념이다.",
+      "image": "images/2020-1-2_q22.png"
     },
     {
       "qnum": 23,
@@ -476,7 +480,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다."
+      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다.",
+      "image": "images/2020-1-2_q34.png"
     },
     {
       "qnum": 35,
@@ -532,7 +537,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "Tree는 EAI(Enterprise Application Integration)의 구축 유형에 해당하지 않는다이다."
+      "explanation": "Tree는 EAI(Enterprise Application Integration)의 구축 유형에 해당하지 않는다이다.",
+      "image": "images/2020-1-2_q38.png"
     },
     {
       "qnum": 39,
@@ -798,7 +804,9 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "서브쿼리로 책명='자료구조'의 책번호(222)를 찾고, 도서가격 테이블에서 해당 책번호의 가격(25,000)을 조회한다."
+      "explanation": "서브쿼리로 책명='자료구조'의 책번호(222)를 찾고, 도서가격 테이블에서 해당 책번호의 가격(25,000)을 조회한다.",
+      "image": "images/2020-1-2_q57.png",
+      "table": "<table><tr><th>책번호</th><th>책명</th></tr><tr><td>111</td><td>운영체제</td></tr><tr><td>222</td><td>자료구조</td></tr><tr><td>333</td><td>컴퓨터구조</td></tr></table>"
     },
     {
       "qnum": 58,
@@ -868,7 +876,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "TCP/IP 프로토콜 중 전송계층 프로토콜은은 TCP이다."
+      "explanation": "TCP/IP 프로토콜 중 전송계층 프로토콜은 TCP이다."
     },
     {
       "qnum": 63,
@@ -1022,7 +1030,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "C언어에서 사용할 수 없는 변수명은은 text-color이다."
+      "explanation": "C언어에서 사용할 수 없는 변수명은 text-color이다."
     },
     {
       "qnum": 74,
@@ -1050,7 +1058,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "Request은 프로세스 상태에 해당하지 않는다. 프로세스 상태에는 Ready, Running, Exit 등이 있다."
+      "explanation": "Request은 프로세스 상태에 해당하지 않는다. 프로세스 상태에는 Ready, Running, Exit 등이 있다.",
+      "image": "images/2020-1-2_q75.png"
     },
     {
       "qnum": 76,
@@ -1148,7 +1157,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "최대 홉수를 15로 제한한 라우팅 프로토콜은은 RIP이다."
+      "explanation": "최대 홉수를 15로 제한한 라우팅 프로토콜은 RIP이다."
     },
     {
       "qnum": 83,
@@ -1358,7 +1367,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성 한다. 이를 하둡(Hadoop)이라 한다."
+      "explanation": "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성 한다. 이를 하둡(Hadoop)이라 한다.",
+      "image": "images/2020-1-2_q97.png"
     },
     {
       "qnum": 98,

@@ -14,7 +14,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "미들웨어는 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 …이다."
+      "explanation": "미들웨어는 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 …이다.",
+      "image": "images/2021-1_q1.png"
     },
     {
       "qnum": 2,
@@ -98,7 +99,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "현행 시스템 분석에서 고려하지 않아도 되는 항목은은 인적 자원 분석이다."
+      "explanation": "현행 시스템 분석에서 고려하지 않아도 되는 항목은 인적 자원 분석이다."
     },
     {
       "qnum": 8,
@@ -168,7 +169,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "fan-in : 3, fan-out : 2은 은 어떤 프로그램 구조를 나타낸다이다."
+      "explanation": "fan-in : 3, fan-out : 2은 은 어떤 프로그램 구조를 나타낸다이다.",
+      "image": "images/2021-1_q12.png"
     },
     {
       "qnum": 13,
@@ -238,7 +240,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "가능한 모듈을 독립적으로 생성하고 결합도를 최대화한다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다이다."
+      "explanation": "가능한 모듈을 독립적으로 생성하고 결합도를 최대화한다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다이다.",
+      "image": "images/2021-1_q17.png"
     },
     {
       "qnum": 18,
@@ -490,7 +493,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "개방주소법(open addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다이다."
+      "explanation": "개방주소법(open addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다이다.",
+      "image": "images/2021-1_q35.png"
     },
     {
       "qnum": 36,
@@ -518,7 +522,8 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "다음 트리를 Preorder 운행법으로 운행할 경우 다섯 번째로 탐색되는이다."
+      "explanation": "다음 트리를 Preorder 운행법으로 운행할 경우 다섯 번째로 탐색되는이다.",
+      "image": "images/2021-1_q37.png"
     },
     {
       "qnum": 38,
@@ -574,7 +579,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "카디널리티 : 4, 차수 : 6은 릴레이션의 카디널리티와 차수가 옳게 나타낸 것은? 아이디 성명 나이 등급 적립금 가입년도 yuyu01 원…이다."
+      "explanation": "카디널리티 : 4, 차수 : 6은 릴레이션의 카디널리티와 차수가 옳게 나타낸 것은? 아이디 성명 나이 등급 적립금 가입년도 yuyu01 원…이다.",
+      "table": "<table><tr><th>아이디</th><th>성명</th><th>나이</th><th>등급</th><th>적립금</th><th>가입년도</th></tr><tr><td>yuyu01</td><td>원유철</td><td>36</td><td>3</td><td>2000</td><td>2008</td></tr><tr><td>sykim10</td><td>김성일</td><td>29</td><td>2</td><td>3300</td><td>2014</td></tr><tr><td>kshan4</td><td>한경선</td><td>45</td><td>3</td><td>2800</td><td>2009</td></tr><tr><td>namsu52</td><td>이남수</td><td>33</td><td>5</td><td>1000</td><td>2016</td></tr></table>"
     },
     {
       "qnum": 42,
@@ -826,7 +832,9 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE '%신%';이다."
+      "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE '%신%';이다.",
+      "image": "images/2021-1_q60.png",
+      "table": "<table><tr><th>공급자번호</th><th>공급자명</th><th>위치</th></tr><tr><td>16\n27\n39\n62\n70</td><td>대신공업사\n삼진사\n삼양사\n진아공업사\n신촌상사</td><td>수원\n서울\n인천\n대전\n서울</td></tr></table>"
     },
     {
       "qnum": 61,
@@ -994,7 +1002,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은은 트랜스포트 계층이다."
+      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은 트랜스포트 계층이다."
     },
     {
       "qnum": 73,
@@ -1050,7 +1058,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "C언어에서 변수로 사용할 수 없는 것은은 short이다."
+      "explanation": "C언어에서 변수로 사용할 수 없는 것은 short이다."
     },
     {
       "qnum": 77,
@@ -1092,7 +1100,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "Working Set은 운영체제의 가상기억장치 관리에서 프로세스가 일정 시간동안 자주 참조하는 페이지들의 집합을 의미하는 것이다. 유사 개념: Locality · Deadlock 등과 구별한다."
+      "explanation": "Working Set은 운영체제의 가상기억장치 관리에서 프로세스가 일정 시간동안 자주 참조하는 페이지들의 집합을 의미하는 것이다. 유사 개념: Locality · Deadlock 등과 구별한다.",
+      "image": "images/2021-1_q79.png"
     },
     {
       "qnum": 80,
@@ -1204,7 +1213,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "LAN의 네트워크 토폴로지은 버스형이다."
+      "explanation": "LAN의 네트워크 토폴로지은 버스형이다.",
+      "image": "images/2021-1_q87.png"
     },
     {
       "qnum": 88,
@@ -1344,7 +1354,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "'해쉬 함수를 이용한 해쉬 암호화 방식을 사용한다.'는 스트림 암호화 방식에 대한 틀린 설명이다. 올바른 설명으로는 '비트/바이트/단어들을 순차적으로 암호화한다.', 'RC4는 스트림 암호화 방식에 해당한다.' 등이 있다."
+      "explanation": "'해쉬 함수를 이용한 해쉬 암호화 방식을 사용한다.'는 스트림 암호화 방식에 대한 틀린 설명이다. 올바른 설명으로는 '비트/바이트/단어들을 순차적으로 암호화한다.', 'RC4는 스트림 암호화 방식에 해당한다.' 등이 있다.",
+      "image": "images/2021-1_q97.png"
     },
     {
       "qnum": 98,

@@ -56,7 +56,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "다음 그림에서 트리의 Degree와 터미널 노드의 수이 트리의 Degree: 2, 터미널 노드: 4이다."
+      "explanation": "다음 그림에서 트리의 Degree와 터미널 노드의 수이 트리의 Degree: 2, 터미널 노드: 4이다.",
+      "image": "images/2016-3_q4.png"
     },
     {
       "qnum": 5,
@@ -154,7 +155,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;은 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다이다."
+      "explanation": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시= “서울” ORDER BY 판매액 DESC;은 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다이다.",
+      "table": "<table><tr><th>도시</th><th>지점명</th><th>판매액</th></tr><tr><td>서울</td><td>강남 지점</td><td>330</td></tr><tr><td>서울</td><td>강북 지점</td><td>168</td></tr><tr><td>광주</td><td>광주 지점</td><td>197</td></tr><tr><td>서울</td><td>강서 지점</td><td>158</td></tr><tr><td>서울</td><td>강동 지점</td><td>197</td></tr><tr><td>대전</td><td>대전 지점</td><td>165</td></tr></table>"
     },
     {
       "qnum": 12,
@@ -210,7 +212,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다."
+      "explanation": "전위 순회(Pre-order)는 루트 → 왼쪽 서브트리 → 오른쪽 서브트리 순서로 방문한다.",
+      "image": "images/2016-3_q15.png"
     },
     {
       "qnum": 16,
@@ -448,7 +451,8 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "조합 논리 회로의 명칭은은 4비트 병렬 가감산기이다."
+      "explanation": "조합 논리 회로의 명칭은 4비트 병렬 가감산기이다.",
+      "image": "images/2016-3_q32.png"
     },
     {
       "qnum": 33,
@@ -756,7 +760,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "UNIX에서 파일 사용 권한 지정에 관한 명령어 명령어는 chmod이다."
+      "explanation": "UNIX에서 파일 사용 권한 지정에 관한 명령어는 chmod이다."
     },
     {
       "qnum": 55,
@@ -812,7 +816,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "Best-Fit은 그림과 같은 메모리 구성에서 15M 크기의 블록을 메모리에 할당하고자 한다. ⓒ 영역에 할당시킬 경우 사용된 정책은이다. 유사 개념: First-Fit · Next-Fit 등과 구별한다."
+      "explanation": "Best-Fit은 그림과 같은 메모리 구성에서 15M 크기의 블록을 메모리에 할당하고자 한다. ⓒ 영역에 할당시킬 경우 사용된 정책은이다. 유사 개념: First-Fit · Next-Fit 등과 구별한다.",
+      "table": "<table><tr><th>ⓐ</th></tr><tr><td></td></tr><tr><td>ⓑ</td></tr><tr><td></td></tr><tr><td>ⓒ</td></tr><tr><td></td></tr><tr><td></td></tr><tr><td>ⓓ</td></tr><tr><td></td></tr><tr><td>ⓔ</td></tr></table>"
     },
     {
       "qnum": 59,
@@ -1162,7 +1167,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "패킷을 목적지까지 전달하기 위해 사용되는 라우팅 프로토콜은은 RIP이다."
+      "explanation": "패킷을 목적지까지 전달하기 위해 사용되는 라우팅 프로토콜은 RIP이다."
     },
     {
       "qnum": 84,

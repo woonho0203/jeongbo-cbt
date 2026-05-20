@@ -14,7 +14,8 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "'주로 시스템의 정적 측면을 모델링 하기 위해 사용한다.'는 UML 다이어그램 중 순차 다이어그램에 대한 틀린 설명이다. 올바른 설명으로는 '객체 간의 동적 상호작용을 시간 개념을 중심으로 모델링 하는 것이다.', '일반적으로 다이어그램의 수직 방향이 시간의 흐름을 나타낸다.' 등이 있다."
+      "explanation": "'주로 시스템의 정적 측면을 모델링 하기 위해 사용한다.'는 UML 다이어그램 중 순차 다이어그램에 대한 틀린 설명이다. 올바른 설명으로는 '객체 간의 동적 상호작용을 시간 개념을 중심으로 모델링 하는 것이다.', '일반적으로 다이어그램의 수직 방향이 시간의 흐름을 나타낸다.' 등이 있다.",
+      "image": "images/2022-1_q1.png"
     },
     {
       "qnum": 2,
@@ -210,7 +211,8 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "Builder 패턴은 GoF(Gang of Four) 디자인 패턴을 생성, 구조, 행동 패턴의 세 그룹으로 분류할 때, 구조 …이다."
+      "explanation": "Builder 패턴은 GoF(Gang of Four) 디자인 패턴을 생성, 구조, 행동 패턴의 세 그룹으로 분류할 때, 구조 …이다.",
+      "image": "images/2022-1_q15.png"
     },
     {
       "qnum": 16,
@@ -448,7 +450,8 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "6, 7, 3, 5, 9은 버블 정렬을 이용하여 다음 자료를 오름차순으로 정렬할 경우 PASS 1의 결과는? 9, 6, 7, 3, 5이다. 나머지 보기(6, 9, 7, 3, 5 등)는 다른 개념이다."
+      "explanation": "6, 7, 3, 5, 9은 버블 정렬을 이용하여 다음 자료를 오름차순으로 정렬할 경우 PASS 1의 결과는? 9, 6, 7, 3, 5이다. 나머지 보기(6, 9, 7, 3, 5 등)는 다른 개념이다.",
+      "image": "images/2022-1_q32.png"
     },
     {
       "qnum": 33,
@@ -560,7 +563,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "단위 테스트 도구로 사용될 수 없는 것은은 IgpUnit이다."
+      "explanation": "단위 테스트 도구로 사용될 수 없는 것은 IgpUnit이다."
     },
     {
       "qnum": 41,
@@ -658,7 +661,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "DCL(Data Control Language)은 SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어이다."
+      "explanation": "DCL(Data Control Language)은 SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어이다.",
+      "table": "<table><tr><th>학번</th><th>이름</th><th>학년</th><th>학과</th></tr><tr><td>13001</td><td>홍길동</td><td>3학년</td><td>전기</td></tr><tr><td>13002</td><td>이순신</td><td>4학년</td><td>기계</td></tr><tr><td>13003</td><td>강감찬</td><td>2학년</td><td>컴퓨터</td></tr></table>"
     },
     {
       "qnum": 48,
@@ -686,7 +690,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "'하나의 릴레이션에서 튜플은 특정한 순서를 가진다.'는 데이터베이스에서 릴레이션에 대한 틀린 설명이다. 올바른 설명으로는 '모든 튜플은 서로 다른 값을 가지고 있다.', '각 속성은 릴레이션 내에서 유일한 이름을 가진다.' 등이 있다."
+      "explanation": "'하나의 릴레이션에서 튜플은 특정한 순서를 가진다.'는 데이터베이스에서 릴레이션에 대한 틀린 설명이다. 올바른 설명으로는 '모든 튜플은 서로 다른 값을 가지고 있다.', '각 속성은 릴레이션 내에서 유일한 이름을 가진다.' 등이 있다.",
+      "image": "images/2022-1_q49.png"
     },
     {
       "qnum": 50,
@@ -742,7 +747,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "Candidate key는 키의 종류 중 유일성 과 최소성을 만족하는 속성 또는 속성들의 집합이다. 나머지 보기(Atomic key 등)는 다른 개념이다."
+      "explanation": "Candidate key는 키의 종류 중 유일성 과 최소성을 만족하는 속성 또는 속성들의 집합이다. 나머지 보기(Atomic key 등)는 다른 개념이다.",
+      "table": "<table><tr><th>사원ID</th><th>사원명</th><th>급여</th><th>부서ID</th></tr><tr><td>101</td><td>박철수</td><td>30000</td><td>1</td></tr><tr><td>102</td><td>한나라</td><td>35000</td><td>2</td></tr><tr><td>103</td><td>김감동</td><td>40000</td><td>3</td></tr><tr><td>104</td><td>이구수</td><td>35000</td><td>2</td></tr><tr><td>105</td><td>최초록</td><td>40000</td><td>3</td></tr></table>"
     },
     {
       "qnum": 54,
@@ -798,7 +804,8 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "SELECT 팀코드 FROM 직원 WHERE 이름＝‘정도일’이 올바른 순서/설명이다. [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에."
+      "explanation": "SELECT 팀코드 FROM 직원 WHERE 이름＝‘정도일’이 올바른 순서/설명이다. [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에.",
+      "table": "<table><tr><th>A</th><th>B</th></tr><tr><td>1</td><td>A</td></tr><tr><td>3</td><td>B</td></tr></table>"
     },
     {
       "qnum": 58,
@@ -868,7 +875,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "a&&b: 둘 다 참(≠0)이면 1. a||b: 하나라도 참이면 1. !c: c가 12(≠0)이므로 0. t1+t2+t3 = 1+1+0 = 2."
+      "explanation": "a&&b: 둘 다 참(≠0)이면 1. a||b: 하나라도 참이면 1. !c: c가 12(≠0)이므로 0. t1+t2+t3 = 1+1+0 = 2.",
+      "image": "images/2022-1_q62.png"
     },
     {
       "qnum": 63,
@@ -1064,7 +1072,8 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "LRU 알고리즘은 가장 오랫동안 사용하지 않는 페이지를 교체한다. 4프레임에서 참조 순서 1,2,3,1,2,4,1,2,5를 추적하면 페이지 부재가 5회 발생한다."
+      "explanation": "LRU 알고리즘은 가장 오랫동안 사용하지 않는 페이지를 교체한다. 4프레임에서 참조 순서 1,2,3,1,2,4,1,2,5를 추적하면 페이지 부재가 5회 발생한다.",
+      "image": "images/2022-1_q76.png"
     },
     {
       "qnum": 77,
@@ -1232,7 +1241,8 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 물리적 위협으로 인한 문제에에 해당하지 않는다이다."
+      "explanation": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 물리적 위협으로 인한 문제에에 해당하지 않는다이다.",
+      "image": "images/2022-1_q88.png"
     },
     {
       "qnum": 89,

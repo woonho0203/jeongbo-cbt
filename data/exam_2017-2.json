@@ -182,7 +182,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 2이다."
+      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 2이다.",
+      "image": "images/2017-2_q13.png"
     },
     {
       "qnum": 14,
@@ -266,7 +267,8 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "A은 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것이다."
+      "explanation": "A은 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것이다.",
+      "image": "images/2017-2_q19.png"
     },
     {
       "qnum": 20,
@@ -322,7 +324,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "10진수 -456을 PACK 형식으로 표현한 것은은 45 6D이다."
+      "explanation": "10진수 -456을 PACK 형식으로 표현한 것은 45 6D이다."
     },
     {
       "qnum": 24,
@@ -490,7 +492,8 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "3개는 수직 마이크로명령어 방식의 명령어가 다음의 형식을 갖는다면 이 제어장치는 최대 몇 개의 제어 신호를 동시…이다."
+      "explanation": "3개는 수직 마이크로명령어 방식의 명령어가 다음의 형식을 갖는다면 이 제어장치는 최대 몇 개의 제어 신호를 동시…이다.",
+      "table": "<table><tr><th>3bits</th><th>3bits</th><th>3bits</th><th>2bits</th><th>2bits</th><th>7bits</th></tr><tr><td>F1</td><td>F2</td><td>F3</td><td>CD</td><td>BR</td><td>AD</td></tr></table>"
     },
     {
       "qnum": 36,
@@ -658,7 +661,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "가상 메모리의 교체정책 중 LRU(Least Recently Used) 알고리즘으 로 구현할 때, 그림에서 D 페이지가 참조될 때의 적재되는 프레임으 로 옳은 것은? (단, 고정 프레임이 적용되어 프로세스에 3개의 프레임이 배정되어 있고, 4개의 서로 다른 페이지(A, B, C, D)를 B, C, B, A, D 순서로 참조한다고 가정한다.) 페이지 주소 열 B C B A D B B B B C C C A B D D B이다."
+      "explanation": "가상 메모리의 교체정책 중 LRU(Least Recently Used) 알고리즘으 로 구현할 때, 그림에서 D 페이지가 참조될 때의 적재되는 프레임으 로 옳은 것은? (단, 고정 프레임이 적용되어 프로세스에 3개의 프레임이 배정되어 있고, 4개의 서로 다른 페이지(A, B, C, D)를 B, C, B, A, D 순서로 참조한다고 가정한다.) 페이지 주소 열 B C B A D B B B B C C C A B D D B이다.",
+      "table": "<table><tr><th>B</th></tr><tr><td></td></tr><tr><td></td></tr></table>"
     },
     {
       "qnum": 48,
@@ -686,7 +690,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "9은 스케줄링 하고자 하는 세 작업의 도착시간과 실행시간이 다음 <표>와 같다이다."
+      "explanation": "9은 스케줄링 하고자 하는 세 작업의 도착시간과 실행시간이 다음 <표>와 같다이다.",
+      "table": "<table><tr><th>작업</th><th>도착시간</th><th>실행시간</th></tr><tr><td>1\n2\n3</td><td>0\n1\n2</td><td>6\n3\n4</td></tr></table>"
     },
     {
       "qnum": 50,
@@ -826,7 +831,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되."
+      "explanation": "D → B → C → A이 올바른 순서/설명이다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되.",
+      "table": "<table><tr><th>작업</th><th>대기 시간</th><th>서비스(실행) 시간</th></tr><tr><td>A</td><td>5</td><td>20</td></tr><tr><td>B</td><td>40</td><td>20</td></tr><tr><td>C</td><td>15</td><td>45</td></tr><tr><td>D</td><td>20</td><td>2</td></tr></table>"
     },
     {
       "qnum": 60,
@@ -840,7 +846,8 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "제시된 항목들이 모두 해당하며, 7, 3, 1이 정답이다."
+      "explanation": "제시된 항목들이 모두 해당하며, 7, 3, 1이 정답이다.",
+      "table": "<table><tr><th>4</th></tr><tr><td></td></tr><tr><td></td></tr></table>"
     },
     {
       "qnum": 61,
@@ -952,7 +959,8 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "Fan-In : 3, Fan-Out : 2은 은 어떤 프로그램 구조를 나타낸다이다."
+      "explanation": "Fan-In : 3, Fan-Out : 2은 은 어떤 프로그램 구조를 나타낸다이다.",
+      "image": "images/2017-2_q68.png"
     },
     {
       "qnum": 69,
@@ -1372,7 +1380,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "TCP/IP 관련 프로토콜 중 응용 계층에서 동작하는 프로토콜은은 HTTP이다."
+      "explanation": "TCP/IP 관련 프로토콜 중 응용 계층에서 동작하는 프로토콜은 HTTP이다."
     },
     {
       "qnum": 99,
