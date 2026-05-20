@@ -14,7 +14,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 (n+1)/2이다."
+      "explanation": "Liner Search의 평균 검색 회수이 (n+1)/2이다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 개체 무결성 제약 조건이다."
+      "explanation": "관계 데이터베이스 제약조건 중 한 릴레이션의 기본키를 구성하는 어떠한 속성 값도 널(NULL) 값이나 중복 값을 가질 수 없다는 조건이며, 이를 개체 무결성 제약 조건이라 한다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 Synonym이다."
+      "explanation": "해싱에서 동일한 홈 주소로 인하여 충돌이 일어난 레코드들의 집합을 의미하는 것이며, 이를 Synonym이라 한다."
     },
     {
       "qnum": 4,
@@ -84,7 +84,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 n(n-1)/2이다."
+      "explanation": "n개의 노드로 구성된 무방향 그래프의 최대 간선 수이 n(n-1)/2이다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 42이다."
+      "explanation": "다음 Postfix로 표현된 연산식의 연산 결과로 옳은 것은? 3 4 * 5 6 * +이며, 이를 42이라 한다."
     },
     {
       "qnum": 8,
@@ -107,12 +107,12 @@
         "로킹 기법",
         "타임 스탬프 기법",
         "검증 기법",
-        "배타 로크 기법 정보처리기사 A형 정보처리기사 필기 A형 없습니다."
+        "배타 로크 기법"
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 타임 스탬프 기법이다."
+      "explanation": "동시성 제어를 위한 직렬화 기법으로 트랜잭션 간의 순서를 미리 정하는 것이며, 이를 타임 스탬프 기법이라 한다."
     },
     {
       "qnum": 9,
@@ -140,7 +140,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 stack이다."
+      "explanation": "다음 문장의 빈칸에 들어갈 단어는? A ( ) is an ordered list in which all insertions and deletions are made at one end, called the top.이며, 이를 stack이라 한다."
     },
     {
       "qnum": 11,
@@ -168,7 +168,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 물리적 설계이다."
+      "explanation": "데이터베이스 설계 단계 중 저장 레코드 양식 설계, 레코드 집중의 분석 및 설계, 접근 경로 설계와 관계되는 것이며, 이를 물리적 설계이라 한다."
     },
     {
       "qnum": 13,
@@ -182,7 +182,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 제1정규형(1NF)이다."
+      "explanation": "다음 정의에서 말하는 기본 정규형은? 어떤 릴레이션 R에 속한 모든 도메인이 원자값(Atomic Value)만으로 되어 있다.이며, 이를 제1정규형(1NF)이라 한다."
     },
     {
       "qnum": 14,
@@ -191,12 +191,12 @@
         "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’",
         "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘대%’",
         "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%사’",
-        "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘_사’ -"
+        "SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘_사’"
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’이다."
+      "explanation": "아래와 같은 결과를 만들어 내는 SQL문은? [공급자 Table] 공급자번호 공급자명 위치 16 대신공업사 수원 27 삼진사 서울 39 삼양사 인천 62 진아공업사 대전 70 신촌상사 서울 [결과] 공급자번호 공급자명 위치 16 대신공업사 수원 70 신촌상사 서울이며, 이를 SELECT * FROM 공급자 WHERE 공급자명 LIKE ‘%신%’이라 한다."
     },
     {
       "qnum": 15,
@@ -210,7 +210,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 3이다."
+      "explanation": "다음 그림에서 트리의 차수이 3이다."
     },
     {
       "qnum": 16,
@@ -252,7 +252,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 SET이다."
+      "explanation": "다음 SQL 문에서 ( ) 안에 들어갈 내용으로 옳은 것은? UPDATE 인사급여 ( ) 호봉 = 15 WHERE 성명 = ‘홍길동’;이며, 이를 SET이라 한다."
     },
     {
       "qnum": 19,
@@ -266,7 +266,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 3, 5, 6, 7, 9이다."
+      "explanation": "다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬할 경우 PASS 3의 결과는? 9, 6, 7, 3, 5이며, 이를 3, 5, 6, 7, 9이라 한다."
     },
     {
       "qnum": 20,
@@ -280,7 +280,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 결정자이면서 후보키가 아닌 것 제거이다."
+      "explanation": "3NF에서 BCNF가 되기 위한 조건이 결정자이면서 후보키가 아닌 것 제거이다."
     },
     {
       "qnum": 21,
@@ -294,7 +294,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 Marshalling이다."
+      "explanation": "하나 이상의 프로그램 또는 연속되어 있지 않은 저장 공간으로부터 데이터를 모은 다음, 데이터들을 메시지 버퍼에 넣고, 특정 수신기 나 프로그래밍 인터페이스에 맞도록 그 데이터를 조직화 하거나 미리 정해진 다른 형식으로 변환하는 과정을 일컫는이며, 이를 Marshalling이라 한다."
     },
     {
       "qnum": 22,
@@ -303,12 +303,12 @@
         "F = A + BC",
         "F = B + AC",
         "F = A + AC",
-        "F = C + AB 정보처리기사 A형"
+        "F = C + AB"
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 F = A + BC이다."
+      "explanation": "불 함수식 F = (A + B)ㆍ(A + C)를 가장 간소화한이며, 이를 F = A + BC이라 한다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 디멀티플렉서(demultiplexer)이다."
+      "explanation": "하나의 입력 정보를 여러 개의 출력선 중에 하나를 선택하여 정보를 전달하는데 사용하는 것이며, 이를 디멀티플렉서(demultiplexer)이라 한다."
     },
     {
       "qnum": 24,
@@ -350,7 +350,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 Zero-Address Instruction Mode이다."
+      "explanation": "아래 [보기]와 같이 명령어에 오퍼랜드 필드를 사용하지 않고 명령어만 사용하는 명령어 형식은? [보기] ADD; (덧셈) MUL; (곱셈)이며, 이를 Zero-Address Instruction Mode이라 한다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 ㉡ → ㉠ → ㉢ → ㉣이다."
+      "explanation": "인터럽트의 처리 루틴의 순서로 올바른 것은? ㉠ 현재 상태 보존 ㉡ 인터럽트 인식 ㉢ 요청 인터럽트 서비스로 분기 및 서비스 ㉣ 사용자 상태 복구 및 재개이며, 이를 ㉡ → ㉠ → ㉢ → ㉣이라 한다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 0110이다."
+      "explanation": "10진수 3은 3-초과 코드(Excess-3 code)에서 어떻게 표현되는 것이며, 이를 0110이라 한다."
     },
     {
       "qnum": 28,
@@ -406,13 +406,13 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 배열 프로세서이다."
+      "explanation": "데이터를 고속으로 처리하기 위해 연산장치를 병렬로 구성한 처리 구조로, 벡터 계산이나 행렬계산에 주로 사용되는 프로세서의 명칭으로 가장 옳은이며, 이를 배열 프로세서이라 한다."
     },
     {
       "qnum": 30,
       "stem": "레지스터 사이의 데이터 전송 방법에 대한 설명으로 가장 옳지 않은 것은?",
       "options": [
-        "직렬 전송 방식에 의한 레지스터 전송은 하나의 클록 펄스 동안에 하나의 비트가 전송되고, 이러한 비트 단위 전송이 모여 워드를 전송하는 방식을 말한다. -",
+        "직렬 전송 방식에 의한 레지스터 전송은 하나의 클록 펄스 동안에 하나의 비트가 전송되고, 이러한 비트 단위 전송이 모여 워드를 전송하는 방식을 말한다.",
         "병렬 전송 방식에 의한 레지스터 전송은 하나의 클록 펄스 동안에 레지스터내의 모든 비트 즉, 워드가 동시에 전송되는 방식을 말한다.",
         "병렬 전송 방식에 의한 레지스터 전송은 직렬 방식에 비해 속도가 빠르고 결선의 수가 적다는 장점을 가지고 있다.",
         "버스 전송 방식에 의한 레지스터 전송은 공통의 통신로를 이용 하므로 병렬 전송 방식에 의한 레지스터 전송 방식보다 결선 의 수가 적다."
@@ -434,7 +434,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 Immediate Addressing Mode이다."
+      "explanation": "연산 속도가 가장 빠른 주소 지정 방식(Addressing Mode)이며, 이를 Immediate Addressing Mode이라 한다."
     },
     {
       "qnum": 32,
@@ -462,7 +462,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 PLA이다."
+      "explanation": "프로그램이 가능한 논리 소자로, n개의 입력에 대하여 2n개 이하의 출력을 만들 수 있는 논리회로이며, 이를 PLA이라 한다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 두 개의 레지스터의 내용을 뺀 후, Zero 여부를 조사한다.이다."
+      "explanation": "CPU에 두 개의 범용 레지스터와 하나의 상태 레지스터가 존재할 때 두 범용 레지스터의 값이 동일한지 조사하기 위한 방법으로 옳은 것은? (단, 그림에 보이는 상태 레지스터 내용을 참조하시오.) Zero Sign Carry Overflow이며, 이를 두 개의 레지스터의 내용을 뺀 후, Zero 여부를 조사한다.이라 한다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 직접 매핑이다."
+      "explanation": "캐시기억장치에서 적중률이 낮아질 수 있는 매핑이 직접 매핑이다."
     },
     {
       "qnum": 36,
@@ -504,7 +504,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Branch Cycle이다."
+      "explanation": "Branch Cycle는 이 범주에 해당하지 않는다. 이 범주에는 Fetch Cycle·Interrupt Cycle·Execute Cycle 등이 포함된다."
     },
     {
       "qnum": 37,
@@ -518,21 +518,21 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 인터리빙이다."
+      "explanation": "중앙처리장치의 기억 모듈에 중복적인 데이터 접근을 방지하기 위해서 연속된 데이터 또는 명령어들을 기억장치 모듈에 순차적으 로 번갈아 가면서 처리하는 방식으로 가장 옳은이며, 이를 인터리빙이라 한다."
     },
     {
       "qnum": 38,
       "stem": "RISC(Reduced Instruction Set Computer)와 CISC(Complex Instruction Set Computer)에 대한 설명 중 가장 옳지 않은 것은?",
       "options": [
         "RISC는 실행 빈도가 적은 하드웨어를 제거하여 자원 이용률을 높이는 장점이 있다.",
-        "RISC는 프로그램의 길이가 길어지므로 CISC보다 수행 속도 가 느린 단점이 있다. 정보처리기사 A형",
+        "RISC는 프로그램의 길이가 길어지므로 CISC보다 수행 속도 가 느린 단점이 있다.",
         "CISC는 고급언어를 이용하여 알고리즘을 쉽게 표현할 수 있 는 장점이 있다.",
         "CISC는 복잡한 명령어군을 제공하므로 컴퓨터 설계 및 구현 시 많은 시간을 필요로 하는 단점이 있다."
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "RISC는 프로그램의 길이가 길어지므로 CISC보다 수행 속도 가 느린 단점이 있다. 정보처리기사 A형가 틀린 설명이다."
+      "explanation": "RISC는 프로그램의 길이가 길어지므로 CISC보다 수행 속도 가 느린 단점이 있다.가 틀린 설명이다."
     },
     {
       "qnum": 39,
@@ -546,7 +546,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 LRU이다."
+      "explanation": "캐시의 각 워드에 카운터를 두고 접근할 때마다 카운터를 증가시키 고 제거 시에는 카운터 값이 가장 적은 블록을 제거하는 것이며, 이를 LRU이라 한다."
     },
     {
       "qnum": 40,
@@ -574,7 +574,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 17초이다."
+      "explanation": "준비상태 큐에 프로세스 A, B, C가 차례로 도착하였다. 라운드 로빈(Round Robin)으로 스케줄링 할 때 타임 슬라이스를 4초로 한다면 평균 반환 시간은? 프로세스 A B C 실행시간(초) 17 4 5이며, 이를 17초이라 한다."
     },
     {
       "qnum": 42,
@@ -602,7 +602,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 은행원 알고리즘 사용이다."
+      "explanation": "교착상태의 해결 방법 중 회피(Avoidance) 기법과 가장 밀접한 관계가 있는 것이며, 이를 은행원 알고리즘 사용이라 한다."
     },
     {
       "qnum": 44,
@@ -611,12 +611,12 @@
         "페이지 부재율이 크면 스래싱이 많이 일어난 것이다.",
         "페이지 부재율과 스래싱은 관계가 없다.",
         "다중 프로그래밍의 정도가 높아지면 페이지 부재율과 스래싱 이 감소한다.",
-        "스래싱이 많이 발생하면 페이지 부재율이 감소한다. -"
+        "스래싱이 많이 발생하면 페이지 부재율이 감소한다."
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 페이지 부재율이 크면 스래싱이 많이 일어난 것이다.이다."
+      "explanation": "페이지 부재율(Page Fault Ratio)과 스래싱(Thrashing)의 관계에 대한 설명 중 가장 옳은이며, 이를 페이지 부재율이 크면 스래싱이 많이 일어난 것이다.이라 한다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 170K이다."
+      "explanation": "다음 표는 고정 분할에서의 기억장치 단편화(Fragmentation) 현상 을 보이고 있다. 외부 단편화(External Fragmentation)의 크기는 총 얼마인가? 분할의 크기 작업의 크기 A 20K ← 10K B 50K ← 60K C 120K ← 160K D 200K ← 100K E 300K ← 150K이며, 이를 170K이라 한다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 Time Sharing System이다."
+      "explanation": "운영체제의 운용 기법 중 중앙처리장치의 시간을 각 사용자에게 균등하게 분할하여 사용하는 체제로서 모든 컴퓨터 사용자에게 똑같은 서비스를 제공하는 것을 목표로 삼고 있으며, 라운드 로빈 스케줄링을 사용하는 것이며, 이를 Time Sharing System이라 한다."
     },
     {
       "qnum": 47,
@@ -686,7 +686,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 3K이다."
+      "explanation": "빈 기억 공간의 크기가 20K, 16K, 8K, 40K 일 때 기억장치 배치 전략으로 “Best Fit”을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인이며, 이를 3K이라 한다."
     },
     {
       "qnum": 50,
@@ -723,7 +723,7 @@
         "입·출력 관리",
         "명령어 해석 및 실행",
         "기억장치 관리",
-        "프로세스 관리 정보처리기사 A형"
+        "프로세스 관리"
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
@@ -742,7 +742,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 B이다."
+      "explanation": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? 작업 대기 시간 서비스(실행) 시간 A 5 20 B 40 20 C 15 45 D 20 20이며, 이를 B이라 한다."
     },
     {
       "qnum": 54,
@@ -756,7 +756,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 Multilevel Queue이다."
+      "explanation": "FIFO와 RR 스케줄링 방식을 혼합한 것으로 상위 단계에서 완료되지 못한 작업은 하위 단계로 전달되어 마지막 단계에서는 RR 방식을 사용하는 것이며, 이를 Multilevel Queue이라 한다."
     },
     {
       "qnum": 55,
@@ -784,7 +784,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 Hold and wait이다."
+      "explanation": "다음은 교착 상태 발생 조건 중 어떤 조건을 제거하기 위한 것인가? ㆍ프로세스가 수행되기 전에 필요한 모든 자원을 할당시 켜 준다. ㆍ자원이 점유되지 않은 상태에서만 자원을 요구하도록 한다.이며, 이를 Hold and wait이라 한다."
     },
     {
       "qnum": 57,
@@ -812,7 +812,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 ㉮ → ㉱ → ㉰ → ㉯이다."
+      "explanation": "운영체제의 발달 과정 순서가 옳은 것은? ㉮ 일괄 처리 시스템 ㉯ 분산 처리 시스템 ㉰ 다중 모드(Mode) 시스템 ㉱ 시분할 시스템이며, 이를 ㉮ → ㉱ → ㉰ → ㉯이라 한다."
     },
     {
       "qnum": 59,
@@ -835,7 +835,7 @@
         "형식 메시지",
         "가변 길이 메시지",
         "상대 길이 메시지",
-        "고정 길이 메시지 -"
+        "고정 길이 메시지"
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
@@ -868,7 +868,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 생략이다."
+      "explanation": "자료 사전에서 기호 “( )”의 의미이 생략이다."
     },
     {
       "qnum": 63,
@@ -882,7 +882,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 폭포수 모형이다."
+      "explanation": "소프트웨어 생명 주기 모형 중 Boehm이 제시한 고전적 생명 주기 모형으로서 선형 순차적 모델이라고도 하며, 타당성 검토, 계획, 요구사항 분석, 설계, 구현, 테스트, 유지보수의 단계를 통해 소프트웨어를 개발하는 것이며, 이를 폭포수 모형이라 한다."
     },
     {
       "qnum": 64,
@@ -910,7 +910,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 소프트웨어의 제작부터 운영까지 생산성을 높이기 위해 기술 적, 인간적인 요소에 대한 방법론을 제공한다.이다."
+      "explanation": "소프트웨어 공학에 대한 설명으로 가장 적합한이 소프트웨어의 제작부터 운영까지 생산성을 높이기 위해 기술 적, 인간적인 요소에 대한 방법론을 제공한다."
     },
     {
       "qnum": 66,
@@ -924,7 +924,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 FeedBack이다."
+      "explanation": "시스템의 구성 요소 중 출력된 결과가 예정된 목표를 만족시키지 못할 경우 목표 달성을 위해 반복 처리하는 것을 의미하는 것이며, 이를 FeedBack이라 한다."
     },
     {
       "qnum": 67,
@@ -952,13 +952,13 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 기능 모델링이다."
+      "explanation": "럼바우의 분석 기법 중 자료 흐름도(DFD)를 이용하는이 기능 모델링이다."
     },
     {
       "qnum": 69,
       "stem": "사용자의 요구사항 분석 작업이 어려운 이유로 가장 거리가 먼 것은?",
       "options": [
-        "개발자와 사용자 간의 지식이나 표현의 차이가 커서 상호 이해 정보처리기사 A형 가 쉽지 않다.",
+        "개발자와 사용자 간의 지식이나 표현의 차이가 커서 상호 이해가 쉽지 않다.",
         "사용자의 요구는 예외가 거의 없어 열거와 구조화가 어렵지 않다.",
         "사용자의 요구사항이 모호하고 부정확하며, 불완전하다.",
         "개발하고자 하는 시스템 자체가 복잡하다."
@@ -980,7 +980,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 신뢰성(Reliability)이다."
+      "explanation": "소프트웨어의 품질 목표 중에서 옳고 일관된 결과를 얻기 위하여 요구된 기능을 수행할 수 있는 정도를 나타내는 것이며, 이를 신뢰성(Reliability)이라 한다."
     },
     {
       "qnum": 71,
@@ -994,7 +994,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 Brooks의 법칙이다."
+      "explanation": "S/W Project 일정이 지연된다고 해서 Project 말기에 새로운 인원을 추가 투입하면 Project는 더욱 지연되게 된다는 내용과 관련되는 법칙이며, 이를 Brooks의 법칙이라 한다."
     },
     {
       "qnum": 72,
@@ -1008,7 +1008,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 COCOMO이다."
+      "explanation": "소프트웨어 비용 산정 기법 중 개발 유형으로 Organic, Semi- Detach, Embedded로 구분되는 것이며, 이를 COCOMO이라 한다."
     },
     {
       "qnum": 73,
@@ -1022,7 +1022,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 Fan-in이다."
+      "explanation": "소프트웨어 구조와 관련된 용어로, 주어진 한 모듈(Module)을 제어하는 상위 모듈 수를 나타내는 것이며, 이를 Fan-in이라 한다."
     },
     {
       "qnum": 74,
@@ -1050,7 +1050,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 유지보수이다."
+      "explanation": "소프트웨어 개발 중 가장 많은 비용이 요구되는 단계이 유지보수이다."
     },
     {
       "qnum": 76,
@@ -1087,12 +1087,12 @@
         "프로그램의 로직이 복잡하여 이해하기 어려운 프로그램을 의 미한다.",
         "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업 이 어려운 프로그램을 의미한다.",
         "오류(Error)가 없어 디버깅 과정이 필요없는 프로그램을 의미 한다.",
-        "차세대 언어를 사용해 인공지능적인 API를 제공함으로써 사 용자가 직접 작성한 프로그램을 의미한다. -"
+        "차세대 언어를 사용해 인공지능적인 API를 제공함으로써 사 용자가 직접 작성한 프로그램을 의미한다."
       ],
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업 이 어려운 프로그램을 의미한다.이다."
+      "explanation": "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업 이 어려운 프로그램을 의미한다."
     },
     {
       "qnum": 79,
@@ -1106,7 +1106,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 Process이다."
+      "explanation": "소프트웨어 프로젝트 관리를 효율적으로 수행하기 위한 3P 중 소프트웨어 프로젝트를 수행하기 위한 Task Framework의 고려와 가장 연관되는 것이며, 이를 Process이라 한다."
     },
     {
       "qnum": 80,
@@ -1120,7 +1120,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 사용자가 손쉽게 사용할 수 있다.이다."
+      "explanation": "공학적으로 잘 작성된 소프트웨어가 갖는 특성으로 가장 적합한이며, 이를 사용자가 손쉽게 사용할 수 있다.이라 한다."
     },
     {
       "qnum": 81,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 E 클래스이다."
+      "explanation": "IPv4 주소 구조 중 실험적인 주소로 공용으로는 사용되지 않는 클래스이며, 이를 E 클래스이라 한다."
     },
     {
       "qnum": 83,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 데이터 링크 계층이다."
+      "explanation": "OSI-7계층 중 물리 주소를 지정하고 흐름 제어 및 전송 제어를 수행하는 계층이며, 이를 데이터 링크 계층이라 한다."
     },
     {
       "qnum": 85,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 전송 오류 검출이다."
+      "explanation": "HDLC 프레임 구성에서 프레임 검사 시퀀스(FSC) 영역의 기능으로 옳은이며, 이를 전송 오류 검출이라 한다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 동기 응답 모드(SRM)이다."
+      "explanation": "동기 응답 모드(SRM)는 이 범주에 해당하지 않는다. 이 범주에는 정규 응답 모드(NRM)·비동기 응답 모드(ARM)·비동기 평형 모드(ABM) 등이 포함된다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 NAT이다."
+      "explanation": "외부 네트워크에서 알려진 공인 IP 주소와 사설 IP 주소를 사용하는 내부 네트워크에서 IP주소를 변환하는 것이며, 이를 NAT이라 한다."
     },
     {
       "qnum": 88,
@@ -1227,7 +1227,7 @@
         "패킷 교환은 저장-전달 방식을 사용한다.",
         "패킷 교환은 데이터그램 방식과 가상회선 방식으로 구분된다.",
         "데이터 그램은 연결형 서비스 방식으로 패킷을 전송하기 전에 미리 경로를 설정해야 한다.",
-        "가상 회선은 패킷이 전송되기 전에 논리적인 연결 설정이 이루 어져야 한다. 정보처리기사 A형"
+        "가상 회선은 패킷이 전송되기 전에 논리적인 연결 설정이 이루 어져야 한다."
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
@@ -1246,7 +1246,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 ARP이다."
+      "explanation": "TCP/IP 네트워크에서 IP 주소를 물리주소로 변환하는 것이며, 이를 ARP이라 한다."
     },
     {
       "qnum": 90,
@@ -1260,7 +1260,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 CSMA/CD LAN이다."
+      "explanation": "IEEE 802.3의 표준안 내용으로 옳은이 CSMA/CD LAN이다."
     },
     {
       "qnum": 91,
@@ -1274,7 +1274,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 polling이다."
+      "explanation": "멀티포인트(MultiPoint) 네트워크에서 단말로부터 제어국 방향으로 데이터를 전송하는 동작을 무엇이라고 하는 것이며, 이를 polling이라 한다."
     },
     {
       "qnum": 92,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 192.168.1.65이다."
+      "explanation": "사내망에서 192.168.1.24/26 주소를 사용하고 있는 PC가 있다. 회사의 정책상 default-gateway는 해당 subnet의 할당 가능한 영역 중에서 시작 IP address를 사용하도록 되어 있다면 PC의 default-gateway는 어떠한 IP address로 설정하여야 하는 것이며, 이를 192.168.1.65이라 한다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 성형(Star)이다."
+      "explanation": "중앙에 호스트 컴퓨터가 있고 이를 중심으로 터미널들이 연결되는 네트워크 구성 형태(Topology)이며, 이를 성형(Star)이라 한다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 흐름 제어나 순서 제어가 없어 전송속도가 빠르다.이다."
+      "explanation": "UDP 특성에 해당되는이 흐름 제어나 순서 제어가 없어 전송속도가 빠르다."
     },
     {
       "qnum": 95,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 FDM이다."
+      "explanation": "FDM는 이 범주에 해당하지 않는다. 이 범주에는 DPCM·DM·LPC 등이 포함된다."
     },
     {
       "qnum": 96,
@@ -1358,7 +1358,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 DCF이다."
+      "explanation": "무선 LAN의 매체 접근 제어 방식 중 경쟁에 의해 채널 접근을 제어하는 것이며, 이를 DCF이라 한다."
     },
     {
       "qnum": 98,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 16진 QAM이다."
+      "explanation": "한 번에 4개의 비트를 전송하려고 할 때 사용할 수 있는 디지털 변조이며, 이를 16진 QAM이라 한다."
     },
     {
       "qnum": 99,
@@ -1395,12 +1395,12 @@
         "RF",
         "L2CAP",
         "HID",
-        "RFCOMM -"
+        "RFCOMM"
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 RF이다."
+      "explanation": "블루투스(Bluetooth)의 프로토콜 스택에서 물리 계층을 규정하는 것이며, 이를 RF이라 한다."
     }
   ]
 }

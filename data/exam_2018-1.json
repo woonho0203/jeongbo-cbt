@@ -14,7 +14,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 tree이다."
+      "explanation": "그래프의 특수한 형태로 노드(Node) 와 선분(Branch)으로 되어 있고, 정점 사이에 사이클(Cycle)이 형성되어 있지 않으며, 자료 사이의 관계성이 계층 형식으로 나타나는 비선형 구조이며, 이를 tree이라 한다."
     },
     {
       "qnum": 2,
@@ -28,7 +28,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 점수＞＝90 AND 점수＜＝95이다."
+      "explanation": "다음 BETWEEN 연산의 의미와 동일한 것은? SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = “컴퓨터공학과”이며, 이를 점수＞＝90 AND 점수＜＝95이라 한다."
     },
     {
       "qnum": 3,
@@ -42,7 +42,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 4, 5, 3, 2, 1이다."
+      "explanation": "다음 자료에 대하여 삽입(insertion) 정렬 기법을 사용하여 오름차순으로 정렬하고자 한다. 1회전 후의 결과는? 5, 4, 3, 2, 1이며, 이를 4, 5, 3, 2, 1이라 한다."
     },
     {
       "qnum": 4,
@@ -70,7 +70,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 internal schema이다."
+      "explanation": "다음 설명에 해당하는 스키마는? 물리적 저장 장치의 입장에서 본 데이터베이스 구조로서 실제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현방법, 내부 레코드의 물리적 순서 등을 나타낸다.이며, 이를 internal schema이라 한다."
     },
     {
       "qnum": 6,
@@ -84,7 +84,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 Anomaly이다."
+      "explanation": "데이터베이스 내에서 데이터들이 불필요하게 중복되어 릴레이션 조작 시 예기치 못한 곤란한 현상을 무엇이라고 하는 것이며, 이를 Anomaly이라 한다."
     },
     {
       "qnum": 7,
@@ -98,7 +98,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 A B C ＋ * D / E -이다."
+      "explanation": "다음 전위식(prefix)을 후위식(postfix)으로 옳게 표현한 것은? - / * A ＋ B C D E이며, 이를 A B C ＋ * D / E이라 한다."
     },
     {
       "qnum": 8,
@@ -112,7 +112,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 일관성(consistency)이다."
+      "explanation": "트랜잭션의 특성 중 아래 내용에 해당하는 것은? 시스템이 가지고 있는 고정요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후에 같아야 한다.이며, 이를 일관성(consistency)이라 한다."
     },
     {
       "qnum": 9,
@@ -140,7 +140,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 데크(Deque)이다."
+      "explanation": "양 방향에서 입·출력이 가능한 선형 자료구조로 2개의 포인터를 이용하여 리스트의 양쪽 끝 모두에서 삽입·삭제가 가능한이며, 이를 데크(Deque)이라 한다."
     },
     {
       "qnum": 11,
@@ -210,7 +210,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 즉각 갱신 기법이다."
+      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복이 즉각 갱신 기법이다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 Cardinality이다."
+      "explanation": "What is the quantity of tuples in consist of the relation이며, 이를 Cardinality이라 한다."
     },
     {
       "qnum": 17,
@@ -294,7 +294,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 보동소수점 데이터(floating point data)이다."
+      "explanation": "다음과 같이 표현되는 바이트 머신의 데이터 형식의 명칭으로 가장 옳은 것은? 부호(sign), 지수(exponent), 가수(mantissa)이며, 이를 보동소수점 데이터(floating point data)이라 한다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 AC ⟵ AC＋MBR이다."
+      "explanation": "다음 ADD 명령어의 마이크로 오퍼레이션에서 t2시간에 수행되어야 할 가장 적합한 동작(A)는? (단, MAR : Memory Address Register, MBR : Memory Buffer Register, M(addr) : Memory, AC : 누산기이다.) t₀ : MAR ← MBR(addr) t₁ : MBR ← M(MAR) t₂ : ( A )이며, 이를 AC ⟵ AC＋MBR이라 한다."
     },
     {
       "qnum": 23,
@@ -322,7 +322,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 상태 : 14가지, 플립플롭 : 4개이다."
+      "explanation": "모듈러스-14 카운터는 몇 가지의 상태를 가지며, 이 카운터를 구성하기 위한 최소의 플립플롭의 수는 몇 개인이며, 이를 상태 : 14가지, 플립플롭 : 4개이라 한다."
     },
     {
       "qnum": 24,
@@ -350,7 +350,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 0.1이다."
+      "explanation": "전체 기억장치 액세스 횟수가 50 이고, 원하는 데이터가 캐시에 있는 횟수가 45라고 할 때, 캐시의 미스율(miss ratio)이며, 이를 0.1이라 한다."
     },
     {
       "qnum": 26,
@@ -364,7 +364,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 Daisy Chain이다."
+      "explanation": "입출력장치의 인터럽트 우선순위를 하드웨어적으로 결정하는이 Daisy Chain이다."
     },
     {
       "qnum": 27,
@@ -378,7 +378,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 세그먼트 레지스터이다."
+      "explanation": "일반 응용프로그램이 직접 접근할 수 없는 레지스터이 세그먼트 레지스터이다."
     },
     {
       "qnum": 28,
@@ -406,7 +406,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 메모리와 입출력 디바이스 사이에 데이터의 주고받음이 직접 행해지는 기법이다.이다."
+      "explanation": "메모리와 입출력 디바이스 사이에 데이터의 주고받음이 직접 행해지는 기법이다."
     },
     {
       "qnum": 30,
@@ -420,7 +420,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 자기 보수가 가능하다.이다."
+      "explanation": "소형계산기(calculator)에서 BCD 코드 대신 excess-3 코드를 많이 사용하는 가장 큰 이유이며, 이를 자기 보수가 가능하다.이라 한다."
     },
     {
       "qnum": 31,
@@ -448,7 +448,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 3.88이다."
+      "explanation": "세그먼트에서 부연산을 수행하는데 20ns가 걸리고, 파이프라인은 4 세그먼트로 구성되어 있으며 100개의 테스크를 순차적으로 수행하는 파이프라인 시스템은 비파이프라인 시스템에 비해 약 몇 배의 속도 향상을 얻을 수 있는 것이며, 이를 3.88이라 한다."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 ［log 2 N］이다."
+      "explanation": "N 가지의 정보를 2진수 코드로 부호화 하는데 필요한 비트수를 계산하는 방법으로 옳은이며, 이를 ［log 2 N］이라 한다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 8이다."
+      "explanation": "64K DRAM 기억소자를 이용하여 64K바이트 주기억장치를 구성하고자 한다. 이 때 64K DRAM을 몇 개 사용하여야 하는가? (단, K＝kilo이다.)이며, 이를 8이라 한다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Carry Look ahead Adder이다."
+      "explanation": "병렬 가산기를 구성하는 각각의 전가산기 출력 캐리를 미리 예측 및 처리하여 리플캐리 지연을 제거한 가산기로 가장 옳은이며, 이를 Carry Look ahead Adder이라 한다."
     },
     {
       "qnum": 36,
@@ -518,7 +518,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 AC ⟵ AC×M[A]이다."
+      "explanation": "1주소 명령어 형식을 따르는 마이크로명령어 MUL A를 가장 바르게 표현한 것은? (단, 보기의 M[A]는 기억장치 A번지의 내용을 의미한다.)이며, 이를 AC ⟵ AC×M[A]이라 한다."
     },
     {
       "qnum": 38,
@@ -546,7 +546,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 mask 동작이다."
+      "explanation": "AND 마이크로 동작과 가장 유사한이 mask 동작이다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 write-through이다."
+      "explanation": "캐시메모리의 기록정책에서 쓰기(write) 동작이 이루어질 때마다 캐시메모리와 주기억장치의 내용을 동시에 갱신하는 방식으로 가장 옳은이며, 이를 write-through이라 한다."
     },
     {
       "qnum": 41,
@@ -588,7 +588,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 RR이다."
+      "explanation": "Preemptive Scheduling 방식에 해당하는이 RR이다."
     },
     {
       "qnum": 43,
@@ -616,7 +616,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 9이다."
+      "explanation": "다음과 같은 Task List에서 SJF방식으로 Scheduling할 경우 Task 2의 종료 시간을 구하면? (단, 발생되는 Overhead는 무시한다.)이며, 이를 9이라 한다."
     },
     {
       "qnum": 45,
@@ -630,7 +630,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 chmod이다."
+      "explanation": "UNIX에서 사용자에 대한 파일의 접근을 제한하는데 사용되는 명령어이며, 이를 chmod이라 한다."
     },
     {
       "qnum": 46,
@@ -644,7 +644,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 Thrashing이다."
+      "explanation": "프로세스들 간의 메모리 경쟁으로 인하여 지나치게 페이지폴트가 발생하여 전체 시스템의 성능이 저하되는 현상이며, 이를 Thrashing이라 한다."
     },
     {
       "qnum": 47,
@@ -658,7 +658,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 고정분할 기억장치 할당이다."
+      "explanation": "주기억장치의 사용자 영역을 일정 수의 고정된 크기로 분할하여 준비상태 큐에서 준비 중인 프로그램을 각 영역에 할당하여 수행하는 것이며, 이를 고정분할 기억장치 할당이라 한다."
     },
     {
       "qnum": 48,
@@ -672,7 +672,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 Real Time Processing이다."
+      "explanation": "한정된 시간 내 자료를 분석하여 정해진 시간에 반드시 작업을 처리하여야 하는 시스템이며, 이를 Real Time Processing이라 한다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 SLTF이다."
+      "explanation": "SLTF는 이 범주에 해당하지 않는다. 이 범주에는 C-SCAN·FCFS·SSTF 등이 포함된다."
     },
     {
       "qnum": 50,
@@ -700,7 +700,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 Workout이다."
+      "explanation": "Workout는 이 범주에 해당하지 않는다. 이 범주에는 Dispatch·Spooling·Wake up 등이 포함된다."
     },
     {
       "qnum": 51,
@@ -728,7 +728,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 ㉰→㉯→㉱→㉮이다."
+      "explanation": "운영체제를 자원 관리자(Resource Manager)라는 관점으로 접근했을 때, 자원들을 관리하는 과정을 순서대로 가장 옳게 나열한 것은? ㉮ 프로세스에 배당된 자원을 회수하는 과정 ㉯ 어떤 프로세스에게 언제, 어떤 자원을 할당 할 것인가를 결정하는 분배 정책 수립 과정 ㉰ 시스템 내 모든 자원들의 상태를 파악하는 과정 ㉱ 자원을 배당하고 운영함으로써 수립된 정책을 수행 하는 과정이며, 이를 ㉰→㉯→㉱→㉮이라 한다."
     },
     {
       "qnum": 53,
@@ -742,7 +742,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 NUR이다."
+      "explanation": "페이지 교체기법 중 LRU와 비슷한 알고리즘 이며, 최근에 사용하지 않은 페이지를 교체하는 기법으로 시간 오버헤드를 줄이기 위해 각 페이지마다 참조 비트와 변형 비트를 두는 교체이며, 이를 NUR이라 한다."
     },
     {
       "qnum": 54,
@@ -770,7 +770,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 Time Sharing System이다."
+      "explanation": "운영체제의 운용 기법 종류 중 다음 설명에 가장 부합하는 것은? CPU의 시간을 각 사용자에게 균등하게 분할하여 사용하는 시스템으로 모든 컴퓨터 사용자에게 똑같은 서비스를 하는 것을 목표로 하고 있다. CPU의 전체 사용 시간을 작은 작업 시간량(time slice)으로 나누어서 그 시간 동안만 번갈아 가면서 CPU를 할당하여 각 작업을 처리한다.이며, 이를 Time Sharing System이라 한다."
     },
     {
       "qnum": 56,
@@ -812,7 +812,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 36이다."
+      "explanation": "FIFO 스케줄링에서 3개의 작업 도착시간과 CPU 사용시간(burst time)이 다음 표와 같다. 이 때 모든 작업들의 평균 반환시간(turn around time)은? (단, 소수점 이하는 반올림 처리한다.)이며, 이를 36이라 한다."
     },
     {
       "qnum": 59,
@@ -826,7 +826,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 Is이다."
+      "explanation": "UNIX에서 현재 디렉토리 내의 파일 목록을 확인하는 명령어이며, 이를 Is이라 한다."
     },
     {
       "qnum": 60,
@@ -840,7 +840,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 트리 디렉토리 구조이다."
+      "explanation": "다음 설명에 해당하는 디렉토리 구조는? - UNIX에서 사용하는 디렉토리 구조이다. - 각 디렉토리는 서브디렉토리나 파일을 가질 수 있다. - 디렉토리의 생성과 파괴가 비교적 용이하다. - 디렉토리의 탐색은 포인터를 사용하며, 경로명은 절대와 상대 경로명을 사용한다.이며, 이를 트리 디렉토리 구조이라 한다."
     },
     {
       "qnum": 61,
@@ -868,7 +868,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 20개월이다."
+      "explanation": "LOC기법에 의하여 예측된 총 라인수가 36,000라인, 개발에 참여할 프로그래머가 6명, 프로그래머들의 평균 생산성이 월간 300라인일 때 개발에 소요되는 기간을 계산한 결과로 가장 옳은이며, 이를 20개월이라 한다."
     },
     {
       "qnum": 63,
@@ -882,7 +882,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 IDL이다."
+      "explanation": "CORBA에서 인터페이스 정의 언어이 IDL이다."
     },
     {
       "qnum": 64,
@@ -896,7 +896,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 인터페이스이다."
+      "explanation": "소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 가장 관계있는 것은? - 소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨어를 실행하는 하드웨어 - 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어 - 순서적 연산에 의해 소프트웨어를 실행하는 절차이며, 이를 인터페이스이라 한다."
     },
     {
       "qnum": 65,
@@ -924,7 +924,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 Corrective maintenance이다."
+      "explanation": "유지보수의 종류 중 소프트웨어 테스팅 동안 밝혀지지 않은 모든 잠재적인 오류를 수정하기 위한 보수 형태로서 오류의 수정과 진단 과정이 포함되는 것이며, 이를 Corrective maintenance이라 한다."
     },
     {
       "qnum": 67,
@@ -952,7 +952,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 객체 모델링, 동적 모델링, 기능 모델링이다."
+      "explanation": "럼바우(Rumbaugh)의 객체지향 분석에서 사용되는 분석 활동을 가장 옳게 나열한이며, 이를 객체 모델링, 동적 모델링, 기능 모델링이라 한다."
     },
     {
       "qnum": 69,
@@ -966,7 +966,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 위험 요소 징후들에 대하여 계속적으로 인지하는 것이다."
+      "explanation": "위험 모니터링의 의미를 가장 잘 설명한이 위험 요소 징후들에 대하여 계속적으로 인지하는 것이다."
     },
     {
       "qnum": 70,
@@ -980,7 +980,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 원이다."
+      "explanation": "자료 흐름도(DFD)에서 “Process\"의 표기 형태이 원이다."
     },
     {
       "qnum": 71,
@@ -1022,7 +1022,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 cohesion이다."
+      "explanation": "한 모듈 내의 각 구성 요소들이 공통의 목적을 달성하기 위하여 서로 얼마나 관련이 있는지의 기능적 연관의 정도를 나타내는 것이며, 이를 cohesion이라 한다."
     },
     {
       "qnum": 74,
@@ -1036,7 +1036,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 Encapsulation이다."
+      "explanation": "객체지향에서 정보 은닉과 가장 밀접한 관계가 있는이 Encapsulation이다."
     },
     {
       "qnum": 75,
@@ -1050,7 +1050,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 성능 검사이다."
+      "explanation": "시스템 검사의 종류 중 통합 시스템의 맥락에서 소프트웨어의 실시간 성능을 검사하며, 모든 단계에서 수행되는 것이며, 이를 성능 검사이라 한다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 SLIM이다."
+      "explanation": "다음의 자동화 예측 도구들 중 Rayleigh-Norden 곡선과 Putnam의 예측모델에 기반을 둔이며, 이를 SLIM이라 한다."
     },
     {
       "qnum": 77,
@@ -1078,7 +1078,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 data → stamp → control → common → content이다."
+      "explanation": "결합도(Coupling) 단계를 약한 순서에서 강한 순서로 가장 옳게 표시한이며, 이를 data → stamp → control → common → content이라 한다."
     },
     {
       "qnum": 78,
@@ -1092,7 +1092,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 폭포수 모형(Waterfall Model)이다."
+      "explanation": "다음 설명에 해당하는 생명주기 모형으로 가장 옳은 것은? 가장 오래된 모형으로 많은 적용 사례가 있지만 요구사항의 변경이 어려우며, 각 단계의 결과가 확인되어야지만 다음 단계로 넘어간다. 선형 순차적 모형으로 고전적 생명주기 모형이라고도 한다.이며, 이를 폭포수 모형(Waterfall Model)이라 한다."
     },
     {
       "qnum": 79,
@@ -1120,7 +1120,7 @@
       ],
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 하드웨어의 성능이다."
+      "explanation": "Software Project의 비용 결정 요소와 가장 관련이 적은이며, 이를 하드웨어의 성능이라 한다."
     },
     {
       "qnum": 81,
@@ -1148,7 +1148,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 버스형이다."
+      "explanation": "다음 LAN의 네트워크 토폴로지는 어떤 형인이 버스형이다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 STX이다."
+      "explanation": "회선을 제어하기 위한 제어 문자 중 실제 전송한 데이터 그룹의 시작임을 의미하는 것이며, 이를 STX이라 한다."
     },
     {
       "qnum": 84,
@@ -1176,7 +1176,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 3배이다."
+      "explanation": "8진 PSK의 오류 확률은 2진 PSK 오류 확률의 몇 배인이며, 이를 3배이라 한다."
     },
     {
       "qnum": 85,
@@ -1190,7 +1190,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 시분할 다중화이다."
+      "explanation": "한 전송로의 데이터 전송 시간을 일정한 시간폭(time slot)으로 나누어 각 부 채널에 차례로 분배하는 방식의 다중화이며, 이를 시분할 다중화이라 한다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 전송 계층이다."
+      "explanation": "OSI 7계층에서 데이터 분할과 재조립, 흐름제어, 오류제어 등을 담당하는 계층이며, 이를 전송 계층이라 한다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 ARP이다."
+      "explanation": "네트워크에 연결된 시스템은 논리주소를 각지고 있으며, 이 논리주소를 물리주소로 변환시켜 주는 것이며, 이를 ARP이라 한다."
     },
     {
       "qnum": 88,
@@ -1232,7 +1232,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 패킷 계층이다."
+      "explanation": "X.25에서 오류 제어와 흐름 제어, 가상 회선의 설정과 해제, 다중화 기능, 망 고장 발생 시 회복 메커니즘을 규정하는 계층이며, 이를 패킷 계층이라 한다."
     },
     {
       "qnum": 89,
@@ -1288,7 +1288,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 192.168.1.127이다."
+      "explanation": "192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 3개의 subnet으로 나누고 ip subnet-zero를 적용했다. 이 때 서브네팅 된 네트워크 중 2번째 네트워크의 broadcast IP 주소이며, 이를 192.168.1.127이라 한다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 Go-back-N ARQ이다."
+      "explanation": "다음 설명에 해당되는 ARQ 방식은? 데이터 프레임을 연속적으로 전송하는 과정에서 NAK를 수신하게 되면, 오류가 발생한 프레임 이후에 전송된 모든 데이터 프레임을 재전송하는 방식이다.이며, 이를 Go-back-N ARQ이라 한다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 IEEE 802.11이다."
+      "explanation": "IEEE에서 규정한 무선 LAN 규격이 IEEE 802.11이다."
     },
     {
       "qnum": 95,
@@ -1344,7 +1344,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 OSPF(Open Shortest Path First)이다."
+      "explanation": "내부라우팅 프로토콜의 일종으로 링크상태 알고리즘을 사용하는 대규모 네트워크에 적합한이며, 이를 OSPF(Open Shortest Path First)이라 한다."
     },
     {
       "qnum": 97,
@@ -1358,7 +1358,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 QAM이다."
+      "explanation": "진폭과 위상을 변화시켜 정보를 전달하는 디지털 변조이 QAM이다."
     },
     {
       "qnum": 98,
@@ -1386,7 +1386,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Polling이다."
+      "explanation": "불균형적인 멀티포인트 링크 구성 중 주 스테이션이 각 부 스테이션에게 데이터 전송을 요청하는 회선 제어이며, 이를 Polling이라 한다."
     },
     {
       "qnum": 100,
@@ -1400,7 +1400,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 WCM이다."
+      "explanation": "WCM는 이 범주에 해당하지 않는다. 이 범주에는 NRM·ABM·ARM 등이 포함된다."
     }
   ]
 }

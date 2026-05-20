@@ -14,7 +14,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 객체 모형 → 동적 모형 → 기능 모형이다."
+      "explanation": "럼바우(Rumbaugh)의 객체지향 분석 절차를 가장 바르게 나열한이며, 이를 객체 모형 → 동적 모형 → 기능 모형이라 한다."
     },
     {
       "qnum": 2,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 미들웨어이다."
+      "explanation": "클라이언트와 서버 간의 통신을 담당하는 시스템 소프트웨어를 무엇이라고 하는 것이며, 이를 미들웨어이라 한다."
     },
     {
       "qnum": 7,
@@ -112,7 +112,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 fan-in : 3, fan-out : 2이다."
+      "explanation": "다음은 어떤 프로그램 구조를 나타낸다. 모듈 F에서의 fan-in과 fan-out의 수는 얼마인이며, 이를 fan-in : 3, fan-out : 2이라 한다."
     },
     {
       "qnum": 9,
@@ -126,7 +126,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 ㉠ → ㉡ → ㉢ → ㉣이다."
+      "explanation": "요구사항 개발 프로세스의 순서로 옳은 것은? ㉠ 도출(Elicitation) ㉡ 분석(Analysis) ㉢ 명세(Specification) ㉣ 확인(Validation)이며, 이를 ㉠ → ㉡ → ㉢ → ㉣이라 한다."
     },
     {
       "qnum": 10,
@@ -154,7 +154,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "정답은 Dependency이다."
+      "explanation": "UML 모델에서 한 사물의 명세가 바뀌면 다른 사물에 영향을 주며, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계이며, 이를 Dependency이라 한다."
     },
     {
       "qnum": 12,
@@ -177,7 +177,7 @@
         "메시지는 이해하기 쉬워야 한다.",
         "오류로부터 회복을 위한 구체적인 설명이 제공되어야 한다.",
         "오류로 인해 발생될 수 있는 부정적인 내용을 적극적으로 사용 자들에게 알려야 한다.",
-        "소리나 색의 사용을 줄이고 텍스트로만 전달하도록 한다. -"
+        "소리나 색의 사용을 줄이고 텍스트로만 전달하도록 한다."
       ],
       "subject": 1,
       "subjectName": "소프트웨어 설계",
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정답은 Entity-Relationship Diagram이다."
+      "explanation": "정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델 링 언어이며, 이를 Entity-Relationship Diagram이라 한다."
     },
     {
       "qnum": 16,
@@ -238,7 +238,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "정답은 Flow이다."
+      "explanation": "Flow는 이 범주에 해당하지 않는다. 이 범주에는 Pinch·Press·Flick 등이 포함된다."
     },
     {
       "qnum": 18,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "정답은 인터페이스 분리 원칙이다."
+      "explanation": "클라이언트는 자신이 사용하지 않는 메소드와 의존관계 를 맺으면 안 된다. 클라이언트가 사용하지 않는 인터페이스 때문에 영향을 받아서는 안 된다. 이를 인터페이스 분리 원칙이라 한다."
     },
     {
       "qnum": 20,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "정답은 알고리즘 수행시간이 입력 데이터 수와 관계없이 일정이다."
+      "explanation": "알고리즘 시간 복잡도 O(1)이 의미하는이 알고리즘 수행시간이 입력 데이터 수와 관계없이 일정이다."
     },
     {
       "qnum": 23,
@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "정답은 A이다."
+      "explanation": "다음 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것이며, 이를 A이라 한다."
     },
     {
       "qnum": 25,
@@ -406,7 +406,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 D, B, C, A이다."
+      "explanation": "순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력한 후 출력한 결과로 불가능한이며, 이를 D, B, C, A이라 한다."
     },
     {
       "qnum": 30,
@@ -415,7 +415,7 @@
         "알고리즘 오류에 따른 원치 않는 결과",
         "탈출구가 없는 반복문의 사용",
         "모듈 간의 비정상적 상호 작용으로 인한 원치 않는 결과",
-        "틀린 계산 수식에 의한 잘못된 결과 -"
+        "틀린 계산 수식에 의한 잘못된 결과"
       ],
       "subject": 2,
       "subjectName": "소프트웨어 개발",
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 6, 3, 5, 7, 9이다."
+      "explanation": "다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬할 경우 Pass 2의 결과는? 9, 6, 7, 3, 5이며, 이를 6, 3, 5, 7, 9이라 한다."
     },
     {
       "qnum": 32,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "정답은 Risk Analysis이다."
+      "explanation": "프로젝트에 내재된 위험 요소를 인식하고 그 영향을 분석하여 이를 관리하는 활동으로서, 프로젝트를 성공시키기 위하여 위험 요소를 사전에 예측, 대비하는 모든 기술과 활동을 포함하는 것이며, 이를 Risk Analysis이라 한다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "정답은 Quick Sort이다."
+      "explanation": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)  을 사용하며 최악의 경우 회의 비교를 수행해야 하는   정렬(Sort)이며, 이를 Quick Sort이라 한다."
     },
     {
       "qnum": 36,
@@ -518,7 +518,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "정답은 Stack이다."
+      "explanation": "순서가 있는 리스트에서 데이터의 삽입(Push), 삭제(Pop)가 한 쪽 끝에서 일어나며 LIFO(Last_In-First-Out)의 특징을 가지는 자료 구조이며, 이를 Stack이라 한다."
     },
     {
       "qnum": 38,
@@ -546,7 +546,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "정답은 3이다."
+      "explanation": "다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 14를 찾을 경우 비교되는 횟수는? 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15이며, 이를 3이라 한다."
     },
     {
       "qnum": 40,
@@ -560,7 +560,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "정답은 정의 기능이다."
+      "explanation": "DBMS의 필수 기능 중 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능이며, 이를 정의 기능이라 한다."
     },
     {
       "qnum": 41,
@@ -574,7 +574,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 Atomicity이다."
+      "explanation": "트랜잭션의 연산은 데이터베이스에 모두 반영되든지 아 니면 전혀 반영되지 않아야 한다. 이를 Atomicity이라 한다."
     },
     {
       "qnum": 42,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 이행 규칙이다."
+      "explanation": "다음에 해당하는 함수 종속의 추론 규칙은? X → Y이고 Y → Z이면 X → Z이다.이며, 이를 이행 규칙이라 한다."
     },
     {
       "qnum": 46,
@@ -639,7 +639,7 @@
         "저장 레코드 양식 설계",
         "레코드 집중의 분석 및 설계",
         "접근 경로 설계",
-        "목표 DBMS에 맞는 스키마 설계 -"
+        "목표 DBMS에 맞는 스키마 설계"
       ],
       "subject": 3,
       "subjectName": "데이터베이스 구축",
@@ -672,7 +672,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 ㉠ UPDATE, ㉡ ON이다."
+      "explanation": "DBA가 사용자 PARK에게 테이블 [STUDENT]의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸을 알맞게 채운 것은? SQL＞GRANT ㉠ ㉡ STUDENT TO PARK;이며, 이를 ㉠ UPDATE, ㉡ ON이라 한다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "정답은 반정규화이다."
+      "explanation": "정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법이며, 이를 반정규화이라 한다."
     },
     {
       "qnum": 50,
@@ -700,7 +700,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 결정자이면서 후보키가 아닌 것 제거이다."
+      "explanation": "3NF에서 BCNF가 되기 위한 조건이 결정자이면서 후보키가 아닌 것 제거이다."
     },
     {
       "qnum": 51,
@@ -714,7 +714,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "정답은 인덱스(Index)이다."
+      "explanation": "데이터베이스 성능에 많은 영향을 주는 DBMS의 구성 요소로 테이블 과 클러스터에 연관되어 독립적인 저장 공간을 보유하며, 데이터베 이스에 저장된 자료를 더욱 빠르게 조회하기 위하여 사용되는 것이며, 이를 인덱스(Index)이라 한다."
     },
     {
       "qnum": 52,
@@ -742,7 +742,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "정답은 개체 무결성이다."
+      "explanation": "릴레이션에서 기본 키를 구성하는 속성은 널(Null) 값이나 중복 값을 가질 수 없다는 것을 의미하는 제약 조건이며, 이를 개체 무결성이라 한다."
     },
     {
       "qnum": 54,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정답은 Operation이다."
+      "explanation": "데이터 모델의 구성 요소 중 데이터 구조에 따라 개념 세계나 컴퓨터 세계에서 실제로 표현된 값들을 처리하는 작업을 의미하는 것이며, 이를 Operation이라 한다."
     },
     {
       "qnum": 58,
@@ -863,12 +863,12 @@
         "FTP 바운스 공격",
         "SQL 삽입",
         "버퍼 오버플로",
-        "디렉토리 접근 공격 -"
+        "디렉토리 접근 공격"
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 버퍼 오버플로이다."
+      "explanation": "다음 내용이 설명하는 소프트웨어 취약점은? 메모리를 다루는 데 오류가 발생하여 잘못된 동작을 하는 프로그램 취약점이며, 이를 버퍼 오버플로이라 한다."
     },
     {
       "qnum": 63,
@@ -896,7 +896,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 (ㄴ) → (ㄹ) → (ㅂ) → (ㅁ) → (ㄷ) → (ㄱ)이다."
+      "explanation": "결합도가 낮은 것부터 높은 순으로 옳게 나열한 것은? (ㄱ) 내용 결합도 (ㄴ) 자료 결합도 (ㄷ) 공통 결합도 (ㄹ) 스탬프 결합도 (ㅁ) 외부 결합도 (ㅂ) 제어 결합도이며, 이를 (ㄴ) → (ㄹ) → (ㅂ) → (ㅁ) → (ㄷ) → (ㄱ)이라 한다."
     },
     {
       "qnum": 65,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 ICMP(Internet Control Message Protocol)이다."
+      "explanation": "TCP/IP 계층 구조에서 IP의 동작 과정에서의 전송 오류가 발생하는 경우에 대비해 오류 정보를 전송하는 목적으로 사용하는 프로토콜이며, 이를 ICMP(Internet Control Message Protocol)이라 한다."
     },
     {
       "qnum": 68,
@@ -980,7 +980,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "정답은 트랜스포트 계층이다."
+      "explanation": "TCP/IP 프로토콜에서 TCP가 해당하는 계층이 트랜스포트 계층이다."
     },
     {
       "qnum": 71,
@@ -994,7 +994,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 물리 계층이다."
+      "explanation": "OSI 7계층 모델에서 전송에 필요한 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성을 정의한 계층이며, 이를 물리 계층이라 한다."
     },
     {
       "qnum": 72,
@@ -1022,7 +1022,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 NO.5이다."
+      "explanation": "메모리 관리 기법 중 Worst Fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가? 영역 번호 메모리 크기 사용 여부 NO.1 8K FREE NO.2 12K FREE NO.3 10K IN USE NO.4 20K IN USE NO.5 16K FREE이며, 이를 NO.5이라 한다."
     },
     {
       "qnum": 74,
@@ -1036,7 +1036,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "정답은 Coincidental Cohesion이다."
+      "explanation": "응집도의 종류 중 서로 간에 어떠한 의미 있는 연관 관계도 지니지 않은 기능 요소로 구성되는 경우이며, 서로 다른 상위 모듈에 의해 호출되어 처리 상의 연관성이 없는 서로 다른 기능을 수행하는 경우의 응집도이며, 이를 Coincidental Cohesion이라 한다."
     },
     {
       "qnum": 75,
@@ -1045,12 +1045,12 @@
         "A, B, C 출력이 반복된다.",
         "A, B, C",
         "A, B, C, D 출력이 반복된다.",
-        "A, B, C, D 까지만 출력된다. -"
+        "A, B, C, D 까지만 출력된다."
       ],
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 A, B, C 출력이 반복된다.이다."
+      "explanation": "정답은 A, B, C 출력이 반복된다."
     },
     {
       "qnum": 76,
@@ -1064,7 +1064,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 ㉠, ㉥, ㉣, ㉢, ㉡, ㉤이다."
+      "explanation": "C 언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은? ㉠ ( ) ㉡ == ㉢ < ㉣ << ㉤ II ㉥ /이며, 이를 ㉠, ㉥, ㉣, ㉢, ㉡, ㉤이라 한다."
     },
     {
       "qnum": 77,
@@ -1092,7 +1092,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "정답은 1이다."
+      "explanation": "C 언어에서 정수 변수 a, b에 각각 1, 2가 저장되어 있을 때 다음 식의 연산 결과로 옳은 것은? a < b + 2 && a << 1 <= b이다."
     },
     {
       "qnum": 79,
@@ -1120,7 +1120,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "정답은 문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다.이다."
+      "explanation": "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자 열로 바꿔주는 변환함수 등이 있다이다."
     },
     {
       "qnum": 81,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 MQTT이다."
+      "explanation": "TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 것이며, 이를 MQTT이라 한다."
     },
     {
       "qnum": 82,
@@ -1148,7 +1148,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Organic이다."
+      "explanation": "COCOMO Model 중 기관 내부에서 개발된 중·소규모의 소프트웨어 로 일괄 자료 처리나 과학기술 계산용, 비즈니스 자료 처리용으로 5만 라인 이하의 소프트웨어를 개발하는 유형이며, 이를 Organic이라 한다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 Smurfing이다."
+      "explanation": "IP 또는 ICMP의 특성을 악용하여 특정 사이트에 집중적으로 데이터 를 보내 네트워크 또는 시스템의 상태를 불능으로 만드는 공격이며, 이를 Smurfing이라 한다."
     },
     {
       "qnum": 84,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 DAS이다."
+      "explanation": "하드디스크와 같은 데이터 저장장치를 호스트버스 어댑 터에 직접 연결하는 방식 저장장치와 호스트 기기 사이에 네트워크 디바이스가 있지 말아야 하고 직접 연결하는 방식으로 구성. 이를 DAS이라 한다."
     },
     {
       "qnum": 86,
@@ -1204,7 +1204,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 AES이다."
+      "explanation": "AES는 이 범주에 해당하지 않는다. 이 범주에는 MD4·MD5·SHA-1 등이 포함된다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 Bell-Lapadula Model이다."
+      "explanation": "군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계 가 구분된 정보를 보호하기 위해 사용 자신의 권한보다 낮은 보안 레벨 권한을 가진 경우에는 높은 보안 레벨의 문서를 읽을 수 없고 자신의 권한보 다 낮은 수준의 문서만 읽을 수 있다. 이를 Bell-Lapadula Model이라 한다."
     },
     {
       "qnum": 88,
@@ -1227,7 +1227,7 @@
         "SQL Injection은 임의로 작성한 SQL 구문을 애플리케이션에 삽입하는 공격 방식이다.",
         "SQL Injection 취약점이 발생하는 곳은 주로 웹 애플리케이션 과 데이터베이스가 연동되는 부분이다.",
         "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.",
-        "로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다. -"
+        "로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다."
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
@@ -1246,7 +1246,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 Honeypot이다."
+      "explanation": "1990년대 David Clock이 처음 제안하였다. 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. 이를 Honeypot이라 한다."
     },
     {
       "qnum": 90,
@@ -1260,7 +1260,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 Ping of Death이다."
+      "explanation": "다음 설명에 해당하는 공격 기법은? 시스템 공격 기법 중 하나로 허용 범위 이상의 ICMP 패킷 을 전송하여 대상 시스템의 네트워크를 마비시킨다.이며, 이를 Ping of Death이라 한다."
     },
     {
       "qnum": 91,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Ransomware이다."
+      "explanation": "개인과 기업, 국가적으로 큰 위협이 되고 있는 주요 사이 버 범죄 중 하나로, Snake, Darkside 등 시스템을 잠그거 나 데이터를 암호화해 사용할 수 없도록 하고 이를 인질 로 금전을 요구하는 데 사용되는 악성 프로그램이다.이며, 이를 Ransomware이라 한다."
     },
     {
       "qnum": 93,
@@ -1302,7 +1302,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "정답은 RSA이다."
+      "explanation": "소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘이며, 이를 RSA이라 한다."
     },
     {
       "qnum": 94,
@@ -1316,7 +1316,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 스택가드이다."
+      "explanation": "메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정 하여 프로그램 실행을 중단하는 것이며, 이를 스택가드이라 한다."
     },
     {
       "qnum": 95,
@@ -1330,7 +1330,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "정답은 Ⓐ-Ⓓ-Ⓒ-Ⓑ 순으로 반복이다."
+      "explanation": "소프트웨어 개발 모델 중 나선형 모델의 4가지 주요 활동이 순서대로 나열된 것은? Ⓐ 계획 수립 Ⓑ 고객 평가 Ⓒ 개발 및 검증 Ⓓ 위험 분석이며, 이를 Ⓐ-Ⓓ-Ⓒ-Ⓑ 순으로 반복이라 한다."
     },
     {
       "qnum": 96,
@@ -1372,7 +1372,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "정답은 Sqoop이다."
+      "explanation": "하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된이며, 이를 Sqoop이라 한다."
     },
     {
       "qnum": 99,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "정답은 LOC기법이다."
+      "explanation": "S/W 각 기능의 원시 코드 라인수의 비관치, 낙관치, 기대치를 측정하 여 예측치를 구하고 이를 이용하여 비용을 산정하는 것이며, 이를 LOC기법이라 한다."
     },
     {
       "qnum": 100,
@@ -1395,7 +1395,7 @@
         "프로젝트 수행 시 예상되는 변화를 배제하고 신속히 진행하여 야 한다.",
         "프로젝트에 최적화된 개발 방법론을 적용하기 위해 절차, 산출 물 등을 적절히 변경하는 활동이다.",
         "관리 측면에서의 목적 중 하나는 최단기간에 안정적인 프로젝 트 진행을 위한 사전 위험을 식별하고 제거하는 것이다.",
-        "기술적 측면에서의 목적 중 하나는 프로젝트에 최적화된 기술 요소를 도입하여 프로젝트 특성에 맞는 최적의 기법과 도구를 사용하는 것이다. -"
+        "기술적 측면에서의 목적 중 하나는 프로젝트에 최적화된 기술 요소를 도입하여 프로젝트 특성에 맞는 최적의 기법과 도구를 사용하는 것이다."
       ],
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
