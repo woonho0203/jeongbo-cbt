@@ -15,7 +15,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 2,
       "explanation": "'기존 시스템과 신규 시스템의 성능 비교'은 요구사항 관리 도구에 대한 틀린 설명이다. 올바른 설명으로는 '요구사항 변경으로 인한 비용 편익 분석', '요구사항 변경의 추적' 등이 있다.",
-      "image": "images/2021-2_q1.png"
+      "image": null
     },
     {
       "qnum": 2,
@@ -479,7 +479,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 3,
       "explanation": "'소프트웨어는 사용자 수준에 무관하게 일관된 인터페이스를 제공해야 한다.'는 공학적으로 잘된 소프트웨어(Well Engineered Software)의 설명 중에 대한 틀린 설명이다. 올바른 설명으로는 '소프트웨어는 유지보수가 용이해야 한다.', '소프트웨어는 신뢰성이 높아야 한다.' 등이 있다.",
-      "image": "images/2021-2_q34.png"
+      "image": null
     },
     {
       "qnum": 35,
@@ -649,7 +649,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 2,
       "explanation": "시분할 기법은 병행제어 기법에 해당하지 않는다. 병행제어 기법에는 로킹 기법, 타임 스탬프 기법, 다중 버전 기법 등이 있다.",
-      "image": "images/2021-2_q46.png"
+      "image": null
     },
     {
       "qnum": 47,
@@ -1240,7 +1240,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
       "explanation": "성능평가 프로세스는 ISO 12207 표준의 기본 생명 주기의 주요 프로세스에에 해당하지 않는다이다.",
-      "image": "images/2021-2_q88.png"
+      "image": null
     },
     {
       "qnum": 89,

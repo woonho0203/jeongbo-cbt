@@ -29,7 +29,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 2,
       "explanation": "객체지향 프로그램에서 데이터를 추상화하는 단위은 클래스이다.",
-      "image": "images/2020-1-2_q2.png"
+      "image": null
     },
     {
       "qnum": 3,
@@ -538,7 +538,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 4,
       "explanation": "Tree는 EAI(Enterprise Application Integration)의 구축 유형에 해당하지 않는다이다.",
-      "image": "images/2020-1-2_q38.png"
+      "image": null
     },
     {
       "qnum": 39,
@@ -1059,7 +1059,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
       "explanation": "Request은 프로세스 상태에 해당하지 않는다. 프로세스 상태에는 Ready, Running, Exit 등이 있다.",
-      "image": "images/2020-1-2_q75.png"
+      "image": null
     },
     {
       "qnum": 76,
@@ -1368,7 +1368,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
       "explanation": "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성 한다. 이를 하둡(Hadoop)이라 한다.",
-      "image": "images/2020-1-2_q97.png"
+      "image": null
     },
     {
       "qnum": 98,

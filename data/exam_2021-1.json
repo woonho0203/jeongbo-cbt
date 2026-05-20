@@ -15,7 +15,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 1,
       "explanation": "미들웨어는 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 …이다.",
-      "image": "images/2021-1_q1.png"
+      "image": null
     },
     {
       "qnum": 2,
@@ -241,7 +241,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 4,
       "explanation": "가능한 모듈을 독립적으로 생성하고 결합도를 최대화한다.는 바람직한 소프트웨어 설계 지침에 해당하지 않는다이다.",
-      "image": "images/2021-1_q17.png"
+      "image": null
     },
     {
       "qnum": 18,
@@ -494,7 +494,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 3,
       "explanation": "개방주소법(open addressing)는 해싱 함수(Hashing Function)에 해당하지 않는다이다.",
-      "image": "images/2021-1_q35.png"
+      "image": null
     },
     {
       "qnum": 36,
@@ -847,7 +847,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 1,
       "explanation": "SELECT * FROM 공급자 WHERE 공급자명 LIKE '%신%';이다.",
-      "image": "images/2021-1_q60.png"
+      "image": null
     },
     {
       "qnum": 61,
@@ -1114,7 +1114,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
       "explanation": "Working Set은 운영체제의 가상기억장치 관리에서 프로세스가 일정 시간동안 자주 참조하는 페이지들의 집합을 의미하는 것이다. 유사 개념: Locality · Deadlock 등과 구별한다.",
-      "image": "images/2021-1_q79.png"
+      "image": null
     },
     {
       "qnum": 80,
@@ -1368,7 +1368,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
       "explanation": "'해쉬 함수를 이용한 해쉬 암호화 방식을 사용한다.'는 스트림 암호화 방식에 대한 틀린 설명이다. 올바른 설명으로는 '비트/바이트/단어들을 순차적으로 암호화한다.', 'RC4는 스트림 암호화 방식에 해당한다.' 등이 있다.",
-      "image": "images/2021-1_q97.png"
+      "image": null
     },
     {
       "qnum": 98,

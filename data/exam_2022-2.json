@@ -15,7 +15,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 2,
       "explanation": "'주로 시스템의 정적 측면을 모델링하기 위해 사용한다.'는 UML 다이어그램 중 순차 다이어그램에 대한 틀린 설명이다. 올바른 설명으로는 '객체 간의 동적 상호작용을 시간 개념을 중심으로 모델링 하는 것이다.', '일반적으로 다이어그램의 수직 방향이 시간의 흐름을 나타낸다.' 등이 있다.",
-      "image": "images/2022-2_q1.png"
+      "image": null
     },
     {
       "qnum": 2,
@@ -197,7 +197,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 3,
       "explanation": "Component은 명백한 역할을 가지고 독립적으로 존재할 수 있는 시스템의 부분으로 넓은 의미에서는 재사용되는 모든 단위라…이다.",
-      "image": "images/2022-2_q14.png"
+      "image": null
     },
     {
       "qnum": 15,
@@ -380,7 +380,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 4,
       "explanation": "'원본을 안전하게 유통하기 위한 전자적 보안은 고려하지 않기 때문에 불법 유통과 복제의 방지는 불가능하다.'는 DRM(Digital Rights Management)과 관련한 설명에 대한 틀린 설명이다. 올바른 설명으로는 '디지털 콘텐츠와 디바이스의 사용을 제한하기 위해 하드웨어 제조업자, 저작권자, 출', '디지털 미디어의 생명 주기 동안 발생하는 사용 권한 관리, 과금, 유통 단계를 관' 등이 있다.",
-      "image": "images/2022-2_q27.png"
+      "image": null
     },
     {
       "qnum": 28,
@@ -551,7 +551,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 3,
       "explanation": "Stack이 올바른 순서/설명이다. 순서가 있는 리스트에서 데이터의 삽입(Push), 삭제(Pop)가 한 쪽.",
-      "image": "images/2022-2_q39.png"
+      "image": null
     },
     {
       "qnum": 40,
@@ -735,7 +735,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 4,
       "explanation": "GRANT은 SQL의 명령을 사용 용도에 따라 DDL, DML, DCL로 구분할 경우, 그 성격이 나머지 셋과 다른이다. 나머지 보기(SELECT 등)는 다른 개념이다.",
-      "image": "images/2022-2_q52.png"
+      "image": null
     },
     {
       "qnum": 53,
@@ -904,7 +904,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
       "explanation": "'Packet Length는 IP 헤더를 제외한 패킷 전체의 길이를 나타 내며 최대 크기는 232－1비트이다.'는 IP 프로토콜에서 사용하는 필드와 해당 필드에 대한 틀린 설명이다. 올바른 설명으로는 'Header Length는 IP 프로토콜의 헤더 길이를 32비트 워드 단위로 표시', 'Time To Live는 송신 호스트가 패킷을 전송하기 전 네트워크 에서 생존할 ' 등이 있다.",
-      "image": "images/2022-2_q64.png"
+      "image": null
     },
     {
       "qnum": 65,
@@ -1073,7 +1073,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
       "explanation": "LRU 알고리즘은 가장 오랫동안 사용하지 않는 페이지를 교체한다. 4프레임에서 참조 순서 1,2,3,1,2,4,1,2,5를 추적하면 페이지 부재가 5회 발생한다.",
-      "image": "images/2022-2_q76.png"
+      "image": null
     },
     {
       "qnum": 77,
@@ -1397,7 +1397,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
       "explanation": "네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어 로 제어, 관리하기 위해 개발됨. 이를 SDN(Software Defined Networking)이라 한다.",
-      "image": "images/2022-2_q99.png"
+      "image": null
     },
     {
       "qnum": 100,

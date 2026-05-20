@@ -15,7 +15,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 1,
       "explanation": "Linear Sequential Method은 XP(eXtreme Programming)의 기본원리에 해당하지 않는다이다.",
-      "image": "images/2020-4_q1.png"
+      "image": null
     },
     {
       "qnum": 2,
@@ -268,7 +268,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 4,
       "explanation": "추상 패턴은 GoF(Gangs of Four) 디자인 패턴 분류에에 해당하지 않는다. GoF(Gangs of Four) 디자인 패턴 분류에에는 생성 패턴, 구조 패턴, 행위 패턴 등이 있다.",
-      "image": "images/2020-4_q19.png"
+      "image": null
     },
     {
       "qnum": 20,
@@ -508,7 +508,7 @@
       "subjectName": "소프트웨어 개발",
       "answer": 2,
       "explanation": "'콘텐츠 분배자(Contents Distributor) : 콘텐츠를 메타 데이터 와 함께 배포 가능한 단위로 묶은 기능'는 저작권 관리 구성 요소에 대한 틀린 설명이다. 올바른 설명으로는 '콘텐츠 제공자(Contents Provider) : 콘텐츠를 제공하는 저작 권자', '클리어링 하우스(Clearing House) : 키 관리 및 라이선스 발급 관리' 등이 있다.",
-      "image": "images/2020-4_q36.png"
+      "image": null
     },
     {
       "qnum": 37,
@@ -1184,7 +1184,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
       "explanation": "제어 클래스층은 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에 해당하지 않는다. 서비스 지향 아키텍처 기반 애플리케이션을 구성하는 층에는 표현층, 프로세스층, 비즈니스층 등이 있다.",
-      "image": "images/2020-4_q84.png"
+      "image": null
     },
     {
       "qnum": 85,
@@ -1396,7 +1396,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
       "explanation": "MapReduce이 올바른 순서/설명이다. 내용에 적합한 용어는? - 대용량 데이터를 분산 처리하기 위한 목적으로.",
-      "image": "images/2020-4_q99.png"
+      "image": null
     },
     {
       "qnum": 100,

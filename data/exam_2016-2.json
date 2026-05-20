@@ -1000,7 +1000,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 2,
       "explanation": "아주 오래되거나 참고 문서 또는 개발자가 없어 유지보수 작업이 어려운 프로그램을 의미한다.",
-      "image": "images/2016-2_q71.png"
+      "image": null
     },
     {
       "qnum": 72,

@@ -15,7 +15,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 3,
       "explanation": "SQL에서 VIEW를 삭제할 때 사용하는 명령은 명령어는 DROP이다.",
-      "image": "images/2019-1_q1.png"
+      "image": null
     },
     {
       "qnum": 2,
@@ -270,7 +270,7 @@
       "subjectName": "데이터베이스 구축",
       "answer": 2,
       "explanation": "트랜잭션은 일련의 연산 집합으로 데이터베이스의 상태를 변환시키기 위하여 논리적 기능을 수행하는 하나의 작업 단위이다.",
-      "image": "images/2019-1_q19.png"
+      "image": null
     },
     {
       "qnum": 20,
@@ -538,7 +538,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
       "explanation": "'입출력 동작을 수행하는데 있어서 CPU의 지속적인 개입이 필요하다.'는 채널(Channel)에 대한 틀린 설명이다. 올바른 설명으로는 'DMA와 달리 여러 개의 블록을 입출력할 수 있다.', '시스템의 입출력 처리 능력을 향상시키는 기능을 한다.' 등이 있다.",
-      "image": "images/2019-1_q38.png"
+      "image": null
     },
     {
       "qnum": 39,
@@ -751,7 +751,7 @@
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
       "explanation": "First Fit : 2, Best Fit : 3이 올바른 순서/설명이다. 150K의 작업요구시 First Fit과 Best Fit 전략을 각각 적.",
-      "image": "images/2019-1_q53.png",
+      "image": null,
       "table": "<table><tr><th>할당영역</th><th>운영체제</th></tr><tr><td>1</td><td>50k</td></tr><tr><td></td><td>사용중</td></tr><tr><td>2</td><td>400k</td></tr><tr><td></td><td>사용중</td></tr><tr><td>3</td><td>200k</td></tr></table>"
     },
     {
@@ -964,7 +964,7 @@
       "subjectName": "소프트웨어 설계",
       "answer": 3,
       "explanation": "배경도(Context Diagram)에도 명칭과 번호를 부여해야 한다.는 자료 흐름도(DFD)의 작성 지침이라고에 해당하지 않는다이다.",
-      "image": "images/2019-1_q68.png"
+      "image": null
     },
     {
       "qnum": 69,
@@ -1217,7 +1217,7 @@
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
       "explanation": "7200은 QAM(Quadrature Amplitude Modulation) 방식에서 4개의 위상과 2개의 진폭으로 구성되고 2400baud일 때 전송 속도(bps)이다.",
-      "image": "images/2019-1_q86.png"
+      "image": null
     },
     {
       "qnum": 87,
