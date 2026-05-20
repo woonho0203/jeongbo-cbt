@@ -14,7 +14,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "설계 및 코딩 기술가 틀린 설명이다."
+      "explanation": "설계 및 코딩 기술는 요구사항 분석 시에 필요한 기술로 가장에 해당하지 않는다. 요구사항 분석 시에 필요한 기술로 가장에는 청취와 인터뷰 질문 기술, 분석과 중재기술, 관찰 및 모델 작성 기술 등이 있다."
     },
     {
       "qnum": 2,
@@ -42,7 +42,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "정적 모델링가 틀린 설명이다."
+      "explanation": "정적 모델링는 럼바우 객체 지향 분석에 해당하지 않는다. 럼바우 객체 지향 분석에는 기능 모델링, 동적 모델링, 객체 모델링 등이 있다."
     },
     {
       "qnum": 4,
@@ -56,7 +56,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 2,
-      "explanation": "계획에 중점을 두어 변경 대응이 난해하다.가 틀린 설명이다."
+      "explanation": "'계획에 중점을 두어 변경 대응이 난해하다.'는 애자일 기법에 대한 틀린 설명이다. 올바른 설명으로는 '절차와 도구보다 개인과 소통을 중요하게 생각한다.', '소프트웨어가 잘 실행되는데 가치를 둔다.' 등이 있다."
     },
     {
       "qnum": 5,
@@ -84,7 +84,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "확장가 틀린 설명이다."
+      "explanation": "확장는 UML에서 시퀀스 다이어그램의 구성 항목에에 해당하지 않는다. UML에서 시퀀스 다이어그램의 구성 항목에에는 생명선, 실행, 메시지 등이 있다."
     },
     {
       "qnum": 7,
@@ -140,7 +140,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "복잡성가 틀린 설명이다."
+      "explanation": "복잡성는 코드의 기본 기능에 해당하지 않는다. 코드의 기본 기능에는 표준화, 분류, 식별 등이 있다."
     },
     {
       "qnum": 11,
@@ -168,7 +168,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "배치 다이어그램(Deployment Diagram)가 틀린 설명이다."
+      "explanation": "배치 다이어그램(Deployment Diagram)는 UML에서 활용되는 다이어그램 중, 시스템의 동작을 표현하는 행위(Behavioral) 다이어그램에에 해당하지 않는다. UML에서 활용되는 다이어그램 중, 시스템의 동작을 표현하는 행위(Behavioral) 다이어그램에에는 유스케이스 다이어그램(Use Case Diagram), 시퀀스 다이어그램(Sequence Diagram), 활동 다이어그램(Activity Diagram) 등이 있다."
     },
     {
       "qnum": 13,
@@ -210,7 +210,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 1,
-      "explanation": "개발자이름가 틀린 설명이다."
+      "explanation": "개발자이름는 객체지향 소프트웨어 설계 시 디자인 패턴을 구성하는 요소로서 가장에 해당하지 않는다. 객체지향 소프트웨어 설계 시 디자인 패턴을 구성하는 요소로서 가장에는 문제 및 배경, 사례, 샘플코드 등이 있다."
     },
     {
       "qnum": 16,
@@ -224,7 +224,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 3,
-      "explanation": "자료 사전에서 자료의 반복을 의미하는이 { }이다."
+      "explanation": "자료 사전에서 자료의 반복을 의미하는 것은?으로(로) { }이다."
     },
     {
       "qnum": 17,
@@ -266,7 +266,7 @@
       "subject": 1,
       "subjectName": "소프트웨어 설계",
       "answer": 4,
-      "explanation": "2000년대 이후 소개되었으며, 객체지향 시스템에 한해 효과 적으로 활용된다.가 틀린 설명이다."
+      "explanation": "2000년대 이후 소개되었으며, 객체지향 시스템에 한해 효과 적으로 활용된다.는 CASE(Computer-Aided Software Engineering) 도구에 해당하지 않는다. CASE(Computer-Aided Software Engineering) 도구에는 소프트웨어 개발 과정의 일부 또는 전체를 자동화하기 위, 표준화된 개발 환경 구축 및 문서 자동화 기능을 제공한, 작업 과정 및 데이터 공유를 통해 작업자간 커뮤니케이션 등이 있다."
     },
     {
       "qnum": 20,
@@ -294,7 +294,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "SMTP가 틀린 설명이다."
+      "explanation": "SMTP는 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 솔루션에 해당하지 않는다. 인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 솔루션에는 IPSec, SSL, S-HTTP 등이 있다."
     },
     {
       "qnum": 22,
@@ -308,7 +308,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "최대한 많은 인력 투입가 틀린 설명이다."
+      "explanation": "최대한 많은 인력 투입는 소프트웨어 공학의 기본 원칙이라고에 해당하지 않는다. 소프트웨어 공학의 기본 원칙이라고에는 품질 높은 소프트웨어 상품 개발, 지속적인 검증 시행, 결과에 대한 명확한 기록 유지 등이 있다."
     },
     {
       "qnum": 23,
@@ -336,7 +336,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "중복이 최대화된 코드 작성가 틀린 설명이다."
+      "explanation": "중복이 최대화된 코드 작성는 클린 코드 작성원칙에 해당하지 않는다. 클린 코드 작성원칙에는 누구든지 쉽게 이해하는 코드 작성, 다른 모듈에 미치는 영향 최소화, 단순, 명료한 코드 작성 등이 있다."
     },
     {
       "qnum": 25,
@@ -350,7 +350,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "조건, 루프 검사가 틀린 설명이다."
+      "explanation": "조건, 루프 검사는 블랙박스 테스트에 해당하지 않는다. 블랙박스 테스트의 올바른 항목: 경계값 분석, 오류 예측, 동등 분할 기법."
     },
     {
       "qnum": 26,
@@ -392,7 +392,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 1,
-      "explanation": "정규화(Normalization)가 틀린 설명이다."
+      "explanation": "정규화(Normalization)는 형상 관리 도구의 주요 기능에 해당하지 않는다. 형상 관리 도구의 주요 기능에는 체크인(Check-in), 체크아웃(Check-out), 커밋(commit) 등이 있다."
     },
     {
       "qnum": 29,
@@ -434,7 +434,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "Static Block가 틀린 설명이다."
+      "explanation": "Static Block는 알고리즘 설계 기법에 해당하지 않는다. 알고리즘 설계 기법에는 Divide and Conquer, Greedy, Backtracking 등이 있다."
     },
     {
       "qnum": 32,
@@ -448,7 +448,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "프로젝트 개발비용을 효율적으로 관리가 틀린 설명이다."
+      "explanation": "프로젝트 개발비용을 효율적으로 관리는 제품 소프트웨어의 형상 관리 역할로에 해당하지 않는다. 제품 소프트웨어의 형상 관리 역할로의 올바른 항목: 형상 관리를 통해 이전 리버전이나 버전에 대한 정보에 접근 가능, 불필요한 사용자의 소스 수정 제한, 동일한 프로젝트에 대해 여러 개발자 동시 개발 가능."
     },
     {
       "qnum": 33,
@@ -462,7 +462,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "내부 콘텐츠에 대한 보안은 고려하지 않는다.가 틀린 설명이다."
+      "explanation": "내부 콘텐츠에 대한 보안은 고려하지 않는다.는 제품 소프트웨어 패키징 도구 활용 시 고려사항에 해당하지 않는다. 제품 소프트웨어 패키징 도구 활용 시 고려사항에는 제품 소프트웨어의 종류에 적합한 암호화 알고리즘을 고려, 추가로 다양한 이기종 연동을 고려한다., 사용자 편의성을 위한 복잡성 및 비효율성 문제를 고려한 등이 있다."
     },
     {
       "qnum": 34,
@@ -476,7 +476,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 3,
-      "explanation": "콘텐츠 오류 감지 및 복구가 틀린 설명이다."
+      "explanation": "콘텐츠 오류 감지 및 복구는 디지털 저작권 관리(DRM) 기술에 해당하지 않는다. 디지털 저작권 관리(DRM) 기술에는 콘텐츠 암호화 및 키 관리, 콘텐츠 식별체계 표현, 라이센스 발급 및 관리 등이 있다."
     },
     {
       "qnum": 35,
@@ -490,7 +490,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "유닛분할(Unit Partitioning)가 틀린 설명이다."
+      "explanation": "'유닛분할(Unit Partitioning)'는 물리데이터 저장소의 파티션 설계에서 파티션 유형에 대한 틀린 설명이다. 올바른 설명으로는 '범위분할(Range Partitioning)', '해시분할(Hash Partitioning)' 등이 있다."
     },
     {
       "qnum": 36,
@@ -532,7 +532,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "개발시간의 증가가 틀린 설명이다."
+      "explanation": "개발시간의 증가는 소프트웨어 재공학이 소프트웨어의 재개발에 비해 갖는 장점에 해당하지 않는다. 소프트웨어 재공학이 소프트웨어의 재개발에 비해 갖는 장점에는 위험부담 감소, 비용 절감, 시스템 명세의 오류억제 등이 있다."
     },
     {
       "qnum": 39,
@@ -560,7 +560,7 @@
       "subject": 2,
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "다음 트리의 차수(degree)이 3이다."
+      "explanation": "트리의 차수(degree)는 자식 노드 수가 가장 많은 노드의 자식 수이다. 그림에서 차수는 3이다."
     },
     {
       "qnum": 41,
@@ -616,7 +616,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "SELECT -가 틀린 설명이다."
+      "explanation": "SELECT는 DCL(Data Control Language) 명령어에 해당하지 않는다. DCL(Data Control Language) 명령어에는 COMMIT, ROLLBACK, GRANT 등이 있다."
     },
     {
       "qnum": 46,
@@ -630,7 +630,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "로킹의 단위가 커지면 데이터베이스 공유도가 증가한다.가 틀린 설명이다."
+      "explanation": "'로킹의 단위가 커지면 데이터베이스 공유도가 증가한다.'는 병행제어 기법 중 로킹에 대한 틀린 설명이다. 올바른 설명으로는 '로킹의 대상이 되는 객체의 크기를 로킹 단위라고 한다.', '데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다.' 등이 있다."
     },
     {
       "qnum": 47,
@@ -644,7 +644,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "개체 무결성가 틀린 설명이다."
+      "explanation": "관계 데이터 모델의 무결성 제약 중 기본키 값의 속으로(로) 개체 무결성이다."
     },
     {
       "qnum": 48,
@@ -658,7 +658,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "뷰 자체로 인덱스를 가짐가 틀린 설명이다."
+      "explanation": "뷰 자체로 인덱스를 가짐는 뷰(View)의 장점에 해당하지 않는다. 뷰(View)의 장점에는 데이터 보안 용이, 논리적 독립성 제공, 사용자 데이터 관리 용이 등이 있다."
     },
     {
       "qnum": 49,
@@ -686,7 +686,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 야기한다.가 틀린 설명이다."
+      "explanation": "'중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 야기한다.'는 정규화에 대한 틀린 설명이다. 올바른 설명으로는 '어떠한 릴레이션이라도 데이터베이스 내에서 표현 가능하게 만든다.', '데이터 삽입 시 릴레이션을 재구성할 필요성을 줄인다.' 등이 있다."
     },
     {
       "qnum": 51,
@@ -742,7 +742,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복이 즉각 갱신 기법이다."
+      "explanation": "데이터베이스 로그(log)를 필요로 하는 회복 기법은은(는) 즉각 갱신 기법이다."
     },
     {
       "qnum": 55,
@@ -756,7 +756,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 3,
-      "explanation": "ALTER가 틀린 설명이다."
+      "explanation": "ALTER는 DML(Data Manipulation Language) 명령어에 해당하지 않는다. DML(Data Manipulation Language) 명령어에는 INSERT, UPDATE, DELETE 등이 있다."
     },
     {
       "qnum": 56,
@@ -784,7 +784,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 2,
-      "explanation": "Cartesian Product가 틀린 설명이다."
+      "explanation": "Cartesian Product는 관계대수의 순수관계 연산자에 해당하지 않는다. 관계대수의 순수관계 연산자에는 Select, Division, Project 등이 있다."
     },
     {
       "qnum": 58,
@@ -798,7 +798,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "CREATE가 틀린 설명이다."
+      "explanation": "CREATE는 SQL의 집계 함수(aggregation function)에 해당하지 않는다. SQL의 집계 함수(aggregation function)에는 AVG, COUNT, SUM 등이 있다."
     },
     {
       "qnum": 59,
@@ -826,7 +826,7 @@
       "subject": 3,
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "한 릴레이션에 포함된 튜플 사이에는 순서가 있다.가 틀린 설명이다."
+      "explanation": "한 릴레이션에 포함된 튜플 사이에는 순서가 있다.는 릴레이션에 해당하지 않는다. 릴레이션에는 튜플들의 삽입, 삭제 등의 작업으로 인해 릴레이션은 시, 한 릴레이션에 포함된 튜플들은 모두 상이하다., 애트리뷰트는 논리적으로 쪼갤 수 없는 원자값으로 저장한 등이 있다."
     },
     {
       "qnum": 61,
@@ -868,7 +868,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "repeat_do가 틀린 설명이다."
+      "explanation": "repeat_do는 bash 쉘 스크립트에서 사용할 수 있는 제어문에 해당하지 않는다. bash 쉘 스크립트에서 사용할 수 있는 제어문에는 if, for, while 등이 있다."
     },
     {
       "qnum": 64,
@@ -882,7 +882,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "32비트의 주소체계를 사용한다.가 틀린 설명이다."
+      "explanation": "'32비트의 주소체계를 사용한다.'는 IPv6에 대한 틀린 설명이다. 올바른 설명으로는 '멀티미디어의 실시간 처리가 가능하다.' 등이 있다."
     },
     {
       "qnum": 65,
@@ -896,7 +896,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "모듈의 기능은 예측이 가능해야 하며 지나치게 제한적 이어야 한다.가 틀린 설명이다."
+      "explanation": "모듈의 기능은 예측이 가능해야 하며 지나치게 제한적 이어야 한다.는 효과적인 모듈 설계를 위한 유의사항에 해당하지 않는다. 효과적인 모듈 설계를 위한 유의사항에는 모듈간의 결합도를 약하게 하면 모듈 독립성이 향상된다., 복잡도와 중복성을 줄이고 일관성을 유지시킨다., 유지보수가 용이해야 한다. 등이 있다."
     },
     {
       "qnum": 66,
@@ -924,7 +924,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "운영체제의 종류로는 매크로 프로세서, 어셈블러, 컴파일러 등이 있다.가 틀린 설명이다."
+      "explanation": "운영체제의 종류로는 매크로 프로세서, 어셈블러, 컴파일러 등이 있다.는 운영체제에 해당하지 않는다. 운영체제에는 다중 사용자와 다중 응용프로그램 환경 하에서 자원의 현, CPU, 메모리 공간, 기억 장치, 입출력 장치 등의 , 입출력장치와 사용자 프로그램을 제어한다. 등이 있다."
     },
     {
       "qnum": 68,
@@ -938,7 +938,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 4,
-      "explanation": "무결성은 주어진 시간 내에 처리를 완료할 수 있어야 하고, 동시에 동작하고 있는 다른 애플리케이션을 방해하지 말아야 한다.가 틀린 설명이다."
+      "explanation": "'무결성은 주어진 시간 내에 처리를 완료할 수 있어야 하고, 동시에 동작하고 있는 다른 애플리케이션을 방해하지 말아야 한다.'는 배치 프로그램의 필수 요소에 대한 틀린 설명이다. 올바른 설명으로는 '자동화는 심각한 오류 상황 외에는 사용자의 개입 없이 동작해 야 한다.', '안정성은 어떤 문제가 생겼는지, 언제 발생했는지 등을 추적할 수 있어야 한다.' 등이 있다."
     },
     {
       "qnum": 69,
@@ -952,7 +952,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "기본 헤더 크기는 100byte이고 160byte까지 확장 가능하다.가 틀린 설명이다."
+      "explanation": "기본 헤더 크기는 100byte이고 160byte까지 확장 가능하다.는 TCP 프로토콜에 해당하지 않는다. TCP 프로토콜에는 신뢰성이 있는 연결 지향형 전달 서비스이다., 스크림 전송 기능을 제공한다., 순서 제어, 오류 제어, 흐름 제어 기능을 제공한다. 등이 있다."
     },
     {
       "qnum": 70,
@@ -1050,7 +1050,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "변수 이름의 중간에 공백을 사용할 수 있다.가 틀린 설명이다."
+      "explanation": "'변수 이름의 중간에 공백을 사용할 수 있다.'는 파이썬의 변수 작성 규칙 설명에 대한 틀린 설명이다. 올바른 설명으로는 '첫 자리에 숫자를 사용할 수 없다.', '영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.' 등이 있다."
     },
     {
       "qnum": 77,
@@ -1092,7 +1092,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 3,
-      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어이 fork이다."
+      "explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어 명령어는 fork이다."
     },
     {
       "qnum": 80,
@@ -1106,7 +1106,7 @@
       "subject": 4,
       "subjectName": "프로그래밍 언어 활용",
       "answer": 1,
-      "explanation": "C언어에서 정수 자료형으로 옳은이 int이다."
+      "explanation": "C언어에서 정수 자료형으로 옳은 것은?으로(로) int이다."
     },
     {
       "qnum": 81,
@@ -1134,7 +1134,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "휘발성가 틀린 설명이다."
+      "explanation": "휘발성는 정보 보안의 3대 요소에에 해당하지 않는다. 정보 보안의 3대 요소에에는 기밀성, 무결성, 가용성 등이 있다."
     },
     {
       "qnum": 83,
@@ -1162,7 +1162,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "클래스 인터페이스가 틀린 설명이다."
+      "explanation": "클래스 인터페이스는 기능 점수(Functional Point) 모형에서 비용산정에 이용되는 요소에 해당하지 않는다. 기능 점수(Functional Point) 모형에서 비용산정에 이용되는 요소에는 명령어(사용자 질의수), 데이터 파일, 출력 보고서 등이 있다."
     },
     {
       "qnum": 85,
@@ -1176,7 +1176,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "RC4가 틀린 설명이다."
+      "explanation": "RC4는 블록 암호화 방식에 해당하지 않는다. 블록 암호화 방식에는 DES, AES, SEED 등이 있다."
     },
     {
       "qnum": 86,
@@ -1190,7 +1190,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "Putnam 모형을 기초로 해서 만든 자동화 추정이 SLIM이다."
+      "explanation": "Putnam 모형을 기초로 해서 만든 자동화 추정 도구은(는) SLIM이다."
     },
     {
       "qnum": 87,
@@ -1218,7 +1218,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "Sequential가 틀린 설명이다."
+      "explanation": "Sequential는 COCOMO 모델의 프로젝트 유형에 해당하지 않는다. COCOMO 모델의 프로젝트 유형에는 Organic, Semi-detached, Embedded 등이 있다."
     },
     {
       "qnum": 89,
@@ -1274,7 +1274,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일이 14일이다."
+      "explanation": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일은은(는) 14일이다."
     },
     {
       "qnum": 93,
@@ -1288,7 +1288,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 3,
-      "explanation": "최대 홉 카운트를 115홉 이하로 한정하고 있다.가 틀린 설명이다."
+      "explanation": "'최대 홉 카운트를 115홉 이하로 한정하고 있다.'는 RIP(Routing Information Protocol)에 대한 틀린 설명이다. 올바른 설명으로는 '거리 벡터 라우팅 프로토콜이라고도 한다.', '소규모 네트워크 환경에 적합하다.' 등이 있다."
     },
     {
       "qnum": 94,
@@ -1386,7 +1386,7 @@
       "subject": 5,
       "subjectName": "정보시스템 구축 관리",
       "answer": 1,
-      "explanation": "다음 LAN의 네트워크 토폴로지이 버스형이다."
+      "explanation": "LAN의 네트워크 토폴로지은(는) 버스형이다."
     }
   ]
 }
