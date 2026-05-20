@@ -350,7 +350,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 4,
-      "explanation": "4번의 Hybrid 방식은 P2P와 Hub & Spoke의 혼합이 아닌 Hub & Spoke와 Message Bus를 혼합한 방식이므로 틀린 설명이다"
+      "explanation": "4번의 Hybrid 방식은 P2P와 Hub & Spoke의 혼합이 아닌 Hub & Spoke와 Message Bus를 혼합한 방식이므로 틀린 설명입니다"
     },
     {
       "qnum": 26,
@@ -518,7 +518,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "설명의 소프트웨어 버전 관리 도구 방식은으로 분산 저장소 방식이다."
+      "explanation": "설명의 소프트웨어 버전 관리 도구 방식은 분산 저장소 방식이다."
     },
     {
       "qnum": 38,
@@ -616,7 +616,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 1,
-      "explanation": "DML에 해당하는 것으로만 나열된 것은은 ㉠, ㉡, ㉢이다."
+      "explanation": "DML에 해당하는 것으로만 나열된 것은 ㉠, ㉡, ㉢이다."
     },
     {
       "qnum": 45,
@@ -673,7 +673,7 @@
       ],
       "subjectName": "데이터베이스 구축",
       "answer": 4,
-      "explanation": "정규화 과정 중 1NF에서 2NF가 되기 위한 조건은은 1NF를 만족하고 키가 아닌 모든 속성이 기본키에 완전 함수적 종속되어야 한다.이다."
+      "explanation": "정규화 과정 중 1NF에서 2NF가 되기 위한 조건은 1NF를 만족하고 키가 아닌 모든 속성이 기본키에 완전 함수적 종속되어야 한다.이다."
     },
     {
       "qnum": 49,

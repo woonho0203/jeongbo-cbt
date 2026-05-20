@@ -309,7 +309,7 @@
       ],
       "subjectName": "소프트웨어 개발",
       "answer": 2,
-      "explanation": "1번은 스파게티 코드에 대한 설명이고, 3번과 4번은 외계인 코드의 특성과 무관하거나 반대 설명이다"
+      "explanation": "1번은 스파게티 코드에 대한 설명이고, 3번과 4번은 외계인 코드의 특성과 무관하거나 반대 설명입니다"
     },
     {
       "qnum": 23,
@@ -984,7 +984,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "내용이 설명하는 것은으로 ASP(Active Server Page)이다."
+      "explanation": "내용이 설명하는 것은 ASP(Active Server Page)이다."
     },
     {
       "qnum": 71,
@@ -1096,7 +1096,7 @@
       ],
       "subjectName": "프로그래밍 언어 활용",
       "answer": 2,
-      "explanation": "TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는은 ARP이다."
+      "explanation": "TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는 ARP이다."
     },
     {
       "qnum": 79,
@@ -1320,7 +1320,7 @@
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 2,
-      "explanation": "DDoS 공격과 연관이 있는 공격 방법은은 Tribe Flood Network이다."
+      "explanation": "DDoS 공격과 연관이 있는 공격 방법은 Tribe Flood Network이다."
     },
     {
       "qnum": 95,
