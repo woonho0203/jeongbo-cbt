@@ -88,13 +88,33 @@ function formatSource(sourceId) {
 }
 
 // 문제 본문에서 코드 블록 감지 후 <pre> 분리 렌더링
-// [보기] 섹션 / ㆍ 항목 / Ⓐ Ⓑ 항목 렌더링 지원
+// [보기] 섹션 / ㆍ 항목 / Ⓐ Ⓑ 항목 / ? 이후 조건·자료 박스 렌더링 지원
 function renderStem(text) {
   const CODE_STARTS = [
     '#include', 'public class ', 'class Solution', 'def ', 'function ',
     'SELECT ', 'CREATE TABLE ', 'INSERT INTO ', 'UPDATE ', 'DELETE FROM ',
     'import java.', 'package ', 'int main(', 'void main(', '<?php',
   ];
+
+  const createContentBlock = () => {
+    const wrapper = el('div', { class: 'qcontent-box' });
+    wrapper.appendChild(el('div', { class: 'qcontent-header', text: '조건/자료' }));
+    wrapper.appendChild(el('div', { class: 'qcontent-items' }));
+    return wrapper;
+  };
+
+  const appendContentLine = (wrapper, line) => {
+    const items = wrapper.querySelector('.qcontent-items');
+    const isCode = CODE_STARTS.some(s => line.startsWith(s));
+    if (isCode) {
+      const pre = document.createElement('pre');
+      pre.className = 'code-block qcontent-code';
+      pre.appendChild(Object.assign(document.createElement('code'), { textContent: line }));
+      items.appendChild(pre);
+    } else {
+      items.appendChild(el('div', { class: 'qcontent', text: line }));
+    }
+  };
 
   // 멀티라인 stem 처리 ([보기] / ㆍ 항목 / ? 이후 설명 등)
   if (text.includes('\n')) {
@@ -104,14 +124,15 @@ function renderStem(text) {
     let inBox = false;
     let inDesc = false;
     let descEl = null;
-    let lastWasQuestion = false; // 직전 줄이 ?로 끝난 질문인지
+    let contentEl = null;
+    let inQuestionContent = false;
 
     for (const raw of lines) {
       const line = raw.trimEnd();
       if (!line) continue;
 
       if (line === '[보기]') {
-        inBox = true; inDesc = false; lastWasQuestion = false;
+        inBox = true; inDesc = false; inQuestionContent = false;
         const wrapper = el('div', { class: 'qbox' });
         const header = el('div', { class: 'qbox-header', text: '보기' });
         boxEl = el('div', { class: 'qbox-items' });
@@ -127,8 +148,8 @@ function renderStem(text) {
       }
 
       // ㆍ 항목 또는 Ⓐ-Ⓩ 항목 → 설명 블록
-      if (/^[ㆍⒶ-Ⓩ]/.test(line)) {
-        inBox = false; lastWasQuestion = false;
+      if (!inQuestionContent && /^[ㆍⒶ-Ⓩ]/.test(line)) {
+        inBox = false;
         if (!inDesc) {
           descEl = el('div', { class: 'qdesc' });
           nodes.push(descEl);
@@ -139,26 +160,34 @@ function renderStem(text) {
       }
 
       // ? 이후 설명/데이터 → qcontent 블록으로 구분 렌더링
-      if (lastWasQuestion) {
-        inBox = false; inDesc = false; lastWasQuestion = false;
-        // 코드 블록 감지
-        const isCode = CODE_STARTS.some(s => line.includes(s));
-        if (isCode) {
-          const pre = document.createElement('pre');
-          pre.className = 'code-block';
-          pre.appendChild(Object.assign(document.createElement('code'), { textContent: line }));
-          nodes.push(pre);
-        } else {
-          nodes.push(el('div', { class: 'qcontent', text: line }));
+      if (inQuestionContent) {
+        inBox = false; inDesc = false;
+        if (!contentEl) {
+          contentEl = createContentBlock();
+          nodes.push(contentEl);
         }
+        appendContentLine(contentEl, line);
         continue;
       }
 
       // 일반 질문 텍스트
       inBox = false; inDesc = false;
-      lastWasQuestion = line.trimEnd().endsWith('?');
       nodes.push(el('div', { class: 'qstem', text: line }));
+      if (line.trimEnd().endsWith('?')) {
+        contentEl = null;
+        inQuestionContent = true;
+      }
     }
+    return nodes;
+  }
+
+  // 단일라인: ? 뒤에 조건/자료가 이어지면 질문과 박스를 분리
+  const questionSplit = String(text).match(/^(.*?\?)(\s+)(\S[\s\S]*)$/);
+  if (questionSplit) {
+    const nodes = [el('div', { class: 'qstem', text: questionSplit[1].trim() })];
+    const contentEl = createContentBlock();
+    appendContentLine(contentEl, questionSplit[3].trim());
+    nodes.push(contentEl);
     return nodes;
   }
 

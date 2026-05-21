@@ -221,12 +221,25 @@ main {
   font-size: 1rem; line-height: 1.75; margin-bottom: 16px; white-space: pre-wrap;
 }
 
-/* ─── ? 이후 설명/데이터 블록 ─── */
+/* ─── ? 이후 조건/자료 박스 ─── */
+.qcontent-box {
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: var(--panel); margin: 4px 0 16px; overflow: hidden;
+}
+.qcontent-header {
+  background: var(--opt-hover); padding: 5px 12px;
+  font-size: 0.8rem; font-weight: 700; color: var(--muted);
+  letter-spacing: 0.05em;
+}
+.qcontent-items {
+  padding: 10px 14px; display: flex; flex-direction: column; gap: 5px;
+}
 .qcontent {
-  font-size: 0.97rem; line-height: 1.75;
-  background: var(--opt-hover); border-radius: 6px;
-  padding: 10px 14px; margin: 4px 0 14px;
+  font-size: 0.97rem; line-height: 1.7;
   white-space: pre-wrap; color: var(--text);
+}
+.qcontent-code {
+  margin: 0;
 }
 
 /* ─── [보기] 박스 ─── */
@@ -236,7 +249,7 @@ main {
 }
 .qbox-header {
   background: var(--opt-hover); padding: 5px 12px;
-  font-size: 0.8rem; font-weight: 700; color: var(--text-muted);
+  font-size: 0.8rem; font-weight: 700; color: var(--muted);
   letter-spacing: 0.05em; text-transform: uppercase;
 }
 .qbox-items {
