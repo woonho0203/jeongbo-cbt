@@ -77,7 +77,11 @@ defineRoute('exam', async (app, params) => {
     q.shuffleMap = indexed.map(x => x.i);
     q.options = indexed.map(x => x.opt);
     if (q.answer != null) {
-      q.answer = indexed.findIndex(x => x.i === q.answer - 1) + 1;
+      const mappedAnswers = normalizeAnswers(q.answer)
+        .map(ans => indexed.findIndex(x => x.i === ans - 1) + 1)
+        .filter(ans => ans > 0)
+        .sort((a, b) => a - b);
+      q.answer = Array.isArray(q.answer) ? mappedAnswers : mappedAnswers[0];
     }
   }
 
@@ -188,7 +192,7 @@ function renderQuestion(state) {
 
     let progressEl;
     if (state.checkMode && state.questions[0]?.answer != null) {
-      const correct  = state.questions.filter(q2 => state.answers.get(q2.qkey) === q2.answer).length;
+      const correct  = state.questions.filter(q2 => isCorrectAnswer(state.answers.get(q2.qkey), q2.answer)).length;
       const wrong    = answered - correct;
       const remain   = total - answered;
       const score    = total > 0 ? Math.round(correct / total * 100) : 0;
@@ -235,8 +239,8 @@ function renderQuestion(state) {
 
       if (revealed) {
         // 정답 강조
-        if (num === q.answer)                    cls += ' correct';
-        else if (num === sel && sel !== q.answer) cls += ' wrong';
+        if (isCorrectAnswer(num, q.answer)) cls += ' correct';
+        else if (num === sel && !isCorrectAnswer(sel, q.answer)) cls += ' wrong';
         cls += ' revealed-disabled';
       } else {
         if (sel === num) cls += ' selected';
@@ -251,8 +255,8 @@ function renderQuestion(state) {
 
   // ── 학습 모드: 정오답 피드백 ──
   if (revealed) {
-    const isCorrect  = sel === q.answer;
-    const correctLabel = q.answer ? CIRCLES[q.answer - 1] : '?';
+    const isCorrect  = isCorrectAnswer(sel, q.answer);
+    const correctLabel = formatAnswerLabel(q.answer);
     main.append(
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
@@ -407,8 +411,9 @@ function renderSelectedAnswerExplanation(q, selected) {
   if (!selected || !q.answer || !Array.isArray(q.options)) return null;
 
   const selectedText = q.options[selected - 1] || '';
-  const correctText = q.options[q.answer - 1] || '';
-  const isCorrect = selected === q.answer;
+  const correctTexts = normalizeAnswers(q.answer).map(ans => q.options[ans - 1]).filter(Boolean);
+  const correctText = correctTexts.join(', ');
+  const isCorrect = isCorrectAnswer(selected, q.answer);
   const negative = isNegativeStem(q.stem || '');
   const reason = extractAnswerReason(q.explanation || '');
 
@@ -514,7 +519,7 @@ function renderOMR(state) {
 
     if (ans) {
       if (state.checkMode && q.answer) {
-        cls += ans === q.answer ? ' correct-omr' : ' wrong-omr';
+        cls += isCorrectAnswer(ans, q.answer) ? ' correct-omr' : ' wrong-omr';
       } else {
         cls += ' answered';
       }
@@ -522,8 +527,8 @@ function renderOMR(state) {
 
     let cellText = `${i + 1}`;
     if (ans) {
-      if (state.checkMode && q.answer && ans !== q.answer) {
-        cellText = `${i + 1}.${CIRCLES[ans - 1]}→${CIRCLES[q.answer - 1]}`;
+      if (state.checkMode && q.answer && !isCorrectAnswer(ans, q.answer)) {
+        cellText = `${i + 1}.${CIRCLES[ans - 1]}→${formatAnswerLabel(q.answer)}`;
       } else {
         cellText = `${i + 1}.${CIRCLES[ans - 1]}`;
       }

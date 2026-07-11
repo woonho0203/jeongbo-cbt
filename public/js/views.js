@@ -272,9 +272,9 @@ defineRoute('result', async (app, params) => {
     return;
   }
 
-  const session = stored;
-  const answers = stored.answers || [];
-  let bd = session.subject_breakdown || {};
+  const session = normalizeResultSession(stored);
+  const answers = session.answers;
+  const bd = buildSubjectBreakdown(session);
 
   app.innerHTML = '';
 
@@ -289,16 +289,19 @@ defineRoute('result', async (app, params) => {
     ]),
   );
 
-  // 과목별 점수
-  const subjEl = el('div', { class: 'card' }, [el('h2', { text: '과목별 정답률' })]);
+  // 과목별 맞은/틀린 개수
+  const subjEl = el('div', { class: 'card' }, [el('h2', { text: '과목별 맞은 문제 / 틀린 문제' })]);
   for (const sid of [1, 2, 3, 4, 5]) {
     const v = bd[sid];
-    const rate = v && v.total ? Math.round(v.correct / v.total * 1000) / 10 : 0;
-    const klass = !v || !v.total ? '' : rate >= 60 ? 'pass' : 'fail';
+    const total = v?.total || 0;
+    const correct = v?.correct || 0;
+    const wrong = v?.wrong ?? Math.max(total - correct, 0);
+    const rate = total ? Math.round(correct / total * 1000) / 10 : 0;
+    const klass = !total ? '' : rate >= 60 ? 'pass' : 'fail';
     subjEl.appendChild(el('div', { class: `subject-bar ${klass}` }, [
       el('div', { class: 'name', text: SUBJECT_NAMES[sid] }),
       el('div', { class: 'bar-track' }, [el('div', { class: 'bar-fill', style: { width: `${rate}%` } })]),
-      el('div', { class: 'score', text: v && v.total ? `${rate}% (${v.correct}/${v.total})` : '-' }),
+      el('div', { class: 'score subject-counts', text: total ? `맞음 ${correct} · 틀림 ${wrong} · 총 ${total}` : '-' }),
     ]));
   }
   app.append(subjEl);
@@ -358,7 +361,7 @@ defineRoute('result', async (app, params) => {
         a.options.forEach((txt, oi) => {
           const num = oi + 1;
           let oclass = 'opt revealed-disabled';
-          if (a.correct === num) oclass += ' correct';
+          if (isCorrectAnswer(num, a.correct)) oclass += ' correct';
           if (a.selected === num && a.is_correct === 0) oclass += ' wrong';
           opts.appendChild(el('div', { class: oclass }, [
             el('div', { class: 'num', text: CIRCLES[oi] }),
@@ -377,6 +380,60 @@ defineRoute('result', async (app, params) => {
 
   renderReview();
 });
+
+function normalizeResultSession(stored) {
+  const answers = Array.isArray(stored.answers) ? stored.answers.map(a => {
+    const rawCorrect = a.is_correct ?? a.isCorrect;
+    const isCorrect = rawCorrect == null ? null : (rawCorrect === true || rawCorrect === 1 || rawCorrect === '1' ? 1 : 0);
+    const subject = Number(a.subject || 0);
+    return {
+      ...a,
+      subject,
+      subjectName: a.subjectName || SUBJECT_NAMES[subject] || '',
+      selected: a.selected ?? null,
+      correct: a.correct ?? null,
+      is_correct: isCorrect,
+    };
+  }) : [];
+
+  const correctCount = stored.correct_count ?? stored.correctCount ?? answers.filter(a => a.is_correct === 1).length;
+  const questionCount = stored.question_count ?? stored.questionCount ?? answers.filter(a => a.is_correct != null).length;
+  const score = stored.score ?? (questionCount ? Math.round(correctCount / questionCount * 1000) / 10 : 0);
+
+  return {
+    ...stored,
+    answers,
+    correct_count: correctCount,
+    question_count: questionCount,
+    duration_sec: stored.duration_sec ?? stored.durationSec ?? 0,
+    subject_breakdown: stored.subject_breakdown || stored.subjectBreakdown || {},
+    score,
+  };
+}
+
+function buildSubjectBreakdown(session) {
+  const bd = {};
+  for (const [sid, value] of Object.entries(session.subject_breakdown || {})) {
+    const total = value.total || 0;
+    const correct = value.correct || 0;
+    bd[sid] = { correct, wrong: Math.max(total - correct, 0), total };
+  }
+
+  for (const a of session.answers || []) {
+    const sid = Number(a.subject || 0);
+    if (!sid || a.is_correct == null) continue;
+    if (!bd[sid]) bd[sid] = { correct: 0, wrong: 0, total: 0 };
+
+    // subject_breakdown이 이미 저장된 세션은 중복 집계하지 않음
+    if (session.subject_breakdown && session.subject_breakdown[sid]) continue;
+
+    bd[sid].total += 1;
+    if (a.is_correct === 1) bd[sid].correct += 1;
+    else bd[sid].wrong += 1;
+  }
+
+  return bd;
+}
 
 function summaryCard(label, value, kind = '') {
   return el('div', { class: `summary-card ${kind}` }, [
@@ -577,7 +634,7 @@ defineRoute('bookmarks', async (app) => {
       b.options.forEach((txt, oi) => {
         const num = oi + 1;
         let oclass = 'opt revealed-disabled';
-        if (b.answer === num) oclass += ' correct';
+        if (isCorrectAnswer(num, b.answer)) oclass += ' correct';
         opts.appendChild(el('div', { class: oclass }, [
           el('div', { class: 'num', text: CIRCLES[oi] }),
           el('div', { class: 'opt-text', text: txt }),

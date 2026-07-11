@@ -246,4 +246,5 @@ module.exports = {
   getRandomPoolSize,
   lookupQuestion,
   buildQkey,
+  inferSubject,
 };

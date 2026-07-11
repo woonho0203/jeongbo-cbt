@@ -1,0 +1,16 @@
+정보처리기사 정답/오답 이유 보강 보고서
+
+category_calc.json: 41문항 보강
+category_code.json: 56문항 보강
+category_keyword.json: 259문항 보강
+category_sequence.json: 114문항 보강
+category_wrong-sentence.json: 197문항 보강
+exam_2024-1.json: 100문항 보강
+exam_2024-2.json: 100문항 보강
+exam_2024-3.json: 100문항 보강
+exam_2025-1.json: 100문항 보강
+exam_2025-2.json: 100문항 보강
+exam_2025-3.json: 100문항 보강
+
+총 보강 문항: 1267
+수정 파일 수: 11

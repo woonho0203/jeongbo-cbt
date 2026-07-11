@@ -18,6 +18,18 @@ const SUBJECT_NAMES = {
   5: '정보시스템 구축 관리',
 };
 
+function normalizeAnswers(answer) {
+  if (Array.isArray(answer)) return answer.map(Number).filter(Number.isFinite);
+  if (answer == null) return [];
+  const num = Number(answer);
+  return Number.isFinite(num) ? [num] : [];
+}
+
+function isCorrectAnswer(selected, answer) {
+  if (selected == null) return false;
+  return normalizeAnswers(answer).includes(Number(selected));
+}
+
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.css':  'text/css; charset=utf-8',
@@ -108,7 +120,15 @@ async function handleAPI(req, res, method, urlPath) {
     } else if (mode === 'category') {
       const cat = loader.getCategory(sourceId);
       if (!cat) return sendError(res, 404, 'category not found');
-      questions = cat.questions.map(q => ({ ...q, qkey: loader.buildQkey('category', sourceId, q.qnum) }));
+      questions = cat.questions.map(q => {
+        const subject = loader.inferSubject(q);
+        return {
+          ...q,
+          subject,
+          subjectName: q.subjectName || SUBJECT_NAMES[subject],
+          qkey: loader.buildQkey('category', sourceId, q.qnum),
+        };
+      });
       title = cat.title;
     } else if (mode === 'wrong') {
       // 클라이언트가 localStorage 오답 목록을 전달한 경우 우선 사용
@@ -158,11 +178,11 @@ async function handleAPI(req, res, method, urlPath) {
     for (const a of answers) {
       const q = loader.lookupQuestion(a.qkey);
       if (!q) { graded.push({ ...a, correct: null, isCorrect: null, missing: true }); continue; }
-      const subj = q.subject || 0;
+      const subj = q.subject || loader.inferSubject(q);
       if (!subjectBreakdown[subj]) subjectBreakdown[subj] = { correct: 0, total: 0 };
       if (q.answer != null) {
         gradable++;
-        const isCorrect = a.selected === q.answer ? 1 : 0;
+        const isCorrect = isCorrectAnswer(a.selected, q.answer) ? 1 : 0;
         if (isCorrect) { correct++; subjectBreakdown[subj].correct++; }
         subjectBreakdown[subj].total++;
         graded.push({

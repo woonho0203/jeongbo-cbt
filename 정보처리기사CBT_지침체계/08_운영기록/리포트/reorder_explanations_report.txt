@@ -1,0 +1,16 @@
+정보처리기사 해설 순서 재정렬 보고서
+
+category_calc.json: 0문항 재정렬
+category_code.json: 0문항 재정렬
+category_keyword.json: 0문항 재정렬
+category_sequence.json: 0문항 재정렬
+category_wrong-sentence.json: 0문항 재정렬
+exam_2024-1.json: 0문항 재정렬
+exam_2024-2.json: 0문항 재정렬
+exam_2024-3.json: 0문항 재정렬
+exam_2025-1.json: 0문항 재정렬
+exam_2025-2.json: 0문항 재정렬
+exam_2025-3.json: 0문항 재정렬
+
+재정렬 문항 수: 0
+수정된 파일 수: 0

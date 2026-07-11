@@ -69,6 +69,23 @@ function fmtTimer(sec) {
 
 const CIRCLES = ['①', '②', '③', '④'];
 
+function normalizeAnswers(answer) {
+  if (Array.isArray(answer)) return answer.map(Number).filter(Number.isFinite);
+  if (answer == null) return [];
+  const num = Number(answer);
+  return Number.isFinite(num) ? [num] : [];
+}
+
+function isCorrectAnswer(selected, answer) {
+  if (selected == null) return false;
+  return normalizeAnswers(answer).includes(Number(selected));
+}
+
+function formatAnswerLabel(answer) {
+  const labels = normalizeAnswers(answer).map(num => CIRCLES[num - 1] || String(num));
+  return labels.length ? labels.join(', ') : '?';
+}
+
 function formatSource(sourceId) {
   if (!sourceId) return '';
   if (sourceId.startsWith('exam_')) {

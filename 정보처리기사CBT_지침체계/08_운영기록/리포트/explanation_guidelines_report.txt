@@ -1,0 +1,9 @@
+정보처리기사 해설 개선 지침 적용 보고서
+
+category_calc.json: 41문항 개선
+category_code.json: 56문항 개선
+category_wrong-sentence.json: 197문항 개선
+category_keyword.json: 259문항 개선
+category_sequence.json: 114문항 개선
+
+총 개선 문항: 667
