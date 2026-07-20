@@ -228,13 +228,27 @@ function renderStem(text) {
 
 // 해설 안의 보기 번호를 현재 섞인 순서로 재매핑
 // shuffleMap[shuffledPos] = originalIdx (0-based)
+//
+// 나열형 표기(`1·2·4번`)는 마지막 항목에만 '번'이 붙어 있어, 개별 'N번'만 찾으면
+// 앞 숫자들이 원본 번호로 남아 화면에 중복·소실된 번호가 표시된다(판례_006).
+// 그래서 재매핑 전에 나열형을 개별 'N번'으로 펼친 뒤 치환한다.
+// 서수 표기('4번째')는 보기 번호가 아니므로 치환 대상에서 제외한다.
 function remapExplanationNumbers(text, shuffleMap) {
   if (!shuffleMap || !shuffleMap.length) return text;
   // inverse: original 0-based → shuffled 1-based
   const inv = new Array(shuffleMap.length);
   shuffleMap.forEach((origIdx, shuffledPos) => { inv[origIdx] = shuffledPos + 1; });
   const circled = ['①','②','③','④','⑤'];
-  return text.replace(/[①②③④⑤]|([1-4])번/g, (match, n) => {
+
+  // 1) 나열형 → 개별 표기 (1·2·4번 → 1번·2번·4번), 구분자는 원문 그대로 유지
+  const expanded = text.replace(/[1-4](?:\s*[·,、]\s*[1-4])+\s*번(?!째)/g, (match) => {
+    const nums = match.match(/[1-4]/g);
+    const sep = match.includes('·') ? '·' : match.includes('、') ? '、' : ', ';
+    return nums.map(n => n + '번').join(sep);
+  });
+
+  // 2) 개별 보기 번호 재매핑
+  return expanded.replace(/[①②③④⑤]|([1-4])번(?!째)/g, (match, n) => {
     const origNum = (n !== undefined) ? parseInt(n) : (circled.indexOf(match) + 1);
     const newNum = inv[origNum - 1];
     if (newNum == null) return match;

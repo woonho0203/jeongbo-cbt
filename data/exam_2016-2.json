@@ -444,14 +444,14 @@
       "subject": 5,
       "stem": "논리회로를 바르게 표시한 논리식은?",
       "options": [
-        "F＝AㆍB",
-        "F＝ A ＋ B",
-        "F＝ A ㆍ B",
-        "F＝A＋B"
+        "F = A·B",
+        "F = A̅ + B̅",
+        "F = A̅·B̅",
+        "F = A + B"
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "두 입력 A, B에 대한 OR 게이트의 논리식은 F = A + B임.\n· 정답(4번): F = A + B → OR 게이트의 부울 논리식임.\n· 1번 F = A·B: AND 게이트의 논리식임.\n· 2번 F = A̅ + B̅: NAND 게이트 출력 형태(드모르간 법칙)임.\n· 3번 F = A̅·B̅: NOR 게이트 출력 형태임.",
+      "explanation": "회로는 A와 B를 입력받는 NOR 게이트 두 개의 출력을 다시 NOR 게이트에 넣는 구조다. 위쪽 NOR은 (A+B)̅, 아래쪽 NOR도 같은 입력을 받아 (A+B)̅ 를 내보내고, 이 둘을 다시 NOR하면 F = ((A+B)̅ + (A+B)̅)̅ = A+B가 되어 정답은 4번이다. 1번 A·B는 AND, 2번 A̅+B̅는 NAND를 드모르간으로 전개한 식, 3번 A̅·B̅는 NOR 한 단만 거친 식이라 이 회로의 최종 출력과 다르다.",
       "image": "images/2016-2_q32.png"
     },
     {
