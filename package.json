@@ -1,11 +1,13 @@
 {
   "name": "jeongbo-cbt",
-  "version": "1.0.0",
+  "version": "26-07-21-3",
   "description": "정보처리기사 필기 CBT 연습 시스템",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "node server/index.js"
+    "dev": "node server/index.js",
+    "version:bump": "node scripts/bump_version.js",
+    "deploy": "node scripts/bump_version.js && vercel --prod --yes"
   },
   "dependencies": {
     "express": "^4.19.2",

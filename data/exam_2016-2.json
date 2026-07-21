@@ -444,14 +444,14 @@
       "subject": 5,
       "stem": "논리회로를 바르게 표시한 논리식은?",
       "options": [
-        "F = A·B",
-        "F = A̅ + B̅",
-        "F = A̅·B̅",
-        "F = A + B"
+        "$F = A \\cdot B$",
+        "$F = \\overline{A} + \\overline{B}$",
+        "$F = \\overline{A} \\cdot \\overline{B}$",
+        "$F = A + B$"
       ],
       "subjectName": "정보시스템 구축 관리",
       "answer": 4,
-      "explanation": "회로는 A와 B를 입력받는 NOR 게이트 두 개의 출력을 다시 NOR 게이트에 넣는 구조다. 위쪽 NOR은 (A+B)̅, 아래쪽 NOR도 같은 입력을 받아 (A+B)̅ 를 내보내고, 이 둘을 다시 NOR하면 F = ((A+B)̅ + (A+B)̅)̅ = A+B가 되어 정답은 4번이다. 1번 A·B는 AND, 2번 A̅+B̅는 NAND를 드모르간으로 전개한 식, 3번 A̅·B̅는 NOR 한 단만 거친 식이라 이 회로의 최종 출력과 다르다.",
+      "explanation": "회로는 A와 B를 입력받는 NOR 게이트 두 개의 출력을 다시 NOR 게이트에 넣는 구조다. 위쪽 NOR은 $\\overline{A+B}$, 아래쪽 NOR도 같은 입력을 받아 $\\overline{A+B}$ 를 내보내고, 이 둘을 다시 NOR하면 $F = \\overline{\\overline{A+B} + \\overline{A+B}} = A+B$가 되어 정답은 4번이다. 1번 $A \\cdot B$는 AND, 2번 $\\overline{A}+\\overline{B}$는 NAND를 드모르간으로 전개한 식, 3번 $\\overline{A} \\cdot \\overline{B}$는 NOR 한 단만 거친 식이라 이 회로의 최종 출력과 다르다.",
       "image": "images/2016-2_q32.png"
     },
     {

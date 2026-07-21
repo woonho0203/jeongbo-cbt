@@ -50,6 +50,34 @@ function el(tag, attrs = {}, children = []) {
 function $(sel) { return document.querySelector(sel); }
 function $$(sel) { return Array.from(document.querySelectorAll(sel)); }
 
+// ─── 수식(LaTeX) 렌더링 ──────────────────────────────────────────────────────
+// 문항 stem/options/explanation에 $...$ / $$...$$ 로 표기된 LaTeX를 KaTeX로 렌더링.
+function renderMathIn(container) {
+  if (!container || typeof renderMathInElement !== 'function') return;
+  renderMathInElement(container, {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '$', right: '$', display: false },
+    ],
+    throwOnError: false,
+  });
+}
+
+// #app 내부는 여러 뷰(router.js, exam.js)가 각자 재렌더링하므로, 렌더 호출을
+// 일일이 따라다니는 대신 DOM 변화를 한 곳에서 감지해 수식 렌더링을 일괄 적용한다.
+window.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  if (!app) return;
+  // rAF는 백그라운드/비활성 탭에서 지연되거나 멈출 수 있어 setTimeout으로 디바운스한다.
+  let pending = false;
+  const observer = new MutationObserver(() => {
+    if (pending) return;
+    pending = true;
+    setTimeout(() => { pending = false; renderMathIn(app); }, 0);
+  });
+  observer.observe(app, { childList: true, subtree: true });
+});
+
 function fmtDate(iso) {
   if (!iso) return '-';
   const d = new Date(iso);
