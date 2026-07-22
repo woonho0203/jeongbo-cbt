@@ -1019,7 +1019,7 @@
     },
     {
       "qnum": 73,
-      "stem": "메모리 관리 기법 중 Worst Fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가?\n영역 번호 메모리 크기 사용 여부 NO.1 8K FREE NO.2 12K FREE NO.3 10K IN USE NO.4 20K IN USE NO.5 16K FREE",
+      "stem": "메모리 관리 기법 중 Worst Fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가?",
       "options": [
         "NO.2",
         "NO.3",
