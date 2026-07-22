@@ -96,7 +96,8 @@
         "10"
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: |는 논리 OR가 아니라 비트 OR 연산자이며, 각 비트 중 하나라도 1이면 결과 비트가 1이 됨.\n- 실행 흐름:\n  - 4는 2진수 0100, 7은 2진수 0111임.\n  - 0100 | 0111 = 0111임.\n  - 2진수 0111은 10진수 7임.\n- 최종 출력: 출력값은 7임.\n- 오답 분석:\n  - 1번 3: 3은 XOR 또는 차이 비트를 떠올린 경우임.\n  - 2번 4: 4는 한쪽 피연산자만 본 경우임.\n  - 4번 10: 10은 산술 덧셈으로 착각한 경우임.\n- 주의(함정): 비트 연산자 |와 논리 연산자 ||를 구분해야 함.",
-      "answer": 3
+      "answer": 3,
+      "image": "images/2021-2_q62.png"
     },
     {
       "qnum": 9,
@@ -120,7 +121,8 @@
         "12"
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: pt=&n이고 *&pt는 pt 자신이므로 &n과 *&pt는 같은 주소값을 나타냄.\n- 실행 흐름:\n  - n=4, *pt=4, *&pt=pt=&n임.\n  - 식 &n + *pt - *&pt + n에서 &n과 *&pt는 같은 주소이므로 주소 항은 서로 상쇄되는 형태로 해석됨.\n  - 남는 정수 항은 *pt + n = 4 + 4 = 8임.\n- 최종 출력: 문제 의도상 출력값은 8임.\n- 오답 분석:\n  - 1번 0: 0은 주소 항만 보고 정수 항을 누락한 경우임.\n  - 2번 4: 4는 n 또는 *pt 하나만 반영한 경우임.\n  - 4번 12: 12는 주소 이동량까지 정수값처럼 더한 경우임.\n- 주의(함정): 실제 C 표준 관점에서는 포인터와 정수, 포인터 간 연산을 이렇게 섞는 코드는 이식성이 낮으므로 시험에서는 같은 주소 항의 상쇄 여부를 중심으로 판단함.",
-      "answer": 3
+      "answer": 3,
+      "image": "images/2021-3_q71.png"
     },
     {
       "qnum": 11,
@@ -300,7 +302,8 @@
         "Unresolved compilation problem 오류 발생"
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: Java 코드는 실행 결과를 추적하기 전에 문법 오류 여부를 먼저 확인해야 함.\n- 실행 흐름:\n  - while(y--)는 Java에서 조건식으로 사용할 수 없음. Java의 while 조건은 boolean이어야 하며, 정수값은 C처럼 참/거짓으로 자동 변환되지 않음.\n  - System.out.println(\"x=\" x + \"y=\" y) 형태도 문자열과 변수 사이의 + 연산자가 빠져 문법적으로 올바르지 않음.\n  - 따라서 반복 실행 결과를 계산하기 전에 컴파일 단계에서 오류가 발생함.\n- 최종 출력: Unresolved compilation problem 오류 발생에 해당함.\n- 오답 분석:\n  - 1번 x＝7 y＝0: Java가 while(y--)를 C처럼 정수 조건으로 처리한다고 가정한 계산값임.\n  - 2번 x＝6 y＝-1: 후위 감소 반복을 임의로 추적한 값이며, Java에서는 조건식 타입 오류 때문에 실행까지 가지 못함.\n  - 3번 x＝7 y＝-1: C식 반복 실행과 y-- 평가를 가정한 값이며, println의 문자열 연결 문법 오류도 반영하지 못함.\n- 주의(함정): Java는 C와 달리 int를 조건식 boolean으로 사용할 수 없음.",
-      "answer": 4
+      "answer": 4,
+      "image": "images/2020-4_q67.png"
     },
     {
       "qnum": 26,
@@ -540,7 +543,8 @@
         "5"
       ],
       "explanation": "- 문제 유형: SQL형\n- 핵심 개념: SELECT 컬럼 FROM 테이블은 조건이나 DISTINCT가 없으면 해당 테이블의 모든 행에 대해 컬럼 값을 반환함.\n- SQL 처리 흐름:\n  - 사원 테이블에는 5개의 튜플이 있음.\n  - SELECT 급여 FROM 사원은 급여 컬럼만 출력하지만 행 수는 줄이지 않음.\n  - 급여 35000과 40000이 중복되어도 DISTINCT가 없으므로 각각 별도 행으로 출력됨.\n- 최종 결과: 생성되는 튜플 수는 5개임.\n- 오답 분석:\n  - 1번 1: 1은 컬럼 수와 튜플 수를 혼동한 경우임.\n  - 2번 3: 3은 서로 다른 급여값 개수만 센 경우임.\n  - 3번 4: 4는 중복 중 하나만 잘못 제거한 경우임.\n- 주의(함정): 중복 제거는 SELECT DISTINCT를 썼을 때만 수행됨.",
-      "answer": 4
+      "answer": 4,
+      "table": "<table><tr><th>사원ID</th><th>사원명</th><th>급여</th><th>부서ID</th></tr><tr><td>101</td><td>박철수</td><td>30000</td><td>1</td></tr><tr><td>102</td><td>한나라</td><td>35000</td><td>2</td></tr><tr><td>103</td><td>김감동</td><td>40000</td><td>3</td></tr><tr><td>104</td><td>이구수</td><td>35000</td><td>2</td></tr><tr><td>105</td><td>최초록</td><td>40000</td><td>3</td></tr></table>"
     },
     {
       "qnum": 46,
@@ -564,19 +568,21 @@
         "SELECT 제품명, 판매량 FROM 푸드 WHERE 지점명＝‘강남지점’ ORDER BY 판매량 DESC;"
       ],
       "explanation": "- 문제 유형: SQL형\n- 핵심 개념: WHERE는 행을 필터링하고 ORDER BY DESC는 값을 내림차순으로 정렬함.\n- SQL 처리 흐름:\n  - 문제는 강남지점만 대상으로 하므로 WHERE 지점명='강남지점' 조건이 필요함.\n  - 강남지점 판매량은 미역국 550, 비빔밥 500, 잡채밥 250, 도시락 200임.\n  - 판매량이 많은 제품부터 출력하려면 ORDER BY 판매량 DESC를 사용해야 함.\n- 최종 결과: SELECT 제품명, 판매량 FROM 푸드 WHERE 지점명='강남지점' ORDER BY 판매량 DESC; 가 적절함.\n- 오답 분석:\n  - 1번 SELECT 제품명, 판매량 FROM 푸드 ORDER BY 판매량 ASC;: 강남지점 WHERE 조건이 없고 ASC라 판매량이 적은 순서로 정렬함.\n  - 2번 SELECT 제품명, 판매량 FROM 푸드 ORDER BY 판매량 DESC;: DESC는 맞지만 강남지점 조건이 없어 모든 지점의 제품이 섞임.\n  - 3번 SELECT 제품명, 판매량 FROM 푸드 WHERE 지점명＝‘강남지점’ ORDER BY 판매량 ASC;: 강남지점 조건은 맞지만 ASC라 판매량이 적은 제품부터 출력됨.\n- 주의(함정): “많은 제품부터”는 DESC, “적은 제품부터”는 ASC임.",
-      "answer": 4
+      "answer": 4,
+      "table": "<table><tr><th>지점명</th><th>제품명</th><th>판매량</th></tr><tr><td>강남지점</td><td>비빔밥</td><td>500</td></tr><tr><td>강북지점</td><td>도시락</td><td>300</td></tr><tr><td>강남지점</td><td>도시락</td><td>200</td></tr><tr><td>강남지점</td><td>미역국</td><td>550</td></tr><tr><td>수원지점</td><td>비빔밥</td><td>600</td></tr><tr><td>인천지점</td><td>비빔밥</td><td>800</td></tr><tr><td>강남지점</td><td>잡채밥</td><td>250</td></tr></table>"
     },
     {
       "qnum": 48,
-      "stem": "테이블 R과 S에 대한 SQL문이 실행되었을 때, 실행 결과로 옳은 것은? [R] A B 1 A 3 B [S] A B 1 A 2 B\nSELECT A\nFROM R\nUNION ALL\nSELECT A\nFROM S; 1",
+      "stem": "테이블 R과 S에 대한 SQL문이 실행되었을 때, 실행 결과로 옳은 것은?\nSELECT A FROM R UNION ALL SELECT A FROM S;",
       "options": [
-        "3 2",
-        "1 3",
-        "1 3 1",
-        "2"
+        "1",
+        "3\n2",
+        "1\n3",
+        "1\n3\n1\n2"
       ],
-      "explanation": "- 문제 유형: SQL형\n- 핵심 개념: UNION ALL은 두 SELECT 결과를 합치되 중복을 제거하지 않는 집합 연산임.\n- SQL 처리 흐름:\n  - R의 A 컬럼 값은 1, 3임.\n  - S의 A 컬럼 값은 1, 2임.\n  - UNION ALL은 중복된 1도 그대로 포함하므로 결과는 1,3,1,2 순서의 집합 결과가 됨.\n- 최종 결과: 실행 결과는 1, 3, 1, 2가 모두 포함됨.\n- 오답 분석:\n  - 1번 3 2: R의 A값 1을 누락하고 S의 일부 값만 섞은 결과임.\n  - 2번 1 3: R의 결과만 남기고 S의 A값 1,2를 결합하지 않은 결과임.\n  - 4번 2: S에만 있는 일부 값만 선택한 결과이며 UNION ALL은 두 SELECT 결과 전체를 결합함.\n- 주의(함정): UNION은 중복 제거, UNION ALL은 중복 보존임.",
-      "answer": 3
+      "explanation": "R.A는 {1,3}, S.A는 {1,2}이고 UNION ALL은 중복을 제거하지 않고 두 결과를 순서대로 이어붙이므로 SELECT A FROM R의 결과(1,3) 뒤에 SELECT A FROM S의 결과(1,2)를 그대로 붙인 1,3,1,2가 출력되어 정답은 4번이다. 1·2·3번은 UNION ALL이 중복을 제거한다고 착각했거나 R·S 중 한쪽 결과만 반영한 값이다.",
+      "answer": 4,
+      "image": "images/2022-1_q57.png"
     },
     {
       "qnum": 49,
