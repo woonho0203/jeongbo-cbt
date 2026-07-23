@@ -130,7 +130,7 @@ function renderExam(app, state) {
   app.innerHTML = '';
   const layout = el('div', { class: 'exam-layout' }, [
     el('div', { class: 'exam-main', id: 'exam-main' }),
-    el('div', { class: 'exam-side' }, [renderOMR(state)]),
+    el('div', { class: 'exam-side' }, [renderSidePanel(state)]),
   ]);
   app.append(layout);
   renderQuestion(state);
@@ -185,38 +185,8 @@ function renderQuestion(state) {
   main.append(el('div', { class: 'exam-header' }, headerChildren));
   if (state.tick) state.tick();
 
-  // ── 진행 현황 바 (맞은 것 / 틀린 것 / 남은 것) ──
-  {
-    const total    = state.questions.length;
-    const answered = state.answers.size;
-
-    let progressEl;
-    if (state.checkMode && state.questions[0]?.answer != null) {
-      const correct  = state.questions.filter(q2 => isCorrectAnswer(state.answers.get(q2.qkey), q2.answer)).length;
-      const wrong    = answered - correct;
-      const remain   = total - answered;
-      const score    = total > 0 ? Math.round(correct / total * 100) : 0;
-      const scoreColor = score >= 60 ? 'var(--success)' : 'var(--danger)';
-      progressEl = el('div', { class: 'progress-bar-wrap' }, [
-        el('div', { class: 'progress-counts' }, [
-          el('span', { class: 'pcnt correct', text: `✅ 맞은 것: ${correct}` }),
-          el('span', { class: 'pcnt wrong',   text: `❌ 틀린 것: ${wrong}` }),
-          el('span', { class: 'pcnt remain',  text: `📝 남은 것: ${remain}` }),
-          el('span', { class: 'pcnt score', style: { color: scoreColor }, text: `점수: ${score}%` }),
-        ]),
-      ]);
-    } else {
-      const remain = total - answered;
-      progressEl = el('div', { class: 'progress-bar-wrap' }, [
-        el('div', { class: 'progress-counts' }, [
-          el('span', { class: 'pcnt answered', text: `✏️ 푼 것: ${answered}` }),
-          el('span', { class: 'pcnt remain',   text: `📝 남은 것: ${remain}` }),
-          el('span', { class: 'pcnt total',    text: `전체: ${total}` }),
-        ]),
-      ]);
-    }
-    main.append(progressEl);
-  }
+  // ── 진행 현황 바 ── (데스크톱은 OMR 위(exam-side)에, 모바일은 여기 본문에 표시)
+  main.append(buildProgressBar(state, 'main'));
 
   // ── 문제 ──
   main.append(el('div', { class: 'qbox' }, [
@@ -261,7 +231,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑↓ 스크롤' }),
+      el('div', { class: 'check-next-hint', text: '→/Shift+Enter 다음 문제  ·  ←/Enter 이전 문제  ·  ↑↓/5·6 스크롤' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -291,7 +261,7 @@ function renderQuestion(state) {
           }, text: '◀ 이전',
         }),
         el('div', { style: { color: 'var(--muted)', fontSize: '0.88rem', textAlign: 'center', flex: '1' },
-          text: '숫자(1~4) · ←①  ↓②  →③  ↑④',
+          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter 이전',
         }),
       ]));
     }
@@ -361,9 +331,16 @@ function renderQuestion(state) {
       return;
     }
 
+    // ── Enter(이전) / Shift+Enter(다음): 문제 이동 ──
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (e.shiftKey) goToNextQuestion(state); else goToPrevQuestion(state);
+      return;
+    }
+
     // ── 숫자키 ──
     if (e.key === '5' || e.key === ' ') { e.preventDefault(); window.scrollBy({ top: 200, behavior: 'smooth' }); return; }
-    if (e.key === '6') { window.scrollBy({ top: -200, behavior: 'smooth' }); return; }
+    if (e.key === '6') { e.preventDefault(); window.scrollBy({ top: -200, behavior: 'smooth' }); return; }
 
     if (state.checkMode) {
       if (state.revealedAnswer) {
@@ -506,6 +483,99 @@ function clearAnswer(state) {
   updateOMR(state);
 }
 
+// Enter/5 · Shift+Enter/6 공용 다음·이전 문제 이동
+function goToNextQuestion(state) {
+  if (state.checkMode) {
+    if (state.revealedAnswer) advanceCheckMode(state);
+  } else if (state.currentIdx < state.questions.length - 1) {
+    state.currentIdx++;
+    renderQuestion(state);
+    updateOMR(state);
+    scheduleDraftSave(state);
+  } else {
+    submitExam(state);
+  }
+}
+
+function goToPrevQuestion(state) {
+  if (state.currentIdx > 0) {
+    if (state.checkMode) state.revealedAnswer = false;
+    state.currentIdx--;
+    renderQuestion(state);
+    updateOMR(state);
+  }
+}
+
+// 진행 현황(점수) 바 생성 — placement: 'main'(모바일 본문) | 'side'(데스크톱 OMR 위)
+function buildProgressBar(state, placement) {
+  const total    = state.questions.length;
+  const answered = state.answers.size;
+  const wrapClass = `progress-bar-wrap progress-in-${placement}`;
+
+  if (state.checkMode && state.questions[0]?.answer != null) {
+    const correct  = state.questions.filter(q2 => isCorrectAnswer(state.answers.get(q2.qkey), q2.answer)).length;
+    const wrong    = answered - correct;
+    const remain   = total - answered;
+    // 전체 점수: 지금까지 푼 문제 기준으로 계산 (전체 문항 수가 아님)
+    const score    = answered > 0 ? Math.round(correct / answered * 100) : 0;
+    const scoreColor = answered === 0 ? 'var(--muted)' : (score >= 60 ? 'var(--success)' : 'var(--danger)');
+
+    // 과목별 집계 (푼 문제 기준)
+    const subjStats = {};
+    for (const q2 of state.questions) {
+      const selected = state.answers.get(q2.qkey);
+      if (selected == null || q2.answer == null) continue;
+      const sid = q2.subject || 0;
+      if (!subjStats[sid]) subjStats[sid] = { correct: 0, answered: 0, name: q2.subjectName || SUBJECT_NAMES[sid] || `과목${sid}` };
+      subjStats[sid].answered++;
+      if (isCorrectAnswer(selected, q2.answer)) subjStats[sid].correct++;
+    }
+    const subjRows = Object.keys(subjStats)
+      .sort((a, b) => Number(a) - Number(b))
+      .map(sid => {
+        const v = subjStats[sid];
+        const r = Math.round(v.correct / v.answered * 100);
+        return el('div', { class: 'study-subj-bar' }, [
+          el('div', { class: 'study-subj-name', text: v.name }),
+          el('div', { class: 'study-mini-track' }, [
+            el('div', { class: `study-mini-fill ${r >= 60 ? 'ok' : 'low'}`, style: { width: `${r}%` } }),
+          ]),
+          el('div', { class: 'study-subj-pct', text: `${r}% (${v.correct}/${v.answered})` }),
+        ]);
+      });
+
+    const children = [
+      el('div', { class: 'progress-counts' }, [
+        el('span', { class: 'pcnt correct', text: `✅ 맞은 것: ${correct}` }),
+        el('span', { class: 'pcnt wrong',   text: `❌ 틀린 것: ${wrong}` }),
+        el('span', { class: 'pcnt remain',  text: `📝 남은 것: ${remain}` }),
+        el('span', { class: 'pcnt score', style: { color: scoreColor }, text: `점수: ${score}% (${correct}/${answered})` }),
+      ]),
+    ];
+    if (subjRows.length) {
+      children.push(el('div', { class: 'study-subj-bars' }, subjRows));
+    }
+    return el('div', { class: wrapClass }, children);
+  }
+
+  const remain = total - answered;
+  return el('div', { class: wrapClass }, [
+    el('div', { class: 'progress-counts' }, [
+      el('span', { class: 'pcnt answered', text: `✏️ 푼 것: ${answered}` }),
+      el('span', { class: 'pcnt remain',   text: `📝 남은 것: ${remain}` }),
+      el('span', { class: 'pcnt total',    text: `전체: ${total}` }),
+    ]),
+  ]);
+}
+
+// 우측 패널 = 진행 현황 바 + OMR 카드
+function renderSidePanel(state) {
+  return el('div', { class: 'omr-panel', id: 'omr-panel' }, [
+    buildProgressBar(state, 'side'),
+    renderOMR(state),
+  ]);
+}
+
 // OMR 카드 (요약 섹션 제거됨)
 function renderOMR(state) {
   const wrapper = el('div', { class: 'omr', id: 'omr' });
@@ -551,9 +621,9 @@ function renderOMR(state) {
 }
 
 function updateOMR(state) {
-  const omr = document.getElementById('omr');
-  if (!omr) return;
-  omr.replaceWith(renderOMR(state));
+  const panel = document.getElementById('omr-panel');
+  if (!panel) return;
+  panel.replaceWith(renderSidePanel(state));
 }
 
 // 북마크 토글 - localStorage 사용 (API 불필요)

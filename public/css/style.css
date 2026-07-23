@@ -644,6 +644,32 @@ main {
 .pcnt.answered { color: var(--primary); }
 .pcnt.total   { color: var(--muted); }
 
+/* 학습 모드 과목별 점수 바 */
+.study-subj-bars {
+  display: flex; flex-direction: column; gap: 5px;
+  margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border);
+}
+.study-subj-bar { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; }
+.study-subj-name { width: 132px; color: var(--text); flex-shrink: 0; }
+.study-mini-track { flex: 1; height: 6px; background: var(--bg); border-radius: 3px; overflow: hidden; }
+.study-mini-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.study-mini-fill.ok { background: var(--success); }
+.study-mini-fill.low { background: var(--danger); }
+.study-subj-pct {
+  width: 86px; text-align: right; color: var(--muted);
+  flex-shrink: 0; font-variant-numeric: tabular-nums;
+}
+@media (max-width: 640px) {
+  .study-subj-name { width: 96px; font-size: 0.74rem; }
+  .study-subj-pct  { width: 74px; font-size: 0.74rem; }
+}
+
+/* 진행 현황 바 위치: 데스크톱은 OMR 위(exam-side), 모바일은 본문(exam-main) */
+.progress-in-side { margin-top: 0; }          /* OMR 위에 붙일 때 상단 여백 최소화 */
+@media (min-width: 769px) {
+  .progress-in-main { display: none; }        /* 데스크톱에서는 본문 복사본 숨김 */
+}
+
 /* ─── 학습 기록 ─── */
 .history-summary {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 18px;
