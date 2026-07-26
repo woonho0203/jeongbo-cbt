@@ -1053,6 +1053,7 @@
     {
       "qnum": 75,
       "subject": 4,
+      "subjectName": "프로그래밍 언어 활용",
       "stem": "자바스크립트(JavaScript)와 관련한 설명으로 틀린 것은?",
       "options": [
         "프로토타입(Prototype)의 개념이 존재한다.",

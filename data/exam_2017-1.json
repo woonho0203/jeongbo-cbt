@@ -19,6 +19,7 @@
     {
       "qnum": 2,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "다음 SQL문 실행결과는?",
       "options": [
         "①",
@@ -38,6 +39,7 @@
     {
       "qnum": 3,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "후위 표기식이 다음과 같을 때 연산 결과는?\n4 2 4 * + 2 / 3 +",
       "options": [
         "6",
@@ -266,6 +268,7 @@
     {
       "qnum": 19,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "E-R 모델에서 다중값 속성의 표기법은?",
       "options": [
         "마름모(관계 기호)",

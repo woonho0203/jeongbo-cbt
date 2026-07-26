@@ -614,6 +614,7 @@
     {
       "qnum": 44,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "관계 데이터베이스인 테이블 R1에 대한 아래 SQL 문의 실행결과로 옳은 것은?\nSELECT DISTINCT 학년 FROM R1;",
       "options": [
         "학년: 1, 1, 2, 2, 3",

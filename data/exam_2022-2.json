@@ -62,6 +62,7 @@
     {
       "qnum": 5,
       "subject": 1,
+      "subjectName": "소프트웨어 설계",
       "stem": "요구사항 분석에서 비기능적(Nonfunctional) 요구에 대한 설명으로 옳은 것은?",
       "options": [
         "시스템의 처리량(Throughput), 반응 시간 등의 성능 요구나 품질 요구는 비기능적 요구에 해당하지 않는다.",

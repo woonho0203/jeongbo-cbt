@@ -672,6 +672,7 @@
     {
       "qnum": 48,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "아래의 SQL문을 실행한 결과는?\nSELECT 이름 FROM R1 WHERE 학번 IN (SELECT 학번 FROM R2 WHERE 과목번호 = 'C100');",
       "options": [
         "이름: 홍길동, 강남길, 장미화",

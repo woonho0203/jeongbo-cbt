@@ -600,6 +600,7 @@
     {
       "qnum": 43,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "다음 두 릴레이션 R1과 R2의 카티션 프로덕트(Cartesian Product) 수행 결과는?",
       "options": [
         "(1, 컴퓨터), (2, 국문), (3, 수학) — 3행",

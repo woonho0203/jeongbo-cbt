@@ -641,6 +641,7 @@
     {
       "qnum": 46,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "테이블 R과 S에 대한 SQL문이 실행되었을 때, 실행결과로 옳은 것은?\nSELECT A FROM R UNION ALL SELECT A FROM S;",
       "options": [
         "A: 1",

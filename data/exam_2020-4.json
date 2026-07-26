@@ -709,6 +709,7 @@
     {
       "qnum": 51,
       "subject": 3,
+      "subjectName": "데이터베이스 구축",
       "stem": "다음 SQL문의 실행 결과는?\nSELECT 과목이름 FROM 성적 WHERE EXISTS (SELECT 학번 FROM 학생 WHERE 학생.학번=성적.학번 AND 학생.학과 IN ('전산', '전기') AND 학생.주소='경기');",
       "options": [
         "과목이름: DB",

@@ -97,7 +97,7 @@
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: |는 논리 OR가 아니라 비트 OR 연산자이며, 각 비트 중 하나라도 1이면 결과 비트가 1이 됨.\n- 실행 흐름:\n  - 4는 2진수 0100, 7은 2진수 0111임.\n  - 0100 | 0111 = 0111임.\n  - 2진수 0111은 10진수 7임.\n- 최종 출력: 출력값은 7임.\n- 오답 분석:\n  - 1번 3: 3은 XOR 또는 차이 비트를 떠올린 경우임.\n  - 2번 4: 4는 한쪽 피연산자만 본 경우임.\n  - 4번 10: 10은 산술 덧셈으로 착각한 경우임.\n- 주의(함정): 비트 연산자 |와 논리 연산자 ||를 구분해야 함.",
       "answer": 3,
-      "image": "images/2021-2_q62.png"
+      "image": "images/code_q8.png"
     },
     {
       "qnum": 9,
@@ -122,7 +122,7 @@
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: pt=&n이고 *&pt는 pt 자신이므로 &n과 *&pt는 같은 주소값을 나타냄.\n- 실행 흐름:\n  - n=4, *pt=4, *&pt=pt=&n임.\n  - 식 &n + *pt - *&pt + n에서 &n과 *&pt는 같은 주소이므로 주소 항은 서로 상쇄되는 형태로 해석됨.\n  - 남는 정수 항은 *pt + n = 4 + 4 = 8임.\n- 최종 출력: 문제 의도상 출력값은 8임.\n- 오답 분석:\n  - 1번 0: 0은 주소 항만 보고 정수 항을 누락한 경우임.\n  - 2번 4: 4는 n 또는 *pt 하나만 반영한 경우임.\n  - 4번 12: 12는 주소 이동량까지 정수값처럼 더한 경우임.\n- 주의(함정): 실제 C 표준 관점에서는 포인터와 정수, 포인터 간 연산을 이렇게 섞는 코드는 이식성이 낮으므로 시험에서는 같은 주소 항의 상쇄 여부를 중심으로 판단함.",
       "answer": 3,
-      "image": "images/2021-3_q71.png"
+      "image": "images/code_q10.png"
     },
     {
       "qnum": 11,
@@ -303,7 +303,7 @@
       ],
       "explanation": "- 문제 유형: 코드형\n- 핵심 개념: Java 코드는 실행 결과를 추적하기 전에 문법 오류 여부를 먼저 확인해야 함.\n- 실행 흐름:\n  - while(y--)는 Java에서 조건식으로 사용할 수 없음. Java의 while 조건은 boolean이어야 하며, 정수값은 C처럼 참/거짓으로 자동 변환되지 않음.\n  - System.out.println(\"x=\" x + \"y=\" y) 형태도 문자열과 변수 사이의 + 연산자가 빠져 문법적으로 올바르지 않음.\n  - 따라서 반복 실행 결과를 계산하기 전에 컴파일 단계에서 오류가 발생함.\n- 최종 출력: Unresolved compilation problem 오류 발생에 해당함.\n- 오답 분석:\n  - 1번 x＝7 y＝0: Java가 while(y--)를 C처럼 정수 조건으로 처리한다고 가정한 계산값임.\n  - 2번 x＝6 y＝-1: 후위 감소 반복을 임의로 추적한 값이며, Java에서는 조건식 타입 오류 때문에 실행까지 가지 못함.\n  - 3번 x＝7 y＝-1: C식 반복 실행과 y-- 평가를 가정한 값이며, println의 문자열 연결 문법 오류도 반영하지 못함.\n- 주의(함정): Java는 C와 달리 int를 조건식 boolean으로 사용할 수 없음.",
       "answer": 4,
-      "image": "images/2020-4_q67.png"
+      "image": "images/code_q25.png"
     },
     {
       "qnum": 26,
@@ -559,7 +559,7 @@
       "explanation": "학생 테이블에서 학과가 전산·전기이면서 주소가 경기인 학생은 학번 2000(전기·경기)과 4000(전산·경기)이다. 성적 테이블에서 학번 2000의 과목이름은 DB, 학번 4000의 과목이름은 DB·운영체제이므로 EXISTS 조건을 만족하는 결과는 과목이름: DB, DB, 운영체제다.",
       "answer": 3,
       "table": "<table><tr><th colspan=\"5\">[학생] 테이블</th></tr><tr><th>학번</th><th>이름</th><th>학년</th><th>학과</th><th>주소</th></tr><tr><td>1000</td><td>김철수</td><td>1</td><td>전산</td><td>서울</td></tr><tr><td>2000</td><td>고영준</td><td>1</td><td>전기</td><td>경기</td></tr><tr><td>3000</td><td>유진호</td><td>2</td><td>전자</td><td>경기</td></tr><tr><td>4000</td><td>김영진</td><td>2</td><td>전산</td><td>경기</td></tr><tr><td>5000</td><td>정현영</td><td>3</td><td>전자</td><td>서울</td></tr></table><table><tr><th colspan=\"5\">[성적] 테이블</th></tr><tr><th>학번</th><th>과목번호</th><th>과목이름</th><th>학점</th><th>점수</th></tr><tr><td>1000</td><td>A100</td><td>자료구조</td><td>A</td><td>91</td></tr><tr><td>2000</td><td>A200</td><td>DB</td><td>A+</td><td>99</td></tr><tr><td>3000</td><td>A100</td><td>자료구조</td><td>B+</td><td>88</td></tr><tr><td>3000</td><td>A200</td><td>DB</td><td>B</td><td>85</td></tr><tr><td>4000</td><td>A200</td><td>DB</td><td>A</td><td>94</td></tr><tr><td>4000</td><td>A300</td><td>운영체제</td><td>B+</td><td>89</td></tr><tr><td>5000</td><td>A300</td><td>운영체제</td><td>B</td><td>88</td></tr></table>",
-      "image": "images/2020-4_q51.png"
+      "image": "images/code_q46.png"
     },
     {
       "qnum": 47,
