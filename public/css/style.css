@@ -145,6 +145,32 @@ main {
 .btn.small { padding: 6px 12px; font-size: 0.85rem; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 
+/* ─── 오답 파일 내보내기 ─── */
+.wrong-actions {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px;
+}
+.wrong-export-status,
+.wrong-empty-guide {
+  min-height: 1.4em; margin-top: 12px; color: var(--muted); font-size: 0.9rem;
+}
+.wrong-auto-export { text-align: center; }
+.export-toast {
+  position: fixed; z-index: 10000; left: 50%; bottom: 24px;
+  width: max-content; max-width: calc(100vw - 32px);
+  transform: translateX(-50%);
+  padding: 12px 18px; border: 1px solid var(--success);
+  border-radius: 10px; background: var(--panel); color: var(--text);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.28);
+  font-size: 0.92rem; text-align: center;
+}
+.export-toast.info { border-color: var(--primary); }
+.export-toast.error { border-color: var(--danger); }
+@media (max-width: 640px) {
+  .wrong-actions { flex-direction: column; }
+  .wrong-actions .btn { width: 100%; }
+  .export-toast { bottom: 16px; }
+}
+
 /* ─── 모드 선택 그리드 ─── */
 .mode-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

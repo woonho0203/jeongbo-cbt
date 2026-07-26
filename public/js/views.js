@@ -591,17 +591,73 @@ defineRoute('study-list', async (app) => {
 // =================== 오답 노트 ===================
 defineRoute('wrong', async (app) => {
   const wrongCount = Storage.countWrong();
+  const status = el('p', {
+    class: 'wrong-export-status',
+    id: 'wrong-export-status',
+    role: 'status',
+    'aria-live': 'polite',
+  });
+
+  const downloadButton = el('button', {
+    class: 'btn success large',
+    id: 'wrong-export-button',
+    disabled: wrongCount === 0 ? true : null,
+    onClick: async () => {
+      downloadButton.disabled = true;
+      downloadButton.textContent = '오답 파일 준비 중…';
+      status.textContent = '';
+      try {
+        const result = await WrongExport.download();
+        status.textContent = result.message;
+        WrongExport.showMessage(result.message, result.downloaded ? 'success' : 'info');
+      } catch (error) {
+        console.error('[WrongExport]', error);
+        status.textContent = '오답 파일을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.';
+        WrongExport.showMessage(status.textContent, 'error');
+      } finally {
+        downloadButton.disabled = wrongCount === 0;
+        downloadButton.textContent = '📥 오답 파일 다운로드';
+      }
+    },
+    text: '📥 오답 파일 다운로드',
+  });
+
   app.innerHTML = '';
   app.append(
     el('h1', { class: 'section-title', text: '오답 노트' }),
     el('div', { class: 'card' }, [
       el('p', { text: `현재 미해결 오답: ${wrongCount}문제` }),
-      el('br'),
-      wrongCount > 0
-        ? el('button', { class: 'btn primary large', onClick: () => navigate('exam', { mode: 'wrong' }), text: '오답 다시 풀기' })
-        : el('p', { text: '아직 오답이 없습니다. 시험을 응시하면 자동으로 기록됩니다.' }),
+      el('div', { class: 'wrong-actions' }, [
+        wrongCount > 0
+          ? el('button', { class: 'btn primary large', onClick: () => navigate('exam', { mode: 'wrong' }), text: '오답 다시 풀기' })
+          : null,
+        downloadButton,
+      ]),
+      wrongCount === 0
+        ? el('p', { class: 'wrong-empty-guide', text: '아직 오답이 없습니다. 시험을 응시하면 자동으로 기록됩니다.' })
+        : null,
+      status,
     ]),
   );
+});
+
+// =================== 주소로 즉시 오답 내보내기 ===================
+defineRoute('export-wrong', async (app) => {
+  app.innerHTML = '';
+  app.append(el('div', { class: 'card wrong-auto-export' }, [
+    el('h2', { text: '📥 오답 파일을 준비하고 있습니다' }),
+    el('p', { text: '이 기기에 저장된 미해결 오답을 확인하는 중입니다.' }),
+  ]));
+
+  try {
+    const result = await WrongExport.download();
+    navigate('wrong');
+    setTimeout(() => WrongExport.showMessage(result.message, result.downloaded ? 'success' : 'info'), 0);
+  } catch (error) {
+    console.error('[WrongExport]', error);
+    navigate('wrong');
+    setTimeout(() => WrongExport.showMessage('오답 파일을 저장하지 못했습니다. 오답노트에서 다시 시도해 주세요.', 'error'), 0);
+  }
 });
 
 // =================== 북마크 ===================

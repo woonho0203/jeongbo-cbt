@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "node server/index.js",
+    "test": "node --test tests/*.test.mjs",
     "version:bump": "node scripts/bump_version.js",
     "deploy": "node scripts/bump_version.js && vercel --prod --yes"
   },
