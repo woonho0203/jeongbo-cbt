@@ -1,6 +1,6 @@
 {
   "name": "jeongbo-cbt",
-  "version": "26-07-26-5",
+  "version": "26-07-26-6",
   "description": "정보처리기사 필기 CBT 연습 시스템",
   "main": "server/index.js",
   "scripts": {
