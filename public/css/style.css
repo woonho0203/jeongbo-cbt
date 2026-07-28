@@ -586,6 +586,7 @@ main {
 .rp-reset-btn { font-size: 0.78rem; color: var(--muted); }
 
 /* ─── 대시보드 ─── */
+.dash-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 .dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 22px; }
 .dash-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
 .dash-card .label { color: var(--muted); font-size: 0.83rem; margin-bottom: 4px; }

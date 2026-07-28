@@ -27,6 +27,14 @@ const Storage = (() => {
   }
   function getSession(id)     { return getSessions().find(s => s.id === id) || null; }
   function deleteSession(id)  { set('cbt_sessions', getSessions().filter(s => s.id !== id)); }
+  // 대시보드 초기화: 응시 기록 + 임시 저장 세션 전부 삭제 (북마크·오답노트는 유지)
+  function clearSessions() {
+    try {
+      localStorage.removeItem('cbt_sessions');
+      localStorage.removeItem('cbt_next_id');
+      localStorage.removeItem('cbt_random_draft');
+    } catch (e) { console.warn('[Storage] clearSessions failed:', e); }
+  }
 
   // ── 북마크 ───────────────────────────────────────────────────────────────────
   function getBookmarks()     { return get('cbt_bookmarks', {}); }
@@ -147,7 +155,7 @@ const Storage = (() => {
 
   return {
     nextId,
-    getSessions, addSession, getSession, deleteSession,
+    getSessions, addSession, getSession, deleteSession, clearSessions,
     getBookmarks, setBookmark, delBookmark, hasBookmark, listBookmarks,
     getWrongLog, recordWrong, clearWrong, countWrong, listWrong,
     getRandomMeta, setRandomTotal, getSeenRandom, countSeenRandom, addSeenRandom, resetSeenRandom,

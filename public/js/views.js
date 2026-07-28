@@ -443,10 +443,26 @@ function summaryCard(label, value, kind = '') {
 }
 
 // =================== 대시보드 ===================
+async function resetDashboard() {
+  const ok = await modalConfirm(
+    '대시보드 초기화',
+    '모든 응시 기록과 통계가 삭제됩니다.\n(북마크·오답노트는 유지됩니다)\n\n초기화하시겠습니까?',
+    '초기화', '취소'
+  );
+  if (!ok) return;
+  Storage.clearSessions();
+  renderRoute();   // 같은 해시(#dashboard)라 navigate로는 재렌더되지 않으므로 직접 호출
+}
+
 defineRoute('dashboard', async (app) => {
   const stats = Storage.computeStats();
   app.innerHTML = '';
-  app.append(el('h1', { class: 'section-title', text: '학습 통계 대시보드' }));
+  app.append(el('div', { class: 'dash-header' }, [
+    el('h1', { class: 'section-title', style: { margin: '0' }, text: '학습 통계 대시보드' }),
+    ...(stats.totalSessions > 0
+      ? [el('button', { class: 'btn small danger', onClick: resetDashboard, text: '🗑 대시보드 초기화' })]
+      : []),
+  ]));
 
   if (stats.totalSessions === 0) {
     app.append(el('div', { class: 'card', text: '아직 데이터가 없습니다. 시험을 응시하면 여기에 통계가 나타납니다.' }));
