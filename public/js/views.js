@@ -242,8 +242,16 @@ function historyCard(s) {
     info.append(subjWrap);
   }
 
+  const wrongInSession = (s.question_count || 0) - (s.correct_count || 0);
   const btns = el('div', { class: 'history-card-btns' }, [
     el('button', { class: 'btn small primary', onClick: () => navigate('result', { id: s.id }), text: '상세 보기' }),
+    ...(wrongInSession > 0 ? [
+      el('button', {
+        class: 'btn small',
+        onClick: () => navigate('exam', { mode: 'wrong', sessionId: s.id }),
+        text: `❌ 오답만 풀기 (${wrongInSession})`,
+      }),
+    ] : []),
     el('button', { class: 'btn small danger', onClick: async () => {
       if (await modalConfirm('삭제 확인', '이 기록을 삭제할까요?')) {
         Storage.deleteSession(s.id);

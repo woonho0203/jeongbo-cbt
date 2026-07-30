@@ -53,9 +53,21 @@ defineRoute('exam', async (app, params) => {
     }
   }
 
-  // 오답 모드: 로컬 스토리지에서 오답 qkey 목록 제공
-  const wrongKeys = (mode === 'wrong' || mode === 'random')
-    ? Storage.listWrong().map(w => w.qkey) : [];
+  // 오답 모드: 특정 학습기록(sessionId)이 지정되면 그 기록의 오답만, 아니면 전체 오답노트
+  const wrongSessionId = params.sessionId ? parseInt(params.sessionId, 10) : null;
+  let wrongKeys = [];
+  let wrongSessionTitle = null;
+  if (mode === 'wrong') {
+    if (wrongSessionId != null) {
+      const sess = Storage.getSession(wrongSessionId);
+      wrongKeys = sess ? (sess.answers || []).filter(a => a.is_correct === 0).map(a => a.qkey) : [];
+      wrongSessionTitle = sess ? `${sess.title || sess.mode} 오답 다시 풀기` : null;
+    } else {
+      wrongKeys = Storage.listWrong().map(w => w.qkey);
+    }
+  } else if (mode === 'random') {
+    wrongKeys = Storage.listWrong().map(w => w.qkey);
+  }
 
   // 랜덤 모드: 이미 출제된 문제 목록 제공 (미출제 우선 선택에 사용)
   const seenKeys = mode === 'random' ? Storage.getSeenRandom() : [];
@@ -101,7 +113,7 @@ defineRoute('exam', async (app, params) => {
   }
 
   const state = {
-    title: data.title,
+    title: wrongSessionTitle || data.title,
     mode: data.mode || mode,
     sourceId,
     questions: data.questions,
@@ -483,7 +495,7 @@ function clearAnswer(state) {
   updateOMR(state);
 }
 
-// Enter/5 · Shift+Enter/6 공용 다음·이전 문제 이동
+// Enter(이전) · Shift+Enter(다음) 공용 문제 이동
 function goToNextQuestion(state) {
   if (state.checkMode) {
     if (state.revealedAnswer) advanceCheckMode(state);
