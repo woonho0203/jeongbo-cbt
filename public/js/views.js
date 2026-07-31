@@ -248,7 +248,7 @@ function historyCard(s) {
     ...(wrongInSession > 0 ? [
       el('button', {
         class: 'btn small',
-        onClick: () => navigate('exam', { mode: 'wrong', sessionId: s.id }),
+        onClick: () => navigate('exam', { mode: 'wrong', sessionId: s.id, check: '1' }),
         text: `❌ 오답만 풀기 (${wrongInSession})`,
       }),
     ] : []),
