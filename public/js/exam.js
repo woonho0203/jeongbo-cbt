@@ -243,7 +243,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '→/Shift+Enter 다음 문제  ·  ←/Enter 이전 문제  ·  ↑↓/5·6 스크롤' }),
+      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift+Enter/5 아래로' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -273,7 +273,7 @@ function renderQuestion(state) {
           }, text: '◀ 이전',
         }),
         el('div', { style: { color: 'var(--muted)', fontSize: '0.88rem', textAlign: 'center', flex: '1' },
-          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter 이전',
+          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter/6 위로 · Shift+Enter/5 아래로',
         }),
       ]));
     }
@@ -343,10 +343,10 @@ function renderQuestion(state) {
       return;
     }
 
-    // ── Enter(이전) / Shift+Enter(다음): 문제 이동 ──
+    // ── Enter(위로 스크롤) / Shift+Enter(아래로 스크롤) ──
     if (e.key === 'Enter') {
       e.preventDefault();
-      if (e.shiftKey) goToNextQuestion(state); else goToPrevQuestion(state);
+      window.scrollBy({ top: e.shiftKey ? 200 : -200, behavior: 'smooth' });
       return;
     }
 
@@ -493,29 +493,6 @@ function clearAnswer(state) {
   state.answers.delete(q.qkey);
   renderQuestion(state);
   updateOMR(state);
-}
-
-// Enter(이전) · Shift+Enter(다음) 공용 문제 이동
-function goToNextQuestion(state) {
-  if (state.checkMode) {
-    if (state.revealedAnswer) advanceCheckMode(state);
-  } else if (state.currentIdx < state.questions.length - 1) {
-    state.currentIdx++;
-    renderQuestion(state);
-    updateOMR(state);
-    scheduleDraftSave(state);
-  } else {
-    submitExam(state);
-  }
-}
-
-function goToPrevQuestion(state) {
-  if (state.currentIdx > 0) {
-    if (state.checkMode) state.revealedAnswer = false;
-    state.currentIdx--;
-    renderQuestion(state);
-    updateOMR(state);
-  }
 }
 
 // 진행 현황(점수) 바 생성 — placement: 'main'(모바일 본문) | 'side'(데스크톱 OMR 위)
