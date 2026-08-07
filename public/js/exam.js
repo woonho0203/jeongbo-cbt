@@ -212,10 +212,13 @@ function startTimer(state) {
 function renderQuestion(state) {
   const main = document.getElementById('exam-main');
   if (!main) return;
-  window.scrollTo({ top: 0, behavior: 'instant' });
   const q      = state.questions[state.currentIdx];
   const sel    = state.answers.get(q.qkey);
   const revealed = state.checkMode && state.revealedAnswer;
+
+  // 채점 결과가 막 공개된 경우가 아니면(새 문제) 맨 위부터 보여준다.
+  // 채점 직후에는 아래(보기 위치)로 스크롤해 정답/오답 표시를 바로 보여준다.
+  if (!revealed) window.scrollTo({ top: 0, behavior: 'instant' });
 
   main.innerHTML = '';
 
@@ -327,6 +330,17 @@ function renderQuestion(state) {
             text: '다음 ▶',
           }),
     ]));
+  }
+
+  // 채점 직후: 지문·표·이미지가 길어도 정답/오답이 표시된 보기가 바로 보이도록 이동
+  if (revealed) {
+    const optionsEl = main.querySelector('.options');
+    if (optionsEl) {
+      const topbar = document.querySelector('.topbar');
+      const offset = (topbar ? topbar.getBoundingClientRect().height : 0) + 12;
+      const top = window.scrollY + optionsEl.getBoundingClientRect().top - offset;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+    }
   }
 
   // ── 키보드 단축키 ──
