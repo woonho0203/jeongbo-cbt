@@ -1,5 +1,8 @@
 // 시험 화면 - 일반 모드 + 학습(즉시채점) 모드
 
+// 키보드 스크롤 한 번에 움직이는 픽셀 수 (Enter·Shift·5·6·방향키 공용)
+const SCROLL_STEP = 50;
+
 // 전역 타이머: SPA에서 이전 인터벌이 남아 중복 실행되는 것을 방지
 let _timerInterval = null;
 function clearGlobalTimer() {
@@ -335,9 +338,9 @@ function renderQuestion(state) {
             if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
           }
         } else if (e.key === 'ArrowDown') {
-          window.scrollBy({ top: 200, behavior: 'smooth' });
+          window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' });
         } else if (e.key === 'ArrowUp') {
-          window.scrollBy({ top: -200, behavior: 'smooth' });
+          window.scrollBy({ top: -SCROLL_STEP, behavior: 'smooth' });
         }
       }
       return;
@@ -348,18 +351,18 @@ function renderQuestion(state) {
     // 한 손으로 누를 수 있는 Enter·Shift를 스크롤 전용으로 둔다.
     if (e.key === 'Enter') {
       e.preventDefault();
-      window.scrollBy({ top: e.shiftKey ? 200 : -200, behavior: 'smooth' });
+      window.scrollBy({ top: e.shiftKey ? SCROLL_STEP : -SCROLL_STEP, behavior: 'smooth' });
       return;
     }
     if (e.key === 'Shift' || e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
       e.preventDefault();
-      window.scrollBy({ top: 200, behavior: 'smooth' });
+      window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' });
       return;
     }
 
     // ── 숫자키 ──
-    if (e.key === '5' || e.key === ' ') { e.preventDefault(); window.scrollBy({ top: 200, behavior: 'smooth' }); return; }
-    if (e.key === '6') { e.preventDefault(); window.scrollBy({ top: -200, behavior: 'smooth' }); return; }
+    if (e.key === '5' || e.key === ' ') { e.preventDefault(); window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' }); return; }
+    if (e.key === '6') { e.preventDefault(); window.scrollBy({ top: -SCROLL_STEP, behavior: 'smooth' }); return; }
 
     if (state.checkMode) {
       if (state.revealedAnswer) {
