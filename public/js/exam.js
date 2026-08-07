@@ -243,7 +243,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift+Enter/5 아래로' }),
+      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift/5 아래로' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -273,7 +273,7 @@ function renderQuestion(state) {
           }, text: '◀ 이전',
         }),
         el('div', { style: { color: 'var(--muted)', fontSize: '0.88rem', textAlign: 'center', flex: '1' },
-          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter/6 위로 · Shift+Enter/5 아래로',
+          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter/6 위로 · Shift/5 아래로',
         }),
       ]));
     }
@@ -343,10 +343,17 @@ function renderQuestion(state) {
       return;
     }
 
-    // ── Enter(위로 스크롤) / Shift+Enter(아래로 스크롤) ──
+    // ── Enter(위로 스크롤) / Shift(아래로 스크롤) ──
+    // 학습 모드에서 답을 고르기 전에는 방향키가 보기 선택에 쓰이므로,
+    // 한 손으로 누를 수 있는 Enter·Shift를 스크롤 전용으로 둔다.
     if (e.key === 'Enter') {
       e.preventDefault();
       window.scrollBy({ top: e.shiftKey ? 200 : -200, behavior: 'smooth' });
+      return;
+    }
+    if (e.key === 'Shift' || e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
+      e.preventDefault();
+      window.scrollBy({ top: 200, behavior: 'smooth' });
       return;
     }
 
