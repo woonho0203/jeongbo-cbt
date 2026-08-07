@@ -248,10 +248,6 @@ function renderQuestion(state) {
   // 문제가 화면에 그려질 때마다 진행 상황을 저장 — 마우스·키보드 조작을 전부 포함한다
   scheduleDraftSave(state);
 
-  // 채점 결과가 막 공개된 경우가 아니면(새 문제) 맨 위부터 보여준다.
-  // 채점 직후에는 아래(보기 위치)로 스크롤해 정답/오답 표시를 바로 보여준다.
-  if (!revealed) window.scrollTo({ top: 0, behavior: 'instant' });
-
   main.innerHTML = '';
 
   // ── 헤더 ──
@@ -365,6 +361,8 @@ function renderQuestion(state) {
   }
 
   // 채점 직후: 지문·표·이미지가 길어도 정답/오답이 표시된 보기가 바로 보이도록 이동
+  // 그 외(새 문제)에는 맨 위부터 보여준다 — DOM을 다 그린 뒤에 스크롤해야
+  // 이미지·표 로딩으로 레이아웃이 바뀌어도 위치가 어긋나지 않는다.
   if (revealed) {
     const optionsEl = main.querySelector('.options');
     if (optionsEl) {
@@ -373,6 +371,8 @@ function renderQuestion(state) {
       const top = window.scrollY + optionsEl.getBoundingClientRect().top - offset;
       window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
     }
+  } else {
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
   // ── 키보드 단축키 ──
