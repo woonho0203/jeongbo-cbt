@@ -1,7 +1,37 @@
 // 시험 화면 - 일반 모드 + 학습(즉시채점) 모드
 
-// 키보드 스크롤 한 번에 움직이는 픽셀 수 (Enter·Shift·5·6·방향키 공용)
-const SCROLL_STEP = 50;
+// ── 키보드 스크롤 (Enter·Shift·5·6·방향키 공용) ──
+// 한 번 톡 누르면 SCROLL_STEP만큼, 계속 누르고 있으면 프레임마다 이어서 스크롤한다.
+// 키 자동반복에 기대면 OS 반복 설정에 따라 속도가 들쭉날쭉하고 뚝뚝 끊기므로
+// 직접 requestAnimationFrame 루프를 돌린다.
+const SCROLL_STEP = 50;        // 한 번 눌렀을 때 이동량(px)
+const SCROLL_HOLD_SPEED = 14;  // 누르고 있을 때 프레임당 이동량(px) ≈ 840px/s
+const SCROLL_HOLD_DELAY = 250; // 이만큼 계속 눌러야 연속 스크롤 시작(ms)
+
+let _scrollDir = 0, _scrollRAF = null, _scrollTimer = null;
+
+function startScrollHold(dir) {
+  if (_scrollDir === dir) return;  // 같은 방향으로 이미 진행 중이면 무시(키 자동반복 대비)
+  stopScrollHold();
+  _scrollDir = dir;
+  window.scrollBy({ top: dir * SCROLL_STEP, behavior: 'smooth' });
+  _scrollTimer = setTimeout(() => {
+    const tick = () => {
+      window.scrollBy(0, _scrollDir * SCROLL_HOLD_SPEED);
+      _scrollRAF = requestAnimationFrame(tick);
+    };
+    _scrollRAF = requestAnimationFrame(tick);
+  }, SCROLL_HOLD_DELAY);
+}
+
+function stopScrollHold() {
+  if (_scrollTimer) { clearTimeout(_scrollTimer); _scrollTimer = null; }
+  if (_scrollRAF)   { cancelAnimationFrame(_scrollRAF); _scrollRAF = null; }
+  _scrollDir = 0;
+}
+
+// 키를 누른 채 탭을 벗어나면 keyup을 못 받아 계속 스크롤될 수 있다
+window.addEventListener('blur', stopScrollHold);
 
 // 전역 타이머: SPA에서 이전 인터벌이 남아 중복 실행되는 것을 방지
 let _timerInterval = null;
@@ -246,7 +276,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift/5 아래로' }),
+      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift/5 아래로 (길게 누르면 계속)' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -276,7 +306,7 @@ function renderQuestion(state) {
           }, text: '◀ 이전',
         }),
         el('div', { style: { color: 'var(--muted)', fontSize: '0.88rem', textAlign: 'center', flex: '1' },
-          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter/6 위로 · Shift/5 아래로',
+          text: '숫자(1~4) · ←①  ↓②  →③  ↑④  ·  Enter/6 위로 · Shift/5 아래로 (길게 누르면 계속)',
         }),
       ]));
     }
@@ -338,9 +368,9 @@ function renderQuestion(state) {
             if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
           }
         } else if (e.key === 'ArrowDown') {
-          window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' });
+          startScrollHold(1);
         } else if (e.key === 'ArrowUp') {
-          window.scrollBy({ top: -SCROLL_STEP, behavior: 'smooth' });
+          startScrollHold(-1);
         }
       }
       return;
@@ -351,18 +381,18 @@ function renderQuestion(state) {
     // 한 손으로 누를 수 있는 Enter·Shift를 스크롤 전용으로 둔다.
     if (e.key === 'Enter') {
       e.preventDefault();
-      window.scrollBy({ top: e.shiftKey ? SCROLL_STEP : -SCROLL_STEP, behavior: 'smooth' });
+      startScrollHold(e.shiftKey ? 1 : -1);
       return;
     }
     if (e.key === 'Shift' || e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
       e.preventDefault();
-      window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' });
+      startScrollHold(1);
       return;
     }
 
     // ── 숫자키 ──
-    if (e.key === '5' || e.key === ' ') { e.preventDefault(); window.scrollBy({ top: SCROLL_STEP, behavior: 'smooth' }); return; }
-    if (e.key === '6') { e.preventDefault(); window.scrollBy({ top: -SCROLL_STEP, behavior: 'smooth' }); return; }
+    if (e.key === '5' || e.key === ' ') { e.preventDefault(); startScrollHold(1); return; }
+    if (e.key === '6') { e.preventDefault(); startScrollHold(-1); return; }
 
     if (state.checkMode) {
       if (state.revealedAnswer) {
@@ -387,6 +417,9 @@ function renderQuestion(state) {
       }
     }
   };
+
+  // 스크롤 키에서 손을 떼면 연속 스크롤 정지
+  document.onkeyup = () => stopScrollHold();
 }
 
 function isNegativeStem(stem = '') {
@@ -665,7 +698,9 @@ async function submitExam(state, force = false) {
 
   state.submitted = true;
   clearGlobalTimer();
+  stopScrollHold();
   document.onkeydown = null;
+  document.onkeyup = null;
 
   const durationSec = Math.floor((Date.now() - state.startedAt) / 1000);
 
