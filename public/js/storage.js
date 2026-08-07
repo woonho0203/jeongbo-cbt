@@ -153,6 +153,23 @@ const Storage = (() => {
   function loadRandomDraft()   { return get('cbt_random_draft', null); }
   function clearRandomDraft()  { try { localStorage.removeItem('cbt_random_draft'); } catch {} }
 
+  // ── 기출·유형별 세션 중간 저장 (모드+회차별로 새로고침해도 마지막 문제부터 재개) ──
+  // 랜덤 모드와 달리 "이어서 풀기?" 확인 없이 조용히 복원한다(문제 목록이 고정이라 안전).
+  function draftStorageKey(key) { return 'cbt_draft_' + key; }
+  function saveExamDraft(key, state) {
+    try {
+      set(draftStorageKey(key), {
+        savedAt:        Date.now(),
+        currentIdx:     state.currentIdx,
+        answers:        [...state.answers.entries()],
+        revealedAnswer: !!state.revealedAnswer,
+        shuffleMaps:    state.shuffleMaps || [],
+      });
+    } catch (e) { console.warn('[Storage] exam draft save failed:', e); }
+  }
+  function loadExamDraft(key)  { return get(draftStorageKey(key), null); }
+  function clearExamDraft(key) { try { localStorage.removeItem(draftStorageKey(key)); } catch {} }
+
   return {
     nextId,
     getSessions, addSession, getSession, deleteSession, clearSessions,
@@ -160,6 +177,7 @@ const Storage = (() => {
     getWrongLog, recordWrong, clearWrong, countWrong, listWrong,
     getRandomMeta, setRandomTotal, getSeenRandom, countSeenRandom, addSeenRandom, resetSeenRandom,
     saveRandomDraft, loadRandomDraft, clearRandomDraft,
+    saveExamDraft, loadExamDraft, clearExamDraft,
     computeStats,
   };
 })();

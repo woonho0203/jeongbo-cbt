@@ -39,6 +39,29 @@ function clearGlobalTimer() {
   if (_timerInterval) { clearInterval(_timerInterval); _timerInterval = null; }
 }
 
+// 보기 순서 섞기 (Fisher-Yates) — order[셔플된위치] = 원래인덱스(0-based)
+function shuffledIndices(n) {
+  const order = Array.from({ length: n }, (_, i) => i);
+  for (let k = order.length - 1; k > 0; k--) {
+    const j = Math.floor(Math.random() * (k + 1));
+    [order[k], order[j]] = [order[j], order[k]];
+  }
+  return order;
+}
+
+// 주어진 순서(order)대로 q.options를 재배열하고 q.answer를 새 위치로 옮긴다
+function applyOptionOrder(q, order) {
+  q.shuffleMap = order;
+  q.options = order.map(origIdx => q.options[origIdx]);
+  if (q.answer != null) {
+    const mappedAnswers = normalizeAnswers(q.answer)
+      .map(ans => order.findIndex(origIdx => origIdx === ans - 1) + 1)
+      .filter(ans => ans > 0)
+      .sort((a, b) => a - b);
+    q.answer = Array.isArray(q.answer) ? mappedAnswers : mappedAnswers[0];
+  }
+}
+
 defineRoute('exam', async (app, params) => {
   const mode      = params.mode || 'past';
   const sourceId  = params.sourceId || '';
@@ -110,24 +133,22 @@ defineRoute('exam', async (app, params) => {
     body: JSON.stringify({ mode, sourceId, count, checkMode, wrongKeys, seenKeys }),
   });
 
+  // 기출/유형별 문제는 목록이 고정이므로, 새로고침해도 마지막 문제부터 조용히 이어간다
+  // (랜덤 모드는 위에서 이미 별도로 "이어서 풀기?" 확인 절차를 거친다).
+  const examDraftKey = (mode === 'past' || mode === 'category') ? `${mode}:${sourceId}:${checkMode}` : null;
+  const examDraft = examDraftKey ? Storage.loadExamDraft(examDraftKey) : null;
+  const draftShuffleByQkey = new Map(examDraft?.shuffleMaps || []);
+
   // ── 보기 랜덤 섞기 + shuffleMap 저장 ────────────────────────────────────────
   // shuffleMap[shuffledPos(0-based)] = originalIdx(0-based)
+  // 이어하기 중이면 이전에 저장해 둔 순서를 그대로 써서 보기 번호가 뒤바뀌지 않게 한다.
   for (const q of data.questions) {
     if (!q.options || q.options.length < 2) { q.shuffleMap = null; continue; }
-    const indexed = q.options.map((opt, i) => ({ opt, i }));
-    for (let k = indexed.length - 1; k > 0; k--) {
-      const j = Math.floor(Math.random() * (k + 1));
-      [indexed[k], indexed[j]] = [indexed[j], indexed[k]];
-    }
-    q.shuffleMap = indexed.map(x => x.i);
-    q.options = indexed.map(x => x.opt);
-    if (q.answer != null) {
-      const mappedAnswers = normalizeAnswers(q.answer)
-        .map(ans => indexed.findIndex(x => x.i === ans - 1) + 1)
-        .filter(ans => ans > 0)
-        .sort((a, b) => a - b);
-      q.answer = Array.isArray(q.answer) ? mappedAnswers : mappedAnswers[0];
-    }
+    const saved = draftShuffleByQkey.get(q.qkey);
+    const order = (saved && saved.length === q.options.length)
+      ? saved
+      : shuffledIndices(q.options.length);
+    applyOptionOrder(q, order);
   }
 
   // 랜덤 모드: 전체 풀 크기를 진도 추적용으로 저장
@@ -161,6 +182,14 @@ defineRoute('exam', async (app, params) => {
     revealReadyAt: 0,
     timeLimit: 0,
   };
+
+  // 저장된 진행 상황이 있으면 조용히 복원(새로고침 후 마지막 문제부터 이어가기)
+  if (examDraft) {
+    const validQkeys = new Set(state.questions.map(q => q.qkey));
+    state.answers = new Map((examDraft.answers || []).filter(([k]) => validQkeys.has(k)));
+    state.currentIdx = Math.min(Math.max(examDraft.currentIdx || 0, 0), state.questions.length - 1);
+    if (checkMode) state.revealedAnswer = !!examDraft.revealedAnswer;
+  }
 
   // 북마크 - localStorage에서 로드 (API 호출 없음)
   const savedBookmarks = Storage.getBookmarks();
@@ -215,6 +244,9 @@ function renderQuestion(state) {
   const q      = state.questions[state.currentIdx];
   const sel    = state.answers.get(q.qkey);
   const revealed = state.checkMode && state.revealedAnswer;
+
+  // 문제가 화면에 그려질 때마다 진행 상황을 저장 — 마우스·키보드 조작을 전부 포함한다
+  scheduleDraftSave(state);
 
   // 채점 결과가 막 공개된 경우가 아니면(새 문제) 맨 위부터 보여준다.
   // 채점 직후에는 아래(보기 위치)로 스크롤해 정답/오답 표시를 바로 보여준다.
@@ -279,7 +311,7 @@ function renderQuestion(state) {
       el('div', { class: `check-feedback ${isCorrect ? 'correct' : 'wrong'}` },
         [ isCorrect ? `✅ 정답입니다!` : `❌ 틀렸습니다.  정답: ${correctLabel}` ]
       ),
-      el('div', { class: 'check-next-hint', text: '→ 다음 문제  ·  ← 이전 문제  ·  ↑/Enter/6 위로 · ↓/Shift/5 아래로 (길게 누르면 계속)' }),
+      el('div', { class: 'check-next-hint', text: '↑↓←→ 다음 문제  ·  Space 이전 문제  ·  Enter/6 위로 스크롤 · Shift/5 아래로 스크롤 (길게 누르면 계속)' }),
     );
     if (q.explanation) {
       main.append(renderExplanation(q.explanation, q.shuffleMap));
@@ -318,7 +350,7 @@ function renderQuestion(state) {
     main.append(el('div', { class: 'exam-nav' }, [
       el('button', {
         class: 'btn',
-        onClick: () => { if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); scheduleDraftSave(state); } },
+        onClick: () => { if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); } },
         disabled: state.currentIdx === 0, text: '◀ 이전',
       }),
       el('button', { class: 'btn', onClick: () => clearAnswer(state), text: '✕ 지우기' }),
@@ -326,7 +358,7 @@ function renderQuestion(state) {
         ? el('button', { class: 'btn primary', onClick: () => submitExam(state), text: '제출하기' })
         : el('button', {
             class: 'btn primary',
-            onClick: () => { state.currentIdx++; renderQuestion(state); updateOMR(state); scheduleDraftSave(state); },
+            onClick: () => { state.currentIdx++; renderQuestion(state); updateOMR(state); },
             text: '다음 ▶',
           }),
     ]));
@@ -368,24 +400,23 @@ function renderQuestion(state) {
           renderQuestion(state);
         }
       } else {
-        // 답 선택 후: 방향키 → 이동/스크롤
-        if (e.key === 'ArrowRight') {
-          if (state.checkMode) {
-            advanceCheckMode(state);
-          } else {
-            if (state.currentIdx < state.questions.length - 1) { state.currentIdx++; renderQuestion(state); updateOMR(state); }
-          }
-        } else if (e.key === 'ArrowLeft') {
-          if (state.checkMode) {
-            if (state.currentIdx > 0) { state.revealedAnswer = false; state.currentIdx--; renderQuestion(state); updateOMR(state); }
-          } else {
-            if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
-          }
-        } else if (e.key === 'ArrowDown') {
-          startScrollHold(1);
-        } else if (e.key === 'ArrowUp') {
-          startScrollHold(-1);
+        // 답 선택 후: 방향키(↑↓←→ 아무거나) → 다음 문제로 이동
+        if (state.checkMode) {
+          advanceCheckMode(state);
+        } else {
+          if (state.currentIdx < state.questions.length - 1) { state.currentIdx++; renderQuestion(state); updateOMR(state); }
         }
+      }
+      return;
+    }
+
+    // ── 스페이스바: 답을 고른 뒤에는 이전 문제로 이동 (고르기 전에는 기존처럼 스크롤) ──
+    if (e.key === ' ' && hasAnswered) {
+      e.preventDefault();
+      if (state.checkMode) {
+        if (state.currentIdx > 0) { state.revealedAnswer = false; state.currentIdx--; renderQuestion(state); updateOMR(state); }
+      } else {
+        if (state.currentIdx > 0) { state.currentIdx--; renderQuestion(state); updateOMR(state); }
       }
       return;
     }
@@ -496,12 +527,22 @@ function renderSelectedAnswerExplanation(q, selected) {
   return el('div', { class: 'selected-reason-box' }, rows);
 }
 
-// 랜덤 모드 진행 상황 자동 저장 (debounced)
+// 진행 상황 자동 저장 (debounced) — 랜덤은 별도 슬롯, 기출/유형별은 회차별 슬롯
 let _draftSaveTimer = null;
 function scheduleDraftSave(state) {
-  if (state.mode !== 'random' || state.submitted) return;
-  if (_draftSaveTimer) clearTimeout(_draftSaveTimer);
-  _draftSaveTimer = setTimeout(() => { Storage.saveRandomDraft(state); }, 500);
+  if (state.submitted) return;
+  if (state.mode === 'random') {
+    if (_draftSaveTimer) clearTimeout(_draftSaveTimer);
+    _draftSaveTimer = setTimeout(() => { Storage.saveRandomDraft(state); }, 500);
+  } else if ((state.mode === 'past' || state.mode === 'category') && state.sourceId) {
+    if (_draftSaveTimer) clearTimeout(_draftSaveTimer);
+    _draftSaveTimer = setTimeout(() => {
+      Storage.saveExamDraft(`${state.mode}:${state.sourceId}:${state.checkMode}`, {
+        ...state,
+        shuffleMaps: state.questions.map(q => [q.qkey, q.shuffleMap]),
+      });
+    }, 500);
+  }
 }
 
 // 선택지 클릭 처리
@@ -518,12 +559,10 @@ function handleOptionClick(state, num) {
       state.revealReadyAt = Date.now();
       renderQuestion(state);
       updateOMR(state);
-      scheduleDraftSave(state);
     }
   } else {
     state.answers.set(q.qkey, num);
     updateOMR(state);
-    scheduleDraftSave(state);
     if (state.currentIdx < state.questions.length - 1) {
       renderQuestion(state);
       setTimeout(() => { state.currentIdx++; renderQuestion(state); updateOMR(state); }, 300);
@@ -715,6 +754,10 @@ async function submitExam(state, force = false) {
   stopScrollHold();
   document.onkeydown = null;
   document.onkeyup = null;
+  if (_draftSaveTimer) { clearTimeout(_draftSaveTimer); _draftSaveTimer = null; }
+  if (state.mode === 'past' || state.mode === 'category') {
+    if (state.sourceId) Storage.clearExamDraft(`${state.mode}:${state.sourceId}:${state.checkMode}`);
+  }
 
   const durationSec = Math.floor((Date.now() - state.startedAt) / 1000);
 
